@@ -176,51 +176,39 @@ def streak(snaps: list, key: str) -> int:
 
 def arrow(d):
     if d is None:
-        return "\u2013"
+        return "-"
     if d == 0:
         return "="
-    return ("\u25b2" if d > 0 else "\u25bc") + str(abs(d))
+    return ("+" if d > 0 else "-") + str(abs(d))
 
 
 def digest(snaps: list) -> str:
     cur, prev = snaps[-1], (snaps[-2] if len(snaps) > 1 else None)
     pill = cur["m"]["pill"]
     pill_prev = prev["m"]["pill"] if prev else None
-    L = [f"WEGOVY SENTINEL \u2014 {cur['date']}"
+    L = [f"WEGOVY SENTINEL -- {cur['date']}"
          + (f" ({cur['mode']} mode)" if cur["mode"] != "semrush" else "")]
     d_prev = (pill_prev - pill) if (pill is not None and pill_prev is not None) else None
     d_base = (26 - pill) if pill is not None else None
-    line = f"wegovy pill: {'P' + str(pill) if pill else 'n/a'} ({arrow(d_prev)} vs prev \u00b7 {arrow(d_base)} vs baseline P26)"
+    line = f"wegovy pill: {'P' + str(pill) if pill else 'n/a'} ({arrow(d_prev)} vs prev / {arrow(d_base)} vs baseline P26)"
     if pill is not None and pill <= 10:
-        line += " \u2014 PAGE ONE \u2705"
+        line += " -- PAGE ONE"
     L.append(line)
     bw = cur["best"].get("buy wegovy")
     if bw:
-        tag = " \u26a0\ufe0f WRONG PAGE" if bw["c"] == "pill" else ""
+        tag = " ** WRONG PAGE **" if bw["c"] == "pill" else ""
         L.append(f"buy wegovy: P{bw['p']} via {bw['c'].upper()}{tag}"
                  + (f" (injection: P{cur['m']['bwInj']})" if cur["m"]["bwInj"] else ""))
     if cur["flags"]["wrong"]:
-        L.append(f"\ud83d\udd34 Wrong-page routing live \u2014 day {streak(snaps, 'wrong')}")
+        L.append(f"[!] Wrong-page routing live -- day {streak(snaps, 'wrong')}")
     if cur["flags"]["legacy"]:
-        L.append(f"\ud83d\udd34 Legacy URL still ranking \u2014 day {streak(snaps, 'legacy')}")
+        L.append(f"[!] Legacy URL still ranking -- day {streak(snaps, 'legacy')}")
     if cur["flags"]["cann"]:
-        L.append(f"\ud83d\udfe1 {cur['flags']['cann']} keywords cannibalised (2+ URLs)")
+        L.append(f"[*] {cur['flags']['cann']} keywords cannibalised (2+ URLs)")
     L.append(f"Backlinks to pill page: {cur['m']['blD']} referring domains (target {BL_TARGET})")
     if pill is not None and pill <= 3:
-        L.append("\ud83c\udfc1 TARGET ACHIEVED \u2014 P1\u20133. Hold through MHRA decision.")
+        L.append("TARGET ACHIEVED -- P1-3. Hold through MHRA decision.")
     return "\n".join(L)
-
-
-def post_slack(text: str):
-    hook = os.environ.get("SLACK_WEBHOOK_URL", "")
-    if not hook:
-        print("[info] SLACK_WEBHOOK_URL not set \u2014 printing digest only")
-        return
-    req = urllib.request.Request(
-        hook, data=json.dumps({"text": text}).encode(),
-        headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=15) as r:
-        r.read()
 
 
 def load_history() -> list:
@@ -260,21 +248,14 @@ def main():
         save_history(snaps)
         text = digest(snaps)
         print(text)
-        if not test:
-            post_slack(text)
         if test:
             assert snap["flags"]["wrong"], "wrong-page flag should fire"
             assert snap["flags"]["legacy"], "legacy flag should fire"
             assert snap["m"]["pill"] == 26
             print("\n[self-test] all assertions passed")
     except Exception as e:
-        msg = f"\ud83d\udea8 WEGOVY SENTINEL FAILED \u2014 {today_uk()}: {e}"
+        msg = f"WEGOVY SENTINEL FAILED -- {today_uk()}: {e}"
         print(msg, file=sys.stderr)
-        if not test:
-            try:
-                post_slack(msg)
-            except Exception:
-                pass
         sys.exit(1)
 
 
