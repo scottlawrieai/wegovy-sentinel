@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 """
 Wegovy Sentinel — daily rank patrol for simpleonlinepharmacy.co.uk
+Pulls Semrush UK positions for SOP + 4 competitors, pill-page backlinks,
+computes structural audit flags and competitive gap, appends to snapshot
+history, and prints a digest.
+
+Env:
+  SEMRUSH_API_KEY    required (semrush.com -> Profile -> API)
+Run:
+  python sentinel.py            # live patrol
+  python sentinel.py --test     # offline self-test with canned data
 """
 import json
 import os
@@ -11,38 +20,55 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 DOMAIN = "www.simpleonlinepharmacy.co.uk"
-PILL_PAGE = "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss-pills/wegovy-pills/"
+PILL_PAGE = "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
 DATA = os.path.join(os.path.dirname(__file__), "data", "snapshots.json")
 DOCS = os.path.join(os.path.dirname(__file__), "docs", "snapshots.json")
-BASE_DATE = "2026-06-10"
+BASE_DATE = "2026-06-19"
 BL_TARGET = 15
 
+# kw, goal page class, baseline position (19 Jun 2026 audit)
 TRACKED = [
-    ("wegovy pill", "pill", 26),
-    ("wegovy pills", "pill", 25),
-    ("wegovy tablets", "pill", 43),
-    ("wegovy pill uk", "pill", 20),
+    ("wegovy pill", "pill", None),
+    ("wegovy pills", "pill", None),
+    ("buy wegovy pill", "pill", None),
     ("buy wegovy pills", "pill", None),
+    ("wegovy pill uk", "pill", None),
+    ("wegovy tablets", "pill", None),
     ("oral semaglutide", "pill", None),
-    ("buy wegovy", "injection", 9),
-    ("buy wegovy online", "injection", 14),
-    ("buy wegovy uk", "injection", 9),
-    ("where can i buy wegovy uk", "injection", 7),
+    ("wegovy price", "pill", 8),
+    ("wegovy price uk", "pill", 8),
+    ("wegovy uk", "pill", 23),
+    ("cheapest wegovy uk", "pill", 14),
+    ("buy wegovy", "injection", None),
+    ("buy wegovy uk", "injection", None),
+    ("buy wegovy online", "injection", None),
+    ("wegovy side effects", "advice", 8),
+    ("wegovy vs mounjaro", "advice", 25),
+    ("wegovy reviews", "advice", 23),
+]
+
+COMPETITORS = [
+    ("onlinedoctor.superdrug.com", "Superdrug"),
+    ("chemist-4-u.com", "Chemist4U"),
+    ("thefamilychemist.co.uk", "FamilyChemist"),
+    ("medexpress.co.uk", "MedExpress"),
 ]
 
 
 def classify(url: str) -> str:
     s = (url or "").lower()
-    if "weight-loss-pills/wegovy-pills" in s:
+    if "health-advice" in s:
+        return "advice"
+    if "/weight-loss/wegovy-pill" in s:
         return "pill"
-    if "medications/wegovy" in s:
+    if "/weight-loss-pills/wegovy-pills" in s:
         return "legacy"
-    if "online-doctor/weight-loss/wegovy" in s:
+    if "/medications/wegovy" in s:
+        return "legacy"
+    if "/online-doctor/weight-loss/wegovy" in s:
         return "legacy"
     if "/weight-loss/wegovy" in s:
         return "injection"
-    if "health-advice" in s:
-        return "advice"
     return "other"
 
 
@@ -56,7 +82,7 @@ def semrush(params: dict) -> str:
         raise RuntimeError("SEMRUSH_API_KEY is not set")
     q = urllib.parse.urlencode({**params, "key": key})
     url = f"https://api.semrush.com/?{q}"
-    req = urllib.request.Request(url, headers={"User-Agent": "wegovy-sentinel/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "wegovy-sentinel/2.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         text = r.read().decode("utf-8", "replace")
     if text.startswith("ERROR"):
@@ -108,6 +134,34 @@ def fetch_positions() -> list:
     return rows
 
 
+def fetch_competitor_positions() -> dict:
+    comp = {}
+    for domain, label in COMPETITORS:
+        try:
+            rows = []
+            for filt in ("+|Ph|Co|wegovy", "+|Ph|Co|semaglutide"):
+                rows += parse_rows(semrush({
+                    "type": "domain_organic",
+                    "domain": domain,
+                    "database": "uk",
+                    "display_filter": filt,
+                    "display_sort": "nq_desc",
+                    "display_limit": 50,
+                    "export_columns": "Ph,Po,Nq,Ur",
+                }))
+            best = {}
+            for kw, _, _ in TRACKED:
+                hits = [r for r in rows if r["k"] == kw]
+                if hits:
+                    top = min(hits, key=lambda r: r["p"])
+                    best[kw] = {"p": top["p"], "u": top["u"]}
+            if best:
+                comp[label] = best
+        except Exception as e:
+            print(f"[warn] competitor {label}: {e}", file=sys.stderr)
+    return comp
+
+
 def fetch_backlinks() -> dict:
     try:
         text = semrush({
@@ -129,7 +183,7 @@ def fetch_backlinks() -> dict:
     return {"t": 0, "d": 0}
 
 
-def build_snapshot(rows: list, bl: dict, mode: str = "semrush") -> dict:
+def build_snapshot(rows: list, bl: dict, comp: dict, mode: str = "semrush") -> dict:
     clean = []
     for r in rows:
         if r.get("k") and isinstance(r.get("p"), int):
@@ -143,10 +197,15 @@ def build_snapshot(rows: list, bl: dict, mode: str = "semrush") -> dict:
         top = min(hits, key=lambda r: r["p"])
         best[kw] = {"p": top["p"], "c": top["c"], "u": top["u"],
                     "n": len({h["u"] for h in hits})}
+
+    pill_kw = best.get("wegovy pill") or best.get("wegovy pills")
+    pill_pos = pill_kw["p"] if pill_kw else None
+
     bw_inj = [r["p"] for r in clean if r["k"] == "buy wegovy" and r["c"] == "injection"]
+
     flags = {
-        "wrong": any(best[k] and best[k]["c"] == "pill"
-                     for k, g, _ in TRACKED if g == "injection"),
+        "wrong": any(best[k] and best[k]["c"] != g and best[k]["c"] != "advice"
+                     for k, g, _ in TRACKED if best[k]),
         "legacy": any(r["c"] == "legacy" for r in clean),
         "cann": sum(1 for k, _, _ in TRACKED if best[k] and best[k]["n"] > 1),
     }
@@ -154,8 +213,9 @@ def build_snapshot(rows: list, bl: dict, mode: str = "semrush") -> dict:
         "date": today_uk(),
         "mode": mode,
         "best": best,
+        "comp": comp,
         "m": {
-            "pill": best["wegovy pill"]["p"] if best["wegovy pill"] else None,
+            "pill": pill_pos,
             "bwInj": min(bw_inj) if bw_inj else None,
             "blD": bl.get("d", 0),
             "blT": bl.get("t", 0),
@@ -176,7 +236,7 @@ def streak(snaps: list, key: str) -> int:
 
 def arrow(d):
     if d is None:
-        return "-"
+        return "--"
     if d == 0:
         return "="
     return ("+" if d > 0 else "-") + str(abs(d))
@@ -188,26 +248,60 @@ def digest(snaps: list) -> str:
     pill_prev = prev["m"]["pill"] if prev else None
     L = [f"WEGOVY SENTINEL -- {cur['date']}"
          + (f" ({cur['mode']} mode)" if cur["mode"] != "semrush" else "")]
+
     d_prev = (pill_prev - pill) if (pill is not None and pill_prev is not None) else None
-    d_base = (26 - pill) if pill is not None else None
-    line = f"wegovy pill: {'P' + str(pill) if pill else 'n/a'} ({arrow(d_prev)} vs prev / {arrow(d_base)} vs baseline P26)"
+    line = f"  pill keyword: {'P' + str(pill) if pill else 'n/a'} ({arrow(d_prev)} vs prev)"
     if pill is not None and pill <= 10:
         line += " -- PAGE ONE"
     L.append(line)
+
     bw = cur["best"].get("buy wegovy")
     if bw:
-        tag = " ** WRONG PAGE **" if bw["c"] == "pill" else ""
-        L.append(f"buy wegovy: P{bw['p']} via {bw['c'].upper()}{tag}"
+        tag = " [!] WRONG PAGE" if bw["c"] != "injection" else ""
+        L.append(f"  buy wegovy: P{bw['p']} via {bw['c'].upper()}{tag}"
                  + (f" (injection: P{cur['m']['bwInj']})" if cur["m"]["bwInj"] else ""))
+
+    L.append("")
+    L.append("TRACKED KEYWORDS:")
+    L.append(f"  {'Keyword':<30} {'SOP':>5}  {'Superdrug':>10}  {'Chemist4U':>10}  {'FamChem':>10}  {'MedExpr':>10}")
+    L.append("  " + "-" * 85)
+    comp = cur.get("comp", {})
+    for kw, goal, baseline in TRACKED:
+        sop = cur["best"].get(kw)
+        sop_str = f"P{sop['p']}" if sop else "--"
+        cols = [f"  {kw:<30} {sop_str:>5}"]
+        for _, label in COMPETITORS:
+            c = comp.get(label, {}).get(kw)
+            cols.append(f"{('P' + str(c['p'])) if c else '--':>10}")
+        L.append("  ".join(cols))
+
     if cur["flags"]["wrong"]:
-        L.append(f"[!] Wrong-page routing live -- day {streak(snaps, 'wrong')}")
+        L.append(f"\n[!] Wrong-page routing detected -- day {streak(snaps, 'wrong')}")
     if cur["flags"]["legacy"]:
         L.append(f"[!] Legacy URL still ranking -- day {streak(snaps, 'legacy')}")
     if cur["flags"]["cann"]:
         L.append(f"[*] {cur['flags']['cann']} keywords cannibalised (2+ URLs)")
-    L.append(f"Backlinks to pill page: {cur['m']['blD']} referring domains (target {BL_TARGET})")
+
+    L.append(f"\nBacklinks to pill page: {cur['m']['blD']} referring domains (target {BL_TARGET})")
+
+    gaps = []
+    for kw, goal, _ in TRACKED:
+        if goal != "pill":
+            continue
+        sop = cur["best"].get(kw)
+        sop_p = sop["p"] if sop else 999
+        for _, label in COMPETITORS:
+            c = comp.get(label, {}).get(kw)
+            if c and c["p"] < sop_p:
+                gaps.append((kw, label, c["p"], sop_p if sop_p < 999 else None))
+    if gaps:
+        L.append("\nCOMPETITIVE GAPS (pill keywords where competitors outrank SOP):")
+        for kw, label, cp, sp in gaps:
+            sop_str = f"P{sp}" if sp else "n/a"
+            L.append(f"  {kw}: {label} P{cp} vs SOP {sop_str}")
+
     if pill is not None and pill <= 3:
-        L.append("TARGET ACHIEVED -- P1-3. Hold through MHRA decision.")
+        L.append("\n[TARGET] P1-3 achieved. Hold through MHRA decision.")
     return "\n".join(L)
 
 
@@ -228,30 +322,58 @@ def save_history(snaps: list):
 
 FIXTURE_ROWS = (
     "Keyword;Position;Search Volume;Url\n"
-    "buy wegovy;9;2400;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss-pills/wegovy-pills/\n"
-    "buy wegovy;13;2400;https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/\n"
-    "wegovy pill;26;2900;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss-pills/wegovy-pills/\n"
-    "buy wegovy uk;9;880;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/wegovy/\n"
+    "wegovy uk;23;14800;https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/\n"
+    "wegovy price;8;6600;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk/\n"
+    "wegovy price uk;8;2900;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk/\n"
+    "cheapest wegovy uk;14;1900;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk/\n"
+    "wegovy side effects;8;9900;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-side-effects/\n"
+    "wegovy vs mounjaro;25;6600;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-vs-mounjaro/\n"
+    "wegovy reviews;23;9900;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-reviews/\n"
 )
+
+FIXTURE_COMP = {
+    "Superdrug": {
+        "wegovy pill": {"p": 3, "u": "https://onlinedoctor.superdrug.com/wegovy-pill.html"},
+        "wegovy pill uk": {"p": 5, "u": "https://onlinedoctor.superdrug.com/wegovy-pill.html"},
+        "buy wegovy pill": {"p": 8, "u": "https://onlinedoctor.superdrug.com/wegovy-pill.html"},
+    },
+    "Chemist4U": {
+        "wegovy pill": {"p": 5, "u": "https://www.chemist-4-u.com/wegovy-pills"},
+        "wegovy pills": {"p": 4, "u": "https://www.chemist-4-u.com/wegovy-pills"},
+        "wegovy tablets": {"p": 7, "u": "https://www.chemist-4-u.com/wegovy-pills"},
+    },
+    "FamilyChemist": {
+        "wegovy tablets": {"p": 10, "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"},
+    },
+    "MedExpress": {
+        "wegovy pill": {"p": 12, "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy-pill"},
+    },
+}
 
 
 def main():
     test = "--test" in sys.argv
     try:
         if test:
-            rows, bl = parse_rows(FIXTURE_ROWS), {"t": 0, "d": 0}
+            rows = parse_rows(FIXTURE_ROWS)
+            bl = {"t": 2, "d": 2}
+            comp = FIXTURE_COMP
         else:
-            rows, bl = fetch_positions(), fetch_backlinks()
+            rows = fetch_positions()
+            bl = fetch_backlinks()
+            comp = fetch_competitor_positions()
         snaps = load_history()
-        snap = build_snapshot(rows, bl)
+        snap = build_snapshot(rows, bl, comp)
         snaps = [s for s in snaps if s["date"] != snap["date"]] + [snap]
         save_history(snaps)
         text = digest(snaps)
         print(text)
         if test:
-            assert snap["flags"]["wrong"], "wrong-page flag should fire"
-            assert snap["flags"]["legacy"], "legacy flag should fire"
-            assert snap["m"]["pill"] == 26
+            assert snap["m"]["pill"] is None, "pill keywords not in fixture"
+            assert snap["best"]["wegovy uk"]["p"] == 23
+            assert snap["best"]["wegovy price"]["p"] == 8
+            assert "Superdrug" in snap["comp"]
+            assert snap["comp"]["Superdrug"]["wegovy pill"]["p"] == 3
             print("\n[self-test] all assertions passed")
     except Exception as e:
         msg = f"WEGOVY SENTINEL FAILED -- {today_uk()}: {e}"
