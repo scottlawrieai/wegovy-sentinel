@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wegovy Sentinel — daily rank patrol</title>
+<style>
+  :root{
+    --ink:#0A1F44; --panel:#10294F; --panel2:#15325E; --line:#23477E;
+    --cream:#F7F2EE; --slate:#7E92B5; --gold:#C19A3A; --red:#E2574C; --green:#3FA776;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--ink);color:var(--cream);font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;padding-bottom:48px}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .strip{border-bottom:1px solid var(--line);padding:16px 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .strip h1{font-size:18px;letter-spacing:.06em;font-weight:700}
+  .strip h1 span{color:var(--gold)}
+  .sub{font-size:11px;color:var(--slate);margin-top:2px}
+  .meta{margin-left:auto;text-align:right;font-size:11px;color:var(--slate)}
+  .eyebrow{font-size:10px;letter-spacing:.18em;color:var(--slate);text-transform:uppercase;font-weight:700}
+  .banner{margin:16px 20px 0;padding:12px 16px;border-radius:6px;font-size:12px;font-weight:700}
+  .grid{display:flex;flex-wrap:wrap;gap:16px;padding:16px 20px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+  .alt-wrap{flex:0 0 200px;min-width:180px}
+  .alt{position:relative;width:44px;height:300px;background:var(--panel2);border-radius:4px;overflow:hidden}
+  .alt .zone{position:absolute;top:0;left:0;right:0;background:rgba(193,154,58,.16);border-bottom:1px dashed var(--gold)}
+  .alt .t3{position:absolute;left:0;right:0;border-top:2px solid var(--green)}
+  .alt .base{position:absolute;left:0;right:0;border-top:1px dotted var(--slate)}
+  .alt .mk{position:absolute;left:4px;right:4px;height:18px;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--ink);font-weight:800;font-size:11px}
+  .scale{display:flex;flex-direction:column;justify-content:space-between;height:300px;font-size:10px;color:var(--slate)}
+  .flags{flex:1 1 320px;min-width:280px;display:flex;flex-direction:column;gap:10px}
+  .flag{border-radius:6px;padding:10px 12px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12.5px;border:1px solid}
+  .flag.bad{background:rgba(226,87,76,.14);border-color:var(--red);color:#F4B3AD}
+  .flag.ok{background:rgba(63,167,118,.14);border-color:var(--green);color:#A9DCC4}
+  .chip{font-size:10px;font-weight:700;letter-spacing:.08em;padding:3px 8px;border-radius:3px;color:var(--ink);white-space:nowrap}
+  .trend{flex:1 1 340px;min-width:300px}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:640px}
+  th{padding:8px 14px;border-bottom:1px solid var(--line);letter-spacing:.1em;font-size:10px;color:var(--slate);text-align:left}
+  td{padding:9px 14px}
+  tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+  .tbl{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:auto}
+  .tbl .hd{padding:12px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center}
+  .foot{margin:16px 20px 0;font-size:11px;color:var(--slate);line-height:1.6}
+  .foot .rule{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
+  button{font-family:ui-monospace,Menlo,monospace;font-size:11px;background:var(--panel2);color:var(--cream);border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer}
+  svg text{font-family:ui-monospace,Menlo,monospace}
+  .err{margin:24px 20px;padding:14px;border:1px solid var(--gold);border-radius:6px;color:var(--gold);font-size:12px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="strip">
+  <div>
+    <h1 class="mono">WEGOVY <span>SENTINEL</span> <span id="modeBadge"></span></h1>
+    <div class="sub">Daily rank patrol · simpleonlinepharmacy.co.uk · GitHub Actions, 07:00 UK</div>
+  </div>
+  <div class="meta mono" id="meta"></div>
+</div>
+<div id="app"><div class="err">Loading snapshot history…</div></div>
+
+<script>
+const TRACKED=[
+ {kw:"wegovy pill",goal:"pill",base:26,hero:true},
+ {kw:"wegovy pills",goal:"pill",base:25},
+ {kw:"wegovy tablets",goal:"pill",base:43},
+ {kw:"wegovy pill uk",goal:"pill",base:20},
+ {kw:"buy wegovy pills",goal:"pill",base:null},
+ {kw:"oral semaglutide",goal:"pill",base:null},
+ {kw:"buy wegovy",goal:"injection",base:9},
+ {kw:"buy wegovy online",goal:"injection",base:14},
+ {kw:"buy wegovy uk",goal:"injection",base:9},
+ {kw:"where can i buy wegovy uk",goal:"injection",base:7},
+];
+const LBL={pill:"PILL PAGE",injection:"INJECTION",legacy:"LEGACY URL",advice:"ADVICE",other:"OTHER"};
+const CLR={pill:"#C19A3A",injection:"#3FA776",legacy:"#E2574C",advice:"#7E92B5",other:"#7E92B5"};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const arrow=d=>d==null?'<span style="color:#7E92B5">–</span>':d===0?'<span style="color:#7E92B5">=</span>':
+ `<span style="color:${d>0?'#3FA776':'#E2574C'};font-weight:700">${d>0?'▲':'▼'}${Math.abs(d)}</span>`;
+const streak=(snaps,key)=>{let n=0;for(let i=snaps.length-1;i>=0;i--){if(snaps[i].flags&&snaps[i].flags[key])n++;else break;}return n;};
+const altPct=p=>Math.min(100,Math.max(0,((Math.min(p,30)-1)/29)*100));
+
+function trendSVG(snaps){
+  const pts=snaps.slice(-30);
+  if(pts.length<2)return '<div style="height:280px;display:flex;align-items:center;justify-content:center;color:#7E92B5;font-size:12px;text-align:center">Trend appears after two patrols.</div>';
+  const W=560,H=280,L=34,R=8,T=12,B=22,iw=W-L-R,ih=H-T-B;
+  const x=i=>L+iw*(pts.length===1?0:i/(pts.length-1));
+  const y=p=>T+ih*((Math.min(p,30)-1)/29);
+  const line=(key,col)=>{
+    const seg=pts.map((s,i)=>s.m&&s.m[key]!=null?`${x(i)},${y(s.m[key])}`:null).filter(Boolean);
+    if(seg.length<2)return"";
+    return `<polyline fill="none" stroke="${col}" stroke-width="2" points="${seg.join(" ")}"/>`
+      +pts.map((s,i)=>s.m&&s.m[key]!=null?`<circle cx="${x(i)}" cy="${y(s.m[key])}" r="2.5" fill="${col}"/>`:"").join("");
+  };
+  const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#23477E" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#7E92B5" font-size="10">P${p}</text>`).join("");
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:280px">
+    ${grid}
+    <line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="#C19A3A" stroke-dasharray="4 4"/>
+    <line x1="${L}" x2="${W-R}" y1="${y(3)}" y2="${y(3)}" stroke="#3FA776" stroke-dasharray="4 4"/>
+    ${line("pill","#C19A3A")}${line("bwInj","#3FA776")}
+    <text x="${L}" y="${H-6}" fill="#7E92B5" font-size="10">${esc(pts[0].date.slice(5))}</text>
+    <text x="${W-R-38}" y="${H-6}" fill="#7E92B5" font-size="10">${esc(pts[pts.length-1].date.slice(5))}</text>
+  </svg>
+  <div style="font-size:10px;color:#7E92B5;margin-top:4px">Gold = “wegovy pill” (pill page) · Green = “buy wegovy” (injection page) · lower is better</div>`;
+}
+
+function render(snaps){
+  const app=document.getElementById("app");
+  if(!snaps.length){app.innerHTML='<div class="err">No patrols yet. Run the “Daily patrol” workflow once from the Actions tab to seed day zero.</div>';return;}
+  const cur=snaps[snaps.length-1],prev=snaps[snaps.length-2]||null;
+  const pill=cur.m?.pill??null,pillPrev=prev?.m?.pill??null;
+  const pageOne=pill!=null&&pill<=10,target=pill!=null&&pill<=3;
+  document.getElementById("meta").innerHTML=`Last patrol: ${esc(cur.date)} · day ${snaps.length}`;
+  document.getElementById("modeBadge").innerHTML=cur.mode&&cur.mode!=="semrush"?`<span class="chip" style="background:#C19A3A">${esc(cur.mode.toUpperCase())}</span>`:"";
+  const banner=pill==null?"":`<div class="banner mono" style="background:${target?"rgba(63,167,118,.14)":pageOne?"rgba(193,154,58,.16)":"rgba(226,87,76,.14)"};border:1px solid ${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"};color:${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"}">${
+    target?"TARGET ACHIEVED — P1–3 secured. Hold through MHRA decision."
+    :pageOne?"PAGE ONE REACHED ✅ — new mission: P1–3 before MHRA decision."
+    :`MISSION: page one for “wegovy pill” before MHRA decision · currently P${pill} · ${pill-10} positions to the line`}</div>`;
+
+  const flagDefs=[
+    {on:cur.flags?.wrong,days:streak(snaps,"wrong"),ok:"“Buy wegovy” intent now served by the injection page",bad:"Wrong-page routing LIVE — pill page still ranks for buy-intent terms"},
+    {on:cur.flags?.legacy,days:streak(snaps,"legacy"),ok:"Legacy injection URL no longer ranking — migration consolidated",bad:"Legacy /online-doctor/weight-loss/wegovy/ STILL ranking — migration unfinished"},
+    {on:(cur.flags?.cann??0)>0,days:streak(snaps,"cann"),ok:"One URL per keyword — cannibalisation cleared",bad:`${cur.flags?.cann??0} keywords cannibalised (2+ SOP URLs ranking)`},
+    {on:(cur.m?.blD??0)<15,days:null,ok:`Link target met — ${cur.m?.blD} referring domains`,bad:`Backlinks: ${cur.m?.blD??0} referring domains to the pill page · target 15`},
+  ];
+  const flags=flagDefs.map(f=>`<div class="flag ${f.on?"bad":"ok"}"><div>${esc(f.on?f.bad:f.ok)}</div>${
+    f.on&&f.days?`<span class="chip" style="background:#E2574C">DAY ${f.days}</span>`:!f.on?`<span class="chip" style="background:#3FA776">CLEAR</span>`:""}</div>`).join("");
+
+  const rows=TRACKED.map(t=>{
+    const c=cur.best?.[t.kw]||null,pv=prev?.best?.[t.kw]?.p??null,pos=c?.p??null;
+    const wrong=t.goal==="injection"&&c?.c==="pill",legacy=c?.c==="legacy";
+    const posCol=pos==null?"#7E92B5":pos<=10?"#3FA776":pos<=20?"#C19A3A":"#E2574C";
+    return `<tr>
+      <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}</td>
+      <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"—":"P"+pos}</td>
+      <td>${arrow(pv!=null&&pos!=null?pv-pos:null)}</td>
+      <td>${arrow(t.base!=null&&pos!=null?t.base-pos:null)}</td>
+      <td>${c?`<span class="chip" style="background:${CLR[c.c]||"#7E92B5"}">${LBL[c.c]||"OTHER"}</span>`:'<span style="color:#7E92B5">not found</span>'}</td>
+      <td class="mono" style="color:${(c?.n??1)>1?"#E2574C":"#7E92B5"}">${c?c.n:"–"}</td>
+      <td>${wrong?'<span class="chip" style="background:#E2574C">WRONG PAGE</span>'
+        :legacy?'<span class="chip" style="background:#E2574C">LEGACY</span>'
+        :pos!=null&&pos<=10?'<span class="chip" style="background:#3FA776">PAGE ONE</span>'
+        :`<span style="color:#7E92B5;font-size:11px">→ ${t.goal} page</span>`}</td></tr>`;
+  }).join("");
+
+  const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))} P${s.m?.pill??"–"}`).join(" · ");
+
+  app.innerHTML=`${banner}
+  <div class="grid">
+    <div class="card alt-wrap">
+      <div class="eyebrow" style="color:#C19A3A">“wegovy pill” · altitude</div>
+      <div style="display:flex;gap:12px;margin-top:12px">
+        <div class="alt">
+          <div class="zone" style="height:${altPct(10)}%"></div>
+          <div class="t3" style="top:${altPct(3)}%"></div>
+          <div class="base" style="top:${altPct(26)}%"></div>
+          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#C19A3A":"#E2574C"}">P${pill}</div>`:""}
+        </div>
+        <div class="scale mono"><span style="color:#C19A3A">P1</span><span style="color:#3FA776">P3 target</span><span style="color:#C19A3A">P10 · page one</span><span>P26 baseline</span><span>P30+</span></div>
+      </div>
+      <div class="mono" style="margin-top:12px;font-size:12px"><span style="color:#7E92B5">vs prev </span>${arrow(pillPrev!=null&&pill!=null?pillPrev-pill:null)}<span style="color:#7E92B5;margin-left:10px">vs base </span>${arrow(pill!=null?26-pill:null)}</div>
+    </div>
+    <div class="flags"><div class="eyebrow">Structural audit — re-checked every patrol</div>${flags}</div>
+    <div class="card trend"><div class="eyebrow">Trajectory — lower is better</div><div style="margin-top:8px">${trendSVG(snaps)}</div></div>
+  </div>
+  <div class="tbl">
+    <div class="hd"><span class="eyebrow">Tracked cluster — best SOP position per keyword</span><button id="copyBtn">COPY DAILY DIGEST</button></div>
+    <table><thead><tr><th>KEYWORD</th><th>POS</th><th>Δ PREV</th><th>Δ BASE</th><th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
+  </div>
+  <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
+    <div class="rule">Collected by GitHub Actions at 07:00 UK via the Semrush API. Snapshot history lives in <span class="mono">data/snapshots.json</span>. Sentinel stands down when “wegovy pill” holds P1–3.</div>
+  </div>`;
+
+  document.getElementById("copyBtn").onclick=async()=>{
+    const L=[`WEGOVY SENTINEL — ${cur.date}`];
+    L.push(`wegovy pill: ${pill?"P"+pill:"n/a"} (${pillPrev!=null&&pill!=null?(pillPrev-pill===0?"=":(pillPrev-pill>0?"▲":"▼")+Math.abs(pillPrev-pill)):"–"} vs prev · ${pill!=null?(26-pill===0?"=":(26-pill>0?"▲":"▼")+Math.abs(26-pill)):"–"} vs baseline P26)${pageOne?" — PAGE ONE ✅":""}`);
+    const bw=cur.best?.["buy wegovy"];
+    if(bw)L.push(`buy wegovy: P${bw.p} via ${LBL[bw.c]}${bw.c==="pill"?" ⚠️ WRONG PAGE":""}`);
+    if(cur.flags?.wrong)L.push(`🔴 Wrong-page routing live — day ${streak(snaps,"wrong")}`);
+    if(cur.flags?.legacy)L.push(`🔴 Legacy URL still ranking — day ${streak(snaps,"legacy")}`);
+    if(cur.flags?.cann)L.push(`🟡 ${cur.flags.cann} keywords cannibalised`);
+    L.push(`Backlinks: ${cur.m?.blD??0} referring domains · target 15`);
+    try{await navigator.clipboard.writeText(L.join("\n"));const b=document.getElementById("copyBtn");b.textContent="COPIED ✓";setTimeout(()=>b.textContent="COPY DAILY DIGEST",1500);}catch(e){}
+  };
+}
+
+fetch("./snapshots.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+  .then(render)
+  .catch(()=>{document.getElementById("app").innerHTML='<div class="err">No snapshot history found yet.<br><br>1. Add the SEMRUSH_API_KEY secret in repo Settings → Secrets → Actions.<br>2. Run the “Daily patrol” workflow once from the Actions tab.<br>3. Refresh this page.</div>';});
+</script>
+</body>
+</html>
