@@ -320,6 +320,20 @@ def save_history(snaps: list):
             json.dump(snaps, f, indent=1)
 
 
+def post_slack(text: str):
+    """Deliver the daily digest to Slack if SLACK_WEBHOOK_URL is configured."""
+    url = os.environ.get("SLACK_WEBHOOK_URL", "")
+    if not url:
+        return
+    try:
+        data = json.dumps({"text": "```\n" + text[:3500] + "\n```"}).encode()
+        req = urllib.request.Request(
+            url, data=data, headers={"Content-Type": "application/json"})
+        urllib.request.urlopen(req, timeout=15).read()
+    except Exception as e:
+        print(f"[warn] slack post failed: {e}", file=sys.stderr)
+
+
 FIXTURE_ROWS = (
     "Keyword;Position;Search Volume;Url\n"
     "wegovy uk;23;14800;https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/\n"
@@ -368,12 +382,32 @@ def main():
         save_history(snaps)
         text = digest(snaps)
         print(text)
+
+        # Daily content review (on-page gap analysis). Non-fatal: a failure here
+        # must never break the rank patrol.
+        content_text = ""
+        try:
+            import content_audit
+            if test:
+                serp_fn, fetch_fn = content_audit._fixtures()
+                audit = content_audit.build_audit(serp_fn, fetch_fn, mode="test")
+            else:
+                audit = content_audit.run_and_store(mode="live")
+            content_text = content_audit.digest_section(audit)
+            print(content_text)
+        except Exception as e:
+            print(f"[warn] content review unavailable: {e}", file=sys.stderr)
+
+        if not test:
+            post_slack(text + ("\n" + content_text if content_text else ""))
+
         if test:
             assert snap["m"]["pill"] is None, "pill keywords not in fixture"
             assert snap["best"]["wegovy uk"]["p"] == 23
             assert snap["best"]["wegovy price"]["p"] == 8
             assert "Superdrug" in snap["comp"]
             assert snap["comp"]["Superdrug"]["wegovy pill"]["p"] == 3
+            assert content_text and "CONTENT REVIEW" in content_text, "content review ran"
             print("\n[self-test] all assertions passed")
     except Exception as e:
         msg = f"WEGOVY SENTINEL FAILED -- {today_uk()}: {e}"
