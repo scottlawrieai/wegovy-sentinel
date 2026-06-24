@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name "wegovy-sentinel"
           git config user.email "actions@users.noreply.github.com"
-          git add data/snapshots.json docs/snapshots.json || true
+          git add data/snapshots.json docs/snapshots.json data/content.json docs/content.json || true
           git diff --cached --quiet || git commit -m "patrol: $(date -u +%F)"
           git push

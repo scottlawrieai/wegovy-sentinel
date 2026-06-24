@@ -49,6 +49,15 @@
   .err{margin:24px 20px;padding:14px;border:1px solid var(--gold);border-radius:6px;color:var(--gold);font-size:12px;line-height:1.6}
   .pos-cell{font-weight:700;font-size:12px}
   .win{color:#3FA776}.lose{color:#E2574C}.tie{color:#7E92B5}.na{color:#7E92B5}
+  .flag.warnflag{background:rgba(193,154,58,.14);border-color:var(--gold);color:#E6C766}
+  .section-hd{margin:30px 20px 0;padding-top:18px;border-top:2px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+  .section-hd h2{font-size:15px;letter-spacing:.04em;color:var(--cream);font-weight:700}
+  .gauge{font-size:36px;font-weight:800;font-family:ui-monospace,Menlo,monospace}
+  .tag{font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 7px;border-radius:3px;color:var(--ink)}
+  .gap-chip{display:inline-block;font-size:11px;padding:3px 8px;margin:3px 4px 0 0;border-radius:3px;background:var(--panel2);border:1px solid var(--line);color:#F4B3AD}
+  .opp{font-size:12.5px;line-height:1.5;padding:6px 0;border-bottom:1px solid var(--line)}
+  .opp:last-child{border-bottom:none}
+  .role-us{background:#C19A3A}.role-competitor{background:#7E92B5}.role-brand{background:#3FA776}
 </style>
 </head>
 <body>
@@ -60,6 +69,7 @@
   <div class="meta mono" id="meta"></div>
 </div>
 <div id="app"><div class="err">Loading snapshot history...</div></div>
+<div id="content-app"></div>
 
 <script>
 const TRACKED=[
@@ -238,6 +248,101 @@ fetch("./snapshots.json",{cache:"no-store"})
   .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
   .then(render)
   .catch(()=>{document.getElementById("app").innerHTML='<div class="err">No snapshot history found yet.<br><br>1. Add the SEMRUSH_API_KEY secret in repo Settings > Secrets > Actions.<br>2. Run the "Daily patrol" workflow once from the Actions tab.<br>3. Refresh this page.</div>';});
+</script>
+
+<script>
+// ---- Daily content review (on-page gap analysis) -- fetches content.json ----
+const cEsc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const stateChip=st=>{const m={pass:["#3FA776","PASS"],warn:["#C19A3A","IMPROVE"],fail:["#E2574C","FIX"]};const[c,t]=m[st]||m.fail;return `<span class="tag" style="background:${c}">${t}</span>`;};
+const scoreColor=s=>s>=80?"#3FA776":s>=60?"#C19A3A":"#E2574C";
+const TARGET_T=["wegovy pill","wegovy pills","wegovy tablet","oral semaglutide","oral wegovy"];
+
+function renderContent(hist){
+  const el=document.getElementById("content-app");
+  if(!hist||!hist.length){el.innerHTML="";return;}
+  const a=hist[hist.length-1], al=a.align||{checks:[]};
+  const prev=hist.length>1?hist[hist.length-2]:null;
+  const dScore=(prev&&prev.align)?al.score-prev.align.score:null;
+
+  const checks=(al.checks||[]).map(c=>`<div class="flag ${c.state==='pass'?'ok':c.state==='warn'?'warnflag':'bad'}">
+    <div><strong>${cEsc(c.name)}</strong><div style="font-size:11px;color:var(--slate);margin-top:2px">${cEsc(c.evidence)}</div></div>
+    ${stateChip(c.state)}</div>`).join("");
+
+  const rows=(a.pages||[]).map(p=>{
+    const t=(p.title||"").toLowerCase();
+    const hasTarget=TARGET_T.some(x=>t.includes(x));
+    const badge=p.role==='us'?'<span class="tag role-us">US</span>':p.role==='brand'?'<span class="tag role-brand">BRAND</span>':'<span class="tag role-competitor">COMP</span>';
+    return `<tr>
+      <td class="mono">${p.rank?("#"+p.rank):"&mdash;"}</td>
+      <td>${cEsc(p.domain)} ${badge}</td>
+      <td style="max-width:340px">${p.status==='ok'?cEsc(p.title||'(no title)'):'<span class="lose">'+cEsc(p.status)+'</span>'}</td>
+      <td class="mono">${p.wc||'--'}</td>
+      <td class="mono">${(p.h2&&p.h2.length)||0}</td>
+      <td class="mono">${(p.faqs&&p.faqs.length)||0}</td>
+      <td>${p.status==='ok'?(hasTarget?'<span class="win">&#10003;</span>':'<span class="lose">&#10007;</span>'):'--'}</td>
+    </tr>`;
+  }).join("");
+
+  const chips=arr=>(arr&&arr.length)?arr.map(g=>`<span class="gap-chip">${cEsc(g.term)} <span style="color:var(--slate)">&times;${g.competitors}</span></span>`).join(""):'<span style="color:var(--green)">None &mdash; coverage complete</span>';
+  const faqGaps=(al.faq_gaps||[]).slice(0,12).map(q=>`<div class="opp">&bull; ${cEsc(q)}</div>`).join("")||'<div style="color:var(--green)">No FAQ gaps</div>';
+  const opps=(a.opps||[]).map((o,i)=>`<div class="opp"><strong style="color:var(--gold)">${i+1}.</strong> ${cEsc(o)}</div>`).join("");
+  const blocked=(a.blocked&&a.blocked.length)?`<div style="font-size:11px;color:var(--slate);margin-top:8px">Not fetched (bot-blocked/unreachable): ${a.blocked.map(cEsc).join(", ")}</div>`:"";
+
+  el.innerHTML=`
+  <div class="section-hd">
+    <h2>Daily content review</h2>
+    <span class="eyebrow">on-page gap analysis &middot; "${cEsc(a.phrase)}" SERP &middot; optimise for ${(a.primary||[]).map(cEsc).join(", ")}${a.mode&&a.mode!=='live'?' &middot; '+cEsc(a.mode)+' mode':''}</span>
+  </div>
+  <div class="grid">
+    <div class="card alt-wrap" style="flex:0 0 220px">
+      <div class="eyebrow">Pill-page alignment</div>
+      <div class="gauge" style="color:${scoreColor(al.score)};margin-top:10px">${al.score}<span style="font-size:16px;color:var(--slate)">/100</span></div>
+      <div class="mono" style="font-size:11px;color:var(--slate);margin-top:4px">${dScore!=null?('vs prev '+(dScore>0?'+':'')+dScore):'first review'}</div>
+      <div style="font-size:11px;color:var(--slate);margin-top:12px;line-height:1.7">
+        Body terms <strong style="color:var(--cream)">${al.body_cov}%</strong><br>
+        FAQ topics <strong style="color:var(--cream)">${al.faq_cov}%</strong><br>
+        Pages analysed <strong style="color:var(--cream)">${a.fetched}/${(a.pages||[]).length}</strong>
+      </div>${blocked}
+    </div>
+    <div class="flags" style="flex:1 1 420px"><div class="eyebrow">Optimisation checks &mdash; title, meta, H1, opening copy, depth, FAQs, semantics</div>${checks}</div>
+  </div>
+  <div class="tbl">
+    <div class="hd"><span class="eyebrow">Top results analysed vs our pill page</span><button id="copyContent">COPY REVIEW</button></div>
+    <table><thead><tr><th>RANK</th><th>PAGE</th><th>TITLE TAG</th><th>WORDS</th><th>H2</th><th>FAQ</th><th>TARGET KW IN TITLE</th></tr></thead><tbody>${rows}</tbody></table>
+  </div>
+  <div class="grid">
+    <div class="card" style="flex:1 1 320px">
+      <div class="eyebrow" style="color:#E2574C">Missing entities &mdash; brands &middot; trials &middot; compounds</div>
+      <div style="margin-top:8px">${chips(al.entity_gaps)}</div>
+      <div class="eyebrow" style="color:#E2574C;margin-top:16px">Missing terms / topics &mdash; used by &ge;2 competitors</div>
+      <div style="margin-top:8px">${chips(al.term_gaps)}</div>
+    </div>
+    <div class="card" style="flex:1 1 320px">
+      <div class="eyebrow">FAQ gaps &mdash; questions competitors answer, we don't</div>
+      <div style="margin-top:8px">${faqGaps}</div>
+    </div>
+  </div>
+  <div class="tbl" style="padding-bottom:8px">
+    <div class="hd"><span class="eyebrow">Prioritised opportunities</span></div>
+    <div style="padding:6px 16px">${opps||'<div style="color:var(--slate);font-size:12px">No actions &mdash; page is well aligned.</div>'}</div>
+  </div>`;
+
+  const btn=document.getElementById("copyContent");
+  if(btn)btn.onclick=async()=>{
+    const L=[`WEGOVY SENTINEL -- CONTENT REVIEW ${a.date}`,`"${a.phrase}" -- alignment ${al.score}/100 (body ${al.body_cov}%, FAQ ${al.faq_cov}%)`,""];
+    (al.checks||[]).forEach(c=>L.push(`[${c.state.toUpperCase()}] ${c.name}: ${c.evidence}`));
+    if((al.entity_gaps||[]).length)L.push("\nMissing entities: "+al.entity_gaps.map(g=>g.term).join(", "));
+    if((al.term_gaps||[]).length)L.push("Missing terms: "+al.term_gaps.map(g=>g.term).join(", "));
+    if((al.faq_gaps||[]).length){L.push("\nFAQ gaps:");al.faq_gaps.forEach(q=>L.push(" - "+q));}
+    if((a.opps||[]).length){L.push("\nOpportunities:");a.opps.forEach((o,i)=>L.push(` ${i+1}. ${o}`));}
+    try{await navigator.clipboard.writeText(L.join("\n"));btn.textContent="COPIED";setTimeout(()=>btn.textContent="COPY REVIEW",1500);}catch(e){}
+  };
+}
+
+fetch("./content.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+  .then(renderContent)
+  .catch(()=>{/* content review not seeded yet -- leave the panel empty */});
 </script>
 </body>
 </html>
