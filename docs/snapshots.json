@@ -245,5 +245,229 @@
    "legacy": true,
    "cann": 4
   }
+ },
+ {
+  "date": "2026-06-25",
+  "mode": "semrush",
+  "best": {
+   "wegovy pill": null,
+   "wegovy pills": null,
+   "buy wegovy pill": null,
+   "buy wegovy pills": null,
+   "wegovy pill uk": null,
+   "wegovy tablets": null,
+   "oral semaglutide": null,
+   "wegovy price": {
+    "p": 8,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk/",
+    "n": 2
+   },
+   "wegovy price uk": {
+    "p": 23,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk/",
+    "n": 1
+   },
+   "wegovy uk": {
+    "p": 23,
+    "c": "pill",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
+    "n": 2
+   },
+   "cheapest wegovy uk": {
+    "p": 14,
+    "c": "injection",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
+    "n": 1
+   },
+   "buy wegovy": null,
+   "buy wegovy uk": null,
+   "buy wegovy online": {
+    "p": 64,
+    "c": "other",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/ozempic/",
+    "n": 1
+   },
+   "wegovy side effects": {
+    "p": 8,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects/",
+    "n": 2
+   },
+   "wegovy vs mounjaro": {
+    "p": 25,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-vs-mounjaro/",
+    "n": 4
+   },
+   "wegovy reviews": {
+    "p": 23,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-reviews/",
+    "n": 1
+   }
+  },
+  "comp": {
+   "Superdrug": {
+    "wegovy pill": {
+     "p": 3,
+     "u": "https://onlinedoctor.superdrug.com/wegovy-pill.html"
+    },
+    "oral semaglutide": {
+     "p": 27,
+     "u": "https://onlinedoctor.superdrug.com/semaglutide.html"
+    },
+    "wegovy price": {
+     "p": 2,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "wegovy price uk": {
+     "p": 2,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "wegovy uk": {
+     "p": 12,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "cheapest wegovy uk": {
+     "p": 24,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "buy wegovy": {
+     "p": 2,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "buy wegovy online": {
+     "p": 2,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "wegovy side effects": {
+     "p": 28,
+     "u": "https://onlinedoctor.superdrug.com/wegovy-side-effects.html"
+    },
+    "wegovy vs mounjaro": {
+     "p": 23,
+     "u": "https://onlinedoctor.superdrug.com/mounjaro-vs-wegovy.html"
+    }
+   },
+   "Chemist4U": {
+    "wegovy pill": {
+     "p": 8,
+     "u": "https://www.chemist-4-u.com/wegovy-pills"
+    },
+    "wegovy price": {
+     "p": 12,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-prices/"
+    },
+    "wegovy price uk": {
+     "p": 12,
+     "u": "https://www.chemist-4-u.com/wegovy"
+    },
+    "wegovy uk": {
+     "p": 15,
+     "u": "https://www.chemist-4-u.com/wegovy"
+    },
+    "cheapest wegovy uk": {
+     "p": 10,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-prices/"
+    },
+    "buy wegovy": {
+     "p": 53,
+     "u": "https://www.chemist-4-u.com/wegovy-semaglutide"
+    },
+    "buy wegovy online": {
+     "p": 15,
+     "u": "https://www.chemist-4-u.com/wegovy"
+    },
+    "wegovy side effects": {
+     "p": 12,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-side-effects/"
+    },
+    "wegovy vs mounjaro": {
+     "p": 2,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/mounjaro-vs-wegovy/"
+    }
+   },
+   "FamilyChemist": {
+    "wegovy pill": {
+     "p": 5,
+     "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
+    },
+    "wegovy pills": {
+     "p": 15,
+     "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
+    },
+    "wegovy tablets": {
+     "p": 35,
+     "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
+    },
+    "wegovy uk": {
+     "p": 29,
+     "u": "https://www.thefamilychemist.co.uk/wegovy/"
+    },
+    "cheapest wegovy uk": {
+     "p": 12,
+     "u": "https://www.thefamilychemist.co.uk/wegovy/"
+    },
+    "buy wegovy": {
+     "p": 20,
+     "u": "https://www.thefamilychemist.co.uk/wegovy/"
+    },
+    "buy wegovy online": {
+     "p": 20,
+     "u": "https://www.thefamilychemist.co.uk/wegovy/"
+    },
+    "wegovy vs mounjaro": {
+     "p": 38,
+     "u": "https://www.thefamilychemist.co.uk/mounjaro-vs-wegovy-the-verdict-on-the-best-weight-loss-medication/"
+    }
+   },
+   "MedExpress": {
+    "wegovy pill": {
+     "p": 7,
+     "u": "https://www.medexpress.co.uk/health-centre/wegovy-pill/"
+    },
+    "wegovy price": {
+     "p": 3,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "wegovy price uk": {
+     "p": 5,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "wegovy uk": {
+     "p": 4,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "cheapest wegovy uk": {
+     "p": 18,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "buy wegovy": {
+     "p": 4,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "buy wegovy online": {
+     "p": 6,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "wegovy side effects": {
+     "p": 31,
+     "u": "https://www.medexpress.co.uk/health-centre/wegovy-side-effects/"
+    }
+   }
+  },
+  "m": {
+   "pill": null,
+   "bwInj": null,
+   "blD": 0,
+   "blT": 0
+  },
+  "flags": {
+   "wrong": true,
+   "legacy": true,
+   "cann": 4
+  }
  }
 ]
