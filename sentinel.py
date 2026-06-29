@@ -413,7 +413,8 @@ def main():
         snaps = load_history()
         snap = build_snapshot(rows, bl, comp, src)
         snaps = [s for s in snaps if s["date"] != snap["date"]] + [snap]
-        save_history(snaps)
+        if not test:
+            save_history(snaps)   # never overwrite real history during a self-test
         text = digest(snaps)
         print(text)
 
