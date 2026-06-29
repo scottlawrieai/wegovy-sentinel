@@ -40,15 +40,28 @@ One-time setup:
 
 ## Advanced Web Ranking (AWR)
 
-Uses the AWR Cloud v2 "get" API.
+Supports both AWR APIs and auto-selects by token type:
+
+- **Modern** (`api.advancedwebranking.com`) — Bearer **JWT** auth. Used
+  automatically when the token looks like a JWT.
+- **Legacy AWR Cloud** (`api.awrcloud.com`) — token passed in the query string.
+
+Setup:
 
 1. Add repo **secret** `AWR_API_TOKEN` (AWR → account → API).
+   > ⚠️ Keep this out of code/chat. If a token is ever exposed, rotate it in AWR.
 2. Add repo **variables**:
    - `AWR_PROJECT` — the AWR project name that tracks these keywords.
    - Optional `AWR_GEO` (default `United Kingdom`), `AWR_DEVICE` (default `mobile`).
+   - Optional `AWR_AUTH` (`bearer` | `query`) to force a mode.
    - Optional `AWR_BASE` / `AWR_ACTION` if your plan's endpoint differs — the
      response parser detects keyword/position fields flexibly, so a tweak here
      is usually all that's needed (no code change).
+
+> The exact ranking endpoint/response shape on the modern API still needs to be
+> confirmed against a live response (this dev sandbox blocks egress to AWR). The
+> first patrol run in GitHub Actions (clean egress) will exercise it; if the
+> field mapping needs adjusting, set `AWR_BASE` or share a sample response.
 
 ---
 

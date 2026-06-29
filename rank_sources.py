@@ -25,10 +25,13 @@ Env (GSC):
 
 Env (AWR):
   AWR_API_TOKEN, AWR_PROJECT                            (both required to enable)
+  AWR_AUTH        "bearer" (modern api.advancedwebranking.com, Bearer JWT) or
+                  "query"  (legacy api.awrcloud.com). Auto: bearer if the token
+                  looks like a JWT, else query.
   AWR_GEO         default "United Kingdom"  (substring-matched against AWR location)
   AWR_DEVICE      default "mobile"          (substring-matched against AWR device)
-  AWR_BASE        default "https://api.awrcloud.com/v2/get.php"
-  AWR_ACTION      default "export_ranking_data"  (override to suit your AWR plan)
+  AWR_BASE        override the endpoint to suit your AWR plan
+  AWR_ACTION      default "export_ranking_data"  (legacy query mode only)
 """
 import json
 import os
@@ -152,27 +155,36 @@ def _pick(d, names):
 
 
 def fetch_awr(keywords) -> dict:
-    """Return {keyword_lower: position} from AWR Cloud. Empty if not configured.
+    """Return {keyword_lower: position} from Advanced Web Ranking. Empty if off.
 
-    Endpoint/action/response shape vary by AWR plan, so AWR_BASE and AWR_ACTION
-    are overridable and the parser detects keyword/position fields flexibly.
+    Supports two AWR APIs:
+      - modern (api.advancedwebranking.com): Bearer JWT auth. Default when the
+        token looks like a JWT (two dots) or AWR_AUTH=bearer.
+      - legacy AWR Cloud (api.awrcloud.com/v2/get.php): token in query string.
+
+    Endpoint/response shape vary by plan, so AWR_BASE / AWR_ACTION are
+    overridable and the parser detects keyword/position fields flexibly.
     """
     token = os.environ.get("AWR_API_TOKEN", "")
     project = os.environ.get("AWR_PROJECT", "")
     if not (token and project):
         return {}
-    base = os.environ.get("AWR_BASE", "https://api.awrcloud.com/v2/get.php")
+    auth = os.environ.get("AWR_AUTH", "bearer" if token.count(".") == 2 else "query")
+    default_base = ("https://api.advancedwebranking.com/v1/ranking"
+                    if auth == "bearer" else "https://api.awrcloud.com/v2/get.php")
+    base = os.environ.get("AWR_BASE", default_base)
     action = os.environ.get("AWR_ACTION", "export_ranking_data")
     geo = os.environ.get("AWR_GEO", "United Kingdom").lower()
     device = os.environ.get("AWR_DEVICE", "mobile").lower()
-    q = urllib.parse.urlencode({
-        "action": action,
-        "token": token,
-        "project": project,
-        "date": _today_uk().isoformat(),
-    })
+
+    params = {"project": project, "date": _today_uk().isoformat()}
+    headers = {"User-Agent": "wegovy-sentinel/3.0", "Accept": "application/json"}
+    if auth == "bearer":
+        headers["Authorization"] = f"Bearer {token}"
+    else:
+        params.update({"action": action, "token": token})
     req = urllib.request.Request(
-        f"{base}?{q}", headers={"User-Agent": "wegovy-sentinel/3.0"})
+        f"{base}?{urllib.parse.urlencode(params)}", headers=headers)
     with urllib.request.urlopen(req, timeout=45) as r:
         raw = r.read().decode("utf-8", "replace")
     try:
