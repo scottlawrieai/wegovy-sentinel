@@ -157,15 +157,22 @@ function render(snaps){
 
   const comp=cur.comp||{};
   const compHeaders=COMP_LABELS.map(l=>`<th>${COMP_SHORT[l]||l}</th>`).join("");
+  const gsc=cur.src?.gsc||{}, awr=cur.src?.awr||{};
+  const posC=p=>p==null?"#7E92B5":p<=10?"#3FA776":p<=20?"#C19A3A":"#E2574C";
 
   const rows=TRACKED.map(t=>{
     const c=cur.best?.[t.kw]||null,pv=prev?.best?.[t.kw]?.p??null,pos=c?.p??null;
     const wrong=c&&t.goal!==c.c&&c.c!=="advice",legacy=c?.c==="legacy";
-    const posCol=pos==null?"#7E92B5":pos<=10?"#3FA776":pos<=20?"#C19A3A":"#E2574C";
+    const posCol=posC(pos);
+    const g=gsc[t.kw]||null, a=awr[t.kw]??null;
+    const gscCell=g?`<td class="mono pos-cell" style="color:${posC(g.pos)}" title="${g.clicks} clicks · ${g.impr} impressions · ${g.ctr}% CTR (trailing window)">P${g.pos}<span style="color:#7E92B5;font-weight:400"> · ${g.clicks}clk</span></td>`:'<td class="mono na">--</td>';
+    const awrCell=a!=null?`<td class="mono pos-cell" style="color:${posC(a)}">P${a}</td>`:'<td class="mono na">--</td>';
     const compCells=COMP_LABELS.map(l=>compCell(comp,l,t.kw,pos)).join("");
     return `<tr>
       <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}</td>
       <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":"P"+pos}</td>
+      ${gscCell}
+      ${awrCell}
       <td>${arrow(pv!=null&&pos!=null?pv-pos:null)}</td>
       ${compCells}
       <td>${c?`<span class="chip" style="background:${CLR[c.c]||"#7E92B5"}">${LBL[c.c]||"OTHER"}</span>`:'<span style="color:#7E92B5">--</span>'}</td>
@@ -216,12 +223,12 @@ function render(snaps){
     <div class="card trend"><div class="eyebrow">Trajectory -- lower is better</div><div style="margin-top:8px">${trendSVG(snaps)}</div></div>
   </div>
   <div class="tbl">
-    <div class="hd"><span class="eyebrow">Tracked keywords -- SOP vs competitors</span><button id="copyBtn">COPY DIGEST</button></div>
-    <table><thead><tr><th>KEYWORD</th><th>SOP</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
+    <div class="hd"><span class="eyebrow">Tracked keywords -- SOP across sources vs competitors</span><button id="copyBtn">COPY DIGEST</button></div>
+    <table><thead><tr><th>KEYWORD</th><th>SEMRUSH</th><th>GSC</th><th>AWR</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
   </div>
   ${gapSection}
   <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
-    <div class="rule">Collected by GitHub Actions at 07:00 UK via the Semrush API. Competitors: Superdrug, Chemist4U, The Family Chemist, MedExpress. Snapshot history in <span class="mono">data/snapshots.json</span>.</div>
+    <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Three ranking sources for our pages:</strong> <span style="color:#C19A3A">Semrush</span> (modelled UK desktop), <span style="color:#C19A3A">GSC</span> (Google's own data -- avg position + clicks/impressions, trailing window; hover for detail), <span style="color:#C19A3A">AWR</span> (tracked UK/mobile rank). vs PREV tracks the Semrush position. GSC/AWR columns populate once their secrets are added. Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
   </div>`;
 
   document.getElementById("copyBtn").onclick=async()=>{
@@ -233,8 +240,10 @@ function render(snaps){
     TRACKED.forEach(t=>{
       const c=cur.best?.[t.kw];
       const sp=c?"P"+c.p:"--";
+      const g=gsc[t.kw],a=awr[t.kw];
+      const gs=g?"P"+g.pos:"--",as=a!=null?"P"+a:"--";
       const cs=COMP_LABELS.map(l=>{const x=comp[l]?.[t.kw];return x?"P"+x.p:"--";});
-      L.push(`${t.kw}: SOP ${sp} | SD ${cs[0]} | C4U ${cs[1]} | FC ${cs[2]} | MX ${cs[3]}`);
+      L.push(`${t.kw}: Semrush ${sp} | GSC ${gs} | AWR ${as} | SD ${cs[0]} | C4U ${cs[1]} | FC ${cs[2]} | MX ${cs[3]}`);
     });
     if(cur.flags?.wrong)L.push(`\n[!] Wrong-page routing live -- day ${streak(snaps,"wrong")}`);
     if(cur.flags?.legacy)L.push(`[!] Legacy URL still ranking -- day ${streak(snaps,"legacy")}`);
