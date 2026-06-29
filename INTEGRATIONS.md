@@ -40,28 +40,32 @@ One-time setup:
 
 ## Advanced Web Ranking (AWR)
 
-Supports both AWR APIs and auto-selects by token type:
+Uses the documented **AWR Cloud v2 export API**
+(`https://api.awrcloud.com/v2/get.php`): calls `export_ranking` with
+`format=json`, follows the returned file URL, and parses the keyword groups,
+selecting the UK / mobile result per keyword.
 
-- **Modern** (`api.advancedwebranking.com`) — Bearer **JWT** auth. Used
-  automatically when the token looks like a JWT.
-- **Legacy AWR Cloud** (`api.awrcloud.com`) — token passed in the query string.
+> ⚠️ **Use the right token.** AWR has two different credentials:
+> - **AWR Cloud v2 API token** — a plain string from **Connectors & API
+>   Settings**. *This* is what the daily patrol needs.
+> - **MCP server JWT** (`api.advancedwebranking.com/mcp`) — for connecting AWR
+>   to ChatGPT/Claude. It is **not** the v2 API token and won't work here.
+>
+> If a token is ever pasted into chat or code, rotate it in AWR.
 
 Setup:
 
-1. Add repo **secret** `AWR_API_TOKEN` (AWR → account → API).
-   > ⚠️ Keep this out of code/chat. If a token is ever exposed, rotate it in AWR.
+1. Add repo **secret** `AWR_API_TOKEN` = your **AWR Cloud v2 API token**.
 2. Add repo **variables**:
    - `AWR_PROJECT` — the AWR project name that tracks these keywords.
    - Optional `AWR_GEO` (default `United Kingdom`), `AWR_DEVICE` (default `mobile`).
-   - Optional `AWR_AUTH` (`bearer` | `query`) to force a mode.
-   - Optional `AWR_BASE` / `AWR_ACTION` if your plan's endpoint differs — the
-     response parser detects keyword/position fields flexibly, so a tweak here
-     is usually all that's needed (no code change).
+   - Optional `AWR_AUTH=bearer` + `AWR_BASE` to use a Bearer-token endpoint
+     instead of the v2 export API.
 
-> The exact ranking endpoint/response shape on the modern API still needs to be
-> confirmed against a live response (this dev sandbox blocks egress to AWR). The
-> first patrol run in GitHub Actions (clean egress) will exercise it; if the
-> field mapping needs adjusting, set `AWR_BASE` or share a sample response.
+> The v2 export field names are confirmed by the parser flexibly (it walks
+> nested groups and detects keyword/position fields). This dev sandbox blocks
+> egress to AWR, so the first GitHub Actions run (clean egress) is what verifies
+> it end to end; if anything needs adjusting, share a sample response.
 
 ---
 

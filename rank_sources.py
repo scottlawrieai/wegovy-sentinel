@@ -24,14 +24,15 @@ Env (GSC):
   GSC_DAYS        default 28   (trailing window; GSC data lags ~3 days)
 
 Env (AWR):
-  AWR_API_TOKEN, AWR_PROJECT                            (both required to enable)
-  AWR_AUTH        "bearer" (modern api.advancedwebranking.com, Bearer JWT) or
-                  "query"  (legacy api.awrcloud.com). Auto: bearer if the token
-                  looks like a JWT, else query.
+  AWR_API_TOKEN, AWR_PROJECT     (both required to enable)
+                  NOTE: use the AWR Cloud v2 API token (Connectors & API
+                  Settings), NOT the MCP server JWT -- those are different.
+  AWR_AUTH        "query" (default; AWR Cloud v2 export, token in query string)
+                  or "bearer" (Bearer-token endpoint via AWR_BASE).
   AWR_GEO         default "United Kingdom"  (substring-matched against AWR location)
   AWR_DEVICE      default "mobile"          (substring-matched against AWR device)
   AWR_BASE        override the endpoint to suit your AWR plan
-  AWR_ACTION      default "export_ranking_data"  (legacy query mode only)
+  AWR_ACTION      default "export_ranking"  (query mode)
 """
 import json
 import os
@@ -124,26 +125,27 @@ def _num(v):
         return None
 
 
+_KW_FIELDS = ("keyword", "kw", "phrase", "query", "term", "name")
+_POS_FIELDS = ("position", "rank", "pos", "ranking", "current", "google")
+
+
 def _awr_iter(payload):
-    """Yield candidate row dicts from whatever shape AWR returns."""
-    if isinstance(payload, list):
+    """Recursively yield dicts that look like a keyword+position record.
+
+    AWR's export is a nested list of keyword groups, so we walk the whole
+    structure and surface any dict carrying both a keyword-ish and a
+    position-ish field.
+    """
+    if isinstance(payload, dict):
+        keys = {str(k).lower() for k in payload}
+        if keys & set(_KW_FIELDS) and keys & set(_POS_FIELDS):
+            yield payload
+        for v in payload.values():
+            if isinstance(v, (list, dict)):
+                yield from _awr_iter(v)
+    elif isinstance(payload, list):
         for x in payload:
-            if isinstance(x, dict):
-                yield x
-    elif isinstance(payload, dict):
-        for key in ("rows", "data", "keywords", "results", "ranking"):
-            v = payload.get(key)
-            if isinstance(v, list):
-                for x in v:
-                    if isinstance(x, dict):
-                        yield x
-                return
-        # dict keyed by keyword -> position/record
-        for k, v in payload.items():
-            if isinstance(v, dict):
-                yield {"keyword": k, **v}
-            elif _num(v) is not None:
-                yield {"keyword": k, "position": v}
+            yield from _awr_iter(x)
 
 
 def _pick(d, names):
@@ -154,43 +156,62 @@ def _pick(d, names):
     return None
 
 
+def _awr_get(url, headers):
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=45) as r:
+        return r.read().decode("utf-8", "replace")
+
+
 def fetch_awr(keywords) -> dict:
     """Return {keyword_lower: position} from Advanced Web Ranking. Empty if off.
 
-    Supports two AWR APIs:
-      - modern (api.advancedwebranking.com): Bearer JWT auth. Default when the
-        token looks like a JWT (two dots) or AWR_AUTH=bearer.
-      - legacy AWR Cloud (api.awrcloud.com/v2/get.php): token in query string.
-
-    Endpoint/response shape vary by plan, so AWR_BASE / AWR_ACTION are
-    overridable and the parser detects keyword/position fields flexibly.
+    Default path is the documented AWR Cloud v2 export API
+    (api.awrcloud.com/v2/get.php, token in the query string, format=json).
+    export_ranking returns a URL to a generated file, which we then download
+    and parse. Set AWR_AUTH=bearer (+ AWR_BASE) to use a Bearer-token endpoint
+    instead. The parser walks nested keyword groups and detects fields flexibly.
     """
     token = os.environ.get("AWR_API_TOKEN", "")
     project = os.environ.get("AWR_PROJECT", "")
     if not (token and project):
         return {}
-    auth = os.environ.get("AWR_AUTH", "bearer" if token.count(".") == 2 else "query")
-    default_base = ("https://api.advancedwebranking.com/v1/ranking"
-                    if auth == "bearer" else "https://api.awrcloud.com/v2/get.php")
+    auth = os.environ.get("AWR_AUTH", "query")
+    default_base = ("https://api.advancedwebranking.com" if auth == "bearer"
+                    else "https://api.awrcloud.com/v2/get.php")
     base = os.environ.get("AWR_BASE", default_base)
-    action = os.environ.get("AWR_ACTION", "export_ranking_data")
+    action = os.environ.get("AWR_ACTION", "export_ranking")
     geo = os.environ.get("AWR_GEO", "United Kingdom").lower()
     device = os.environ.get("AWR_DEVICE", "mobile").lower()
 
-    params = {"project": project, "date": _today_uk().isoformat()}
     headers = {"User-Agent": "wegovy-sentinel/3.0", "Accept": "application/json"}
     if auth == "bearer":
         headers["Authorization"] = f"Bearer {token}"
+        url = f"{base}?{urllib.parse.urlencode({'project': project})}"
     else:
-        params.update({"action": action, "token": token})
-    req = urllib.request.Request(
-        f"{base}?{urllib.parse.urlencode(params)}", headers=headers)
-    with urllib.request.urlopen(req, timeout=45) as r:
-        raw = r.read().decode("utf-8", "replace")
+        url = f"{base}?{urllib.parse.urlencode({'action': action, 'token': token, 'project': project, 'format': 'json'})}"
+
+    raw = _awr_get(url, headers)
     try:
         payload = json.loads(raw)
     except json.JSONDecodeError:
         raise RuntimeError(f"AWR returned non-JSON ({raw.strip()[:80]})")
+
+    # v2 export hands back a URL to a generated JSON file -- follow it once.
+    follow = None
+    if isinstance(payload, dict):
+        for k in ("details", "url", "file", "download", "link"):
+            v = payload.get(k)
+            if isinstance(v, str) and v.startswith("http"):
+                follow = v
+                break
+    elif isinstance(payload, str) and payload.startswith("http"):
+        follow = payload
+    if follow:
+        raw = _awr_get(follow, headers)
+        try:
+            payload = json.loads(raw)
+        except json.JSONDecodeError:
+            raise RuntimeError(f"AWR file not JSON ({raw.strip()[:80]})")
 
     want = {k.lower() for k in keywords}
     out = {}
