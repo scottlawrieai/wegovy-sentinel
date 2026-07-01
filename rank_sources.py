@@ -36,7 +36,9 @@ Env (AWR):
 """
 import json
 import os
+import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
@@ -162,6 +164,47 @@ def _awr_get(url, headers):
         return r.read().decode("utf-8", "replace")
 
 
+def _awr_json(url, headers):
+    raw = _awr_get(url, headers)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        raise RuntimeError(f"AWR non-JSON ({raw.strip()[:80]})")
+
+
+def _awr_url(payload):
+    """Extract a generated-file URL from an AWR response, if present."""
+    if isinstance(payload, dict):
+        for k in ("details", "url", "file", "download", "link"):
+            v = payload.get(k)
+            if isinstance(v, str) and v.startswith("http"):
+                return v
+    elif isinstance(payload, str) and payload.startswith("http"):
+        return payload
+    return None
+
+
+_DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+
+def _awr_latest_date(payload):
+    """Find the most recent YYYY-MM-DD anywhere in an AWR get_dates response."""
+    found = set()
+
+    def walk(x):
+        if isinstance(x, str):
+            found.update(_DATE_RE.findall(x))
+        elif isinstance(x, dict):
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+
+    walk(payload)
+    return max(found) if found else None       # ISO dates sort chronologically
+
+
 def fetch_awr(keywords) -> dict:
     """Return {keyword_lower: position} from Advanced Web Ranking. Empty if off.
 
@@ -184,34 +227,45 @@ def fetch_awr(keywords) -> dict:
     device = os.environ.get("AWR_DEVICE", "mobile").lower()
 
     headers = {"User-Agent": "wegovy-sentinel/3.0", "Accept": "application/json"}
+
     if auth == "bearer":
         headers["Authorization"] = f"Bearer {token}"
-        url = f"{base}?{urllib.parse.urlencode({'project': project})}"
+        payload = _awr_json(f"{base}?{urllib.parse.urlencode({'project': project})}", headers)
     else:
-        url = f"{base}?{urllib.parse.urlencode({'action': action, 'token': token, 'project': project, 'format': 'json'})}"
-
-    raw = _awr_get(url, headers)
-    try:
-        payload = json.loads(raw)
-    except json.JSONDecodeError:
-        raise RuntimeError(f"AWR returned non-JSON ({raw.strip()[:80]})")
-
-    # v2 export hands back a URL to a generated JSON file -- follow it once.
-    follow = None
-    if isinstance(payload, dict):
-        for k in ("details", "url", "file", "download", "link"):
-            v = payload.get(k)
-            if isinstance(v, str) and v.startswith("http"):
-                follow = v
+        common = {"token": token, "project": project, "format": "json"}
+        # 1. AWR Cloud v2 export_ranking needs a date range -- get the latest date.
+        start = os.environ.get("AWR_START_DATE", "")
+        stop = os.environ.get("AWR_STOP_DATE", "")
+        if not (start and stop):
+            dates = _awr_json(
+                f"{base}?{urllib.parse.urlencode({'action': 'get_dates', **common})}", headers)
+            latest = _awr_latest_date(dates)
+            start = stop = latest or ""
+        # 2. schedule/fetch the ranking export for that date.
+        exp_params = {"action": action, **common}
+        if start and stop:
+            exp_params["startDate"], exp_params["stopDate"] = start, stop
+        exp = _awr_json(f"{base}?{urllib.parse.urlencode(exp_params)}", headers)
+        code = exp.get("response_code") if isinstance(exp, dict) else None
+        msg = exp.get("message") if isinstance(exp, dict) else None
+        # 3. export is async -- follow the generated-file URL, retrying while it builds.
+        payload, follow = None, _awr_url(exp)
+        for attempt in range(6):
+            if not follow:
                 break
-    elif isinstance(payload, str) and payload.startswith("http"):
-        follow = payload
-    if follow:
-        raw = _awr_get(follow, headers)
-        try:
-            payload = json.loads(raw)
-        except json.JSONDecodeError:
-            raise RuntimeError(f"AWR file not JSON ({raw.strip()[:80]})")
+            try:
+                cand = _awr_json(follow, headers)
+                if any(True for _ in _awr_iter(cand)):
+                    payload = cand
+                    break
+                payload = cand
+            except Exception:
+                pass
+            time.sleep(3)
+        if payload is None:
+            print(f"[awr] export unavailable: code={code} msg={msg} "
+                  f"date={start} url={'yes' if follow else 'no'}", file=sys.stderr)
+            payload = exp
 
     want = {k.lower() for k in keywords}
     strict, loose = {}, {}         # strict = geo/device matched; loose = any
@@ -246,9 +300,10 @@ def fetch_awr(keywords) -> dict:
         top = (list(payload.keys())[:8] if isinstance(payload, dict)
                else f"{type(payload).__name__}[{len(payload)}]" if isinstance(payload, list)
                else str(payload)[:80])
-        code = payload.get("response_code") or payload.get("message") if isinstance(payload, dict) else None
+        code = payload.get("response_code") if isinstance(payload, dict) else None
+        msg = payload.get("message") if isinstance(payload, dict) else None
         print(f"[awr] no positions: rows={rows_seen} matched={matched} "
-              f"top={top} code={code} sample_kw={sample}", file=sys.stderr)
+              f"top={top} code={code} msg={msg} sample_kw={sample}", file=sys.stderr)
     elif out is loose:
         print(f"[awr] geo/device filter matched nothing (geo='{geo}' device='{device}'); "
               f"using unfiltered best positions for {len(out)} keywords", file=sys.stderr)
