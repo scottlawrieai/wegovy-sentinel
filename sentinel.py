@@ -76,12 +76,12 @@ def today_uk() -> str:
     return datetime.now(ZoneInfo("Europe/London")).strftime("%Y-%m-%d")
 
 
-def semrush(params: dict) -> str:
+def semrush(params: dict, base: str = "https://api.semrush.com/") -> str:
     key = os.environ.get("SEMRUSH_API_KEY", "")
     if not key:
         raise RuntimeError("SEMRUSH_API_KEY is not set")
     q = urllib.parse.urlencode({**params, "key": key})
-    url = f"https://api.semrush.com/?{q}"
+    url = f"{base}?{q}"
     req = urllib.request.Request(url, headers={"User-Agent": "wegovy-sentinel/2.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         text = r.read().decode("utf-8", "replace")
@@ -164,12 +164,13 @@ def fetch_competitor_positions() -> dict:
 
 def fetch_backlinks() -> dict:
     try:
+        # Backlink reports live on the analytics/v1 endpoint (root returns 400).
         text = semrush({
             "type": "backlinks_overview",
             "target": PILL_PAGE,
             "target_type": "url",
             "export_columns": "total,domains_num",
-        })
+        }, base="https://api.semrush.com/analytics/v1/")
         lines = [l for l in text.splitlines() if l.strip()]
         if len(lines) >= 2:
             cols = [c.strip().lower() for c in lines[0].split(";")]
@@ -315,6 +316,20 @@ def digest(snaps: list) -> str:
 
     L.append(f"\nBacklinks to pill page: {cur['m']['blD']} referring domains (target {BL_TARGET})")
 
+    tech = cur.get("tech") or {}
+    if tech.get("checks"):
+        L.append(f"\nTECH HEALTH (pill page): {tech['score']}/{tech['of']} checks pass")
+        for c in tech["checks"]:
+            if c["state"] != "pass":
+                L.append(f"  [{c['state'].upper()}] {c['name']}: {c['evidence']}")
+
+    links = cur.get("links") or {}
+    if links.get("prospects"):
+        L.append(f"\nLINK PROSPECTS (link to competitors' pill pages, not ours -- we have "
+                 f"{links.get('ours', 0)} refdomains):")
+        for p in links["prospects"][:10]:
+            L.append(f"  {p['d']}  (links to {p['n']}: {', '.join(p['who'])})")
+
     gaps = []
     for kw, goal, _ in TRACKED:
         if goal != "pill":
@@ -412,6 +427,28 @@ def main():
             src = fetch_extra_sources()
         snaps = load_history()
         snap = build_snapshot(rows, bl, comp, src)
+
+        # Technical self-audit + backlink gap (non-fatal enrichments).
+        import link_gap
+        import tech_audit
+        try:
+            snap["tech"] = (tech_audit.run(fetch_fn=tech_audit._fixture_fetch)
+                            if test else tech_audit.run())
+        except Exception as e:
+            print(f"[warn] tech audit unavailable: {e}", file=sys.stderr)
+        try:
+            if test:
+                snap["links"] = link_gap.build(
+                    link_gap._fixture_semrush, PILL_PAGE,
+                    {label: comp.get(label, {}).get("wegovy pill", {}).get("u", "")
+                     for _, label in COMPETITORS})
+            else:
+                comp_urls = {label: comp.get(label, {}).get("wegovy pill", {}).get("u", "")
+                             for _, label in COMPETITORS}
+                snap["links"] = link_gap.build(semrush, PILL_PAGE, comp_urls)
+        except Exception as e:
+            print(f"[warn] link gap unavailable: {e}", file=sys.stderr)
+
         snaps = [s for s in snaps if s["date"] != snap["date"]] + [snap]
         if not test:
             save_history(snaps)   # never overwrite real history during a self-test
@@ -446,6 +483,10 @@ def main():
             assert snap["src"]["awr"]["wegovy pill"] == 24
             assert "GSC" in text and "AWR" in text, "multi-source digest rendered"
             assert "Search Console" in text, "GSC highlight rendered"
+            assert "TECH HEALTH" in text, "tech audit rendered"
+            assert snap["tech"]["of"] >= 6, "tech checks ran"
+            assert "LINK PROSPECTS" in text, "link gap rendered"
+            assert snap["links"]["prospects"][0]["d"] == "healthline-style.com"
             assert content_text and "CONTENT REVIEW" in content_text, "content review ran"
             print("\n[self-test] all assertions passed")
     except Exception as e:

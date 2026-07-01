@@ -205,6 +205,25 @@ function render(snaps){
     <table><thead><tr><th>KEYWORD</th><th>COMPETITOR POS</th><th>COMPETITOR</th><th>SOP POS</th><th>GAP</th></tr></thead><tbody>${gapRows}</tbody></table>
   </div>`:"";
 
+  // Technical health + backlink gap (populated once the enriched patrol runs)
+  const tech=cur.tech||null, links=cur.links||null;
+  const techFlags=tech&&tech.checks?tech.checks.map(c=>`<div class="flag ${c.state==='pass'?'ok':c.state==='warn'?'warnflag':'bad'}">
+      <div><strong>${esc(c.name)}</strong><div style="font-size:11px;color:#7E92B5;margin-top:2px">${esc(c.evidence)}</div></div>
+      <span class="chip" style="background:${c.state==='pass'?'#3FA776':c.state==='warn'?'#C19A3A':'#E2574C'}">${c.state==='pass'?'PASS':c.state==='warn'?'CHECK':'FIX'}</span></div>`).join(""):"";
+  const prospectRows=links&&links.prospects?links.prospects.map(p=>`<tr>
+      <td>${esc(p.d)}</td><td class="mono" style="color:${p.n>=2?'#3FA776':'#7E92B5'};font-weight:700">${p.n}</td>
+      <td style="font-size:11px;color:#7E92B5">${(p.who||[]).map(esc).join(", ")}</td></tr>`).join(""):"";
+  const techSection=(techFlags||prospectRows)?`
+  <div class="section-hd"><h2>Why we're not on page one</h2>
+    <span class="eyebrow">technical health of the pill page &middot; backlink gap vs ranking competitors</span></div>
+  <div class="grid">
+    ${techFlags?`<div class="flags" style="flex:1 1 380px"><div class="eyebrow">Technical health -- ${tech.score}/${tech.of} pass</div>${techFlags}</div>`:""}
+    ${prospectRows?`<div class="card" style="flex:1 1 420px">
+      <div class="eyebrow">Link prospects -- they link to competitors' pill pages, not ours (we have ${links.ours??0} refdomains)</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>DOMAIN</th><th>COMPETITORS LINKED</th><th>WHO</th></tr></thead><tbody>${prospectRows}</tbody></table></div>
+    </div>`:""}
+  </div>`:"";
+
   app.innerHTML=`${banner}
   <div class="grid">
     <div class="card alt-wrap">
@@ -227,6 +246,7 @@ function render(snaps){
     <table><thead><tr><th>KEYWORD</th><th>SEMRUSH</th><th>GSC</th><th>AWR</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
   </div>
   ${gapSection}
+  ${techSection}
   <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
     <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Three ranking sources for our pages:</strong> <span style="color:#C19A3A">Semrush</span> (modelled UK desktop), <span style="color:#C19A3A">GSC</span> (Google's own data -- avg position + clicks/impressions, trailing window; hover for detail), <span style="color:#C19A3A">AWR</span> (tracked UK/mobile rank). vs PREV tracks the Semrush position. GSC/AWR columns populate once their secrets are added. Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
   </div>`;
