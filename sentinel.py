@@ -183,7 +183,24 @@ def fetch_backlinks() -> dict:
     return {"t": 0, "d": 0}
 
 
-def build_snapshot(rows: list, bl: dict, comp: dict, mode: str = "semrush") -> dict:
+def fetch_extra_sources() -> dict:
+    """Pull GSC + AWR rankings (optional, credential-gated). Never fatal."""
+    import rank_sources
+    kws = [kw for kw, _, _ in TRACKED]
+    src = {"gsc": {}, "awr": {}}
+    try:
+        src["gsc"] = rank_sources.fetch_gsc(kws)
+    except Exception as e:
+        print(f"[warn] GSC unavailable: {e}", file=sys.stderr)
+    try:
+        src["awr"] = rank_sources.fetch_awr(kws)
+    except Exception as e:
+        print(f"[warn] AWR unavailable: {e}", file=sys.stderr)
+    return src
+
+
+def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
+                   mode: str = "semrush") -> dict:
     clean = []
     for r in rows:
         if r.get("k") and isinstance(r.get("p"), int):
@@ -209,11 +226,13 @@ def build_snapshot(rows: list, bl: dict, comp: dict, mode: str = "semrush") -> d
         "legacy": any(r["c"] == "legacy" for r in clean),
         "cann": sum(1 for k, _, _ in TRACKED if best[k] and best[k]["n"] > 1),
     }
+    src = src or {"gsc": {}, "awr": {}}
     return {
         "date": today_uk(),
         "mode": mode,
         "best": best,
         "comp": comp,
+        "src": {"gsc": src.get("gsc", {}), "awr": src.get("awr", {})},
         "m": {
             "pill": pill_pos,
             "bwInj": min(bw_inj) if bw_inj else None,
@@ -262,14 +281,21 @@ def digest(snaps: list) -> str:
                  + (f" (injection: P{cur['m']['bwInj']})" if cur["m"]["bwInj"] else ""))
 
     L.append("")
-    L.append("TRACKED KEYWORDS:")
-    L.append(f"  {'Keyword':<30} {'SOP':>5}  {'Superdrug':>10}  {'Chemist4U':>10}  {'FamChem':>10}  {'MedExpr':>10}")
-    L.append("  " + "-" * 85)
+    L.append("TRACKED KEYWORDS (SOP across sources -- lower is better):")
+    L.append(f"  {'Keyword':<30} {'Semrush':>7} {'GSC':>6} {'AWR':>5}  "
+             f"{'Superdrug':>10}  {'Chemist4U':>10}  {'FamChem':>10}  {'MedExpr':>10}")
+    L.append("  " + "-" * 104)
     comp = cur.get("comp", {})
+    gsc = cur.get("src", {}).get("gsc", {})
+    awr = cur.get("src", {}).get("awr", {})
     for kw, goal, baseline in TRACKED:
         sop = cur["best"].get(kw)
         sop_str = f"P{sop['p']}" if sop else "--"
-        cols = [f"  {kw:<30} {sop_str:>5}"]
+        g = gsc.get(kw)
+        gsc_str = f"P{g['pos']:g}" if g else "--"
+        a = awr.get(kw)
+        awr_str = f"P{a}" if a else "--"
+        cols = [f"  {kw:<30} {sop_str:>7} {gsc_str:>6} {awr_str:>5}"]
         for _, label in COMPETITORS:
             c = comp.get(label, {}).get(kw)
             cols.append(f"{('P' + str(c['p'])) if c else '--':>10}")
@@ -281,6 +307,11 @@ def digest(snaps: list) -> str:
         L.append(f"[!] Legacy URL still ranking -- day {streak(snaps, 'legacy')}")
     if cur["flags"]["cann"]:
         L.append(f"[*] {cur['flags']['cann']} keywords cannibalised (2+ URLs)")
+
+    if gsc:
+        gc = sum(v["clicks"] for v in gsc.values())
+        gi = sum(v["impr"] for v in gsc.values())
+        L.append(f"\nSearch Console (trailing window): {gc} clicks / {gi} impressions across tracked terms")
 
     L.append(f"\nBacklinks to pill page: {cur['m']['blD']} referring domains (target {BL_TARGET})")
 
@@ -369,17 +400,21 @@ def main():
     test = "--test" in sys.argv
     try:
         if test:
+            import rank_sources
             rows = parse_rows(FIXTURE_ROWS)
             bl = {"t": 2, "d": 2}
             comp = FIXTURE_COMP
+            src = {"gsc": rank_sources.FIXTURE_GSC, "awr": rank_sources.FIXTURE_AWR}
         else:
             rows = fetch_positions()
             bl = fetch_backlinks()
             comp = fetch_competitor_positions()
+            src = fetch_extra_sources()
         snaps = load_history()
-        snap = build_snapshot(rows, bl, comp)
+        snap = build_snapshot(rows, bl, comp, src)
         snaps = [s for s in snaps if s["date"] != snap["date"]] + [snap]
-        save_history(snaps)
+        if not test:
+            save_history(snaps)   # never overwrite real history during a self-test
         text = digest(snaps)
         print(text)
 
@@ -407,6 +442,10 @@ def main():
             assert snap["best"]["wegovy price"]["p"] == 8
             assert "Superdrug" in snap["comp"]
             assert snap["comp"]["Superdrug"]["wegovy pill"]["p"] == 3
+            assert snap["src"]["gsc"]["wegovy pill"]["clicks"] == 41
+            assert snap["src"]["awr"]["wegovy pill"] == 24
+            assert "GSC" in text and "AWR" in text, "multi-source digest rendered"
+            assert "Search Console" in text, "GSC highlight rendered"
             assert content_text and "CONTENT REVIEW" in content_text, "content review ran"
             print("\n[self-test] all assertions passed")
     except Exception as e:
