@@ -214,22 +214,44 @@ def fetch_awr(keywords) -> dict:
             raise RuntimeError(f"AWR file not JSON ({raw.strip()[:80]})")
 
     want = {k.lower() for k in keywords}
-    out = {}
+    strict, loose = {}, {}         # strict = geo/device matched; loose = any
+    rows_seen = matched = 0
+    sample = []
     for row in _awr_iter(payload):
-        kw = _pick(row, ("keyword", "kw", "phrase", "query", "term"))
-        if not kw or str(kw).strip().lower() not in want:
+        rows_seen += 1
+        kw = _pick(row, _KW_FIELDS)
+        if not kw:
             continue
-        # optional geo/device match -- skip rows that clearly don't match
-        loc = str(_pick(row, ("location", "country", "region", "search_engine")) or "")
-        dev = str(_pick(row, ("device", "platform")) or "")
-        if loc and geo and geo not in loc.lower():
-            continue
-        if dev and device and device not in dev.lower():
-            continue
-        pos = _num(_pick(row, ("position", "rank", "pos", "ranking", "current")))
         k = str(kw).strip().lower()
-        if pos is not None and (k not in out or pos < out[k]):
-            out[k] = pos
+        if len(sample) < 8:
+            sample.append(k)
+        if k not in want:
+            continue
+        pos = _num(_pick(row, _POS_FIELDS))
+        if pos is None:
+            continue
+        matched += 1
+        if k not in loose or pos < loose[k]:
+            loose[k] = pos
+        loc = str(_pick(row, ("location", "country", "region", "search_engine")) or "").lower()
+        dev = str(_pick(row, ("device", "platform")) or "").lower()
+        if (not geo or not loc or geo in loc) and (not device or not dev or device in dev):
+            if k not in strict or pos < strict[k]:
+                strict[k] = pos
+
+    out = strict or loose         # fall back to unfiltered if the geo/device filter is too tight
+
+    # Diagnostics (stderr -> Actions log; no token is ever printed).
+    if not out:
+        top = (list(payload.keys())[:8] if isinstance(payload, dict)
+               else f"{type(payload).__name__}[{len(payload)}]" if isinstance(payload, list)
+               else str(payload)[:80])
+        code = payload.get("response_code") or payload.get("message") if isinstance(payload, dict) else None
+        print(f"[awr] no positions: rows={rows_seen} matched={matched} "
+              f"top={top} code={code} sample_kw={sample}", file=sys.stderr)
+    elif out is loose:
+        print(f"[awr] geo/device filter matched nothing (geo='{geo}' device='{device}'); "
+              f"using unfiltered best positions for {len(out)} keywords", file=sys.stderr)
     return out
 
 
