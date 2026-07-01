@@ -33,6 +33,8 @@ Env (AWR):
   AWR_DEVICE      default "mobile"          (substring-matched against AWR device)
   AWR_BASE        override the endpoint to suit your AWR plan
   AWR_ACTION      default "export_ranking"  (query mode)
+  AWR_POLL_TRIES  default 30   the export is async; poll the file URL this many
+  AWR_POLL_SECS   default 6    times, waiting this many seconds between tries
 """
 import json
 import os
@@ -248,20 +250,23 @@ def fetch_awr(keywords) -> dict:
         exp = _awr_json(f"{base}?{urllib.parse.urlencode(exp_params)}", headers)
         code = exp.get("response_code") if isinstance(exp, dict) else None
         msg = exp.get("message") if isinstance(exp, dict) else None
-        # 3. export is async -- follow the generated-file URL, retrying while it builds.
+        # 3. export is async ("Export in progress. Please come back later") -- poll
+        #    the generated-file URL until it has data or we run out of tries.
+        tries = int(os.environ.get("AWR_POLL_TRIES", "30") or 30)
+        secs = int(os.environ.get("AWR_POLL_SECS", "6") or 6)
         payload, follow = None, _awr_url(exp)
-        for attempt in range(6):
+        for attempt in range(max(1, tries)):
             if not follow:
                 break
             try:
                 cand = _awr_json(follow, headers)
-                if any(True for _ in _awr_iter(cand)):
-                    payload = cand
-                    break
                 payload = cand
+                if any(True for _ in _awr_iter(cand)):
+                    break
             except Exception:
                 pass
-            time.sleep(3)
+            if attempt < tries - 1:
+                time.sleep(secs)
         if payload is None:
             print(f"[awr] export unavailable: code={code} msg={msg} "
                   f"date={start} url={'yes' if follow else 'no'}", file=sys.stderr)
