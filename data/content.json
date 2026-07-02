@@ -8300,13 +8300,14 @@
     "rank": 1,
     "role": "competitor",
     "status": "ok",
-    "title": "Wegovy Pill | Superdrug Online Doctor",
-    "meta": "Find out when the Wegovy pill will be available in the UK, if it will be as effective as Wegovy injections, and how much it will cost",
+    "title": "Buy the Wegovy Pill Online | Superdrug Online Doctor",
+    "meta": "The Wegovy Pill is the first GLP-1 pill approved for weight loss in the UK. Order your Wegovy Pill online quickly and easily from Superdrug Online Doctor.",
     "robots": "index,follow",
     "h1": "Wegovy Pill",
     "h2": [
      "Product details",
      "Benefits of Superdrug Online Doctor",
+     "Weight Loss Consultation Prices",
      "Lost the Weight and Ready to Keep it Off?",
      "With our weight loss service you'll get:",
      "How it works",
@@ -8320,7 +8321,7 @@
      "Are there other weight loss tablets?"
     ],
     "h3n": 8,
-    "wc": 3357,
+    "wc": 3474,
     "faqs": [
      "Lost the Weight and Ready to Keep it Off?",
      "What is the Wegovy pill?",
@@ -8345,7 +8346,6 @@
      "NHS",
      "Novo Nordisk",
      "OASIS trial",
-     "Ozempic",
      "Rybelsus",
      "Saxenda / liraglutide",
      "UK availability",
@@ -8361,7 +8361,6 @@
      "once daily",
      "online consultation",
      "oral semaglutide",
-     "orforglipron / Foundayo",
      "orlistat",
      "prescription-only",
      "price / cost",
@@ -8369,19 +8368,20 @@
      "semaglutide",
      "side effects",
      "slows gastric emptying",
-     "trial duration (weeks)"
+     "trial duration (weeks)",
+     "vs injection"
     ],
     "termhits": {
-     "semaglutide": 13,
+     "semaglutide": 11,
      "oral semaglutide": 2,
      "GLP-1 receptor agonist": 1,
-     "GLP-1": 13,
-     "appetite suppression": 10,
+     "GLP-1": 10,
+     "appetite suppression": 9,
      "satiety / fullness": 3,
      "slows gastric emptying": 5,
      "blood sugar": 4,
-     "dose escalation / titration": 7,
-     "25 mg maintenance dose": 11,
+     "dose escalation / titration": 10,
+     "25 mg maintenance dose": 12,
      "once daily": 9,
      "empty stomach": 8,
      "120ml water rule": 3,
@@ -8392,38 +8392,37 @@
      "trial duration (weeks)": 5,
      "% of body weight": 3,
      "MHRA approval": 2,
-     "prescription-only": 5,
+     "prescription-only": 6,
      "Novo Nordisk": 2,
-     "side effects": 18,
+     "side effects": 19,
      "GI side effects": 8,
-     "BMI eligibility": 3,
+     "BMI eligibility": 5,
      "contraindications": 3,
-     "Wegovy injection": 13,
-     "Ozempic": 2,
-     "Mounjaro / tirzepatide": 4,
-     "Rybelsus": 2,
-     "orforglipron / Foundayo": 1,
+     "vs injection": 2,
+     "Wegovy injection": 12,
+     "Mounjaro / tirzepatide": 1,
+     "Rybelsus": 1,
      "orlistat": 5,
-     "Saxenda / liraglutide": 3,
-     "price / cost": 7,
-     "UK availability": 11,
-     "NHS": 4,
-     "online consultation": 6,
+     "Saxenda / liraglutide": 2,
+     "price / cost": 20,
+     "UK availability": 9,
+     "NHS": 3,
+     "online consultation": 7,
      "delivery": 2
     },
     "phrases": [
      "side effects",
      "once daily",
      "after weeks",
-     "online doctor",
      "accessed june",
      "glp- tablet",
+     "health beautycard",
+     "beautycard points",
      "empty stomach",
+     "maintenance dose",
      "maximum dose",
-     "superdrug online",
-     "blood sugar",
-     "need take",
-     "stop taking"
+     "online doctor",
+     "dose month"
     ]
    },
    {
@@ -8634,7 +8633,7 @@
      "Ask a Pharmacist"
     ],
     "h3n": 36,
-    "wc": 4765,
+    "wc": 4803,
     "faqs": [
      "What is the Wegovy pill?",
      "How do Wegovy pills work?",
@@ -8710,8 +8709,8 @@
      "satiety / fullness": 2,
      "slows gastric emptying": 1,
      "blood sugar": 2,
-     "dose escalation / titration": 39,
-     "25 mg maintenance dose": 19,
+     "dose escalation / titration": 44,
+     "25 mg maintenance dose": 20,
      "once daily": 12,
      "empty stomach": 9,
      "120ml water rule": 2,
@@ -9120,10 +9119,15 @@
      "name": "Semantic coverage",
      "key": "body",
      "state": "pass",
-     "evidence": "98% of terms used by 2+ competitors"
+     "evidence": "95% of terms used by 2+ competitors"
     }
    ],
-   "term_gaps": [],
+   "term_gaps": [
+    {
+     "term": "vs injection",
+     "competitors": 2
+    }
+   ],
    "entity_gaps": [
     {
      "term": "orlistat",
@@ -9152,13 +9156,14 @@
     "How much does delivery cost?",
     "Do I need to sign for my delivery?"
    ],
-   "body_cov": 98,
+   "body_cov": 95,
    "faq_cov": 37,
    "comp_median_wc": 3911
   },
   "opps": [
    "Fix faq coverage: 20 FAQs, 37% of competitor FAQ topics covered",
    "Add missing entities competitors cover: orlistat",
+   "Cover missing topics/terms: vs injection",
    "Add 20 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],
   "fetched": 6,
