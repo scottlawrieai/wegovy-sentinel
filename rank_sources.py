@@ -36,6 +36,8 @@ Env (AWR):
   AWR_POLL_TRIES  default 30   the export is async; poll the file URL this many
   AWR_POLL_SECS   default 6    times, waiting this many seconds between tries
 """
+import csv
+import io
 import json
 import os
 import re
@@ -141,8 +143,7 @@ def _awr_iter(payload):
     position-ish field.
     """
     if isinstance(payload, dict):
-        keys = {str(k).lower() for k in payload}
-        if keys & set(_KW_FIELDS) and keys & set(_POS_FIELDS):
+        if _kw_of(payload) is not None and _pos_of(payload) is not None:
             yield payload
         for v in payload.values():
             if isinstance(v, (list, dict)):
@@ -158,6 +159,57 @@ def _pick(d, names):
         if n in low:
             return d[low[n]]
     return None
+
+
+def _kw_of(row):
+    """Keyword from a row: exact field names first, then substring match
+    (CSV exports use headers like 'Keyword Group / Keyword')."""
+    v = _pick(row, _KW_FIELDS)
+    if v:
+        return v
+    for k, val in row.items():
+        lk = str(k).lower()
+        if ("keyword" in lk or "phrase" in lk) and val:
+            return val
+    return None
+
+
+def _pos_of(row):
+    """Best (lowest) position from a row: exact fields first, then any
+    column whose header mentions position/rank (e.g. 'Google.co.uk Rank')."""
+    v = _num(_pick(row, _POS_FIELDS))
+    if v is not None:
+        return v
+    best = None
+    for k, val in row.items():
+        lk = str(k).lower()
+        if ("position" in lk or "rank" in lk) and "change" not in lk:
+            n = _num(val)
+            if n is not None and (best is None or n < best):
+                best = n
+    return best
+
+
+def _parse_export(raw: str):
+    """Parse a downloaded AWR export file: JSON if possible, else CSV.
+    Returns a payload usable by _awr_iter, or None if it has no ranking rows
+    (e.g. an 'Export in progress' placeholder)."""
+    raw = raw.lstrip("﻿ \r\n")
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        pass
+    head = raw.splitlines()[0] if raw else ""
+    if "keyword" not in head.lower():
+        return None
+    delim = ";" if head.count(";") >= head.count(",") else ","
+    rows = []
+    for r in csv.DictReader(io.StringIO(raw), delimiter=delim):
+        d = {str(k).strip().lower(): (v or "").strip()
+             for k, v in r.items() if k}
+        if d:
+            rows.append(d)
+    return rows or None
 
 
 def _awr_get(url, headers):
@@ -259,10 +311,11 @@ def fetch_awr(keywords) -> dict:
             if not follow:
                 break
             try:
-                cand = _awr_json(follow, headers)
-                payload = cand
-                if any(True for _ in _awr_iter(cand)):
-                    break
+                cand = _parse_export(_awr_get(follow, headers))   # JSON or CSV
+                if cand is not None:
+                    payload = cand
+                    if any(True for _ in _awr_iter(cand)):
+                        break
             except Exception:
                 pass
             if attempt < tries - 1:
@@ -278,7 +331,7 @@ def fetch_awr(keywords) -> dict:
     sample = []
     for row in _awr_iter(payload):
         rows_seen += 1
-        kw = _pick(row, _KW_FIELDS)
+        kw = _kw_of(row)
         if not kw:
             continue
         k = str(kw).strip().lower()
@@ -286,7 +339,7 @@ def fetch_awr(keywords) -> dict:
             sample.append(k)
         if k not in want:
             continue
-        pos = _num(_pick(row, _POS_FIELDS))
+        pos = _pos_of(row)
         if pos is None:
             continue
         matched += 1
@@ -294,7 +347,11 @@ def fetch_awr(keywords) -> dict:
             loose[k] = pos
         loc = str(_pick(row, ("location", "country", "region", "search_engine")) or "").lower()
         dev = str(_pick(row, ("device", "platform")) or "").lower()
-        if (not geo or not loc or geo in loc) and (not device or not dev or device in dev):
+        geo_ok = not geo or not loc or geo in loc or \
+            ("united kingdom" in geo and ("co.uk" in loc or loc.endswith(" uk")))
+        dev_ok = not device or not dev or device in dev or \
+            (device == "mobile" and ("smartphone" in dev or "phone" in dev))
+        if geo_ok and dev_ok:
             if k not in strict or pos < strict[k]:
                 strict[k] = pos
 
