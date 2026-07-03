@@ -113,7 +113,7 @@ function trendSVG(snaps){
     return `<polyline fill="none" stroke="${col}" stroke-width="2" points="${seg.join(" ")}"/>`
       +pts.map((s,i)=>s.m&&s.m[key]!=null?`<circle cx="${x(i)}" cy="${y(s.m[key])}" r="2.5" fill="${col}"/>`:"").join("");
   };
-  const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#23477E" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#7E92B5" font-size="10">P${p}</text>`).join("");
+  const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#23477E" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#7E92B5" font-size="10">${p}</text>`).join("");
   return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:280px">
     ${grid}
     <line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="#C19A3A" stroke-dasharray="4 4"/>
@@ -130,7 +130,7 @@ function compCell(comp,label,kw,sopPos){
   if(!c) return '<td class="mono na">--</td>';
   const p=c.p;
   const cls=sopPos==null?"na":p<sopPos?"lose":p>sopPos?"win":"tie";
-  return `<td class="mono pos-cell ${cls}">P${p}</td>`;
+  return `<td class="mono pos-cell ${cls}">${p}</td>`;
 }
 
 function render(snaps){
@@ -142,9 +142,9 @@ function render(snaps){
   document.getElementById("meta").innerHTML=`Last patrol: ${esc(cur.date)} -- day ${snaps.length}`;
   document.getElementById("modeBadge").innerHTML=cur.mode&&cur.mode!=="semrush"?`<span class="chip" style="background:#C19A3A">${esc(cur.mode.toUpperCase())}</span>`:"";
   const banner=pill==null?"":`<div class="banner mono" style="background:${target?"rgba(63,167,118,.14)":pageOne?"rgba(193,154,58,.16)":"rgba(226,87,76,.14)"};border:1px solid ${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"};color:${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"}">${
-    target?"TARGET ACHIEVED -- P1-3 secured. Hold through MHRA decision."
-    :pageOne?"PAGE ONE REACHED -- new mission: P1-3 before MHRA decision."
-    :`MISSION: page one for "wegovy pill" before MHRA decision -- currently P${pill} -- ${pill-10} positions to go`}</div>`;
+    target?"TARGET ACHIEVED -- top 3 secured. Hold through MHRA decision."
+    :pageOne?"PAGE ONE REACHED -- new mission: top 3 before MHRA decision."
+    :`MISSION: page one for "wegovy pill" before MHRA decision -- currently position ${pill} -- ${pill-10} to go for page one`}</div>`;
 
   const flagDefs=[
     {on:cur.flags?.wrong,days:streak(snaps,"wrong"),ok:"Buy-intent terms served by correct page type",bad:"Wrong-page routing LIVE -- pill page ranking for buy-intent terms"},
@@ -165,12 +165,12 @@ function render(snaps){
     const wrong=c&&t.goal!==c.c&&c.c!=="advice",legacy=c?.c==="legacy";
     const posCol=posC(pos);
     const g=gsc[t.kw]||null, a=awr[t.kw]??null;
-    const gscCell=g?`<td class="mono pos-cell" style="color:${posC(g.pos)}" title="${g.clicks} clicks · ${g.impr} impressions · ${g.ctr}% CTR (trailing window)">P${g.pos}<span style="color:#7E92B5;font-weight:400"> · ${g.clicks}clk</span></td>`:'<td class="mono na">--</td>';
-    const awrCell=a!=null?`<td class="mono pos-cell" style="color:${posC(a)}">P${a}</td>`:'<td class="mono na">--</td>';
+    const gscCell=g?`<td class="mono pos-cell" style="color:${posC(g.pos)}" title="${g.clicks} clicks · ${g.impr} impressions · ${g.ctr}% CTR (trailing window)">${g.pos}<span style="color:#7E92B5;font-weight:400"> · ${g.clicks}clk</span></td>`:'<td class="mono na">--</td>';
+    const awrCell=a!=null?`<td class="mono pos-cell" style="color:${posC(a)}">${a}</td>`:'<td class="mono na">--</td>';
     const compCells=COMP_LABELS.map(l=>compCell(comp,l,t.kw,pos)).join("");
     return `<tr>
       <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}</td>
-      <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":"P"+pos}</td>
+      <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":pos}</td>
       ${gscCell}
       ${awrCell}
       <td>${arrow(pv!=null&&pos!=null?pv-pos:null)}</td>
@@ -183,7 +183,7 @@ function render(snaps){
         :`<span style="color:#7E92B5;font-size:11px">${t.goal} page</span>`}</td></tr>`;
   }).join("");
 
-  const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))} P${s.m?.pill??"--"}`).join(" | ");
+  const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))}: ${s.m?.pill??"--"}`).join(" | ");
 
   // Competitive gap summary
   let gapRows="";
@@ -195,7 +195,7 @@ function render(snaps){
       const c=comp[label]?.[t.kw];
       if(c&&c.p<sopP){
         gapCount++;
-        gapRows+=`<tr><td>${esc(t.kw)}</td><td class="mono lose">P${c.p}</td><td>${esc(label)}</td><td class="mono" style="color:#7E92B5">${sop?"P"+sop.p:"--"}</td><td class="mono" style="color:#E2574C">${sop?c.p-sop.p:"--"}</td></tr>`;
+        gapRows+=`<tr><td>${esc(t.kw)}</td><td class="mono lose">${c.p}</td><td>${esc(label)}</td><td class="mono" style="color:#7E92B5">${sop?sop.p:"--"}</td><td class="mono" style="color:#E2574C">${sop?c.p-sop.p:"--"}</td></tr>`;
       }
     });
   });
@@ -234,10 +234,10 @@ function render(snaps){
     <div class="card" style="flex:1 1 420px">
       <div class="eyebrow">Queries we rank for but don't track</div>
       <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
-      <tbody>${giRows(gi.untracked||[],[{f:a=>esc(a.q)},{f:a=>`P${a.pos}`,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
+      <tbody>${giRows(gi.untracked||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
       <div class="eyebrow" style="margin-top:16px;color:#C19A3A">Under-clicking &mdash; title/meta rewrite candidates</div>
       <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>CTR vs EXPECTED</th></tr></thead>
-      <tbody>${giRows(gi.ctr_opps||[],[{f:a=>esc(a.q)},{f:a=>`P${a.pos}`,s:'class="mono"'},{f:a=>`<span class="lose">${a.ctr}%</span> vs ~${a.exp}%`,s:'class="mono"'}])}</tbody></table></div>
+      <tbody>${giRows(gi.ctr_opps||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>`<span class="lose">${a.ctr}%</span> vs ~${a.exp}%`,s:'class="mono"'}])}</tbody></table></div>
     </div>
     <div class="card" style="flex:1 1 420px">
       <div class="eyebrow" style="color:#E2574C">Buy-intent routing issues (Google's view)</div>
@@ -245,7 +245,7 @@ function render(snaps){
       <tbody>${giRows(gi.routing||[],[{f:a=>esc(a.q)},{f:a=>a.impr,s:'class="mono"'},{f:a=>a.multi?'2+ URLs competing':'served by non-pill page'}])}</tbody></table></div>
       <div class="eyebrow" style="margin-top:16px;color:#3FA776">Striking distance &mdash; P11-20 by impressions</div>
       <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
-      <tbody>${giRows(gi.striking||[],[{f:a=>esc(a.q)},{f:a=>`P${a.pos}`,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
+      <tbody>${giRows(gi.striking||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
     </div>
   </div>`:"";
 
@@ -257,9 +257,9 @@ function render(snaps){
         <div class="alt">
           <div class="zone" style="height:${altPct(10)}%"></div>
           <div class="t3" style="top:${altPct(3)}%"></div>
-          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#C19A3A":"#E2574C"}">P${pill}</div>`:""}
+          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#C19A3A":"#E2574C"}">${pill}</div>`:""}
         </div>
-        <div class="scale mono"><span style="color:#C19A3A">P1</span><span style="color:#3FA776">P3 target</span><span style="color:#C19A3A">P10 page one</span><span>P30+</span></div>
+        <div class="scale mono"><span style="color:#C19A3A">1</span><span style="color:#3FA776">3 target</span><span style="color:#C19A3A">10 page one</span><span>30+</span></div>
       </div>
       <div class="mono" style="margin-top:12px;font-size:12px"><span style="color:#7E92B5">vs prev </span>${arrow(pillPrev!=null&&pill!=null?pillPrev-pill:null)}</div>
     </div>
@@ -279,16 +279,16 @@ function render(snaps){
 
   document.getElementById("copyBtn").onclick=async()=>{
     const L=[`WEGOVY SENTINEL -- ${cur.date}`];
-    L.push(`pill keyword: ${pill?"P"+pill:"n/a"} (${pillPrev!=null&&pill!=null?(pillPrev-pill===0?"=":(pillPrev-pill>0?"+":"-")+Math.abs(pillPrev-pill)):"--"} vs prev)${pageOne?" -- PAGE ONE":""}`);
+    L.push(`pill keyword: position ${pill?pill:"n/a"} (${pillPrev!=null&&pill!=null?(pillPrev-pill===0?"=":(pillPrev-pill>0?"+":"-")+Math.abs(pillPrev-pill)):"--"} vs prev)${pageOne?" -- PAGE ONE":""}`);
     const bw=cur.best?.["buy wegovy"];
-    if(bw)L.push(`buy wegovy: P${bw.p} via ${LBL[bw.c]}${bw.c==="pill"?" [!] WRONG PAGE":""}`);
+    if(bw)L.push(`buy wegovy: position ${bw.p} via ${LBL[bw.c]}${bw.c==="pill"?" [!] WRONG PAGE":""}`);
     L.push("");
     TRACKED.forEach(t=>{
       const c=cur.best?.[t.kw];
-      const sp=c?"P"+c.p:"--";
+      const sp=c?String(c.p):"--";
       const g=gsc[t.kw],a=awr[t.kw];
-      const gs=g?"P"+g.pos:"--",as=a!=null?"P"+a:"--";
-      const cs=COMP_LABELS.map(l=>{const x=comp[l]?.[t.kw];return x?"P"+x.p:"--";});
+      const gs=g?String(g.pos):"--",as=a!=null?String(a):"--";
+      const cs=COMP_LABELS.map(l=>{const x=comp[l]?.[t.kw];return x?String(x.p):"--";});
       L.push(`${t.kw}: Semrush ${sp} | GSC ${gs} | AWR ${as} | SD ${cs[0]} | C4U ${cs[1]} | FC ${cs[2]} | MX ${cs[3]}`);
     });
     if(cur.flags?.wrong)L.push(`\n[!] Wrong-page routing live -- day ${streak(snaps,"wrong")}`);

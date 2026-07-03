@@ -275,7 +275,7 @@ def digest(snaps: list) -> str:
          + (f" ({cur['mode']} mode)" if cur["mode"] != "semrush" else "")]
 
     d_prev = (pill_prev - pill) if (pill is not None and pill_prev is not None) else None
-    line = f"  pill keyword: {'P' + str(pill) if pill else 'n/a'} ({arrow(d_prev)} vs prev)"
+    line = f"  pill keyword: position {pill if pill else 'n/a'} ({arrow(d_prev)} vs prev)"
     if pill is not None and pill <= 10:
         line += " -- PAGE ONE"
     L.append(line)
@@ -283,8 +283,8 @@ def digest(snaps: list) -> str:
     bw = cur["best"].get("buy wegovy")
     if bw:
         tag = " [!] WRONG PAGE" if bw["c"] != "injection" else ""
-        L.append(f"  buy wegovy: P{bw['p']} via {bw['c'].upper()}{tag}"
-                 + (f" (injection: P{cur['m']['bwInj']})" if cur["m"]["bwInj"] else ""))
+        L.append(f"  buy wegovy: position {bw['p']} via {bw['c'].upper()}{tag}"
+                 + (f" (injection: {cur['m']['bwInj']})" if cur["m"]["bwInj"] else ""))
 
     L.append("")
     L.append("TRACKED KEYWORDS (SOP across sources -- lower is better):")
@@ -296,15 +296,15 @@ def digest(snaps: list) -> str:
     awr = cur.get("src", {}).get("awr", {})
     for kw, goal, baseline in TRACKED:
         sop = cur["best"].get(kw)
-        sop_str = f"P{sop['p']}" if sop else "--"
+        sop_str = str(sop['p']) if sop else "--"
         g = gsc.get(kw)
-        gsc_str = f"P{g['pos']:g}" if g else "--"
+        gsc_str = f"{g['pos']:g}" if g else "--"
         a = awr.get(kw)
-        awr_str = f"P{a}" if a else "--"
+        awr_str = str(a) if a else "--"
         cols = [f"  {kw:<30} {sop_str:>7} {gsc_str:>6} {awr_str:>5}"]
         for _, label in COMPETITORS:
             c = comp.get(label, {}).get(kw)
-            cols.append(f"{('P' + str(c['p'])) if c else '--':>10}")
+            cols.append(f"{str(c['p']) if c else '--':>10}")
         L.append("  ".join(cols))
 
     if cur["flags"]["wrong"]:
@@ -325,11 +325,11 @@ def digest(snaps: list) -> str:
         if gi_.get("untracked"):
             L.append("  Queries Google shows us for that we DON'T track:")
             for a in gi_["untracked"][:5]:
-                L.append(f"    \"{a['q']}\"  P{a['pos']}  {a['impr']} impressions")
+                L.append(f"    \"{a['q']}\"  pos {a['pos']}  {a['impr']} impressions")
         if gi_.get("ctr_opps"):
             L.append("  Under-clicking (title/meta rewrite candidates):")
             for a in gi_["ctr_opps"][:5]:
-                L.append(f"    \"{a['q']}\"  P{a['pos']}  CTR {a['ctr']}% vs ~{a['exp']}% expected  ({a['impr']} impr)")
+                L.append(f"    \"{a['q']}\"  pos {a['pos']}  CTR {a['ctr']}% vs ~{a['exp']}% expected  ({a['impr']} impr)")
         if gi_.get("routing"):
             L.append("  Buy-intent routing issues (Google's view):")
             for a in gi_["routing"][:5]:
@@ -338,7 +338,7 @@ def digest(snaps: list) -> str:
         if gi_.get("striking"):
             L.append("  Striking distance (P11-20, cheapest page-1 wins):")
             for a in gi_["striking"][:5]:
-                L.append(f"    \"{a['q']}\"  P{a['pos']}  {a['impr']} impressions")
+                L.append(f"    \"{a['q']}\"  pos {a['pos']}  {a['impr']} impressions")
 
     L.append(f"\nBacklinks to pill page: {cur['m']['blD']} referring domains (target {BL_TARGET})")
 
@@ -369,11 +369,11 @@ def digest(snaps: list) -> str:
     if gaps:
         L.append("\nCOMPETITIVE GAPS (pill keywords where competitors outrank SOP):")
         for kw, label, cp, sp in gaps:
-            sop_str = f"P{sp}" if sp else "n/a"
-            L.append(f"  {kw}: {label} P{cp} vs SOP {sop_str}")
+            sop_str = str(sp) if sp else "n/a"
+            L.append(f"  {kw}: {label} {cp} vs SOP {sop_str}")
 
     if pill is not None and pill <= 3:
-        L.append("\n[TARGET] P1-3 achieved. Hold through MHRA decision.")
+        L.append("\n[TARGET] Top-3 achieved. Hold through MHRA decision.")
     return "\n".join(L)
 
 
