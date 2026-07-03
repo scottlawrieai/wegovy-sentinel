@@ -224,6 +224,31 @@ function render(snaps){
     </div>`:""}
   </div>`:"";
 
+  // GSC insights (populated once GSC secrets are configured)
+  const gi=cur.gsci||null;
+  const giRows=(arr,cols)=>arr.map(a=>`<tr>${cols.map(c=>`<td ${c.s||""}>${c.f(a)}</td>`).join("")}</tr>`).join("");
+  const gsciSection=(gi&&gi.queries)?`
+  <div class="section-hd"><h2>Search Console insights</h2>
+    <span class="eyebrow">${gi.queries} wegovy-topic queries &middot; Google's own data, trailing window</span></div>
+  <div class="grid">
+    <div class="card" style="flex:1 1 420px">
+      <div class="eyebrow">Queries we rank for but don't track</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
+      <tbody>${giRows(gi.untracked||[],[{f:a=>esc(a.q)},{f:a=>`P${a.pos}`,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
+      <div class="eyebrow" style="margin-top:16px;color:#C19A3A">Under-clicking &mdash; title/meta rewrite candidates</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>CTR vs EXPECTED</th></tr></thead>
+      <tbody>${giRows(gi.ctr_opps||[],[{f:a=>esc(a.q)},{f:a=>`P${a.pos}`,s:'class="mono"'},{f:a=>`<span class="lose">${a.ctr}%</span> vs ~${a.exp}%`,s:'class="mono"'}])}</tbody></table></div>
+    </div>
+    <div class="card" style="flex:1 1 420px">
+      <div class="eyebrow" style="color:#E2574C">Buy-intent routing issues (Google's view)</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>IMPR</th><th>ISSUE</th></tr></thead>
+      <tbody>${giRows(gi.routing||[],[{f:a=>esc(a.q)},{f:a=>a.impr,s:'class="mono"'},{f:a=>a.multi?'2+ URLs competing':'served by non-pill page'}])}</tbody></table></div>
+      <div class="eyebrow" style="margin-top:16px;color:#3FA776">Striking distance &mdash; P11-20 by impressions</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
+      <tbody>${giRows(gi.striking||[],[{f:a=>esc(a.q)},{f:a=>`P${a.pos}`,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
+    </div>
+  </div>`:"";
+
   app.innerHTML=`${banner}
   <div class="grid">
     <div class="card alt-wrap">
@@ -247,6 +272,7 @@ function render(snaps){
   </div>
   ${gapSection}
   ${techSection}
+  ${gsciSection}
   <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
     <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Three ranking sources for our pages:</strong> <span style="color:#C19A3A">Semrush</span> (modelled UK desktop), <span style="color:#C19A3A">GSC</span> (Google's own data -- avg position + clicks/impressions, trailing window; hover for detail), <span style="color:#C19A3A">AWR</span> (tracked UK/mobile rank). vs PREV tracks the Semrush position. GSC/AWR columns populate once their secrets are added. Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
   </div>`;

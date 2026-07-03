@@ -188,7 +188,7 @@ def fetch_extra_sources() -> dict:
     """Pull GSC + AWR rankings (optional, credential-gated). Never fatal."""
     import rank_sources
     kws = [kw for kw, _, _ in TRACKED]
-    src = {"gsc": {}, "awr": {}}
+    src = {"gsc": {}, "awr": {}, "gsci": {}}
     try:
         src["gsc"] = rank_sources.fetch_gsc(kws)
     except Exception as e:
@@ -197,6 +197,10 @@ def fetch_extra_sources() -> dict:
         src["awr"] = rank_sources.fetch_awr(kws)
     except Exception as e:
         print(f"[warn] AWR unavailable: {e}", file=sys.stderr)
+    try:
+        src["gsci"] = rank_sources.fetch_gsc_insights(kws)
+    except Exception as e:
+        print(f"[warn] GSC insights unavailable: {e}", file=sys.stderr)
     return src
 
 
@@ -234,6 +238,7 @@ def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
         "best": best,
         "comp": comp,
         "src": {"gsc": src.get("gsc", {}), "awr": src.get("awr", {})},
+        "gsci": src.get("gsci", {}),
         "m": {
             "pill": pill_pos,
             "bwInj": min(bw_inj) if bw_inj else None,
@@ -313,6 +318,27 @@ def digest(snaps: list) -> str:
         gc = sum(v["clicks"] for v in gsc.values())
         gi = sum(v["impr"] for v in gsc.values())
         L.append(f"\nSearch Console (trailing window): {gc} clicks / {gi} impressions across tracked terms")
+
+    gi_ = cur.get("gsci") or {}
+    if gi_.get("queries"):
+        L.append(f"\nGSC INSIGHTS ({gi_['queries']} wegovy-topic queries analysed):")
+        if gi_.get("untracked"):
+            L.append("  Queries Google shows us for that we DON'T track:")
+            for a in gi_["untracked"][:5]:
+                L.append(f"    \"{a['q']}\"  P{a['pos']}  {a['impr']} impressions")
+        if gi_.get("ctr_opps"):
+            L.append("  Under-clicking (title/meta rewrite candidates):")
+            for a in gi_["ctr_opps"][:5]:
+                L.append(f"    \"{a['q']}\"  P{a['pos']}  CTR {a['ctr']}% vs ~{a['exp']}% expected  ({a['impr']} impr)")
+        if gi_.get("routing"):
+            L.append("  Buy-intent routing issues (Google's view):")
+            for a in gi_["routing"][:5]:
+                why = "2+ URLs competing" if a["multi"] else "served by non-pill page"
+                L.append(f"    \"{a['q']}\"  {a['impr']} impr -- {why}")
+        if gi_.get("striking"):
+            L.append("  Striking distance (P11-20, cheapest page-1 wins):")
+            for a in gi_["striking"][:5]:
+                L.append(f"    \"{a['q']}\"  P{a['pos']}  {a['impr']} impressions")
 
     L.append(f"\nBacklinks to pill page: {cur['m']['blD']} referring domains (target {BL_TARGET})")
 
@@ -419,7 +445,9 @@ def main():
             rows = parse_rows(FIXTURE_ROWS)
             bl = {"t": 2, "d": 2}
             comp = FIXTURE_COMP
-            src = {"gsc": rank_sources.FIXTURE_GSC, "awr": rank_sources.FIXTURE_AWR}
+            src = {"gsc": rank_sources.FIXTURE_GSC, "awr": rank_sources.FIXTURE_AWR,
+                   "gsci": rank_sources.analyse_gsc_rows(
+                       rank_sources.FIXTURE_GSC_ROWS, [kw for kw, _, _ in TRACKED])}
         else:
             rows = fetch_positions()
             bl = fetch_backlinks()
@@ -484,6 +512,12 @@ def main():
             assert "GSC" in text and "AWR" in text, "multi-source digest rendered"
             assert "Search Console" in text, "GSC highlight rendered"
             assert "TECH HEALTH" in text, "tech audit rendered"
+            assert "GSC INSIGHTS" in text, "GSC insights rendered"
+            gi_t = snap["gsci"]
+            assert any(a["q"] == "oral wegovy uk" for a in gi_t["untracked"]), gi_t["untracked"]
+            assert any(a["q"] == "oral wegovy uk" for a in gi_t["ctr_opps"]), gi_t["ctr_opps"]
+            assert any(r["q"] == "buy wegovy pill" and r["multi"] for r in gi_t["routing"]), gi_t["routing"]
+            assert any(a["q"] == "wegovy tablet vs injection" for a in gi_t["striking"]), gi_t["striking"]
             assert snap["tech"]["of"] >= 6, "tech checks ran"
             assert "LINK PROSPECTS" in text, "link gap rendered"
             assert snap["links"]["prospects"][0]["d"] == "healthline-style.com"
