@@ -37,6 +37,7 @@ Env (AWR):
   AWR_POLL_SECS   default 6    times, waiting this many seconds between tries
 """
 import csv
+import gzip
 import io
 import json
 import os
@@ -45,6 +46,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import zipfile
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -190,11 +192,22 @@ def _pos_of(row):
     return best
 
 
-def _parse_export(raw: str):
-    """Parse a downloaded AWR export file: JSON if possible, else CSV.
-    Returns a payload usable by _awr_iter, or None if it has no ranking rows
-    (e.g. an 'Export in progress' placeholder)."""
-    raw = raw.lstrip("﻿ \r\n")
+def _parse_export(data):
+    """Parse a downloaded AWR export file. Handles zip/gzip containers
+    (AWR ships exports compressed), then JSON, then CSV. Returns a payload
+    usable by _awr_iter, or None if it has no ranking rows (e.g. an
+    'Export in progress' placeholder)."""
+    if isinstance(data, str):
+        data = data.encode("utf-8", "replace")
+    if data[:4] == b"PK\x03\x04":                       # zip archive
+        with zipfile.ZipFile(io.BytesIO(data)) as z:
+            names = z.namelist()
+            if not names:
+                return None
+            data = z.read(names[0])
+    elif data[:2] == b"\x1f\x8b":                        # gzip
+        data = gzip.decompress(data)
+    raw = data.decode("utf-8", "replace").lstrip("﻿ \r\n")
     try:
         return json.loads(raw)
     except json.JSONDecodeError:
@@ -213,9 +226,13 @@ def _parse_export(raw: str):
 
 
 def _awr_get(url, headers):
+    return _awr_get_bytes(url, headers).decode("utf-8", "replace")
+
+
+def _awr_get_bytes(url, headers):
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=45) as r:
-        return r.read().decode("utf-8", "replace")
+        return r.read()
 
 
 def _awr_json(url, headers):
@@ -306,23 +323,25 @@ def fetch_awr(keywords) -> dict:
         #    the generated-file URL until it has data or we run out of tries.
         tries = int(os.environ.get("AWR_POLL_TRIES", "30") or 30)
         secs = int(os.environ.get("AWR_POLL_SECS", "6") or 6)
-        payload, follow = None, _awr_url(exp)
+        payload, follow, last = None, _awr_url(exp), b""
         for attempt in range(max(1, tries)):
             if not follow:
                 break
             try:
-                cand = _parse_export(_awr_get(follow, headers))   # JSON or CSV
+                last = _awr_get_bytes(follow, headers)
+                cand = _parse_export(last)          # zip/gzip -> JSON or CSV
                 if cand is not None:
                     payload = cand
                     if any(True for _ in _awr_iter(cand)):
                         break
-            except Exception:
-                pass
+            except Exception as e:
+                last = str(e).encode()
             if attempt < tries - 1:
                 time.sleep(secs)
         if payload is None:
-            print(f"[awr] export unavailable: code={code} msg={msg} "
-                  f"date={start} url={'yes' if follow else 'no'}", file=sys.stderr)
+            print(f"[awr] export unavailable: code={code} msg={msg} date={start} "
+                  f"url={'yes' if follow else 'no'} file_head={last[:60]!r}",
+                  file=sys.stderr)
             payload = exp
 
     want = {k.lower() for k in keywords}
