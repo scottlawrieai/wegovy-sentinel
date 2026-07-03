@@ -93,21 +93,13 @@ def fetch_gsc(keywords) -> dict:
         days = 28
     end = _today_uk() - timedelta(days=3)   # GSC data lags a couple of days
     start = end - timedelta(days=days)
-    body = json.dumps({
+    payload = _gsc_query(token, prop, {
         "startDate": start.isoformat(),
         "endDate": end.isoformat(),
         "dimensions": ["query"],
         "rowLimit": 1000,
         "type": "web",
-    }).encode()
-    url = ("https://www.googleapis.com/webmasters/v3/sites/"
-           + urllib.parse.quote(prop, safe="") + "/searchAnalytics/query")
-    req = urllib.request.Request(url, data=body, headers={
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json",
     })
-    with urllib.request.urlopen(req, timeout=30) as r:
-        payload = json.loads(r.read().decode("utf-8", "replace"))
     want = {k.lower() for k in keywords}
     out = {}
     for row in payload.get("rows", []):
@@ -120,6 +112,128 @@ def fetch_gsc(keywords) -> dict:
                 "ctr": round(float(row.get("ctr", 0)) * 100, 1),
             }
     return out
+
+
+def _gsc_query(token, prop, body: dict) -> dict:
+    url = ("https://www.googleapis.com/webmasters/v3/sites/"
+           + urllib.parse.quote(prop, safe="") + "/searchAnalytics/query")
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+    })
+    with urllib.request.urlopen(req, timeout=45) as r:
+        return json.loads(r.read().decode("utf-8", "replace"))
+
+
+# what a title at position P should roughly earn; used to flag under-clicking pages
+_EXPECTED_CTR = ((1, 28.0), (2, 15.0), (3, 10.0), (4, 7.0), (5, 5.0),
+                 (8, 3.5), (10, 2.5), (20, 1.0), (100, 0.4))
+_TOPIC = re.compile(r"wegovy|semaglutide|weight[ -]?loss pill|glp-?1", re.I)
+_BUY = re.compile(r"\b(buy|price|cheapest|cost|order|online)\b", re.I)
+
+
+def _expected_ctr(pos: float) -> float:
+    for limit, ctr in _EXPECTED_CTR:
+        if pos <= limit:
+            return ctr
+    return 0.4
+
+
+def fetch_gsc_insights(tracked) -> dict:
+    """Deep GSC analysis over query+page rows (trailing window). Returns {} if
+    GSC creds are not configured. Sections:
+
+      untracked -- wegovy-topic queries with real impressions that we do NOT
+                   track (Google already associates us with them)
+      ctr_opps  -- queries where our CTR is <50% of what the position should
+                   earn (title/meta rewrite candidates)
+      routing   -- buy-intent queries where Google serves 2+ of our URLs or a
+                   non-pill page (cannibalisation as Google actually sees it)
+      striking  -- positions 11-20 by impressions (cheapest page-1 wins)
+    """
+    token = _gsc_access_token()
+    if not token:
+        return {}
+    prop = os.environ.get("GSC_PROPERTY", "sc-domain:simpleonlinepharmacy.co.uk")
+    try:
+        days = int(os.environ.get("GSC_DAYS", "28") or 28)
+    except ValueError:
+        days = 28
+    end = _today_uk() - timedelta(days=3)
+    start = end - timedelta(days=days)
+    payload = _gsc_query(token, prop, {
+        "startDate": start.isoformat(),
+        "endDate": end.isoformat(),
+        "dimensions": ["query", "page"],
+        "rowLimit": 5000,
+        "type": "web",
+    })
+    rows = []
+    for r in payload.get("rows", []):
+        q, page = (r.get("keys") or ["", ""])[:2]
+        q = (q or "").strip().lower()
+        if not q or not _TOPIC.search(q):
+            continue
+        rows.append({
+            "q": q, "page": page,
+            "pos": round(float(r.get("position", 0)), 1),
+            "clicks": int(r.get("clicks", 0)),
+            "impr": int(r.get("impressions", 0)),
+            "ctr": round(float(r.get("ctr", 0)) * 100, 1),
+        })
+    return analyse_gsc_rows(rows, tracked)
+
+
+def analyse_gsc_rows(rows, tracked) -> dict:
+    """Pure analysis over query+page rows (separated for offline testing)."""
+    tracked_set = {t.lower() for t in tracked}
+
+    # roll rows up per query
+    per_q = {}
+    for r in rows:
+        agg = per_q.setdefault(r["q"], {"q": r["q"], "clicks": 0, "impr": 0,
+                                        "pages": []})
+        agg["clicks"] += r["clicks"]
+        agg["impr"] += r["impr"]
+        agg["pages"].append(r)
+    for agg in per_q.values():
+        best = min(agg["pages"], key=lambda p: p["pos"])
+        agg["pos"] = best["pos"]
+        agg["ctr"] = round(agg["clicks"] * 100.0 / agg["impr"], 1) if agg["impr"] else 0.0
+
+    untracked = sorted(
+        (a for a in per_q.values() if a["q"] not in tracked_set and a["impr"] >= 100),
+        key=lambda a: -a["impr"])[:15]
+
+    ctr_opps = sorted(
+        (a for a in per_q.values()
+         if a["impr"] >= 300 and a["pos"] <= 20
+         and a["ctr"] < _expected_ctr(a["pos"]) * 0.5),
+        key=lambda a: -a["impr"])[:10]
+    for a in ctr_opps:
+        a["exp"] = _expected_ctr(a["pos"])
+
+    routing = []
+    for a in per_q.values():
+        if not _BUY.search(a["q"]) or a["impr"] < 100:
+            continue
+        pages = sorted(a["pages"], key=lambda p: -p["impr"])
+        multi = len({p["page"] for p in pages}) > 1
+        top = pages[0]["page"] or ""
+        off_pill = "/weight-loss/wegovy-pill" not in top and "wegovy" in a["q"]
+        if multi or off_pill:
+            routing.append({"q": a["q"], "impr": a["impr"],
+                            "multi": multi, "top": top})
+    routing = sorted(routing, key=lambda x: -x["impr"])[:10]
+
+    striking = sorted(
+        (a for a in per_q.values() if 11 <= a["pos"] <= 20 and a["impr"] >= 100),
+        key=lambda a: -a["impr"])[:10]
+
+    strip = lambda lst: [{k: v for k, v in a.items() if k != "pages"} for a in lst]
+    return {"untracked": strip(untracked), "ctr_opps": strip(ctr_opps),
+            "routing": routing, "striking": strip(striking),
+            "rows": len(rows), "queries": len(per_q)}
 
 
 # --------------------------------------------------------------------------
@@ -404,6 +518,19 @@ FIXTURE_GSC = {
     "wegovy uk": {"pos": 21.0, "clicks": 60, "impr": 14000, "ctr": 0.4},
     "wegovy reviews": {"pos": 19.5, "clicks": 70, "impr": 8800, "ctr": 0.8},
 }
+
+_P = "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
+_A = "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk/"
+FIXTURE_GSC_ROWS = [
+    {"q": "wegovy pill", "page": _P, "pos": 22.4, "clicks": 41, "impr": 5800, "ctr": 0.7},
+    {"q": "oral wegovy uk", "page": _P, "pos": 9.2, "clicks": 8, "impr": 2400, "ctr": 0.3},
+    {"q": "wegovy tablet vs injection", "page": _P, "pos": 12.1, "clicks": 12, "impr": 1900, "ctr": 0.6},
+    {"q": "buy wegovy pill", "page": _P, "pos": 18.0, "clicks": 4, "impr": 700, "ctr": 0.6},
+    {"q": "buy wegovy pill", "page": _A, "pos": 24.0, "clicks": 1, "impr": 350, "ctr": 0.3},
+    {"q": "wegovy price", "page": _A, "pos": 7.6, "clicks": 220, "impr": 9100, "ctr": 2.4},
+    {"q": "how much is wegovy pill uk", "page": _A, "pos": 6.1, "clicks": 15, "impr": 1200, "ctr": 1.2},
+    {"q": "cheapest wegovy uk", "page": _A, "pos": 12.8, "clicks": 30, "impr": 2100, "ctr": 1.4},
+]
 
 FIXTURE_AWR = {
     "wegovy pill": 24,
