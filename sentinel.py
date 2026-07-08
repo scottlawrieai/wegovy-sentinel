@@ -495,6 +495,21 @@ def main():
         except Exception as e:
             print(f"[warn] link gap unavailable: {e}", file=sys.stderr)
 
+        # A patrol without GSC credentials must not blank the Search Console
+        # panels -- carry forward the last known data (stamped with its date).
+        if not snap.get("gsci"):
+            for prev_s in reversed(snaps):
+                g = prev_s.get("gsci")
+                if g:
+                    snap["gsci"] = {**g, "as_of": g.get("as_of", prev_s["date"])}
+                    break
+        if not snap.get("src", {}).get("gsc"):
+            for prev_s in reversed(snaps):
+                g = prev_s.get("src", {}).get("gsc")
+                if g:
+                    snap["src"]["gsc"] = g
+                    break
+
         snaps = [s for s in snaps if s["date"] != snap["date"]] + [snap]
         if not test:
             save_history(snaps)   # never overwrite real history during a self-test

@@ -257,7 +257,7 @@ function render(snaps){
   </div>`:"";
   const gsciSection=(gi&&gi.queries)?`
   <div class="section-hd"><h2>Search Console insights</h2>
-    <span class="eyebrow">${gi.queries} wegovy-topic queries &middot; Google's own data, trailing window</span></div>
+    <span class="eyebrow">${gi.queries} wegovy-topic queries &middot; Google's own data, trailing window${gi.as_of?` &middot; data as of ${esc(gi.as_of)}`:""}</span></div>
   ${actions}
   ${pillQ}
   ${splits}
