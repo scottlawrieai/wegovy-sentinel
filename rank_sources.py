@@ -184,9 +184,24 @@ def fetch_gsc_insights(tracked) -> dict:
     return analyse_gsc_rows(rows, tracked)
 
 
-def analyse_gsc_rows(rows, tracked) -> dict:
+PILL_PAGE = "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
+
+
+def _same_page(a: str, b: str) -> bool:
+    norm = lambda u: (u or "").split("#")[0].split("?")[0].rstrip("/").lower()
+    return norm(a) == norm(b)
+
+
+def analyse_gsc_rows(rows, tracked, pill_url: str = PILL_PAGE) -> dict:
     """Pure analysis over query+page rows (separated for offline testing)."""
     tracked_set = {t.lower() for t in tracked}
+
+    # every query Google serves THE PILL PAGE for (its own table on the dashboard)
+    pill_page = sorted(
+        ({"q": r["q"], "pos": r["pos"], "clicks": r["clicks"],
+          "impr": r["impr"], "ctr": r["ctr"]}
+         for r in rows if _same_page(r["page"], pill_url)),
+        key=lambda a: -a["impr"])[:20]
 
     # roll rows up per query
     per_q = {}
@@ -231,7 +246,8 @@ def analyse_gsc_rows(rows, tracked) -> dict:
         key=lambda a: -a["impr"])[:10]
 
     strip = lambda lst: [{k: v for k, v in a.items() if k != "pages"} for a in lst]
-    return {"untracked": strip(untracked), "ctr_opps": strip(ctr_opps),
+    return {"pill_page": pill_page,
+            "untracked": strip(untracked), "ctr_opps": strip(ctr_opps),
             "routing": routing, "striking": strip(striking),
             "rows": len(rows), "queries": len(per_q)}
 
