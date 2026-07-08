@@ -25,6 +25,8 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
@@ -212,8 +214,28 @@ def fetch_psi(url: str = PILL_PAGE, strategy: str = "mobile") -> dict:
     api = ("https://www.googleapis.com/pagespeedonline/v5/runPagespeed?"
            + urllib.parse.urlencode(params))
     req = urllib.request.Request(api, headers={"User-Agent": "wegovy-sentinel/3.0"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        data = _json.loads(r.read().decode("utf-8", "replace"))
+    # PSI 500s are a known transient Google-side failure -- retry with backoff,
+    # and surface Google's error body so a persistent failure is diagnosable.
+    tries = int(os.environ.get("PSI_TRIES", "3") or 3)
+    data, last = None, None
+    for attempt in range(max(1, tries)):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                data = _json.loads(r.read().decode("utf-8", "replace"))
+            break
+        except urllib.error.HTTPError as e:
+            detail = ""
+            try:
+                detail = e.read().decode("utf-8", "replace")[:160].replace("\n", " ")
+            except Exception:
+                pass
+            last = RuntimeError(f"PSI HTTP {e.code}: {detail}")
+        except Exception as e:
+            last = e
+        if attempt < tries - 1:
+            time.sleep(12)
+    if data is None:
+        raise last
     lh = data.get("lighthouseResult", {})
     audits = lh.get("audits", {})
 
