@@ -74,3 +74,11 @@ Test everything offline (uses canned fixtures, no network/keys):
 ```bash
 python sentinel.py --test
 ```
+
+## PageSpeed Insights (Lighthouse speed score)
+
+Runs automatically each patrol — no credentials required. Google's public PSI
+API is keyless but rate-limited per IP; if the runner ever hits 429s, create a
+free API key (Google Cloud → enable "PageSpeed Insights API" → API key) and add
+it as repo **secret** `PSI_API_KEY`. On failure the last known score is carried
+forward (stamped "as of").

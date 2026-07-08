@@ -22,8 +22,10 @@ fetch degrades that check to a warn -- the audit never raises.
 Run `python tech_audit.py --test` for an offline self-test.
 """
 import json
+import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
 
@@ -191,6 +193,64 @@ def run(pill_url: str = PILL_PAGE, hub_pages=None,
     return {"checks": checks,
             "score": sum(1 for c in checks if c["state"] == "pass"),
             "of": len(checks)}
+
+
+def fetch_psi(url: str = PILL_PAGE, strategy: str = "mobile") -> dict:
+    """Lighthouse performance audit via Google PageSpeed Insights (free API;
+    PSI_API_KEY optional for higher quotas). Returns {} on any failure --
+    never breaks the patrol.
+
+    score  0-100 Lighthouse performance score (lab)
+    lcp/cls/tbt/fcp/si  lab metric display values
+    field  CrUX real-user metrics when Google has them for this URL
+    """
+    import json as _json
+    params = {"url": url, "strategy": strategy, "category": "performance"}
+    key = os.environ.get("PSI_API_KEY", "")
+    if key:
+        params["key"] = key
+    api = ("https://www.googleapis.com/pagespeedonline/v5/runPagespeed?"
+           + urllib.parse.urlencode(params))
+    req = urllib.request.Request(api, headers={"User-Agent": "wegovy-sentinel/3.0"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        data = _json.loads(r.read().decode("utf-8", "replace"))
+    lh = data.get("lighthouseResult", {})
+    audits = lh.get("audits", {})
+
+    def disp(k):
+        return (audits.get(k, {}).get("displayValue") or "").replace(" ", " ")
+
+    out = {
+        "score": int(round((lh.get("categories", {}).get("performance", {})
+                            .get("score") or 0) * 100)),
+        "lcp": disp("largest-contentful-paint"),
+        "cls": disp("cumulative-layout-shift"),
+        "tbt": disp("total-blocking-time"),
+        "fcp": disp("first-contentful-paint"),
+        "si": disp("speed-index"),
+        "strategy": strategy,
+    }
+    field = (data.get("loadingExperience") or {}).get("metrics") or {}
+    fm = {}
+    for k, label in (("LARGEST_CONTENTFUL_PAINT_MS", "lcp_ms"),
+                     ("INTERACTION_TO_NEXT_PAINT", "inp_ms"),
+                     ("CUMULATIVE_LAYOUT_SHIFT_SCORE", "cls100")):
+        v = field.get(k, {})
+        if "percentile" in v:
+            fm[label] = v["percentile"]
+            fm[label + "_cat"] = v.get("category", "")
+    if fm:
+        out["field"] = fm
+    return out
+
+
+FIXTURE_PSI = {
+    "score": 61, "lcp": "3.4 s", "cls": "0.08", "tbt": "480 ms",
+    "fcp": "2.1 s", "si": "4.6 s", "strategy": "mobile",
+    "field": {"lcp_ms": 3100, "lcp_ms_cat": "NEEDS_IMPROVEMENT",
+              "inp_ms": 210, "inp_ms_cat": "GOOD",
+              "cls100": 5, "cls100_cat": "GOOD"},
+}
 
 
 # ---------------------------------------------------------------------------
