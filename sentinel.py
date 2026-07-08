@@ -320,6 +320,13 @@ def digest(snaps: list) -> str:
         L.append(f"\nSearch Console (trailing window): {gc} clicks / {gi} impressions across tracked terms")
 
     gi_ = cur.get("gsci") or {}
+    if gi_.get("pill_page"):
+        L.append("\nPILL PAGE QUERIES (Google Search Console, trailing window):")
+        L.append(f"  {'Query':<38} {'Pos':>6} {'Impr':>8} {'Clicks':>7} {'CTR':>6}")
+        L.append("  " + "-" * 70)
+        for a in gi_["pill_page"][:15]:
+            L.append(f"  {a['q'][:38]:<38} {a['pos']:>6} {a['impr']:>8} "
+                     f"{a['clicks']:>7} {str(a['ctr']) + '%':>6}")
     if gi_.get("queries"):
         L.append(f"\nGSC INSIGHTS ({gi_['queries']} wegovy-topic queries analysed):")
         if gi_.get("untracked"):
@@ -513,6 +520,10 @@ def main():
             assert "Search Console" in text, "GSC highlight rendered"
             assert "TECH HEALTH" in text, "tech audit rendered"
             assert "GSC INSIGHTS" in text, "GSC insights rendered"
+            assert "PILL PAGE QUERIES" in text, "pill-page GSC table rendered"
+            pp = snap["gsci"]["pill_page"]
+            assert pp and pp[0]["q"] == "wegovy pill" and pp[0]["impr"] == 5800, pp
+            assert not any(a["q"] == "wegovy price" for a in pp), "advice-page query leaked into pill table"
             gi_t = snap["gsci"]
             assert any(a["q"] == "oral wegovy uk" for a in gi_t["untracked"]), gi_t["untracked"]
             assert any(a["q"] == "oral wegovy uk" for a in gi_t["ctr_opps"]), gi_t["ctr_opps"]
