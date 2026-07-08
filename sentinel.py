@@ -288,23 +288,21 @@ def digest(snaps: list) -> str:
 
     L.append("")
     L.append("TRACKED KEYWORDS (SOP across sources -- lower is better):")
-    L.append(f"  {'Keyword':<30} {'Semrush':>7} {'GSC':>6} {'AWR':>5}  "
-             f"{'Superdrug':>10}  {'Chemist4U':>10}  {'FamChem':>10}  {'MedExpr':>10}")
-    L.append("  " + "-" * 104)
+    L.append(f"  {'Keyword':<30} {'Semrush':>7} {'AWR':>5}  "
+             f"{'Superdrug':>11}  {'Chemist4U':>11}  {'FamilyChemist':>13}  {'MedExpress':>11}")
+    L.append("  " + "-" * 106)
     comp = cur.get("comp", {})
     gsc = cur.get("src", {}).get("gsc", {})
     awr = cur.get("src", {}).get("awr", {})
     for kw, goal, baseline in TRACKED:
         sop = cur["best"].get(kw)
         sop_str = str(sop['p']) if sop else "--"
-        g = gsc.get(kw)
-        gsc_str = f"{g['pos']:g}" if g else "--"
         a = awr.get(kw)
         awr_str = str(a) if a else "--"
-        cols = [f"  {kw:<30} {sop_str:>7} {gsc_str:>6} {awr_str:>5}"]
-        for _, label in COMPETITORS:
+        cols = [f"  {kw:<30} {sop_str:>7} {awr_str:>5}"]
+        for (_, label), w in zip(COMPETITORS, (11, 11, 13, 11)):
             c = comp.get(label, {}).get(kw)
-            cols.append(f"{str(c['p']) if c else '--':>10}")
+            cols.append(f"{str(c['p']) if c else '--':>{w}}")
         L.append("  ".join(cols))
 
     if cur["flags"]["wrong"]:
@@ -366,6 +364,16 @@ def digest(snaps: list) -> str:
         for c in tech["checks"]:
             if c["state"] != "pass":
                 L.append(f"  [{c['state'].upper()}] {c['name']}: {c['evidence']}")
+
+    psi = cur.get("psi") or {}
+    if psi.get("score") is not None and psi:
+        f = psi.get("field", {})
+        field_txt = (f"  |  real users: LCP {f['lcp_ms']}ms ({f.get('lcp_ms_cat', '')})"
+                     if f.get("lcp_ms") else "")
+        L.append(f"\nPAGESPEED (pill page, {psi.get('strategy', 'mobile')}): "
+                 f"Lighthouse {psi.get('score', '--')}/100  "
+                 f"LCP {psi.get('lcp', '--')}  CLS {psi.get('cls', '--')}  "
+                 f"TBT {psi.get('tbt', '--')}{field_txt}")
 
     links = cur.get("links") or {}
     if links.get("prospects"):
@@ -483,6 +491,10 @@ def main():
         except Exception as e:
             print(f"[warn] tech audit unavailable: {e}", file=sys.stderr)
         try:
+            snap["psi"] = tech_audit.FIXTURE_PSI if test else tech_audit.fetch_psi()
+        except Exception as e:
+            print(f"[warn] pagespeed unavailable: {e}", file=sys.stderr)
+        try:
             if test:
                 snap["links"] = link_gap.build(
                     link_gap._fixture_semrush, PILL_PAGE,
@@ -494,6 +506,14 @@ def main():
                 snap["links"] = link_gap.build(semrush, PILL_PAGE, comp_urls)
         except Exception as e:
             print(f"[warn] link gap unavailable: {e}", file=sys.stderr)
+
+        # A PSI failure must not blank the speed card -- carry forward.
+        if not snap.get("psi"):
+            for prev_s in reversed(snaps):
+                if prev_s.get("psi"):
+                    snap["psi"] = {**prev_s["psi"],
+                                   "as_of": prev_s["psi"].get("as_of", prev_s["date"])}
+                    break
 
         # A patrol without GSC credentials must not blank the Search Console
         # panels -- carry forward the last known data (stamped with its date).
@@ -545,6 +565,7 @@ def main():
             assert "GSC" in text and "AWR" in text, "multi-source digest rendered"
             assert "Search Console" in text, "GSC highlight rendered"
             assert "TECH HEALTH" in text, "tech audit rendered"
+            assert "PAGESPEED" in text and snap["psi"]["score"] == 61, "PSI rendered"
             assert "GSC INSIGHTS" in text, "GSC insights rendered"
             assert "PILL PAGE QUERIES" in text, "pill-page GSC table rendered"
             assert "GSC ANALYSIS" in text and snap["gsci"]["actions"], "analysis actions rendered"

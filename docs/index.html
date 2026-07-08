@@ -130,7 +130,7 @@ function compCell(comp,label,kw,sopPos){
   if(!c) return '<td class="mono na">--</td>';
   const p=c.p;
   const cls=sopPos==null?"na":p<sopPos?"lose":p>sopPos?"win":"tie";
-  return `<td class="mono pos-cell ${cls}">${p}</td>`;
+  return `<td class="mono pos-cell ${cls}">${c.u?`<a href="${esc(c.u)}" target="_blank" rel="noopener" style="color:inherit" title="${esc(c.u)}">${p}</a>`:p}</td>`;
 }
 
 function render(snaps){
@@ -156,7 +156,7 @@ function render(snaps){
     f.on&&f.days?`<span class="chip" style="background:#E2574C">DAY ${f.days}</span>`:!f.on?`<span class="chip" style="background:#3FA776">CLEAR</span>`:""}</div>`).join("");
 
   const comp=cur.comp||{};
-  const compHeaders=COMP_LABELS.map(l=>`<th>${COMP_SHORT[l]||l}</th>`).join("");
+  const compHeaders=COMP_LABELS.map(l=>`<th>${esc(l).toUpperCase()}</th>`).join("");
   const gsc=cur.src?.gsc||{}, awr=cur.src?.awr||{};
   const posC=p=>p==null?"#7E92B5":p<=10?"#3FA776":p<=20?"#C19A3A":"#E2574C";
 
@@ -164,14 +164,13 @@ function render(snaps){
     const c=cur.best?.[t.kw]||null,pv=prev?.best?.[t.kw]?.p??null,pos=c?.p??null;
     const wrong=c&&t.goal!==c.c&&c.c!=="advice",legacy=c?.c==="legacy";
     const posCol=posC(pos);
-    const g=gsc[t.kw]||null, a=awr[t.kw]??null;
-    const gscCell=g?`<td class="mono pos-cell" style="color:${posC(g.pos)}" title="${g.clicks} clicks · ${g.impr} impressions · ${g.ctr}% CTR (trailing window)">${g.pos}<span style="color:#7E92B5;font-weight:400"> · ${g.clicks}clk</span></td>`:'<td class="mono na">--</td>';
+    const a=awr[t.kw]??null;
     const awrCell=a!=null?`<td class="mono pos-cell" style="color:${posC(a)}">${a}</td>`:'<td class="mono na">--</td>';
     const compCells=COMP_LABELS.map(l=>compCell(comp,l,t.kw,pos)).join("");
+    const ourPath=c&&c.u?c.u.replace(/^https?:\/\/[^\/]+/,""):"";
     return `<tr>
-      <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}</td>
-      <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":pos}</td>
-      ${gscCell}
+      <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}${ourPath?`<div class="mono" style="font-size:10px;color:#7E92B5;font-weight:400;margin-top:2px">${esc(ourPath)}</div>`:""}</td>
+      <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":(c&&c.u?`<a href="${esc(c.u)}" target="_blank" rel="noopener" style="color:inherit" title="${esc(c.u)}">${pos}</a>`:pos)}</td>
       ${awrCell}
       <td>${arrow(pv!=null&&pos!=null?pv-pos:null)}</td>
       ${compCells}
@@ -213,10 +212,27 @@ function render(snaps){
   const prospectRows=links&&links.prospects?links.prospects.map(p=>`<tr>
       <td>${esc(p.d)}</td><td class="mono" style="color:${p.n>=2?'#3FA776':'#7E92B5'};font-weight:700">${p.n}</td>
       <td style="font-size:11px;color:#7E92B5">${(p.who||[]).map(esc).join(", ")}</td></tr>`).join(""):"";
-  const techSection=(techFlags||prospectRows)?`
+  const psi=cur.psi||null;
+  const psiCol=s=>s>=90?"#3FA776":s>=50?"#C19A3A":"#E2574C";
+  const fcat=c=>c==="GOOD"?'<span class="win">good</span>':c==="NEEDS_IMPROVEMENT"?'<span style="color:#C19A3A">needs improvement</span>':c?'<span class="lose">poor</span>':"";
+  const psiCard=(psi&&psi.score!=null)?`
+    <div class="card alt-wrap" style="flex:0 0 240px">
+      <div class="eyebrow">Page speed &mdash; Lighthouse (${esc(psi.strategy||"mobile")})</div>
+      <div class="gauge" style="color:${psiCol(psi.score)};margin-top:10px">${psi.score}<span style="font-size:16px;color:var(--slate)">/100</span></div>
+      <div style="font-size:11px;color:var(--slate);margin-top:10px;line-height:1.8" class="mono">
+        LCP <strong style="color:var(--cream)">${esc(psi.lcp||"--")}</strong><br>
+        CLS <strong style="color:var(--cream)">${esc(psi.cls||"--")}</strong><br>
+        TBT <strong style="color:var(--cream)">${esc(psi.tbt||"--")}</strong><br>
+        FCP <strong style="color:var(--cream)">${esc(psi.fcp||"--")}</strong>
+      </div>
+      ${psi.field?`<div style="font-size:11px;color:var(--slate);margin-top:10px;border-top:1px solid var(--line);padding-top:8px">Real users (CrUX):<br>LCP ${psi.field.lcp_ms??"--"}ms ${fcat(psi.field.lcp_ms_cat)}${psi.field.inp_ms!=null?`<br>INP ${psi.field.inp_ms}ms ${fcat(psi.field.inp_ms_cat)}`:""}</div>`:""}
+      ${psi.as_of?`<div style="font-size:10px;color:var(--slate);margin-top:8px">as of ${esc(psi.as_of)}</div>`:""}
+    </div>`:"";
+  const techSection=(techFlags||prospectRows||psiCard)?`
   <div class="section-hd"><h2>Why we're not on page one</h2>
-    <span class="eyebrow">technical health of the pill page &middot; backlink gap vs ranking competitors</span></div>
+    <span class="eyebrow">technical health &middot; page speed &middot; backlink gap vs ranking competitors</span></div>
   <div class="grid">
+    ${psiCard}
     ${techFlags?`<div class="flags" style="flex:1 1 380px"><div class="eyebrow">Technical health -- ${tech.score}/${tech.of} pass</div>${techFlags}</div>`:""}
     ${prospectRows?`<div class="card" style="flex:1 1 420px">
       <div class="eyebrow">Link prospects -- they link to competitors' pill pages, not ours (we have ${links.ours??0} refdomains)</div>
@@ -299,13 +315,13 @@ function render(snaps){
   </div>
   <div class="tbl">
     <div class="hd"><span class="eyebrow">Tracked keywords -- SOP across sources vs competitors</span><button id="copyBtn">COPY DIGEST</button></div>
-    <table><thead><tr><th>KEYWORD</th><th>SEMRUSH</th><th>GSC</th><th>AWR</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
+    <table><thead><tr><th>KEYWORD &amp; OUR RANKING URL</th><th>SEMRUSH</th><th>AWR</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
   </div>
   ${gapSection}
   ${techSection}
   ${gsciSection}
   <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
-    <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Three ranking sources for our pages:</strong> <span style="color:#C19A3A">Semrush</span> (modelled UK desktop), <span style="color:#C19A3A">GSC</span> (Google's own data -- avg position + clicks/impressions, trailing window; hover for detail), <span style="color:#C19A3A">AWR</span> (tracked UK/mobile rank). vs PREV tracks the Semrush position. GSC/AWR columns populate once their secrets are added. Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
+    <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Ranking sources:</strong> <span style="color:#C19A3A">Semrush</span> (modelled UK desktop) and <span style="color:#C19A3A">AWR</span> (tracked UK/mobile rank); Search Console data has its own section below. vs PREV tracks the Semrush position. Position numbers link to the ranking URL (hover to preview). Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
   </div>`;
 
   document.getElementById("copyBtn").onclick=async()=>{
@@ -317,10 +333,10 @@ function render(snaps){
     TRACKED.forEach(t=>{
       const c=cur.best?.[t.kw];
       const sp=c?String(c.p):"--";
-      const g=gsc[t.kw],a=awr[t.kw];
-      const gs=g?String(g.pos):"--",as=a!=null?String(a):"--";
+      const a=awr[t.kw];
+      const as=a!=null?String(a):"--";
       const cs=COMP_LABELS.map(l=>{const x=comp[l]?.[t.kw];return x?String(x.p):"--";});
-      L.push(`${t.kw}: Semrush ${sp} | GSC ${gs} | AWR ${as} | SD ${cs[0]} | C4U ${cs[1]} | FC ${cs[2]} | MX ${cs[3]}`);
+      L.push(`${t.kw}: Semrush ${sp} | AWR ${as} | Superdrug ${cs[0]} | Chemist4U ${cs[1]} | FamilyChemist ${cs[2]} | MedExpress ${cs[3]}`);
     });
     if(cur.flags?.wrong)L.push(`\n[!] Wrong-page routing live -- day ${streak(snaps,"wrong")}`);
     if(cur.flags?.legacy)L.push(`[!] Legacy URL still ranking -- day ${streak(snaps,"legacy")}`);

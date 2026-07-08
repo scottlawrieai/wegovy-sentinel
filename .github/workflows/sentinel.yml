@@ -27,6 +27,8 @@ jobs:
           GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
           GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
+          # PageSpeed Insights (optional key -- keyless works but is rate-limited)
+          PSI_API_KEY: ${{ secrets.PSI_API_KEY }}
           # Advanced Web Ranking (optional -- AWR Cloud v2 get API)
           AWR_API_TOKEN: ${{ secrets.AWR_API_TOKEN }}
           AWR_PROJECT: ${{ vars.AWR_PROJECT }}
