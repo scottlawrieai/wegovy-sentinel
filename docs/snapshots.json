@@ -4480,7 +4480,321 @@
     "wegovy pill": 19
    }
   },
-  "gsci": {},
+  "gsci": {
+   "pill_page": [
+    {
+     "q": "wegovy pill uk where to buy",
+     "pos": 7.94,
+     "clicks": 98,
+     "impr": 4768,
+     "ctr": 2.1
+    },
+    {
+     "q": "wegovy pill",
+     "pos": 7.21,
+     "clicks": 33,
+     "impr": 2035,
+     "ctr": 1.6
+    },
+    {
+     "q": "buy wegovy pill",
+     "pos": 7.04,
+     "clicks": 78,
+     "impr": 1047,
+     "ctr": 7.5
+    },
+    {
+     "q": "wegovy pill cost uk",
+     "pos": 7.67,
+     "clicks": 7,
+     "impr": 672,
+     "ctr": 1.0
+    },
+    {
+     "q": "wegovy tablets uk",
+     "pos": 14.27,
+     "clicks": 5,
+     "impr": 643,
+     "ctr": 0.8
+    },
+    {
+     "q": "wegovy pill uk price",
+     "pos": 7.17,
+     "clicks": 7,
+     "impr": 628,
+     "ctr": 1.1
+    },
+    {
+     "q": "buy wegovy pills",
+     "pos": 6.92,
+     "clicks": 78,
+     "impr": 598,
+     "ctr": 13.0
+    },
+    {
+     "q": "wegovy tablets price uk",
+     "pos": 5.62,
+     "clicks": 17,
+     "impr": 535,
+     "ctr": 3.2
+    },
+    {
+     "q": "wegovy tablets uk price",
+     "pos": 5.05,
+     "clicks": 25,
+     "impr": 459,
+     "ctr": 5.4
+    },
+    {
+     "q": "wegovy pill uk",
+     "pos": 18.06,
+     "clicks": 21,
+     "impr": 454,
+     "ctr": 4.6
+    },
+    {
+     "q": "wegovy pills",
+     "pos": 11.41,
+     "clicks": 15,
+     "impr": 443,
+     "ctr": 3.4
+    },
+    {
+     "q": "wegovy pill price uk",
+     "pos": 6.03,
+     "clicks": 6,
+     "impr": 403,
+     "ctr": 1.5
+    },
+    {
+     "q": "wegovy pill where to buy",
+     "pos": 8.61,
+     "clicks": 14,
+     "impr": 397,
+     "ctr": 3.5
+    },
+    {
+     "q": "wegovy pills uk",
+     "pos": 14.01,
+     "clicks": 9,
+     "impr": 386,
+     "ctr": 2.3
+    },
+    {
+     "q": "wegovy tablets",
+     "pos": 18.5,
+     "clicks": 6,
+     "impr": 373,
+     "ctr": 1.6
+    }
+   ],
+   "untracked": [
+    {
+     "q": "wegovy pill cost",
+     "clicks": 849,
+     "impr": 24616,
+     "pos": 5.1,
+     "ctr": 3.4
+    },
+    {
+     "q": "wegovy pill side effects",
+     "clicks": 144,
+     "impr": 8008,
+     "pos": 3.55,
+     "ctr": 1.8,
+     "exp": 7.0
+    },
+    {
+     "q": "wegovy pill cost uk",
+     "clicks": 455,
+     "impr": 5877,
+     "pos": 3.53,
+     "ctr": 7.7
+    },
+    {
+     "q": "wegovy pill vs injection",
+     "clicks": 363,
+     "impr": 5697,
+     "pos": 1.49,
+     "ctr": 6.4,
+     "exp": 15.0
+    },
+    {
+     "q": "wegovy pill uk where to buy",
+     "clicks": 98,
+     "impr": 4768,
+     "pos": 7.94,
+     "ctr": 2.1
+    },
+    {
+     "q": "wegovy pill price",
+     "clicks": 186,
+     "impr": 4298,
+     "pos": 5.19,
+     "ctr": 4.3
+    },
+    {
+     "q": "how much is the wegovy pill",
+     "clicks": 158,
+     "impr": 4174,
+     "pos": 3.91,
+     "ctr": 3.8
+    },
+    {
+     "q": "wegovy pill price uk",
+     "clicks": 219,
+     "impr": 3938,
+     "pos": 4.4,
+     "ctr": 5.6
+    },
+    {
+     "q": "wegovy pill uk price",
+     "clicks": 219,
+     "impr": 3351,
+     "pos": 4.12,
+     "ctr": 6.5
+    },
+    {
+     "q": "how much will the wegovy pill cost",
+     "clicks": 195,
+     "impr": 2534,
+     "pos": 3.01,
+     "ctr": 7.7
+    },
+    {
+     "q": "wegovy discount code",
+     "clicks": 27,
+     "impr": 666,
+     "pos": 2.83,
+     "ctr": 4.1,
+     "exp": 10.0
+    },
+    {
+     "q": "wegovy tablets uk",
+     "clicks": 5,
+     "impr": 643,
+     "pos": 14.27,
+     "ctr": 0.8
+    },
+    {
+     "q": "wegovy tablets uk price",
+     "clicks": 25,
+     "impr": 459,
+     "pos": 5.05,
+     "ctr": 5.4
+    },
+    {
+     "q": "wegovy pills uk",
+     "clicks": 9,
+     "impr": 386,
+     "pos": 14.01,
+     "ctr": 2.3
+    }
+   ],
+   "ctr_opps": [
+    {
+     "q": "wegovy pill",
+     "clicks": 190,
+     "impr": 16169,
+     "pos": 5.52,
+     "ctr": 1.2,
+     "exp": 3.5
+    },
+    {
+     "q": "wegovy side effects",
+     "clicks": 42,
+     "impr": 11701,
+     "pos": 7.11,
+     "ctr": 0.4,
+     "exp": 3.5
+    },
+    {
+     "q": "wegovy pill side effects",
+     "clicks": 144,
+     "impr": 8008,
+     "pos": 3.55,
+     "ctr": 1.8,
+     "exp": 7.0
+    },
+    {
+     "q": "wegovy pill vs injection",
+     "clicks": 363,
+     "impr": 5697,
+     "pos": 1.49,
+     "ctr": 6.4,
+     "exp": 15.0
+    },
+    {
+     "q": "wegovy price",
+     "clicks": 19,
+     "impr": 3821,
+     "pos": 9.19,
+     "ctr": 0.5,
+     "exp": 2.5
+    },
+    {
+     "q": "wegovy discount code",
+     "clicks": 27,
+     "impr": 666,
+     "pos": 2.83,
+     "ctr": 4.1,
+     "exp": 10.0
+    }
+   ],
+   "routing": [
+    {
+     "q": "wegovy pill cost",
+     "impr": 24616,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk/"
+    },
+    {
+     "q": "buy wegovy pill",
+     "impr": 1327,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
+    },
+    {
+     "q": "buy wegovy pills",
+     "impr": 785,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
+    }
+   ],
+   "striking": [
+    {
+     "q": "wegovy tablets uk",
+     "clicks": 5,
+     "impr": 643,
+     "pos": 14.27,
+     "ctr": 0.8
+    },
+    {
+     "q": "wegovy pills",
+     "clicks": 15,
+     "impr": 443,
+     "pos": 11.41,
+     "ctr": 3.4
+    },
+    {
+     "q": "wegovy pills uk",
+     "clicks": 9,
+     "impr": 386,
+     "pos": 14.01,
+     "ctr": 2.3
+    },
+    {
+     "q": "wegovy tablets",
+     "clicks": 6,
+     "impr": 373,
+     "pos": 18.5,
+     "ctr": 1.6
+    }
+   ],
+   "rows": 33,
+   "queries": 23,
+   "seed": "pulled live via GSC API (Ryze) 2026-07-08; auto-refreshes daily once GSC secrets are set"
+  },
   "m": {
    "pill": 28,
    "bwInj": null,
