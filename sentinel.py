@@ -327,6 +327,17 @@ def digest(snaps: list) -> str:
         for a in gi_["pill_page"][:15]:
             L.append(f"  {a['q'][:38]:<38} {a['pos']:>6} {a['impr']:>8} "
                      f"{a['clicks']:>7} {str(a['ctr']) + '%':>6}")
+    if gi_.get("actions"):
+        L.append("\nGSC ANALYSIS -- prioritised actions (computed from Google's data):")
+        for i, act in enumerate(gi_["actions"], 1):
+            L.append(f"  {i}. {act}")
+    if gi_.get("splits"):
+        L.append("\n  Query splits (cannibalisation detail):")
+        for s in gi_["splits"][:4]:
+            L.append(f"    \"{s['q']}\" -- {s['impr']:,} impr over {s['n']} URLs "
+                     f"(pill page {s['pill_pct']}%)")
+            for p in s["pages"][:3]:
+                L.append(f"      {p['impr']:>7,} impr  pos {p['pos']:<6} {p['page']}")
     if gi_.get("queries"):
         L.append(f"\nGSC INSIGHTS ({gi_['queries']} wegovy-topic queries analysed):")
         if gi_.get("untracked"):
@@ -521,6 +532,8 @@ def main():
             assert "TECH HEALTH" in text, "tech audit rendered"
             assert "GSC INSIGHTS" in text, "GSC insights rendered"
             assert "PILL PAGE QUERIES" in text, "pill-page GSC table rendered"
+            assert "GSC ANALYSIS" in text and snap["gsci"]["actions"], "analysis actions rendered"
+            assert snap["gsci"]["splits"] and snap["gsci"]["splits"][0]["q"] == "buy wegovy pill", snap["gsci"]["splits"]
             pp = snap["gsci"]["pill_page"]
             assert pp and pp[0]["q"] == "wegovy pill" and pp[0]["impr"] == 5800, pp
             assert not any(a["q"] == "wegovy price" for a in pp), "advice-page query leaked into pill table"

@@ -227,6 +227,8 @@ def analyse_gsc_rows(rows, tracked, pill_url: str = PILL_PAGE) -> dict:
         key=lambda a: -a["impr"])[:10]
     for a in ctr_opps:
         a["exp"] = _expected_ctr(a["pos"])
+        # clicks/window we'd gain by closing the gap to the expected CTR
+        a["lost"] = int((a["exp"] - a["ctr"]) / 100.0 * a["impr"])
 
     routing = []
     for a in per_q.values():
@@ -245,10 +247,52 @@ def analyse_gsc_rows(rows, tracked, pill_url: str = PILL_PAGE) -> dict:
         (a for a in per_q.values() if 11 <= a["pos"] <= 20 and a["impr"] >= 100),
         key=lambda a: -a["impr"])[:10]
 
+    def _short(u):
+        return re.sub(r"^https?://[^/]+", "", u or "").rstrip("/") or "/"
+
+    # queries split across multiple URLs -- the cannibalisation detail, with
+    # each page's share of impressions
+    splits = []
+    for a in sorted(per_q.values(), key=lambda x: -x["impr"]):
+        by_page = {}
+        for p in a["pages"]:
+            key = _short(p["page"])
+            d = by_page.setdefault(key, {"page": key, "impr": 0, "pos": p["pos"]})
+            d["impr"] += p["impr"]
+            d["pos"] = min(d["pos"], p["pos"])
+        if len(by_page) < 2 or a["impr"] < 300:
+            continue
+        pages = sorted(by_page.values(), key=lambda p: -p["impr"])
+        pill_share = sum(p["impr"] for p in pages if p["page"] == _short(pill_url))
+        splits.append({"q": a["q"], "impr": a["impr"], "n": len(pages),
+                       "pill_pct": round(pill_share * 100.0 / a["impr"]) if a["impr"] else 0,
+                       "pages": pages[:5]})
+        if len(splits) >= 6:
+            break
+
+    # prioritised, data-derived action list (what a consultant would say)
+    actions = []
+    for s in splits[:2]:
+        tops = ", ".join(p["page"] for p in s["pages"][:3])
+        actions.append(
+            f"Consolidate \"{s['q']}\" -- {s['impr']:,} impressions split across "
+            f"{s['n']} URLs (pill page gets {s['pill_pct']}%). Point internal links "
+            f"and intent at one URL: {tops}")
+    for a in ctr_opps[:2]:
+        actions.append(
+            f"Rewrite title/meta for \"{a['q']}\" -- position {a['pos']} but CTR "
+            f"{a['ctr']}% vs ~{a['exp']}% expected: ~{a['lost']:,} clicks/window "
+            f"being left on the table")
+    for a in striking[:2]:
+        actions.append(
+            f"Push \"{a['q']}\" onto page one -- position {a['pos']} with "
+            f"{a['impr']:,} impressions waiting")
+
     strip = lambda lst: [{k: v for k, v in a.items() if k != "pages"} for a in lst]
     return {"pill_page": pill_page,
             "untracked": strip(untracked), "ctr_opps": strip(ctr_opps),
             "routing": routing, "striking": strip(striking),
+            "splits": splits, "actions": actions,
             "rows": len(rows), "queries": len(per_q)}
 
 

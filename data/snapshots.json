@@ -4602,7 +4602,8 @@
      "impr": 8008,
      "pos": 3.55,
      "ctr": 1.8,
-     "exp": 7.0
+     "exp": 7.0,
+     "lost": 416
     },
     {
      "q": "wegovy pill cost uk",
@@ -4617,7 +4618,8 @@
      "impr": 5697,
      "pos": 1.49,
      "ctr": 6.4,
-     "exp": 15.0
+     "exp": 15.0,
+     "lost": 489
     },
     {
      "q": "wegovy pill uk where to buy",
@@ -4667,7 +4669,8 @@
      "impr": 666,
      "pos": 2.83,
      "ctr": 4.1,
-     "exp": 10.0
+     "exp": 10.0,
+     "lost": 39
     },
     {
      "q": "wegovy tablets uk",
@@ -4698,7 +4701,8 @@
      "impr": 16169,
      "pos": 5.52,
      "ctr": 1.2,
-     "exp": 3.5
+     "exp": 3.5,
+     "lost": 371
     },
     {
      "q": "wegovy side effects",
@@ -4706,7 +4710,8 @@
      "impr": 11701,
      "pos": 7.11,
      "ctr": 0.4,
-     "exp": 3.5
+     "exp": 3.5,
+     "lost": 362
     },
     {
      "q": "wegovy pill side effects",
@@ -4714,7 +4719,8 @@
      "impr": 8008,
      "pos": 3.55,
      "ctr": 1.8,
-     "exp": 7.0
+     "exp": 7.0,
+     "lost": 416
     },
     {
      "q": "wegovy pill vs injection",
@@ -4722,7 +4728,8 @@
      "impr": 5697,
      "pos": 1.49,
      "ctr": 6.4,
-     "exp": 15.0
+     "exp": 15.0,
+     "lost": 489
     },
     {
      "q": "wegovy price",
@@ -4730,7 +4737,8 @@
      "impr": 3821,
      "pos": 9.19,
      "ctr": 0.5,
-     "exp": 2.5
+     "exp": 2.5,
+     "lost": 76
     },
     {
      "q": "wegovy discount code",
@@ -4738,7 +4746,8 @@
      "impr": 666,
      "pos": 2.83,
      "ctr": 4.1,
-     "exp": 10.0
+     "exp": 10.0,
+     "lost": 39
     }
    ],
    "routing": [
@@ -4790,6 +4799,131 @@
      "pos": 18.5,
      "ctr": 1.6
     }
+   ],
+   "splits": [
+    {
+     "q": "wegovy pill cost",
+     "impr": 24616,
+     "n": 2,
+     "pill_pct": 0,
+     "pages": [
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
+       "impr": 18773,
+       "pos": 5.76
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
+       "impr": 5843,
+       "pos": 5.1
+      }
+     ]
+    },
+    {
+     "q": "wegovy pill",
+     "impr": 16169,
+     "n": 5,
+     "pill_pct": 13,
+     "pages": [
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill",
+       "impr": 7890,
+       "pos": 9.51
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/switching-wegovy-injection-to-pill",
+       "impr": 4433,
+       "pos": 11.65
+      },
+      {
+       "page": "/weight-loss/wegovy-pill",
+       "impr": 2035,
+       "pos": 7.21
+      },
+      {
+       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
+       "impr": 1165,
+       "pos": 13.68
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
+       "impr": 646,
+       "pos": 5.52
+      }
+     ]
+    },
+    {
+     "q": "wegovy pill uk",
+     "impr": 2825,
+     "n": 4,
+     "pill_pct": 16,
+     "pages": [
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
+       "impr": 1302,
+       "pos": 4.04
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill",
+       "impr": 740,
+       "pos": 8.1
+      },
+      {
+       "page": "/weight-loss/wegovy-pill",
+       "impr": 454,
+       "pos": 18.06
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
+       "impr": 329,
+       "pos": 12.57
+      }
+     ]
+    },
+    {
+     "q": "buy wegovy pill",
+     "impr": 1327,
+     "n": 2,
+     "pill_pct": 79,
+     "pages": [
+      {
+       "page": "/weight-loss/wegovy-pill",
+       "impr": 1047,
+       "pos": 7.04
+      },
+      {
+       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
+       "impr": 280,
+       "pos": 9.9
+      }
+     ]
+    },
+    {
+     "q": "buy wegovy pills",
+     "impr": 785,
+     "n": 2,
+     "pill_pct": 76,
+     "pages": [
+      {
+       "page": "/weight-loss/wegovy-pill",
+       "impr": 598,
+       "pos": 6.92
+      },
+      {
+       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
+       "impr": 187,
+       "pos": 9.47
+      }
+     ]
+    }
+   ],
+   "actions": [
+    "Consolidate \"wegovy pill cost\" -- 24,616 impressions split across 2 URLs (pill page gets 0%). Point internal links and intent at one URL: /health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk, /health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
+    "Consolidate \"wegovy pill\" -- 16,169 impressions split across 5 URLs (pill page gets 13%). Point internal links and intent at one URL: /health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill, /health-advice/weight-loss/wegovy-pill/switching-wegovy-injection-to-pill, /weight-loss/wegovy-pill",
+    "Rewrite title/meta for \"wegovy pill\" -- position 5.52 but CTR 1.2% vs ~3.5% expected: ~371 clicks/window being left on the table",
+    "Rewrite title/meta for \"wegovy side effects\" -- position 7.11 but CTR 0.4% vs ~3.5% expected: ~362 clicks/window being left on the table",
+    "Push \"wegovy tablets uk\" onto page one -- position 14.27 with 643 impressions waiting",
+    "Push \"wegovy pills\" onto page one -- position 11.41 with 443 impressions waiting"
    ],
    "rows": 33,
    "queries": 23,
