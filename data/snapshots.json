@@ -4532,7 +4532,7 @@
    "ours": 10,
    "comp": {
     "Superdrug": 16,
-    "Chemist4U": 3,
+    "Chemist4U": 4,
     "FamilyChemist": 0,
     "MedExpress": 0
    },
@@ -4542,6 +4542,13 @@
      "n": 1,
      "who": [
       "Superdrug"
+     ]
+    },
+    {
+     "d": "dailyrecord.co.uk",
+     "n": 1,
+     "who": [
+      "Chemist4U"
      ]
     },
     {
