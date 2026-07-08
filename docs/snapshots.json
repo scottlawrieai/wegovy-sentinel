@@ -4977,6 +4977,23 @@
    "score": 6,
    "of": 6
   },
+  "psi": {
+   "score": 74,
+   "lcp": "4.5 s",
+   "cls": "0.001",
+   "tbt": "350 ms",
+   "fcp": "2.3 s",
+   "si": "2.4 s",
+   "strategy": "mobile",
+   "field": {
+    "lcp_ms": 1109,
+    "lcp_ms_cat": "FAST",
+    "inp_ms": 122,
+    "inp_ms_cat": "FAST",
+    "cls100": 0,
+    "cls100_cat": "FAST"
+   }
+  },
   "links": {
    "ours": 11,
    "comp": {
