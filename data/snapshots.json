@@ -4978,12 +4978,12 @@
    "of": 6
   },
   "psi": {
-   "score": 74,
-   "lcp": "4.5 s",
-   "cls": "0.001",
-   "tbt": "350 ms",
-   "fcp": "2.3 s",
-   "si": "2.4 s",
+   "score": 48,
+   "lcp": "9.9 s",
+   "cls": "0",
+   "tbt": "650 ms",
+   "fcp": "3.3 s",
+   "si": "5.7 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 1109,
