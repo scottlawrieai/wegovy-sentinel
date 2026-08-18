@@ -49,6 +49,15 @@
   .err{margin:24px 20px;padding:14px;border:1px solid var(--gold);border-radius:6px;color:var(--gold);font-size:12px;line-height:1.6}
   .pos-cell{font-weight:700;font-size:12px}
   .win{color:#3FA776}.lose{color:#E2574C}.tie{color:#7E92B5}.na{color:#7E92B5}
+  .flag.warnflag{background:rgba(193,154,58,.14);border-color:var(--gold);color:#E6C766}
+  .section-hd{margin:30px 20px 0;padding-top:18px;border-top:2px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+  .section-hd h2{font-size:15px;letter-spacing:.04em;color:var(--cream);font-weight:700}
+  .gauge{font-size:36px;font-weight:800;font-family:ui-monospace,Menlo,monospace}
+  .tag{font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 7px;border-radius:3px;color:var(--ink)}
+  .gap-chip{display:inline-block;font-size:11px;padding:3px 8px;margin:3px 4px 0 0;border-radius:3px;background:var(--panel2);border:1px solid var(--line);color:#F4B3AD}
+  .opp{font-size:12.5px;line-height:1.5;padding:6px 0;border-bottom:1px solid var(--line)}
+  .opp:last-child{border-bottom:none}
+  .role-us{background:#C19A3A}.role-competitor{background:#7E92B5}.role-brand{background:#3FA776}
 </style>
 </head>
 <body>
@@ -60,6 +69,7 @@
   <div class="meta mono" id="meta"></div>
 </div>
 <div id="app"><div class="err">Loading snapshot history...</div></div>
+<div id="content-app"></div>
 
 <script>
 const TRACKED=[
@@ -103,7 +113,7 @@ function trendSVG(snaps){
     return `<polyline fill="none" stroke="${col}" stroke-width="2" points="${seg.join(" ")}"/>`
       +pts.map((s,i)=>s.m&&s.m[key]!=null?`<circle cx="${x(i)}" cy="${y(s.m[key])}" r="2.5" fill="${col}"/>`:"").join("");
   };
-  const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#23477E" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#7E92B5" font-size="10">P${p}</text>`).join("");
+  const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#23477E" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#7E92B5" font-size="10">${p}</text>`).join("");
   return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:280px">
     ${grid}
     <line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="#C19A3A" stroke-dasharray="4 4"/>
@@ -120,7 +130,7 @@ function compCell(comp,label,kw,sopPos){
   if(!c) return '<td class="mono na">--</td>';
   const p=c.p;
   const cls=sopPos==null?"na":p<sopPos?"lose":p>sopPos?"win":"tie";
-  return `<td class="mono pos-cell ${cls}">P${p}</td>`;
+  return `<td class="mono pos-cell ${cls}">${c.u?`<a href="${esc(c.u)}" target="_blank" rel="noopener" style="color:inherit" title="${esc(c.u)}">${p}</a>`:p}</td>`;
 }
 
 function render(snaps){
@@ -132,9 +142,9 @@ function render(snaps){
   document.getElementById("meta").innerHTML=`Last patrol: ${esc(cur.date)} -- day ${snaps.length}`;
   document.getElementById("modeBadge").innerHTML=cur.mode&&cur.mode!=="semrush"?`<span class="chip" style="background:#C19A3A">${esc(cur.mode.toUpperCase())}</span>`:"";
   const banner=pill==null?"":`<div class="banner mono" style="background:${target?"rgba(63,167,118,.14)":pageOne?"rgba(193,154,58,.16)":"rgba(226,87,76,.14)"};border:1px solid ${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"};color:${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"}">${
-    target?"TARGET ACHIEVED -- P1-3 secured. Hold through MHRA decision."
-    :pageOne?"PAGE ONE REACHED -- new mission: P1-3 before MHRA decision."
-    :`MISSION: page one for "wegovy pill" before MHRA decision -- currently P${pill} -- ${pill-10} positions to go`}</div>`;
+    target?"TARGET ACHIEVED -- top 3 secured. Hold through MHRA decision."
+    :pageOne?"PAGE ONE REACHED -- new mission: top 3 before MHRA decision."
+    :`MISSION: page one for "wegovy pill" before MHRA decision -- currently position ${pill} -- ${pill-10} to go for page one`}</div>`;
 
   const flagDefs=[
     {on:cur.flags?.wrong,days:streak(snaps,"wrong"),ok:"Buy-intent terms served by correct page type",bad:"Wrong-page routing LIVE -- pill page ranking for buy-intent terms"},
@@ -146,16 +156,22 @@ function render(snaps){
     f.on&&f.days?`<span class="chip" style="background:#E2574C">DAY ${f.days}</span>`:!f.on?`<span class="chip" style="background:#3FA776">CLEAR</span>`:""}</div>`).join("");
 
   const comp=cur.comp||{};
-  const compHeaders=COMP_LABELS.map(l=>`<th>${COMP_SHORT[l]||l}</th>`).join("");
+  const compHeaders=COMP_LABELS.map(l=>`<th>${esc(l).toUpperCase()}</th>`).join("");
+  const gsc=cur.src?.gsc||{}, awr=cur.src?.awr||{};
+  const posC=p=>p==null?"#7E92B5":p<=10?"#3FA776":p<=20?"#C19A3A":"#E2574C";
 
   const rows=TRACKED.map(t=>{
     const c=cur.best?.[t.kw]||null,pv=prev?.best?.[t.kw]?.p??null,pos=c?.p??null;
     const wrong=c&&t.goal!==c.c&&c.c!=="advice",legacy=c?.c==="legacy";
-    const posCol=pos==null?"#7E92B5":pos<=10?"#3FA776":pos<=20?"#C19A3A":"#E2574C";
+    const posCol=posC(pos);
+    const a=awr[t.kw]??null;
+    const awrCell=a!=null?`<td class="mono pos-cell" style="color:${posC(a)}">${a}</td>`:'<td class="mono na">--</td>';
     const compCells=COMP_LABELS.map(l=>compCell(comp,l,t.kw,pos)).join("");
+    const ourPath=c&&c.u?c.u.replace(/^https?:\/\/[^\/]+/,""):"";
     return `<tr>
-      <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}</td>
-      <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":"P"+pos}</td>
+      <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}${ourPath?`<div class="mono" style="font-size:10px;color:#7E92B5;font-weight:400;margin-top:2px">${esc(ourPath)}</div>`:""}</td>
+      <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":(c&&c.u?`<a href="${esc(c.u)}" target="_blank" rel="noopener" style="color:inherit" title="${esc(c.u)}">${pos}</a>`:pos)}</td>
+      ${awrCell}
       <td>${arrow(pv!=null&&pos!=null?pv-pos:null)}</td>
       ${compCells}
       <td>${c?`<span class="chip" style="background:${CLR[c.c]||"#7E92B5"}">${LBL[c.c]||"OTHER"}</span>`:'<span style="color:#7E92B5">--</span>'}</td>
@@ -166,7 +182,7 @@ function render(snaps){
         :`<span style="color:#7E92B5;font-size:11px">${t.goal} page</span>`}</td></tr>`;
   }).join("");
 
-  const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))} P${s.m?.pill??"--"}`).join(" | ");
+  const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))}: ${s.m?.pill??"--"}`).join(" | ");
 
   // Competitive gap summary
   let gapRows="";
@@ -178,7 +194,7 @@ function render(snaps){
       const c=comp[label]?.[t.kw];
       if(c&&c.p<sopP){
         gapCount++;
-        gapRows+=`<tr><td>${esc(t.kw)}</td><td class="mono lose">P${c.p}</td><td>${esc(label)}</td><td class="mono" style="color:#7E92B5">${sop?"P"+sop.p:"--"}</td><td class="mono" style="color:#E2574C">${sop?c.p-sop.p:"--"}</td></tr>`;
+        gapRows+=`<tr><td>${esc(t.kw)}</td><td class="mono lose">${c.p}</td><td>${esc(label)}</td><td class="mono" style="color:#7E92B5">${sop?sop.p:"--"}</td><td class="mono" style="color:#E2574C">${sop?c.p-sop.p:"--"}</td></tr>`;
       }
     });
   });
@@ -186,6 +202,98 @@ function render(snaps){
   <div class="comp-tbl">
     <div class="hd"><span class="eyebrow">Competitive gaps -- pill keywords where competitors outrank SOP (${gapCount})</span></div>
     <table><thead><tr><th>KEYWORD</th><th>COMPETITOR POS</th><th>COMPETITOR</th><th>SOP POS</th><th>GAP</th></tr></thead><tbody>${gapRows}</tbody></table>
+  </div>`:"";
+
+  // Technical health + backlink gap (populated once the enriched patrol runs)
+  const tech=cur.tech||null, links=cur.links||null;
+  const techFlags=tech&&tech.checks?tech.checks.map(c=>`<div class="flag ${c.state==='pass'?'ok':c.state==='warn'?'warnflag':'bad'}">
+      <div><strong>${esc(c.name)}</strong><div style="font-size:11px;color:#7E92B5;margin-top:2px">${esc(c.evidence)}</div></div>
+      <span class="chip" style="background:${c.state==='pass'?'#3FA776':c.state==='warn'?'#C19A3A':'#E2574C'}">${c.state==='pass'?'PASS':c.state==='warn'?'CHECK':'FIX'}</span></div>`).join(""):"";
+  const prospectRows=links&&links.prospects?links.prospects.map(p=>`<tr>
+      <td>${esc(p.d)}</td><td class="mono" style="color:${p.n>=2?'#3FA776':'#7E92B5'};font-weight:700">${p.n}</td>
+      <td style="font-size:11px;color:#7E92B5">${(p.who||[]).map(esc).join(", ")}</td></tr>`).join(""):"";
+  const psi=cur.psi||null;
+  const psiCol=s=>s>=90?"#3FA776":s>=50?"#C19A3A":"#E2574C";
+  const fcat=c=>c==="GOOD"?'<span class="win">good</span>':c==="NEEDS_IMPROVEMENT"?'<span style="color:#C19A3A">needs improvement</span>':c?'<span class="lose">poor</span>':"";
+  const psiCard=(psi&&psi.score!=null)?`
+    <div class="card alt-wrap" style="flex:0 0 240px">
+      <div class="eyebrow">Page speed &mdash; Lighthouse (${esc(psi.strategy||"mobile")})</div>
+      <div class="gauge" style="color:${psiCol(psi.score)};margin-top:10px">${psi.score}<span style="font-size:16px;color:var(--slate)">/100</span></div>
+      <div style="font-size:11px;color:var(--slate);margin-top:10px;line-height:1.8" class="mono">
+        LCP <strong style="color:var(--cream)">${esc(psi.lcp||"--")}</strong><br>
+        CLS <strong style="color:var(--cream)">${esc(psi.cls||"--")}</strong><br>
+        TBT <strong style="color:var(--cream)">${esc(psi.tbt||"--")}</strong><br>
+        FCP <strong style="color:var(--cream)">${esc(psi.fcp||"--")}</strong>
+      </div>
+      ${psi.field?`<div style="font-size:11px;color:var(--slate);margin-top:10px;border-top:1px solid var(--line);padding-top:8px">Real users (CrUX):<br>LCP ${psi.field.lcp_ms??"--"}ms ${fcat(psi.field.lcp_ms_cat)}${psi.field.inp_ms!=null?`<br>INP ${psi.field.inp_ms}ms ${fcat(psi.field.inp_ms_cat)}`:""}</div>`:""}
+      ${psi.as_of?`<div style="font-size:10px;color:var(--slate);margin-top:8px">as of ${esc(psi.as_of)}</div>`:""}
+    </div>`:"";
+  const techSection=(techFlags||prospectRows||psiCard)?`
+  <div class="section-hd"><h2>Why we're not on page one</h2>
+    <span class="eyebrow">technical health &middot; page speed &middot; backlink gap vs ranking competitors</span></div>
+  <div class="grid">
+    ${psiCard}
+    ${techFlags?`<div class="flags" style="flex:1 1 380px"><div class="eyebrow">Technical health -- ${tech.score}/${tech.of} pass</div>${techFlags}</div>`:""}
+    ${prospectRows?`<div class="card" style="flex:1 1 420px">
+      <div class="eyebrow">Link prospects -- they link to competitors' pill pages, not ours (we have ${links.ours??0} refdomains)</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>DOMAIN</th><th>COMPETITORS LINKED</th><th>WHO</th></tr></thead><tbody>${prospectRows}</tbody></table></div>
+    </div>`:""}
+  </div>`:"";
+
+  // GSC insights (populated once GSC secrets are configured)
+  const gi=cur.gsci||null;
+  const giRows=(arr,cols)=>arr.map(a=>`<tr>${cols.map(c=>`<td ${c.s||""}>${c.f(a)}</td>`).join("")}</tr>`).join("");
+  const pillQ=(gi&&gi.pill_page&&gi.pill_page.length)?`
+  <div class="tbl">
+    <div class="hd"><span class="eyebrow">Pill page queries &mdash; everything Google serves /weight-loss/wegovy-pill/ for</span></div>
+    <table><thead><tr><th>QUERY</th><th>POSITION</th><th>IMPRESSIONS</th><th>CLICKS</th><th>CTR</th></tr></thead>
+    <tbody>${gi.pill_page.map(a=>`<tr>
+      <td>${esc(a.q)}</td>
+      <td class="mono" style="font-weight:700;color:${posC(a.pos)}">${a.pos}</td>
+      <td class="mono">${a.impr.toLocaleString()}</td>
+      <td class="mono">${a.clicks.toLocaleString()}</td>
+      <td class="mono">${a.ctr}%</td></tr>`).join("")}</tbody></table>
+  </div>`:"";
+  const actions=(gi&&gi.actions&&gi.actions.length)?`
+  <div class="tbl" style="padding-bottom:8px">
+    <div class="hd"><span class="eyebrow" style="color:#C19A3A">Analysis &mdash; prioritised actions, computed from Google's data</span></div>
+    <div style="padding:6px 16px">${gi.actions.map((a,i)=>`<div class="opp"><strong style="color:var(--gold)">${i+1}.</strong> ${esc(a)}</div>`).join("")}</div>
+  </div>`:"";
+  const splits=(gi&&gi.splits&&gi.splits.length)?`
+  <div class="tbl">
+    <div class="hd"><span class="eyebrow" style="color:#E2574C">Query splits &mdash; one query, multiple URLs (cannibalisation detail)</span></div>
+    <table><thead><tr><th>QUERY</th><th>TOTAL IMPR</th><th>URLS</th><th>PILL PAGE SHARE</th><th>WHERE THE IMPRESSIONS GO</th></tr></thead>
+    <tbody>${gi.splits.map(s=>`<tr>
+      <td style="font-weight:700">${esc(s.q)}</td>
+      <td class="mono">${s.impr.toLocaleString()}</td>
+      <td class="mono" style="color:#E2574C;font-weight:700">${s.n}</td>
+      <td class="mono" style="color:${s.pill_pct>=60?'#3FA776':s.pill_pct>=30?'#C19A3A':'#E2574C'};font-weight:700">${s.pill_pct}%</td>
+      <td style="font-size:11px;line-height:1.7">${s.pages.map(p=>`<span class="mono" style="color:#7E92B5">${p.impr.toLocaleString()} @ ${p.pos}</span> ${esc(p.page)}`).join("<br>")}</td>
+    </tr>`).join("")}</tbody></table>
+  </div>`:"";
+  const gsciSection=(gi&&gi.queries)?`
+  <div class="section-hd"><h2>Search Console insights</h2>
+    <span class="eyebrow">${gi.queries} wegovy-topic queries &middot; Google's own data, trailing window${gi.as_of?` &middot; data as of ${esc(gi.as_of)}`:""}</span></div>
+  ${actions}
+  ${pillQ}
+  ${splits}
+  <div class="grid">
+    <div class="card" style="flex:1 1 420px">
+      <div class="eyebrow">Queries we rank for but don't track</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
+      <tbody>${giRows(gi.untracked||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
+      <div class="eyebrow" style="margin-top:16px;color:#C19A3A">Under-clicking &mdash; title/meta rewrite candidates</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>CTR vs EXPECTED</th></tr></thead>
+      <tbody>${giRows(gi.ctr_opps||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>`<span class="lose">${a.ctr}%</span> vs ~${a.exp}%`,s:'class="mono"'}])}</tbody></table></div>
+    </div>
+    <div class="card" style="flex:1 1 420px">
+      <div class="eyebrow" style="color:#E2574C">Buy-intent routing issues (Google's view)</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>IMPR</th><th>ISSUE</th></tr></thead>
+      <tbody>${giRows(gi.routing||[],[{f:a=>esc(a.q)},{f:a=>a.impr,s:'class="mono"'},{f:a=>a.multi?'2+ URLs competing':'served by non-pill page'}])}</tbody></table></div>
+      <div class="eyebrow" style="margin-top:16px;color:#3FA776">Striking distance &mdash; P11-20 by impressions</div>
+      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
+      <tbody>${giRows(gi.striking||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
+    </div>
   </div>`:"";
 
   app.innerHTML=`${banner}
@@ -196,9 +304,9 @@ function render(snaps){
         <div class="alt">
           <div class="zone" style="height:${altPct(10)}%"></div>
           <div class="t3" style="top:${altPct(3)}%"></div>
-          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#C19A3A":"#E2574C"}">P${pill}</div>`:""}
+          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#C19A3A":"#E2574C"}">${pill}</div>`:""}
         </div>
-        <div class="scale mono"><span style="color:#C19A3A">P1</span><span style="color:#3FA776">P3 target</span><span style="color:#C19A3A">P10 page one</span><span>P30+</span></div>
+        <div class="scale mono"><span style="color:#C19A3A">1</span><span style="color:#3FA776">3 target</span><span style="color:#C19A3A">10 page one</span><span>30+</span></div>
       </div>
       <div class="mono" style="margin-top:12px;font-size:12px"><span style="color:#7E92B5">vs prev </span>${arrow(pillPrev!=null&&pill!=null?pillPrev-pill:null)}</div>
     </div>
@@ -206,25 +314,29 @@ function render(snaps){
     <div class="card trend"><div class="eyebrow">Trajectory -- lower is better</div><div style="margin-top:8px">${trendSVG(snaps)}</div></div>
   </div>
   <div class="tbl">
-    <div class="hd"><span class="eyebrow">Tracked keywords -- SOP vs competitors</span><button id="copyBtn">COPY DIGEST</button></div>
-    <table><thead><tr><th>KEYWORD</th><th>SOP</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
+    <div class="hd"><span class="eyebrow">Tracked keywords -- SOP across sources vs competitors</span><button id="copyBtn">COPY DIGEST</button></div>
+    <table><thead><tr><th>KEYWORD &amp; OUR RANKING URL</th><th>SEMRUSH</th><th>AWR</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
   </div>
   ${gapSection}
+  ${techSection}
+  ${gsciSection}
   <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
-    <div class="rule">Collected by GitHub Actions at 07:00 UK via the Semrush API. Competitors: Superdrug, Chemist4U, The Family Chemist, MedExpress. Snapshot history in <span class="mono">data/snapshots.json</span>.</div>
+    <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Ranking sources:</strong> <span style="color:#C19A3A">Semrush</span> (modelled UK desktop) and <span style="color:#C19A3A">AWR</span> (tracked UK/mobile rank); Search Console data has its own section below. vs PREV tracks the Semrush position. Position numbers link to the ranking URL (hover to preview). Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
   </div>`;
 
   document.getElementById("copyBtn").onclick=async()=>{
     const L=[`WEGOVY SENTINEL -- ${cur.date}`];
-    L.push(`pill keyword: ${pill?"P"+pill:"n/a"} (${pillPrev!=null&&pill!=null?(pillPrev-pill===0?"=":(pillPrev-pill>0?"+":"-")+Math.abs(pillPrev-pill)):"--"} vs prev)${pageOne?" -- PAGE ONE":""}`);
+    L.push(`pill keyword: position ${pill?pill:"n/a"} (${pillPrev!=null&&pill!=null?(pillPrev-pill===0?"=":(pillPrev-pill>0?"+":"-")+Math.abs(pillPrev-pill)):"--"} vs prev)${pageOne?" -- PAGE ONE":""}`);
     const bw=cur.best?.["buy wegovy"];
-    if(bw)L.push(`buy wegovy: P${bw.p} via ${LBL[bw.c]}${bw.c==="pill"?" [!] WRONG PAGE":""}`);
+    if(bw)L.push(`buy wegovy: position ${bw.p} via ${LBL[bw.c]}${bw.c==="pill"?" [!] WRONG PAGE":""}`);
     L.push("");
     TRACKED.forEach(t=>{
       const c=cur.best?.[t.kw];
-      const sp=c?"P"+c.p:"--";
-      const cs=COMP_LABELS.map(l=>{const x=comp[l]?.[t.kw];return x?"P"+x.p:"--";});
-      L.push(`${t.kw}: SOP ${sp} | SD ${cs[0]} | C4U ${cs[1]} | FC ${cs[2]} | MX ${cs[3]}`);
+      const sp=c?String(c.p):"--";
+      const a=awr[t.kw];
+      const as=a!=null?String(a):"--";
+      const cs=COMP_LABELS.map(l=>{const x=comp[l]?.[t.kw];return x?String(x.p):"--";});
+      L.push(`${t.kw}: Semrush ${sp} | AWR ${as} | Superdrug ${cs[0]} | Chemist4U ${cs[1]} | FamilyChemist ${cs[2]} | MedExpress ${cs[3]}`);
     });
     if(cur.flags?.wrong)L.push(`\n[!] Wrong-page routing live -- day ${streak(snaps,"wrong")}`);
     if(cur.flags?.legacy)L.push(`[!] Legacy URL still ranking -- day ${streak(snaps,"legacy")}`);
@@ -238,6 +350,101 @@ fetch("./snapshots.json",{cache:"no-store"})
   .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
   .then(render)
   .catch(()=>{document.getElementById("app").innerHTML='<div class="err">No snapshot history found yet.<br><br>1. Add the SEMRUSH_API_KEY secret in repo Settings > Secrets > Actions.<br>2. Run the "Daily patrol" workflow once from the Actions tab.<br>3. Refresh this page.</div>';});
+</script>
+
+<script>
+// ---- Daily content review (on-page gap analysis) -- fetches content.json ----
+const cEsc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const stateChip=st=>{const m={pass:["#3FA776","PASS"],warn:["#C19A3A","IMPROVE"],fail:["#E2574C","FIX"]};const[c,t]=m[st]||m.fail;return `<span class="tag" style="background:${c}">${t}</span>`;};
+const scoreColor=s=>s>=80?"#3FA776":s>=60?"#C19A3A":"#E2574C";
+const TARGET_T=["wegovy pill","wegovy pills","wegovy tablet","oral semaglutide","oral wegovy"];
+
+function renderContent(hist){
+  const el=document.getElementById("content-app");
+  if(!hist||!hist.length){el.innerHTML="";return;}
+  const a=hist[hist.length-1], al=a.align||{checks:[]};
+  const prev=hist.length>1?hist[hist.length-2]:null;
+  const dScore=(prev&&prev.align)?al.score-prev.align.score:null;
+
+  const checks=(al.checks||[]).map(c=>`<div class="flag ${c.state==='pass'?'ok':c.state==='warn'?'warnflag':'bad'}">
+    <div><strong>${cEsc(c.name)}</strong><div style="font-size:11px;color:var(--slate);margin-top:2px">${cEsc(c.evidence)}</div></div>
+    ${stateChip(c.state)}</div>`).join("");
+
+  const rows=(a.pages||[]).map(p=>{
+    const t=(p.title||"").toLowerCase();
+    const hasTarget=TARGET_T.some(x=>t.includes(x));
+    const badge=p.role==='us'?'<span class="tag role-us">US</span>':p.role==='brand'?'<span class="tag role-brand">BRAND</span>':'<span class="tag role-competitor">COMP</span>';
+    return `<tr>
+      <td class="mono">${p.rank?("#"+p.rank):"&mdash;"}</td>
+      <td>${cEsc(p.domain)} ${badge}</td>
+      <td style="max-width:340px">${p.status==='ok'?cEsc(p.title||'(no title)'):'<span class="lose">'+cEsc(p.status)+'</span>'}</td>
+      <td class="mono">${p.wc||'--'}</td>
+      <td class="mono">${(p.h2&&p.h2.length)||0}</td>
+      <td class="mono">${(p.faqs&&p.faqs.length)||0}</td>
+      <td>${p.status==='ok'?(hasTarget?'<span class="win">&#10003;</span>':'<span class="lose">&#10007;</span>'):'--'}</td>
+    </tr>`;
+  }).join("");
+
+  const chips=arr=>(arr&&arr.length)?arr.map(g=>`<span class="gap-chip">${cEsc(g.term)} <span style="color:var(--slate)">&times;${g.competitors}</span></span>`).join(""):'<span style="color:var(--green)">None &mdash; coverage complete</span>';
+  const faqGaps=(al.faq_gaps||[]).slice(0,12).map(q=>`<div class="opp">&bull; ${cEsc(q)}</div>`).join("")||'<div style="color:var(--green)">No FAQ gaps</div>';
+  const opps=(a.opps||[]).map((o,i)=>`<div class="opp"><strong style="color:var(--gold)">${i+1}.</strong> ${cEsc(o)}</div>`).join("");
+  const blocked=(a.blocked&&a.blocked.length)?`<div style="font-size:11px;color:var(--slate);margin-top:8px">Not fetched (bot-blocked/unreachable): ${a.blocked.map(cEsc).join(", ")}</div>`:"";
+
+  el.innerHTML=`
+  <div class="section-hd">
+    <h2>Daily content review</h2>
+    <span class="eyebrow">on-page gap analysis &middot; "${cEsc(a.phrase)}" SERP &middot; optimise for ${(a.primary||[]).map(cEsc).join(", ")}${a.mode&&a.mode!=='live'?' &middot; '+cEsc(a.mode)+' mode':''}</span>
+  </div>
+  <div class="grid">
+    <div class="card alt-wrap" style="flex:0 0 220px">
+      <div class="eyebrow">Pill-page alignment</div>
+      <div class="gauge" style="color:${scoreColor(al.score)};margin-top:10px">${al.score}<span style="font-size:16px;color:var(--slate)">/100</span></div>
+      <div class="mono" style="font-size:11px;color:var(--slate);margin-top:4px">${dScore!=null?('vs prev '+(dScore>0?'+':'')+dScore):'first review'}</div>
+      <div style="font-size:11px;color:var(--slate);margin-top:12px;line-height:1.7">
+        Body terms <strong style="color:var(--cream)">${al.body_cov}%</strong><br>
+        FAQ topics <strong style="color:var(--cream)">${al.faq_cov}%</strong><br>
+        Pages analysed <strong style="color:var(--cream)">${a.fetched}/${(a.pages||[]).length}</strong>
+      </div>${blocked}
+    </div>
+    <div class="flags" style="flex:1 1 420px"><div class="eyebrow">Optimisation checks &mdash; title, meta, H1, opening copy, depth, FAQs, semantics</div>${checks}</div>
+  </div>
+  <div class="tbl">
+    <div class="hd"><span class="eyebrow">Top results analysed vs our pill page</span><button id="copyContent">COPY REVIEW</button></div>
+    <table><thead><tr><th>RANK</th><th>PAGE</th><th>TITLE TAG</th><th>WORDS</th><th>H2</th><th>FAQ</th><th>TARGET KW IN TITLE</th></tr></thead><tbody>${rows}</tbody></table>
+  </div>
+  <div class="grid">
+    <div class="card" style="flex:1 1 320px">
+      <div class="eyebrow" style="color:#E2574C">Missing entities &mdash; brands &middot; trials &middot; compounds</div>
+      <div style="margin-top:8px">${chips(al.entity_gaps)}</div>
+      <div class="eyebrow" style="color:#E2574C;margin-top:16px">Missing terms / topics &mdash; used by &ge;2 competitors</div>
+      <div style="margin-top:8px">${chips(al.term_gaps)}</div>
+    </div>
+    <div class="card" style="flex:1 1 320px">
+      <div class="eyebrow">FAQ gaps &mdash; questions competitors answer, we don't</div>
+      <div style="margin-top:8px">${faqGaps}</div>
+    </div>
+  </div>
+  <div class="tbl" style="padding-bottom:8px">
+    <div class="hd"><span class="eyebrow">Prioritised opportunities</span></div>
+    <div style="padding:6px 16px">${opps||'<div style="color:var(--slate);font-size:12px">No actions &mdash; page is well aligned.</div>'}</div>
+  </div>`;
+
+  const btn=document.getElementById("copyContent");
+  if(btn)btn.onclick=async()=>{
+    const L=[`WEGOVY SENTINEL -- CONTENT REVIEW ${a.date}`,`"${a.phrase}" -- alignment ${al.score}/100 (body ${al.body_cov}%, FAQ ${al.faq_cov}%)`,""];
+    (al.checks||[]).forEach(c=>L.push(`[${c.state.toUpperCase()}] ${c.name}: ${c.evidence}`));
+    if((al.entity_gaps||[]).length)L.push("\nMissing entities: "+al.entity_gaps.map(g=>g.term).join(", "));
+    if((al.term_gaps||[]).length)L.push("Missing terms: "+al.term_gaps.map(g=>g.term).join(", "));
+    if((al.faq_gaps||[]).length){L.push("\nFAQ gaps:");al.faq_gaps.forEach(q=>L.push(" - "+q));}
+    if((a.opps||[]).length){L.push("\nOpportunities:");a.opps.forEach((o,i)=>L.push(` ${i+1}. ${o}`));}
+    try{await navigator.clipboard.writeText(L.join("\n"));btn.textContent="COPIED";setTimeout(()=>btn.textContent="COPY REVIEW",1500);}catch(e){}
+  };
+}
+
+fetch("./content.json",{cache:"no-store"})
+  .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
+  .then(renderContent)
+  .catch(()=>{/* content review not seeded yet -- leave the panel empty */});
 </script>
 </body>
 </html>
