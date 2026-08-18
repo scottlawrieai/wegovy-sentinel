@@ -1,46 +1,45 @@
-name: Daily patrol
+name: Sentinel Patrol
 
 on:
   schedule:
-    - cron: "0 6 * * *"
-  workflow_dispatch: {}
+    - cron: "0 6 * * *"        # 06:00 UTC daily
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  patrol:
+  wegovy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Run Wegovy Sentinel
+      - name: Run Wegovy sentinel
         env:
           SEMRUSH_API_KEY: ${{ secrets.SEMRUSH_API_KEY }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          # Google Search Console (optional -- OAuth refresh-token auth)
-          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
-          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
-          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
-          GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
-          # PageSpeed Insights (optional key -- keyless works but is rate-limited)
-          PSI_API_KEY: ${{ secrets.PSI_API_KEY }}
-          # Advanced Web Ranking (optional -- AWR Cloud v2 get API)
-          AWR_API_TOKEN: ${{ secrets.AWR_API_TOKEN }}
-          AWR_PROJECT: ${{ vars.AWR_PROJECT }}
-          AWR_GEO: ${{ vars.AWR_GEO }}
-          AWR_DEVICE: ${{ vars.AWR_DEVICE }}
         run: python sentinel.py
-
-      - name: Commit snapshot history
-        if: always()
+      - name: Commit Wegovy snapshot
         run: |
-          git config user.name "wegovy-sentinel"
-          git config user.email "actions@users.noreply.github.com"
-          git add data/snapshots.json docs/snapshots.json data/content.json docs/content.json || true
-          git diff --cached --quiet || git commit -m "patrol: $(date -u +%F)"
+          git config user.name  "sentinel-bot"
+          git config user.email "sentinel-bot@users.noreply.github.com"
+          git add docs/snapshots.json docs/index.html
+          git diff --cached --quiet || git commit -m "wegovy patrol $(date -u +%F)"
+          git push
+
+  foundayo:
+    needs: wegovy                 # sequential to avoid push conflicts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pull latest (after Wegovy push)
+        run: git pull origin main
+      - name: Run Foundayo sentinel
+        env:
+          SEMRUSH_API_KEY: ${{ secrets.SEMRUSH_API_KEY }}
+        run: python foundayo_sentinel.py
+      - name: Commit Foundayo snapshot
+        run: |
+          git config user.name  "sentinel-bot"
+          git config user.email "sentinel-bot@users.noreply.github.com"
+          git add docs/foundayo_snapshots.json docs/foundayo.html
+          git diff --cached --quiet || git commit -m "foundayo patrol $(date -u +%F)"
           git push

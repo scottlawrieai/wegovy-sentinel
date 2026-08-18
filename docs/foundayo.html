@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wegovy Sentinel — daily rank patrol</title>
+<title>Foundayo Sentinel — daily rank patrol</title>
 <style>
   :root{
     --ink:#0A1F44; --panel:#10294F; --panel2:#15325E; --line:#23477E;
     --cream:#F7F2EE; --slate:#7E92B5; --gold:#C19A3A; --red:#E2574C; --green:#3FA776;
+    --teal:#2B9EB3;
   }
   *{box-sizing:border-box;margin:0}
   body{background:var(--ink);color:var(--cream);font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;padding-bottom:48px}
   .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
   .strip{border-bottom:1px solid var(--line);padding:16px 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
   .strip h1{font-size:18px;letter-spacing:.06em;font-weight:700}
-  .strip h1 span{color:var(--gold)}
+  .strip h1 span{color:var(--teal)}
   .sub{font-size:11px;color:var(--slate);margin-top:2px}
   .meta{margin-left:auto;text-align:right;font-size:11px;color:var(--slate)}
   .eyebrow{font-size:10px;letter-spacing:.18em;color:var(--slate);text-transform:uppercase;font-weight:700}
@@ -23,9 +24,8 @@
   .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
   .alt-wrap{flex:0 0 200px;min-width:180px}
   .alt{position:relative;width:44px;height:300px;background:var(--panel2);border-radius:4px;overflow:hidden}
-  .alt .zone{position:absolute;top:0;left:0;right:0;background:rgba(193,154,58,.16);border-bottom:1px dashed var(--gold)}
+  .alt .zone{position:absolute;top:0;left:0;right:0;background:rgba(43,158,179,.16);border-bottom:1px dashed var(--teal)}
   .alt .t3{position:absolute;left:0;right:0;border-top:2px solid var(--green)}
-  .alt .base{position:absolute;left:0;right:0;border-top:1px dotted var(--slate)}
   .alt .mk{position:absolute;left:4px;right:4px;height:18px;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--ink);font-weight:800;font-size:11px}
   .scale{display:flex;flex-direction:column;justify-content:space-between;height:300px;font-size:10px;color:var(--slate)}
   .flags{flex:1 1 320px;min-width:280px;display:flex;flex-direction:column;gap:10px}
@@ -34,7 +34,7 @@
   .flag.ok{background:rgba(63,167,118,.14);border-color:var(--green);color:#A9DCC4}
   .chip{font-size:10px;font-weight:700;letter-spacing:.08em;padding:3px 8px;border-radius:3px;color:var(--ink);white-space:nowrap}
   .trend{flex:1 1 340px;min-width:300px}
-  table{width:100%;border-collapse:collapse;font-size:12px;min-width:900px}
+  table{width:100%;border-collapse:collapse;font-size:12px;min-width:960px}
   th{padding:8px 10px;border-bottom:1px solid var(--line);letter-spacing:.1em;font-size:10px;color:var(--slate);text-align:left}
   td{padding:8px 10px}
   tr:nth-child(even) td{background:rgba(255,255,255,.02)}
@@ -46,7 +46,7 @@
   .foot .rule{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
   button{font-family:ui-monospace,Menlo,monospace;font-size:11px;background:var(--panel2);color:var(--cream);border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer}
   svg text{font-family:ui-monospace,Menlo,monospace}
-  .err{margin:24px 20px;padding:14px;border:1px solid var(--gold);border-radius:6px;color:var(--gold);font-size:12px;line-height:1.6}
+  .err{margin:24px 20px;padding:14px;border:1px solid var(--teal);border-radius:6px;color:var(--teal);font-size:12px;line-height:1.6}
   .pos-cell{font-weight:700;font-size:12px}
   .win{color:#3FA776}.lose{color:#E2574C}.tie{color:#7E92B5}.na{color:#7E92B5}
 </style>
@@ -54,8 +54,8 @@
 <body>
 <div class="strip">
   <div>
-    <h1 class="mono">WEGOVY <span>SENTINEL</span> <span id="modeBadge"></span></h1>
-    <div class="sub">Daily rank patrol · simpleonlinepharmacy.co.uk · GitHub Actions, 07:00 UK</div>
+    <h1 class="mono">FOUNDAYO <span>SENTINEL</span> <span id="modeBadge"></span></h1>
+    <div class="sub">Daily rank patrol · simpleonlinepharmacy.co.uk · orforglipron · GitHub Actions, 07:00 UK</div>
   </div>
   <div class="meta mono" id="meta"></div>
 </div>
@@ -63,28 +63,26 @@
 
 <script>
 const TRACKED=[
- {kw:"wegovy pill",goal:"pill",base:null,hero:true},
- {kw:"wegovy pills",goal:"pill",base:null},
- {kw:"buy wegovy pill",goal:"pill",base:null},
- {kw:"buy wegovy pills",goal:"pill",base:null},
- {kw:"wegovy pill uk",goal:"pill",base:null},
- {kw:"wegovy tablets",goal:"pill",base:null},
- {kw:"oral semaglutide",goal:"pill",base:null},
- {kw:"wegovy price",goal:"pill",base:8},
- {kw:"wegovy price uk",goal:"pill",base:8},
- {kw:"wegovy uk",goal:"pill",base:23},
- {kw:"cheapest wegovy uk",goal:"pill",base:14},
- {kw:"buy wegovy",goal:"injection",base:null},
- {kw:"buy wegovy uk",goal:"injection",base:null},
- {kw:"buy wegovy online",goal:"injection",base:null},
- {kw:"wegovy side effects",goal:"advice",base:8},
- {kw:"wegovy vs mounjaro",goal:"advice",base:25},
- {kw:"wegovy reviews",goal:"advice",base:23},
+ {kw:"foundayo",goal:"foundayo",base:1,hero:true},
+ {kw:"foundayo pill",goal:"foundayo",base:4},
+ {kw:"orforglipron",goal:"orforglipron",base:17,hero2:true},
+ {kw:"orforglipron uk",goal:"orforglipron",base:2},
+ {kw:"orforglipron price",goal:"orforglipron",base:1},
+ {kw:"orforglipron tablet",goal:"orforglipron",base:5},
+ {kw:"orforglipron tablets",goal:"orforglipron",base:2},
+ {kw:"orforglipron pill",goal:"orforglipron",base:3},
+ {kw:"orforglipron weight loss",goal:"orforglipron",base:9},
+ {kw:"orforglipron weight-loss pill",goal:"orforglipron",base:9},
+ {kw:"orforglipron side effects",goal:"advice",base:34},
+ {kw:"orforglipron uk where to buy",goal:"orforglipron",base:1},
+ {kw:"orforglipron buy online",goal:"orforglipron",base:2},
+ {kw:"orforglipron price per month",goal:"orforglipron",base:3},
+ {kw:"eli lilly orforglipron weight loss",goal:"orforglipron",base:45},
 ];
-const COMP_LABELS=["Superdrug","Chemist4U","FamilyChemist","MedExpress"];
-const COMP_SHORT={"Superdrug":"SD","Chemist4U":"C4U","FamilyChemist":"FC","MedExpress":"MX"};
-const LBL={pill:"PILL PAGE",injection:"INJECTION",legacy:"LEGACY URL",advice:"ADVICE",other:"OTHER"};
-const CLR={pill:"#C19A3A",injection:"#3FA776",legacy:"#E2574C",advice:"#7E92B5",other:"#7E92B5"};
+const COMP_LABELS=["Superdrug","OxfordPharm","Chemist4U","IndepPharm","Boots"];
+const COMP_SHORT={"Superdrug":"SD","OxfordPharm":"OxPh","Chemist4U":"C4U","IndepPharm":"IP","Boots":"Boots"};
+const LBL={foundayo:"FOUNDAYO",orforglipron:"ORFORGLIPRON",advice:"ADVICE",other:"OTHER"};
+const CLR={foundayo:"#2B9EB3",orforglipron:"#C19A3A",advice:"#7E92B5",other:"#7E92B5"};
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const arrow=d=>d==null?'<span style="color:#7E92B5">--</span>':d===0?'<span style="color:#7E92B5">=</span>':
  `<span style="color:${d>0?'#3FA776':'#E2574C'};font-weight:700">${d>0?'+':'-'}${Math.abs(d)}</span>`;
@@ -106,13 +104,13 @@ function trendSVG(snaps){
   const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#23477E" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#7E92B5" font-size="10">P${p}</text>`).join("");
   return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:280px">
     ${grid}
-    <line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="#C19A3A" stroke-dasharray="4 4"/>
+    <line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="#2B9EB3" stroke-dasharray="4 4"/>
     <line x1="${L}" x2="${W-R}" y1="${y(3)}" y2="${y(3)}" stroke="#3FA776" stroke-dasharray="4 4"/>
-    ${line("pill","#C19A3A")}${line("bwInj","#3FA776")}
+    ${line("foundayo","#2B9EB3")}${line("orforglipron","#C19A3A")}
     <text x="${L}" y="${H-6}" fill="#7E92B5" font-size="10">${esc(pts[0].date.slice(5))}</text>
     <text x="${W-R-38}" y="${H-6}" fill="#7E92B5" font-size="10">${esc(pts[pts.length-1].date.slice(5))}</text>
   </svg>
-  <div style="font-size:10px;color:#7E92B5;margin-top:4px">Gold = pill keyword (pill page) -- Green = "buy wegovy" (injection page) -- lower is better</div>`;
+  <div style="font-size:10px;color:#7E92B5;margin-top:4px">Teal = "foundayo" (brand) -- Gold = "orforglipron" (generic) -- lower is better</div>`;
 }
 
 function compCell(comp,label,kw,sopPos){
@@ -127,20 +125,20 @@ function render(snaps){
   const app=document.getElementById("app");
   if(!snaps.length){app.innerHTML='<div class="err">No patrols yet. Run the "Daily patrol" workflow once from the Actions tab to seed day zero.</div>';return;}
   const cur=snaps[snaps.length-1],prev=snaps[snaps.length-2]||null;
-  const pill=cur.m?.pill??null,pillPrev=prev?.m?.pill??null;
-  const pageOne=pill!=null&&pill<=10,target=pill!=null&&pill<=3;
+  const fp=cur.m?.foundayo??null,fpPrev=prev?.m?.foundayo??null;
+  const op=cur.m?.orforglipron??null,opPrev=prev?.m?.orforglipron??null;
+  const fpPageOne=fp!=null&&fp<=10,fpTarget=fp!=null&&fp<=3;
   document.getElementById("meta").innerHTML=`Last patrol: ${esc(cur.date)} -- day ${snaps.length}`;
-  document.getElementById("modeBadge").innerHTML=cur.mode&&cur.mode!=="semrush"?`<span class="chip" style="background:#C19A3A">${esc(cur.mode.toUpperCase())}</span>`:"";
-  const banner=pill==null?"":`<div class="banner mono" style="background:${target?"rgba(63,167,118,.14)":pageOne?"rgba(193,154,58,.16)":"rgba(226,87,76,.14)"};border:1px solid ${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"};color:${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"}">${
-    target?"TARGET ACHIEVED -- P1-3 secured. Hold through MHRA decision."
-    :pageOne?"PAGE ONE REACHED -- new mission: P1-3 before MHRA decision."
-    :`MISSION: page one for "wegovy pill" before MHRA decision -- currently P${pill} -- ${pill-10} positions to go`}</div>`;
+  document.getElementById("modeBadge").innerHTML=cur.mode&&cur.mode!=="semrush"?`<span class="chip" style="background:#2B9EB3">${esc(cur.mode.toUpperCase())}</span>`:"";
+
+  const banner=`<div class="banner mono" style="background:${fpTarget?"rgba(63,167,118,.14)":"rgba(43,158,179,.16)"};border:1px solid ${fpTarget?"#3FA776":"#2B9EB3"};color:${fpTarget?"#3FA776":"#2B9EB3"}">${
+    fp==null?"Waiting for first foundayo ranking data..."
+    :fpTarget?`foundayo P${fp} -- holding top 3. Defend position and grow orforglipron (P${op||'--'}).`
+    :`foundayo P${fp} -- ${fpPageOne?"page one secured":"target: page one"}. orforglipron P${op||'--'} (5,400 vol -- biggest opportunity).`}</div>`;
 
   const flagDefs=[
-    {on:cur.flags?.wrong,days:streak(snaps,"wrong"),ok:"Buy-intent terms served by correct page type",bad:"Wrong-page routing LIVE -- pill page ranking for buy-intent terms"},
-    {on:cur.flags?.legacy,days:streak(snaps,"legacy"),ok:"Legacy injection URL no longer ranking -- migration consolidated",bad:"Legacy URL STILL ranking -- migration unfinished"},
+    {on:cur.flags?.wrong,days:streak(snaps,"wrong"),ok:"Product pages serving correct intent",bad:"Wrong-page routing LIVE -- advice pages ranking for transactional queries"},
     {on:(cur.flags?.cann??0)>0,days:streak(snaps,"cann"),ok:"One URL per keyword -- cannibalisation cleared",bad:`${cur.flags?.cann??0} keywords cannibalised (2+ SOP URLs ranking)`},
-    {on:(cur.m?.blD??0)<15,days:null,ok:`Link target met -- ${cur.m?.blD} referring domains`,bad:`Backlinks: ${cur.m?.blD??0} referring domains to pill page (target ${15})`},
   ];
   const flags=flagDefs.map(f=>`<div class="flag ${f.on?"bad":"ok"}"><div>${esc(f.on?f.bad:f.ok)}</div>${
     f.on&&f.days?`<span class="chip" style="background:#E2574C">DAY ${f.days}</span>`:!f.on?`<span class="chip" style="background:#3FA776">CLEAR</span>`:""}</div>`).join("");
@@ -150,28 +148,27 @@ function render(snaps){
 
   const rows=TRACKED.map(t=>{
     const c=cur.best?.[t.kw]||null,pv=prev?.best?.[t.kw]?.p??null,pos=c?.p??null;
-    const wrong=c&&t.goal!==c.c&&c.c!=="advice",legacy=c?.c==="legacy";
-    const posCol=pos==null?"#7E92B5":pos<=10?"#3FA776":pos<=20?"#C19A3A":"#E2574C";
+    const wrong=c&&t.goal!==c.c&&c.c!=="advice";
+    const posCol=pos==null?"#7E92B5":pos<=3?"#3FA776":pos<=10?"#2B9EB3":pos<=20?"#C19A3A":"#E2574C";
     const compCells=COMP_LABELS.map(l=>compCell(comp,l,t.kw,pos)).join("");
     return `<tr>
-      <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}</td>
+      <td style="${t.hero||t.hero2?"font-weight:700":""};${t.hero?"color:#2B9EB3":""}${t.hero2?"color:#C19A3A":""}">${esc(t.kw)}</td>
       <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":"P"+pos}</td>
       <td>${arrow(pv!=null&&pos!=null?pv-pos:null)}</td>
+      <td>${arrow(t.base!=null&&pos!=null?t.base-pos:null)}</td>
       ${compCells}
       <td>${c?`<span class="chip" style="background:${CLR[c.c]||"#7E92B5"}">${LBL[c.c]||"OTHER"}</span>`:'<span style="color:#7E92B5">--</span>'}</td>
       <td class="mono" style="color:${(c?.n??1)>1?"#E2574C":"#7E92B5"}">${c?c.n:"--"}</td>
       <td>${wrong?'<span class="chip" style="background:#E2574C">WRONG PAGE</span>'
-        :legacy?'<span class="chip" style="background:#E2574C">LEGACY</span>'
-        :pos!=null&&pos<=10?'<span class="chip" style="background:#3FA776">PAGE ONE</span>'
-        :`<span style="color:#7E92B5;font-size:11px">${t.goal} page</span>`}</td></tr>`;
+        :pos!=null&&pos<=3?'<span class="chip" style="background:#3FA776">TOP 3</span>'
+        :pos!=null&&pos<=10?'<span class="chip" style="background:#2B9EB3">PAGE ONE</span>'
+        :`<span style="color:#7E92B5;font-size:11px">${t.goal}</span>`}</td></tr>`;
   }).join("");
 
-  const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))} P${s.m?.pill??"--"}`).join(" | ");
+  const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))} F:P${s.m?.foundayo??"--"} O:P${s.m?.orforglipron??"--"}`).join(" | ");
 
-  // Competitive gap summary
-  let gapRows="";
-  let gapCount=0;
-  TRACKED.filter(t=>t.goal==="pill").forEach(t=>{
+  let gapRows="",gapCount=0;
+  TRACKED.filter(t=>t.goal!=="advice").forEach(t=>{
     const sop=cur.best?.[t.kw];
     const sopP=sop?.p??999;
     COMP_LABELS.forEach(label=>{
@@ -184,57 +181,53 @@ function render(snaps){
   });
   const gapSection=gapCount?`
   <div class="comp-tbl">
-    <div class="hd"><span class="eyebrow">Competitive gaps -- pill keywords where competitors outrank SOP (${gapCount})</span></div>
+    <div class="hd"><span class="eyebrow">Competitive gaps -- keywords where competitors outrank SOP (${gapCount})</span></div>
     <table><thead><tr><th>KEYWORD</th><th>COMPETITOR POS</th><th>COMPETITOR</th><th>SOP POS</th><th>GAP</th></tr></thead><tbody>${gapRows}</tbody></table>
   </div>`:"";
 
   app.innerHTML=`${banner}
   <div class="grid">
     <div class="card alt-wrap">
-      <div class="eyebrow" style="color:#C19A3A">"wegovy pill" -- altitude</div>
+      <div class="eyebrow" style="color:#2B9EB3">"foundayo" -- altitude</div>
       <div style="display:flex;gap:12px;margin-top:12px">
         <div class="alt">
           <div class="zone" style="height:${altPct(10)}%"></div>
           <div class="t3" style="top:${altPct(3)}%"></div>
-          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#C19A3A":"#E2574C"}">P${pill}</div>`:""}
+          ${fp!=null?`<div class="mk mono" style="top:calc(${altPct(fp)}% - 9px);background:${fpTarget?"#3FA776":fpPageOne?"#2B9EB3":"#E2574C"}">P${fp}</div>`:""}
         </div>
-        <div class="scale mono"><span style="color:#C19A3A">P1</span><span style="color:#3FA776">P3 target</span><span style="color:#C19A3A">P10 page one</span><span>P30+</span></div>
+        <div class="scale mono"><span style="color:#2B9EB3">P1</span><span style="color:#3FA776">P3 target</span><span style="color:#2B9EB3">P10 page one</span><span>P30+</span></div>
       </div>
-      <div class="mono" style="margin-top:12px;font-size:12px"><span style="color:#7E92B5">vs prev </span>${arrow(pillPrev!=null&&pill!=null?pillPrev-pill:null)}</div>
+      <div class="mono" style="margin-top:12px;font-size:12px"><span style="color:#7E92B5">vs prev </span>${arrow(fpPrev!=null&&fp!=null?fpPrev-fp:null)}</div>
     </div>
     <div class="flags"><div class="eyebrow">Structural audit -- re-checked every patrol</div>${flags}</div>
     <div class="card trend"><div class="eyebrow">Trajectory -- lower is better</div><div style="margin-top:8px">${trendSVG(snaps)}</div></div>
   </div>
   <div class="tbl">
     <div class="hd"><span class="eyebrow">Tracked keywords -- SOP vs competitors</span><button id="copyBtn">COPY DIGEST</button></div>
-    <table><thead><tr><th>KEYWORD</th><th>SOP</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
+    <table><thead><tr><th>KEYWORD</th><th>SOP</th><th>vs PREV</th><th>vs BASE</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
   </div>
   ${gapSection}
   <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
-    <div class="rule">Collected by GitHub Actions at 07:00 UK via the Semrush API. Competitors: Superdrug, Chemist4U, The Family Chemist, MedExpress. Snapshot history in <span class="mono">data/snapshots.json</span>.</div>
+    <div class="rule">Collected by GitHub Actions at 07:00 UK via the Semrush API. Competitors: Superdrug, Oxford Online Pharmacy, Chemist4U, The Independent Pharmacy, Boots. Snapshot history in <span class="mono">data/foundayo_snapshots.json</span>.</div>
   </div>`;
 
   document.getElementById("copyBtn").onclick=async()=>{
-    const L=[`WEGOVY SENTINEL -- ${cur.date}`];
-    L.push(`pill keyword: ${pill?"P"+pill:"n/a"} (${pillPrev!=null&&pill!=null?(pillPrev-pill===0?"=":(pillPrev-pill>0?"+":"-")+Math.abs(pillPrev-pill)):"--"} vs prev)${pageOne?" -- PAGE ONE":""}`);
-    const bw=cur.best?.["buy wegovy"];
-    if(bw)L.push(`buy wegovy: P${bw.p} via ${LBL[bw.c]}${bw.c==="pill"?" [!] WRONG PAGE":""}`);
+    const L=[`FOUNDAYO SENTINEL -- ${cur.date}`];
+    L.push(`foundayo: ${fp?"P"+fp:"n/a"} | orforglipron: ${op?"P"+op:"n/a"}`);
     L.push("");
     TRACKED.forEach(t=>{
       const c=cur.best?.[t.kw];
       const sp=c?"P"+c.p:"--";
       const cs=COMP_LABELS.map(l=>{const x=comp[l]?.[t.kw];return x?"P"+x.p:"--";});
-      L.push(`${t.kw}: SOP ${sp} | SD ${cs[0]} | C4U ${cs[1]} | FC ${cs[2]} | MX ${cs[3]}`);
+      L.push(`${t.kw}: SOP ${sp} | SD ${cs[0]} | OxPh ${cs[1]} | C4U ${cs[2]} | IP ${cs[3]} | Boots ${cs[4]}`);
     });
-    if(cur.flags?.wrong)L.push(`\n[!] Wrong-page routing live -- day ${streak(snaps,"wrong")}`);
-    if(cur.flags?.legacy)L.push(`[!] Legacy URL still ranking -- day ${streak(snaps,"legacy")}`);
+    if(cur.flags?.wrong)L.push(`\n[!] Wrong-page routing -- day ${streak(snaps,"wrong")}`);
     if(cur.flags?.cann)L.push(`[*] ${cur.flags.cann} keywords cannibalised`);
-    L.push(`\nBacklinks: ${cur.m?.blD??0} referring domains (target 15)`);
     try{await navigator.clipboard.writeText(L.join("\n"));const b=document.getElementById("copyBtn");b.textContent="COPIED";setTimeout(()=>b.textContent="COPY DIGEST",1500);}catch(e){}
   };
 }
 
-fetch("./snapshots.json",{cache:"no-store"})
+fetch("./foundayo_snapshots.json",{cache:"no-store"})
   .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
   .then(render)
   .catch(()=>{document.getElementById("app").innerHTML='<div class="err">No snapshot history found yet.<br><br>1. Add the SEMRUSH_API_KEY secret in repo Settings > Secrets > Actions.<br>2. Run the "Daily patrol" workflow once from the Actions tab.<br>3. Refresh this page.</div>';});

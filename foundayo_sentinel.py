@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-Wegovy Sentinel — daily rank patrol for simpleonlinepharmacy.co.uk
-Pulls Semrush UK positions for SOP + 4 competitors, pill-page backlinks,
+Foundayo Sentinel — daily rank patrol for simpleonlinepharmacy.co.uk
+Tracks Foundayo (orforglipron) keyword positions for SOP + 5 competitors,
 computes structural audit flags and competitive gap, appends to snapshot
 history, and prints a digest.
 
 Env:
   SEMRUSH_API_KEY    required (semrush.com -> Profile -> API)
 Run:
-  python sentinel.py            # live patrol
-  python sentinel.py --test     # offline self-test with canned data
+  python foundayo_sentinel.py            # live patrol
+  python foundayo_sentinel.py --test     # offline self-test with canned data
 """
 import json
 import os
@@ -20,38 +20,37 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 DOMAIN = "www.simpleonlinepharmacy.co.uk"
-PILL_PAGE = "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
-DATA = os.path.join(os.path.dirname(__file__), "data", "snapshots.json")
-DOCS = os.path.join(os.path.dirname(__file__), "docs", "snapshots.json")
-BASE_DATE = "2026-06-19"
-BL_TARGET = 15
+PRODUCT_PAGE = "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss-pills/foundayo/"
+ORFOG_PAGE = "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/"
+DATA = os.path.join(os.path.dirname(__file__), "data", "foundayo_snapshots.json")
+DOCS = os.path.join(os.path.dirname(__file__), "docs", "foundayo_snapshots.json")
+BASE_DATE = "2026-07-28"
 
-# kw, goal page class, baseline position (19 Jun 2026 audit)
+# kw, goal page class, baseline position (Jul 2026 Semrush)
 TRACKED = [
-    ("wegovy pill", "pill", None),
-    ("wegovy pills", "pill", None),
-    ("buy wegovy pill", "pill", None),
-    ("buy wegovy pills", "pill", None),
-    ("wegovy pill uk", "pill", None),
-    ("wegovy tablets", "pill", None),
-    ("oral semaglutide", "pill", None),
-    ("wegovy price", "pill", 8),
-    ("wegovy price uk", "pill", 8),
-    ("wegovy uk", "pill", 23),
-    ("cheapest wegovy uk", "pill", 14),
-    ("buy wegovy", "injection", None),
-    ("buy wegovy uk", "injection", None),
-    ("buy wegovy online", "injection", None),
-    ("wegovy side effects", "advice", 8),
-    ("wegovy vs mounjaro", "advice", 25),
-    ("wegovy reviews", "advice", 23),
+    ("foundayo", "foundayo", 1),
+    ("foundayo pill", "foundayo", 4),
+    ("orforglipron", "orforglipron", 17),
+    ("orforglipron uk", "orforglipron", 2),
+    ("orforglipron price", "orforglipron", 1),
+    ("orforglipron tablet", "orforglipron", 5),
+    ("orforglipron tablets", "orforglipron", 2),
+    ("orforglipron pill", "orforglipron", 3),
+    ("orforglipron weight loss", "orforglipron", 9),
+    ("orforglipron weight-loss pill", "orforglipron", 9),
+    ("orforglipron side effects", "advice", 34),
+    ("orforglipron uk where to buy", "orforglipron", 1),
+    ("orforglipron buy online", "orforglipron", 2),
+    ("orforglipron price per month", "orforglipron", 3),
+    ("eli lilly orforglipron weight loss", "orforglipron", 45),
 ]
 
 COMPETITORS = [
     ("onlinedoctor.superdrug.com", "Superdrug"),
-    ("chemist-4-u.com", "Chemist4U"),
-    ("thefamilychemist.co.uk", "FamilyChemist"),
-    ("medexpress.co.uk", "MedExpress"),
+    ("www.oxfordonlinepharmacy.co.uk", "OxfordPharm"),
+    ("www.chemist-4-u.com", "Chemist4U"),
+    ("www.theindependentpharmacy.co.uk", "IndepPharm"),
+    ("onlinedoctor.boots.com", "Boots"),
 ]
 
 
@@ -59,16 +58,12 @@ def classify(url: str) -> str:
     s = (url or "").lower()
     if "health-advice" in s:
         return "advice"
-    if "/weight-loss/wegovy-pill" in s:
-        return "pill"
-    if "/weight-loss-pills/wegovy-pills" in s:
-        return "legacy"
-    if "/medications/wegovy" in s:
-        return "legacy"
-    if "/online-doctor/weight-loss/wegovy" in s:
-        return "legacy"
+    if "/weight-loss-pills/foundayo" in s:
+        return "foundayo"
+    if "/weight-loss/orforglipron" in s:
+        return "orforglipron"
     if "/weight-loss/wegovy" in s:
-        return "injection"
+        return "other"
     return "other"
 
 
@@ -82,7 +77,7 @@ def semrush(params: dict) -> str:
         raise RuntimeError("SEMRUSH_API_KEY is not set")
     q = urllib.parse.urlencode({**params, "key": key})
     url = f"https://api.semrush.com/?{q}"
-    req = urllib.request.Request(url, headers={"User-Agent": "wegovy-sentinel/2.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "foundayo-sentinel/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         text = r.read().decode("utf-8", "replace")
     if text.startswith("ERROR"):
@@ -121,7 +116,7 @@ def parse_rows(csv_text: str) -> list:
 
 def fetch_positions() -> list:
     rows = []
-    for filt in ("+|Ph|Co|wegovy", "+|Ph|Co|semaglutide"):
+    for filt in ("+|Ph|Co|foundayo", "+|Ph|Co|orforglipron"):
         rows += parse_rows(semrush({
             "type": "domain_organic",
             "domain": DOMAIN,
@@ -139,7 +134,7 @@ def fetch_competitor_positions() -> dict:
     for domain, label in COMPETITORS:
         try:
             rows = []
-            for filt in ("+|Ph|Co|wegovy", "+|Ph|Co|semaglutide"):
+            for filt in ("+|Ph|Co|foundayo", "+|Ph|Co|orforglipron"):
                 rows += parse_rows(semrush({
                     "type": "domain_organic",
                     "domain": domain,
@@ -162,28 +157,7 @@ def fetch_competitor_positions() -> dict:
     return comp
 
 
-def fetch_backlinks() -> dict:
-    try:
-        text = semrush({
-            "type": "backlinks_overview",
-            "target": PILL_PAGE,
-            "target_type": "url",
-            "export_columns": "total,domains_num",
-        })
-        lines = [l for l in text.splitlines() if l.strip()]
-        if len(lines) >= 2:
-            cols = [c.strip().lower() for c in lines[0].split(";")]
-            vals = lines[1].split(";")
-            return {
-                "t": int(vals[cols.index("total")]),
-                "d": int(vals[cols.index("domains_num")]),
-            }
-    except Exception as e:
-        print(f"[warn] backlinks unavailable: {e}", file=sys.stderr)
-    return {"t": 0, "d": 0}
-
-
-def build_snapshot(rows: list, bl: dict, comp: dict, mode: str = "semrush") -> dict:
+def build_snapshot(rows: list, comp: dict, mode: str = "semrush") -> dict:
     clean = []
     for r in rows:
         if r.get("k") and isinstance(r.get("p"), int):
@@ -198,15 +172,15 @@ def build_snapshot(rows: list, bl: dict, comp: dict, mode: str = "semrush") -> d
         best[kw] = {"p": top["p"], "c": top["c"], "u": top["u"],
                     "n": len({h["u"] for h in hits})}
 
-    pill_kw = best.get("wegovy pill") or best.get("wegovy pills")
-    pill_pos = pill_kw["p"] if pill_kw else None
+    hero_kw = best.get("foundayo")
+    hero_pos = hero_kw["p"] if hero_kw else None
 
-    bw_inj = [r["p"] for r in clean if r["k"] == "buy wegovy" and r["c"] == "injection"]
+    orfog_kw = best.get("orforglipron")
+    orfog_pos = orfog_kw["p"] if orfog_kw else None
 
     flags = {
         "wrong": any(best[k] and best[k]["c"] != g and best[k]["c"] != "advice"
                      for k, g, _ in TRACKED if best[k]),
-        "legacy": any(r["c"] == "legacy" for r in clean),
         "cann": sum(1 for k, _, _ in TRACKED if best[k] and best[k]["n"] > 1),
     }
     return {
@@ -215,10 +189,8 @@ def build_snapshot(rows: list, bl: dict, comp: dict, mode: str = "semrush") -> d
         "best": best,
         "comp": comp,
         "m": {
-            "pill": pill_pos,
-            "bwInj": min(bw_inj) if bw_inj else None,
-            "blD": bl.get("d", 0),
-            "blT": bl.get("t", 0),
+            "foundayo": hero_pos,
+            "orforglipron": orfog_pos,
         },
         "flags": flags,
     }
@@ -244,32 +216,28 @@ def arrow(d):
 
 def digest(snaps: list) -> str:
     cur, prev = snaps[-1], (snaps[-2] if len(snaps) > 1 else None)
-    pill = cur["m"]["pill"]
-    pill_prev = prev["m"]["pill"] if prev else None
-    L = [f"WEGOVY SENTINEL -- {cur['date']}"
+    fp = cur["m"]["foundayo"]
+    fp_prev = prev["m"]["foundayo"] if prev else None
+    op = cur["m"]["orforglipron"]
+    op_prev = prev["m"]["orforglipron"] if prev else None
+
+    L = [f"FOUNDAYO SENTINEL -- {cur['date']}"
          + (f" ({cur['mode']} mode)" if cur["mode"] != "semrush" else "")]
 
-    d_prev = (pill_prev - pill) if (pill is not None and pill_prev is not None) else None
-    line = f"  pill keyword: {'P' + str(pill) if pill else 'n/a'} ({arrow(d_prev)} vs prev)"
-    if pill is not None and pill <= 10:
-        line += " -- PAGE ONE"
-    L.append(line)
-
-    bw = cur["best"].get("buy wegovy")
-    if bw:
-        tag = " [!] WRONG PAGE" if bw["c"] != "injection" else ""
-        L.append(f"  buy wegovy: P{bw['p']} via {bw['c'].upper()}{tag}"
-                 + (f" (injection: P{cur['m']['bwInj']})" if cur["m"]["bwInj"] else ""))
+    d_prev = (fp_prev - fp) if (fp is not None and fp_prev is not None) else None
+    L.append(f"  foundayo: {'P' + str(fp) if fp else 'n/a'} ({arrow(d_prev)} vs prev)")
+    d_prev2 = (op_prev - op) if (op is not None and op_prev is not None) else None
+    L.append(f"  orforglipron: {'P' + str(op) if op else 'n/a'} ({arrow(d_prev2)} vs prev)")
 
     L.append("")
     L.append("TRACKED KEYWORDS:")
-    L.append(f"  {'Keyword':<30} {'SOP':>5}  {'Superdrug':>10}  {'Chemist4U':>10}  {'FamChem':>10}  {'MedExpr':>10}")
-    L.append("  " + "-" * 85)
+    L.append(f"  {'Keyword':<35} {'SOP':>5}  {'Superdrug':>10}  {'OxfordPh':>10}  {'Chem4U':>10}  {'IndepPh':>10}  {'Boots':>10}")
+    L.append("  " + "-" * 100)
     comp = cur.get("comp", {})
     for kw, goal, baseline in TRACKED:
         sop = cur["best"].get(kw)
         sop_str = f"P{sop['p']}" if sop else "--"
-        cols = [f"  {kw:<30} {sop_str:>5}"]
+        cols = [f"  {kw:<35} {sop_str:>5}"]
         for _, label in COMPETITORS:
             c = comp.get(label, {}).get(kw)
             cols.append(f"{('P' + str(c['p'])) if c else '--':>10}")
@@ -277,16 +245,12 @@ def digest(snaps: list) -> str:
 
     if cur["flags"]["wrong"]:
         L.append(f"\n[!] Wrong-page routing detected -- day {streak(snaps, 'wrong')}")
-    if cur["flags"]["legacy"]:
-        L.append(f"[!] Legacy URL still ranking -- day {streak(snaps, 'legacy')}")
     if cur["flags"]["cann"]:
         L.append(f"[*] {cur['flags']['cann']} keywords cannibalised (2+ URLs)")
 
-    L.append(f"\nBacklinks to pill page: {cur['m']['blD']} referring domains (target {BL_TARGET})")
-
     gaps = []
     for kw, goal, _ in TRACKED:
-        if goal != "pill":
+        if goal == "advice":
             continue
         sop = cur["best"].get(kw)
         sop_p = sop["p"] if sop else 999
@@ -295,13 +259,13 @@ def digest(snaps: list) -> str:
             if c and c["p"] < sop_p:
                 gaps.append((kw, label, c["p"], sop_p if sop_p < 999 else None))
     if gaps:
-        L.append("\nCOMPETITIVE GAPS (pill keywords where competitors outrank SOP):")
+        L.append("\nCOMPETITIVE GAPS (competitors outranking SOP):")
         for kw, label, cp, sp in gaps:
             sop_str = f"P{sp}" if sp else "n/a"
             L.append(f"  {kw}: {label} P{cp} vs SOP {sop_str}")
 
-    if pill is not None and pill <= 3:
-        L.append("\n[TARGET] P1-3 achieved. Hold through MHRA decision.")
+    if fp is not None and fp <= 3:
+        L.append("\n[TARGET] foundayo P1-3 secured.")
     return "\n".join(L)
 
 
@@ -322,31 +286,40 @@ def save_history(snaps: list):
 
 FIXTURE_ROWS = (
     "Keyword;Position;Search Volume;Url\n"
-    "wegovy uk;23;14800;https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/\n"
-    "wegovy price;8;6600;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk/\n"
-    "wegovy price uk;8;2900;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk/\n"
-    "cheapest wegovy uk;14;1900;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk/\n"
-    "wegovy side effects;8;9900;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-side-effects/\n"
-    "wegovy vs mounjaro;25;6600;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-vs-mounjaro/\n"
-    "wegovy reviews;23;9900;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-reviews/\n"
+    "foundayo;1;1300;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss-pills/foundayo/\n"
+    "foundayo;19;1300;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/foundayo/how-does-foundayo-work/\n"
+    "foundayo;57;1300;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/foundayo/what-is-foundayo-orforglipron/\n"
+    "foundayo pill;4;260;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss-pills/foundayo/\n"
+    "foundayo pill;28;260;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/foundayo/foundayo-weight-loss-results/\n"
+    "foundayo pill;89;260;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/foundayo/what-is-foundayo-orforglipron/\n"
+    "orforglipron;17;5400;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/\n"
+    "orforglipron;47;5400;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/what-is-orforglipron-weight-loss-pill/\n"
+    "orforglipron uk;2;1600;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/\n"
+    "orforglipron uk;24;1600;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/what-is-orforglipron-weight-loss-pill/\n"
+    "orforglipron price;2;1000;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/\n"
+    "orforglipron price;19;1000;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/what-is-orforglipron-weight-loss-pill/\n"
+    "orforglipron tablet;5;590;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/\n"
+    "orforglipron side effects;34;210;https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/what-is-orforglipron-weight-loss-pill/\n"
+    "orforglipron uk where to buy;1;140;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/\n"
+    "orforglipron buy online;2;90;https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/\n"
 )
 
 FIXTURE_COMP = {
     "Superdrug": {
-        "wegovy pill": {"p": 3, "u": "https://onlinedoctor.superdrug.com/wegovy-pill.html"},
-        "wegovy pill uk": {"p": 5, "u": "https://onlinedoctor.superdrug.com/wegovy-pill.html"},
-        "buy wegovy pill": {"p": 8, "u": "https://onlinedoctor.superdrug.com/wegovy-pill.html"},
+        "orforglipron": {"p": 7, "u": "https://onlinedoctor.superdrug.com/orforglipron-glp-1-pill.html"},
+        "orforglipron uk": {"p": 3, "u": "https://onlinedoctor.superdrug.com/orforglipron-glp-1-pill.html"},
+        "orforglipron price": {"p": 4, "u": "https://onlinedoctor.superdrug.com/orforglipron-glp-1-pill.html"},
+    },
+    "OxfordPharm": {
+        "orforglipron uk": {"p": 1, "u": "https://www.oxfordonlinepharmacy.co.uk/blog/when-will-orforglipron-be-available-in-the-uk"},
+        "orforglipron": {"p": 4, "u": "https://www.oxfordonlinepharmacy.co.uk/blog/when-will-orforglipron-be-available-in-the-uk"},
     },
     "Chemist4U": {
-        "wegovy pill": {"p": 5, "u": "https://www.chemist-4-u.com/wegovy-pills"},
-        "wegovy pills": {"p": 4, "u": "https://www.chemist-4-u.com/wegovy-pills"},
-        "wegovy tablets": {"p": 7, "u": "https://www.chemist-4-u.com/wegovy-pills"},
+        "orforglipron": {"p": 10, "u": "https://www.chemist-4-u.com/guides/weight-loss/what-is-orforglipron-new-uk-weight-loss-pill/"},
+        "orforglipron uk": {"p": 7, "u": "https://www.chemist-4-u.com/guides/weight-loss/what-is-orforglipron-new-uk-weight-loss-pill/"},
     },
-    "FamilyChemist": {
-        "wegovy tablets": {"p": 10, "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"},
-    },
-    "MedExpress": {
-        "wegovy pill": {"p": 12, "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy-pill"},
+    "Boots": {
+        "orforglipron uk": {"p": 14, "u": "https://onlinedoctor.boots.com/treatments/orforglipron"},
     },
 }
 
@@ -356,27 +329,25 @@ def main():
     try:
         if test:
             rows = parse_rows(FIXTURE_ROWS)
-            bl = {"t": 2, "d": 2}
             comp = FIXTURE_COMP
         else:
             rows = fetch_positions()
-            bl = fetch_backlinks()
             comp = fetch_competitor_positions()
         snaps = load_history()
-        snap = build_snapshot(rows, bl, comp)
+        snap = build_snapshot(rows, comp)
         snaps = [s for s in snaps if s["date"] != snap["date"]] + [snap]
         save_history(snaps)
         text = digest(snaps)
         print(text)
         if test:
-            assert snap["m"]["pill"] is None, "pill keywords not in fixture"
-            assert snap["best"]["wegovy uk"]["p"] == 23
-            assert snap["best"]["wegovy price"]["p"] == 8
+            assert snap["m"]["foundayo"] == 1
+            assert snap["m"]["orforglipron"] == 17
+            assert snap["best"]["foundayo"]["n"] == 3, "foundayo should have 3 cannibalising URLs"
+            assert snap["flags"]["cann"] > 0, "cannibalisation flag should fire"
             assert "Superdrug" in snap["comp"]
-            assert snap["comp"]["Superdrug"]["wegovy pill"]["p"] == 3
             print("\n[self-test] all assertions passed")
     except Exception as e:
-        msg = f"WEGOVY SENTINEL FAILED -- {today_uk()}: {e}"
+        msg = f"FOUNDAYO SENTINEL FAILED -- {today_uk()}: {e}"
         print(msg, file=sys.stderr)
         sys.exit(1)
 
