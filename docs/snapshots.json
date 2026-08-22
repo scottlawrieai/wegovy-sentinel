@@ -43273,7 +43273,7 @@
   }
  },
  {
-  "date": "2026-08-21",
+  "date": "2026-08-22",
   "mode": "semrush",
   "best": {
    "wegovy pill": {
@@ -43294,10 +43294,10 @@
     "n": 1
    },
    "wegovy price": {
-    "p": 19,
-    "c": "advice",
-    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk/",
-    "n": 1
+    "p": 13,
+    "c": "injection",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
+    "n": 2
    },
    "wegovy price uk": {
     "p": 11,
@@ -43396,8 +43396,8 @@
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy price": {
-     "p": 12,
-     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-prices/"
+     "p": 8,
+     "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy price uk": {
      "p": 15,
@@ -43438,7 +43438,7 @@
      "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
     },
     "wegovy price": {
-     "p": 22,
+     "p": 18,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "wegovy price uk": {
@@ -43480,7 +43480,7 @@
      "u": "https://www.medexpress.co.uk/health-centre/wegovy-pill/"
     },
     "wegovy price": {
-     "p": 3,
+     "p": 4,
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "wegovy price uk": {
@@ -43518,7 +43518,7 @@
   "flags": {
    "wrong": true,
    "legacy": false,
-   "cann": 3
+   "cann": 4
   }
  }
 ]
