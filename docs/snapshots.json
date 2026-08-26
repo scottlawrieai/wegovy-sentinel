@@ -43273,7 +43273,7 @@
   }
  },
  {
-  "date": "2026-08-25",
+  "date": "2026-08-26",
   "mode": "semrush",
   "best": {
    "wegovy pill": {
@@ -43306,13 +43306,13 @@
     "n": 1
    },
    "wegovy uk": {
-    "p": 30,
+    "p": 8,
     "c": "injection",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
-    "n": 2
+    "n": 1
    },
    "cheapest wegovy uk": {
-    "p": 12,
+    "p": 14,
     "c": "pill",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
     "n": 1
@@ -43333,10 +43333,10 @@
     "n": 2
    },
    "wegovy reviews": {
-    "p": 34,
+    "p": 12,
     "c": "advice",
-    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-reviews/",
-    "n": 1
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects/",
+    "n": 4
    }
   },
   "comp": {
@@ -43362,11 +43362,11 @@
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
     },
     "wegovy uk": {
-     "p": 2,
+     "p": 1,
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
     },
     "cheapest wegovy uk": {
-     "p": 19,
+     "p": 16,
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
     },
     "buy wegovy": {
@@ -43384,6 +43384,10 @@
     "wegovy vs mounjaro": {
      "p": 27,
      "u": "https://onlinedoctor.superdrug.com/mounjaro-vs-wegovy.html"
+    },
+    "wegovy reviews": {
+     "p": 47,
+     "u": "https://onlinedoctor.superdrug.com/wegovy-pill-weight-loss-results.html"
     }
    },
    "Chemist4U": {
@@ -43404,11 +43408,11 @@
      "u": "https://www.chemist-4-u.com/wegovy"
     },
     "wegovy uk": {
-     "p": 22,
+     "p": 9,
      "u": "https://www.chemist-4-u.com/wegovy"
     },
     "cheapest wegovy uk": {
-     "p": 11,
+     "p": 12,
      "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-prices/"
     },
     "buy wegovy": {
@@ -43433,6 +43437,10 @@
      "p": 34,
      "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
     },
+    "wegovy tablets": {
+     "p": 12,
+     "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
+    },
     "wegovy price": {
      "p": 18,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
@@ -43441,12 +43449,8 @@
      "p": 14,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
-    "wegovy uk": {
-     "p": 18,
-     "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
-    },
     "cheapest wegovy uk": {
-     "p": 5,
+     "p": 8,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "buy wegovy": {
@@ -43484,11 +43488,11 @@
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "wegovy uk": {
-     "p": 1,
+     "p": 3,
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "cheapest wegovy uk": {
-     "p": 14,
+     "p": 21,
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "buy wegovy": {
@@ -43502,6 +43506,10 @@
     "wegovy side effects": {
      "p": 34,
      "u": "https://www.medexpress.co.uk/health-centre/wegovy-side-effects/"
+    },
+    "wegovy reviews": {
+     "p": 11,
+     "u": "https://www.medexpress.co.uk/health-centre/wegovy-weight-loss-results/"
     }
    }
   },
