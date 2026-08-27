@@ -43273,7 +43273,7 @@
   }
  },
  {
-  "date": "2026-08-26",
+  "date": "2026-08-27",
   "mode": "semrush",
   "best": {
    "wegovy pill": {
@@ -43300,10 +43300,10 @@
     "n": 2
    },
    "wegovy price uk": {
-    "p": 11,
+    "p": 12,
     "c": "pill",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
-    "n": 1
+    "n": 2
    },
    "wegovy uk": {
     "p": 8,
@@ -43358,7 +43358,7 @@
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
     },
     "wegovy price uk": {
-     "p": 2,
+     "p": 6,
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
     },
     "wegovy uk": {
@@ -43404,8 +43404,8 @@
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy price uk": {
-     "p": 15,
-     "u": "https://www.chemist-4-u.com/wegovy"
+     "p": 9,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-prices/"
     },
     "wegovy uk": {
      "p": 9,
@@ -43446,7 +43446,7 @@
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "wegovy price uk": {
-     "p": 14,
+     "p": 17,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "cheapest wegovy uk": {
@@ -43522,7 +43522,7 @@
   "flags": {
    "wrong": true,
    "legacy": false,
-   "cann": 4
+   "cann": 5
   }
  }
 ]
