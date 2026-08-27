@@ -1,6 +1,6 @@
 [
  {
-  "date": "2026-08-26",
+  "date": "2026-08-27",
   "mode": "semrush",
   "best": {
    "foundayo": {
@@ -16,16 +16,16 @@
     "n": 4
    },
    "orforglipron": {
-    "p": 64,
-    "c": "advice",
-    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/orforglipron-glp-1-pill/",
-    "n": 1
-   },
-   "orforglipron uk": {
-    "p": 2,
+    "p": 16,
     "c": "orforglipron",
     "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/",
     "n": 3
+   },
+   "orforglipron uk": {
+    "p": 8,
+    "c": "orforglipron",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/",
+    "n": 2
    },
    "orforglipron price": {
     "p": 2,
@@ -101,11 +101,11 @@
      "u": "https://onlinedoctor.superdrug.com/foundayo.html"
     },
     "orforglipron": {
-     "p": 4,
+     "p": 26,
      "u": "https://onlinedoctor.superdrug.com/orforglipron-glp-1-pill.html"
     },
     "orforglipron uk": {
-     "p": 3,
+     "p": 6,
      "u": "https://onlinedoctor.superdrug.com/orforglipron-glp-1-pill.html"
     },
     "orforglipron price": {
@@ -155,11 +155,11 @@
    },
    "OxfordPharm": {
     "orforglipron": {
-     "p": 7,
+     "p": 11,
      "u": "https://www.oxfordonlinepharmacy.co.uk/blog/when-will-orforglipron-be-available-in-the-uk"
     },
     "orforglipron uk": {
-     "p": 1,
+     "p": 7,
      "u": "https://www.oxfordonlinepharmacy.co.uk/blog/when-will-orforglipron-be-available-in-the-uk"
     },
     "orforglipron price": {
@@ -205,12 +205,12 @@
      "u": "https://www.chemist-4-u.com/foundayo"
     },
     "orforglipron": {
-     "p": 8,
+     "p": 12,
      "u": "https://www.chemist-4-u.com/foundayo"
     },
     "orforglipron uk": {
-     "p": 7,
-     "u": "https://www.chemist-4-u.com/guides/weight-loss/what-is-orforglipron-new-uk-weight-loss-pill/"
+     "p": 10,
+     "u": "https://www.chemist-4-u.com/foundayo"
     },
     "orforglipron price": {
      "p": 6,
@@ -267,11 +267,11 @@
      "u": "https://www.theindependentpharmacy.co.uk/weight-loss/orforglipron-foundayo"
     },
     "orforglipron": {
-     "p": 14,
+     "p": 7,
      "u": "https://www.theindependentpharmacy.co.uk/weight-loss/guides/orforglipron-explained"
     },
     "orforglipron uk": {
-     "p": 4,
+     "p": 3,
      "u": "https://www.theindependentpharmacy.co.uk/weight-loss/guides/orforglipron-explained"
     },
     "orforglipron price": {
@@ -325,7 +325,7 @@
      "u": "https://onlinedoctor.boots.com/treatments/orforglipron"
     },
     "orforglipron uk": {
-     "p": 14,
+     "p": 1,
      "u": "https://onlinedoctor.boots.com/treatments/orforglipron"
     },
     "orforglipron price": {
@@ -356,11 +356,11 @@
   },
   "m": {
    "foundayo": 1,
-   "orforglipron": 64
+   "orforglipron": 16
   },
   "flags": {
    "wrong": false,
-   "cann": 11
+   "cann": 12
   }
  }
 ]
