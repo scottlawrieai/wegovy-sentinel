@@ -43273,11 +43273,11 @@
   }
  },
  {
-  "date": "2026-08-27",
+  "date": "2026-08-28",
   "mode": "semrush",
   "best": {
    "wegovy pill": {
-    "p": 47,
+    "p": 45,
     "c": "pill",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
     "n": 1
@@ -43369,10 +43369,6 @@
      "p": 16,
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
     },
-    "buy wegovy": {
-     "p": 1,
-     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
-    },
     "buy wegovy online": {
      "p": 1,
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
@@ -43392,11 +43388,11 @@
    },
    "Chemist4U": {
     "wegovy pill": {
-     "p": 26,
+     "p": 25,
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy pills": {
-     "p": 19,
+     "p": 20,
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy price": {
@@ -43420,7 +43416,7 @@
      "u": "https://www.chemist-4-u.com/wegovy"
     },
     "buy wegovy online": {
-     "p": 8,
+     "p": 9,
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy vs mounjaro": {
@@ -43430,11 +43426,11 @@
    },
    "FamilyChemist": {
     "wegovy pill": {
-     "p": 41,
+     "p": 38,
      "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
     },
     "wegovy pills": {
-     "p": 34,
+     "p": 31,
      "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
     },
     "wegovy tablets": {
@@ -43458,7 +43454,7 @@
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "buy wegovy online": {
-     "p": 16,
+     "p": 13,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "wegovy side effects": {
@@ -43472,8 +43468,12 @@
    },
    "MedExpress": {
     "wegovy pill": {
-     "p": 39,
-     "u": "https://www.medexpress.co.uk/health-centre/wegovy-pill/"
+     "p": 5,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy-pill"
+    },
+    "wegovy pills": {
+     "p": 2,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy-pill"
     },
     "oral semaglutide": {
      "p": 56,
@@ -43500,7 +43500,7 @@
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "buy wegovy online": {
-     "p": 4,
+     "p": 5,
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "wegovy side effects": {
@@ -43514,7 +43514,7 @@
    }
   },
   "m": {
-   "pill": 47,
+   "pill": 45,
    "bwInj": null,
    "blD": 0,
    "blT": 0
