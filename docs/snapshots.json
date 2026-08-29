@@ -43273,7 +43273,7 @@
   }
  },
  {
-  "date": "2026-08-28",
+  "date": "2026-08-29",
   "mode": "semrush",
   "best": {
    "wegovy pill": {
@@ -43321,16 +43321,16 @@
    "buy wegovy uk": null,
    "buy wegovy online": null,
    "wegovy side effects": {
-    "p": 10,
+    "p": 64,
     "c": "advice",
-    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects/",
-    "n": 3
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/serious-side-effects-wegovy-pill/",
+    "n": 2
    },
    "wegovy vs mounjaro": {
-    "p": 28,
+    "p": 26,
     "c": "advice",
     "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-vs-mounjaro/",
-    "n": 2
+    "n": 3
    },
    "wegovy reviews": {
     "p": 12,
@@ -43374,11 +43374,11 @@
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
     },
     "wegovy side effects": {
-     "p": 7,
+     "p": 11,
      "u": "https://onlinedoctor.superdrug.com/wegovy-pill-side-effects.html"
     },
     "wegovy vs mounjaro": {
-     "p": 27,
+     "p": 23,
      "u": "https://onlinedoctor.superdrug.com/mounjaro-vs-wegovy.html"
     },
     "wegovy reviews": {
@@ -43419,6 +43419,10 @@
      "p": 9,
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
+    "wegovy side effects": {
+     "p": 27,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-side-effects/"
+    },
     "wegovy vs mounjaro": {
      "p": 9,
      "u": "https://www.chemist-4-u.com/guides/weight-loss/mounjaro-vs-wegovy/"
@@ -43458,11 +43462,11 @@
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "wegovy side effects": {
-     "p": 54,
+     "p": 51,
      "u": "https://www.thefamilychemist.co.uk/managing-wegovy-side-effects/"
     },
     "wegovy vs mounjaro": {
-     "p": 38,
+     "p": 34,
      "u": "https://www.thefamilychemist.co.uk/mounjaro-vs-wegovy-the-verdict-on-the-best-weight-loss-medication/"
     }
    },
@@ -43504,8 +43508,12 @@
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "wegovy side effects": {
-     "p": 34,
+     "p": 37,
      "u": "https://www.medexpress.co.uk/health-centre/wegovy-side-effects/"
+    },
+    "wegovy vs mounjaro": {
+     "p": 56,
+     "u": "https://www.medexpress.co.uk/health-centre/mounjaro-vs-wegovy/"
     },
     "wegovy reviews": {
      "p": 11,
