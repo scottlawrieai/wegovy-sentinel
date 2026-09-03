@@ -262,7 +262,8 @@
     render: function (body, S) {
       var html = CSS + C.pills('rank-src', SOURCES, activeSrc);
       html += '<div class="rank-grid">';
-      MAIN_KWS.forEach(function (kw) {
+      var kws = (S.product && S.product.mainKws) || MAIN_KWS;
+      kws.forEach(function (kw) {
         html += kwCard(S, kw);
       });
       html += '</div>';

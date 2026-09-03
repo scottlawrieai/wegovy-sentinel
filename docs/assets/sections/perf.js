@@ -223,7 +223,7 @@
       var blD = last && last.m ? last.m.blD : null;
       var blPrev = ago && ago.m ? ago.m.blD : null;
       html += '<div class="kpis">' +
-        kpi('"wegovy pill" position (Semrush)',
+        kpi('"' + ((S.product || {}).hero || 'wegovy pill') + '" position (Semrush)',
           pill == null ? '—' : '#' + C.esc(C.fmtInt(pill)),
           deltaHtml(d, C.fmtInt, true)) +
         kpi('Page-one keywords',
@@ -243,11 +243,11 @@
     if (g) {
       html += '<div class="perf-toolbar">' +
         C.pills('perf-view', [
-          { value: 'page', label: 'Pill page' },
+          { value: 'page', label: (S.product || {}).pageLabel || 'Pill page' },
           { value: 'site', label: 'Whole site' }
         ], view) +
         '<span class="perf-change-tag">Source: Google Search Console · ' +
-        (view === 'site' ? 'whole property' : 'Wegovy pill page') + '</span>' +
+        (view === 'site' ? 'whole property' : C.esc(((S.product || {}).label || 'Wegovy pill') + ' page')) + '</span>' +
         '</div>';
     } else {
       html += '<div class="perf-toolbar">' +
@@ -361,7 +361,7 @@
           return chartPts.some(function (pt) { return pt.d >= dd; });
         });
         html += '<div class="panel">' + C.lineChart({
-          series: [{ label: '"wegovy pill" position (Semrush)', color: '#1C7ED6', points: chartPts }],
+          series: [{ label: '"' + ((S.product || {}).hero || 'wegovy pill') + '" position (Semrush)', color: '#1C7ED6', points: chartPts }],
           height: 230, invertY: true,
           yFmt: function (v) { return Math.round(v); },
           markers: inRangeDates.map(function (dd) {

@@ -143,6 +143,20 @@ Setup:
 > egress to AWR, so the first GitHub Actions run (clean egress) is what verifies
 > it end to end; if anything needs adjusting, share a sample response.
 
+## Multi-product
+
+**Wegovy is the default product** — `sentinel.py`, `changelog.py` and
+`alerts.py` run against the original `snapshots.json` / `content.json` /
+`changelog.json` files when invoked with no flags. **Mounjaro** runs the same
+pipeline against its own `mounjaro_*` data files: the daily patrol runs
+`mounjaro_sentinel.py`, then `changelog.py --product mounjaro` and
+`alerts.py --product mounjaro` (which read/write
+`docs/mounjaro_content.json`, `docs/mounjaro_snapshots.json`,
+`data|docs/mounjaro_changelog.json` and `data/mounjaro_alerts_state.json`).
+Hand-written changelog entries for Mounjaro go in
+`data/mounjaro_changelog_manual.json` (same format as
+`data/changelog_manual.json`).
+
 ---
 
 Test everything offline (uses canned fixtures, no network/keys):

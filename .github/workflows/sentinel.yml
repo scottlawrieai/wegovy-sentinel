@@ -54,6 +54,39 @@ jobs:
         if: always()
         run: python changelog.py
 
+      - name: Run Mounjaro Sentinel
+        if: always()
+        env:
+          SEMRUSH_API_KEY: ${{ secrets.SEMRUSH_API_KEY }}
+          # Google Search Console (optional -- OAuth refresh-token auth)
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
+          # PageSpeed Insights (optional key -- keyless works but is rate-limited)
+          PSI_API_KEY: ${{ secrets.PSI_API_KEY }}
+          # Advanced Web Ranking (optional -- AWR Cloud v2 get API)
+          AWR_API_TOKEN: ${{ secrets.AWR_API_TOKEN }}
+          AWR_PROJECT: ${{ vars.AWR_PROJECT }}
+          AWR_GEO: ${{ vars.AWR_GEO }}
+          AWR_DEVICE: ${{ vars.AWR_DEVICE }}
+          # Google Analytics 4 (optional -- sessions/key events for the pill page)
+          GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+          GA4_REFRESH_TOKEN: ${{ secrets.GA4_REFRESH_TOKEN }}
+          GA4_CLIENT_ID: ${{ secrets.GA4_CLIENT_ID }}
+          GA4_CLIENT_SECRET: ${{ secrets.GA4_CLIENT_SECRET }}
+        run: python mounjaro_sentinel.py
+
+      - name: Mounjaro changelog
+        if: always()
+        run: python changelog.py --product mounjaro
+
+      - name: Mounjaro alerts
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python alerts.py --product mounjaro
+
       - name: Run Foundayo Sentinel
         if: always()
         env:
@@ -69,6 +102,10 @@ jobs:
                   data/content.json docs/content.json \
                   data/changelog.json docs/changelog.json \
                   data/alerts_state.json \
+                  data/mounjaro_snapshots.json docs/mounjaro_snapshots.json \
+                  data/mounjaro_content.json docs/mounjaro_content.json \
+                  data/mounjaro_changelog.json docs/mounjaro_changelog.json \
+                  data/mounjaro_alerts_state.json \
                   data/foundayo_snapshots.json docs/foundayo_snapshots.json || true
           git diff --cached --quiet || git commit -m "patrol: $(date -u +%F)"
           git push

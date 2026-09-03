@@ -28,6 +28,29 @@ MANUAL = os.path.join(HERE, "data", "changelog_manual.json")
 DATA = os.path.join(HERE, "data", "changelog.json")
 DOCS = os.path.join(HERE, "docs", "changelog.json")
 
+# Per-product file paths; wegovy (default) keeps the historical locations.
+PRODUCTS = {
+    "wegovy": {"content": CONTENT, "manual": MANUAL, "data": DATA, "docs": DOCS},
+    "mounjaro": {
+        "content": os.path.join(HERE, "docs", "mounjaro_content.json"),
+        "manual": os.path.join(HERE, "data", "mounjaro_changelog_manual.json"),
+        "data": os.path.join(HERE, "data", "mounjaro_changelog.json"),
+        "docs": os.path.join(HERE, "docs", "mounjaro_changelog.json"),
+    },
+}
+
+
+def product_from_argv(argv: list) -> str:
+    if "--product" in argv:
+        i = argv.index("--product")
+        name = argv[i + 1] if i + 1 < len(argv) else ""
+        if name not in PRODUCTS:
+            print(f"[error] unknown product {name!r}; choose from "
+                  f"{', '.join(sorted(PRODUCTS))}", file=sys.stderr)
+            raise SystemExit(2)
+        return name
+    return "wegovy"
+
 # Word-count moves smaller than this are treated as boilerplate jitter
 # (rotating review counts, dated copy) rather than a real content change.
 WC_NOISE = 25
@@ -200,8 +223,8 @@ def merge(auto: dict, manual: list) -> list:
     return [{"date": d, "changes": by_date[d]} for d in sorted(by_date)]
 
 
-def save(entries: list):
-    for path in (DATA, DOCS):
+def save(entries: list, paths=(DATA, DOCS)):
+    for path in paths:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
             json.dump(entries, f, indent=1, ensure_ascii=False)
@@ -261,13 +284,14 @@ def main():
         print("\n[self-test] all assertions passed")
         return
 
-    audits = load_json(CONTENT, [])
-    manual = load_json(MANUAL, [])
+    p = PRODUCTS[product_from_argv(sys.argv)]
+    audits = load_json(p["content"], [])
+    manual = load_json(p["manual"], [])
     if not audits:
         print("[warn] no content audit history yet -- manual entries only",
               file=sys.stderr)
     entries = merge(build_auto(audits), manual)
-    save(entries)
+    save(entries, (p["data"], p["docs"]))
     print(digest(entries))
 
 

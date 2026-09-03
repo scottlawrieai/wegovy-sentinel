@@ -55,6 +55,9 @@ def _today_uk():
     return datetime.now(ZoneInfo("Europe/London")).date()
 
 
+PILL_PAGE = "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
+
+
 # --------------------------------------------------------------------------
 # Google Search Console
 # --------------------------------------------------------------------------
@@ -157,8 +160,11 @@ def _gsc_series(token, prop, start, end, page_url=None) -> list:
     return out
 
 
-def fetch_gsc_timeseries() -> dict:
-    """Daily clicks/impressions/CTR/position for the property and pill page.
+def fetch_gsc_timeseries(page_url: str = PILL_PAGE) -> dict:
+    """Daily clicks/impressions/CTR/position for the property and one page.
+
+    `page_url` defaults to the wegovy pill page, so existing callers are
+    unchanged; product sentinels pass their own page for the "page" series.
 
     Powers the Search Console performance charts. Backfilled straight from
     Google in one call per series, so the charts carry real history the first
@@ -177,7 +183,7 @@ def fetch_gsc_timeseries() -> dict:
     end = _today_uk() - timedelta(days=3)   # GSC data lags a couple of days
     start = end - timedelta(days=days)
     out = {"as_of": end.isoformat(), "days": days}
-    for key, page in (("site", None), ("page", PILL_PAGE)):
+    for key, page in (("site", None), ("page", page_url)):
         try:
             out[key] = _gsc_series(token, prop, start, end, page)
         except Exception as e:
@@ -261,8 +267,8 @@ def _ga4_access_token() -> str:
         return json.loads(r.read().decode("utf-8", "replace")).get("access_token", "")
 
 
-def fetch_ga4() -> dict:
-    """Daily sessions + key events for the pill page landing path.
+def fetch_ga4(page_url: str = PILL_PAGE) -> dict:
+    """Daily sessions + key events for one landing path (default: pill page).
 
     Env: GA4_PROPERTY_ID (numeric, required) and GA4_REFRESH_TOKEN (scope
     analytics.readonly). Window follows GSC_TS_DAYS (default 90).
@@ -278,7 +284,7 @@ def fetch_ga4() -> dict:
         days = 90
     end = _today_uk() - timedelta(days=1)
     start = end - timedelta(days=days)
-    path = urllib.parse.urlparse(PILL_PAGE).path
+    path = urllib.parse.urlparse(page_url).path
     body = {
         "dateRanges": [{"startDate": start.isoformat(), "endDate": end.isoformat()}],
         "dimensions": [{"name": "date"}],
@@ -369,9 +375,6 @@ def fetch_gsc_insights(tracked) -> dict:
             "ctr": round(float(r.get("ctr", 0)) * 100, 1),
         })
     return analyse_gsc_rows(rows, tracked)
-
-
-PILL_PAGE = "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
 
 
 def _same_page(a: str, b: str) -> bool:

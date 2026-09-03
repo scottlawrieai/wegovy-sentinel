@@ -32,14 +32,44 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SNAPS = os.path.join(HERE, "docs", "snapshots.json")
 STATE = os.path.join(HERE, "data", "alerts_state.json")
 
+# Per-product paths / labels; wegovy (default) keeps the historical locations.
+PRODUCTS = {
+    "wegovy": {"snaps": SNAPS, "state": STATE, "module": "sentinel",
+               "title": "Sentinel alerts"},
+    "mounjaro": {
+        "snaps": os.path.join(HERE, "docs", "mounjaro_snapshots.json"),
+        "state": os.path.join(HERE, "data", "mounjaro_alerts_state.json"),
+        "module": "mounjaro_sentinel",
+        "title": "Sentinel alerts (Mounjaro)",
+    },
+}
+
 DROP_THRESHOLD = 5
 COOLDOWN_DAYS = 7
 
-# pill-goal keywords, mirrored from sentinel.TRACKED (imported lazily so this
-# module stays runnable standalone)
-def pill_keywords():
-    from sentinel import TRACKED
-    return [kw for kw, goal, _ in TRACKED if goal == "pill"]
+# product-goal keywords, mirrored from the product sentinel's TRACKED
+# (imported lazily so this module stays runnable standalone; the mounjaro
+# module may not exist in old checkouts — warn and exit cleanly then)
+def pill_keywords(module: str = "sentinel"):
+    import importlib
+    try:
+        mod = importlib.import_module(module)
+    except ImportError as e:
+        print(f"[warn] cannot import {module} ({e}); nothing to do")
+        raise SystemExit(0)
+    return [kw for kw, goal, _ in mod.TRACKED if goal in ("pill", "product")]
+
+
+def product_from_argv(argv: list) -> str:
+    if "--product" in argv:
+        i = argv.index("--product")
+        name = argv[i + 1] if i + 1 < len(argv) else ""
+        if name not in PRODUCTS:
+            print(f"[error] unknown product {name!r}; choose from "
+                  f"{', '.join(sorted(PRODUCTS))}", file=sys.stderr)
+            raise SystemExit(2)
+        return name
+    return "wegovy"
 
 
 def today_uk() -> str:
@@ -98,10 +128,10 @@ def evaluate(prev: dict, cur: dict, pill_kws: list) -> list:
     return alerts
 
 
-def load_state() -> dict:
-    if os.path.exists(STATE):
+def load_state(path: str = STATE) -> dict:
+    if os.path.exists(path):
         try:
-            with open(STATE) as f:
+            with open(path) as f:
                 return json.load(f)
         except (ValueError, OSError):
             pass
@@ -167,8 +197,9 @@ def main():
         print("[self-test] all assertions passed")
         return
 
+    p = PRODUCTS[product_from_argv(sys.argv)]
     try:
-        with open(SNAPS) as f:
+        with open(p["snaps"]) as f:
             snaps = json.load(f)
     except (OSError, ValueError):
         print("[alerts] no snapshot history; nothing to do")
@@ -178,8 +209,8 @@ def main():
         return
 
     today = today_uk()
-    state = load_state()
-    fresh = [a for a in evaluate(snaps[-2], snaps[-1], pill_keywords())
+    state = load_state(p["state"])
+    fresh = [a for a in evaluate(snaps[-2], snaps[-1], pill_keywords(p["module"]))
              if not within_cooldown(state, a["fp"], today)]
     if not fresh:
         print("[alerts] nothing to report")
@@ -190,12 +221,12 @@ def main():
             + "\n\n[Dashboard](https://scottlawrieai.github.io/wegovy-sentinel/)"
             + " · repeated conditions re-alert after "
             + f"{COOLDOWN_DAYS} days.")
-    sent = open_issue(f"Sentinel alerts — {today}", body)
+    sent = open_issue(f"{p['title']} — {today}", body)
     if sent:
         for a in fresh:
             state[a["fp"]] = today
-        os.makedirs(os.path.dirname(STATE), exist_ok=True)
-        with open(STATE, "w") as f:
+        os.makedirs(os.path.dirname(p["state"]), exist_ok=True)
+        with open(p["state"], "w") as f:
             json.dump(state, f, indent=1)
 
 

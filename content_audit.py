@@ -154,6 +154,25 @@ would may might do does did done about into over under more most some any all ea
 about www com co uk html https http page pill pills wegovy weight loss""".split())
 
 
+# Module settings a product sentinel may override via configure().
+_CONFIGURABLE = ("PHRASE", "OUR_PAGE", "PRIMARY", "SECONDARY", "LEXICON",
+                 "DATA", "DOCS")
+
+
+def configure(**kw):
+    """Point this audit at another product (e.g. mounjaro).
+
+    Overrides the module globals named in _CONFIGURABLE -- only the keys
+    provided are changed. MUST be called before run_and_store/build_audit:
+    the audit reads these globals at run time. When never called the module
+    behaves exactly as before (wegovy-pill defaults).
+    """
+    for k, v in kw.items():
+        if k not in _CONFIGURABLE:
+            raise ValueError(f"configure: unknown key {k!r}")
+        globals()[k] = v
+
+
 # ----------------------------------------------------------------------------- IO
 def today_uk() -> str:
     return datetime.now(ZoneInfo("Europe/London")).strftime("%Y-%m-%d")
@@ -744,7 +763,7 @@ def build_audit(semrush_fn=None, fetch_fn=None, mode="live") -> dict:
 
 def digest_section(audit: dict) -> str:
     a = audit["align"]
-    L = ["", "CONTENT REVIEW -- \"wegovy pill\" SERP "
+    L = ["", f"CONTENT REVIEW -- \"{audit.get('phrase', PHRASE)}\" SERP "
          + (f"({audit['mode']} mode)" if audit["mode"] != "live" else ""),
          "  " + "-" * 60,
          f"  pill-page alignment score: {a['score']}/100   "
@@ -767,7 +786,8 @@ def digest_section(audit: dict) -> str:
     return "\n".join(L)
 
 
-def load_history(path=DATA) -> list:
+def load_history(path=None) -> list:
+    path = DATA if path is None else path   # read DATA at call time (configure())
     if os.path.exists(path):
         try:
             with open(path) as f:

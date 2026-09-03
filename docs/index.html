@@ -12,8 +12,12 @@
 <header class="topbar">
   <div class="topbar-left">
     <span class="brand">SENTINEL</span>
-    <span class="brand-sub">Wegovy · simpleonlinepharmacy.co.uk</span>
+    <span class="brand-sub" id="brand-sub">simpleonlinepharmacy.co.uk</span>
     <span class="mode-badge" id="mode-badge" hidden></span>
+    <div class="pills" data-pill-group="product" id="product-pills" style="margin-left:14px">
+      <button type="button" class="pill active" data-value="wegovy">Wegovy pill</button>
+      <button type="button" class="pill" data-value="mounjaro">Mounjaro</button>
+    </div>
   </div>
   <div class="topbar-right">
     <div class="pills" data-pill-group="daterange" id="daterange-pills">
@@ -48,9 +52,33 @@
 
   var sections = [];
 
+  var PRODUCTS = {
+    wegovy: {
+      key: 'wegovy', label: 'Wegovy pill', pageLabel: 'Pill page',
+      hero: 'wegovy pill',
+      mainKws: ['wegovy pill', 'wegovy pills', 'wegovy price',
+                'wegovy price uk', 'wegovy uk', 'oral semaglutide'],
+      title: 'Wegovy pill — search performance',
+      sub: 'Daily rank patrol, Search Console trends and on-page change tracking for the Wegovy pill cluster.',
+      files: { snaps: './snapshots.json', changelog: './changelog.json', content: './content.json' }
+    },
+    mounjaro: {
+      key: 'mounjaro', label: 'Mounjaro', pageLabel: 'Mounjaro page',
+      hero: 'mounjaro',
+      mainKws: ['mounjaro', 'mounjaro uk', 'buy mounjaro',
+                'mounjaro price', 'mounjaro pen', 'tirzepatide'],
+      title: 'Mounjaro — search performance',
+      sub: 'Daily rank patrol, Search Console trends and on-page change tracking for the Mounjaro cluster.',
+      files: { snaps: './mounjaro_snapshots.json', changelog: './mounjaro_changelog.json', content: './mounjaro_content.json' }
+    }
+  };
+  var startProduct = (location.hash || '').replace('#', '');
+  if (!PRODUCTS[startProduct]) startProduct = 'wegovy';
+
   window.Sentinel = {
     data: { snaps: [], changelog: [], content: [] },
     state: { from: '', to: '', preset: '90D' },
+    product: PRODUCTS[startProduct],
     pillHandlers: {},
     register: function (sec) {
       // {id, title, sub, order, render}
@@ -192,31 +220,55 @@
 
   /* ---------- boot ---------- */
 
-  var dataReady = Promise.all([
-    fetchJson('./snapshots.json'),
-    fetchJson('./changelog.json'),
-    fetchJson('./content.json')
-  ]).then(function (res) {
+  function loadProduct(key) {
     var S = window.Sentinel;
-    S.data.snaps = Array.isArray(res[0]) ? res[0] : [];
-    S.data.changelog = Array.isArray(res[1]) ? res[1] : [];
-    S.data.content = Array.isArray(res[2]) ? res[2] : [];
-
-    applyPreset('90D');
-
-    var last = S.data.snaps.length ? S.data.snaps[S.data.snaps.length - 1] : null;
-    if (last) {
-      document.getElementById('patrol-note').textContent =
-        'Last patrol: ' + last.date + ' · day ' + S.data.snaps.length;
-      if (last.mode) {
-        var badge = document.getElementById('mode-badge');
-        badge.textContent = last.mode;
-        badge.hidden = false;
+    var prod = PRODUCTS[key] || PRODUCTS.wegovy;
+    S.product = prod;
+    if (history.replaceState) history.replaceState(null, '', '#' + prod.key);
+    var pp = document.getElementById('product-pills');
+    Array.prototype.forEach.call(pp.querySelectorAll('.pill'), function (b) {
+      b.classList.toggle('active', b.getAttribute('data-value') === prod.key);
+    });
+    document.querySelector('.page-header h1').textContent = prod.title;
+    document.title = prod.label + ' Sentinel — search performance';
+    document.querySelector('.page-header .sub').textContent = prod.sub;
+    return Promise.all([
+      fetchJson(prod.files.snaps),
+      fetchJson(prod.files.changelog),
+      fetchJson(prod.files.content)
+    ]).then(function (res) {
+      S.data.snaps = Array.isArray(res[0]) ? res[0] : [];
+      S.data.changelog = Array.isArray(res[1]) ? res[1] : [];
+      S.data.content = Array.isArray(res[2]) ? res[2] : [];
+      applyPreset(S.state.preset === 'Custom' ? '90D' : S.state.preset);
+      var badge = document.getElementById('mode-badge');
+      var last = S.data.snaps.length ? S.data.snaps[S.data.snaps.length - 1] : null;
+      if (last) {
+        document.getElementById('patrol-note').textContent =
+          'Last patrol: ' + last.date + ' · day ' + S.data.snaps.length;
+        badge.textContent = last.mode || '';
+        badge.hidden = !last.mode;
+      } else {
+        document.getElementById('patrol-note').textContent =
+          'No ' + prod.label + ' patrol data yet — first patrol populates this view';
+        badge.hidden = true;
       }
-    } else {
-      document.getElementById('patrol-note').textContent = 'No patrol data yet';
+    });
+  }
+
+  window.Sentinel.pillHandlers['product'] = function (value) {
+    // async load: rerender happens when the product's data arrives
+    loadProduct(value).then(function () { window.Sentinel.rerender(); });
+  };
+
+  window.addEventListener('hashchange', function () {
+    var key = (location.hash || '').replace('#', '');
+    if (PRODUCTS[key] && key !== window.Sentinel.product.key) {
+      loadProduct(key).then(function () { window.Sentinel.rerender(); });
     }
   });
+
+  var dataReady = loadProduct(startProduct);
 
   var domReady = new Promise(function (resolve) {
     if (document.readyState === 'loading') {
