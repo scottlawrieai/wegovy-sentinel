@@ -43273,11 +43273,11 @@
   }
  },
  {
-  "date": "2026-09-02",
+  "date": "2026-09-03",
   "mode": "semrush",
   "best": {
    "wegovy pill": {
-    "p": 45,
+    "p": 44,
     "c": "pill",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
     "n": 1
@@ -43392,11 +43392,11 @@
    },
    "Chemist4U": {
     "wegovy pill": {
-     "p": 25,
+     "p": 22,
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy pills": {
-     "p": 20,
+     "p": 23,
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy price": {
@@ -43420,7 +43420,7 @@
      "u": "https://www.chemist-4-u.com/wegovy"
     },
     "buy wegovy online": {
-     "p": 9,
+     "p": 10,
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy side effects": {
@@ -43438,11 +43438,7 @@
    },
    "FamilyChemist": {
     "wegovy pill": {
-     "p": 38,
-     "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
-    },
-    "wegovy pills": {
-     "p": 31,
+     "p": 41,
      "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
     },
     "wegovy tablets": {
@@ -43470,7 +43466,7 @@
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "buy wegovy online": {
-     "p": 13,
+     "p": 15,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
     "wegovy side effects": {
@@ -43484,8 +43480,8 @@
    },
    "MedExpress": {
     "wegovy pill": {
-     "p": 5,
-     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy-pill"
+     "p": 29,
+     "u": "https://www.medexpress.co.uk/health-centre/wegovy-pill/"
     },
     "wegovy pills": {
      "p": 2,
@@ -43512,7 +43508,7 @@
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "buy wegovy online": {
-     "p": 5,
+     "p": 4,
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "wegovy side effects": {
@@ -43530,7 +43526,7 @@
    }
   },
   "m": {
-   "pill": 45,
+   "pill": 44,
    "bwInj": null,
    "blD": 0,
    "blT": 0
