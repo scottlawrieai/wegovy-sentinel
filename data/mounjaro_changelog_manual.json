@@ -1,1 +1,124 @@
-[]
+[
+ {
+  "date": "2026-08-13",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Added two FAQs to increase TF-IDF for “buy mounjaro” (see attached note for details)"
+   }
+  ]
+ },
+ {
+  "date": "2026-08-14",
+  "changes": [
+   {
+    "type": "seo",
+    "text": "Meta title changed (see attached notes for details)"
+   },
+   {
+    "type": "seo",
+    "text": "Meta description changed (see attached notes for details)"
+   },
+   {
+    "type": "seo",
+    "text": "H1 changed — cut back to “Mounjaro”"
+   }
+  ]
+ },
+ {
+  "date": "2026-08-19",
+  "changes": [
+   {
+    "type": "seo",
+    "text": "Anchor text updated in the Mounjaro ranking post (see attached notes)"
+   }
+  ]
+ },
+ {
+  "date": "2026-08-20",
+  "changes": [
+   {
+    "type": "content",
+    "text": "About intro changed (see attached note)"
+   },
+   {
+    "type": "content",
+    "text": "Typos fixed — ethnic group(s) and target(s)"
+   },
+   {
+    "type": "technical",
+    "text": "Removed FAQ markup everywhere except the FAQ section"
+   }
+  ]
+ },
+ {
+  "date": "2026-08-25",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Updated “Storage & Travel” intro (was “Storage & travel”)"
+   },
+   {
+    "type": "content",
+    "text": "Added contact-us prompt for pre-travel prescriptions"
+   },
+   {
+    "type": "content",
+    "text": "Price in Mounjaro summary changed from £169–£319 to £129–£319"
+   },
+   {
+    "type": "technical",
+    "text": "LD+JSON schema fixed — service reviews moved to the Organization node, product reviews to the Product node (service reviews were previously in the Product node)"
+   },
+   {
+    "type": "structure",
+    "text": "New component added showing product reviews on the Mounjaro, Wegovy and Wegovy-pill pages"
+   }
+  ]
+ },
+ {
+  "date": "2026-09-03",
+  "changes": [
+   {
+    "type": "eeat",
+    "text": "References changed from anchors to citation markers; Sources section added to page"
+   },
+   {
+    "type": "structure",
+    "text": "Block moved to help content flow"
+   },
+   {
+    "type": "structure",
+    "text": "“What our experts say” moved from top to mid-page"
+   },
+   {
+    "type": "structure",
+    "text": "Service and product reviews swapped placement on the page"
+   },
+   {
+    "type": "structure",
+    "text": "Titration block moved above the dosage content section"
+   },
+   {
+    "type": "structure",
+    "text": "“Understanding side effects” block moved above the side-effects content section"
+   },
+   {
+    "type": "structure",
+    "text": "Blog cards moved to the bottom of the page"
+   },
+   {
+    "type": "seo",
+    "text": "Added relevant internal link anchors in content to strengthen link equity flow"
+   },
+   {
+    "type": "seo",
+    "text": "Added Foundayo to alternatives, plus a Mounjaro link from the Foundayo page for equity support"
+   },
+   {
+    "type": "ux",
+    "text": "All accordions default to open"
+   }
+  ]
+ }
+]
