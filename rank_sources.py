@@ -125,6 +125,67 @@ def _gsc_query(token, prop, body: dict) -> dict:
         return json.loads(r.read().decode("utf-8", "replace"))
 
 
+def _gsc_series(token, prop, start, end, page_url=None) -> list:
+    """Daily rows [{d, clicks, impr, ctr, pos}] over a window, oldest first."""
+    body = {
+        "startDate": start.isoformat(),
+        "endDate": end.isoformat(),
+        "dimensions": ["date"],
+        "rowLimit": 25000,
+        "type": "web",
+    }
+    if page_url:
+        body["dimensionFilterGroups"] = [{
+            "groupType": "and",
+            "filters": [{"dimension": "page", "operator": "equals",
+                         "expression": page_url}],
+        }]
+    payload = _gsc_query(token, prop, body)
+    out = []
+    for row in payload.get("rows", []):
+        d = (row.get("keys") or [""])[0]
+        if not d:
+            continue
+        out.append({
+            "d": d,
+            "clicks": int(row.get("clicks", 0)),
+            "impr": int(row.get("impressions", 0)),
+            "ctr": round(float(row.get("ctr", 0)) * 100, 2),
+            "pos": round(float(row.get("position", 0)), 1),
+        })
+    out.sort(key=lambda r: r["d"])
+    return out
+
+
+def fetch_gsc_timeseries() -> dict:
+    """Daily clicks/impressions/CTR/position for the property and pill page.
+
+    Powers the Search Console performance charts. Backfilled straight from
+    Google in one call per series, so the charts carry real history the first
+    time this runs rather than accumulating a point per patrol.
+
+    GSC_TS_DAYS controls the window (default 90). Returns {} if unconfigured.
+    """
+    token = _gsc_access_token()
+    if not token:
+        return {}
+    prop = os.environ.get("GSC_PROPERTY", "sc-domain:simpleonlinepharmacy.co.uk")
+    try:
+        days = int(os.environ.get("GSC_TS_DAYS", "90") or 90)
+    except ValueError:
+        days = 90
+    end = _today_uk() - timedelta(days=3)   # GSC data lags a couple of days
+    start = end - timedelta(days=days)
+    out = {"as_of": end.isoformat(), "days": days}
+    for key, page in (("site", None), ("page", PILL_PAGE)):
+        try:
+            out[key] = _gsc_series(token, prop, start, end, page)
+        except Exception as e:
+            print(f"[warn] GSC {key} series: {e}", file=sys.stderr)
+            out[key] = []
+    return out if (out.get("site") or out.get("page")) else {}
+
+
 # what a title at position P should roughly earn; used to flag under-clicking pages
 _EXPECTED_CTR = ((1, 28.0), (2, 15.0), (3, 10.0), (4, 7.0), (5, 5.0),
                  (8, 3.5), (10, 2.5), (20, 1.0), (100, 0.4))

@@ -6,58 +6,82 @@
 <title>Wegovy Sentinel — daily rank patrol</title>
 <style>
   :root{
-    --ink:#0A1F44; --panel:#10294F; --panel2:#15325E; --line:#23477E;
-    --cream:#F7F2EE; --slate:#7E92B5; --gold:#C19A3A; --red:#E2574C; --green:#3FA776;
+    --ink:#FFFFFF; --panel:#FFFFFF; --panel2:#F1F3F4; --line:#DADCE0;
+    --cream:#202124; --slate:#5F6368; --gold:#E8710A; --red:#D93025; --green:#1E8E3E;
+    --blue:#4285F4; --purple:#5E35B1; --teal:#00897B; --bg:#F8F9FA;
+    --shadow:0 1px 2px rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
   }
   *{box-sizing:border-box;margin:0}
-  body{background:var(--ink);color:var(--cream);font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;padding-bottom:48px}
+  body{background:var(--bg);color:var(--cream);font-family:'Google Sans',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;padding-bottom:48px}
   .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-  .strip{border-bottom:1px solid var(--line);padding:16px 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-  .strip h1{font-size:18px;letter-spacing:.06em;font-weight:700}
+  .strip{background:var(--panel);border-bottom:1px solid var(--line);padding:16px 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .strip h1{font-size:18px;letter-spacing:.02em;font-weight:500}
   .strip h1 span{color:var(--gold)}
   .sub{font-size:11px;color:var(--slate);margin-top:2px}
   .meta{margin-left:auto;text-align:right;font-size:11px;color:var(--slate)}
-  .eyebrow{font-size:10px;letter-spacing:.18em;color:var(--slate);text-transform:uppercase;font-weight:700}
-  .banner{margin:16px 20px 0;padding:12px 16px;border-radius:6px;font-size:12px;font-weight:700}
+  .eyebrow{font-size:10px;letter-spacing:.14em;color:var(--slate);text-transform:uppercase;font-weight:600}
+  .banner{margin:16px 20px 0;padding:12px 16px;border-radius:8px;font-size:12px;font-weight:600}
   .grid{display:flex;flex-wrap:wrap;gap:16px;padding:16px 20px 0}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;box-shadow:var(--shadow)}
   .alt-wrap{flex:0 0 200px;min-width:180px}
   .alt{position:relative;width:44px;height:300px;background:var(--panel2);border-radius:4px;overflow:hidden}
-  .alt .zone{position:absolute;top:0;left:0;right:0;background:rgba(193,154,58,.16);border-bottom:1px dashed var(--gold)}
+  .alt .zone{position:absolute;top:0;left:0;right:0;background:rgba(232,113,10,.12);border-bottom:1px dashed var(--gold)}
   .alt .t3{position:absolute;left:0;right:0;border-top:2px solid var(--green)}
   .alt .base{position:absolute;left:0;right:0;border-top:1px dotted var(--slate)}
-  .alt .mk{position:absolute;left:4px;right:4px;height:18px;border-radius:3px;display:flex;align-items:center;justify-content:center;color:var(--ink);font-weight:800;font-size:11px}
+  .alt .mk{position:absolute;left:4px;right:4px;height:18px;border-radius:3px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px}
   .scale{display:flex;flex-direction:column;justify-content:space-between;height:300px;font-size:10px;color:var(--slate)}
   .flags{flex:1 1 320px;min-width:280px;display:flex;flex-direction:column;gap:10px}
-  .flag{border-radius:6px;padding:10px 12px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12.5px;border:1px solid}
-  .flag.bad{background:rgba(226,87,76,.14);border-color:var(--red);color:#F4B3AD}
-  .flag.ok{background:rgba(63,167,118,.14);border-color:var(--green);color:#A9DCC4}
-  .chip{font-size:10px;font-weight:700;letter-spacing:.08em;padding:3px 8px;border-radius:3px;color:var(--ink);white-space:nowrap}
+  .flag{border-radius:8px;padding:10px 12px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12.5px;border:1px solid}
+  .flag.bad{background:#FCE8E6;border-color:#F5C6C2;color:#C5221F}
+  .flag.ok{background:#E6F4EA;border-color:#B7E1C4;color:#0D652D}
+  .chip{font-size:10px;font-weight:600;letter-spacing:.06em;padding:3px 8px;border-radius:10px;color:#fff;white-space:nowrap}
   .trend{flex:1 1 340px;min-width:300px}
   table{width:100%;border-collapse:collapse;font-size:12px;min-width:900px}
-  th{padding:8px 10px;border-bottom:1px solid var(--line);letter-spacing:.1em;font-size:10px;color:var(--slate);text-align:left}
-  td{padding:8px 10px}
-  tr:nth-child(even) td{background:rgba(255,255,255,.02)}
-  .tbl{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:auto}
+  th{padding:8px 10px;border-bottom:1px solid var(--line);letter-spacing:.08em;font-size:10px;color:var(--slate);text-align:left;font-weight:600}
+  td{padding:8px 10px;border-bottom:1px solid #F1F3F4}
+  tr:nth-child(even) td{background:#FAFBFC}
+  .tbl{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:auto;box-shadow:var(--shadow)}
   .tbl .hd{padding:12px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center}
-  .comp-tbl{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:auto}
+  .comp-tbl{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:auto;box-shadow:var(--shadow)}
   .comp-tbl .hd{padding:12px 16px;border-bottom:1px solid var(--line)}
   .foot{margin:16px 20px 0;font-size:11px;color:var(--slate);line-height:1.6}
   .foot .rule{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
-  button{font-family:ui-monospace,Menlo,monospace;font-size:11px;background:var(--panel2);color:var(--cream);border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer}
+  button{font-family:inherit;font-size:11px;background:var(--panel);color:var(--blue);border:1px solid var(--line);border-radius:4px;padding:6px 12px;cursor:pointer;font-weight:600}
+  button:hover{background:#F1F3F4}
   svg text{font-family:ui-monospace,Menlo,monospace}
-  .err{margin:24px 20px;padding:14px;border:1px solid var(--gold);border-radius:6px;color:var(--gold);font-size:12px;line-height:1.6}
+  .err{margin:24px 20px;padding:14px;border:1px solid var(--gold);background:#FEF7E0;border-radius:8px;color:#B06000;font-size:12px;line-height:1.6}
   .pos-cell{font-weight:700;font-size:12px}
-  .win{color:#3FA776}.lose{color:#E2574C}.tie{color:#7E92B5}.na{color:#7E92B5}
-  .flag.warnflag{background:rgba(193,154,58,.14);border-color:var(--gold);color:#E6C766}
-  .section-hd{margin:30px 20px 0;padding-top:18px;border-top:2px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
-  .section-hd h2{font-size:15px;letter-spacing:.04em;color:var(--cream);font-weight:700}
-  .gauge{font-size:36px;font-weight:800;font-family:ui-monospace,Menlo,monospace}
-  .tag{font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 7px;border-radius:3px;color:var(--ink)}
-  .gap-chip{display:inline-block;font-size:11px;padding:3px 8px;margin:3px 4px 0 0;border-radius:3px;background:var(--panel2);border:1px solid var(--line);color:#F4B3AD}
-  .opp{font-size:12.5px;line-height:1.5;padding:6px 0;border-bottom:1px solid var(--line)}
+  .win{color:#1E8E3E}.lose{color:#D93025}.tie{color:#5F6368}.na{color:#5F6368}
+  .flag.warnflag{background:#FEF7E0;border-color:#FDE293;color:#B06000}
+  .section-hd{margin:30px 20px 0;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+  .section-hd h2{font-size:16px;letter-spacing:0;color:var(--cream);font-weight:500}
+  .gauge{font-size:36px;font-weight:700;font-family:ui-monospace,Menlo,monospace}
+  .tag{font-size:10px;font-weight:600;letter-spacing:.04em;padding:2px 7px;border-radius:10px;color:#fff}
+  .gap-chip{display:inline-block;font-size:11px;padding:3px 8px;margin:3px 4px 0 0;border-radius:10px;background:#FCE8E6;border:1px solid #F5C6C2;color:#C5221F}
+  .opp{font-size:12.5px;line-height:1.5;padding:6px 0;border-bottom:1px solid #F1F3F4}
   .opp:last-child{border-bottom:none}
-  .role-us{background:#C19A3A}.role-competitor{background:#7E92B5}.role-brand{background:#3FA776}
+  .role-us{background:#E8710A}.role-competitor{background:#5F6368}.role-brand{background:#1E8E3E}
+  /* --- Search Console performance panel --- */
+  .perf{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+  .tiles{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+  .tile{flex:1 1 160px;min-width:150px;padding:14px 18px;border-right:1px solid var(--line);cursor:pointer;position:relative;background:#FAFBFC;transition:background .12s}
+  .tile:last-child{border-right:none}
+  .tile:hover{background:#F1F3F4}
+  .tile.on{background:var(--panel)}
+  .tile.on:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--c)}
+  .tile .lbl{font-size:11px;color:var(--slate);display:flex;align-items:center;gap:6px}
+  .tile .dot{width:10px;height:10px;border-radius:2px;background:var(--c);opacity:.35}
+  .tile.on .dot{opacity:1}
+  .tile .val{font-size:26px;font-weight:400;margin-top:6px;font-family:ui-monospace,Menlo,monospace;color:var(--slate)}
+  .tile.on .val{color:var(--c)}
+  .tile .dlt{font-size:11px;margin-top:2px}
+  .chartwrap{padding:14px 18px 6px;position:relative}
+  .mk-tip{position:absolute;z-index:20;background:#202124;color:#fff;font-size:11px;line-height:1.5;padding:8px 10px;border-radius:6px;max-width:300px;pointer-events:none;opacity:0;transition:opacity .12s;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+  .mk-tip b{color:#8AB4F8}
+  .cl-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #F1F3F4;font-size:12.5px}
+  .cl-item:last-child{border-bottom:none}
+  .cl-date{flex:0 0 92px;font-family:ui-monospace,Menlo,monospace;color:var(--slate);font-size:11px}
+  .cl-type{font-size:9px;font-weight:700;letter-spacing:.06em;padding:2px 6px;border-radius:8px;text-transform:uppercase;color:#fff;flex:0 0 auto;align-self:flex-start}
 </style>
 </head>
 <body>
@@ -94,16 +118,16 @@ const TRACKED=[
 const COMP_LABELS=["Superdrug","Chemist4U","FamilyChemist","MedExpress"];
 const COMP_SHORT={"Superdrug":"SD","Chemist4U":"C4U","FamilyChemist":"FC","MedExpress":"MX"};
 const LBL={pill:"PILL PAGE",injection:"INJECTION",legacy:"LEGACY URL",advice:"ADVICE",other:"OTHER"};
-const CLR={pill:"#C19A3A",injection:"#3FA776",legacy:"#E2574C",advice:"#7E92B5",other:"#7E92B5"};
+const CLR={pill:"#E8710A",injection:"#1E8E3E",legacy:"#D93025",advice:"#5F6368",other:"#5F6368"};
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const arrow=d=>d==null?'<span style="color:#7E92B5">--</span>':d===0?'<span style="color:#7E92B5">=</span>':
- `<span style="color:${d>0?'#3FA776':'#E2574C'};font-weight:700">${d>0?'+':'-'}${Math.abs(d)}</span>`;
+const arrow=d=>d==null?'<span style="color:#5F6368">--</span>':d===0?'<span style="color:#5F6368">=</span>':
+ `<span style="color:${d>0?'#1E8E3E':'#D93025'};font-weight:700">${d>0?'+':'-'}${Math.abs(d)}</span>`;
 const streak=(snaps,key)=>{let n=0;for(let i=snaps.length-1;i>=0;i--){if(snaps[i].flags&&snaps[i].flags[key])n++;else break;}return n;};
 const altPct=p=>Math.min(100,Math.max(0,((Math.min(p,30)-1)/29)*100));
 
 function trendSVG(snaps){
   const pts=snaps.slice(-30);
-  if(pts.length<2)return '<div style="height:280px;display:flex;align-items:center;justify-content:center;color:#7E92B5;font-size:12px;text-align:center">Trend appears after two patrols.</div>';
+  if(pts.length<2)return '<div style="height:280px;display:flex;align-items:center;justify-content:center;color:#5F6368;font-size:12px;text-align:center">Trend appears after two patrols.</div>';
   const W=560,H=280,L=34,R=8,T=12,B=22,iw=W-L-R,ih=H-T-B;
   const x=i=>L+iw*(pts.length===1?0:i/(pts.length-1));
   const y=p=>T+ih*((Math.min(p,30)-1)/29);
@@ -113,16 +137,16 @@ function trendSVG(snaps){
     return `<polyline fill="none" stroke="${col}" stroke-width="2" points="${seg.join(" ")}"/>`
       +pts.map((s,i)=>s.m&&s.m[key]!=null?`<circle cx="${x(i)}" cy="${y(s.m[key])}" r="2.5" fill="${col}"/>`:"").join("");
   };
-  const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#23477E" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#7E92B5" font-size="10">${p}</text>`).join("");
+  const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#DADCE0" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#5F6368" font-size="10">${p}</text>`).join("");
   return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:280px">
     ${grid}
-    <line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="#C19A3A" stroke-dasharray="4 4"/>
-    <line x1="${L}" x2="${W-R}" y1="${y(3)}" y2="${y(3)}" stroke="#3FA776" stroke-dasharray="4 4"/>
-    ${line("pill","#C19A3A")}${line("bwInj","#3FA776")}
-    <text x="${L}" y="${H-6}" fill="#7E92B5" font-size="10">${esc(pts[0].date.slice(5))}</text>
-    <text x="${W-R-38}" y="${H-6}" fill="#7E92B5" font-size="10">${esc(pts[pts.length-1].date.slice(5))}</text>
+    <line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="#E8710A" stroke-dasharray="4 4"/>
+    <line x1="${L}" x2="${W-R}" y1="${y(3)}" y2="${y(3)}" stroke="#1E8E3E" stroke-dasharray="4 4"/>
+    ${line("pill","#E8710A")}${line("bwInj","#1E8E3E")}
+    <text x="${L}" y="${H-6}" fill="#5F6368" font-size="10">${esc(pts[0].date.slice(5))}</text>
+    <text x="${W-R-38}" y="${H-6}" fill="#5F6368" font-size="10">${esc(pts[pts.length-1].date.slice(5))}</text>
   </svg>
-  <div style="font-size:10px;color:#7E92B5;margin-top:4px">Gold = pill keyword (pill page) -- Green = "buy wegovy" (injection page) -- lower is better</div>`;
+  <div style="font-size:10px;color:#5F6368;margin-top:4px">Gold = pill keyword (pill page) -- Green = "buy wegovy" (injection page) -- lower is better</div>`;
 }
 
 function compCell(comp,label,kw,sopPos){
@@ -133,6 +157,179 @@ function compCell(comp,label,kw,sopPos){
   return `<td class="mono pos-cell ${cls}">${c.u?`<a href="${esc(c.u)}" target="_blank" rel="noopener" style="color:inherit" title="${esc(c.u)}">${p}</a>`:p}</td>`;
 }
 
+// ---- Search Console performance panel -------------------------------------
+let CHANGES=[];
+const METRICS={
+  clicks:{label:"Total clicks",      c:"#4285F4", fmt:v=>Math.round(v).toLocaleString()},
+  impr:  {label:"Total impressions", c:"#5E35B1", fmt:v=>Math.round(v).toLocaleString()},
+  ctr:   {label:"Average CTR",       c:"#00897B", fmt:v=>v.toFixed(1)+"%"},
+  pos:   {label:"Average position",  c:"#E8710A", fmt:v=>v.toFixed(1), invert:true},
+};
+const CL_COLOR={ux:"#4285F4",seo:"#E8710A",content:"#5E35B1",structure:"#00897B",
+                technical:"#5F6368",eeat:"#1E8E3E"};
+let ACTIVE=new Set();
+
+// Pick the richest series available: GSC pill page > GSC whole site > Semrush.
+function buildSeries(cur,snaps){
+  const ts=cur.gscts||{};
+  if(ts.page&&ts.page.length)
+    return {rows:ts.page,label:"pill page",asOf:ts.as_of,gsc:true};
+  if(ts.site&&ts.site.length)
+    return {rows:ts.site,label:"whole property",asOf:ts.as_of,gsc:true};
+  const rows=snaps.filter(s=>s&&s.m&&s.m.pill!=null).map(s=>({d:s.date,pos:s.m.pill}));
+  return {rows,label:"Semrush modelled position",asOf:null,gsc:false};
+}
+
+function perfChart(rows,marks){
+  const W=1000,H=260,L=48,R=16,T=16,B=28;
+  if(rows.length<2)
+    return `<div style="height:${H}px;display:flex;align-items:center;justify-content:center;color:#5F6368;font-size:12px">Not enough data yet — the chart needs at least two days.</div>`;
+  const iw=W-L-R, ih=H-T-B;
+  const x=i=>L+iw*(i/(rows.length-1));
+  const active=[...ACTIVE].filter(k=>rows.some(r=>r[k]!=null));
+
+  // Each metric keeps its own scale, the way Search Console overlays them.
+  const scale={};
+  active.forEach(k=>{
+    const vals=rows.map(r=>r[k]).filter(v=>v!=null);
+    let lo=Math.min(...vals), hi=Math.max(...vals);
+    if(lo===hi){lo=lo-1;hi=hi+1;}
+    const pad=(hi-lo)*0.15; lo-=pad; hi+=pad;
+    if(!METRICS[k].invert) lo=Math.min(lo,0);
+    scale[k]=v=>{
+      const t=(v-lo)/(hi-lo);
+      return T+ih*(METRICS[k].invert?t:1-t);
+    };
+  });
+
+  const grid=[0,.25,.5,.75,1].map(f=>{
+    const yy=T+ih*f;
+    return `<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="#E8EAED"/>`;
+  }).join("");
+
+  // y-axis labels follow the first active metric
+  const primary=active[0];
+  let axis="";
+  if(primary){
+    const vals=rows.map(r=>r[primary]).filter(v=>v!=null);
+    let lo=Math.min(...vals),hi=Math.max(...vals);
+    if(lo===hi){lo=lo-1;hi=hi+1;}
+    const pad=(hi-lo)*0.15; lo-=pad; hi+=pad;
+    if(!METRICS[primary].invert) lo=Math.min(lo,0);
+    axis=[0,.25,.5,.75,1].map(f=>{
+      const val=METRICS[primary].invert?lo+(hi-lo)*f:hi-(hi-lo)*f;
+      return `<text x="${L-8}" y="${T+ih*f+4}" fill="#5F6368" font-size="10" text-anchor="end">${METRICS[primary].fmt(val)}</text>`;
+    }).join("");
+  }
+
+  const lines=active.map(k=>{
+    const pts=rows.map((r,i)=>r[k]==null?null:`${x(i).toFixed(1)},${scale[k](r[k]).toFixed(1)}`).filter(Boolean);
+    if(pts.length<2)return"";
+    return `<polyline fill="none" stroke="${METRICS[k].c}" stroke-width="2" stroke-linejoin="round" points="${pts.join(" ")}"/>`;
+  }).join("");
+
+  // changelog markers, positioned on the matching date
+  const idxOf={}; rows.forEach((r,i)=>{idxOf[r.d]=i;});
+  let lastLabelX=-999;
+  const mk=marks.filter(m=>idxOf[m.date]!=null).map(m=>{
+    const i=idxOf[m.date], xx=+x(i).toFixed(1);
+    const col=CL_COLOR[(m.changes[0]||{}).type]||"#5F6368";
+    // Only label a marker that clears the previous one, so clustered release
+    // dates stay readable. Every marker keeps its full hover target.
+    const label=(xx-lastLabelX)>=32;
+    if(label) lastLabelX=xx;
+    return `<g class="mk-g" data-date="${esc(m.date)}" style="cursor:pointer">
+      <line x1="${xx}" x2="${xx}" y1="${T}" y2="${T+ih}" stroke="${col}" stroke-width="1.5" stroke-dasharray="4 3" opacity=".7"/>
+      ${label?`<rect x="${xx-14}" y="${T+ih+4}" width="28" height="14" rx="3" fill="${col}"/>
+      <text x="${xx}" y="${T+ih+14}" fill="#fff" font-size="9" text-anchor="middle">${esc(m.date.slice(5))}</text>`
+      :`<circle cx="${xx}" cy="${T+ih+11}" r="3.5" fill="${col}"/>`}
+      <rect x="${xx-8}" y="${T}" width="16" height="${ih}" fill="transparent"/>
+    </g>`;
+  }).join("");
+
+  const dates=[0,Math.floor((rows.length-1)/2),rows.length-1].map(i=>
+    `<text x="${x(i).toFixed(1)}" y="${H-4}" fill="#5F6368" font-size="10" text-anchor="${i===0?"start":i===rows.length-1?"end":"middle"}">${esc(rows[i].d)}</text>`).join("");
+
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:${H}px;overflow:visible">
+    ${grid}${axis}${lines}${mk}${dates}</svg>`;
+}
+
+function perfSection(cur,snaps){
+  const s=buildSeries(cur,snaps);
+  if(!s.rows.length)return"";
+  const avail=Object.keys(METRICS).filter(k=>s.rows.some(r=>r[k]!=null));
+  if(!ACTIVE.size) avail.slice(0,2).forEach(k=>ACTIVE.add(k));
+  [...ACTIVE].forEach(k=>{if(!avail.includes(k))ACTIVE.delete(k);});
+  if(!ACTIVE.size&&avail.length)ACTIVE.add(avail[0]);
+
+  // headline value: sum for counts, mean for rates
+  const tiles=avail.map(k=>{
+    const vals=s.rows.map(r=>r[k]).filter(v=>v!=null);
+    const half=Math.max(1,Math.floor(vals.length/2));
+    const agg=a=>(k==="clicks"||k==="impr")?a.reduce((x,y)=>x+y,0):a.reduce((x,y)=>x+y,0)/a.length;
+    const total=agg(vals);
+    const d=vals.length>=4?agg(vals.slice(-half))-agg(vals.slice(0,half)):null;
+    const better=d==null?null:(METRICS[k].invert?d<0:d>0);
+    const dTxt=d==null?"":`<div class="dlt" style="color:${better?"#1E8E3E":"#D93025"}">${d>0?"▲":"▼"} ${METRICS[k].fmt(Math.abs(d))} vs first half</div>`;
+    return `<div class="tile ${ACTIVE.has(k)?"on":""}" data-k="${k}" style="--c:${METRICS[k].c}">
+      <div class="lbl"><span class="dot"></span>${METRICS[k].label}</div>
+      <div class="val">${METRICS[k].fmt(total)}</div>${dTxt}</div>`;
+  }).join("");
+
+  const note=s.gsc
+    ? `Google Search Console — ${esc(s.label)}${s.asOf?`, data to ${esc(s.asOf)}`:""}`
+    : `Search Console not connected — showing ${esc(s.label)}. Add the GSC secrets to plot clicks, impressions and CTR.`;
+
+  return `
+  <div class="section-hd"><h2>Search performance</h2>
+    <span class="eyebrow">${note} &middot; dashed markers are logged changes</span></div>
+  <div class="perf">
+    <div class="tiles">${tiles}</div>
+    <div class="chartwrap" id="chartwrap">${perfChart(s.rows,CHANGES)}<div class="mk-tip" id="mkTip"></div></div>
+  </div>`;
+}
+
+function changelogSection(){
+  if(!CHANGES.length)return"";
+  const items=CHANGES.slice().reverse().slice(0,14).map(e=>
+    e.changes.map((c,i)=>`<div class="cl-item">
+      <div class="cl-date">${i===0?esc(e.date):""}</div>
+      <span class="cl-type" style="background:${CL_COLOR[c.type]||"#5F6368"}">${esc(c.type||"change")}</span>
+      <div style="flex:1">${esc(c.text)}${c.source==="manual"?'<span style="color:#5F6368;font-size:10px"> · logged</span>':'<span style="color:#5F6368;font-size:10px"> · detected</span>'}</div>
+    </div>`).join("")).join("");
+  return `
+  <div class="tbl" style="padding-bottom:8px">
+    <div class="hd"><span class="eyebrow">Changelog &mdash; what shipped, newest first</span>
+      <span style="font-size:11px;color:#5F6368">auto-detected from the daily crawl + logged entries</span></div>
+    <div style="padding:4px 16px">${items}</div>
+  </div>`;
+}
+
+// tile toggles + marker tooltips, rebound after every render
+function wirePerf(snaps){
+  document.querySelectorAll(".tile").forEach(t=>{
+    t.onclick=()=>{
+      const k=t.dataset.k;
+      if(ACTIVE.has(k)){if(ACTIVE.size>1)ACTIVE.delete(k);}else ACTIVE.add(k);
+      render(snaps);
+    };
+  });
+  const tip=document.getElementById("mkTip"), wrap=document.getElementById("chartwrap");
+  if(!tip||!wrap)return;
+  const byDate={}; CHANGES.forEach(e=>{byDate[e.date]=e;});
+  document.querySelectorAll(".mk-g").forEach(g=>{
+    g.onmouseenter=ev=>{
+      const e=byDate[g.dataset.date]; if(!e)return;
+      tip.innerHTML=`<b>${esc(e.date)}</b><br>`+e.changes.map(c=>"• "+esc(c.text)).join("<br>");
+      tip.style.opacity="1";
+      const wr=wrap.getBoundingClientRect();
+      tip.style.left=Math.min(Math.max(8,ev.clientX-wr.left-140),wr.width-300)+"px";
+      tip.style.top="8px";
+    };
+    g.onmouseleave=()=>{tip.style.opacity="0";};
+  });
+}
+
 function render(snaps){
   const app=document.getElementById("app");
   if(!snaps.length){app.innerHTML='<div class="err">No patrols yet. Run the "Daily patrol" workflow once from the Actions tab to seed day zero.</div>';return;}
@@ -140,8 +337,8 @@ function render(snaps){
   const pill=cur.m?.pill??null,pillPrev=prev?.m?.pill??null;
   const pageOne=pill!=null&&pill<=10,target=pill!=null&&pill<=3;
   document.getElementById("meta").innerHTML=`Last patrol: ${esc(cur.date)} -- day ${snaps.length}`;
-  document.getElementById("modeBadge").innerHTML=cur.mode&&cur.mode!=="semrush"?`<span class="chip" style="background:#C19A3A">${esc(cur.mode.toUpperCase())}</span>`:"";
-  const banner=pill==null?"":`<div class="banner mono" style="background:${target?"rgba(63,167,118,.14)":pageOne?"rgba(193,154,58,.16)":"rgba(226,87,76,.14)"};border:1px solid ${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"};color:${target?"#3FA776":pageOne?"#C19A3A":"#E2574C"}">${
+  document.getElementById("modeBadge").innerHTML=cur.mode&&cur.mode!=="semrush"?`<span class="chip" style="background:#E8710A">${esc(cur.mode.toUpperCase())}</span>`:"";
+  const banner=pill==null?"":`<div class="banner mono" style="background:${target?"rgba(63,167,118,.14)":pageOne?"rgba(193,154,58,.16)":"rgba(226,87,76,.14)"};border:1px solid ${target?"#1E8E3E":pageOne?"#E8710A":"#D93025"};color:${target?"#1E8E3E":pageOne?"#E8710A":"#D93025"}">${
     target?"TARGET ACHIEVED -- top 3 secured. Hold through MHRA decision."
     :pageOne?"PAGE ONE REACHED -- new mission: top 3 before MHRA decision."
     :`MISSION: page one for "wegovy pill" before MHRA decision -- currently position ${pill} -- ${pill-10} to go for page one`}</div>`;
@@ -153,12 +350,12 @@ function render(snaps){
     {on:(cur.m?.blD??0)<15,days:null,ok:`Link target met -- ${cur.m?.blD} referring domains`,bad:`Backlinks: ${cur.m?.blD??0} referring domains to pill page (target ${15})`},
   ];
   const flags=flagDefs.map(f=>`<div class="flag ${f.on?"bad":"ok"}"><div>${esc(f.on?f.bad:f.ok)}</div>${
-    f.on&&f.days?`<span class="chip" style="background:#E2574C">DAY ${f.days}</span>`:!f.on?`<span class="chip" style="background:#3FA776">CLEAR</span>`:""}</div>`).join("");
+    f.on&&f.days?`<span class="chip" style="background:#D93025">DAY ${f.days}</span>`:!f.on?`<span class="chip" style="background:#1E8E3E">CLEAR</span>`:""}</div>`).join("");
 
   const comp=cur.comp||{};
   const compHeaders=COMP_LABELS.map(l=>`<th>${esc(l).toUpperCase()}</th>`).join("");
   const gsc=cur.src?.gsc||{}, awr=cur.src?.awr||{};
-  const posC=p=>p==null?"#7E92B5":p<=10?"#3FA776":p<=20?"#C19A3A":"#E2574C";
+  const posC=p=>p==null?"#5F6368":p<=10?"#1E8E3E":p<=20?"#E8710A":"#D93025";
 
   const rows=TRACKED.map(t=>{
     const c=cur.best?.[t.kw]||null,pv=prev?.best?.[t.kw]?.p??null,pos=c?.p??null;
@@ -169,17 +366,17 @@ function render(snaps){
     const compCells=COMP_LABELS.map(l=>compCell(comp,l,t.kw,pos)).join("");
     const ourPath=c&&c.u?c.u.replace(/^https?:\/\/[^\/]+/,""):"";
     return `<tr>
-      <td style="${t.hero?"color:#C19A3A;font-weight:700":""}">${esc(t.kw)}${ourPath?`<div class="mono" style="font-size:10px;color:#7E92B5;font-weight:400;margin-top:2px">${esc(ourPath)}</div>`:""}</td>
+      <td style="${t.hero?"color:#E8710A;font-weight:700":""}">${esc(t.kw)}${ourPath?`<div class="mono" style="font-size:10px;color:#5F6368;font-weight:400;margin-top:2px">${esc(ourPath)}</div>`:""}</td>
       <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":(c&&c.u?`<a href="${esc(c.u)}" target="_blank" rel="noopener" style="color:inherit" title="${esc(c.u)}">${pos}</a>`:pos)}</td>
       ${awrCell}
       <td>${arrow(pv!=null&&pos!=null?pv-pos:null)}</td>
       ${compCells}
-      <td>${c?`<span class="chip" style="background:${CLR[c.c]||"#7E92B5"}">${LBL[c.c]||"OTHER"}</span>`:'<span style="color:#7E92B5">--</span>'}</td>
-      <td class="mono" style="color:${(c?.n??1)>1?"#E2574C":"#7E92B5"}">${c?c.n:"--"}</td>
-      <td>${wrong?'<span class="chip" style="background:#E2574C">WRONG PAGE</span>'
-        :legacy?'<span class="chip" style="background:#E2574C">LEGACY</span>'
-        :pos!=null&&pos<=10?'<span class="chip" style="background:#3FA776">PAGE ONE</span>'
-        :`<span style="color:#7E92B5;font-size:11px">${t.goal} page</span>`}</td></tr>`;
+      <td>${c?`<span class="chip" style="background:${CLR[c.c]||"#5F6368"}">${LBL[c.c]||"OTHER"}</span>`:'<span style="color:#5F6368">--</span>'}</td>
+      <td class="mono" style="color:${(c?.n??1)>1?"#D93025":"#5F6368"}">${c?c.n:"--"}</td>
+      <td>${wrong?'<span class="chip" style="background:#D93025">WRONG PAGE</span>'
+        :legacy?'<span class="chip" style="background:#D93025">LEGACY</span>'
+        :pos!=null&&pos<=10?'<span class="chip" style="background:#1E8E3E">PAGE ONE</span>'
+        :`<span style="color:#5F6368;font-size:11px">${t.goal} page</span>`}</td></tr>`;
   }).join("");
 
   const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))}: ${s.m?.pill??"--"}`).join(" | ");
@@ -194,7 +391,7 @@ function render(snaps){
       const c=comp[label]?.[t.kw];
       if(c&&c.p<sopP){
         gapCount++;
-        gapRows+=`<tr><td>${esc(t.kw)}</td><td class="mono lose">${c.p}</td><td>${esc(label)}</td><td class="mono" style="color:#7E92B5">${sop?sop.p:"--"}</td><td class="mono" style="color:#E2574C">${sop?c.p-sop.p:"--"}</td></tr>`;
+        gapRows+=`<tr><td>${esc(t.kw)}</td><td class="mono lose">${c.p}</td><td>${esc(label)}</td><td class="mono" style="color:#5F6368">${sop?sop.p:"--"}</td><td class="mono" style="color:#D93025">${sop?c.p-sop.p:"--"}</td></tr>`;
       }
     });
   });
@@ -207,14 +404,14 @@ function render(snaps){
   // Technical health + backlink gap (populated once the enriched patrol runs)
   const tech=cur.tech||null, links=cur.links||null;
   const techFlags=tech&&tech.checks?tech.checks.map(c=>`<div class="flag ${c.state==='pass'?'ok':c.state==='warn'?'warnflag':'bad'}">
-      <div><strong>${esc(c.name)}</strong><div style="font-size:11px;color:#7E92B5;margin-top:2px">${esc(c.evidence)}</div></div>
-      <span class="chip" style="background:${c.state==='pass'?'#3FA776':c.state==='warn'?'#C19A3A':'#E2574C'}">${c.state==='pass'?'PASS':c.state==='warn'?'CHECK':'FIX'}</span></div>`).join(""):"";
+      <div><strong>${esc(c.name)}</strong><div style="font-size:11px;color:#5F6368;margin-top:2px">${esc(c.evidence)}</div></div>
+      <span class="chip" style="background:${c.state==='pass'?'#1E8E3E':c.state==='warn'?'#E8710A':'#D93025'}">${c.state==='pass'?'PASS':c.state==='warn'?'CHECK':'FIX'}</span></div>`).join(""):"";
   const prospectRows=links&&links.prospects?links.prospects.map(p=>`<tr>
-      <td>${esc(p.d)}</td><td class="mono" style="color:${p.n>=2?'#3FA776':'#7E92B5'};font-weight:700">${p.n}</td>
-      <td style="font-size:11px;color:#7E92B5">${(p.who||[]).map(esc).join(", ")}</td></tr>`).join(""):"";
+      <td>${esc(p.d)}</td><td class="mono" style="color:${p.n>=2?'#1E8E3E':'#5F6368'};font-weight:700">${p.n}</td>
+      <td style="font-size:11px;color:#5F6368">${(p.who||[]).map(esc).join(", ")}</td></tr>`).join(""):"";
   const psi=cur.psi||null;
-  const psiCol=s=>s>=90?"#3FA776":s>=50?"#C19A3A":"#E2574C";
-  const fcat=c=>c==="GOOD"?'<span class="win">good</span>':c==="NEEDS_IMPROVEMENT"?'<span style="color:#C19A3A">needs improvement</span>':c?'<span class="lose">poor</span>':"";
+  const psiCol=s=>s>=90?"#1E8E3E":s>=50?"#E8710A":"#D93025";
+  const fcat=c=>c==="GOOD"?'<span class="win">good</span>':c==="NEEDS_IMPROVEMENT"?'<span style="color:#E8710A">needs improvement</span>':c?'<span class="lose">poor</span>':"";
   const psiCard=(psi&&psi.score!=null)?`
     <div class="card alt-wrap" style="flex:0 0 240px">
       <div class="eyebrow">Page speed &mdash; Lighthouse (${esc(psi.strategy||"mobile")})</div>
@@ -256,19 +453,19 @@ function render(snaps){
   </div>`:"";
   const actions=(gi&&gi.actions&&gi.actions.length)?`
   <div class="tbl" style="padding-bottom:8px">
-    <div class="hd"><span class="eyebrow" style="color:#C19A3A">Analysis &mdash; prioritised actions, computed from Google's data</span></div>
+    <div class="hd"><span class="eyebrow" style="color:#E8710A">Analysis &mdash; prioritised actions, computed from Google's data</span></div>
     <div style="padding:6px 16px">${gi.actions.map((a,i)=>`<div class="opp"><strong style="color:var(--gold)">${i+1}.</strong> ${esc(a)}</div>`).join("")}</div>
   </div>`:"";
   const splits=(gi&&gi.splits&&gi.splits.length)?`
   <div class="tbl">
-    <div class="hd"><span class="eyebrow" style="color:#E2574C">Query splits &mdash; one query, multiple URLs (cannibalisation detail)</span></div>
+    <div class="hd"><span class="eyebrow" style="color:#D93025">Query splits &mdash; one query, multiple URLs (cannibalisation detail)</span></div>
     <table><thead><tr><th>QUERY</th><th>TOTAL IMPR</th><th>URLS</th><th>PILL PAGE SHARE</th><th>WHERE THE IMPRESSIONS GO</th></tr></thead>
     <tbody>${gi.splits.map(s=>`<tr>
       <td style="font-weight:700">${esc(s.q)}</td>
       <td class="mono">${s.impr.toLocaleString()}</td>
-      <td class="mono" style="color:#E2574C;font-weight:700">${s.n}</td>
-      <td class="mono" style="color:${s.pill_pct>=60?'#3FA776':s.pill_pct>=30?'#C19A3A':'#E2574C'};font-weight:700">${s.pill_pct}%</td>
-      <td style="font-size:11px;line-height:1.7">${s.pages.map(p=>`<span class="mono" style="color:#7E92B5">${p.impr.toLocaleString()} @ ${p.pos}</span> ${esc(p.page)}`).join("<br>")}</td>
+      <td class="mono" style="color:#D93025;font-weight:700">${s.n}</td>
+      <td class="mono" style="color:${s.pill_pct>=60?'#1E8E3E':s.pill_pct>=30?'#E8710A':'#D93025'};font-weight:700">${s.pill_pct}%</td>
+      <td style="font-size:11px;line-height:1.7">${s.pages.map(p=>`<span class="mono" style="color:#5F6368">${p.impr.toLocaleString()} @ ${p.pos}</span> ${esc(p.page)}`).join("<br>")}</td>
     </tr>`).join("")}</tbody></table>
   </div>`:"";
   const gsciSection=(gi&&gi.queries)?`
@@ -282,33 +479,35 @@ function render(snaps){
       <div class="eyebrow">Queries we rank for but don't track</div>
       <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
       <tbody>${giRows(gi.untracked||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
-      <div class="eyebrow" style="margin-top:16px;color:#C19A3A">Under-clicking &mdash; title/meta rewrite candidates</div>
+      <div class="eyebrow" style="margin-top:16px;color:#E8710A">Under-clicking &mdash; title/meta rewrite candidates</div>
       <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>CTR vs EXPECTED</th></tr></thead>
       <tbody>${giRows(gi.ctr_opps||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>`<span class="lose">${a.ctr}%</span> vs ~${a.exp}%`,s:'class="mono"'}])}</tbody></table></div>
     </div>
     <div class="card" style="flex:1 1 420px">
-      <div class="eyebrow" style="color:#E2574C">Buy-intent routing issues (Google's view)</div>
+      <div class="eyebrow" style="color:#D93025">Buy-intent routing issues (Google's view)</div>
       <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>IMPR</th><th>ISSUE</th></tr></thead>
       <tbody>${giRows(gi.routing||[],[{f:a=>esc(a.q)},{f:a=>a.impr,s:'class="mono"'},{f:a=>a.multi?'2+ URLs competing':'served by non-pill page'}])}</tbody></table></div>
-      <div class="eyebrow" style="margin-top:16px;color:#3FA776">Striking distance &mdash; P11-20 by impressions</div>
+      <div class="eyebrow" style="margin-top:16px;color:#1E8E3E">Striking distance &mdash; P11-20 by impressions</div>
       <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
       <tbody>${giRows(gi.striking||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
     </div>
   </div>`:"";
 
   app.innerHTML=`${banner}
+  ${perfSection(cur,snaps)}
+  ${changelogSection()}
   <div class="grid">
     <div class="card alt-wrap">
-      <div class="eyebrow" style="color:#C19A3A">"wegovy pill" -- altitude</div>
+      <div class="eyebrow" style="color:#E8710A">"wegovy pill" -- altitude</div>
       <div style="display:flex;gap:12px;margin-top:12px">
         <div class="alt">
           <div class="zone" style="height:${altPct(10)}%"></div>
           <div class="t3" style="top:${altPct(3)}%"></div>
-          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#C19A3A":"#E2574C"}">${pill}</div>`:""}
+          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#E8710A":"#D93025"}">${pill}</div>`:""}
         </div>
-        <div class="scale mono"><span style="color:#C19A3A">1</span><span style="color:#3FA776">3 target</span><span style="color:#C19A3A">10 page one</span><span>30+</span></div>
+        <div class="scale mono"><span style="color:#E8710A">1</span><span style="color:#1E8E3E">3 target</span><span style="color:#E8710A">10 page one</span><span>30+</span></div>
       </div>
-      <div class="mono" style="margin-top:12px;font-size:12px"><span style="color:#7E92B5">vs prev </span>${arrow(pillPrev!=null&&pill!=null?pillPrev-pill:null)}</div>
+      <div class="mono" style="margin-top:12px;font-size:12px"><span style="color:#5F6368">vs prev </span>${arrow(pillPrev!=null&&pill!=null?pillPrev-pill:null)}</div>
     </div>
     <div class="flags"><div class="eyebrow">Structural audit -- re-checked every patrol</div>${flags}</div>
     <div class="card trend"><div class="eyebrow">Trajectory -- lower is better</div><div style="margin-top:8px">${trendSVG(snaps)}</div></div>
@@ -321,8 +520,10 @@ function render(snaps){
   ${techSection}
   ${gsciSection}
   <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
-    <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Ranking sources:</strong> <span style="color:#C19A3A">Semrush</span> (modelled UK desktop) and <span style="color:#C19A3A">AWR</span> (tracked UK/mobile rank); Search Console data has its own section below. vs PREV tracks the Semrush position. Position numbers link to the ranking URL (hover to preview). Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
+    <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Ranking sources:</strong> <span style="color:#E8710A">Semrush</span> (modelled UK desktop) and <span style="color:#E8710A">AWR</span> (tracked UK/mobile rank); Search Console data has its own section below. vs PREV tracks the Semrush position. Position numbers link to the ranking URL (hover to preview). Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
   </div>`;
+
+  wirePerf(snaps);
 
   document.getElementById("copyBtn").onclick=async()=>{
     const L=[`WEGOVY SENTINEL -- ${cur.date}`];
@@ -346,17 +547,18 @@ function render(snaps){
   };
 }
 
-fetch("./snapshots.json",{cache:"no-store"})
-  .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
-  .then(render)
+Promise.all([
+  fetch("./snapshots.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();}),
+  fetch("./changelog.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]),
+]).then(([snaps,changes])=>{CHANGES=Array.isArray(changes)?changes:[];render(snaps);})
   .catch(()=>{document.getElementById("app").innerHTML='<div class="err">No snapshot history found yet.<br><br>1. Add the SEMRUSH_API_KEY secret in repo Settings > Secrets > Actions.<br>2. Run the "Daily patrol" workflow once from the Actions tab.<br>3. Refresh this page.</div>';});
 </script>
 
 <script>
 // ---- Daily content review (on-page gap analysis) -- fetches content.json ----
 const cEsc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const stateChip=st=>{const m={pass:["#3FA776","PASS"],warn:["#C19A3A","IMPROVE"],fail:["#E2574C","FIX"]};const[c,t]=m[st]||m.fail;return `<span class="tag" style="background:${c}">${t}</span>`;};
-const scoreColor=s=>s>=80?"#3FA776":s>=60?"#C19A3A":"#E2574C";
+const stateChip=st=>{const m={pass:["#1E8E3E","PASS"],warn:["#E8710A","IMPROVE"],fail:["#D93025","FIX"]};const[c,t]=m[st]||m.fail;return `<span class="tag" style="background:${c}">${t}</span>`;};
+const scoreColor=s=>s>=80?"#1E8E3E":s>=60?"#E8710A":"#D93025";
 const TARGET_T=["wegovy pill","wegovy pills","wegovy tablet","oral semaglutide","oral wegovy"];
 
 function renderContent(hist){
@@ -414,9 +616,9 @@ function renderContent(hist){
   </div>
   <div class="grid">
     <div class="card" style="flex:1 1 320px">
-      <div class="eyebrow" style="color:#E2574C">Missing entities &mdash; brands &middot; trials &middot; compounds</div>
+      <div class="eyebrow" style="color:#D93025">Missing entities &mdash; brands &middot; trials &middot; compounds</div>
       <div style="margin-top:8px">${chips(al.entity_gaps)}</div>
-      <div class="eyebrow" style="color:#E2574C;margin-top:16px">Missing terms / topics &mdash; used by &ge;2 competitors</div>
+      <div class="eyebrow" style="color:#D93025;margin-top:16px">Missing terms / topics &mdash; used by &ge;2 competitors</div>
       <div style="margin-top:8px">${chips(al.term_gaps)}</div>
     </div>
     <div class="card" style="flex:1 1 320px">

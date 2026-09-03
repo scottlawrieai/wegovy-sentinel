@@ -1,0 +1,67 @@
+[
+ {
+  "date": "2026-08-03",
+  "changes": [
+   {
+    "type": "content",
+    "text": "11 FAQs added: “Is Wegovy pill a GLP‑1 medication?” +10 more",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Body copy +1,068 words (5,991 → 7,059)",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "H3 sub-headings 44 → 57",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-08-04",
+  "changes": [
+   {
+    "type": "structure",
+    "text": "Section added: “46,000+ verified customer reviews”",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Body copy +118 words (7,059 → 7,177)",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-08-14",
+  "changes": [
+   {
+    "type": "structure",
+    "text": "H3 sub-headings 57 → 58",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-09-03",
+  "changes": [
+   {
+    "type": "ux",
+    "text": "Accordions now open by default — FAQ and section content visible without a click",
+    "source": "manual"
+   },
+   {
+    "type": "eeat",
+    "text": "Sources added to bottom of page — citations now visible for YMYL trust signals",
+    "source": "manual"
+   },
+   {
+    "type": "structure",
+    "text": "Reviews and team sections moved below the main content",
+    "source": "manual"
+   }
+  ]
+ }
+]

@@ -36,7 +36,42 @@ One-time setup:
 4. Add a repo **variable** (same screen → *Variables*):
    - `GSC_PROPERTY` — e.g. `sc-domain:simpleonlinepharmacy.co.uk`
      (domain property) or `https://www.simpleonlinepharmacy.co.uk/` (URL property).
-   - Optional `GSC_DAYS` (default `28`).
+   - Optional `GSC_DAYS` (default `28`) — window for the keyword/insight tables.
+   - Optional `GSC_TS_DAYS` (default `90`) — window for the **performance
+     charts**. This series is pulled straight from Google dimensioned by date,
+     so the charts show real backfilled history the first time it runs.
+
+Until these are set the performance charts fall back to the Semrush modelled
+position, and the clicks / impressions / CTR tiles stay hidden.
+
+---
+
+## Changelog
+
+`changelog.py` records what changed on the pill page and plots it onto the
+performance charts, so a ranking or traffic movement can be read against what
+actually shipped that day.
+
+- **Auto-detected** — diffs our page day over day against the content-audit
+  history (`docs/content.json`): title, meta, H1, robots, H2 sections added /
+  removed / reordered, FAQs, word count, sub-heading count and topical
+  coverage. Regenerated from scratch each run, so it is idempotent. Headings
+  that differ only by digits (`46,000+ reviews` → `47,000+ reviews`) are
+  treated as the same section, and word-count moves under 25 are ignored, to
+  keep rolling boilerplate out of the log.
+- **Logged by hand** — anything the crawler cannot see (accordion default
+  state, visual reordering, design changes) goes in
+  `data/changelog_manual.json`:
+
+  ```json
+  [{"date":"2026-09-03","changes":[{"type":"ux","text":"Accordions open by default"}]}]
+  ```
+
+  `type` drives the colour of the chart marker and the chip: `ux`, `seo`,
+  `content`, `structure`, `technical`, `eeat`.
+
+Run it standalone with `python changelog.py` (or `--test` for the offline
+self-test); the daily patrol runs it automatically.
 
 ## Advanced Web Ranking (AWR)
 
