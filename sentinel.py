@@ -52,6 +52,7 @@ COMPETITORS = [
     ("chemist-4-u.com", "Chemist4U"),
     ("thefamilychemist.co.uk", "FamilyChemist"),
     ("medexpress.co.uk", "MedExpress"),
+    ("onlinedoctor.boots.com", "Boots"),
 ]
 
 
@@ -188,11 +189,15 @@ def fetch_extra_sources() -> dict:
     """Pull GSC + AWR rankings (optional, credential-gated). Never fatal."""
     import rank_sources
     kws = [kw for kw, _, _ in TRACKED]
-    src = {"gsc": {}, "awr": {}, "gsci": {}, "gscts": {}}
+    src = {"gsc": {}, "awr": {}, "gsci": {}, "gscts": {}, "gsckw": {}}
     try:
         src["gscts"] = rank_sources.fetch_gsc_timeseries()
     except Exception as e:
         print(f"[warn] GSC time series unavailable: {e}", file=sys.stderr)
+    try:
+        src["gsckw"] = rank_sources.fetch_gsc_keyword_series(kws)
+    except Exception as e:
+        print(f"[warn] GSC keyword series unavailable: {e}", file=sys.stderr)
     try:
         src["gsc"] = rank_sources.fetch_gsc(kws)
     except Exception as e:
@@ -244,6 +249,7 @@ def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
         "src": {"gsc": src.get("gsc", {}), "awr": src.get("awr", {})},
         "gsci": src.get("gsci", {}),
         "gscts": src.get("gscts", {}),
+        "gsckw": src.get("gsckw", {}),
         "m": {
             "pill": pill_pos,
             "bwInj": min(bw_inj) if bw_inj else None,
@@ -294,8 +300,8 @@ def digest(snaps: list) -> str:
     L.append("")
     L.append("TRACKED KEYWORDS (SOP across sources -- lower is better):")
     L.append(f"  {'Keyword':<30} {'Semrush':>7} {'AWR':>5}  "
-             f"{'Superdrug':>11}  {'Chemist4U':>11}  {'FamilyChemist':>13}  {'MedExpress':>11}")
-    L.append("  " + "-" * 106)
+             f"{'Superdrug':>11}  {'Chemist4U':>11}  {'FamilyChemist':>13}  {'MedExpress':>11}  {'Boots':>7}")
+    L.append("  " + "-" * 115)
     comp = cur.get("comp", {})
     gsc = cur.get("src", {}).get("gsc", {})
     awr = cur.get("src", {}).get("awr", {})
@@ -305,7 +311,7 @@ def digest(snaps: list) -> str:
         a = awr.get(kw)
         awr_str = str(a) if a else "--"
         cols = [f"  {kw:<30} {sop_str:>7} {awr_str:>5}"]
-        for (_, label), w in zip(COMPETITORS, (11, 11, 13, 11)):
+        for (_, label), w in zip(COMPETITORS, (11, 11, 13, 11, 7)):
             c = comp.get(label, {}).get(kw)
             cols.append(f"{str(c['p']) if c else '--':>{w}}")
         L.append("  ".join(cols))
@@ -533,6 +539,12 @@ def main():
                 g = prev_s.get("gscts")
                 if g:
                     snap["gscts"] = {**g, "as_of": g.get("as_of", prev_s["date"])}
+                    break
+        if not snap.get("gsckw"):
+            for prev_s in reversed(snaps):
+                g = prev_s.get("gsckw")
+                if g:
+                    snap["gsckw"] = {**g, "as_of": g.get("as_of", prev_s["date"])}
                     break
         if not snap.get("src", {}).get("gsc"):
             for prev_s in reversed(snaps):

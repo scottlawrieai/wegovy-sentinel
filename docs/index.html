@@ -3,663 +3,237 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wegovy Sentinel — daily rank patrol</title>
-<style>
-  :root{
-    --ink:#FFFFFF; --panel:#FFFFFF; --panel2:#F1F3F4; --line:#DADCE0;
-    --cream:#202124; --slate:#5F6368; --gold:#E8710A; --red:#D93025; --green:#1E8E3E;
-    --blue:#4285F4; --purple:#5E35B1; --teal:#00897B; --bg:#F8F9FA;
-    --shadow:0 1px 2px rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
-  }
-  *{box-sizing:border-box;margin:0}
-  body{background:var(--bg);color:var(--cream);font-family:'Google Sans',-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;padding-bottom:48px}
-  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-  .strip{background:var(--panel);border-bottom:1px solid var(--line);padding:16px 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-  .strip h1{font-size:18px;letter-spacing:.02em;font-weight:500}
-  .strip h1 span{color:var(--gold)}
-  .sub{font-size:11px;color:var(--slate);margin-top:2px}
-  .meta{margin-left:auto;text-align:right;font-size:11px;color:var(--slate)}
-  .eyebrow{font-size:10px;letter-spacing:.14em;color:var(--slate);text-transform:uppercase;font-weight:600}
-  .banner{margin:16px 20px 0;padding:12px 16px;border-radius:8px;font-size:12px;font-weight:600}
-  .grid{display:flex;flex-wrap:wrap;gap:16px;padding:16px 20px 0}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;box-shadow:var(--shadow)}
-  .alt-wrap{flex:0 0 200px;min-width:180px}
-  .alt{position:relative;width:44px;height:300px;background:var(--panel2);border-radius:4px;overflow:hidden}
-  .alt .zone{position:absolute;top:0;left:0;right:0;background:rgba(232,113,10,.12);border-bottom:1px dashed var(--gold)}
-  .alt .t3{position:absolute;left:0;right:0;border-top:2px solid var(--green)}
-  .alt .base{position:absolute;left:0;right:0;border-top:1px dotted var(--slate)}
-  .alt .mk{position:absolute;left:4px;right:4px;height:18px;border-radius:3px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px}
-  .scale{display:flex;flex-direction:column;justify-content:space-between;height:300px;font-size:10px;color:var(--slate)}
-  .flags{flex:1 1 320px;min-width:280px;display:flex;flex-direction:column;gap:10px}
-  .flag{border-radius:8px;padding:10px 12px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12.5px;border:1px solid}
-  .flag.bad{background:#FCE8E6;border-color:#F5C6C2;color:#C5221F}
-  .flag.ok{background:#E6F4EA;border-color:#B7E1C4;color:#0D652D}
-  .chip{font-size:10px;font-weight:600;letter-spacing:.06em;padding:3px 8px;border-radius:10px;color:#fff;white-space:nowrap}
-  .trend{flex:1 1 340px;min-width:300px}
-  table{width:100%;border-collapse:collapse;font-size:12px;min-width:900px}
-  th{padding:8px 10px;border-bottom:1px solid var(--line);letter-spacing:.08em;font-size:10px;color:var(--slate);text-align:left;font-weight:600}
-  td{padding:8px 10px;border-bottom:1px solid #F1F3F4}
-  tr:nth-child(even) td{background:#FAFBFC}
-  .tbl{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:auto;box-shadow:var(--shadow)}
-  .tbl .hd{padding:12px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center}
-  .comp-tbl{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:auto;box-shadow:var(--shadow)}
-  .comp-tbl .hd{padding:12px 16px;border-bottom:1px solid var(--line)}
-  .foot{margin:16px 20px 0;font-size:11px;color:var(--slate);line-height:1.6}
-  .foot .rule{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
-  button{font-family:inherit;font-size:11px;background:var(--panel);color:var(--blue);border:1px solid var(--line);border-radius:4px;padding:6px 12px;cursor:pointer;font-weight:600}
-  button:hover{background:#F1F3F4}
-  svg text{font-family:ui-monospace,Menlo,monospace}
-  .err{margin:24px 20px;padding:14px;border:1px solid var(--gold);background:#FEF7E0;border-radius:8px;color:#B06000;font-size:12px;line-height:1.6}
-  .pos-cell{font-weight:700;font-size:12px}
-  .win{color:#1E8E3E}.lose{color:#D93025}.tie{color:#5F6368}.na{color:#5F6368}
-  .flag.warnflag{background:#FEF7E0;border-color:#FDE293;color:#B06000}
-  .section-hd{margin:30px 20px 0;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
-  .section-hd h2{font-size:16px;letter-spacing:0;color:var(--cream);font-weight:500}
-  .gauge{font-size:36px;font-weight:700;font-family:ui-monospace,Menlo,monospace}
-  .tag{font-size:10px;font-weight:600;letter-spacing:.04em;padding:2px 7px;border-radius:10px;color:#fff}
-  .gap-chip{display:inline-block;font-size:11px;padding:3px 8px;margin:3px 4px 0 0;border-radius:10px;background:#FCE8E6;border:1px solid #F5C6C2;color:#C5221F}
-  .opp{font-size:12.5px;line-height:1.5;padding:6px 0;border-bottom:1px solid #F1F3F4}
-  .opp:last-child{border-bottom:none}
-  .role-us{background:#E8710A}.role-competitor{background:#5F6368}.role-brand{background:#1E8E3E}
-  /* --- Search Console performance panel --- */
-  .perf{margin:16px 20px 0;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
-  .tiles{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
-  .tile{flex:1 1 160px;min-width:150px;padding:14px 18px;border-right:1px solid var(--line);cursor:pointer;position:relative;background:#FAFBFC;transition:background .12s}
-  .tile:last-child{border-right:none}
-  .tile:hover{background:#F1F3F4}
-  .tile.on{background:var(--panel)}
-  .tile.on:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--c)}
-  .tile .lbl{font-size:11px;color:var(--slate);display:flex;align-items:center;gap:6px}
-  .tile .dot{width:10px;height:10px;border-radius:2px;background:var(--c);opacity:.35}
-  .tile.on .dot{opacity:1}
-  .tile .val{font-size:26px;font-weight:400;margin-top:6px;font-family:ui-monospace,Menlo,monospace;color:var(--slate)}
-  .tile.on .val{color:var(--c)}
-  .tile .dlt{font-size:11px;margin-top:2px}
-  .chartwrap{padding:14px 18px 6px;position:relative}
-  .mk-tip{position:absolute;z-index:20;background:#202124;color:#fff;font-size:11px;line-height:1.5;padding:8px 10px;border-radius:6px;max-width:300px;pointer-events:none;opacity:0;transition:opacity .12s;box-shadow:0 2px 8px rgba(0,0,0,.3)}
-  .mk-tip b{color:#8AB4F8}
-  .cl-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #F1F3F4;font-size:12.5px}
-  .cl-item:last-child{border-bottom:none}
-  .cl-date{flex:0 0 92px;font-family:ui-monospace,Menlo,monospace;color:var(--slate);font-size:11px}
-  .cl-badge{display:inline-flex;width:20px;height:20px;border-radius:50%;color:#fff;font-size:11px;font-weight:700;align-items:center;justify-content:center}
-  .cl-type{font-size:9px;font-weight:700;letter-spacing:.06em;padding:2px 6px;border-radius:8px;text-transform:uppercase;color:#fff;flex:0 0 auto;align-self:flex-start}
-</style>
+<title>Wegovy Sentinel — search performance</title>
+<link rel="stylesheet" href="assets/ui.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
 </head>
 <body>
-<div class="strip">
-  <div>
-    <h1 class="mono">WEGOVY <span>SENTINEL</span> <span id="modeBadge"></span></h1>
-    <div class="sub">Daily rank patrol · simpleonlinepharmacy.co.uk · GitHub Actions, 07:00 UK</div>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <span class="brand">SENTINEL</span>
+    <span class="brand-sub">Wegovy · simpleonlinepharmacy.co.uk</span>
+    <span class="mode-badge" id="mode-badge" hidden></span>
   </div>
-  <div class="meta mono" id="meta"></div>
+  <div class="topbar-right">
+    <div class="pills" data-pill-group="daterange" id="daterange-pills">
+      <button type="button" class="pill" data-value="28D">28D</button>
+      <button type="button" class="pill active" data-value="90D">90D</button>
+      <button type="button" class="pill" data-value="6M">6M</button>
+      <button type="button" class="pill" data-value="All">All</button>
+      <button type="button" class="pill" data-value="Custom">Custom</button>
+    </div>
+    <div class="custom-dates" id="custom-dates" hidden>
+      <input type="date" id="date-from" aria-label="From date">
+      <span class="patrol-note">→</span>
+      <input type="date" id="date-to" aria-label="To date">
+    </div>
+    <span class="patrol-note" id="patrol-note"></span>
+  </div>
+</header>
+
+<div class="page">
+  <div class="page-header">
+    <h1>Wegovy pill — search performance</h1>
+    <div class="sub">Daily rank patrol, Search Console trends and on-page change tracking for the Wegovy pill cluster.</div>
+  </div>
+  <main id="sections"></main>
 </div>
-<div id="app"><div class="err">Loading snapshot history...</div></div>
-<div id="content-app"></div>
+
+<footer class="footer">Collected daily by GitHub Actions · history in <code>data/</code></footer>
 
 <script>
-const TRACKED=[
- {kw:"wegovy pill",goal:"pill",base:null,hero:true},
- {kw:"wegovy pills",goal:"pill",base:null},
- {kw:"buy wegovy pill",goal:"pill",base:null},
- {kw:"buy wegovy pills",goal:"pill",base:null},
- {kw:"wegovy pill uk",goal:"pill",base:null},
- {kw:"wegovy tablets",goal:"pill",base:null},
- {kw:"oral semaglutide",goal:"pill",base:null},
- {kw:"wegovy price",goal:"pill",base:8},
- {kw:"wegovy price uk",goal:"pill",base:8},
- {kw:"wegovy uk",goal:"pill",base:23},
- {kw:"cheapest wegovy uk",goal:"pill",base:14},
- {kw:"buy wegovy",goal:"injection",base:null},
- {kw:"buy wegovy uk",goal:"injection",base:null},
- {kw:"buy wegovy online",goal:"injection",base:null},
- {kw:"wegovy side effects",goal:"advice",base:8},
- {kw:"wegovy vs mounjaro",goal:"advice",base:25},
- {kw:"wegovy reviews",goal:"advice",base:23},
-];
-const COMP_LABELS=["Superdrug","Chemist4U","FamilyChemist","MedExpress"];
-const COMP_SHORT={"Superdrug":"SD","Chemist4U":"C4U","FamilyChemist":"FC","MedExpress":"MX"};
-const LBL={pill:"PILL PAGE",injection:"INJECTION",legacy:"LEGACY URL",advice:"ADVICE",other:"OTHER"};
-const CLR={pill:"#E8710A",injection:"#1E8E3E",legacy:"#D93025",advice:"#5F6368",other:"#5F6368"};
-const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const arrow=d=>d==null?'<span style="color:#5F6368">--</span>':d===0?'<span style="color:#5F6368">=</span>':
- `<span style="color:${d>0?'#1E8E3E':'#D93025'};font-weight:700">${d>0?'+':'-'}${Math.abs(d)}</span>`;
-const streak=(snaps,key)=>{let n=0;for(let i=snaps.length-1;i>=0;i--){if(snaps[i].flags&&snaps[i].flags[key])n++;else break;}return n;};
-const altPct=p=>Math.min(100,Math.max(0,((Math.min(p,30)-1)/29)*100));
+(function () {
+  'use strict';
 
-function trendSVG(snaps){
-  const pts=snaps.slice(-30);
-  if(pts.length<2)return '<div style="height:280px;display:flex;align-items:center;justify-content:center;color:#5F6368;font-size:12px;text-align:center">Trend appears after two patrols.</div>';
-  const W=560,H=280,L=34,R=8,T=12,B=22,iw=W-L-R,ih=H-T-B;
-  const x=i=>L+iw*(pts.length===1?0:i/(pts.length-1));
-  const y=p=>T+ih*((Math.min(p,30)-1)/29);
-  const line=(key,col)=>{
-    const seg=pts.map((s,i)=>s.m&&s.m[key]!=null?`${x(i)},${y(s.m[key])}`:null).filter(Boolean);
-    if(seg.length<2)return"";
-    return `<polyline fill="none" stroke="${col}" stroke-width="2" points="${seg.join(" ")}"/>`
-      +pts.map((s,i)=>s.m&&s.m[key]!=null?`<circle cx="${x(i)}" cy="${y(s.m[key])}" r="2.5" fill="${col}"/>`:"").join("");
+  var sections = [];
+
+  window.Sentinel = {
+    data: { snaps: [], changelog: [], content: [] },
+    state: { from: '', to: '', preset: '90D' },
+    pillHandlers: {},
+    register: function (sec) {
+      // {id, title, sub, order, render}
+      sections.push(sec);
+    },
+    rerender: function () {
+      var main = document.getElementById('sections');
+      sections.sort(function (a, b) { return (a.order || 0) - (b.order || 0); });
+      sections.forEach(function (sec) {
+        var card = document.getElementById('sec-' + sec.id);
+        if (!card) {
+          card = document.createElement('section');
+          card.className = 'card';
+          card.id = 'sec-' + sec.id;
+          card.innerHTML =
+            '<div class="card-head">' +
+              '<h2 class="card-title"></h2>' +
+              '<div class="card-sub"></div>' +
+            '</div>' +
+            '<div class="card-body"></div>';
+          main.appendChild(card);
+        }
+        card.querySelector('.card-title').textContent = sec.title || '';
+        var subEl = card.querySelector('.card-sub');
+        subEl.textContent = sec.sub || '';
+        subEl.hidden = !sec.sub;
+        try {
+          sec.render(card.querySelector('.card-body'), window.Sentinel);
+        } catch (e) {
+          card.querySelector('.card-body').innerHTML =
+            '<div class="panel"><div class="empty">Section failed to render.</div></div>';
+          if (window.console) console.error('Section "' + sec.id + '" render error:', e);
+        }
+      });
+    }
   };
-  const grid=[1,10,20,30].map(p=>`<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="#DADCE0" stroke-dasharray="2 4"/><text x="4" y="${y(p)+3}" fill="#5F6368" font-size="10">${p}</text>`).join("");
-  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:280px">
-    ${grid}
-    <line x1="${L}" x2="${W-R}" y1="${y(10)}" y2="${y(10)}" stroke="#E8710A" stroke-dasharray="4 4"/>
-    <line x1="${L}" x2="${W-R}" y1="${y(3)}" y2="${y(3)}" stroke="#1E8E3E" stroke-dasharray="4 4"/>
-    ${line("pill","#E8710A")}${line("bwInj","#1E8E3E")}
-    <text x="${L}" y="${H-6}" fill="#5F6368" font-size="10">${esc(pts[0].date.slice(5))}</text>
-    <text x="${W-R-38}" y="${H-6}" fill="#5F6368" font-size="10">${esc(pts[pts.length-1].date.slice(5))}</text>
-  </svg>
-  <div style="font-size:10px;color:#5F6368;margin-top:4px">Gold = pill keyword (pill page) -- Green = "buy wegovy" (injection page) -- lower is better</div>`;
-}
 
-function compCell(comp,label,kw,sopPos){
-  const c=comp?.[label]?.[kw];
-  if(!c) return '<td class="mono na">--</td>';
-  const p=c.p;
-  const cls=sopPos==null?"na":p<sopPos?"lose":p>sopPos?"win":"tie";
-  return `<td class="mono pos-cell ${cls}">${c.u?`<a href="${esc(c.u)}" target="_blank" rel="noopener" style="color:inherit" title="${esc(c.u)}">${p}</a>`:p}</td>`;
-}
+  /* ---------- helpers ---------- */
 
-// ---- Search Console performance panel -------------------------------------
-let CHANGES=[];
-const METRICS={
-  clicks:{label:"Total clicks",      c:"#4285F4", fmt:v=>Math.round(v).toLocaleString()},
-  impr:  {label:"Total impressions", c:"#5E35B1", fmt:v=>Math.round(v).toLocaleString()},
-  ctr:   {label:"Average CTR",       c:"#00897B", fmt:v=>v.toFixed(1)+"%"},
-  pos:   {label:"Average position",  c:"#E8710A", fmt:v=>v.toFixed(1), invert:true},
-};
-const CL_COLOR={ux:"#4285F4",seo:"#E8710A",content:"#5E35B1",structure:"#00897B",
-                technical:"#5F6368",eeat:"#1E8E3E"};
-let ACTIVE=new Set();
-
-// Pick the richest series available: GSC pill page > GSC whole site > Semrush.
-function buildSeries(cur,snaps){
-  const ts=cur.gscts||{};
-  if(ts.page&&ts.page.length)
-    return {rows:ts.page,label:"pill page",asOf:ts.as_of,gsc:true};
-  if(ts.site&&ts.site.length)
-    return {rows:ts.site,label:"whole property",asOf:ts.as_of,gsc:true};
-  const rows=snaps.filter(s=>s&&s.m&&s.m.pill!=null).map(s=>({d:s.date,pos:s.m.pill}));
-  return {rows,label:"Semrush modelled position",asOf:null,gsc:false};
-}
-
-function perfChart(rows,marks){
-  const W=1000,H=272,L=48,R=16,T=16,B=40;
-  if(rows.length<2)
-    return `<div style="height:${H}px;display:flex;align-items:center;justify-content:center;color:#5F6368;font-size:12px">Not enough data yet — the chart needs at least two days.</div>`;
-  const iw=W-L-R, ih=H-T-B;
-  const x=i=>L+iw*(i/(rows.length-1));
-  const active=[...ACTIVE].filter(k=>rows.some(r=>r[k]!=null));
-
-  // Each metric keeps its own scale, the way Search Console overlays them.
-  const scale={};
-  active.forEach(k=>{
-    const vals=rows.map(r=>r[k]).filter(v=>v!=null);
-    let lo=Math.min(...vals), hi=Math.max(...vals);
-    if(lo===hi){lo=lo-1;hi=hi+1;}
-    const pad=(hi-lo)*0.15; lo-=pad; hi+=pad;
-    if(!METRICS[k].invert) lo=Math.min(lo,0);
-    scale[k]=v=>{
-      const t=(v-lo)/(hi-lo);
-      return T+ih*(METRICS[k].invert?t:1-t);
-    };
-  });
-
-  const grid=[0,.25,.5,.75,1].map(f=>{
-    const yy=T+ih*f;
-    return `<line x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}" stroke="#E8EAED"/>`;
-  }).join("");
-
-  // y-axis labels follow the first active metric
-  const primary=active[0];
-  let axis="";
-  if(primary){
-    const vals=rows.map(r=>r[primary]).filter(v=>v!=null);
-    let lo=Math.min(...vals),hi=Math.max(...vals);
-    if(lo===hi){lo=lo-1;hi=hi+1;}
-    const pad=(hi-lo)*0.15; lo-=pad; hi+=pad;
-    if(!METRICS[primary].invert) lo=Math.min(lo,0);
-    axis=[0,.25,.5,.75,1].map(f=>{
-      const val=METRICS[primary].invert?lo+(hi-lo)*f:hi-(hi-lo)*f;
-      return `<text x="${L-8}" y="${T+ih*f+4}" fill="#5F6368" font-size="10" text-anchor="end">${METRICS[primary].fmt(val)}</text>`;
-    }).join("");
+  function iso(dt) { return dt.toISOString().slice(0, 10); }
+  function shiftDays(isoStr, n) {
+    var dt = new Date(isoStr + 'T00:00:00Z');
+    dt.setUTCDate(dt.getUTCDate() + n);
+    return iso(dt);
   }
 
-  const lines=active.map(k=>{
-    const pts=rows.map((r,i)=>r[k]==null?null:`${x(i).toFixed(1)},${scale[k](r[k]).toFixed(1)}`).filter(Boolean);
-    if(pts.length<2)return"";
-    return `<polyline fill="none" stroke="${METRICS[k].c}" stroke-width="2" stroke-linejoin="round" points="${pts.join(" ")}"/>`;
-  }).join("");
+  function fetchJson(url) {
+    return fetch(url, { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .catch(function () { return []; });
+  }
 
-  // changelog markers: lettered annotation badges on the matching dates,
-  // matching the letters in the change list under the chart. Badges whose
-  // dates sit too close together stack upward so nothing overlaps.
-  const idxOf={}; rows.forEach((r,i)=>{idxOf[r.d]=i;});
-  let lastX=-999, lift=0;
-  const mk=marks.filter(m=>idxOf[m.date]!=null).map((m,mi)=>{
-    const i=idxOf[m.date], xx=+x(i).toFixed(1);
-    const col=CL_COLOR[(m.changes[0]||{}).type]||"#5F6368";
-    const letter=String.fromCharCode(65+mi%26);
-    lift=(xx-lastX)<24?lift+22:0; lastX=xx;
-    const cy=T+ih+12-lift;
-    return `<g class="mk-g" data-date="${esc(m.date)}" style="cursor:pointer">
-      <line x1="${xx}" x2="${xx}" y1="${T}" y2="${T+ih}" stroke="${col}" stroke-width="1.5" stroke-dasharray="4 3" opacity=".65"/>
-      <circle cx="${xx}" cy="${cy}" r="9" fill="${col}"/>
-      <text x="${xx}" y="${cy+3.5}" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">${letter}</text>
-      <rect x="${xx-9}" y="${T}" width="18" height="${ih+24}" fill="transparent"/>
-    </g>`;
-  }).join("");
-
-  const dates=[0,Math.floor((rows.length-1)/2),rows.length-1].map(i=>
-    `<text x="${x(i).toFixed(1)}" y="${H-4}" fill="#5F6368" font-size="10" text-anchor="${i===0?"start":i===rows.length-1?"end":"middle"}">${esc(rows[i].d)}</text>`).join("");
-
-  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%;height:${H}px;overflow:visible">
-    ${grid}${axis}${lines}${mk}${dates}</svg>`;
-}
-
-function perfSection(cur,snaps){
-  const s=buildSeries(cur,snaps);
-  if(!s.rows.length)return"";
-  const avail=Object.keys(METRICS).filter(k=>s.rows.some(r=>r[k]!=null));
-  if(!ACTIVE.size) avail.slice(0,2).forEach(k=>ACTIVE.add(k));
-  [...ACTIVE].forEach(k=>{if(!avail.includes(k))ACTIVE.delete(k);});
-  if(!ACTIVE.size&&avail.length)ACTIVE.add(avail[0]);
-
-  // headline value: sum for counts, mean for rates
-  const tiles=avail.map(k=>{
-    const vals=s.rows.map(r=>r[k]).filter(v=>v!=null);
-    const half=Math.max(1,Math.floor(vals.length/2));
-    const agg=a=>(k==="clicks"||k==="impr")?a.reduce((x,y)=>x+y,0):a.reduce((x,y)=>x+y,0)/a.length;
-    const total=agg(vals);
-    const d=vals.length>=4?agg(vals.slice(-half))-agg(vals.slice(0,half)):null;
-    const better=d==null?null:(METRICS[k].invert?d<0:d>0);
-    const dTxt=d==null?"":`<div class="dlt" style="color:${better?"#1E8E3E":"#D93025"}">${d>0?"▲":"▼"} ${METRICS[k].fmt(Math.abs(d))} vs first half</div>`;
-    return `<div class="tile ${ACTIVE.has(k)?"on":""}" data-k="${k}" style="--c:${METRICS[k].c}">
-      <div class="lbl"><span class="dot"></span>${METRICS[k].label}</div>
-      <div class="val">${METRICS[k].fmt(total)}</div>${dTxt}</div>`;
-  }).join("");
-
-  const note=s.gsc
-    ? `Google Search Console — ${esc(s.label)}${s.asOf?`, data to ${esc(s.asOf)}`:""}`
-    : `Search Console not connected — showing ${esc(s.label)}. Add the GSC secrets to plot clicks, impressions and CTR.`;
-
-  return `
-  <div class="section-hd"><h2>Search performance</h2>
-    <span class="eyebrow">${note} &middot; lettered badges mark logged changes, listed below the chart</span></div>
-  <div class="perf">
-    <div class="tiles">${tiles}</div>
-    <div class="chartwrap" id="chartwrap">${perfChart(s.rows,CHANGES)}<div class="mk-tip" id="mkTip"></div></div>
-    ${annotationList(s.rows)}
-  </div>`;
-}
-
-// The change list under the chart. Letters match the chart badges; entries
-// whose dates fall outside the plotted window get a neutral dot instead.
-function annotationList(rows){
-  if(!CHANGES.length)return"";
-  const have=new Set(rows.map(r=>r.d));
-  const letterOf={};
-  CHANGES.filter(e=>have.has(e.date)).forEach((e,i)=>{
-    letterOf[e.date]=String.fromCharCode(65+i%26);
-  });
-  const items=CHANGES.slice().reverse().slice(0,20).map(e=>{
-    const L=letterOf[e.date];
-    const col=CL_COLOR[(e.changes[0]||{}).type]||"#5F6368";
-    const badge=L?`<span class="cl-badge" style="background:${col}">${L}</span>`
-                 :`<span class="cl-badge" style="background:#F1F3F4;color:#5F6368">&middot;</span>`;
-    return e.changes.map((c,i)=>`<div class="cl-item">
-      <div style="flex:0 0 26px">${i===0?badge:""}</div>
-      <div class="cl-date">${i===0?esc(e.date):""}</div>
-      <span class="cl-type" style="background:${CL_COLOR[c.type]||"#5F6368"}">${esc(c.type||"change")}</span>
-      <div style="flex:1">${esc(c.text)}<span style="color:#5F6368;font-size:10px"> · ${c.source==="manual"?"logged":"detected"}</span></div>
-    </div>`).join("");
-  }).join("");
-  return `<div style="border-top:1px solid var(--line);padding:4px 18px 10px">
-    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:8px 0 4px">
-      <span class="eyebrow">Changes &mdash; newest first</span>
-      <span style="font-size:11px;color:#5F6368">auto-detected from the daily crawl + logged entries</span>
-    </div>${items}</div>`;
-}
-
-// tile toggles + marker tooltips, rebound after every render
-function wirePerf(snaps){
-  document.querySelectorAll(".tile").forEach(t=>{
-    t.onclick=()=>{
-      const k=t.dataset.k;
-      if(ACTIVE.has(k)){if(ACTIVE.size>1)ACTIVE.delete(k);}else ACTIVE.add(k);
-      render(snaps);
-    };
-  });
-  const tip=document.getElementById("mkTip"), wrap=document.getElementById("chartwrap");
-  if(!tip||!wrap)return;
-  const byDate={}; CHANGES.forEach(e=>{byDate[e.date]=e;});
-  document.querySelectorAll(".mk-g").forEach(g=>{
-    g.onmouseenter=ev=>{
-      const e=byDate[g.dataset.date]; if(!e)return;
-      tip.innerHTML=`<b>${esc(e.date)}</b><br>`+e.changes.map(c=>"• "+esc(c.text)).join("<br>");
-      tip.style.opacity="1";
-      const wr=wrap.getBoundingClientRect();
-      tip.style.left=Math.min(Math.max(8,ev.clientX-wr.left-140),wr.width-300)+"px";
-      tip.style.top="8px";
-    };
-    g.onmouseleave=()=>{tip.style.opacity="0";};
-  });
-}
-
-function render(snaps){
-  const app=document.getElementById("app");
-  if(!snaps.length){app.innerHTML='<div class="err">No patrols yet. Run the "Daily patrol" workflow once from the Actions tab to seed day zero.</div>';return;}
-  const cur=snaps[snaps.length-1],prev=snaps[snaps.length-2]||null;
-  const pill=cur.m?.pill??null,pillPrev=prev?.m?.pill??null;
-  const pageOne=pill!=null&&pill<=10,target=pill!=null&&pill<=3;
-  document.getElementById("meta").innerHTML=`Last patrol: ${esc(cur.date)} -- day ${snaps.length}`;
-  document.getElementById("modeBadge").innerHTML=cur.mode&&cur.mode!=="semrush"?`<span class="chip" style="background:#E8710A">${esc(cur.mode.toUpperCase())}</span>`:"";
-  const banner=pill==null?"":`<div class="banner mono" style="background:${target?"rgba(63,167,118,.14)":pageOne?"rgba(193,154,58,.16)":"rgba(226,87,76,.14)"};border:1px solid ${target?"#1E8E3E":pageOne?"#E8710A":"#D93025"};color:${target?"#1E8E3E":pageOne?"#E8710A":"#D93025"}">${
-    target?"TARGET ACHIEVED -- top 3 secured. Hold through MHRA decision."
-    :pageOne?"PAGE ONE REACHED -- new mission: top 3 before MHRA decision."
-    :`MISSION: page one for "wegovy pill" before MHRA decision -- currently position ${pill} -- ${pill-10} to go for page one`}</div>`;
-
-  const flagDefs=[
-    {on:cur.flags?.wrong,days:streak(snaps,"wrong"),ok:"Buy-intent terms served by correct page type",bad:"Wrong-page routing LIVE -- pill page ranking for buy-intent terms"},
-    {on:cur.flags?.legacy,days:streak(snaps,"legacy"),ok:"Legacy injection URL no longer ranking -- migration consolidated",bad:"Legacy URL STILL ranking -- migration unfinished"},
-    {on:(cur.flags?.cann??0)>0,days:streak(snaps,"cann"),ok:"One URL per keyword -- cannibalisation cleared",bad:`${cur.flags?.cann??0} keywords cannibalised (2+ SOP URLs ranking)`},
-    {on:(cur.m?.blD??0)<15,days:null,ok:`Link target met -- ${cur.m?.blD} referring domains`,bad:`Backlinks: ${cur.m?.blD??0} referring domains to pill page (target ${15})`},
-  ];
-  const flags=flagDefs.map(f=>`<div class="flag ${f.on?"bad":"ok"}"><div>${esc(f.on?f.bad:f.ok)}</div>${
-    f.on&&f.days?`<span class="chip" style="background:#D93025">DAY ${f.days}</span>`:!f.on?`<span class="chip" style="background:#1E8E3E">CLEAR</span>`:""}</div>`).join("");
-
-  const comp=cur.comp||{};
-  const compHeaders=COMP_LABELS.map(l=>`<th>${esc(l).toUpperCase()}</th>`).join("");
-  const gsc=cur.src?.gsc||{}, awr=cur.src?.awr||{};
-  const posC=p=>p==null?"#5F6368":p<=10?"#1E8E3E":p<=20?"#E8710A":"#D93025";
-
-  const rows=TRACKED.map(t=>{
-    const c=cur.best?.[t.kw]||null,pv=prev?.best?.[t.kw]?.p??null,pos=c?.p??null;
-    const wrong=c&&t.goal!==c.c&&c.c!=="advice",legacy=c?.c==="legacy";
-    const posCol=posC(pos);
-    const a=awr[t.kw]??null;
-    const awrCell=a!=null?`<td class="mono pos-cell" style="color:${posC(a)}">${a}</td>`:'<td class="mono na">--</td>';
-    const compCells=COMP_LABELS.map(l=>compCell(comp,l,t.kw,pos)).join("");
-    const ourPath=c&&c.u?c.u.replace(/^https?:\/\/[^\/]+/,""):"";
-    return `<tr>
-      <td style="${t.hero?"color:#E8710A;font-weight:700":""}">${esc(t.kw)}${ourPath?`<div class="mono" style="font-size:10px;color:#5F6368;font-weight:400;margin-top:2px">${esc(ourPath)}</div>`:""}</td>
-      <td class="mono" style="font-weight:700;color:${posCol}">${pos==null?"--":(c&&c.u?`<a href="${esc(c.u)}" target="_blank" rel="noopener" style="color:inherit" title="${esc(c.u)}">${pos}</a>`:pos)}</td>
-      ${awrCell}
-      <td>${arrow(pv!=null&&pos!=null?pv-pos:null)}</td>
-      ${compCells}
-      <td>${c?`<span class="chip" style="background:${CLR[c.c]||"#5F6368"}">${LBL[c.c]||"OTHER"}</span>`:'<span style="color:#5F6368">--</span>'}</td>
-      <td class="mono" style="color:${(c?.n??1)>1?"#D93025":"#5F6368"}">${c?c.n:"--"}</td>
-      <td>${wrong?'<span class="chip" style="background:#D93025">WRONG PAGE</span>'
-        :legacy?'<span class="chip" style="background:#D93025">LEGACY</span>'
-        :pos!=null&&pos<=10?'<span class="chip" style="background:#1E8E3E">PAGE ONE</span>'
-        :`<span style="color:#5F6368;font-size:11px">${t.goal} page</span>`}</td></tr>`;
-  }).join("");
-
-  const log=snaps.slice(-14).map(s=>`${esc(s.date.slice(5))}: ${s.m?.pill??"--"}`).join(" | ");
-
-  // Competitive gap summary
-  let gapRows="";
-  let gapCount=0;
-  TRACKED.filter(t=>t.goal==="pill").forEach(t=>{
-    const sop=cur.best?.[t.kw];
-    const sopP=sop?.p??999;
-    COMP_LABELS.forEach(label=>{
-      const c=comp[label]?.[t.kw];
-      if(c&&c.p<sopP){
-        gapCount++;
-        gapRows+=`<tr><td>${esc(t.kw)}</td><td class="mono lose">${c.p}</td><td>${esc(label)}</td><td class="mono" style="color:#5F6368">${sop?sop.p:"--"}</td><td class="mono" style="color:#D93025">${sop?c.p-sop.p:"--"}</td></tr>`;
+  function maxDataDate(snaps) {
+    var max = '';
+    (snaps || []).forEach(function (s) {
+      if (s && s.date && s.date > max) max = s.date;
+      var g = s && s.gscts;
+      if (g) {
+        ['site', 'page'].forEach(function (k) {
+          (g[k] || []).forEach(function (p) {
+            if (p && p.d && p.d > max) max = p.d;
+          });
+        });
       }
     });
-  });
-  const gapSection=gapCount?`
-  <div class="comp-tbl">
-    <div class="hd"><span class="eyebrow">Competitive gaps -- pill keywords where competitors outrank SOP (${gapCount})</span></div>
-    <table><thead><tr><th>KEYWORD</th><th>COMPETITOR POS</th><th>COMPETITOR</th><th>SOP POS</th><th>GAP</th></tr></thead><tbody>${gapRows}</tbody></table>
-  </div>`:"";
+    return max || iso(new Date());
+  }
 
-  // Technical health + backlink gap (populated once the enriched patrol runs)
-  const tech=cur.tech||null, links=cur.links||null;
-  const techFlags=tech&&tech.checks?tech.checks.map(c=>`<div class="flag ${c.state==='pass'?'ok':c.state==='warn'?'warnflag':'bad'}">
-      <div><strong>${esc(c.name)}</strong><div style="font-size:11px;color:#5F6368;margin-top:2px">${esc(c.evidence)}</div></div>
-      <span class="chip" style="background:${c.state==='pass'?'#1E8E3E':c.state==='warn'?'#E8710A':'#D93025'}">${c.state==='pass'?'PASS':c.state==='warn'?'CHECK':'FIX'}</span></div>`).join(""):"";
-  const prospectRows=links&&links.prospects?links.prospects.map(p=>`<tr>
-      <td>${esc(p.d)}</td><td class="mono" style="color:${p.n>=2?'#1E8E3E':'#5F6368'};font-weight:700">${p.n}</td>
-      <td style="font-size:11px;color:#5F6368">${(p.who||[]).map(esc).join(", ")}</td></tr>`).join(""):"";
-  const psi=cur.psi||null;
-  const psiCol=s=>s>=90?"#1E8E3E":s>=50?"#E8710A":"#D93025";
-  const fcat=c=>c==="GOOD"?'<span class="win">good</span>':c==="NEEDS_IMPROVEMENT"?'<span style="color:#E8710A">needs improvement</span>':c?'<span class="lose">poor</span>':"";
-  const psiCard=(psi&&psi.score!=null)?`
-    <div class="card alt-wrap" style="flex:0 0 240px">
-      <div class="eyebrow">Page speed &mdash; Lighthouse (${esc(psi.strategy||"mobile")})</div>
-      <div class="gauge" style="color:${psiCol(psi.score)};margin-top:10px">${psi.score}<span style="font-size:16px;color:var(--slate)">/100</span></div>
-      <div style="font-size:11px;color:var(--slate);margin-top:10px;line-height:1.8" class="mono">
-        LCP <strong style="color:var(--cream)">${esc(psi.lcp||"--")}</strong><br>
-        CLS <strong style="color:var(--cream)">${esc(psi.cls||"--")}</strong><br>
-        TBT <strong style="color:var(--cream)">${esc(psi.tbt||"--")}</strong><br>
-        FCP <strong style="color:var(--cream)">${esc(psi.fcp||"--")}</strong>
-      </div>
-      ${psi.field?`<div style="font-size:11px;color:var(--slate);margin-top:10px;border-top:1px solid var(--line);padding-top:8px">Real users (CrUX):<br>LCP ${psi.field.lcp_ms??"--"}ms ${fcat(psi.field.lcp_ms_cat)}${psi.field.inp_ms!=null?`<br>INP ${psi.field.inp_ms}ms ${fcat(psi.field.inp_ms_cat)}`:""}</div>`:""}
-      ${psi.as_of?`<div style="font-size:10px;color:var(--slate);margin-top:8px">as of ${esc(psi.as_of)}</div>`:""}
-    </div>`:"";
-  const techSection=(techFlags||prospectRows||psiCard)?`
-  <div class="section-hd"><h2>Why we're not on page one</h2>
-    <span class="eyebrow">technical health &middot; page speed &middot; backlink gap vs ranking competitors</span></div>
-  <div class="grid">
-    ${psiCard}
-    ${techFlags?`<div class="flags" style="flex:1 1 380px"><div class="eyebrow">Technical health -- ${tech.score}/${tech.of} pass</div>${techFlags}</div>`:""}
-    ${prospectRows?`<div class="card" style="flex:1 1 420px">
-      <div class="eyebrow">Link prospects -- they link to competitors' pill pages, not ours (we have ${links.ours??0} refdomains)</div>
-      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>DOMAIN</th><th>COMPETITORS LINKED</th><th>WHO</th></tr></thead><tbody>${prospectRows}</tbody></table></div>
-    </div>`:""}
-  </div>`:"";
-
-  // GSC insights (populated once GSC secrets are configured)
-  const gi=cur.gsci||null;
-  const giRows=(arr,cols)=>arr.map(a=>`<tr>${cols.map(c=>`<td ${c.s||""}>${c.f(a)}</td>`).join("")}</tr>`).join("");
-  const pillQ=(gi&&gi.pill_page&&gi.pill_page.length)?`
-  <div class="tbl">
-    <div class="hd"><span class="eyebrow">Pill page queries &mdash; everything Google serves /weight-loss/wegovy-pill/ for</span></div>
-    <table><thead><tr><th>QUERY</th><th>POSITION</th><th>IMPRESSIONS</th><th>CLICKS</th><th>CTR</th></tr></thead>
-    <tbody>${gi.pill_page.map(a=>`<tr>
-      <td>${esc(a.q)}</td>
-      <td class="mono" style="font-weight:700;color:${posC(a.pos)}">${a.pos}</td>
-      <td class="mono">${a.impr.toLocaleString()}</td>
-      <td class="mono">${a.clicks.toLocaleString()}</td>
-      <td class="mono">${a.ctr}%</td></tr>`).join("")}</tbody></table>
-  </div>`:"";
-  const actions=(gi&&gi.actions&&gi.actions.length)?`
-  <div class="tbl" style="padding-bottom:8px">
-    <div class="hd"><span class="eyebrow" style="color:#E8710A">Analysis &mdash; prioritised actions, computed from Google's data</span></div>
-    <div style="padding:6px 16px">${gi.actions.map((a,i)=>`<div class="opp"><strong style="color:var(--gold)">${i+1}.</strong> ${esc(a)}</div>`).join("")}</div>
-  </div>`:"";
-  const splits=(gi&&gi.splits&&gi.splits.length)?`
-  <div class="tbl">
-    <div class="hd"><span class="eyebrow" style="color:#D93025">Query splits &mdash; one query, multiple URLs (cannibalisation detail)</span></div>
-    <table><thead><tr><th>QUERY</th><th>TOTAL IMPR</th><th>URLS</th><th>PILL PAGE SHARE</th><th>WHERE THE IMPRESSIONS GO</th></tr></thead>
-    <tbody>${gi.splits.map(s=>`<tr>
-      <td style="font-weight:700">${esc(s.q)}</td>
-      <td class="mono">${s.impr.toLocaleString()}</td>
-      <td class="mono" style="color:#D93025;font-weight:700">${s.n}</td>
-      <td class="mono" style="color:${s.pill_pct>=60?'#1E8E3E':s.pill_pct>=30?'#E8710A':'#D93025'};font-weight:700">${s.pill_pct}%</td>
-      <td style="font-size:11px;line-height:1.7">${s.pages.map(p=>`<span class="mono" style="color:#5F6368">${p.impr.toLocaleString()} @ ${p.pos}</span> ${esc(p.page)}`).join("<br>")}</td>
-    </tr>`).join("")}</tbody></table>
-  </div>`:"";
-  const gsciSection=(gi&&gi.queries)?`
-  <div class="section-hd"><h2>Search Console insights</h2>
-    <span class="eyebrow">${gi.queries} wegovy-topic queries &middot; Google's own data, trailing window${gi.as_of?` &middot; data as of ${esc(gi.as_of)}`:""}</span></div>
-  ${actions}
-  ${pillQ}
-  ${splits}
-  <div class="grid">
-    <div class="card" style="flex:1 1 420px">
-      <div class="eyebrow">Queries we rank for but don't track</div>
-      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
-      <tbody>${giRows(gi.untracked||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
-      <div class="eyebrow" style="margin-top:16px;color:#E8710A">Under-clicking &mdash; title/meta rewrite candidates</div>
-      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>CTR vs EXPECTED</th></tr></thead>
-      <tbody>${giRows(gi.ctr_opps||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>`<span class="lose">${a.ctr}%</span> vs ~${a.exp}%`,s:'class="mono"'}])}</tbody></table></div>
-    </div>
-    <div class="card" style="flex:1 1 420px">
-      <div class="eyebrow" style="color:#D93025">Buy-intent routing issues (Google's view)</div>
-      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>IMPR</th><th>ISSUE</th></tr></thead>
-      <tbody>${giRows(gi.routing||[],[{f:a=>esc(a.q)},{f:a=>a.impr,s:'class="mono"'},{f:a=>a.multi?'2+ URLs competing':'served by non-pill page'}])}</tbody></table></div>
-      <div class="eyebrow" style="margin-top:16px;color:#1E8E3E">Striking distance &mdash; P11-20 by impressions</div>
-      <div style="overflow:auto;margin-top:8px"><table style="min-width:0"><thead><tr><th>QUERY</th><th>POS</th><th>IMPRESSIONS</th></tr></thead>
-      <tbody>${giRows(gi.striking||[],[{f:a=>esc(a.q)},{f:a=>a.pos,s:'class="mono"'},{f:a=>a.impr,s:'class="mono"'}])}</tbody></table></div>
-    </div>
-  </div>`:"";
-
-  app.innerHTML=`${banner}
-  ${perfSection(cur,snaps)}
-  <div class="grid">
-    <div class="card alt-wrap">
-      <div class="eyebrow" style="color:#E8710A">"wegovy pill" -- altitude</div>
-      <div style="display:flex;gap:12px;margin-top:12px">
-        <div class="alt">
-          <div class="zone" style="height:${altPct(10)}%"></div>
-          <div class="t3" style="top:${altPct(3)}%"></div>
-          ${pill!=null?`<div class="mk mono" style="top:calc(${altPct(pill)}% - 9px);background:${pageOne?"#E8710A":"#D93025"}">${pill}</div>`:""}
-        </div>
-        <div class="scale mono"><span style="color:#E8710A">1</span><span style="color:#1E8E3E">3 target</span><span style="color:#E8710A">10 page one</span><span>30+</span></div>
-      </div>
-      <div class="mono" style="margin-top:12px;font-size:12px"><span style="color:#5F6368">vs prev </span>${arrow(pillPrev!=null&&pill!=null?pillPrev-pill:null)}</div>
-    </div>
-    <div class="flags"><div class="eyebrow">Structural audit -- re-checked every patrol</div>${flags}</div>
-    <div class="card trend"><div class="eyebrow">Trajectory -- lower is better</div><div style="margin-top:8px">${trendSVG(snaps)}</div></div>
-  </div>
-  <div class="tbl">
-    <div class="hd"><span class="eyebrow">Tracked keywords -- SOP across sources vs competitors</span><button id="copyBtn">COPY DIGEST</button></div>
-    <table><thead><tr><th>KEYWORD &amp; OUR RANKING URL</th><th>SEMRUSH</th><th>AWR</th><th>vs PREV</th>${compHeaders}<th>SERVED BY</th><th>URLS</th><th>STATUS</th></tr></thead><tbody>${rows}</tbody></table>
-  </div>
-  ${gapSection}
-  ${techSection}
-  ${gsciSection}
-  <div class="foot"><span class="mono">PATROL LOG:</span> ${log}
-    <div class="rule">Collected by GitHub Actions at 07:00 UK. <strong>Ranking sources:</strong> <span style="color:#E8710A">Semrush</span> (modelled UK desktop) and <span style="color:#E8710A">AWR</span> (tracked UK/mobile rank); Search Console data has its own section below. vs PREV tracks the Semrush position. Position numbers link to the ranking URL (hover to preview). Competitors (Semrush): Superdrug, Chemist4U, The Family Chemist, MedExpress. History in <span class="mono">data/snapshots.json</span>.</div>
-  </div>`;
-
-  wirePerf(snaps);
-
-  document.getElementById("copyBtn").onclick=async()=>{
-    const L=[`WEGOVY SENTINEL -- ${cur.date}`];
-    L.push(`pill keyword: position ${pill?pill:"n/a"} (${pillPrev!=null&&pill!=null?(pillPrev-pill===0?"=":(pillPrev-pill>0?"+":"-")+Math.abs(pillPrev-pill)):"--"} vs prev)${pageOne?" -- PAGE ONE":""}`);
-    const bw=cur.best?.["buy wegovy"];
-    if(bw)L.push(`buy wegovy: position ${bw.p} via ${LBL[bw.c]}${bw.c==="pill"?" [!] WRONG PAGE":""}`);
-    L.push("");
-    TRACKED.forEach(t=>{
-      const c=cur.best?.[t.kw];
-      const sp=c?String(c.p):"--";
-      const a=awr[t.kw];
-      const as=a!=null?String(a):"--";
-      const cs=COMP_LABELS.map(l=>{const x=comp[l]?.[t.kw];return x?String(x.p):"--";});
-      L.push(`${t.kw}: Semrush ${sp} | AWR ${as} | Superdrug ${cs[0]} | Chemist4U ${cs[1]} | FamilyChemist ${cs[2]} | MedExpress ${cs[3]}`);
+  function minDataDate(snaps) {
+    var min = '';
+    (snaps || []).forEach(function (s) {
+      if (s && s.date && (!min || s.date < min)) min = s.date;
+      var g = s && s.gscts;
+      if (g) {
+        ['site', 'page'].forEach(function (k) {
+          (g[k] || []).forEach(function (p) {
+            if (p && p.d && (!min || p.d < min)) min = p.d;
+          });
+        });
+      }
     });
-    if(cur.flags?.wrong)L.push(`\n[!] Wrong-page routing live -- day ${streak(snaps,"wrong")}`);
-    if(cur.flags?.legacy)L.push(`[!] Legacy URL still ranking -- day ${streak(snaps,"legacy")}`);
-    if(cur.flags?.cann)L.push(`[*] ${cur.flags.cann} keywords cannibalised`);
-    L.push(`\nBacklinks: ${cur.m?.blD??0} referring domains (target 15)`);
-    try{await navigator.clipboard.writeText(L.join("\n"));const b=document.getElementById("copyBtn");b.textContent="COPIED";setTimeout(()=>b.textContent="COPY DIGEST",1500);}catch(e){}
-  };
-}
+    return min;
+  }
 
-Promise.all([
-  fetch("./snapshots.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();}),
-  fetch("./changelog.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]),
-]).then(([snaps,changes])=>{CHANGES=Array.isArray(changes)?changes:[];render(snaps);})
-  .catch(()=>{document.getElementById("app").innerHTML='<div class="err">No snapshot history found yet.<br><br>1. Add the SEMRUSH_API_KEY secret in repo Settings > Secrets > Actions.<br>2. Run the "Daily patrol" workflow once from the Actions tab.<br>3. Refresh this page.</div>';});
+  function applyPreset(preset) {
+    var S = window.Sentinel;
+    var maxD = maxDataDate(S.data.snaps);
+    S.state.preset = preset;
+    if (preset === '28D') {
+      S.state.to = maxD; S.state.from = shiftDays(maxD, -27);
+    } else if (preset === '90D') {
+      S.state.to = maxD; S.state.from = shiftDays(maxD, -89);
+    } else if (preset === '6M') {
+      S.state.to = maxD; S.state.from = shiftDays(maxD, -182);
+    } else if (preset === 'All') {
+      S.state.to = maxD; S.state.from = minDataDate(S.data.snaps) || shiftDays(maxD, -365);
+    }
+    // Custom keeps current from/to; the date inputs drive it.
+    syncDateUI();
+  }
+
+  function syncDateUI() {
+    var S = window.Sentinel;
+    var group = document.getElementById('daterange-pills');
+    Array.prototype.forEach.call(group.querySelectorAll('.pill'), function (b) {
+      b.classList.toggle('active', b.getAttribute('data-value') === S.state.preset);
+    });
+    document.getElementById('custom-dates').hidden = S.state.preset !== 'Custom';
+    document.getElementById('date-from').value = S.state.from;
+    document.getElementById('date-to').value = S.state.to;
+  }
+
+  /* ---------- global pill delegation ---------- */
+
+  document.addEventListener('click', function (ev) {
+    var pill = ev.target.closest ? ev.target.closest('[data-value]') : null;
+    if (!pill) return;
+    var group = pill.closest('[data-pill-group]');
+    if (!group) return;
+    var gid = group.getAttribute('data-pill-group');
+    var value = pill.getAttribute('data-value');
+
+    if (gid === 'daterange') {
+      applyPreset(value);
+      window.Sentinel.rerender();
+      return;
+    }
+    var fn = window.Sentinel.pillHandlers[gid];
+    if (typeof fn === 'function') fn(value);
+    window.Sentinel.rerender();
+  });
+
+  document.getElementById('date-from').addEventListener('change', function () {
+    if (this.value) { window.Sentinel.state.from = this.value; window.Sentinel.rerender(); }
+  });
+  document.getElementById('date-to').addEventListener('change', function () {
+    if (this.value) { window.Sentinel.state.to = this.value; window.Sentinel.rerender(); }
+  });
+
+  /* ---------- boot ---------- */
+
+  var dataReady = Promise.all([
+    fetchJson('./snapshots.json'),
+    fetchJson('./changelog.json'),
+    fetchJson('./content.json')
+  ]).then(function (res) {
+    var S = window.Sentinel;
+    S.data.snaps = Array.isArray(res[0]) ? res[0] : [];
+    S.data.changelog = Array.isArray(res[1]) ? res[1] : [];
+    S.data.content = Array.isArray(res[2]) ? res[2] : [];
+
+    applyPreset('90D');
+
+    var last = S.data.snaps.length ? S.data.snaps[S.data.snaps.length - 1] : null;
+    if (last) {
+      document.getElementById('patrol-note').textContent =
+        'Last patrol: ' + last.date + ' · day ' + S.data.snaps.length;
+      if (last.mode) {
+        var badge = document.getElementById('mode-badge');
+        badge.textContent = last.mode;
+        badge.hidden = false;
+      }
+    } else {
+      document.getElementById('patrol-note').textContent = 'No patrol data yet';
+    }
+  });
+
+  var domReady = new Promise(function (resolve) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', resolve);
+    } else { resolve(); }
+  });
+
+  Promise.all([dataReady, domReady]).then(function () {
+    window.Sentinel.rerender();
+  });
+})();
 </script>
 
-<script>
-// ---- Daily content review (on-page gap analysis) -- fetches content.json ----
-const cEsc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const stateChip=st=>{const m={pass:["#1E8E3E","PASS"],warn:["#E8710A","IMPROVE"],fail:["#D93025","FIX"]};const[c,t]=m[st]||m.fail;return `<span class="tag" style="background:${c}">${t}</span>`;};
-const scoreColor=s=>s>=80?"#1E8E3E":s>=60?"#E8710A":"#D93025";
-const TARGET_T=["wegovy pill","wegovy pills","wegovy tablet","oral semaglutide","oral wegovy"];
+<script src="assets/charts.js"></script>
+<script defer src="assets/sections/perf.js" onerror="this.remove()"></script>
+<script defer src="assets/sections/rankings.js" onerror="this.remove()"></script>
+<script defer src="assets/sections/content.js" onerror="this.remove()"></script>
 
-function renderContent(hist){
-  const el=document.getElementById("content-app");
-  if(!hist||!hist.length){el.innerHTML="";return;}
-  const a=hist[hist.length-1], al=a.align||{checks:[]};
-  const prev=hist.length>1?hist[hist.length-2]:null;
-  const dScore=(prev&&prev.align)?al.score-prev.align.score:null;
-
-  const checks=(al.checks||[]).map(c=>`<div class="flag ${c.state==='pass'?'ok':c.state==='warn'?'warnflag':'bad'}">
-    <div><strong>${cEsc(c.name)}</strong><div style="font-size:11px;color:var(--slate);margin-top:2px">${cEsc(c.evidence)}</div></div>
-    ${stateChip(c.state)}</div>`).join("");
-
-  const rows=(a.pages||[]).map(p=>{
-    const t=(p.title||"").toLowerCase();
-    const hasTarget=TARGET_T.some(x=>t.includes(x));
-    const badge=p.role==='us'?'<span class="tag role-us">US</span>':p.role==='brand'?'<span class="tag role-brand">BRAND</span>':'<span class="tag role-competitor">COMP</span>';
-    return `<tr>
-      <td class="mono">${p.rank?("#"+p.rank):"&mdash;"}</td>
-      <td>${cEsc(p.domain)} ${badge}</td>
-      <td style="max-width:340px">${p.status==='ok'?cEsc(p.title||'(no title)'):'<span class="lose">'+cEsc(p.status)+'</span>'}</td>
-      <td class="mono">${p.wc||'--'}</td>
-      <td class="mono">${(p.h2&&p.h2.length)||0}</td>
-      <td class="mono">${(p.faqs&&p.faqs.length)||0}</td>
-      <td>${p.status==='ok'?(hasTarget?'<span class="win">&#10003;</span>':'<span class="lose">&#10007;</span>'):'--'}</td>
-    </tr>`;
-  }).join("");
-
-  const chips=arr=>(arr&&arr.length)?arr.map(g=>`<span class="gap-chip">${cEsc(g.term)} <span style="color:var(--slate)">&times;${g.competitors}</span></span>`).join(""):'<span style="color:var(--green)">None &mdash; coverage complete</span>';
-  const faqGaps=(al.faq_gaps||[]).slice(0,12).map(q=>`<div class="opp">&bull; ${cEsc(q)}</div>`).join("")||'<div style="color:var(--green)">No FAQ gaps</div>';
-  const opps=(a.opps||[]).map((o,i)=>`<div class="opp"><strong style="color:var(--gold)">${i+1}.</strong> ${cEsc(o)}</div>`).join("");
-  const blocked=(a.blocked&&a.blocked.length)?`<div style="font-size:11px;color:var(--slate);margin-top:8px">Not fetched (bot-blocked/unreachable): ${a.blocked.map(cEsc).join(", ")}</div>`:"";
-
-  el.innerHTML=`
-  <div class="section-hd">
-    <h2>Daily content review</h2>
-    <span class="eyebrow">on-page gap analysis &middot; "${cEsc(a.phrase)}" SERP &middot; optimise for ${(a.primary||[]).map(cEsc).join(", ")}${a.mode&&a.mode!=='live'?' &middot; '+cEsc(a.mode)+' mode':''}</span>
-  </div>
-  <div class="grid">
-    <div class="card alt-wrap" style="flex:0 0 220px">
-      <div class="eyebrow">Pill-page alignment</div>
-      <div class="gauge" style="color:${scoreColor(al.score)};margin-top:10px">${al.score}<span style="font-size:16px;color:var(--slate)">/100</span></div>
-      <div class="mono" style="font-size:11px;color:var(--slate);margin-top:4px">${dScore!=null?('vs prev '+(dScore>0?'+':'')+dScore):'first review'}</div>
-      <div style="font-size:11px;color:var(--slate);margin-top:12px;line-height:1.7">
-        Body terms <strong style="color:var(--cream)">${al.body_cov}%</strong><br>
-        FAQ topics <strong style="color:var(--cream)">${al.faq_cov}%</strong><br>
-        Pages analysed <strong style="color:var(--cream)">${a.fetched}/${(a.pages||[]).length}</strong>
-      </div>${blocked}
-    </div>
-    <div class="flags" style="flex:1 1 420px"><div class="eyebrow">Optimisation checks &mdash; title, meta, H1, opening copy, depth, FAQs, semantics</div>${checks}</div>
-  </div>
-  <div class="tbl">
-    <div class="hd"><span class="eyebrow">Top results analysed vs our pill page</span><button id="copyContent">COPY REVIEW</button></div>
-    <table><thead><tr><th>RANK</th><th>PAGE</th><th>TITLE TAG</th><th>WORDS</th><th>H2</th><th>FAQ</th><th>TARGET KW IN TITLE</th></tr></thead><tbody>${rows}</tbody></table>
-  </div>
-  <div class="grid">
-    <div class="card" style="flex:1 1 320px">
-      <div class="eyebrow" style="color:#D93025">Missing entities &mdash; brands &middot; trials &middot; compounds</div>
-      <div style="margin-top:8px">${chips(al.entity_gaps)}</div>
-      <div class="eyebrow" style="color:#D93025;margin-top:16px">Missing terms / topics &mdash; used by &ge;2 competitors</div>
-      <div style="margin-top:8px">${chips(al.term_gaps)}</div>
-    </div>
-    <div class="card" style="flex:1 1 320px">
-      <div class="eyebrow">FAQ gaps &mdash; questions competitors answer, we don't</div>
-      <div style="margin-top:8px">${faqGaps}</div>
-    </div>
-  </div>
-  <div class="tbl" style="padding-bottom:8px">
-    <div class="hd"><span class="eyebrow">Prioritised opportunities</span></div>
-    <div style="padding:6px 16px">${opps||'<div style="color:var(--slate);font-size:12px">No actions &mdash; page is well aligned.</div>'}</div>
-  </div>`;
-
-  const btn=document.getElementById("copyContent");
-  if(btn)btn.onclick=async()=>{
-    const L=[`WEGOVY SENTINEL -- CONTENT REVIEW ${a.date}`,`"${a.phrase}" -- alignment ${al.score}/100 (body ${al.body_cov}%, FAQ ${al.faq_cov}%)`,""];
-    (al.checks||[]).forEach(c=>L.push(`[${c.state.toUpperCase()}] ${c.name}: ${c.evidence}`));
-    if((al.entity_gaps||[]).length)L.push("\nMissing entities: "+al.entity_gaps.map(g=>g.term).join(", "));
-    if((al.term_gaps||[]).length)L.push("Missing terms: "+al.term_gaps.map(g=>g.term).join(", "));
-    if((al.faq_gaps||[]).length){L.push("\nFAQ gaps:");al.faq_gaps.forEach(q=>L.push(" - "+q));}
-    if((a.opps||[]).length){L.push("\nOpportunities:");a.opps.forEach((o,i)=>L.push(` ${i+1}. ${o}`));}
-    try{await navigator.clipboard.writeText(L.join("\n"));btn.textContent="COPIED";setTimeout(()=>btn.textContent="COPY REVIEW",1500);}catch(e){}
-  };
-}
-
-fetch("./content.json",{cache:"no-store"})
-  .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
-  .then(renderContent)
-  .catch(()=>{/* content review not seeded yet -- leave the panel empty */});
-</script>
 </body>
 </html>

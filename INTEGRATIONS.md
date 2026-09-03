@@ -44,6 +44,14 @@ One-time setup:
 Until these are set the performance charts fall back to the Semrush modelled
 position, and the clicks / impressions / CTR tiles stay hidden.
 
+The patrol also stores a **per-keyword daily series** (`gsckw` in the
+snapshot): one Search Analytics query dimensioned by date + query over the
+same `GSC_TS_DAYS` window, filtered to the tracked keywords, giving each
+keyword its own daily position / clicks / impressions history straight from
+Google. Like the other GSC data it is optional, degrades to nothing on error,
+and the last known series is carried forward when a patrol runs without
+credentials.
+
 ---
 
 ## Changelog

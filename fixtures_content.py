@@ -20,12 +20,14 @@ FIXTURE_SERP = (
 )
 
 
-def _page(title, desc, h1, body, faqs_html="", ld=""):
+def _page(title, desc, h1, body, faqs_html="", ld="", meta_author=""):
     faq_ld = f'<script type="application/ld+json">{ld}</script>' if ld else ""
+    author_meta = f'<meta name="author" content="{meta_author}">' if meta_author else ""
     return f"""<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8"><title>{title}</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="index, follow">
+{author_meta}
 {faq_ld}
 </head><body>
 <nav>Home Weight loss Treatments Account Basket</nav>
@@ -65,7 +67,27 @@ weight loss over 64 weeks, close to the Wegovy injection.</p>
 <h2>Wegovy pill price in the UK</h2>
 <p>The Wegovy pill is available in the UK following MHRA approval. Pricing is
 comparable to the injection; NHS access is unlikely before 2027.</p>
+<img src="/images/wegovy-pill-pack.jpg" alt="Wegovy pill pack">
+<img src="data:image/gif;base64,R0lGODlhAQABAA==" alt="inline pixel (ignored)">
+<img src="/assets/sop-logo.svg" alt="pharmacy logo (ignored)">
+<iframe src="https://www.youtube.com/embed/wgvyPill1" title="How to take the Wegovy pill"></iframe>
+<h2>Learn more about the Wegovy pill</h2>
+<p>Read our <a href="/health-advice/wegovy-pill-vs-injection/">Wegovy pill vs
+injection guide</a> and
+<a href="https://www.simpleonlinepharmacy.co.uk/health-advice/oral-semaglutide-explained/">oral
+semaglutide explained</a>, or jump to the <a href="#faqs">FAQs</a>.
+Sources: <a href="https://www.nice.org.uk/guidance">NICE</a> and the
+<a href="https://www.gov.uk/government/organisations/mhra">MHRA</a>.
+<a href="mailto:hello@simpleonlinepharmacy.co.uk">Email us</a> or
+<a href="tel:+441611234567">call the pharmacy team</a>.</p>
 """,
+    ld="""{"@context":"https://schema.org","@graph":[
+{"@type":["MedicalWebPage","WebPage"],"name":"Buy Wegovy Pill Online UK",
+ "author":{"@type":"Person","name":"Dr Alexis Missick"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How does the Wegovy pill work?","acceptedAnswer":{"@type":"Answer","text":"It is oral semaglutide, a GLP-1 medicine that reduces appetite."}},
+{"@type":"Question","name":"How much does the Wegovy pill cost in the UK?","acceptedAnswer":{"@type":"Answer","text":"Pricing is comparable to the injection."}}
+]}]}""",
     faqs_html="""
 <section><h2>Wegovy pill FAQs</h2>
 <details><summary>How does the Wegovy pill work?</summary><p>It is oral semaglutide, a GLP-1 medicine that reduces appetite.</p></details>
@@ -101,8 +123,18 @@ attack and stroke in some patients.</p>
 <h2>Wegovy pill vs injection and vs Ozempic</h2>
 <p>Compared to the injection the pill avoids needles. Ozempic contains the same
 drug but is licensed for type 2 diabetes.</p>
+<img src="/img/wegovy-pill-doses.jpg" alt="Wegovy pill dose strengths">
+<img src="/img/sprite-arrows.png" alt="ui sprite (ignored)">
+<video controls src="/media/wegovy-pill-explainer.mp4"></video>
+<p>See our <a href="/health-advice/oral-semaglutide/">oral semaglutide guide</a>,
+our <a href="https://onlinedoctor.superdrug.com/weight-loss.html">weight loss
+clinic</a>, or the
+<a href="https://www.nhs.uk/medicines/semaglutide/">NHS semaglutide page</a>.</p>
 """,
-    ld="""{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    meta_author="Superdrug Online Doctor Clinical Team",
+    ld="""{"@context":"https://schema.org","@type":"FAQPage",
+"author":{"@type":"Organization","name":"Superdrug Online Doctor"},
+"mainEntity":[
 {"@type":"Question","name":"Can I buy the Wegovy pill on the NHS?","acceptedAnswer":{"@type":"Answer","text":"Not currently."}},
 {"@type":"Question","name":"Is the Wegovy pill safe?","acceptedAnswer":{"@type":"Answer","text":"It is prescription-only and assessed by a clinician."}},
 {"@type":"Question","name":"Who can take the Wegovy pill?","acceptedAnswer":{"@type":"Answer","text":"Adults meeting BMI criteria."}}
@@ -131,7 +163,17 @@ and 25mg tablets.</p>
 orforglipron, oral semaglutide is a peptide and needs an empty stomach.</p>
 <h2>BMI eligibility</h2>
 <p>You may be eligible with a BMI of 30, or 27 with a weight-related condition.</p>
+<img src="/cdn/wegovy-pill-bottle.webp" alt="Wegovy pill bottle">
+<iframe src="https://player.vimeo.com/video/98765432" title="Voy explains the Wegovy pill"></iframe>
+<p>More in our <a href="/health-advice/glp-1-explained">GLP-1 explained
+article</a> and our
+<a href="https://www.joinvoy.com/blog/wegovy-pill-results">results blog</a>;
+regulator information at <a href="https://www.gov.uk/mhra">the MHRA</a> and
+<a href="https://www.nice.org.uk/">NICE</a>.</p>
 """,
+    ld="""{"@context":"https://schema.org","@type":"MedicalWebPage",
+"name":"Wegovy Pill (Oral Semaglutide)",
+"author":[{"@type":"Person","name":"Dr Earim Chaudry"},{"@type":"Person","name":"Voy Clinical Team"}]}""",
     faqs_html="""
 <section><h2>Questions</h2>
 <details><summary>What is the difference between Rybelsus and the Wegovy pill?</summary><p>Rybelsus is oral semaglutide licensed for type 2 diabetes; the Wegovy pill is licensed for weight loss.</p></details>

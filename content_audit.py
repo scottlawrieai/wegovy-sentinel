@@ -199,19 +199,31 @@ HEAD_TAGS = {"h1", "h2", "h3"}
 
 
 class PageParser(HTMLParser):
-    """Extract title, meta, headings, visible body text and FAQ blocks."""
+    """Extract title, meta, headings, visible body text and FAQ blocks.
+
+    Also collects dashboard signals: content image count (imgs), embedded
+    video count (videos), outgoing link hrefs for later int/ext classification,
+    JSON-LD schema @type values and author names. Media/link tags inside
+    skipped chrome regions (nav/header/footer/...) are not counted.
+    """
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.title = ""
         self.meta_desc = ""
         self.meta_robots = ""
+        self.meta_author = ""
         self.h1 = ""
         self.h2 = []
         self.h3 = []
         self.text_parts = []
         self.ld_json = []
         self.faq_questions = []
+        self.imgs = 0
+        self.videos = 0
+        self.hrefs = []
+        self.schema_types = []
+        self.authors = []
         self._skip = 0
         self._in_title = False
         self._in_ld = False
@@ -236,6 +248,25 @@ class PageParser(HTMLParser):
                 self.meta_desc = (a.get("content") or "").strip()
             elif name == "robots":
                 self.meta_robots = (a.get("content") or "").strip().lower()
+            elif name == "author" and not self.meta_author:
+                self.meta_author = (a.get("content") or "").strip()
+        elif tag == "img" and not self._skip:
+            # Content-image heuristic: skip inline data: URIs and srcs that
+            # look like page chrome (icon/sprite/logo).
+            src = (a.get("src") or "").strip().lower()
+            if (src and not src.startswith("data:")
+                    and not any(t in src for t in ("icon", "sprite", "logo"))):
+                self.imgs += 1
+        elif tag == "video" and not self._skip:
+            self.videos += 1
+        elif tag == "iframe" and not self._skip:
+            src = (a.get("src") or "").lower()
+            if any(h in src for h in ("youtube", "vimeo", "wistia")):
+                self.videos += 1
+        elif tag == "a" and not self._skip:
+            href = (a.get("href") or "").strip()
+            if href and not href.startswith(("#", "mailto:", "tel:", "javascript:")):
+                self.hrefs.append(href)
         elif tag in HEAD_TAGS and not self._skip:
             self._cur_head = tag
             self._head_buf = []
@@ -290,10 +321,18 @@ class PageParser(HTMLParser):
     def finish(self):
         self.title = norm(self.title)
         # FAQ schema (FAQPage JSON-LD) is the most reliable question source.
+        types, authors = [], []
         for blob in self.ld_json:
             for q in ld_faq_questions(blob):
                 if q not in self.faq_questions:
                     self.faq_questions.append(q)
+            t, au = ld_schema_meta(blob)
+            types.extend(t)
+            authors.extend(au)
+        if self.meta_author:
+            authors.append(self.meta_author)
+        self.schema_types = dedupe(types)[:8]
+        self.authors = dedupe(authors)[:4]
         return self
 
 
@@ -319,6 +358,91 @@ def ld_faq_questions(blob: str) -> list:
                 out.append(norm(str(node["name"])))
             stack.extend(v for v in node.values() if isinstance(v, (list, dict)))
     return out
+
+
+def _author_names(node) -> list:
+    """Author name(s) from a JSON-LD author value: string, dict or list."""
+    if isinstance(node, str):
+        n = norm(node)
+        return [n] if n else []
+    if isinstance(node, dict):
+        n = node.get("name")
+        return [norm(str(n))] if n else []
+    if isinstance(node, list):
+        out = []
+        for x in node:
+            out.extend(_author_names(x))
+        return out
+    return []
+
+
+def ld_schema_meta(blob: str) -> tuple:
+    """(schema @type values, author names) from one JSON-LD blob.
+
+    Walks nested dicts/lists so @graph wrappers and arrays are handled; @type
+    may itself be a string or a list of strings.
+    """
+    types, authors = [], []
+    try:
+        data = json.loads(blob)
+    except Exception:
+        return types, authors
+    stack = [data]
+    while stack:
+        node = stack.pop()
+        if isinstance(node, list):
+            stack.extend(node)
+        elif isinstance(node, dict):
+            t = node.get("@type")
+            for x in (t if isinstance(t, list) else [t]):
+                if isinstance(x, str) and x:
+                    types.append(x)
+            authors.extend(_author_names(node.get("author")))
+            stack.extend(v for v in node.values() if isinstance(v, (list, dict)))
+    return types, authors
+
+
+# Common UK second-level suffixes for the registrable-domain heuristic below.
+_UK_SLDS = {"co", "org", "ac", "gov", "net", "me", "plc", "ltd", "nhs"}
+
+
+def registrable_domain(host: str) -> str:
+    """Simple registrable-domain heuristic (no PSL): last two labels, or last
+    three when the middle one is a common UK second-level (x.co.uk -> x.co.uk),
+    so www.foo.co.uk and foo.co.uk compare equal."""
+    parts = (host or "").lower().strip(".").split(".")
+    if len(parts) >= 3 and parts[-2] in _UK_SLDS and len(parts[-1]) == 2:
+        return ".".join(parts[-3:])
+    return ".".join(parts[-2:]) if len(parts) >= 2 else (host or "").lower()
+
+
+def classify_links(page_url: str, hrefs: list) -> tuple:
+    """Classify collected hrefs against the page URL's host.
+
+    Returns (links_int, links_ext, article_paths): internal = same registrable
+    domain as the page (relative URLs resolve internal via urljoin);
+    article_paths = unique paths of internal links containing /health-advice/.
+    """
+    our = registrable_domain(
+        urllib.parse.urlsplit(page_url).netloc.split("@")[-1].split(":")[0])
+    n_int = n_ext = 0
+    seen, paths = set(), []
+    for href in hrefs:
+        try:
+            u = urllib.parse.urlsplit(urllib.parse.urljoin(page_url, href))
+        except ValueError:
+            continue
+        if u.scheme not in ("http", "https", ""):
+            continue
+        host = (u.netloc or "").split("@")[-1].split(":")[0]
+        if not host or registrable_domain(host) == our:
+            n_int += 1
+            if "/health-advice/" in u.path and u.path not in seen:
+                seen.add(u.path)
+                paths.append(u.path)
+        else:
+            n_ext += 1
+    return n_int, n_ext, paths
 
 
 def parse_page(html: str) -> PageParser:
@@ -367,12 +491,16 @@ def analyze(url: str, domain: str, rank, role: str, status: str, html: str) -> d
     if status != "ok" or not html:
         return {"url": url, "domain": domain, "rank": rank, "role": role,
                 "status": status, "title": "", "meta": "", "h1": "",
-                "h2": [], "wc": 0, "faqs": [], "terms": [], "phrases": []}
+                "h2": [], "wc": 0, "faqs": [], "terms": [], "phrases": [],
+                "imgs": 0, "videos": 0, "links_int": 0, "links_ext": 0,
+                "articles": {"n": 0, "paths": []}, "schema": [], "authors": [],
+                "bytes": 0}
     p = parse_page(html)
     body = norm(" ".join(p.text_parts))
     body_lc = body.lower()
     title_lc = p.title.lower()
     hits = lexicon_hits((title_lc + " " + p.meta_desc.lower() + " " + body_lc))
+    links_int, links_ext, article_paths = classify_links(url, p.hrefs)
     return {
         "url": url, "domain": domain, "rank": rank, "role": role, "status": "ok",
         "title": p.title, "meta": p.meta_desc, "robots": p.meta_robots,
@@ -383,6 +511,11 @@ def analyze(url: str, domain: str, rank, role: str, status: str, html: str) -> d
         "terms": sorted(present_terms(hits)),
         "termhits": {k: v for k, v in hits.items() if v > 0},
         "phrases": top_phrases(body_lc),
+        "imgs": p.imgs, "videos": p.videos,
+        "links_int": links_int, "links_ext": links_ext,
+        "articles": {"n": len(article_paths), "paths": article_paths[:5]},
+        "schema": p.schema_types, "authors": p.authors,
+        "bytes": round(len(html) / 1024),
     }
 
 
@@ -518,6 +651,32 @@ def opportunities(align: dict) -> list:
 
 
 # ------------------------------------------------------------------------- orchestrate
+def _add_psi(analysed: list, limit: int = 3):
+    """Optional per-page PageSpeed for the dashboard.
+
+    Only runs when PSI_API_KEY is set, only for our page and the top-3 ranked
+    results, and makes at most `limit` PSI calls per audit. The 'psi' field is
+    simply absent without a key or on any failure -- never breaks the audit.
+    """
+    if not os.environ.get("PSI_API_KEY"):
+        return
+    calls = 0
+    for a in analysed:
+        if calls >= limit:
+            break
+        rank = a.get("rank")
+        if not (a.get("role") == "us" or (isinstance(rank, int) and rank <= 3)):
+            continue
+        calls += 1
+        try:
+            from tech_audit import fetch_psi
+            psi = fetch_psi(a["url"])
+        except Exception:
+            psi = None
+        if psi:
+            a["psi"] = psi
+
+
 def top_serp(semrush_fn, phrase: str, n: int) -> list:
     text = semrush_fn({
         "type": "phrase_organic", "phrase": phrase, "database": DATABASE,
@@ -561,6 +720,7 @@ def build_audit(semrush_fn=None, fetch_fn=None, mode="live") -> dict:
     for p in pages:
         status, html = fetch_fn(p["url"])
         analysed.append(analyze(p["url"], p["domain"], p["rank"], p["role"], status, html))
+    _add_psi(analysed)
 
     us = next((a for a in analysed if a["role"] == "us"), None) or analyze(
         OUR_PAGE, OUR_DOMAIN, None, "us", "error:missing", "")
@@ -659,6 +819,15 @@ def selftest():
     assert "SNAC" in gap_terms or "absorption enhancer" in gap_terms, gap_terms
     assert a["faq_gaps"], "should detect at least one FAQ gap"
     assert audit["opps"], "should produce opportunities"
+    # Dashboard fields ("Top results" table) must populate from the fixtures.
+    us = audit["us"]
+    assert "MedicalWebPage" in us["schema"] and "FAQPage" in us["schema"], us["schema"]
+    assert us["authors"] and us["imgs"] >= 1 and us["videos"] >= 1 and us["bytes"] > 0, us
+    assert us["links_int"] >= 2 and us["links_ext"] >= 2, (us["links_int"], us["links_ext"])
+    assert us["articles"]["n"] >= 2 and us["articles"]["paths"], us["articles"]
+    comp_rich = [c for c in audit["pages"]
+                 if c["role"] != "us" and c["schema"] and c["authors"] and c["videos"]]
+    assert len(comp_rich) >= 2, "2+ competitor fixtures should carry schema/authors/videos"
     print(digest_section(audit))
     print("\n[self-test] content_audit assertions passed "
           f"(score {a['score']}, {len(a['term_gaps'])} term gaps, "

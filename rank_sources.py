@@ -186,6 +186,55 @@ def fetch_gsc_timeseries() -> dict:
     return out if (out.get("site") or out.get("page")) else {}
 
 
+def fetch_gsc_keyword_series(keywords) -> dict:
+    """Daily position/clicks/impressions per tracked keyword.
+
+    One Search Analytics query dimensioned by date+query over the GSC_TS_DAYS
+    window (default 90, same as fetch_gsc_timeseries), filtered down to the
+    keywords we track (lowercase exact match). Returns
+    {keyword_lower: [{d, pos, clicks, impr}, ...]} with each list sorted by
+    date, or {} if GSC is not configured. Errors degrade to {} with a [warn].
+    """
+    token = _gsc_access_token()
+    if not token:
+        return {}
+    prop = os.environ.get("GSC_PROPERTY", "sc-domain:simpleonlinepharmacy.co.uk")
+    try:
+        days = int(os.environ.get("GSC_TS_DAYS", "90") or 90)
+    except ValueError:
+        days = 90
+    end = _today_uk() - timedelta(days=3)   # GSC data lags a couple of days
+    start = end - timedelta(days=days)
+    try:
+        payload = _gsc_query(token, prop, {
+            "startDate": start.isoformat(),
+            "endDate": end.isoformat(),
+            "dimensions": ["date", "query"],
+            "rowLimit": 25000,
+            "type": "web",
+        })
+    except Exception as e:
+        print(f"[warn] GSC keyword series: {e}", file=sys.stderr)
+        return {}
+    want = {k.lower() for k in keywords}
+    out = {}
+    for row in payload.get("rows", []):
+        keys = row.get("keys") or ["", ""]
+        d = (keys[0] or "") if len(keys) > 0 else ""
+        q = ((keys[1] if len(keys) > 1 else "") or "").strip().lower()
+        if not d or q not in want:
+            continue
+        out.setdefault(q, []).append({
+            "d": d,
+            "pos": round(float(row.get("position", 0)), 1),
+            "clicks": int(row.get("clicks", 0)),
+            "impr": int(row.get("impressions", 0)),
+        })
+    for series in out.values():
+        series.sort(key=lambda r: r["d"])
+    return out
+
+
 # what a title at position P should roughly earn; used to flag under-clicking pages
 _EXPECTED_CTR = ((1, 28.0), (2, 15.0), (3, 10.0), (4, 7.0), (5, 5.0),
                  (8, 3.5), (10, 2.5), (20, 1.0), (100, 0.4))
