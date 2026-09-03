@@ -90,6 +90,15 @@
   function fmtCtr(v) { return v.toFixed(2) + '%'; }
   function fmtPos(v) { return v.toFixed(1); }
 
+  function pageOneCount(s) {
+    var b = (s && s.best) || {}, n = 0;
+    Object.keys(b).forEach(function (k) { if (b[k] && b[k].p != null && b[k].p <= 10) n++; });
+    return n;
+  }
+  function trackedCount(s) {
+    return Object.keys((s && s.best) || {}).length;
+  }
+
   function latestGscts(snaps) {
     for (var i = (snaps || []).length - 1; i >= 0; i--) {
       var g = snaps[i] && snaps[i].gscts;
@@ -180,26 +189,45 @@
       var ago = snaps.length > 7 ? snaps[snaps.length - 8] : null;
       var pillPrev = ago && ago.m ? ago.m.pill : null;
       var d = (pill != null && pillPrev != null) ? pill - pillPrev : null;
+      var p1 = last ? pageOneCount(last) : null;
+      var p1Prev = ago ? pageOneCount(ago) : null;
+      var cann = last && last.flags ? (last.flags.cann || 0) : null;
+      var cannPrev = ago && ago.flags ? (ago.flags.cann || 0) : null;
+      var blD = last && last.m ? last.m.blD : null;
+      var blPrev = ago && ago.m ? ago.m.blD : null;
       html += '<div class="kpis">' +
         kpi('"wegovy pill" position (Semrush)',
           pill == null ? '—' : '#' + C.esc(C.fmtInt(pill)),
           deltaHtml(d, C.fmtInt, true)) +
-        mutedKpi('Total impressions') +
-        mutedKpi('Avg CTR') +
-        mutedKpi('Avg position') +
+        kpi('Page-one keywords',
+          p1 == null ? '—' : C.esc(C.fmtInt(p1)) + '<span class="kpi-of"> / ' + trackedCount(last) + '</span>',
+          deltaHtml((p1 == null || p1Prev == null) ? null : p1 - p1Prev, C.fmtInt, false)) +
+        kpi('Keywords cannibalised',
+          cann == null ? '—' : C.esc(C.fmtInt(cann)),
+          deltaHtml((cann == null || cannPrev == null) ? null : cann - cannPrev, C.fmtInt, true)) +
+        kpi('Referring domains (pill page)',
+          blD == null ? '—' : C.esc(C.fmtInt(blD)) + '<span class="kpi-of"> / 15 target</span>',
+          deltaHtml((blD == null || blPrev == null) ? null : blD - blPrev, C.fmtInt, false)) +
         '</div>';
     }
 
     /* ---------- toolbar: URL view pills ---------- */
 
-    html += '<div class="perf-toolbar">' +
-      C.pills('perf-view', [
-        { value: 'page', label: 'Pill page' },
-        { value: 'site', label: 'Whole site' }
-      ], view) +
-      '<span class="perf-change-tag">Source: Google Search Console · ' +
-      (view === 'site' ? 'whole property' : 'Wegovy pill page') + '</span>' +
-      '</div>';
+    if (g) {
+      html += '<div class="perf-toolbar">' +
+        C.pills('perf-view', [
+          { value: 'page', label: 'Pill page' },
+          { value: 'site', label: 'Whole site' }
+        ], view) +
+        '<span class="perf-change-tag">Source: Google Search Console · ' +
+        (view === 'site' ? 'whole property' : 'Wegovy pill page') + '</span>' +
+        '</div>';
+    } else {
+      html += '<div class="perf-toolbar">' +
+        '<span class="perf-change-tag">Source: Semrush · modelled UK desktop · ' +
+        'clicks &amp; impressions arrive once the GSC secrets are added</span>' +
+        '</div>';
+    }
 
     /* ---------- weekly chart + weekly table ---------- */
 
@@ -285,7 +313,74 @@
         (trs || '<tr><td colspan="5"><div class="empty">No data in this range.</div></td></tr>') +
         '</tbody></table></div></div>';
     } else {
-      html += emptyGsc('Weekly clicks chart and table');
+      // No GSC yet: the weekly view still earns its place with Semrush data.
+      var spts = snaps.map(function (s) {
+        return { d: s.date, pos: s.m ? s.m.pill : null,
+                 p1: pageOneCount(s), cann: s.flags ? (s.flags.cann || 0) : null };
+      });
+      var scur = C.inRange(spts, state);
+      var sweeks = C.groupWeeks(scur).map(function (w) {
+        var posVals = w.rows.map(function (r) { return r.pos; }).filter(function (v) { return v != null; });
+        var lastRow = w.rows[w.rows.length - 1] || {};
+        return { key: w.key, from: w.from, to: w.to,
+          pos: posVals.length ? posVals.reduce(function (a, b) { return a + b; }, 0) / posVals.length : null,
+          p1: lastRow.p1, cann: lastRow.cann };
+      });
+      if (sweeks.length) {
+        var chartPts = scur.filter(function (r) { return r.pos != null; })
+          .map(function (r) { return { d: r.d, v: r.pos }; });
+        var mkDates = inRangeDates.filter(function (dd) {
+          return chartPts.some(function (pt) { return pt.d >= dd; });
+        });
+        html += '<div class="panel">' + C.lineChart({
+          series: [{ label: '"wegovy pill" position (Semrush)', color: '#1C7ED6', points: chartPts }],
+          height: 230, invertY: true,
+          yFmt: function (v) { return Math.round(v); },
+          markers: inRangeDates.map(function (dd) {
+            return { d: dd, letter: letters[dd] || '', color: '#1D4ED8' };
+          }),
+          showLegend: false
+        }) +
+        '<div class="perf-chart-note">Daily Semrush modelled position · lettered markers = logged changes</div></div>';
+
+        var sp = sweeks.map(function (w) { return w.pos; }).filter(function (v) { return v != null; });
+        var s1 = sweeks.map(function (w) { return w.p1; }).filter(function (v) { return v != null; });
+        var sc = sweeks.map(function (w) { return w.cann; }).filter(function (v) { return v != null; });
+        var spMin = Math.min.apply(null, sp), spMax = Math.max.apply(null, sp);
+        var s1Min = Math.min.apply(null, s1), s1Max = Math.max.apply(null, s1);
+        var scMin = Math.min.apply(null, sc), scMax = Math.max.apply(null, sc);
+        var strs = '';
+        sweeks.forEach(function (w) {
+          var badges = '';
+          inRangeDates.forEach(function (dd) {
+            if (dd >= w.from && dd <= w.to) {
+              var e = changelog.filter(function (en) { return en.date === dd; })[0];
+              var first = e && e.changes && e.changes[0] ? e.changes[0].text : '';
+              var extra = e && e.changes && e.changes.length > 1 ? ' (+' + (e.changes.length - 1) + ' more)' : '';
+              strs += '<tr class="band"><td colspan="5">' + badge(letters[dd] || '') + ' ' +
+                C.esc(dd) + ' — ' + C.esc(first) + C.esc(extra) + '</td></tr>';
+              badges += badge(letters[dd] || '');
+            }
+          });
+          strs += '<tr>' +
+            '<td style="white-space:nowrap">' + C.esc(w.key) + '</td>' +
+            '<td>' + (badges || '<span style="color:#94A3B8">—</span>') + '</td>' +
+            '<td class="num" style="background:' + C.esc(C.heat(w.pos, spMin, spMax, true)) + '">' +
+              (w.pos == null ? '—' : C.esc(w.pos.toFixed(1))) + '</td>' +
+            '<td class="num" style="background:' + C.esc(C.heat(s1Max + s1Min - (w.p1 == null ? s1Min : w.p1), s1Min, s1Max, true)) + '">' +
+              (w.p1 == null ? '—' : C.esc(C.fmtInt(w.p1))) + '</td>' +
+            '<td class="num" style="background:' + C.esc(C.heat(w.cann, scMin, scMax, true)) + '">' +
+              (w.cann == null ? '—' : C.esc(C.fmtInt(w.cann))) + '</td>' +
+            '</tr>';
+        });
+        html += '<div class="panel perf-tbl-panel"><div class="tbl-wrap"><table class="tbl">' +
+          '<thead><tr>' +
+          '<th>Week</th><th>Changes</th>' +
+          '<th class="num">Avg position (Semrush)</th><th class="num">Page-one kws</th><th class="num">Cannibalised</th>' +
+          '</tr></thead><tbody>' + strs + '</tbody></table></div></div>';
+      } else {
+        html += emptyGsc('Weekly chart and table');
+      }
     }
 
     /* ---------- full change list ---------- */
