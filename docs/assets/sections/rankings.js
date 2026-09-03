@@ -42,7 +42,19 @@
     '</style>';
 
   // module-local state: active ranking source
-  var activeSrc = 'semrush';
+  var activeSrc = null;   // resolved on first render: Search Console when
+                          // any GSC keyword data exists, else Semrush
+
+  function hasGscData(S) {
+    var snaps = (S.data && S.data.snaps) || [];
+    for (var i = snaps.length - 1; i >= 0; i--) {
+      var g = snaps[i] && snaps[i].gsckw;
+      if (g && Object.keys(g).length) return true;
+      var sg = snaps[i] && snaps[i].src && snaps[i].src.gsc;
+      if (sg && Object.keys(sg).length) return true;
+    }
+    return false;
+  }
 
   function shiftDaysIso(isoStr, n) {
     var dt = new Date(isoStr + 'T00:00:00Z');
@@ -260,6 +272,7 @@
     sub: 'Daily positions for the main Wegovy pill keywords, by ranking source.',
     order: 20,
     render: function (body, S) {
+      if (activeSrc == null) activeSrc = hasGscData(S) ? 'gsc' : 'semrush';
       var html = CSS + C.pills('rank-src', SOURCES, activeSrc);
       html += '<div class="rank-grid">';
       var kws = (S.product && S.product.mainKws) || MAIN_KWS;

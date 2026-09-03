@@ -98,14 +98,19 @@ jobs:
         run: |
           git config user.name "wegovy-sentinel"
           git config user.email "actions@users.noreply.github.com"
-          git add data/snapshots.json docs/snapshots.json \
-                  data/content.json docs/content.json \
-                  data/changelog.json docs/changelog.json \
-                  data/alerts_state.json \
-                  data/mounjaro_snapshots.json docs/mounjaro_snapshots.json \
-                  data/mounjaro_content.json docs/mounjaro_content.json \
-                  data/mounjaro_changelog.json docs/mounjaro_changelog.json \
-                  data/mounjaro_alerts_state.json \
-                  data/foundayo_snapshots.json docs/foundayo_snapshots.json || true
+          # One add per file: a single multi-path git add is all-or-nothing,
+          # so one missing file (e.g. an alerts state that has never been
+          # written) would silently unstage the entire patrol.
+          for f in data/snapshots.json docs/snapshots.json \
+                   data/content.json docs/content.json \
+                   data/changelog.json docs/changelog.json \
+                   data/alerts_state.json \
+                   data/mounjaro_snapshots.json docs/mounjaro_snapshots.json \
+                   data/mounjaro_content.json docs/mounjaro_content.json \
+                   data/mounjaro_changelog.json docs/mounjaro_changelog.json \
+                   data/mounjaro_alerts_state.json \
+                   data/foundayo_snapshots.json docs/foundayo_snapshots.json; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
           git diff --cached --quiet || git commit -m "patrol: $(date -u +%F)"
           git push
