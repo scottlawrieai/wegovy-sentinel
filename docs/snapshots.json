@@ -43280,7 +43280,8 @@
     "p": 44,
     "c": "pill",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
-    "n": 1
+    "n": 1,
+    "v": 5400
    },
    "wegovy pills": null,
    "buy wegovy pill": null,
@@ -43291,31 +43292,36 @@
     "p": 57,
     "c": "advice",
     "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/oral-glp-1-available-uk/",
-    "n": 1
+    "n": 1,
+    "v": 1300
    },
    "wegovy price": {
     "p": 10,
     "c": "injection",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
-    "n": 2
+    "n": 2,
+    "v": 18100
    },
    "wegovy price uk": {
     "p": 12,
     "c": "injection",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
-    "n": 2
+    "n": 2,
+    "v": 4400
    },
    "wegovy uk": {
     "p": 20,
     "c": "injection",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
-    "n": 2
+    "n": 2,
+    "v": 18100
    },
    "cheapest wegovy uk": {
     "p": 13,
     "c": "pill",
     "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
-    "n": 1
+    "n": 1,
+    "v": 3600
    },
    "buy wegovy": null,
    "buy wegovy uk": null,
@@ -43324,19 +43330,22 @@
     "p": 64,
     "c": "advice",
     "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/serious-side-effects-wegovy-pill/",
-    "n": 2
+    "n": 2,
+    "v": 27100
    },
    "wegovy vs mounjaro": {
     "p": 26,
     "c": "advice",
     "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-vs-mounjaro/",
-    "n": 3
+    "n": 3,
+    "v": 27100
    },
    "wegovy reviews": {
     "p": 10,
     "c": "advice",
     "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects/",
-    "n": 3
+    "n": 3,
+    "v": 5400
    }
   },
   "comp": {
@@ -43523,18 +43532,941 @@
      "p": 63,
      "u": "https://www.medexpress.co.uk/health-centre/is-wegovy-safe/"
     }
+   },
+   "Boots": {
+    "wegovy pill": {
+     "p": 19,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "wegovy pills": {
+     "p": 13,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "oral semaglutide": {
+     "p": 24,
+     "u": "https://onlinedoctor.boots.com/weight-loss/rybelsus"
+    },
+    "wegovy price": {
+     "p": 4,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "wegovy price uk": {
+     "p": 4,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "wegovy uk": {
+     "p": 4,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "cheapest wegovy uk": {
+     "p": 15,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "buy wegovy": {
+     "p": 5,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "buy wegovy online": {
+     "p": 3,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    }
    }
   },
+  "src": {
+   "gsc": {},
+   "awr": {
+    "buy wegovy pills": 16
+   }
+  },
+  "gsci": {
+   "pill_page": [
+    {
+     "q": "wegovy pill uk where to buy",
+     "pos": 7.94,
+     "clicks": 98,
+     "impr": 4768,
+     "ctr": 2.1
+    },
+    {
+     "q": "wegovy pill",
+     "pos": 7.21,
+     "clicks": 33,
+     "impr": 2035,
+     "ctr": 1.6
+    },
+    {
+     "q": "buy wegovy pill",
+     "pos": 7.04,
+     "clicks": 78,
+     "impr": 1047,
+     "ctr": 7.5
+    },
+    {
+     "q": "wegovy pill cost uk",
+     "pos": 7.67,
+     "clicks": 7,
+     "impr": 672,
+     "ctr": 1.0
+    },
+    {
+     "q": "wegovy tablets uk",
+     "pos": 14.27,
+     "clicks": 5,
+     "impr": 643,
+     "ctr": 0.8
+    },
+    {
+     "q": "wegovy pill uk price",
+     "pos": 7.17,
+     "clicks": 7,
+     "impr": 628,
+     "ctr": 1.1
+    },
+    {
+     "q": "buy wegovy pills",
+     "pos": 6.92,
+     "clicks": 78,
+     "impr": 598,
+     "ctr": 13.0
+    },
+    {
+     "q": "wegovy tablets price uk",
+     "pos": 5.62,
+     "clicks": 17,
+     "impr": 535,
+     "ctr": 3.2
+    },
+    {
+     "q": "wegovy tablets uk price",
+     "pos": 5.05,
+     "clicks": 25,
+     "impr": 459,
+     "ctr": 5.4
+    },
+    {
+     "q": "wegovy pill uk",
+     "pos": 18.06,
+     "clicks": 21,
+     "impr": 454,
+     "ctr": 4.6
+    },
+    {
+     "q": "wegovy pills",
+     "pos": 11.41,
+     "clicks": 15,
+     "impr": 443,
+     "ctr": 3.4
+    },
+    {
+     "q": "wegovy pill price uk",
+     "pos": 6.03,
+     "clicks": 6,
+     "impr": 403,
+     "ctr": 1.5
+    },
+    {
+     "q": "wegovy pill where to buy",
+     "pos": 8.61,
+     "clicks": 14,
+     "impr": 397,
+     "ctr": 3.5
+    },
+    {
+     "q": "wegovy pills uk",
+     "pos": 14.01,
+     "clicks": 9,
+     "impr": 386,
+     "ctr": 2.3
+    },
+    {
+     "q": "wegovy tablets",
+     "pos": 18.5,
+     "clicks": 6,
+     "impr": 373,
+     "ctr": 1.6
+    }
+   ],
+   "untracked": [
+    {
+     "q": "wegovy pill cost",
+     "clicks": 849,
+     "impr": 24616,
+     "pos": 5.1,
+     "ctr": 3.4
+    },
+    {
+     "q": "wegovy pill side effects",
+     "clicks": 144,
+     "impr": 8008,
+     "pos": 3.55,
+     "ctr": 1.8,
+     "exp": 7.0,
+     "lost": 416
+    },
+    {
+     "q": "wegovy pill cost uk",
+     "clicks": 455,
+     "impr": 5877,
+     "pos": 3.53,
+     "ctr": 7.7
+    },
+    {
+     "q": "wegovy pill vs injection",
+     "clicks": 363,
+     "impr": 5697,
+     "pos": 1.49,
+     "ctr": 6.4,
+     "exp": 15.0,
+     "lost": 489
+    },
+    {
+     "q": "wegovy pill uk where to buy",
+     "clicks": 98,
+     "impr": 4768,
+     "pos": 7.94,
+     "ctr": 2.1
+    },
+    {
+     "q": "wegovy pill price",
+     "clicks": 186,
+     "impr": 4298,
+     "pos": 5.19,
+     "ctr": 4.3
+    },
+    {
+     "q": "how much is the wegovy pill",
+     "clicks": 158,
+     "impr": 4174,
+     "pos": 3.91,
+     "ctr": 3.8
+    },
+    {
+     "q": "wegovy pill price uk",
+     "clicks": 219,
+     "impr": 3938,
+     "pos": 4.4,
+     "ctr": 5.6
+    },
+    {
+     "q": "wegovy pill uk price",
+     "clicks": 219,
+     "impr": 3351,
+     "pos": 4.12,
+     "ctr": 6.5
+    },
+    {
+     "q": "how much will the wegovy pill cost",
+     "clicks": 195,
+     "impr": 2534,
+     "pos": 3.01,
+     "ctr": 7.7
+    },
+    {
+     "q": "wegovy discount code",
+     "clicks": 27,
+     "impr": 666,
+     "pos": 2.83,
+     "ctr": 4.1,
+     "exp": 10.0,
+     "lost": 39
+    },
+    {
+     "q": "wegovy tablets uk",
+     "clicks": 5,
+     "impr": 643,
+     "pos": 14.27,
+     "ctr": 0.8
+    },
+    {
+     "q": "wegovy tablets uk price",
+     "clicks": 25,
+     "impr": 459,
+     "pos": 5.05,
+     "ctr": 5.4
+    },
+    {
+     "q": "wegovy pills uk",
+     "clicks": 9,
+     "impr": 386,
+     "pos": 14.01,
+     "ctr": 2.3
+    }
+   ],
+   "ctr_opps": [
+    {
+     "q": "wegovy pill",
+     "clicks": 190,
+     "impr": 16169,
+     "pos": 5.52,
+     "ctr": 1.2,
+     "exp": 3.5,
+     "lost": 371
+    },
+    {
+     "q": "wegovy side effects",
+     "clicks": 42,
+     "impr": 11701,
+     "pos": 7.11,
+     "ctr": 0.4,
+     "exp": 3.5,
+     "lost": 362
+    },
+    {
+     "q": "wegovy pill side effects",
+     "clicks": 144,
+     "impr": 8008,
+     "pos": 3.55,
+     "ctr": 1.8,
+     "exp": 7.0,
+     "lost": 416
+    },
+    {
+     "q": "wegovy pill vs injection",
+     "clicks": 363,
+     "impr": 5697,
+     "pos": 1.49,
+     "ctr": 6.4,
+     "exp": 15.0,
+     "lost": 489
+    },
+    {
+     "q": "wegovy price",
+     "clicks": 19,
+     "impr": 3821,
+     "pos": 9.19,
+     "ctr": 0.5,
+     "exp": 2.5,
+     "lost": 76
+    },
+    {
+     "q": "wegovy discount code",
+     "clicks": 27,
+     "impr": 666,
+     "pos": 2.83,
+     "ctr": 4.1,
+     "exp": 10.0,
+     "lost": 39
+    }
+   ],
+   "routing": [
+    {
+     "q": "wegovy pill cost",
+     "impr": 24616,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk/"
+    },
+    {
+     "q": "buy wegovy pill",
+     "impr": 1327,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
+    },
+    {
+     "q": "buy wegovy pills",
+     "impr": 785,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
+    }
+   ],
+   "striking": [
+    {
+     "q": "wegovy tablets uk",
+     "clicks": 5,
+     "impr": 643,
+     "pos": 14.27,
+     "ctr": 0.8
+    },
+    {
+     "q": "wegovy pills",
+     "clicks": 15,
+     "impr": 443,
+     "pos": 11.41,
+     "ctr": 3.4
+    },
+    {
+     "q": "wegovy pills uk",
+     "clicks": 9,
+     "impr": 386,
+     "pos": 14.01,
+     "ctr": 2.3
+    },
+    {
+     "q": "wegovy tablets",
+     "clicks": 6,
+     "impr": 373,
+     "pos": 18.5,
+     "ctr": 1.6
+    }
+   ],
+   "splits": [
+    {
+     "q": "wegovy pill cost",
+     "impr": 24616,
+     "n": 2,
+     "pill_pct": 0,
+     "pages": [
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
+       "impr": 18773,
+       "pos": 5.76
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
+       "impr": 5843,
+       "pos": 5.1
+      }
+     ]
+    },
+    {
+     "q": "wegovy pill",
+     "impr": 16169,
+     "n": 5,
+     "pill_pct": 13,
+     "pages": [
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill",
+       "impr": 7890,
+       "pos": 9.51
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/switching-wegovy-injection-to-pill",
+       "impr": 4433,
+       "pos": 11.65
+      },
+      {
+       "page": "/weight-loss/wegovy-pill",
+       "impr": 2035,
+       "pos": 7.21
+      },
+      {
+       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
+       "impr": 1165,
+       "pos": 13.68
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
+       "impr": 646,
+       "pos": 5.52
+      }
+     ]
+    },
+    {
+     "q": "wegovy pill uk",
+     "impr": 2825,
+     "n": 4,
+     "pill_pct": 16,
+     "pages": [
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
+       "impr": 1302,
+       "pos": 4.04
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill",
+       "impr": 740,
+       "pos": 8.1
+      },
+      {
+       "page": "/weight-loss/wegovy-pill",
+       "impr": 454,
+       "pos": 18.06
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
+       "impr": 329,
+       "pos": 12.57
+      }
+     ]
+    },
+    {
+     "q": "buy wegovy pill",
+     "impr": 1327,
+     "n": 2,
+     "pill_pct": 79,
+     "pages": [
+      {
+       "page": "/weight-loss/wegovy-pill",
+       "impr": 1047,
+       "pos": 7.04
+      },
+      {
+       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
+       "impr": 280,
+       "pos": 9.9
+      }
+     ]
+    },
+    {
+     "q": "buy wegovy pills",
+     "impr": 785,
+     "n": 2,
+     "pill_pct": 76,
+     "pages": [
+      {
+       "page": "/weight-loss/wegovy-pill",
+       "impr": 598,
+       "pos": 6.92
+      },
+      {
+       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
+       "impr": 187,
+       "pos": 9.47
+      }
+     ]
+    }
+   ],
+   "actions": [
+    "Consolidate \"wegovy pill cost\" -- 24,616 impressions split across 2 URLs (pill page gets 0%). Point internal links and intent at one URL: /health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk, /health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
+    "Consolidate \"wegovy pill\" -- 16,169 impressions split across 5 URLs (pill page gets 13%). Point internal links and intent at one URL: /health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill, /health-advice/weight-loss/wegovy-pill/switching-wegovy-injection-to-pill, /weight-loss/wegovy-pill",
+    "Rewrite title/meta for \"wegovy pill\" -- position 5.52 but CTR 1.2% vs ~3.5% expected: ~371 clicks/window being left on the table",
+    "Rewrite title/meta for \"wegovy side effects\" -- position 7.11 but CTR 0.4% vs ~3.5% expected: ~362 clicks/window being left on the table",
+    "Push \"wegovy tablets uk\" onto page one -- position 14.27 with 643 impressions waiting",
+    "Push \"wegovy pills\" onto page one -- position 11.41 with 443 impressions waiting"
+   ],
+   "rows": 33,
+   "queries": 23,
+   "as_of": "2026-07-08",
+   "seed": "pulled live via GSC API (Ryze); carried forward daily until GSC secrets are set"
+  },
+  "gscts": {},
+  "gsckw": {},
+  "ga4": {},
   "m": {
    "pill": 44,
    "bwInj": null,
-   "blD": 0,
-   "blT": 0
+   "blD": 19,
+   "blT": 42
   },
   "flags": {
    "wrong": true,
    "legacy": false,
    "cann": 6
+  },
+  "kwmeta": {
+   "wegovy pill": {
+    "v": 4400,
+    "feat": [
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy pills": {
+    "v": 1600,
+    "feat": [
+     9,
+     13,
+     21,
+     36,
+     52
+    ]
+   },
+   "buy wegovy pill": {
+    "v": 20,
+    "feat": []
+   },
+   "buy wegovy pills": {
+    "v": 70,
+    "feat": []
+   },
+   "wegovy pill uk": {
+    "v": 1000,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy tablets": {
+    "v": 1900,
+    "feat": [
+     9,
+     20,
+     21,
+     36,
+     52
+    ]
+   },
+   "oral semaglutide": {
+    "v": 1300,
+    "feat": [
+     9,
+     13,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy price": {
+    "v": 18100,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy price uk": {
+    "v": 4400,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy uk": {
+    "v": 18100,
+    "feat": [
+     14,
+     15,
+     21,
+     36,
+     52
+    ]
+   },
+   "cheapest wegovy uk": {
+    "v": 3600,
+    "feat": [
+     6,
+     21,
+     36,
+     52
+    ]
+   },
+   "buy wegovy": {
+    "v": 2400,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "buy wegovy uk": {
+    "v": 1000,
+    "feat": [
+     6,
+     9,
+     16,
+     21,
+     36
+    ]
+   },
+   "buy wegovy online": {
+    "v": 2900,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy side effects": {
+    "v": 27100,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy vs mounjaro": {
+    "v": 27100,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy reviews": {
+    "v": 5400,
+    "feat": [
+     6,
+     7,
+     9,
+     21,
+     36,
+     45,
+     52
+    ]
+   }
+  },
+  "tech": {
+   "checks": [
+    {
+     "name": "HTTP status",
+     "state": "pass",
+     "evidence": "200 OK, no redirect (https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/)"
+    },
+    {
+     "name": "Canonical tag",
+     "state": "pass",
+     "evidence": "self-referencing (https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/)"
+    },
+    {
+     "name": "Meta robots",
+     "state": "pass",
+     "evidence": "index,follow"
+    },
+    {
+     "name": "Structured data",
+     "state": "pass",
+     "evidence": "has FAQPage, MedicalWebPage, Product"
+    },
+    {
+     "name": "H1 count",
+     "state": "pass",
+     "evidence": "exactly one H1"
+    },
+    {
+     "name": "Internal links",
+     "state": "pass",
+     "evidence": "5 links from 2 hub page(s)"
+    }
+   ],
+   "score": 6,
+   "of": 6
+  },
+  "psi": {
+   "score": 56,
+   "lcp": "10.2 s",
+   "cls": "0",
+   "tbt": "220 ms",
+   "fcp": "4.8 s",
+   "si": "6.6 s",
+   "strategy": "mobile",
+   "field": {
+    "lcp_ms": 724,
+    "lcp_ms_cat": "FAST",
+    "inp_ms": 104,
+    "inp_ms_cat": "FAST",
+    "cls100": 0,
+    "cls100_cat": "FAST"
+   }
+  },
+  "links": {
+   "ours": 19,
+   "comp": {
+    "Superdrug": 41,
+    "Chemist4U": 18,
+    "FamilyChemist": 6,
+    "MedExpress": 13,
+    "Boots": 8
+   },
+   "prospects": [
+    {
+     "d": "comparewegovyprices.co.uk",
+     "n": 4,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "FamilyChemist",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r241.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r242.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r245.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r246.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r247.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r248.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r255.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r259.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "arparquets.it",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "baskidunyasi.net",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r257.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "findlina.com",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "healthcomparehub.com",
+     "n": 2,
+     "who": [
+      "Chemist4U",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "yahoo.com",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "benchchem.com",
+     "n": 1,
+     "who": [
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "cvspharmacie.com",
+     "n": 1,
+     "who": [
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "dailyrecord.co.uk",
+     "n": 1,
+     "who": [
+      "Chemist4U"
+     ]
+    },
+    {
+     "d": "flyingeze.com",
+     "n": 1,
+     "who": [
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "fusioncreations.co.uk",
+     "n": 1,
+     "who": [
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "kick-it-soccer.com",
+     "n": 1,
+     "who": [
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "mylondon.news",
+     "n": 1,
+     "who": [
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "nhdtlogs.com",
+     "n": 1,
+     "who": [
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "pepcred.com",
+     "n": 1,
+     "who": [
+      "Boots"
+     ]
+    },
+    {
+     "d": "personalweightloss.top",
+     "n": 1,
+     "who": [
+      "Superdrug"
+     ]
+    }
+   ],
+   "strong": 15
   }
  }
 ]

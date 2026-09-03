@@ -48,6 +48,21 @@
   "date": "2026-09-03",
   "changes": [
    {
+    "type": "structure",
+    "text": "Section added: “Wegovy pill reviews”",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "3 FAQs removed: “Switching from Mounjaro to the Wegovy pill” +2 more",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Body copy +161 words (7,180 → 7,341)",
+    "source": "auto"
+   },
+   {
     "type": "ux",
     "text": "Accordions now open by default — FAQ and section content visible without a click",
     "source": "manual"
