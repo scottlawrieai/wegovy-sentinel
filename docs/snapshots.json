@@ -45438,12 +45438,12 @@
    "of": 6
   },
   "psi": {
-   "score": 42,
-   "lcp": "9.1 s",
+   "score": 48,
+   "lcp": "7.9 s",
    "cls": "0",
-   "tbt": "940 ms",
-   "fcp": "3.5 s",
-   "si": "6.1 s",
+   "tbt": "1,090 ms",
+   "fcp": "2.5 s",
+   "si": "3.8 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 724,

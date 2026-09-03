@@ -1349,12 +1349,12 @@
     "authors": [],
     "bytes": 707,
     "psi": {
-     "score": 51,
-     "lcp": "10.6 s",
-     "cls": "0",
-     "tbt": "380 ms",
-     "fcp": "4.6 s",
-     "si": "6.7 s",
+     "score": 65,
+     "lcp": "8.0 s",
+     "cls": "0.098",
+     "tbt": "110 ms",
+     "fcp": "2.6 s",
+     "si": "4.8 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1197,
@@ -1432,7 +1432,24 @@
     "authors": [
      "NHS England"
     ],
-    "bytes": 43
+    "bytes": 43,
+    "psi": {
+     "score": 34,
+     "lcp": "14.7 s",
+     "cls": "0.518",
+     "tbt": "110 ms",
+     "fcp": "9.5 s",
+     "si": "9.5 s",
+     "strategy": "mobile",
+     "field": {
+      "lcp_ms": 1732,
+      "lcp_ms_cat": "FAST",
+      "inp_ms": 72,
+      "inp_ms_cat": "FAST",
+      "cls100": 57,
+      "cls100_cat": "SLOW"
+     }
+    }
    },
    {
     "url": "https://onlinedoctor.asda.com/uk/mounjaro.html",
@@ -1588,14 +1605,14 @@
      "CollegeOrUniversity"
     ],
     "authors": [],
-    "bytes": 319,
+    "bytes": 322,
     "psi": {
      "score": 73,
      "lcp": "6.5 s",
-     "cls": "0.026",
-     "tbt": "0 ms",
+     "cls": "0.003",
+     "tbt": "60 ms",
      "fcp": "2.4 s",
-     "si": "3.6 s",
+     "si": "3.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1022,

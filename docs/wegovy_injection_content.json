@@ -312,14 +312,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 659,
+    "bytes": 660,
     "psi": {
-     "score": 95,
-     "lcp": "2.4 s",
-     "cls": "0.002",
-     "tbt": "180 ms",
-     "fcp": "0.8 s",
-     "si": "1.2 s",
+     "score": 65,
+     "lcp": "12.0 s",
+     "cls": "0.014",
+     "tbt": "160 ms",
+     "fcp": "2.6 s",
+     "si": "5.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1090,
@@ -436,12 +436,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 38,
-     "lcp": "15.2 s",
+     "score": 42,
+     "lcp": "15.9 s",
      "cls": "0",
-     "tbt": "820 ms",
+     "tbt": "590 ms",
      "fcp": "5.6 s",
-     "si": "8.4 s",
+     "si": "8.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4191,
@@ -542,7 +542,24 @@
     },
     "schema": [],
     "authors": [],
-    "bytes": 127
+    "bytes": 127,
+    "psi": {
+     "score": 46,
+     "lcp": "9.2 s",
+     "cls": "0",
+     "tbt": "790 ms",
+     "fcp": "3.6 s",
+     "si": "5.1 s",
+     "strategy": "mobile",
+     "field": {
+      "lcp_ms": 713,
+      "lcp_ms_cat": "FAST",
+      "inp_ms": 129,
+      "inp_ms_cat": "FAST",
+      "cls100": 0,
+      "cls100_cat": "FAST"
+     }
+    }
    },
    {
     "url": "https://www.nhs.uk/medicines/semaglutide/",
@@ -788,7 +805,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 332
+    "bytes": 336
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -1060,11 +1077,11 @@
    "term_gaps": [],
    "entity_gaps": [
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     },
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     }
    ],
@@ -1093,7 +1110,7 @@
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
    "Strengthen body depth (words) for a primary term (3943 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: STEP trials, Rybelsus",
+   "Add missing entities competitors cover: Rybelsus, STEP trials",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],
   "fetched": 7,

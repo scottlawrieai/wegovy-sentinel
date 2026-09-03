@@ -557,12 +557,12 @@
    "of": 6
   },
   "psi": {
-   "score": 47,
-   "lcp": "8.8 s",
+   "score": 68,
+   "lcp": "3.4 s",
    "cls": "0",
-   "tbt": "710 ms",
-   "fcp": "3.3 s",
-   "si": "5.4 s",
+   "tbt": "890 ms",
+   "fcp": "2.3 s",
+   "si": "2.9 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 573,
