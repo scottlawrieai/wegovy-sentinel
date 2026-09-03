@@ -61,21 +61,6 @@
     "type": "content",
     "text": "Body copy +163 words (7,180 → 7,343)",
     "source": "auto"
-   },
-   {
-    "type": "ux",
-    "text": "Accordions now open by default — FAQ and section content visible without a click",
-    "source": "manual"
-   },
-   {
-    "type": "eeat",
-    "text": "Sources added to bottom of page — citations now visible for YMYL trust signals",
-    "source": "manual"
-   },
-   {
-    "type": "structure",
-    "text": "Reviews and team sections moved below the main content",
-    "source": "manual"
    }
   ]
  }
