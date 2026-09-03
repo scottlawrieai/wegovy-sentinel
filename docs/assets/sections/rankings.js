@@ -272,10 +272,23 @@
     sub: 'Daily positions for the main Wegovy pill keywords, by ranking source.',
     order: 20,
     render: function (body, S) {
-      if (activeSrc == null) activeSrc = hasGscData(S) ? 'gsc' : 'semrush';
+      if (activeSrc == null) activeSrc = 'gsc';
       var html = CSS + C.pills('rank-src', SOURCES, activeSrc);
       html += '<div class="rank-grid">';
-      var kws = (S.product && S.product.mainKws) || MAIN_KWS;
+      var kws = ((S.product && S.product.mainKws) || MAIN_KWS).slice();
+      // order the keyword cards by UK search volume, highest first
+      var volOf = {};
+      (function () {
+        var snaps = S.data.snaps || [];
+        for (var i = snaps.length - 1; i >= 0; i--) {
+          var km = snaps[i] && snaps[i].kwmeta;
+          if (km && Object.keys(km).length) { 
+            Object.keys(km).forEach(function (k) { volOf[k] = (km[k] || {}).v || 0; });
+            break;
+          }
+        }
+      })();
+      kws.sort(function (a, b) { return (volOf[b] || 0) - (volOf[a] || 0); });
       kws.forEach(function (kw) {
         html += kwCard(S, kw);
       });

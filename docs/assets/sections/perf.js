@@ -99,6 +99,61 @@
     return Object.keys((s && s.best) || {}).length;
   }
 
+  // Monthly organic revenue block for the product page (GA4 purchaseRevenue,
+  // Organic Search channel). Sits at the top of the section; honest empty
+  // state until GA4 credentials are configured.
+  var REV_STYLE = '<style>' +
+    '#sec-perf .eyebrow-sm{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#5B6B83}' +
+    '#sec-perf .rev-bar-wrap{position:relative;background:#F1F3F4;border-radius:4px;height:20px;overflow:hidden}' +
+    '#sec-perf .rev-bar{position:absolute;left:0;top:0;bottom:0;background:#BBDDC9;border-radius:4px}' +
+    '#sec-perf .rev-val{position:relative;z-index:1;font-size:11.5px;font-weight:700;line-height:20px;padding-left:8px;display:block;text-align:left}' +
+    '</style>';
+
+  function revenuePanel(S, snaps) {
+    var rev = null;
+    for (var i = (snaps || []).length - 1; i >= 0; i--) {
+      var g = snaps[i] && snaps[i].ga4rev;
+      if (g && (g.months || []).length) { rev = g; break; }
+    }
+    var label = C.esc(((S.product || {}).label || 'product') + ' page');
+    if (!rev) {
+      return REV_STYLE + '<div class="panel" style="margin-bottom:14px"><div class="empty">' +
+        'Organic revenue by month for the ' + label + ' appears once GA4 is connected — ' +
+        'add the <code>GA4_PROPERTY_ID</code> variable and <code>GA4_REFRESH_TOKEN</code> secret, then wait for the next patrol.' +
+        '</div></div>';
+    }
+    var months = rev.months.slice(-12);
+    var maxRev = Math.max.apply(null, months.map(function (m) { return m.revenue; }).concat([1]));
+    var last = months[months.length - 1] || {};
+    var prev = months.length > 1 ? months[months.length - 2] : null;
+    var delta = prev ? last.revenue - prev.revenue : null;
+    function fmtGBP(v) { return '£' + Math.round(v).toLocaleString(); }
+    var rows = months.slice().reverse().map(function (m) {
+      var pct = Math.max(2, m.revenue / maxRev * 100);
+      return '<tr>' +
+        '<td style="white-space:nowrap">' + C.esc(m.m) + '</td>' +
+        '<td class="num" style="min-width:220px"><div class="rev-bar-wrap">' +
+          '<div class="rev-bar" style="width:' + pct.toFixed(1) + '%"></div>' +
+          '<span class="rev-val">' + C.esc(fmtGBP(m.revenue)) + '</span></div></td>' +
+        '<td class="num">' + C.esc(C.fmtInt(m.sessions)) + '</td>' +
+        '</tr>';
+    }).join('');
+    return REV_STYLE + '<div class="panel" style="margin-bottom:14px">' +
+      '<div style="display:flex;flex-wrap:wrap;gap:24px;align-items:baseline;margin-bottom:8px">' +
+        '<div><div class="eyebrow-sm">Organic revenue — ' + label + '</div>' +
+        '<div style="font-size:28px;font-weight:800">' + C.esc(fmtGBP(last.revenue || 0)) +
+        '<span style="font-size:12px;font-weight:600;color:#5B6B83"> ' + C.esc(last.m || '') + '</span></div></div>' +
+        (delta == null ? '' :
+          '<div class="' + (delta >= 0 ? 'delta-pos' : 'delta-neg') + '" style="font-size:13px;font-weight:700">' +
+          (delta >= 0 ? '▲ ' : '▼ ') + C.esc(fmtGBP(Math.abs(delta))) + ' vs prior month</div>') +
+      '</div>' +
+      '<div class="tbl-wrap"><table class="tbl">' +
+      '<thead><tr><th>Month</th><th class="num">Organic revenue</th><th class="num">Organic sessions</th></tr></thead>' +
+      '<tbody>' + rows + '</tbody></table></div>' +
+      '<div class="perf-chart-note">GA4 purchase revenue, Organic Search channel, landing on the ' + label +
+      ' · amounts in the GA4 property currency' + (rev.as_of ? ' · data to ' + C.esc(rev.as_of) : '') + '</div></div>';
+  }
+
   // {weekKey: {sessions, events}} for the pill page, or null when GA4 absent
   function ga4Weekly(snaps, state) {
     var rows = null;
@@ -178,7 +233,7 @@
       .filter(function (d) { return d && d >= state.from && d <= state.to; });
     var letters = C.letters(changelog, inRangeDates);
 
-    var html = STYLE;
+    var html = STYLE + revenuePanel(S, snaps);
 
     /* ---------- KPI row ---------- */
 

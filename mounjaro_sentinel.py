@@ -262,7 +262,12 @@ def fetch_extra_sources() -> dict:
     pill-page specific (v1)."""
     import rank_sources
     kws = [kw for kw, _, _ in TRACKED]
-    src = {"gsc": {}, "awr": {}, "gscts": {}, "gsckw": {}, "ga4": {}}
+    src = {"gsc": {}, "awr": {}, "gscts": {}, "gsckw": {}, "ga4": {},
+           "ga4rev": {}}
+    try:
+        src["ga4rev"] = rank_sources.fetch_ga4_revenue(page_url=PRODUCT_PAGE)
+    except Exception as e:
+        print(f"[warn] GA4 revenue unavailable: {e}", file=sys.stderr)
     try:
         src["ga4"] = rank_sources.fetch_ga4(page_url=PRODUCT_PAGE)
     except Exception as e:
@@ -321,6 +326,7 @@ def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
         "gscts": src.get("gscts", {}),
         "gsckw": src.get("gsckw", {}),
         "ga4": src.get("ga4", {}),
+        "ga4rev": src.get("ga4rev", {}),
         "m": {
             "pill": hero_pos,           # hero "mounjaro" position
             "bwInj": None,              # no injection/product split for mounjaro
@@ -571,6 +577,12 @@ def main():
                 g = prev_s.get("ga4")
                 if g:
                     snap["ga4"] = g
+                    break
+        if not snap.get("ga4rev"):
+            for prev_s in reversed(snaps):
+                g = prev_s.get("ga4rev")
+                if g:
+                    snap["ga4rev"] = g
                     break
         if not snap.get("src", {}).get("gsc"):
             for prev_s in reversed(snaps):

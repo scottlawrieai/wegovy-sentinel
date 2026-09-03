@@ -318,6 +318,59 @@ def fetch_ga4(page_url: str = PILL_PAGE) -> dict:
     return {"page": rows, "as_of": end.isoformat()} if rows else {}
 
 
+def fetch_ga4_revenue(page_url: str = PILL_PAGE) -> dict:
+    """Monthly ORGANIC revenue + sessions for a landing page, last 12 months.
+
+    One GA4 runReport dimensioned by yearMonth, filtered to the landing page
+    AND sessionDefaultChannelGroup == "Organic Search", metrics
+    purchaseRevenue + sessions. Amounts are in the GA4 property's currency.
+    Returns {months: [{m: "YYYY-MM", revenue, sessions}], as_of} or {}.
+    """
+    prop = os.environ.get("GA4_PROPERTY_ID", "")
+    token = _ga4_access_token() if prop else ""
+    if not (prop and token):
+        return {}
+    end = _today_uk() - timedelta(days=1)
+    start = end - timedelta(days=365)
+    path = urllib.parse.urlparse(page_url).path
+    body = {
+        "dateRanges": [{"startDate": start.isoformat(), "endDate": end.isoformat()}],
+        "dimensions": [{"name": "yearMonth"}],
+        "metrics": [{"name": "purchaseRevenue"}, {"name": "sessions"}],
+        "dimensionFilter": {"andGroup": {"expressions": [
+            {"filter": {"fieldName": "landingPagePlusQueryString",
+                        "stringFilter": {"matchType": "BEGINS_WITH", "value": path}}},
+            {"filter": {"fieldName": "sessionDefaultChannelGroup",
+                        "stringFilter": {"matchType": "EXACT",
+                                         "value": "Organic Search"}}},
+        ]}},
+        "limit": 1000,
+    }
+    req = urllib.request.Request(
+        f"https://analyticsdata.googleapis.com/v1beta/properties/{prop}:runReport",
+        data=json.dumps(body).encode(),
+        headers={"Authorization": f"Bearer {token}",
+                 "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=45) as r:
+        payload = json.loads(r.read().decode("utf-8", "replace"))
+    months = []
+    for row in payload.get("rows", []):
+        ym = (row.get("dimensionValues") or [{}])[0].get("value", "")
+        if len(ym) != 6:
+            continue
+        m = row.get("metricValues") or []
+        try:
+            months.append({
+                "m": f"{ym[:4]}-{ym[4:]}",
+                "revenue": round(float(m[0]["value"]), 2) if len(m) > 0 else 0,
+                "sessions": int(float(m[1]["value"])) if len(m) > 1 else 0,
+            })
+        except (KeyError, ValueError, IndexError):
+            continue
+    months.sort(key=lambda r: r["m"])
+    return {"months": months, "as_of": end.isoformat()} if months else {}
+
+
 # what a title at position P should roughly earn; used to flag under-clicking pages
 _EXPECTED_CTR = ((1, 28.0), (2, 15.0), (3, 10.0), (4, 7.0), (5, 5.0),
                  (8, 3.5), (10, 2.5), (20, 1.0), (100, 0.4))

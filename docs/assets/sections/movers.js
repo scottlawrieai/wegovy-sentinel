@@ -158,9 +158,12 @@
     }).filter(function (r) { return r.now != null || r.was != null || r.bestC; });
 
     rows.sort(function (a, b) {
+      var va = a.vol == null ? -1 : a.vol;
+      var vb = b.vol == null ? -1 : b.vol;
+      if (vb !== va) return vb - va;                 // volume, highest first
       var da = a.delta == null ? -1 : Math.abs(a.delta);
       var db = b.delta == null ? -1 : Math.abs(b.delta);
-      if (db !== da) return db - da;
+      if (db !== da) return db - da;                 // then biggest move
       return (a.now == null ? 999 : a.now) - (b.now == null ? 999 : b.now);
     });
 

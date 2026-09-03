@@ -230,11 +230,16 @@ def fetch_extra_sources() -> dict:
     """Pull GSC + AWR rankings (optional, credential-gated). Never fatal."""
     import rank_sources
     kws = [kw for kw, _, _ in TRACKED]
-    src = {"gsc": {}, "awr": {}, "gsci": {}, "gscts": {}, "gsckw": {}, "ga4": {}}
+    src = {"gsc": {}, "awr": {}, "gsci": {}, "gscts": {}, "gsckw": {},
+           "ga4": {}, "ga4rev": {}}
     try:
         src["ga4"] = rank_sources.fetch_ga4()
     except Exception as e:
         print(f"[warn] GA4 unavailable: {e}", file=sys.stderr)
+    try:
+        src["ga4rev"] = rank_sources.fetch_ga4_revenue()
+    except Exception as e:
+        print(f"[warn] GA4 revenue unavailable: {e}", file=sys.stderr)
     try:
         src["gscts"] = rank_sources.fetch_gsc_timeseries()
     except Exception as e:
@@ -296,6 +301,7 @@ def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
         "gscts": src.get("gscts", {}),
         "gsckw": src.get("gsckw", {}),
         "ga4": src.get("ga4", {}),
+        "ga4rev": src.get("ga4rev", {}),
         "m": {
             "pill": pill_pos,
             "bwInj": min(bw_inj) if bw_inj else None,
@@ -613,6 +619,12 @@ def main():
                 g = prev_s.get("ga4")
                 if g:
                     snap["ga4"] = g
+                    break
+        if not snap.get("ga4rev"):
+            for prev_s in reversed(snaps):
+                g = prev_s.get("ga4rev")
+                if g:
+                    snap["ga4rev"] = g
                     break
         if not snap.get("src", {}).get("gsc"):
             for prev_s in reversed(snaps):
