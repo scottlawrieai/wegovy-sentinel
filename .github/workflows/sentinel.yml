@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 6 * * *"
   workflow_dispatch: {}
+  push:
+    paths:
+      - ".github/trigger-patrol"   # touch this file to run a patrol on demand
 
 permissions:
   contents: write
