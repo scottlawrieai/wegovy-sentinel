@@ -81,6 +81,7 @@
   .cl-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #F1F3F4;font-size:12.5px}
   .cl-item:last-child{border-bottom:none}
   .cl-date{flex:0 0 92px;font-family:ui-monospace,Menlo,monospace;color:var(--slate);font-size:11px}
+  .cl-badge{display:inline-flex;width:20px;height:20px;border-radius:50%;color:#fff;font-size:11px;font-weight:700;align-items:center;justify-content:center}
   .cl-type{font-size:9px;font-weight:700;letter-spacing:.06em;padding:2px 6px;border-radius:8px;text-transform:uppercase;color:#fff;flex:0 0 auto;align-self:flex-start}
 </style>
 </head>
@@ -181,7 +182,7 @@ function buildSeries(cur,snaps){
 }
 
 function perfChart(rows,marks){
-  const W=1000,H=260,L=48,R=16,T=16,B=28;
+  const W=1000,H=272,L=48,R=16,T=16,B=40;
   if(rows.length<2)
     return `<div style="height:${H}px;display:flex;align-items:center;justify-content:center;color:#5F6368;font-size:12px">Not enough data yet — the chart needs at least two days.</div>`;
   const iw=W-L-R, ih=H-T-B;
@@ -228,22 +229,22 @@ function perfChart(rows,marks){
     return `<polyline fill="none" stroke="${METRICS[k].c}" stroke-width="2" stroke-linejoin="round" points="${pts.join(" ")}"/>`;
   }).join("");
 
-  // changelog markers, positioned on the matching date
+  // changelog markers: lettered annotation badges on the matching dates,
+  // matching the letters in the change list under the chart. Badges whose
+  // dates sit too close together stack upward so nothing overlaps.
   const idxOf={}; rows.forEach((r,i)=>{idxOf[r.d]=i;});
-  let lastLabelX=-999;
-  const mk=marks.filter(m=>idxOf[m.date]!=null).map(m=>{
+  let lastX=-999, lift=0;
+  const mk=marks.filter(m=>idxOf[m.date]!=null).map((m,mi)=>{
     const i=idxOf[m.date], xx=+x(i).toFixed(1);
     const col=CL_COLOR[(m.changes[0]||{}).type]||"#5F6368";
-    // Only label a marker that clears the previous one, so clustered release
-    // dates stay readable. Every marker keeps its full hover target.
-    const label=(xx-lastLabelX)>=32;
-    if(label) lastLabelX=xx;
+    const letter=String.fromCharCode(65+mi%26);
+    lift=(xx-lastX)<24?lift+22:0; lastX=xx;
+    const cy=T+ih+12-lift;
     return `<g class="mk-g" data-date="${esc(m.date)}" style="cursor:pointer">
-      <line x1="${xx}" x2="${xx}" y1="${T}" y2="${T+ih}" stroke="${col}" stroke-width="1.5" stroke-dasharray="4 3" opacity=".7"/>
-      ${label?`<rect x="${xx-14}" y="${T+ih+4}" width="28" height="14" rx="3" fill="${col}"/>
-      <text x="${xx}" y="${T+ih+14}" fill="#fff" font-size="9" text-anchor="middle">${esc(m.date.slice(5))}</text>`
-      :`<circle cx="${xx}" cy="${T+ih+11}" r="3.5" fill="${col}"/>`}
-      <rect x="${xx-8}" y="${T}" width="16" height="${ih}" fill="transparent"/>
+      <line x1="${xx}" x2="${xx}" y1="${T}" y2="${T+ih}" stroke="${col}" stroke-width="1.5" stroke-dasharray="4 3" opacity=".65"/>
+      <circle cx="${xx}" cy="${cy}" r="9" fill="${col}"/>
+      <text x="${xx}" y="${cy+3.5}" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">${letter}</text>
+      <rect x="${xx-9}" y="${T}" width="18" height="${ih+24}" fill="transparent"/>
     </g>`;
   }).join("");
 
@@ -282,27 +283,40 @@ function perfSection(cur,snaps){
 
   return `
   <div class="section-hd"><h2>Search performance</h2>
-    <span class="eyebrow">${note} &middot; dashed markers are logged changes</span></div>
+    <span class="eyebrow">${note} &middot; lettered badges mark logged changes, listed below the chart</span></div>
   <div class="perf">
     <div class="tiles">${tiles}</div>
     <div class="chartwrap" id="chartwrap">${perfChart(s.rows,CHANGES)}<div class="mk-tip" id="mkTip"></div></div>
+    ${annotationList(s.rows)}
   </div>`;
 }
 
-function changelogSection(){
+// The change list under the chart. Letters match the chart badges; entries
+// whose dates fall outside the plotted window get a neutral dot instead.
+function annotationList(rows){
   if(!CHANGES.length)return"";
-  const items=CHANGES.slice().reverse().slice(0,14).map(e=>
-    e.changes.map((c,i)=>`<div class="cl-item">
+  const have=new Set(rows.map(r=>r.d));
+  const letterOf={};
+  CHANGES.filter(e=>have.has(e.date)).forEach((e,i)=>{
+    letterOf[e.date]=String.fromCharCode(65+i%26);
+  });
+  const items=CHANGES.slice().reverse().slice(0,20).map(e=>{
+    const L=letterOf[e.date];
+    const col=CL_COLOR[(e.changes[0]||{}).type]||"#5F6368";
+    const badge=L?`<span class="cl-badge" style="background:${col}">${L}</span>`
+                 :`<span class="cl-badge" style="background:#F1F3F4;color:#5F6368">&middot;</span>`;
+    return e.changes.map((c,i)=>`<div class="cl-item">
+      <div style="flex:0 0 26px">${i===0?badge:""}</div>
       <div class="cl-date">${i===0?esc(e.date):""}</div>
       <span class="cl-type" style="background:${CL_COLOR[c.type]||"#5F6368"}">${esc(c.type||"change")}</span>
-      <div style="flex:1">${esc(c.text)}${c.source==="manual"?'<span style="color:#5F6368;font-size:10px"> · logged</span>':'<span style="color:#5F6368;font-size:10px"> · detected</span>'}</div>
-    </div>`).join("")).join("");
-  return `
-  <div class="tbl" style="padding-bottom:8px">
-    <div class="hd"><span class="eyebrow">Changelog &mdash; what shipped, newest first</span>
-      <span style="font-size:11px;color:#5F6368">auto-detected from the daily crawl + logged entries</span></div>
-    <div style="padding:4px 16px">${items}</div>
-  </div>`;
+      <div style="flex:1">${esc(c.text)}<span style="color:#5F6368;font-size:10px"> · ${c.source==="manual"?"logged":"detected"}</span></div>
+    </div>`).join("");
+  }).join("");
+  return `<div style="border-top:1px solid var(--line);padding:4px 18px 10px">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:8px 0 4px">
+      <span class="eyebrow">Changes &mdash; newest first</span>
+      <span style="font-size:11px;color:#5F6368">auto-detected from the daily crawl + logged entries</span>
+    </div>${items}</div>`;
 }
 
 // tile toggles + marker tooltips, rebound after every render
@@ -495,7 +509,6 @@ function render(snaps){
 
   app.innerHTML=`${banner}
   ${perfSection(cur,snaps)}
-  ${changelogSection()}
   <div class="grid">
     <div class="card alt-wrap">
       <div class="eyebrow" style="color:#E8710A">"wegovy pill" -- altitude</div>
