@@ -16,6 +16,7 @@
     <span class="mode-badge" id="mode-badge" hidden></span>
     <div class="pills" data-pill-group="product" id="product-pills" style="margin-left:14px">
       <button type="button" class="pill active" data-value="wegovy">Wegovy pill</button>
+      <button type="button" class="pill" data-value="injection">Wegovy injection</button>
       <button type="button" class="pill" data-value="mounjaro">Mounjaro</button>
     </div>
   </div>
@@ -61,6 +62,17 @@
       title: 'Wegovy pill — search performance',
       sub: 'Daily rank patrol, Search Console trends and on-page change tracking for the Wegovy pill cluster.',
       files: { snaps: './snapshots.json', changelog: './changelog.json', content: './content.json' }
+    },
+    injection: {
+      key: 'injection', label: 'Wegovy injection', pageLabel: 'Injection page',
+      hero: 'wegovy',
+      mainKws: ['wegovy', 'wegovy uk', 'buy wegovy',
+                'wegovy price', 'wegovy injection', 'wegovy pen'],
+      title: 'Wegovy injection — search performance',
+      sub: 'Daily rank patrol, Search Console trends and on-page change tracking for the Wegovy injection cluster.',
+      files: { snaps: './wegovy_injection_snapshots.json',
+               changelog: './wegovy_injection_changelog.json',
+               content: './wegovy_injection_content.json' }
     },
     mounjaro: {
       key: 'mounjaro', label: 'Mounjaro', pageLabel: 'Mounjaro page',

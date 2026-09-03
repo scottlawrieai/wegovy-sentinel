@@ -37,6 +37,12 @@ PRODUCTS = {
         "data": os.path.join(HERE, "data", "mounjaro_changelog.json"),
         "docs": os.path.join(HERE, "docs", "mounjaro_changelog.json"),
     },
+    "wegovy-injection": {
+        "content": os.path.join(HERE, "docs", "wegovy_injection_content.json"),
+        "manual": os.path.join(HERE, "data", "wegovy_injection_changelog_manual.json"),
+        "data": os.path.join(HERE, "data", "wegovy_injection_changelog.json"),
+        "docs": os.path.join(HERE, "docs", "wegovy_injection_changelog.json"),
+    },
 }
 
 

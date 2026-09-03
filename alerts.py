@@ -42,6 +42,12 @@ PRODUCTS = {
         "module": "mounjaro_sentinel",
         "title": "Sentinel alerts (Mounjaro)",
     },
+    "wegovy-injection": {
+        "snaps": os.path.join(HERE, "docs", "wegovy_injection_snapshots.json"),
+        "state": os.path.join(HERE, "data", "wegovy_injection_alerts_state.json"),
+        "module": "wegovy_injection_sentinel",
+        "title": "Sentinel alerts (Wegovy injection)",
+    },
 }
 
 DROP_THRESHOLD = 5
