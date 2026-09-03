@@ -150,4 +150,12 @@ jobs:
             if [ -e "$f" ]; then git add "$f"; fi
           done
           git diff --cached --quiet || git commit -m "patrol: $(date -u +%F)"
-          git push
+          # The run takes minutes; main may have moved since checkout. Rebase
+          # our single data commit and retry -- '-X theirs' keeps this run's
+          # freshly generated files if the same data files changed upstream.
+          n=0
+          until git push; do
+            n=$((n+1))
+            if [ "$n" -ge 3 ]; then echo "push failed after $n attempts"; exit 1; fi
+            git pull --rebase -X theirs origin main
+          done
