@@ -235,6 +235,83 @@ def fetch_gsc_keyword_series(keywords) -> dict:
     return out
 
 
+# --------------------------------------------------------------------------
+# Google Analytics 4 -- sessions + key events for the pill page
+# --------------------------------------------------------------------------
+def _ga4_access_token() -> str:
+    """OAuth refresh-token exchange, same stdlib pattern as GSC.
+
+    Uses GA4_CLIENT_ID/SECRET/REFRESH_TOKEN when set, falling back to the GSC
+    client for teams that minted one token with both scopes
+    (webmasters.readonly + analytics.readonly).
+    """
+    cid = os.environ.get("GA4_CLIENT_ID") or os.environ.get("GSC_CLIENT_ID", "")
+    csec = os.environ.get("GA4_CLIENT_SECRET") or os.environ.get("GSC_CLIENT_SECRET", "")
+    rt = os.environ.get("GA4_REFRESH_TOKEN", "")
+    if not (cid and csec and rt):
+        return ""
+    data = urllib.parse.urlencode({
+        "client_id": cid, "client_secret": csec,
+        "refresh_token": rt, "grant_type": "refresh_token",
+    }).encode()
+    req = urllib.request.Request(
+        "https://oauth2.googleapis.com/token", data=data,
+        headers={"Content-Type": "application/x-www-form-urlencoded"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read().decode("utf-8", "replace")).get("access_token", "")
+
+
+def fetch_ga4() -> dict:
+    """Daily sessions + key events for the pill page landing path.
+
+    Env: GA4_PROPERTY_ID (numeric, required) and GA4_REFRESH_TOKEN (scope
+    analytics.readonly). Window follows GSC_TS_DAYS (default 90).
+    Returns {page: [{d, sessions, events}], as_of} or {} when unconfigured.
+    """
+    prop = os.environ.get("GA4_PROPERTY_ID", "")
+    token = _ga4_access_token() if prop else ""
+    if not (prop and token):
+        return {}
+    try:
+        days = int(os.environ.get("GSC_TS_DAYS", "90") or 90)
+    except ValueError:
+        days = 90
+    end = _today_uk() - timedelta(days=1)
+    start = end - timedelta(days=days)
+    path = urllib.parse.urlparse(PILL_PAGE).path
+    body = {
+        "dateRanges": [{"startDate": start.isoformat(), "endDate": end.isoformat()}],
+        "dimensions": [{"name": "date"}],
+        "metrics": [{"name": "sessions"}, {"name": "keyEvents"}],
+        "dimensionFilter": {"filter": {
+            "fieldName": "landingPagePlusQueryString",
+            "stringFilter": {"matchType": "BEGINS_WITH", "value": path},
+        }},
+        "limit": 100000,
+    }
+    req = urllib.request.Request(
+        f"https://analyticsdata.googleapis.com/v1beta/properties/{prop}:runReport",
+        data=json.dumps(body).encode(),
+        headers={"Authorization": f"Bearer {token}",
+                 "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=45) as r:
+        payload = json.loads(r.read().decode("utf-8", "replace"))
+    rows = []
+    for row in payload.get("rows", []):
+        d = (row.get("dimensionValues") or [{}])[0].get("value", "")
+        if len(d) == 8:                              # GA4 dates come as YYYYMMDD
+            d = f"{d[:4]}-{d[4:6]}-{d[6:]}"
+        m = row.get("metricValues") or []
+        try:
+            rows.append({"d": d,
+                         "sessions": int(float(m[0]["value"])) if len(m) > 0 else 0,
+                         "events": int(float(m[1]["value"])) if len(m) > 1 else 0})
+        except (KeyError, ValueError, IndexError):
+            continue
+    rows.sort(key=lambda r: r["d"])
+    return {"page": rows, "as_of": end.isoformat()} if rows else {}
+
+
 # what a title at position P should roughly earn; used to flag under-clicking pages
 _EXPECTED_CTR = ((1, 28.0), (2, 15.0), (3, 10.0), (4, 7.0), (5, 5.0),
                  (8, 3.5), (10, 2.5), (20, 1.0), (100, 0.4))

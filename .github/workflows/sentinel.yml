@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   patrol:
@@ -33,7 +34,18 @@ jobs:
           AWR_PROJECT: ${{ vars.AWR_PROJECT }}
           AWR_GEO: ${{ vars.AWR_GEO }}
           AWR_DEVICE: ${{ vars.AWR_DEVICE }}
+          # Google Analytics 4 (optional -- sessions/key events for the pill page)
+          GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+          GA4_REFRESH_TOKEN: ${{ secrets.GA4_REFRESH_TOKEN }}
+          GA4_CLIENT_ID: ${{ secrets.GA4_CLIENT_ID }}
+          GA4_CLIENT_SECRET: ${{ secrets.GA4_CLIENT_SECRET }}
         run: python sentinel.py
+
+      - name: Raise alerts (GitHub issue on drops / overtakes)
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python alerts.py
 
       - name: Update changelog (structural diff crawl)
         if: always()
@@ -53,6 +65,7 @@ jobs:
           git add data/snapshots.json docs/snapshots.json \
                   data/content.json docs/content.json \
                   data/changelog.json docs/changelog.json \
+                  data/alerts_state.json \
                   data/foundayo_snapshots.json docs/foundayo_snapshots.json || true
           git diff --cached --quiet || git commit -m "patrol: $(date -u +%F)"
           git push

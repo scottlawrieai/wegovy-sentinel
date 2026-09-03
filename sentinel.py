@@ -185,11 +185,56 @@ def fetch_backlinks() -> dict:
     return {"t": 0, "d": 0}
 
 
+def fetch_kw_meta() -> dict:
+    """Volume + SERP features for every tracked keyword in one call.
+
+    phrase_these returns a row per phrase regardless of whether we rank, so
+    this also supplies volumes for keywords the domain report never surfaces.
+    Fk is a comma-separated list of Semrush SERP-feature codes.
+    """
+    try:
+        phrases = ";".join(kw for kw, _, _ in TRACKED)
+        text = semrush({
+            "type": "phrase_these",
+            "phrase": phrases,
+            "database": "uk",
+            "export_columns": "Ph,Nq,Fk",
+        })
+        out = {}
+        lines = [l for l in text.splitlines() if l.strip()]
+        if len(lines) < 2:
+            return {}
+        cols = [c.strip().lower() for c in lines[0].split(";")]
+        ki = next(i for i, c in enumerate(cols) if c.startswith("keyword"))
+        vi = next((i for i, c in enumerate(cols) if "volume" in c), None)
+        fi = next((i for i, c in enumerate(cols) if "feature" in c), None)
+        for line in lines[1:]:
+            parts = line.split(";")
+            try:
+                kw = parts[ki].strip().lower()
+                v = int(parts[vi]) if vi is not None and parts[vi].strip().isdigit() else 0
+                feats = []
+                if fi is not None and fi < len(parts):
+                    feats = [int(x) for x in parts[fi].strip().split(",")
+                             if x.strip().isdigit()]
+                out[kw] = {"v": v, "feat": feats}
+            except (IndexError, ValueError):
+                continue
+        return out
+    except Exception as e:
+        print(f"[warn] keyword meta unavailable: {e}", file=sys.stderr)
+        return {}
+
+
 def fetch_extra_sources() -> dict:
     """Pull GSC + AWR rankings (optional, credential-gated). Never fatal."""
     import rank_sources
     kws = [kw for kw, _, _ in TRACKED]
-    src = {"gsc": {}, "awr": {}, "gsci": {}, "gscts": {}, "gsckw": {}}
+    src = {"gsc": {}, "awr": {}, "gsci": {}, "gscts": {}, "gsckw": {}, "ga4": {}}
+    try:
+        src["ga4"] = rank_sources.fetch_ga4()
+    except Exception as e:
+        print(f"[warn] GA4 unavailable: {e}", file=sys.stderr)
     try:
         src["gscts"] = rank_sources.fetch_gsc_timeseries()
     except Exception as e:
@@ -227,7 +272,7 @@ def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
             continue
         top = min(hits, key=lambda r: r["p"])
         best[kw] = {"p": top["p"], "c": top["c"], "u": top["u"],
-                    "n": len({h["u"] for h in hits})}
+                    "n": len({h["u"] for h in hits}), "v": top.get("v", 0)}
 
     pill_kw = best.get("wegovy pill") or best.get("wegovy pills")
     pill_pos = pill_kw["p"] if pill_kw else None
@@ -250,6 +295,7 @@ def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
         "gsci": src.get("gsci", {}),
         "gscts": src.get("gscts", {}),
         "gsckw": src.get("gsckw", {}),
+        "ga4": src.get("ga4", {}),
         "m": {
             "pill": pill_pos,
             "bwInj": min(bw_inj) if bw_inj else None,
@@ -474,6 +520,14 @@ FIXTURE_COMP = {
 }
 
 
+FIXTURE_KWMETA = {
+    "wegovy pill": {"v": 4400, "feat": [11, 21, 22]},
+    "wegovy price": {"v": 6600, "feat": [21]},
+    "buy wegovy": {"v": 9900, "feat": [14, 16]},
+    "oral semaglutide": {"v": 2900, "feat": [11, 21]},
+}
+
+
 def main():
     test = "--test" in sys.argv
     try:
@@ -492,6 +546,14 @@ def main():
             src = fetch_extra_sources()
         snaps = load_history()
         snap = build_snapshot(rows, bl, comp, src)
+
+        # Keyword meta: search volume + SERP feature codes per tracked keyword.
+        snap["kwmeta"] = (FIXTURE_KWMETA if test else fetch_kw_meta())
+        if not snap.get("kwmeta"):
+            for prev_s in reversed(snaps):
+                if prev_s.get("kwmeta"):
+                    snap["kwmeta"] = prev_s["kwmeta"]
+                    break
 
         # Technical self-audit + backlink gap (non-fatal enrichments).
         import link_gap
@@ -546,6 +608,12 @@ def main():
                 if g:
                     snap["gsckw"] = {**g, "as_of": g.get("as_of", prev_s["date"])}
                     break
+        if not snap.get("ga4"):
+            for prev_s in reversed(snaps):
+                g = prev_s.get("ga4")
+                if g:
+                    snap["ga4"] = g
+                    break
         if not snap.get("src", {}).get("gsc"):
             for prev_s in reversed(snaps):
                 g = prev_s.get("src", {}).get("gsc")
@@ -583,6 +651,9 @@ def main():
             assert snap["best"]["wegovy price"]["p"] == 8
             assert "Superdrug" in snap["comp"]
             assert snap["comp"]["Superdrug"]["wegovy pill"]["p"] == 3
+            assert snap["kwmeta"]["wegovy pill"]["v"] == 4400
+            assert 11 in snap["kwmeta"]["wegovy pill"]["feat"]
+            assert snap["best"]["wegovy uk"].get("v", 0) == 14800, snap["best"]["wegovy uk"]
             assert snap["src"]["gsc"]["wegovy pill"]["clicks"] == 41
             assert snap["src"]["awr"]["wegovy pill"] == 24
             assert "GSC" in text and "AWR" in text, "multi-source digest rendered"

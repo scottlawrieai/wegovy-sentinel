@@ -99,6 +99,24 @@
     return Object.keys((s && s.best) || {}).length;
   }
 
+  // {weekKey: {sessions, events}} for the pill page, or null when GA4 absent
+  function ga4Weekly(snaps, state) {
+    var rows = null;
+    for (var i = (snaps || []).length - 1; i >= 0; i--) {
+      var g = snaps[i] && snaps[i].ga4;
+      if (g && (g.page || []).length) { rows = g.page; break; }
+    }
+    if (!rows) return null;
+    var map = {};
+    C.groupWeeks(C.inRange(rows, state)).forEach(function (w) {
+      map[w.key] = {
+        sessions: sum(w.rows, 'sessions'),
+        events: sum(w.rows, 'events')
+      };
+    });
+    return map;
+  }
+
   function latestGscts(snaps) {
     for (var i = (snaps || []).length - 1; i >= 0; i--) {
       var g = snaps[i] && snaps[i].gscts;
@@ -144,6 +162,15 @@
       return (a && a.date) < (b && b.date) ? -1 : 1;
     });
     var g = latestGscts(snaps);
+    var ga4wk = ga4Weekly(snaps, state);
+    function ga4Cells(key) {
+      if (!ga4wk) return '';
+      var r = ga4wk[key];
+      return '<td class="num">' + (r ? C.esc(C.fmtInt(r.sessions)) : '—') + '</td>' +
+             '<td class="num">' + (r ? C.esc(C.fmtInt(r.events)) : '—') + '</td>';
+    }
+    var ga4Heads = ga4wk ? '<th class="num">Sessions</th><th class="num">Key events</th>' : '';
+    var bandSpan = ga4wk ? 7 : 5;
 
     // shared letter mapping: changelog dates inside the selected range
     var inRangeDates = changelog
@@ -289,7 +316,7 @@
         w.changes.forEach(function (e) {
           var first = (e.changes && e.changes[0] && e.changes[0].text) || '';
           var more = (e.changes || []).length - 1;
-          trs += '<tr class="band"><td colspan="5">' +
+          trs += '<tr class="band"><td colspan="' + bandSpan + '">' +
             C.esc(letters[e.date]) + ' · ' + C.esc(e.date) + ' — ' + C.esc(first) +
             (more > 0 ? ' (+' + C.esc(more) + ' more)' : '') +
             '</td></tr>';
@@ -302,15 +329,16 @@
           '<td class="num" style="background:' + C.esc(C.heat(w.impr, iMin, iMax)) + '">' + C.esc(C.fmtInt(w.impr)) + '</td>' +
           '<td class="num" style="background:' + C.esc(C.heat(w.pos, pMin, pMax, true)) + '">' +
             (w.pos == null ? '—' : C.esc(fmtPos(w.pos))) + '</td>' +
+          ga4Cells(w.key) +
           '</tr>';
       });
 
       html += '<div class="panel perf-tbl-panel"><div class="tbl-wrap"><table class="tbl">' +
         '<thead><tr>' +
         '<th>Week</th><th>Changes</th>' +
-        '<th class="num">Clicks</th><th class="num">Impressions</th><th class="num">Avg position</th>' +
+        '<th class="num">Clicks</th><th class="num">Impressions</th><th class="num">Avg position</th>' + ga4Heads +
         '</tr></thead><tbody>' +
-        (trs || '<tr><td colspan="5"><div class="empty">No data in this range.</div></td></tr>') +
+        (trs || '<tr><td colspan="' + bandSpan + '"><div class="empty">No data in this range.</div></td></tr>') +
         '</tbody></table></div></div>';
     } else {
       // No GSC yet: the weekly view still earns its place with Semrush data.
@@ -357,7 +385,7 @@
               var e = changelog.filter(function (en) { return en.date === dd; })[0];
               var first = e && e.changes && e.changes[0] ? e.changes[0].text : '';
               var extra = e && e.changes && e.changes.length > 1 ? ' (+' + (e.changes.length - 1) + ' more)' : '';
-              strs += '<tr class="band"><td colspan="5">' + badge(letters[dd] || '') + ' ' +
+              strs += '<tr class="band"><td colspan="' + bandSpan + '">' + badge(letters[dd] || '') + ' ' +
                 C.esc(dd) + ' — ' + C.esc(first) + C.esc(extra) + '</td></tr>';
               badges += badge(letters[dd] || '');
             }
@@ -371,12 +399,13 @@
               (w.p1 == null ? '—' : C.esc(C.fmtInt(w.p1))) + '</td>' +
             '<td class="num" style="background:' + C.esc(C.heat(w.cann, scMin, scMax, true)) + '">' +
               (w.cann == null ? '—' : C.esc(C.fmtInt(w.cann))) + '</td>' +
+            ga4Cells(w.key) +
             '</tr>';
         });
         html += '<div class="panel perf-tbl-panel"><div class="tbl-wrap"><table class="tbl">' +
           '<thead><tr>' +
           '<th>Week</th><th>Changes</th>' +
-          '<th class="num">Avg position (Semrush)</th><th class="num">Page-one kws</th><th class="num">Cannibalised</th>' +
+          '<th class="num">Avg position (Semrush)</th><th class="num">Page-one kws</th><th class="num">Cannibalised</th>' + ga4Heads +
           '</tr></thead><tbody>' + strs + '</tbody></table></div></div>';
       } else {
         html += emptyGsc('Weekly chart and table');

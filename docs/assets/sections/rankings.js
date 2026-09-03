@@ -36,6 +36,9 @@
     '.rank-card .rank-delta{font-size:12px}' +
     '.rank-card .rank-note{font-size:11px;color:var(--muted);margin-top:6px}' +
     '.rank-card .empty{min-height:190px}' +
+    '.rank-feats{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px}' +
+    '.rank-feat{font-size:9.5px;font-weight:600;color:#5B6B83;background:#EEF2F7;border:1px solid #E2E8F0;border-radius:8px;padding:1px 6px}' +
+    '.rank-vol{font-size:9.5px;font-weight:700;color:#B45309;background:#FEF3C7;border:1px solid #FDE293;border-radius:8px;padding:1px 6px}' +
     '</style>';
 
   // module-local state: active ranking source
@@ -194,6 +197,31 @@
       false, '');
   }
 
+  // Semrush SERP-feature codes -> labels (unknown codes shown as F<code>)
+  var FEATURES = {
+    0: 'Instant answer', 1: 'Knowledge panel', 3: 'Local pack', 5: 'Images',
+    6: 'Sitelinks', 7: 'Reviews', 9: 'Video', 10: 'Featured video',
+    11: 'Featured snippet', 13: 'Image pack', 14: 'Ads top', 15: 'Ads bottom',
+    16: 'Shopping', 21: 'People also ask', 22: 'FAQ'
+  };
+
+  function serpChips(S, kw) {
+    var snaps = S.data.snaps || [];
+    for (var i = snaps.length - 1; i >= 0; i--) {
+      var km = snaps[i] && snaps[i].kwmeta;
+      if (km && Object.keys(km).length) {
+        var m = km[kw];
+        if (!m) return '';
+        var bits = (m.feat || []).slice(0, 5).map(function (c) {
+          return '<span class="rank-feat">' + C.esc(FEATURES[c] || ('F' + c)) + '</span>';
+        }).join('');
+        var volTxt = m.v ? '<span class="rank-vol">' + C.esc(C.fmtInt(m.v)) + '/mo</span>' : '';
+        return (bits || volTxt) ? '<div class="rank-feats">' + volTxt + bits + '</div>' : '';
+      }
+    }
+    return '';
+  }
+
   function seriesCard(S, kw, series, showLegend, note) {
     // headline stat comes from the primary (first) series of the active source
     var ld = latestDelta(series[0] ? series[0].points : []);
@@ -210,6 +238,7 @@
 
     return '<div class="panel rank-card">' +
       '<div class="rank-kw">' + C.esc(kw) + '</div>' +
+      serpChips(S, kw) +
       '<div class="rank-now">' +
         '<span class="rank-pos">' + posHtml + '</span>' +
         deltaHtml(ld) +

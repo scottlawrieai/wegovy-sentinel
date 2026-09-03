@@ -81,6 +81,39 @@ actually shipped that day.
 Run it standalone with `python changelog.py` (or `--test` for the offline
 self-test); the daily patrol runs it automatically.
 
+## Google Analytics 4 (sessions + key events)
+
+Optional. Adds SESSIONS and KEY EVENTS columns to the weekly performance
+table for the pill page, closing the loop from rankings to outcomes.
+
+1. Repo **variable** `GA4_PROPERTY_ID` — the numeric GA4 property id.
+2. Repo **secret** `GA4_REFRESH_TOKEN` — OAuth refresh token with scope
+   `https://www.googleapis.com/auth/analytics.readonly` (OAuth Playground,
+   same recipe as GSC). `GA4_CLIENT_ID`/`GA4_CLIENT_SECRET` are optional —
+   without them the GSC client id/secret are reused, so a single OAuth client
+   granted both scopes needs only the one extra refresh-token secret.
+
+Window follows `GSC_TS_DAYS`. Data lands in the snapshot as `ga4.page`
+(daily sessions + key events, landing-page filtered) and is carried forward
+when a patrol runs without credentials.
+
+## Keyword meta (volume + SERP features)
+
+Collected automatically with the Semrush key — no extra setup. One
+`phrase_these` call per patrol stores `kwmeta` in the snapshot: UK search
+volume and SERP-feature codes per tracked keyword. Volume weights the
+share-of-voice calculation; feature codes render as chips on the keyword
+ranking cards (AI Overview / featured snippet / shopping etc).
+
+## Alerts
+
+`alerts.py` runs after each patrol and opens a single GitHub issue
+(label `sentinel-alert`) when, vs the previous patrol: a pill keyword drops
+5+ positions or falls off page one, a competitor newly overtakes us on a
+pill keyword, or the cannibalised-keyword count rises. Uses the built-in
+`GITHUB_TOKEN` — no setup. Each condition re-alerts at most once every 7
+days (state in `data/alerts_state.json`).
+
 ## Advanced Web Ranking (AWR)
 
 Uses the documented **AWR Cloud v2 export API**

@@ -27,6 +27,28 @@
     return 0.004;
   }
 
+  // latest known volume per keyword (kwmeta from the newest snapshot that
+  // has it, topped up from best[kw].v); {} when nothing known yet
+  function volumeMap(snaps) {
+    var vol = {};
+    for (var i = (snaps || []).length - 1; i >= 0; i--) {
+      var km = snaps[i] && snaps[i].kwmeta;
+      if (km && Object.keys(km).length) {
+        Object.keys(km).forEach(function (k) {
+          if (km[k] && km[k].v) vol[k] = km[k].v;
+        });
+        break;
+      }
+    }
+    (snaps || []).forEach(function (s) {
+      Object.keys((s && s.best) || {}).forEach(function (k) {
+        var b = s.best[k];
+        if (b && b.v && !vol[k]) vol[k] = b.v;
+      });
+    });
+    return vol;
+  }
+
   function trackedKws(snaps) {
     var set = {};
     (snaps || []).forEach(function (s) {
@@ -35,10 +57,13 @@
     return Object.keys(set);
   }
 
-  function sovOf(getPos, kws) {
-    var got = 0;
-    kws.forEach(function (kw) { got += ctrAt(getPos(kw)); });
-    var max = kws.length * 0.28;
+  function sovOf(getPos, kws, vol) {
+    var got = 0, max = 0;
+    kws.forEach(function (kw) {
+      var w = (vol && vol[kw]) || 500;   // unknown volume: modest default
+      got += ctrAt(getPos(kw)) * w;
+      max += 0.28 * w;
+    });
     return max > 0 ? got / max * 100 : 0;
   }
 
@@ -64,6 +89,7 @@
       return;
     }
     var kws = trackedKws(snaps);
+    var vol = volumeMap(snaps);
     var comps = {};
     snaps.forEach(function (s) {
       Object.keys((s && s.comp) || {}).forEach(function (l) { comps[l] = 1; });
@@ -77,7 +103,7 @@
       points: snaps.map(function (s) {
         return { d: s.date, v: sovOf(function (kw) {
           var b = s.best && s.best[kw]; return b ? b.p : null;
-        }, kws) };
+        }, kws, vol) };
       })
     }];
     compLabels.forEach(function (label) {
@@ -88,7 +114,7 @@
           var has = Object.keys(c).length > 0;
           return { d: s.date, v: has ? sovOf(function (kw) {
             return c[kw] ? c[kw].p : null;
-          }, kws) : null };
+          }, kws, vol) : null };
         })
       });
     });
@@ -108,7 +134,7 @@
         }),
         showLegend: true
       }) +
-      '<div class="mv-note">Share of voice — CTR-weighted visibility across all ' +
+      '<div class="mv-note">Share of voice — CTR- and search-volume-weighted visibility across all ' +
       C.esc(String(kws.length)) + ' tracked keywords (100% = P1 on every keyword). ' +
       'Computed from daily Semrush positions; lettered markers = logged changes.</div></div>';
 
@@ -127,7 +153,8 @@
           bestC = { label: label, p: c[kw].p };
         }
       });
-      return { kw: kw, now: now, was: was, delta: delta, bestC: bestC };
+      return { kw: kw, now: now, was: was, delta: delta, bestC: bestC,
+               vol: vol[kw] || null };
     }).filter(function (r) { return r.now != null || r.was != null || r.bestC; });
 
     rows.sort(function (a, b) {
@@ -147,6 +174,7 @@
       var gap = (r.bestC && r.now != null) ? r.now - r.bestC.p : null;
       trs += '<tr>' +
         '<td class="mv-kw">' + C.esc(r.kw) + '</td>' +
+        '<td class="num" style="color:#5B6B83">' + (r.vol == null ? '—' : C.esc(C.fmtInt(r.vol))) + '</td>' +
         '<td class="num">' + (r.now == null ? '—' : '#' + C.esc(String(r.now))) + '</td>' +
         '<td class="num">' + (r.was == null ? '—' : '#' + C.esc(String(r.was))) + '</td>' +
         '<td class="num">' + dCell + '</td>' +
@@ -158,9 +186,9 @@
     });
 
     html += '<div class="panel" style="margin-top:14px"><div class="tbl-wrap"><table class="tbl">' +
-      '<thead><tr><th>Keyword</th><th class="num">Now</th><th class="num">7d ago</th>' +
+      '<thead><tr><th>Keyword</th><th class="num">Volume</th><th class="num">Now</th><th class="num">7d ago</th>' +
       '<th class="num">Δ</th><th>Best competitor</th><th class="num">Gap</th></tr></thead>' +
-      '<tbody>' + (trs || '<tr><td colspan="6"><div class="empty">No ranking data.</div></td></tr>') +
+      '<tbody>' + (trs || '<tr><td colspan="7"><div class="empty">No ranking data.</div></td></tr>') +
       '</tbody></table></div></div>' +
       '<div class="mv-note">Movers — Semrush position now vs 7 patrols earlier, biggest moves first. ' +
       'Gap compares our position with the best-ranked competitor for the keyword.</div>';
