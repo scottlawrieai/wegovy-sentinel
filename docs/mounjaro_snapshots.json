@@ -2408,448 +2408,832 @@
      "clicks": 527,
      "impr": 43835,
      "ctr": 1.2,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 478,
+      "impr": 51938,
+      "ctr": 0.9,
+      "pos": 1.0
+     }
     },
     {
      "q": "simple online pharmacy mounjaro prices",
      "clicks": 134,
      "impr": 438,
      "ctr": 30.6,
-     "pos": 1.1
+     "pos": 1.1,
+     "prev": {
+      "clicks": 116,
+      "impr": 386,
+      "ctr": 30.1,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro uk price",
      "clicks": 91,
      "impr": 3502,
      "ctr": 2.6,
-     "pos": 7.0
+     "pos": 7.0,
+     "prev": {
+      "clicks": 123,
+      "impr": 5285,
+      "ctr": 2.3,
+      "pos": 4.8
+     }
     },
     {
      "q": "simple online pharmacy mounjaro",
      "clicks": 74,
      "impr": 364,
      "ctr": 20.3,
-     "pos": 1.2
+     "pos": 1.2,
+     "prev": {
+      "clicks": 55,
+      "impr": 277,
+      "ctr": 19.9,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro price",
      "clicks": 56,
      "impr": 2595,
      "ctr": 2.2,
-     "pos": 8.5
+     "pos": 8.5,
+     "prev": {
+      "clicks": 82,
+      "impr": 5526,
+      "ctr": 1.5,
+      "pos": 7.3
+     }
     },
     {
      "q": "mounjaro price uk",
      "clicks": 50,
      "impr": 2297,
      "ctr": 2.2,
-     "pos": 7.2
+     "pos": 7.2,
+     "prev": {
+      "clicks": 77,
+      "impr": 3371,
+      "ctr": 2.3,
+      "pos": 5.4
+     }
     },
     {
      "q": "mounjaro simple online pharmacy",
      "clicks": 47,
      "impr": 240,
      "ctr": 19.6,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 48,
+      "impr": 209,
+      "ctr": 23.0,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro buy online uk",
      "clicks": 35,
      "impr": 1674,
      "ctr": 2.1,
-     "pos": 5.8
+     "pos": 5.8,
+     "prev": {
+      "clicks": 58,
+      "impr": 3429,
+      "ctr": 1.7,
+      "pos": 3.8
+     }
     },
     {
      "q": "simple pharmacy",
      "clicks": 32,
      "impr": 2940,
      "ctr": 1.1,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 31,
+      "impr": 3361,
+      "ctr": 0.9,
+      "pos": 1.0
+     }
     },
     {
      "q": "simple pharmacy mounjaro",
      "clicks": 29,
      "impr": 119,
      "ctr": 24.4,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 23,
+      "impr": 133,
+      "ctr": 17.3,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro prices uk",
      "clicks": 28,
      "impr": 1167,
      "ctr": 2.4,
-     "pos": 6.3
+     "pos": 6.3,
+     "prev": {
+      "clicks": 37,
+      "impr": 1545,
+      "ctr": 2.4,
+      "pos": 6.0
+     }
     },
     {
      "q": "buy mounjaro online uk",
      "clicks": 27,
      "impr": 593,
      "ctr": 4.6,
-     "pos": 7.5
+     "pos": 7.5,
+     "prev": {
+      "clicks": 46,
+      "impr": 1007,
+      "ctr": 4.6,
+      "pos": 5.3
+     }
     },
     {
      "q": "mounjaro prices",
      "clicks": 25,
      "impr": 2125,
      "ctr": 1.2,
-     "pos": 9.3
+     "pos": 9.3,
+     "prev": {
+      "clicks": 50,
+      "impr": 4661,
+      "ctr": 1.1,
+      "pos": 7.7
+     }
     },
     {
      "q": "buy mounjaro",
      "clicks": 25,
      "impr": 1364,
      "ctr": 1.8,
-     "pos": 15.0
+     "pos": 15.0,
+     "prev": {
+      "clicks": 19,
+      "impr": 1249,
+      "ctr": 1.5,
+      "pos": 12.9
+     }
     },
     {
      "q": "simply online pharmacy",
      "clicks": 23,
      "impr": 1932,
      "ctr": 1.2,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 28,
+      "impr": 2425,
+      "ctr": 1.2,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro buy online",
      "clicks": 20,
      "impr": 782,
      "ctr": 2.6,
-     "pos": 13.9
+     "pos": 13.9,
+     "prev": {
+      "clicks": 34,
+      "impr": 891,
+      "ctr": 3.8,
+      "pos": 11.8
+     }
     },
     {
      "q": "mounjaro uk",
      "clicks": 19,
      "impr": 1709,
      "ctr": 1.1,
-     "pos": 16.6
+     "pos": 16.6,
+     "prev": {
+      "clicks": 55,
+      "impr": 3069,
+      "ctr": 1.8,
+      "pos": 9.5
+     }
     },
     {
      "q": "mounjaro online pharmacy",
      "clicks": 16,
      "impr": 694,
      "ctr": 2.3,
-     "pos": 7.4
+     "pos": 7.4,
+     "prev": {
+      "clicks": 18,
+      "impr": 982,
+      "ctr": 1.8,
+      "pos": 4.4
+     }
     },
     {
      "q": "simple online pharmacy mounjaro price",
      "clicks": 16,
      "impr": 132,
      "ctr": 12.1,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 23,
+      "impr": 109,
+      "ctr": 21.1,
+      "pos": 1.0
+     }
     },
     {
      "q": "how much is mounjaro uk",
      "clicks": 14,
      "impr": 3306,
      "ctr": 0.4,
-     "pos": 6.4
+     "pos": 6.4,
+     "prev": {
+      "clicks": 45,
+      "impr": 6153,
+      "ctr": 0.7,
+      "pos": 5.3
+     }
     },
     {
      "q": "buy mounjaro online",
      "clicks": 14,
      "impr": 1069,
      "ctr": 1.3,
-     "pos": 14.7
+     "pos": 14.7,
+     "prev": {
+      "clicks": 20,
+      "impr": 1047,
+      "ctr": 1.9,
+      "pos": 12.9
+     }
     },
     {
      "q": "simple online pharmacy mounjaro 5mg price",
      "clicks": 14,
      "impr": 51,
      "ctr": 27.5,
-     "pos": 1.2
+     "pos": 1.2,
+     "prev": {
+      "clicks": 18,
+      "impr": 150,
+      "ctr": 12.0,
+      "pos": 1.0
+     }
     },
     {
      "q": "simple mounjaro",
      "clicks": 14,
      "impr": 28,
      "ctr": 50.0,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 9,
+      "impr": 26,
+      "ctr": 34.6,
+      "pos": 1.1
+     }
     },
     {
      "q": "best place to buy mounjaro",
      "clicks": 13,
      "impr": 332,
      "ctr": 3.9,
-     "pos": 6.3
+     "pos": 6.3,
+     "prev": {
+      "clicks": 2,
+      "impr": 190,
+      "ctr": 1.1,
+      "pos": 11.1
+     }
     },
     {
      "q": "simple online pharmacy mounjaro 2.5 mg price",
      "clicks": 13,
      "impr": 33,
      "ctr": 39.4,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 10,
+      "impr": 26,
+      "ctr": 38.5,
+      "pos": 1.1
+     }
     },
     {
      "q": "mounjaro cost uk",
      "clicks": 12,
      "impr": 1159,
      "ctr": 1.0,
-     "pos": 8.3
+     "pos": 8.3,
+     "prev": {
+      "clicks": 15,
+      "impr": 1691,
+      "ctr": 0.9,
+      "pos": 7.0
+     }
     },
     {
      "q": "cheapest mounjaro uk",
      "clicks": 11,
      "impr": 728,
      "ctr": 1.5,
-     "pos": 14.8
+     "pos": 14.8,
+     "prev": {
+      "clicks": 7,
+      "impr": 522,
+      "ctr": 1.3,
+      "pos": 19.0
+     }
     },
     {
      "q": "best place to buy mounjaro uk",
      "clicks": 11,
      "impr": 634,
      "ctr": 1.7,
-     "pos": 7.5
+     "pos": 7.5,
+     "prev": {
+      "clicks": 6,
+      "impr": 398,
+      "ctr": 1.5,
+      "pos": 12.6
+     }
     },
     {
      "q": "mounjaro 5mg price",
      "clicks": 10,
      "impr": 466,
      "ctr": 2.1,
-     "pos": 13.9
+     "pos": 13.9,
+     "prev": {
+      "clicks": 20,
+      "impr": 1171,
+      "ctr": 1.7,
+      "pos": 8.6
+     }
     },
     {
      "q": "mounjaro buy",
      "clicks": 10,
      "impr": 420,
      "ctr": 2.4,
-     "pos": 14.1
+     "pos": 14.1,
+     "prev": {
+      "clicks": 22,
+      "impr": 497,
+      "ctr": 4.4,
+      "pos": 11.6
+     }
     },
     {
      "q": "mounjaro online",
      "clicks": 8,
      "impr": 898,
      "ctr": 0.9,
-     "pos": 12.8
+     "pos": 12.8,
+     "prev": {
+      "clicks": 9,
+      "impr": 888,
+      "ctr": 1.0,
+      "pos": 10.8
+     }
     },
     {
      "q": "mounjaro 2.5 mg price",
      "clicks": 8,
      "impr": 258,
      "ctr": 3.1,
-     "pos": 11.3
+     "pos": 11.3,
+     "prev": {
+      "clicks": 7,
+      "impr": 574,
+      "ctr": 1.2,
+      "pos": 7.5
+     }
     },
     {
      "q": "simple online pharmacy mounjaro 7.5 mg price",
      "clicks": 8,
      "impr": 26,
      "ctr": 30.8,
-     "pos": 1.2
+     "pos": 1.2,
+     "prev": {
+      "clicks": 3,
+      "impr": 18,
+      "ctr": 16.7,
+      "pos": 1.0
+     }
     },
     {
      "q": "buy mounjaro uk",
      "clicks": 7,
      "impr": 1056,
      "ctr": 0.7,
-     "pos": 13.8
+     "pos": 13.8,
+     "prev": {
+      "clicks": 5,
+      "impr": 1302,
+      "ctr": 0.4,
+      "pos": 11.0
+     }
     },
     {
      "q": "simply pharmacy",
      "clicks": 7,
      "impr": 819,
      "ctr": 0.9,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 5,
+      "impr": 944,
+      "ctr": 0.5,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro injection 2.5mg price",
      "clicks": 7,
      "impr": 508,
      "ctr": 1.4,
-     "pos": 8.2
+     "pos": 8.2,
+     "prev": {
+      "clicks": 5,
+      "impr": 530,
+      "ctr": 0.9,
+      "pos": 8.4
+     }
     },
     {
      "q": "mounjaro best price uk",
      "clicks": 7,
      "impr": 363,
      "ctr": 1.9,
-     "pos": 12.9
+     "pos": 12.9,
+     "prev": {
+      "clicks": 2,
+      "impr": 334,
+      "ctr": 0.6,
+      "pos": 13.1
+     }
     },
     {
      "q": "simple online pharmacy reorder",
      "clicks": 7,
      "impr": 101,
      "ctr": 6.9,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 7,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
     },
     {
      "q": "cheapest mounjaro 2.5mg uk",
      "clicks": 7,
      "impr": 70,
      "ctr": 10.0,
-     "pos": 18.2
+     "pos": 18.2,
+     "prev": {
+      "clicks": 0,
+      "impr": 17,
+      "ctr": 0.0,
+      "pos": 20.1
+     }
     },
     {
      "q": "simple pharmacy mounjaro price",
      "clicks": 7,
      "impr": 22,
      "ctr": 31.8,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 12,
+      "impr": 26,
+      "ctr": 46.2,
+      "pos": 1.0
+     }
     },
     {
      "q": "simple online mounjaro price",
      "clicks": 7,
      "impr": 13,
      "ctr": 53.8,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 9,
+      "impr": 17,
+      "ctr": 52.9,
+      "pos": 1.1
+     }
     },
     {
      "q": "mounjaro",
      "clicks": 6,
      "impr": 808,
      "ctr": 0.7,
-     "pos": 32.0
+     "pos": 32.0,
+     "prev": {
+      "clicks": 13,
+      "impr": 864,
+      "ctr": 1.5,
+      "pos": 15.4
+     }
     },
     {
      "q": "mounjaro 15 mg price",
      "clicks": 6,
      "impr": 312,
      "ctr": 1.9,
-     "pos": 10.3
+     "pos": 10.3,
+     "prev": {
+      "clicks": 24,
+      "impr": 715,
+      "ctr": 3.4,
+      "pos": 4.4
+     }
     },
     {
      "q": "cheapest place to buy mounjaro",
      "clicks": 6,
      "impr": 273,
      "ctr": 2.2,
-     "pos": 15.5
+     "pos": 15.5,
+     "prev": {
+      "clicks": 1,
+      "impr": 222,
+      "ctr": 0.5,
+      "pos": 19.1
+     }
     },
     {
      "q": "best mounjaro price",
      "clicks": 6,
      "impr": 111,
      "ctr": 5.4,
-     "pos": 7.7
+     "pos": 7.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 30,
+      "ctr": 0.0,
+      "pos": 16.8
+     }
     },
     {
      "q": "simple online pharmacy app",
      "clicks": 6,
      "impr": 89,
      "ctr": 6.7,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 96,
+      "ctr": 1.0,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro uk simple online pharmacy",
      "clicks": 6,
      "impr": 57,
      "ctr": 10.5,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 5,
+      "impr": 60,
+      "ctr": 8.3,
+      "pos": 1.0
+     }
     },
     {
      "q": "simpleonlinepharmacy",
      "clicks": 5,
      "impr": 568,
      "ctr": 0.9,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 6,
+      "impr": 641,
+      "ctr": 0.9,
+      "pos": 1.0
+     }
     },
     {
      "q": "cost of mounjaro uk",
      "clicks": 5,
      "impr": 387,
      "ctr": 1.3,
-     "pos": 2.7
+     "pos": 2.7,
+     "prev": {
+      "clicks": 8,
+      "impr": 862,
+      "ctr": 0.9,
+      "pos": 5.2
+     }
     },
     {
      "q": "where can i buy mounjaro",
      "clicks": 5,
      "impr": 347,
      "ctr": 1.4,
-     "pos": 15.7
+     "pos": 15.7,
+     "prev": {
+      "clicks": 1,
+      "impr": 297,
+      "ctr": 0.3,
+      "pos": 13.8
+     }
     },
     {
      "q": "mounjaro cena",
      "clicks": 5,
      "impr": 188,
      "ctr": 2.7,
-     "pos": 8.2
+     "pos": 8.2,
+     "prev": {
+      "clicks": 1,
+      "impr": 223,
+      "ctr": 0.4,
+      "pos": 6.4
+     }
     },
     {
      "q": "mounjaro injection price",
      "clicks": 4,
      "impr": 944,
      "ctr": 0.4,
-     "pos": 12.9
+     "pos": 12.9,
+     "prev": {
+      "clicks": 8,
+      "impr": 1862,
+      "ctr": 0.4,
+      "pos": 9.1
+     }
     },
     {
      "q": "mounjaro buy online uk cheapest",
      "clicks": 4,
      "impr": 426,
      "ctr": 0.9,
-     "pos": 18.1
+     "pos": 18.1,
+     "prev": {
+      "clicks": 3,
+      "impr": 535,
+      "ctr": 0.6,
+      "pos": 14.1
+     }
     },
     {
      "q": "price of mounjaro in uk",
      "clicks": 4,
      "impr": 318,
      "ctr": 1.3,
-     "pos": 6.3
+     "pos": 6.3,
+     "prev": {
+      "clicks": 7,
+      "impr": 549,
+      "ctr": 1.3,
+      "pos": 5.9
+     }
     },
     {
      "q": "best place to get mounjaro",
      "clicks": 4,
      "impr": 292,
      "ctr": 1.4,
-     "pos": 8.3
+     "pos": 8.3,
+     "prev": {
+      "clicks": 1,
+      "impr": 128,
+      "ctr": 0.8,
+      "pos": 13.3
+     }
     },
     {
      "q": "simple.online pharmacy",
      "clicks": 4,
      "impr": 261,
      "ctr": 1.5,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 7,
+      "impr": 353,
+      "ctr": 2.0,
+      "pos": 1.0
+     }
     },
     {
      "q": "best price for mounjaro uk",
      "clicks": 4,
      "impr": 248,
      "ctr": 1.6,
-     "pos": 9.7
+     "pos": 9.7,
+     "prev": {
+      "clicks": 1,
+      "impr": 145,
+      "ctr": 0.7,
+      "pos": 13.0
+     }
     },
     {
      "q": "mounjaro buy online uk comparison",
      "clicks": 4,
      "impr": 161,
      "ctr": 2.5,
-     "pos": 10.2
+     "pos": 10.2,
+     "prev": {
+      "clicks": 3,
+      "impr": 126,
+      "ctr": 2.4,
+      "pos": 10.3
+     }
     },
     {
      "q": "cheapest place for mounjaro",
      "clicks": 4,
      "impr": 152,
      "ctr": 2.6,
-     "pos": 13.3
+     "pos": 13.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 69,
+      "ctr": 0.0,
+      "pos": 19.2
+     }
     },
     {
      "q": "mounjaro 10mg",
      "clicks": 4,
      "impr": 97,
      "ctr": 4.1,
-     "pos": 7.8
+     "pos": 7.8,
+     "prev": {
+      "clicks": 4,
+      "impr": 80,
+      "ctr": 5.0,
+      "pos": 7.4
+     }
     },
     {
      "q": "simply pharmacy mounjaro",
      "clicks": 4,
      "impr": 51,
      "ctr": 7.8,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 4,
+      "impr": 55,
+      "ctr": 7.3,
+      "pos": 1.0
+     }
     },
     {
      "q": "simple online pharmacy mounjaro cost",
      "clicks": 4,
      "impr": 49,
      "ctr": 8.2,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 5,
+      "impr": 60,
+      "ctr": 8.3,
+      "pos": 1.0
+     }
     },
     {
      "q": "manjaro price",
      "clicks": 4,
      "impr": 34,
      "ctr": 11.8,
-     "pos": 4.6
+     "pos": 4.6,
+     "prev": {
+      "clicks": 3,
+      "impr": 87,
+      "ctr": 3.4,
+      "pos": 3.7
+     }
     },
     {
      "q": "buy mounjaro simple online pharmacy",
      "clicks": 4,
      "impr": 16,
      "ctr": 25.0,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 3,
+      "impr": 14,
+      "ctr": 21.4,
+      "pos": 1.0
+     }
     },
     {
      "q": "who sells mounjaro cheapest",
@@ -2863,245 +3247,455 @@
      "clicks": 4,
      "impr": 8,
      "ctr": 50.0,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 12,
+      "impr": 28,
+      "ctr": 42.9,
+      "pos": 1.0
+     }
     },
     {
      "q": "how much is mounjaro",
      "clicks": 3,
      "impr": 965,
      "ctr": 0.3,
-     "pos": 10.7
+     "pos": 10.7,
+     "prev": {
+      "clicks": 18,
+      "impr": 3690,
+      "ctr": 0.5,
+      "pos": 7.8
+     }
     },
     {
      "q": "mounjaro cost",
      "clicks": 3,
      "impr": 788,
      "ctr": 0.4,
-     "pos": 15.5
+     "pos": 15.5,
+     "prev": {
+      "clicks": 3,
+      "impr": 1116,
+      "ctr": 0.3,
+      "pos": 12.5
+     }
     },
     {
      "q": "mounjaro injection price uk",
      "clicks": 3,
      "impr": 520,
      "ctr": 0.6,
-     "pos": 12.5
+     "pos": 12.5,
+     "prev": {
+      "clicks": 3,
+      "impr": 691,
+      "ctr": 0.4,
+      "pos": 7.6
+     }
     },
     {
      "q": "cheapest mounjaro",
      "clicks": 3,
      "impr": 400,
      "ctr": 0.8,
-     "pos": 19.1
+     "pos": 19.1,
+     "prev": {
+      "clicks": 4,
+      "impr": 406,
+      "ctr": 1.0,
+      "pos": 17.0
+     }
     },
     {
      "q": "online simple pharmacy",
      "clicks": 3,
      "impr": 299,
      "ctr": 1.0,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 3,
+      "impr": 244,
+      "ctr": 1.2,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro 5mg price comparison uk",
      "clicks": 3,
      "impr": 281,
      "ctr": 1.1,
-     "pos": 10.1
+     "pos": 10.1,
+     "prev": {
+      "clicks": 17,
+      "impr": 1150,
+      "ctr": 1.5,
+      "pos": 9.0
+     }
     },
     {
      "q": "mounjaro cheapest uk",
      "clicks": 3,
      "impr": 277,
      "ctr": 1.1,
-     "pos": 19.0
+     "pos": 19.0,
+     "prev": {
+      "clicks": 3,
+      "impr": 307,
+      "ctr": 1.0,
+      "pos": 18.9
+     }
     },
     {
      "q": "mounjaro uk prices",
      "clicks": 3,
      "impr": 252,
      "ctr": 1.2,
-     "pos": 6.4
+     "pos": 6.4,
+     "prev": {
+      "clicks": 5,
+      "impr": 299,
+      "ctr": 1.7,
+      "pos": 5.6
+     }
     },
     {
      "q": "mounjaro best price",
      "clicks": 3,
      "impr": 247,
      "ctr": 1.2,
-     "pos": 15.4
+     "pos": 15.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 206,
+      "ctr": 0.0,
+      "pos": 17.2
+     }
     },
     {
      "q": "best price for mounjaro",
      "clicks": 3,
      "impr": 226,
      "ctr": 1.3,
-     "pos": 10.4
+     "pos": 10.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 148,
+      "ctr": 0.7,
+      "pos": 15.2
+     }
     },
     {
      "q": "best price mounjaro uk",
      "clicks": 3,
      "impr": 206,
      "ctr": 1.5,
-     "pos": 14.1
+     "pos": 14.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 152,
+      "ctr": 0.0,
+      "pos": 16.8
+     }
     },
     {
      "q": "best online pharmacy for mounjaro",
      "clicks": 3,
      "impr": 193,
      "ctr": 1.6,
-     "pos": 6.4
+     "pos": 6.4,
+     "prev": {
+      "clicks": 3,
+      "impr": 171,
+      "ctr": 1.8,
+      "pos": 5.2
+     }
     },
     {
      "q": "cheapest mounjaro 5mg uk",
      "clicks": 3,
      "impr": 191,
      "ctr": 1.6,
-     "pos": 17.0
+     "pos": 17.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 174,
+      "ctr": 0.6,
+      "pos": 17.0
+     }
     },
     {
      "q": "monjaro prices",
      "clicks": 3,
      "impr": 191,
      "ctr": 1.6,
-     "pos": 8.2
+     "pos": 8.2,
+     "prev": {
+      "clicks": 6,
+      "impr": 382,
+      "ctr": 1.6,
+      "pos": 7.8
+     }
     },
     {
      "q": "mounjaro order online",
      "clicks": 3,
      "impr": 172,
      "ctr": 1.7,
-     "pos": 14.1
+     "pos": 14.1,
+     "prev": {
+      "clicks": 5,
+      "impr": 192,
+      "ctr": 2.6,
+      "pos": 11.8
+     }
     },
     {
      "q": "simple online pharmacy mounjaro discount code",
      "clicks": 3,
      "impr": 172,
      "ctr": 1.7,
-     "pos": 2.8
+     "pos": 2.8,
+     "prev": {
+      "clicks": 5,
+      "impr": 240,
+      "ctr": 2.1,
+      "pos": 2.2
+     }
     },
     {
      "q": "simpleonline pharmacy",
      "clicks": 3,
      "impr": 126,
      "ctr": 2.4,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 2,
+      "impr": 166,
+      "ctr": 1.2,
+      "pos": 1.0
+     }
     },
     {
      "q": "yes",
      "clicks": 3,
      "impr": 111,
      "ctr": 2.7,
-     "pos": 3.0
+     "pos": 3.0,
+     "prev": {
+      "clicks": 6,
+      "impr": 91,
+      "ctr": 6.6,
+      "pos": 2.9
+     }
     },
     {
      "q": "cheapest place to buy mounjaro uk",
      "clicks": 3,
      "impr": 108,
      "ctr": 2.8,
-     "pos": 20.5
+     "pos": 20.5,
+     "prev": {
+      "clicks": 0,
+      "impr": 130,
+      "ctr": 0.0,
+      "pos": 18.9
+     }
     },
     {
      "q": "mounjaro subscription",
      "clicks": 3,
      "impr": 107,
      "ctr": 2.8,
-     "pos": 7.9
+     "pos": 7.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 36,
+      "ctr": 0.0,
+      "pos": 11.5
+     }
     },
     {
      "q": "best place to get mounjaro uk",
      "clicks": 3,
      "impr": 100,
      "ctr": 3.0,
-     "pos": 1.8
+     "pos": 1.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 43,
+      "ctr": 0.0,
+      "pos": 4.3
+     }
     },
     {
      "q": "mounjaro uk best price",
      "clicks": 3,
      "impr": 96,
      "ctr": 3.1,
-     "pos": 16.6
+     "pos": 16.6,
+     "prev": {
+      "clicks": 1,
+      "impr": 78,
+      "ctr": 1.3,
+      "pos": 15.1
+     }
     },
     {
      "q": "simple online oharmacy",
      "clicks": 3,
      "impr": 96,
      "ctr": 3.1,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 86,
+      "ctr": 1.2,
+      "pos": 1.0
+     }
     },
     {
      "q": "mounjaro europe price",
      "clicks": 3,
      "impr": 89,
      "ctr": 3.4,
-     "pos": 2.9
+     "pos": 2.9,
+     "prev": {
+      "clicks": 14,
+      "impr": 172,
+      "ctr": 8.1,
+      "pos": 1.6
+     }
     },
     {
      "q": "cheapest mounjaro bundle uk",
      "clicks": 3,
      "impr": 77,
      "ctr": 3.9,
-     "pos": 15.4
+     "pos": 15.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 90,
+      "ctr": 0.0,
+      "pos": 16.2
+     }
     },
     {
      "q": "munjano",
      "clicks": 3,
      "impr": 65,
      "ctr": 4.6,
-     "pos": 3.5
+     "pos": 3.5,
+     "prev": {
+      "clicks": 3,
+      "impr": 38,
+      "ctr": 7.9,
+      "pos": 4.5
+     }
     },
     {
      "q": "cheapest mounjaro prices",
      "clicks": 3,
      "impr": 58,
      "ctr": 5.2,
-     "pos": 12.6
+     "pos": 12.6,
+     "prev": {
+      "clicks": 0,
+      "impr": 39,
+      "ctr": 0.0,
+      "pos": 18.6
+     }
     },
     {
      "q": "online pharmacy mounjaro uk",
      "clicks": 3,
      "impr": 52,
      "ctr": 5.8,
-     "pos": 6.3
+     "pos": 6.3,
+     "prev": {
+      "clicks": 1,
+      "impr": 56,
+      "ctr": 1.8,
+      "pos": 2.9
+     }
     },
     {
      "q": "2.5mg mounjaro price",
      "clicks": 3,
      "impr": 12,
      "ctr": 25.0,
-     "pos": 1.2
+     "pos": 1.2,
+     "prev": {
+      "clicks": 2,
+      "impr": 47,
+      "ctr": 4.3,
+      "pos": 3.5
+     }
     },
     {
      "q": "mounjaro online shop",
      "clicks": 3,
      "impr": 7,
      "ctr": 42.9,
-     "pos": 4.4
+     "pos": 4.4,
+     "prev": {
+      "clicks": 10,
+      "impr": 39,
+      "ctr": 25.6,
+      "pos": 2.1
+     }
     },
     {
      "q": "mounjaro london price",
      "clicks": 3,
      "impr": 5,
      "ctr": 60.0,
-     "pos": 2.0
+     "pos": 2.0,
+     "prev": {
+      "clicks": 5,
+      "impr": 20,
+      "ctr": 25.0,
+      "pos": 3.9
+     }
     },
     {
      "q": "mounjaro price simple online pharmacy",
      "clicks": 3,
      "impr": 4,
      "ctr": 75.0,
-     "pos": 1.0
+     "pos": 1.0,
+     "prev": {
+      "clicks": 2,
+      "impr": 8,
+      "ctr": 25.0,
+      "pos": 1.0
+     }
     },
     {
      "q": "5mg mounjaro price",
      "clicks": 2,
      "impr": 207,
      "ctr": 1.0,
-     "pos": 13.3
+     "pos": 13.3,
+     "prev": {
+      "clicks": 7,
+      "impr": 423,
+      "ctr": 1.7,
+      "pos": 8.7
+     }
     },
     {
      "q": "7.5mg",
      "clicks": 2,
      "impr": 3,
      "ctr": 66.7,
-     "pos": 1.7
+     "pos": 1.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 1,
+      "ctr": 0.0,
+      "pos": 2.0
+     }
     }
    ],
    "as_of": "2026-09-01",
@@ -5293,7 +5887,7 @@
     },
     {
      "d": "2026-09-03",
-     "sessions": 111,
+     "sessions": 112,
      "events": 90
     }
    ],
@@ -5339,7 +5933,7 @@
     {
      "m": "2026-09",
      "revenue": 2949.8,
-     "sessions": 232
+     "sessions": 233
     }
    ],
    "as_of": "2026-09-03"
@@ -5562,12 +6156,12 @@
    "of": 6
   },
   "psi": {
-   "score": 55,
-   "lcp": "3.5 s",
+   "score": 45,
+   "lcp": "6.8 s",
    "cls": "0",
-   "tbt": "7,240 ms",
+   "tbt": "1,610 ms",
    "fcp": "2.3 s",
-   "si": "4.4 s",
+   "si": "4.6 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 776,

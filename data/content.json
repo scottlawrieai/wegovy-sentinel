@@ -34060,14 +34060,14 @@
      "OfferShippingDetails"
     ],
     "authors": [],
-    "bytes": 624,
+    "bytes": 627,
     "psi": {
-     "score": 49,
-     "lcp": "6.2 s",
-     "cls": "0.03",
-     "tbt": "670 ms",
-     "fcp": "2.6 s",
-     "si": "8.6 s",
+     "score": 68,
+     "lcp": "6.3 s",
+     "cls": "0.027",
+     "tbt": "170 ms",
+     "fcp": "2.1 s",
+     "si": "5.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1133,
@@ -34192,7 +34192,24 @@
      "Answer"
     ],
     "authors": [],
-    "bytes": 323
+    "bytes": 323,
+    "psi": {
+     "score": 56,
+     "lcp": "11.9 s",
+     "cls": "0",
+     "tbt": "180 ms",
+     "fcp": "4.8 s",
+     "si": "8.3 s",
+     "strategy": "mobile",
+     "field": {
+      "lcp_ms": 3498,
+      "lcp_ms_cat": "AVERAGE",
+      "inp_ms": 185,
+      "inp_ms_cat": "FAST",
+      "cls100": 0,
+      "cls100_cat": "FAST"
+     }
+    }
    },
    {
     "url": "https://onlinedoctor.lloydspharmacy.com/uk/weight-loss/wegovy-pill",
@@ -34336,12 +34353,12 @@
     "authors": [],
     "bytes": 300,
     "psi": {
-     "score": 65,
-     "lcp": "15.0 s",
+     "score": 50,
+     "lcp": "15.7 s",
      "cls": "0",
-     "tbt": "0 ms",
-     "fcp": "3.8 s",
-     "si": "4.7 s",
+     "tbt": "380 ms",
+     "fcp": "4.1 s",
+     "si": "8.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1369,
@@ -34374,7 +34391,7 @@
      "Find out if Wegovy Pill is right for you"
     ],
     "h3n": 52,
-    "wc": 3934,
+    "wc": 3938,
     "faqs": [
      "What is Wegovy Pill?",
      "How does Wegovy Pill work?",
@@ -34460,7 +34477,7 @@
      "price / cost": 18,
      "UK availability": 2,
      "NHS": 8,
-     "online consultation": 9,
+     "online consultation": 5,
      "delivery": 15
     },
     "phrases": [
@@ -34873,7 +34890,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "7070 words vs competitor median 3757"
+     "evidence": "7070 words vs competitor median 3759"
     },
     {
      "name": "FAQ coverage",
@@ -34919,7 +34936,7 @@
    ],
    "body_cov": 97,
    "faq_cov": 43,
-   "comp_median_wc": 3757
+   "comp_median_wc": 3759
   },
   "opps": [
    "Strengthen faq coverage for a primary term (26 FAQs, 43% of competitor FAQ topics covered)",
