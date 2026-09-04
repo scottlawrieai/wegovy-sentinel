@@ -50,7 +50,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 43,
-   "wc": 3639,
+   "wc": 3641,
    "faqs": [
     "What is Wegovy?",
     "Is it for me?",
@@ -133,7 +133,7 @@
     "Novo Nordisk": 2,
     "prescription-only": 7,
     "nausea": 19,
-    "side effects": 17,
+    "side effects": 16,
     "pancreatitis": 1,
     "thyroid warning": 6,
     "pregnancy warning": 7,
@@ -314,12 +314,12 @@
     "authors": [],
     "bytes": 659,
     "psi": {
-     "score": 61,
-     "lcp": "12.4 s",
-     "cls": "0.082",
-     "tbt": "260 ms",
-     "fcp": "2.3 s",
-     "si": "5.9 s",
+     "score": 51,
+     "lcp": "14.3 s",
+     "cls": "0",
+     "tbt": "350 ms",
+     "fcp": "4.4 s",
+     "si": "7.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1087,
@@ -436,11 +436,11 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 42,
-     "lcp": "15.2 s",
+     "score": 37,
+     "lcp": "15.0 s",
      "cls": "0",
-     "tbt": "610 ms",
-     "fcp": "5.6 s",
+     "tbt": "880 ms",
+     "fcp": "5.7 s",
      "si": "8.4 s",
      "strategy": "mobile",
      "field": {
@@ -544,12 +544,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 74,
-     "lcp": "4.7 s",
-     "cls": "0.004",
-     "tbt": "170 ms",
-     "fcp": "3.4 s",
-     "si": "3.4 s",
+     "score": 17,
+     "lcp": "7.3 s",
+     "cls": "0.359",
+     "tbt": "2,030 ms",
+     "fcp": "3.7 s",
+     "si": "6.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 714,
@@ -889,7 +889,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 43,
-    "wc": 3639,
+    "wc": 3641,
     "faqs": [
      "What is Wegovy?",
      "Is it for me?",
@@ -972,7 +972,7 @@
      "Novo Nordisk": 2,
      "prescription-only": 7,
      "nausea": 19,
-     "side effects": 17,
+     "side effects": 16,
      "pancreatitis": 1,
      "thyroid warning": 6,
      "pregnancy warning": 7,
@@ -1059,7 +1059,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "warn",
-     "evidence": "3639 words vs competitor median 6028"
+     "evidence": "3641 words vs competitor median 6028"
     },
     {
      "name": "FAQ coverage",
@@ -1077,11 +1077,11 @@
    "term_gaps": [],
    "entity_gaps": [
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     },
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     }
    ],
@@ -1108,9 +1108,9 @@
   },
   "opps": [
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
-   "Strengthen body depth (words) for a primary term (3639 words vs competitor median 6028)",
+   "Strengthen body depth (words) for a primary term (3641 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: Rybelsus, STEP trials",
+   "Add missing entities competitors cover: STEP trials, Rybelsus",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],
   "fetched": 7,

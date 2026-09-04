@@ -1086,7 +1086,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 5903,
+   "wc": 5905,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -1164,7 +1164,7 @@
     "Eli Lilly": 4,
     "prescription-only": 7,
     "nausea / GI side effects": 20,
-    "side effects": 20,
+    "side effects": 19,
     "pancreatitis": 3,
     "thyroid": 2,
     "BMI eligibility": 5,
@@ -1349,12 +1349,12 @@
     "authors": [],
     "bytes": 707,
     "psi": {
-     "score": 68,
-     "lcp": "7.8 s",
-     "cls": "0.089",
-     "tbt": "50 ms",
-     "fcp": "2.3 s",
-     "si": "5.0 s",
+     "score": 56,
+     "lcp": "7.5 s",
+     "cls": "0.014",
+     "tbt": "420 ms",
+     "fcp": "2.6 s",
+     "si": "6.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1193,
@@ -1434,10 +1434,10 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 23,
-     "lcp": "14.8 s",
+     "score": 22,
+     "lcp": "13.0 s",
      "cls": "0.518",
-     "tbt": "470 ms",
+     "tbt": "530 ms",
      "fcp": "9.2 s",
      "si": "9.2 s",
      "strategy": "mobile",
@@ -1607,12 +1607,12 @@
     "authors": [],
     "bytes": 317,
     "psi": {
-     "score": 61,
-     "lcp": "6.9 s",
+     "score": 72,
+     "lcp": "7.4 s",
      "cls": "0.026",
-     "tbt": "400 ms",
-     "fcp": "2.1 s",
-     "si": "5.3 s",
+     "tbt": "0 ms",
+     "fcp": "2.4 s",
+     "si": "3.8 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1026,
@@ -1842,7 +1842,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 5903,
+    "wc": 5905,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -1920,7 +1920,7 @@
      "Eli Lilly": 4,
      "prescription-only": 7,
      "nausea / GI side effects": 20,
-     "side effects": 20,
+     "side effects": 19,
      "pancreatitis": 3,
      "thyroid": 2,
      "BMI eligibility": 5,
@@ -2006,7 +2006,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "5903 words vs competitor median 5369"
+     "evidence": "5905 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",
