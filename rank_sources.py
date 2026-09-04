@@ -755,20 +755,6 @@ def _awr_latest_date(payload):
     return max(found) if found else None       # ISO dates sort chronologically
 
 
-def _awr_iter_projects(payload):
-    """Yield project dicts from an action=projects payload of any shape."""
-    if isinstance(payload, dict):
-        for key in ("projects", "details", "data", "response"):
-            if key in payload:
-                yield from _awr_iter_projects(payload[key])
-                return
-        if "name" in payload or "project" in payload:
-            yield payload
-    elif isinstance(payload, list):
-        for item in payload:
-            yield from _awr_iter_projects(item)
-
-
 def fetch_awr(keywords) -> dict:
     """Return {keyword_lower: position} from Advanced Web Ranking. Empty if off.
 
@@ -796,28 +782,7 @@ def fetch_awr(keywords) -> dict:
         headers["Authorization"] = f"Bearer {token}"
         payload = _awr_json(f"{base}?{urllib.parse.urlencode({'project': project})}", headers)
     else:
-        # get.php addresses projects by numeric id; a name in AWR_PROJECT is
-        # resolved against action=projects (case-insensitive). Passing a name
-        # directly is silently ignored by some deployments, which exports the
-        # account's default project instead -- hence the resolution step.
-        proj_param = str(project)
-        if not proj_param.isdigit():
-            try:
-                pl = _awr_json(
-                    f"{base}?{urllib.parse.urlencode({'action': 'projects', 'token': token})}",
-                    headers)
-                for pr in _awr_iter_projects(pl):
-                    name = str(pr.get("name") or pr.get("project") or "").strip()
-                    if name.lower() == proj_param.strip().lower():
-                        pid = pr.get("id") or pr.get("project_id")
-                        if pid is not None:
-                            print(f"[awr] project {name!r} -> id {pid}",
-                                  file=sys.stderr)
-                            proj_param = str(pid)
-                        break
-            except Exception as e:
-                print(f"[warn] AWR project lookup: {e}", file=sys.stderr)
-        common = {"token": token, "project": proj_param, "format": "json"}
+        common = {"token": token, "project": project, "format": "json"}
         # 1. AWR Cloud v2 export_ranking needs a date range -- get the latest date.
         start = os.environ.get("AWR_START_DATE", "")
         stop = os.environ.get("AWR_STOP_DATE", "")
