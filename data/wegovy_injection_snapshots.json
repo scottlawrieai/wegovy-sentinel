@@ -2120,13 +2120,516 @@
     }
    ]
   },
-  "ga4": {},
-  "ga4rev": {},
+  "ga4": {
+   "page": [
+    {
+     "d": "2026-06-05",
+     "sessions": 84,
+     "events": 38
+    },
+    {
+     "d": "2026-06-06",
+     "sessions": 58,
+     "events": 24
+    },
+    {
+     "d": "2026-06-07",
+     "sessions": 71,
+     "events": 21
+    },
+    {
+     "d": "2026-06-08",
+     "sessions": 68,
+     "events": 22
+    },
+    {
+     "d": "2026-06-09",
+     "sessions": 65,
+     "events": 18
+    },
+    {
+     "d": "2026-06-10",
+     "sessions": 65,
+     "events": 12
+    },
+    {
+     "d": "2026-06-11",
+     "sessions": 92,
+     "events": 21
+    },
+    {
+     "d": "2026-06-12",
+     "sessions": 99,
+     "events": 13
+    },
+    {
+     "d": "2026-06-13",
+     "sessions": 82,
+     "events": 15
+    },
+    {
+     "d": "2026-06-14",
+     "sessions": 86,
+     "events": 16
+    },
+    {
+     "d": "2026-06-15",
+     "sessions": 76,
+     "events": 27
+    },
+    {
+     "d": "2026-06-16",
+     "sessions": 91,
+     "events": 36
+    },
+    {
+     "d": "2026-06-17",
+     "sessions": 89,
+     "events": 28
+    },
+    {
+     "d": "2026-06-18",
+     "sessions": 91,
+     "events": 23
+    },
+    {
+     "d": "2026-06-19",
+     "sessions": 68,
+     "events": 35
+    },
+    {
+     "d": "2026-06-20",
+     "sessions": 44,
+     "events": 12
+    },
+    {
+     "d": "2026-06-21",
+     "sessions": 63,
+     "events": 18
+    },
+    {
+     "d": "2026-06-22",
+     "sessions": 59,
+     "events": 35
+    },
+    {
+     "d": "2026-06-23",
+     "sessions": 85,
+     "events": 27
+    },
+    {
+     "d": "2026-06-24",
+     "sessions": 70,
+     "events": 29
+    },
+    {
+     "d": "2026-06-25",
+     "sessions": 76,
+     "events": 18
+    },
+    {
+     "d": "2026-06-26",
+     "sessions": 78,
+     "events": 58
+    },
+    {
+     "d": "2026-06-27",
+     "sessions": 47,
+     "events": 14
+    },
+    {
+     "d": "2026-06-28",
+     "sessions": 76,
+     "events": 25
+    },
+    {
+     "d": "2026-06-29",
+     "sessions": 66,
+     "events": 13
+    },
+    {
+     "d": "2026-06-30",
+     "sessions": 72,
+     "events": 18
+    },
+    {
+     "d": "2026-07-01",
+     "sessions": 63,
+     "events": 17
+    },
+    {
+     "d": "2026-07-02",
+     "sessions": 65,
+     "events": 39
+    },
+    {
+     "d": "2026-07-03",
+     "sessions": 86,
+     "events": 22
+    },
+    {
+     "d": "2026-07-04",
+     "sessions": 75,
+     "events": 9
+    },
+    {
+     "d": "2026-07-05",
+     "sessions": 58,
+     "events": 14
+    },
+    {
+     "d": "2026-07-06",
+     "sessions": 103,
+     "events": 30
+    },
+    {
+     "d": "2026-07-07",
+     "sessions": 67,
+     "events": 14
+    },
+    {
+     "d": "2026-07-08",
+     "sessions": 74,
+     "events": 28
+    },
+    {
+     "d": "2026-07-09",
+     "sessions": 62,
+     "events": 23
+    },
+    {
+     "d": "2026-07-10",
+     "sessions": 57,
+     "events": 16
+    },
+    {
+     "d": "2026-07-11",
+     "sessions": 44,
+     "events": 13
+    },
+    {
+     "d": "2026-07-12",
+     "sessions": 43,
+     "events": 12
+    },
+    {
+     "d": "2026-07-13",
+     "sessions": 69,
+     "events": 16
+    },
+    {
+     "d": "2026-07-14",
+     "sessions": 56,
+     "events": 28
+    },
+    {
+     "d": "2026-07-15",
+     "sessions": 61,
+     "events": 25
+    },
+    {
+     "d": "2026-07-16",
+     "sessions": 64,
+     "events": 30
+    },
+    {
+     "d": "2026-07-17",
+     "sessions": 46,
+     "events": 5
+    },
+    {
+     "d": "2026-07-18",
+     "sessions": 38,
+     "events": 12
+    },
+    {
+     "d": "2026-07-19",
+     "sessions": 57,
+     "events": 5
+    },
+    {
+     "d": "2026-07-20",
+     "sessions": 49,
+     "events": 26
+    },
+    {
+     "d": "2026-07-21",
+     "sessions": 40,
+     "events": 6
+    },
+    {
+     "d": "2026-07-22",
+     "sessions": 53,
+     "events": 27
+    },
+    {
+     "d": "2026-07-23",
+     "sessions": 41,
+     "events": 21
+    },
+    {
+     "d": "2026-07-24",
+     "sessions": 51,
+     "events": 40
+    },
+    {
+     "d": "2026-07-25",
+     "sessions": 42,
+     "events": 4
+    },
+    {
+     "d": "2026-07-26",
+     "sessions": 62,
+     "events": 15
+    },
+    {
+     "d": "2026-07-27",
+     "sessions": 65,
+     "events": 17
+    },
+    {
+     "d": "2026-07-28",
+     "sessions": 64,
+     "events": 38
+    },
+    {
+     "d": "2026-07-29",
+     "sessions": 37,
+     "events": 14
+    },
+    {
+     "d": "2026-07-30",
+     "sessions": 34,
+     "events": 9
+    },
+    {
+     "d": "2026-07-31",
+     "sessions": 47,
+     "events": 12
+    },
+    {
+     "d": "2026-08-01",
+     "sessions": 42,
+     "events": 12
+    },
+    {
+     "d": "2026-08-02",
+     "sessions": 31,
+     "events": 7
+    },
+    {
+     "d": "2026-08-03",
+     "sessions": 24,
+     "events": 6
+    },
+    {
+     "d": "2026-08-04",
+     "sessions": 31,
+     "events": 4
+    },
+    {
+     "d": "2026-08-05",
+     "sessions": 26,
+     "events": 1
+    },
+    {
+     "d": "2026-08-06",
+     "sessions": 24,
+     "events": 9
+    },
+    {
+     "d": "2026-08-07",
+     "sessions": 31,
+     "events": 23
+    },
+    {
+     "d": "2026-08-08",
+     "sessions": 21,
+     "events": 3
+    },
+    {
+     "d": "2026-08-09",
+     "sessions": 17,
+     "events": 0
+    },
+    {
+     "d": "2026-08-10",
+     "sessions": 15,
+     "events": 7
+    },
+    {
+     "d": "2026-08-11",
+     "sessions": 19,
+     "events": 4
+    },
+    {
+     "d": "2026-08-12",
+     "sessions": 22,
+     "events": 8
+    },
+    {
+     "d": "2026-08-13",
+     "sessions": 25,
+     "events": 1
+    },
+    {
+     "d": "2026-08-14",
+     "sessions": 22,
+     "events": 0
+    },
+    {
+     "d": "2026-08-15",
+     "sessions": 16,
+     "events": 0
+    },
+    {
+     "d": "2026-08-16",
+     "sessions": 19,
+     "events": 6
+    },
+    {
+     "d": "2026-08-17",
+     "sessions": 27,
+     "events": 20
+    },
+    {
+     "d": "2026-08-18",
+     "sessions": 24,
+     "events": 25
+    },
+    {
+     "d": "2026-08-19",
+     "sessions": 43,
+     "events": 10
+    },
+    {
+     "d": "2026-08-20",
+     "sessions": 42,
+     "events": 12
+    },
+    {
+     "d": "2026-08-21",
+     "sessions": 42,
+     "events": 18
+    },
+    {
+     "d": "2026-08-22",
+     "sessions": 57,
+     "events": 1
+    },
+    {
+     "d": "2026-08-23",
+     "sessions": 43,
+     "events": 27
+    },
+    {
+     "d": "2026-08-24",
+     "sessions": 65,
+     "events": 23
+    },
+    {
+     "d": "2026-08-25",
+     "sessions": 45,
+     "events": 24
+    },
+    {
+     "d": "2026-08-26",
+     "sessions": 51,
+     "events": 20
+    },
+    {
+     "d": "2026-08-27",
+     "sessions": 52,
+     "events": 3
+    },
+    {
+     "d": "2026-08-28",
+     "sessions": 55,
+     "events": 32
+    },
+    {
+     "d": "2026-08-29",
+     "sessions": 51,
+     "events": 21
+    },
+    {
+     "d": "2026-08-30",
+     "sessions": 47,
+     "events": 13
+    },
+    {
+     "d": "2026-08-31",
+     "sessions": 46,
+     "events": 2
+    },
+    {
+     "d": "2026-09-01",
+     "sessions": 37,
+     "events": 14
+    },
+    {
+     "d": "2026-09-02",
+     "sessions": 52,
+     "events": 25
+    },
+    {
+     "d": "2026-09-03",
+     "sessions": 25,
+     "events": 39
+    }
+   ],
+   "as_of": "2026-09-03"
+  },
+  "ga4rev": {
+   "months": [
+    {
+     "m": "2026-02",
+     "revenue": 0.0,
+     "sessions": 1
+    },
+    {
+     "m": "2026-03",
+     "revenue": 241.73,
+     "sessions": 73
+    },
+    {
+     "m": "2026-04",
+     "revenue": 486.96,
+     "sessions": 58
+    },
+    {
+     "m": "2026-05",
+     "revenue": 2009.83,
+     "sessions": 618
+    },
+    {
+     "m": "2026-06",
+     "revenue": 4306.22,
+     "sessions": 585
+    },
+    {
+     "m": "2026-07",
+     "revenue": 4504.63,
+     "sessions": 620
+    },
+    {
+     "m": "2026-08",
+     "revenue": 3003.25,
+     "sessions": 291
+    },
+    {
+     "m": "2026-09",
+     "revenue": 399.96,
+     "sessions": 40
+    }
+   ],
+   "as_of": "2026-09-03"
+  },
   "m": {
    "pill": 31,
    "bwInj": null,
-   "blD": 48,
-   "blT": 141
+   "blD": 49,
+   "blT": 142
   },
   "flags": {
    "wrong": true,
@@ -2349,9 +2852,9 @@
    "score": 66,
    "lcp": "2.6 s",
    "cls": "0",
-   "tbt": "2,270 ms",
+   "tbt": "1,760 ms",
    "fcp": "2.3 s",
-   "si": "3.0 s",
+   "si": "3.9 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 574,
@@ -2363,7 +2866,7 @@
    }
   },
   "links": {
-   "ours": 48,
+   "ours": 49,
    "comp": {
     "Superdrug": 75,
     "Chemist4U": 19,

@@ -1086,7 +1086,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 6177,
+   "wc": 6166,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -1169,7 +1169,7 @@
     "thyroid": 2,
     "BMI eligibility": 5,
     "Wegovy / semaglutide": 30,
-    "price per month": 35,
+    "price per month": 36,
     "clinician review": 49
    },
    "phrases": [
@@ -1212,9 +1212,9 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Lyn Leigh",
-    "Mrs sally anne lockhart",
-    "julie connell"
+    "Laura mcmichan",
+    "TRUPRINT",
+    "Hilary Burnett"
    ],
    "bytes": 461
   },
@@ -1347,14 +1347,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 709,
+    "bytes": 708,
     "psi": {
-     "score": 61,
-     "lcp": "7.9 s",
-     "cls": "0.122",
-     "tbt": "160 ms",
-     "fcp": "3.0 s",
-     "si": "5.1 s",
+     "score": 57,
+     "lcp": "7.7 s",
+     "cls": "0.014",
+     "tbt": "370 ms",
+     "fcp": "2.6 s",
+     "si": "6.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1193,
@@ -1434,12 +1434,12 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 18,
-     "lcp": "11.5 s",
+     "score": 33,
+     "lcp": "13.2 s",
      "cls": "0.518",
-     "tbt": "700 ms",
-     "fcp": "9.2 s",
-     "si": "9.2 s",
+     "tbt": "540 ms",
+     "fcp": "3.4 s",
+     "si": "3.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1732,
@@ -1605,7 +1605,24 @@
      "CollegeOrUniversity"
     ],
     "authors": [],
-    "bytes": 322
+    "bytes": 319,
+    "psi": {
+     "score": 65,
+     "lcp": "6.8 s",
+     "cls": "0.026",
+     "tbt": "350 ms",
+     "fcp": "2.0 s",
+     "si": "4.5 s",
+     "strategy": "mobile",
+     "field": {
+      "lcp_ms": 1026,
+      "lcp_ms_cat": "FAST",
+      "inp_ms": 79,
+      "inp_ms_cat": "FAST",
+      "cls100": 1,
+      "cls100_cat": "FAST"
+     }
+    }
    },
    {
     "url": "https://onlinedoctor.boots.com/treatments/mounjaro",
@@ -1825,7 +1842,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 6177,
+    "wc": 6166,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -1908,7 +1925,7 @@
      "thyroid": 2,
      "BMI eligibility": 5,
      "Wegovy / semaglutide": 30,
-     "price per month": 35,
+     "price per month": 36,
      "clinician review": 49
     },
     "phrases": [
@@ -1951,9 +1968,9 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Lyn Leigh",
-     "Mrs sally anne lockhart",
-     "julie connell"
+     "Laura mcmichan",
+     "TRUPRINT",
+     "Hilary Burnett"
     ],
     "bytes": 461
    }
@@ -1989,7 +2006,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6177 words vs competitor median 5369"
+     "evidence": "6166 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",

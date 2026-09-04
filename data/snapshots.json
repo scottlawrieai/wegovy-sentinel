@@ -47921,8 +47921,476 @@
     }
    ]
   },
-  "ga4": {},
-  "ga4rev": {},
+  "ga4": {
+   "page": [
+    {
+     "d": "2026-06-08",
+     "sessions": 1,
+     "events": 0
+    },
+    {
+     "d": "2026-06-10",
+     "sessions": 4,
+     "events": 0
+    },
+    {
+     "d": "2026-06-11",
+     "sessions": 5401,
+     "events": 124
+    },
+    {
+     "d": "2026-06-12",
+     "sessions": 5268,
+     "events": 814
+    },
+    {
+     "d": "2026-06-13",
+     "sessions": 2902,
+     "events": 785
+    },
+    {
+     "d": "2026-06-14",
+     "sessions": 5828,
+     "events": 1026
+    },
+    {
+     "d": "2026-06-15",
+     "sessions": 5688,
+     "events": 1029
+    },
+    {
+     "d": "2026-06-16",
+     "sessions": 6403,
+     "events": 1000
+    },
+    {
+     "d": "2026-06-17",
+     "sessions": 2512,
+     "events": 668
+    },
+    {
+     "d": "2026-06-18",
+     "sessions": 9630,
+     "events": 1012
+    },
+    {
+     "d": "2026-06-19",
+     "sessions": 4354,
+     "events": 944
+    },
+    {
+     "d": "2026-06-20",
+     "sessions": 2951,
+     "events": 686
+    },
+    {
+     "d": "2026-06-21",
+     "sessions": 2576,
+     "events": 511
+    },
+    {
+     "d": "2026-06-22",
+     "sessions": 1632,
+     "events": 384
+    },
+    {
+     "d": "2026-06-23",
+     "sessions": 2052,
+     "events": 448
+    },
+    {
+     "d": "2026-06-24",
+     "sessions": 1582,
+     "events": 369
+    },
+    {
+     "d": "2026-06-25",
+     "sessions": 1194,
+     "events": 374
+    },
+    {
+     "d": "2026-06-26",
+     "sessions": 878,
+     "events": 305
+    },
+    {
+     "d": "2026-06-27",
+     "sessions": 791,
+     "events": 342
+    },
+    {
+     "d": "2026-06-28",
+     "sessions": 809,
+     "events": 264
+    },
+    {
+     "d": "2026-06-29",
+     "sessions": 1113,
+     "events": 312
+    },
+    {
+     "d": "2026-06-30",
+     "sessions": 851,
+     "events": 378
+    },
+    {
+     "d": "2026-07-01",
+     "sessions": 914,
+     "events": 358
+    },
+    {
+     "d": "2026-07-02",
+     "sessions": 778,
+     "events": 246
+    },
+    {
+     "d": "2026-07-03",
+     "sessions": 478,
+     "events": 206
+    },
+    {
+     "d": "2026-07-04",
+     "sessions": 430,
+     "events": 207
+    },
+    {
+     "d": "2026-07-05",
+     "sessions": 466,
+     "events": 246
+    },
+    {
+     "d": "2026-07-06",
+     "sessions": 1535,
+     "events": 634
+    },
+    {
+     "d": "2026-07-07",
+     "sessions": 990,
+     "events": 314
+    },
+    {
+     "d": "2026-07-08",
+     "sessions": 533,
+     "events": 175
+    },
+    {
+     "d": "2026-07-09",
+     "sessions": 381,
+     "events": 127
+    },
+    {
+     "d": "2026-07-10",
+     "sessions": 385,
+     "events": 103
+    },
+    {
+     "d": "2026-07-11",
+     "sessions": 346,
+     "events": 115
+    },
+    {
+     "d": "2026-07-12",
+     "sessions": 280,
+     "events": 114
+    },
+    {
+     "d": "2026-07-13",
+     "sessions": 330,
+     "events": 115
+    },
+    {
+     "d": "2026-07-14",
+     "sessions": 406,
+     "events": 124
+    },
+    {
+     "d": "2026-07-15",
+     "sessions": 337,
+     "events": 101
+    },
+    {
+     "d": "2026-07-16",
+     "sessions": 419,
+     "events": 85
+    },
+    {
+     "d": "2026-07-17",
+     "sessions": 282,
+     "events": 115
+    },
+    {
+     "d": "2026-07-18",
+     "sessions": 198,
+     "events": 78
+    },
+    {
+     "d": "2026-07-19",
+     "sessions": 211,
+     "events": 99
+    },
+    {
+     "d": "2026-07-20",
+     "sessions": 305,
+     "events": 68
+    },
+    {
+     "d": "2026-07-21",
+     "sessions": 367,
+     "events": 145
+    },
+    {
+     "d": "2026-07-22",
+     "sessions": 344,
+     "events": 94
+    },
+    {
+     "d": "2026-07-23",
+     "sessions": 261,
+     "events": 111
+    },
+    {
+     "d": "2026-07-24",
+     "sessions": 280,
+     "events": 124
+    },
+    {
+     "d": "2026-07-25",
+     "sessions": 195,
+     "events": 43
+    },
+    {
+     "d": "2026-07-26",
+     "sessions": 229,
+     "events": 99
+    },
+    {
+     "d": "2026-07-27",
+     "sessions": 237,
+     "events": 127
+    },
+    {
+     "d": "2026-07-28",
+     "sessions": 212,
+     "events": 69
+    },
+    {
+     "d": "2026-07-29",
+     "sessions": 109,
+     "events": 9
+    },
+    {
+     "d": "2026-07-30",
+     "sessions": 163,
+     "events": 78
+    },
+    {
+     "d": "2026-07-31",
+     "sessions": 212,
+     "events": 88
+    },
+    {
+     "d": "2026-08-01",
+     "sessions": 83,
+     "events": 17
+    },
+    {
+     "d": "2026-08-02",
+     "sessions": 80,
+     "events": 26
+    },
+    {
+     "d": "2026-08-03",
+     "sessions": 95,
+     "events": 33
+    },
+    {
+     "d": "2026-08-04",
+     "sessions": 55,
+     "events": 18
+    },
+    {
+     "d": "2026-08-05",
+     "sessions": 71,
+     "events": 19
+    },
+    {
+     "d": "2026-08-06",
+     "sessions": 50,
+     "events": 6
+    },
+    {
+     "d": "2026-08-07",
+     "sessions": 37,
+     "events": 9
+    },
+    {
+     "d": "2026-08-08",
+     "sessions": 21,
+     "events": 7
+    },
+    {
+     "d": "2026-08-09",
+     "sessions": 31,
+     "events": 3
+    },
+    {
+     "d": "2026-08-10",
+     "sessions": 126,
+     "events": 18
+    },
+    {
+     "d": "2026-08-11",
+     "sessions": 63,
+     "events": 7
+    },
+    {
+     "d": "2026-08-12",
+     "sessions": 46,
+     "events": 28
+    },
+    {
+     "d": "2026-08-13",
+     "sessions": 38,
+     "events": 11
+    },
+    {
+     "d": "2026-08-14",
+     "sessions": 53,
+     "events": 3
+    },
+    {
+     "d": "2026-08-15",
+     "sessions": 37,
+     "events": 0
+    },
+    {
+     "d": "2026-08-16",
+     "sessions": 36,
+     "events": 14
+    },
+    {
+     "d": "2026-08-17",
+     "sessions": 38,
+     "events": 13
+    },
+    {
+     "d": "2026-08-18",
+     "sessions": 135,
+     "events": 21
+    },
+    {
+     "d": "2026-08-19",
+     "sessions": 71,
+     "events": 14
+    },
+    {
+     "d": "2026-08-20",
+     "sessions": 69,
+     "events": 35
+    },
+    {
+     "d": "2026-08-21",
+     "sessions": 58,
+     "events": 18
+    },
+    {
+     "d": "2026-08-22",
+     "sessions": 54,
+     "events": 29
+    },
+    {
+     "d": "2026-08-23",
+     "sessions": 50,
+     "events": 9
+    },
+    {
+     "d": "2026-08-24",
+     "sessions": 74,
+     "events": 28
+    },
+    {
+     "d": "2026-08-25",
+     "sessions": 102,
+     "events": 31
+    },
+    {
+     "d": "2026-08-26",
+     "sessions": 72,
+     "events": 22
+    },
+    {
+     "d": "2026-08-27",
+     "sessions": 77,
+     "events": 32
+    },
+    {
+     "d": "2026-08-28",
+     "sessions": 58,
+     "events": 45
+    },
+    {
+     "d": "2026-08-29",
+     "sessions": 60,
+     "events": 4
+    },
+    {
+     "d": "2026-08-30",
+     "sessions": 49,
+     "events": 24
+    },
+    {
+     "d": "2026-08-31",
+     "sessions": 54,
+     "events": 18
+    },
+    {
+     "d": "2026-09-01",
+     "sessions": 52,
+     "events": 25
+    },
+    {
+     "d": "2026-09-02",
+     "sessions": 50,
+     "events": 39
+    },
+    {
+     "d": "2026-09-03",
+     "sessions": 35,
+     "events": 16
+    }
+   ],
+   "as_of": "2026-09-03"
+  },
+  "ga4rev": {
+   "months": [
+    {
+     "m": "2026-04",
+     "revenue": 0.0,
+     "sessions": 1
+    },
+    {
+     "m": "2026-06",
+     "revenue": 4315.65,
+     "sessions": 1848
+    },
+    {
+     "m": "2026-07",
+     "revenue": 8426.12,
+     "sessions": 1912
+    },
+    {
+     "m": "2026-08",
+     "revenue": 1852.63,
+     "sessions": 355
+    },
+    {
+     "m": "2026-09",
+     "revenue": 307.98,
+     "sessions": 41
+    }
+   ],
+   "as_of": "2026-09-03"
+  },
   "m": {
    "pill": 44,
    "bwInj": null,
@@ -48131,12 +48599,12 @@
    "of": 6
   },
   "psi": {
-   "score": 50,
-   "lcp": "10.3 s",
+   "score": 82,
+   "lcp": "3.7 s",
    "cls": "0",
-   "tbt": "400 ms",
-   "fcp": "4.8 s",
-   "si": "6.7 s",
+   "tbt": "240 ms",
+   "fcp": "2.5 s",
+   "si": "2.8 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 724,
@@ -48150,10 +48618,10 @@
   "links": {
    "ours": 19,
    "comp": {
-    "Superdrug": 42,
+    "Superdrug": 44,
     "Chemist4U": 21,
     "FamilyChemist": 6,
-    "MedExpress": 14,
+    "MedExpress": 15,
     "Boots": 8
    },
    "prospects": [
@@ -48249,6 +48717,15 @@
      ]
     },
     {
+     "d": "bhs-links-r258.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
      "d": "bhs-links-r259.xyz",
      "n": 3,
      "who": [
@@ -48305,10 +48782,10 @@
      ]
     },
     {
-     "d": "bhs-links-r258.xyz",
+     "d": "bhs-links-r260.xyz",
      "n": 1,
      "who": [
-      "Chemist4U"
+      "Superdrug"
      ]
     },
     {
@@ -48352,16 +48829,9 @@
      "who": [
       "Superdrug"
      ]
-    },
-    {
-     "d": "nhdtlogs.com",
-     "n": 1,
-     "who": [
-      "MedExpress"
-     ]
     }
    ],
-   "strong": 16
+   "strong": 17
   }
  }
 ]
