@@ -137,6 +137,10 @@ Setup:
    - Optional `AWR_GEO` (default `United Kingdom`), `AWR_DEVICE` (default `mobile`).
    - Optional `AWR_AUTH=bearer` + `AWR_BASE` to use a Bearer-token endpoint
      instead of the v2 export API.
+   - Optional `AWR_PROJECT_MOUNJARO` / `AWR_PROJECT_INJECTION` — dedicated
+     AWR project names for those products; without them every product reads
+     the shared `AWR_PROJECT`. Note AWR only returns rankings for keywords
+     actually added to the project in AWR Cloud.
 
 > The v2 export field names are confirmed by the parser flexibly (it walks
 > nested groups and detects keyword/position fields). This dev sandbox blocks

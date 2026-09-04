@@ -289,6 +289,11 @@ def fetch_extra_sources() -> dict:
     except Exception as e:
         print(f"[warn] GSC unavailable: {e}", file=sys.stderr)
     try:
+        # This product can track its keywords in its own AWR project; without
+        # the dedicated variable it falls back to the shared AWR_PROJECT.
+        _proj = os.environ.get("AWR_PROJECT_INJECTION", "")
+        if _proj:
+            os.environ["AWR_PROJECT"] = _proj
         src["awr"] = rank_sources.fetch_awr(kws)
     except Exception as e:
         print(f"[warn] AWR unavailable: {e}", file=sys.stderr)

@@ -13,11 +13,10 @@
   <div class="topbar-left">
     <span class="brand">SENTINEL</span>
     <span class="brand-sub" id="brand-sub">simpleonlinepharmacy.co.uk</span>
-    <span class="mode-badge" id="mode-badge" hidden></span>
     <div class="pills" data-pill-group="product" id="product-pills" style="margin-left:14px">
-      <button type="button" class="pill active" data-value="wegovy">Wegovy pill</button>
+      <button type="button" class="pill active" data-value="mounjaro">Mounjaro</button>
+      <button type="button" class="pill" data-value="wegovy">Wegovy pill</button>
       <button type="button" class="pill" data-value="injection">Wegovy injection</button>
-      <button type="button" class="pill" data-value="mounjaro">Mounjaro</button>
     </div>
   </div>
   <div class="topbar-right">
@@ -39,8 +38,8 @@
 
 <div class="page">
   <div class="page-header">
-    <h1>Wegovy pill — search performance</h1>
-    <div class="sub">Daily rank patrol, Search Console trends and on-page change tracking for the Wegovy pill cluster.</div>
+    <h1>Mounjaro — search performance</h1>
+    <div class="sub">Daily rank patrol, Search Console trends and on-page change tracking for the Mounjaro cluster.</div>
   </div>
   <main id="sections"></main>
 </div>
@@ -85,7 +84,7 @@
     }
   };
   var startProduct = (location.hash || '').replace('#', '');
-  if (!PRODUCTS[startProduct]) startProduct = 'wegovy';
+  if (!PRODUCTS[startProduct]) startProduct = 'mounjaro';
 
   window.Sentinel = {
     data: { snaps: [], changelog: [], content: [] },
@@ -253,17 +252,13 @@
       S.data.changelog = Array.isArray(res[1]) ? res[1] : [];
       S.data.content = Array.isArray(res[2]) ? res[2] : [];
       applyPreset(S.state.preset === 'Custom' ? '90D' : S.state.preset);
-      var badge = document.getElementById('mode-badge');
       var last = S.data.snaps.length ? S.data.snaps[S.data.snaps.length - 1] : null;
       if (last) {
         document.getElementById('patrol-note').textContent =
           'Last patrol: ' + last.date + ' · day ' + S.data.snaps.length;
-        badge.textContent = last.mode || '';
-        badge.hidden = !last.mode;
       } else {
         document.getElementById('patrol-note').textContent =
           'No ' + prod.label + ' patrol data yet — first patrol populates this view';
-        badge.hidden = true;
       }
     });
   }
