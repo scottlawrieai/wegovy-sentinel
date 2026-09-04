@@ -314,12 +314,12 @@
     "authors": [],
     "bytes": 659,
     "psi": {
-     "score": 44,
-     "lcp": "11.7 s",
-     "cls": "0.007",
-     "tbt": "870 ms",
-     "fcp": "2.6 s",
-     "si": "7.9 s",
+     "score": 65,
+     "lcp": "12.0 s",
+     "cls": "0.086",
+     "tbt": "160 ms",
+     "fcp": "2.3 s",
+     "si": "5.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1087,
@@ -436,12 +436,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 37,
-     "lcp": "15.4 s",
+     "score": 35,
+     "lcp": "15.7 s",
      "cls": "0",
-     "tbt": "860 ms",
-     "fcp": "5.6 s",
-     "si": "8.3 s",
+     "tbt": "1,060 ms",
+     "fcp": "5.5 s",
+     "si": "7.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4192,
@@ -544,12 +544,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 44,
-     "lcp": "8.7 s",
+     "score": 57,
+     "lcp": "11.0 s",
      "cls": "0",
-     "tbt": "870 ms",
-     "fcp": "3.7 s",
-     "si": "5.0 s",
+     "tbt": "340 ms",
+     "fcp": "3.5 s",
+     "si": "5.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 714,
@@ -805,7 +805,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 332
+    "bytes": 331
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",

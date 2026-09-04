@@ -4011,12 +4011,12 @@
    "of": 6
   },
   "psi": {
-   "score": 53,
-   "lcp": "8.7 s",
+   "score": 52,
+   "lcp": "9.2 s",
    "cls": "0",
-   "tbt": "350 ms",
-   "fcp": "4.7 s",
-   "si": "6.2 s",
+   "tbt": "340 ms",
+   "fcp": "5.6 s",
+   "si": "6.1 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 574,
