@@ -867,6 +867,14 @@ def fetch_awr(keywords) -> dict:
     elif out is loose:
         print(f"[awr] geo/device filter matched nothing (geo='{geo}' device='{device}'); "
               f"using unfiltered best positions for {len(out)} keywords", file=sys.stderr)
+    if out:
+        # One raw matched row per run so suspicious values (e.g. everything
+        # "position 1") can be audited from the Actions log alone.
+        first_kw = next(iter(out))
+        raw = next((r for r in _awr_iter(payload)
+                    if isinstance(r, dict) and _kw_of(r) == first_kw), None)
+        print(f"[awr] ok: {len(out)} keywords; sample {first_kw!r}="
+              f"{out[first_kw]} raw={str(raw)[:300]}", file=sys.stderr)
     return out
 
 
