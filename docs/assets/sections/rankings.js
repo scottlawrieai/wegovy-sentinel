@@ -181,7 +181,7 @@
       }
       return seriesCard(S, kw,
         [{ label: 'Search Console', color: '#0CA678', points: C.inRange(gp, S.state) }],
-        false, '');
+        false, 'Google Search Console · this page only');
     }
 
     if (activeSrc === 'awr') {

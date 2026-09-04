@@ -192,9 +192,11 @@ def fetch_gsc_timeseries(page_url: str = PILL_PAGE) -> dict:
     return out if (out.get("site") or out.get("page")) else {}
 
 
-def fetch_gsc_keyword_series(keywords) -> dict:
+def fetch_gsc_keyword_series(keywords, page_url: str = None) -> dict:
     """Daily position/clicks/impressions per tracked keyword.
 
+    Page-scoped when page_url is given, so each product's ranking cards show
+    that page's own daily position rather than the site-wide best URL.
     One Search Analytics query dimensioned by date+query over the GSC_TS_DAYS
     window (default 90, same as fetch_gsc_timeseries), filtered down to the
     keywords we track (lowercase exact match). Returns
@@ -216,6 +218,10 @@ def fetch_gsc_keyword_series(keywords) -> dict:
             "startDate": start.isoformat(),
             "endDate": end.isoformat(),
             "dimensions": ["date", "query"],
+        **({"dimensionFilterGroups": [{
+            "groupType": "and",
+            "filters": [{"dimension": "page", "operator": "equals",
+                         "expression": page_url}]}]} if page_url else {}),
             "rowLimit": 25000,
             "type": "web",
         })

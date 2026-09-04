@@ -249,7 +249,7 @@ def fetch_extra_sources() -> dict:
     except Exception as e:
         print(f"[warn] GSC queries unavailable: {e}", file=sys.stderr)
     try:
-        src["gsckw"] = rank_sources.fetch_gsc_keyword_series(kws)
+        src["gsckw"] = rank_sources.fetch_gsc_keyword_series(kws, page_url=PILL_PAGE)
     except Exception as e:
         print(f"[warn] GSC keyword series unavailable: {e}", file=sys.stderr)
     try:
