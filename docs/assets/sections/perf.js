@@ -154,6 +154,47 @@
       ' · amounts in the GA4 property currency' + (rev.as_of ? ' · data to ' + C.esc(rev.as_of) : '') + '</div></div>';
   }
 
+  // GSC Queries table for the product page: every query Google served the
+  // page for over the trailing window, like Search Console's Queries tab.
+  function queriesPanel(S, snaps) {
+    var gq = null;
+    for (var i = (snaps || []).length - 1; i >= 0; i--) {
+      var g = snaps[i] && snaps[i].gscq;
+      if (g && (g.rows || []).length) { gq = g; break; }
+    }
+    var label = C.esc(((S.product || {}).label || 'product') + ' page');
+    if (!gq) {
+      return '<div class="panel" style="margin-top:14px"><div class="empty">' +
+        'The search-query table for the ' + label + ' appears after the next patrol ' +
+        'runs with GSC credentials.</div></div>';
+    }
+    var rows = gq.rows.slice(0, 50);
+    var cMax = Math.max.apply(null, rows.map(function (r) { return r.clicks; }).concat([1]));
+    var iMax = Math.max.apply(null, rows.map(function (r) { return r.impr; }).concat([1]));
+    var pv = rows.map(function (r) { return r.pos; });
+    var pMin = Math.min.apply(null, pv), pMax = Math.max.apply(null, pv);
+    var trs = rows.map(function (r) {
+      return '<tr>' +
+        '<td>' + C.esc(r.q) + '</td>' +
+        '<td class="num" style="background:' + C.esc(C.heat(r.clicks, 0, cMax)) + '">' + C.esc(C.fmtInt(r.clicks)) + '</td>' +
+        '<td class="num" style="background:' + C.esc(C.heat(r.impr, 0, iMax)) + '">' + C.esc(C.fmtInt(r.impr)) + '</td>' +
+        '<td class="num">' + C.esc(r.ctr.toFixed(1)) + '%</td>' +
+        '<td class="num" style="background:' + C.esc(C.heat(r.pos, pMin, pMax, true)) + '">' + C.esc(r.pos.toFixed(1)) + '</td>' +
+        '</tr>';
+    }).join('');
+    return '<div class="panel" style="margin-top:14px">' +
+      '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px">' +
+      '<span class="eyebrow-sm">Search queries — ' + label + '</span>' +
+      '<span style="font-size:11px;color:#94A3B8">Google Search Console · every query serving this page · trailing ' +
+      C.esc(String(gq.days || 28)) + ' days' + (gq.as_of ? ' · data to ' + C.esc(gq.as_of) : '') + '</span></div>' +
+      '<div class="tbl-wrap"><table class="tbl">' +
+      '<thead><tr><th>Query</th><th class="num">Clicks</th><th class="num">Impressions</th>' +
+      '<th class="num">CTR</th><th class="num">Position</th></tr></thead>' +
+      '<tbody>' + trs + '</tbody></table></div>' +
+      (gq.rows.length > 50 ? '<div class="perf-chart-note">Top 50 of ' + C.esc(String(gq.rows.length)) + ' queries, by clicks</div>' : '') +
+      '</div>';
+  }
+
   // {weekKey: {sessions, events}} for the pill page, or null when GA4 absent
   function ga4Weekly(snaps, state) {
     var rows = null;
@@ -466,6 +507,8 @@
         html += emptyGsc('Weekly chart and table');
       }
     }
+
+    html += queriesPanel(S, snaps);
 
     /* ---------- full change list ---------- */
 

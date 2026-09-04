@@ -318,6 +318,49 @@ def fetch_ga4(page_url: str = PILL_PAGE) -> dict:
     return {"page": rows, "as_of": end.isoformat()} if rows else {}
 
 
+def fetch_gsc_queries(page_url: str = PILL_PAGE, limit: int = 100) -> dict:
+    """Search Console Queries table for one page: every query the page is
+    served for over the GSC_DAYS window, with clicks/impressions/CTR/position.
+    Returns {rows: [{q, clicks, impr, ctr, pos}], as_of, days} or {}.
+    """
+    token = _gsc_access_token()
+    if not token:
+        return {}
+    prop = os.environ.get("GSC_PROPERTY", "sc-domain:simpleonlinepharmacy.co.uk")
+    try:
+        days = int(os.environ.get("GSC_DAYS", "28") or 28)
+    except ValueError:
+        days = 28
+    end = _today_uk() - timedelta(days=3)
+    start = end - timedelta(days=days)
+    payload = _gsc_query(token, prop, {
+        "startDate": start.isoformat(),
+        "endDate": end.isoformat(),
+        "dimensions": ["query"],
+        "dimensionFilterGroups": [{
+            "groupType": "and",
+            "filters": [{"dimension": "page", "operator": "equals",
+                         "expression": page_url}],
+        }],
+        "rowLimit": limit,
+        "type": "web",
+    })
+    rows = []
+    for row in payload.get("rows", []):
+        q = ((row.get("keys") or [""])[0] or "").strip()
+        if not q:
+            continue
+        rows.append({
+            "q": q,
+            "clicks": int(row.get("clicks", 0)),
+            "impr": int(row.get("impressions", 0)),
+            "ctr": round(float(row.get("ctr", 0)) * 100, 1),
+            "pos": round(float(row.get("position", 0)), 1),
+        })
+    rows.sort(key=lambda r: (-r["clicks"], -r["impr"]))
+    return {"rows": rows, "as_of": end.isoformat(), "days": days} if rows else {}
+
+
 def fetch_ga4_revenue(page_url: str = PILL_PAGE) -> dict:
     """Monthly ORGANIC revenue + sessions for a landing page, last 12 months.
 

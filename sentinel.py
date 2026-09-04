@@ -230,7 +230,7 @@ def fetch_extra_sources() -> dict:
     """Pull GSC + AWR rankings (optional, credential-gated). Never fatal."""
     import rank_sources
     kws = [kw for kw, _, _ in TRACKED]
-    src = {"gsc": {}, "awr": {}, "gsci": {}, "gscts": {}, "gsckw": {},
+    src = {"gsc": {}, "awr": {}, "gsci": {}, "gscts": {}, "gscq": {}, "gsckw": {},
            "ga4": {}, "ga4rev": {}}
     try:
         src["ga4"] = rank_sources.fetch_ga4()
@@ -244,6 +244,10 @@ def fetch_extra_sources() -> dict:
         src["gscts"] = rank_sources.fetch_gsc_timeseries()
     except Exception as e:
         print(f"[warn] GSC time series unavailable: {e}", file=sys.stderr)
+    try:
+        src["gscq"] = rank_sources.fetch_gsc_queries()
+    except Exception as e:
+        print(f"[warn] GSC queries unavailable: {e}", file=sys.stderr)
     try:
         src["gsckw"] = rank_sources.fetch_gsc_keyword_series(kws)
     except Exception as e:
@@ -299,6 +303,7 @@ def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
         "src": {"gsc": src.get("gsc", {}), "awr": src.get("awr", {})},
         "gsci": src.get("gsci", {}),
         "gscts": src.get("gscts", {}),
+        "gscq": src.get("gscq", {}),
         "gsckw": src.get("gsckw", {}),
         "ga4": src.get("ga4", {}),
         "ga4rev": src.get("ga4rev", {}),
@@ -607,6 +612,12 @@ def main():
                 g = prev_s.get("gscts")
                 if g:
                     snap["gscts"] = {**g, "as_of": g.get("as_of", prev_s["date"])}
+                    break
+        if not snap.get("gscq"):
+            for prev_s in reversed(snaps):
+                g = prev_s.get("gscq")
+                if g:
+                    snap["gscq"] = g
                     break
         if not snap.get("gsckw"):
             for prev_s in reversed(snaps):

@@ -262,7 +262,7 @@ def fetch_extra_sources() -> dict:
     pill-page specific (v1)."""
     import rank_sources
     kws = [kw for kw, _, _ in TRACKED]
-    src = {"gsc": {}, "awr": {}, "gscts": {}, "gsckw": {}, "ga4": {},
+    src = {"gsc": {}, "awr": {}, "gscts": {}, "gscq": {}, "gsckw": {}, "ga4": {},
            "ga4rev": {}}
     try:
         src["ga4rev"] = rank_sources.fetch_ga4_revenue(page_url=PRODUCT_PAGE)
@@ -276,6 +276,10 @@ def fetch_extra_sources() -> dict:
         src["gscts"] = rank_sources.fetch_gsc_timeseries(page_url=PRODUCT_PAGE)
     except Exception as e:
         print(f"[warn] GSC time series unavailable: {e}", file=sys.stderr)
+    try:
+        src["gscq"] = rank_sources.fetch_gsc_queries(page_url=PRODUCT_PAGE)
+    except Exception as e:
+        print(f"[warn] GSC queries unavailable: {e}", file=sys.stderr)
     try:
         src["gsckw"] = rank_sources.fetch_gsc_keyword_series(kws)
     except Exception as e:
@@ -324,6 +328,7 @@ def build_snapshot(rows: list, bl: dict, comp: dict, src: dict = None,
         "comp": comp,
         "src": {"gsc": src.get("gsc", {}), "awr": src.get("awr", {})},
         "gscts": src.get("gscts", {}),
+        "gscq": src.get("gscq", {}),
         "gsckw": src.get("gsckw", {}),
         "ga4": src.get("ga4", {}),
         "ga4rev": src.get("ga4rev", {}),
@@ -565,6 +570,12 @@ def main():
                 g = prev_s.get("gscts")
                 if g:
                     snap["gscts"] = {**g, "as_of": g.get("as_of", prev_s["date"])}
+                    break
+        if not snap.get("gscq"):
+            for prev_s in reversed(snaps):
+                g = prev_s.get("gscq")
+                if g:
+                    snap["gscq"] = g
                     break
         if not snap.get("gsckw"):
             for prev_s in reversed(snaps):
