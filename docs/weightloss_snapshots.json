@@ -1,0 +1,6707 @@
+[
+ {
+  "date": "2026-09-04",
+  "mode": "semrush",
+  "best": {
+   "weight loss injections": {
+    "p": 33,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/",
+    "n": 1,
+    "v": 135000
+   },
+   "weight loss injections uk": {
+    "p": 29,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/",
+    "n": 1,
+    "v": 22200
+   },
+   "weight loss pills": {
+    "p": 27,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/",
+    "n": 1,
+    "v": 27100
+   },
+   "weight loss medication": {
+    "p": 25,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/",
+    "n": 1,
+    "v": 18100
+   },
+   "weight loss treatment": {
+    "p": 25,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/how-get-weight-care-treatment/",
+    "n": 1,
+    "v": 3600
+   },
+   "weight loss tablets": {
+    "p": 26,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/",
+    "n": 1,
+    "v": 22200
+   },
+   "weight loss pen": null,
+   "weight loss jabs": {
+    "p": 26,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/",
+    "n": 1,
+    "v": 22200
+   },
+   "skinny jab": {
+    "p": 9,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/skinnyjab/",
+    "n": 1,
+    "v": 2400
+   },
+   "prescription weight loss": null,
+   "glp-1 injections": null,
+   "medical weight loss": null,
+   "best weight loss injections": {
+    "p": 26,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/",
+    "n": 1,
+    "v": 4400
+   },
+   "weight loss injections vs pills": null,
+   "how do weight loss injections work": null
+  },
+  "comp": {
+   "Superdrug": {
+    "weight loss injections": {
+     "p": 4,
+     "u": "https://onlinedoctor.superdrug.com/weight-loss-treatments.html"
+    },
+    "weight loss injections uk": {
+     "p": 1,
+     "u": "https://onlinedoctor.superdrug.com/weight-loss-treatments.html"
+    },
+    "weight loss pills": {
+     "p": 1,
+     "u": "https://onlinedoctor.superdrug.com/weight-loss-treatments.html"
+    },
+    "weight loss medication": {
+     "p": 1,
+     "u": "https://onlinedoctor.superdrug.com/weight-loss-treatments.html"
+    },
+    "weight loss tablets": {
+     "p": 1,
+     "u": "https://onlinedoctor.superdrug.com/weight-loss-treatments.html"
+    },
+    "weight loss jabs": {
+     "p": 1,
+     "u": "https://onlinedoctor.superdrug.com/weight-loss-treatments.html"
+    },
+    "skinny jab": {
+     "p": 5,
+     "u": "https://onlinedoctor.superdrug.com/weight-loss-treatments.html"
+    }
+   },
+   "Chemist4U": {
+    "weight loss injections": {
+     "p": 22,
+     "u": "https://www.chemist-4-u.com/weight-loss/weight-loss-injections"
+    },
+    "weight loss injections uk": {
+     "p": 8,
+     "u": "https://www.chemist-4-u.com/weight-loss/weight-loss-injections"
+    },
+    "weight loss pills": {
+     "p": 11,
+     "u": "https://www.chemist-4-u.com/weight-loss"
+    },
+    "weight loss medication": {
+     "p": 9,
+     "u": "https://www.chemist-4-u.com/weight-loss"
+    },
+    "weight loss treatment": {
+     "p": 9,
+     "u": "https://www.chemist-4-u.com/weight-loss"
+    },
+    "weight loss tablets": {
+     "p": 11,
+     "u": "https://www.chemist-4-u.com/weight-loss"
+    },
+    "weight loss jabs": {
+     "p": 11,
+     "u": "https://www.chemist-4-u.com/weight-loss"
+    },
+    "skinny jab": {
+     "p": 7,
+     "u": "https://www.chemist-4-u.com/weight-loss/weight-loss-injections"
+    },
+    "best weight loss injections": {
+     "p": 12,
+     "u": "https://www.chemist-4-u.com/weight-loss/weight-loss-injections"
+    }
+   },
+   "MedExpress": {
+    "weight loss injections": {
+     "p": 36,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss"
+    },
+    "weight loss injections uk": {
+     "p": 28,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss"
+    },
+    "weight loss medication": {
+     "p": 32,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss"
+    },
+    "weight loss treatment": {
+     "p": 20,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss"
+    },
+    "weight loss tablets": {
+     "p": 30,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss"
+    },
+    "weight loss jabs": {
+     "p": 34,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss"
+    },
+    "best weight loss injections": {
+     "p": 38,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss"
+    }
+   },
+   "Boots": {
+    "weight loss injections": {
+     "p": 1,
+     "u": "https://onlinedoctor.boots.com/weight-loss/treatment"
+    },
+    "weight loss injections uk": {
+     "p": 2,
+     "u": "https://onlinedoctor.boots.com/weight-loss/treatment"
+    },
+    "weight loss pills": {
+     "p": 4,
+     "u": "https://www.boots.com/healthhub/weight-loss-medications"
+    },
+    "weight loss medication": {
+     "p": 2,
+     "u": "https://onlinedoctor.boots.com/weight-loss/treatment"
+    },
+    "weight loss tablets": {
+     "p": 7,
+     "u": "https://onlinedoctor.boots.com/weight-loss/treatment"
+    },
+    "weight loss jabs": {
+     "p": 2,
+     "u": "https://onlinedoctor.boots.com/weight-loss/treatment"
+    },
+    "skinny jab": {
+     "p": 1,
+     "u": "https://onlinedoctor.boots.com/weight-loss/treatment"
+    }
+   }
+  },
+  "src": {
+   "gsc": {},
+   "awr": {}
+  },
+  "gscts": {
+   "as_of": "2026-09-01",
+   "days": 90,
+   "site": [
+    {
+     "d": "2026-06-03",
+     "clicks": 5179,
+     "impr": 338614,
+     "ctr": 1.53,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-04",
+     "clicks": 5235,
+     "impr": 332632,
+     "ctr": 1.57,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-05",
+     "clicks": 4366,
+     "impr": 297866,
+     "ctr": 1.47,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-06-06",
+     "clicks": 4079,
+     "impr": 285372,
+     "ctr": 1.43,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-06-07",
+     "clicks": 4581,
+     "impr": 295968,
+     "ctr": 1.55,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-08",
+     "clicks": 5298,
+     "impr": 343683,
+     "ctr": 1.54,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-09",
+     "clicks": 4957,
+     "impr": 322643,
+     "ctr": 1.54,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-06-10",
+     "clicks": 4779,
+     "impr": 328895,
+     "ctr": 1.45,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-11",
+     "clicks": 6252,
+     "impr": 367196,
+     "ctr": 1.7,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-12",
+     "clicks": 6275,
+     "impr": 352266,
+     "ctr": 1.78,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-06-13",
+     "clicks": 4784,
+     "impr": 306952,
+     "ctr": 1.56,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-06-14",
+     "clicks": 5427,
+     "impr": 317797,
+     "ctr": 1.71,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-06-15",
+     "clicks": 6290,
+     "impr": 350526,
+     "ctr": 1.79,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-06-16",
+     "clicks": 6281,
+     "impr": 345351,
+     "ctr": 1.82,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-06-17",
+     "clicks": 5542,
+     "impr": 336738,
+     "ctr": 1.65,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-06-18",
+     "clicks": 5719,
+     "impr": 351781,
+     "ctr": 1.63,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-06-19",
+     "clicks": 5364,
+     "impr": 350960,
+     "ctr": 1.53,
+     "pos": 11.8
+    },
+    {
+     "d": "2026-06-20",
+     "clicks": 4731,
+     "impr": 315817,
+     "ctr": 1.5,
+     "pos": 11.4
+    },
+    {
+     "d": "2026-06-21",
+     "clicks": 4984,
+     "impr": 313256,
+     "ctr": 1.59,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-06-22",
+     "clicks": 5693,
+     "impr": 347236,
+     "ctr": 1.64,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-23",
+     "clicks": 5310,
+     "impr": 310483,
+     "ctr": 1.71,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-24",
+     "clicks": 5141,
+     "impr": 300566,
+     "ctr": 1.71,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-06-25",
+     "clicks": 4970,
+     "impr": 304026,
+     "ctr": 1.63,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-26",
+     "clicks": 4593,
+     "impr": 308500,
+     "ctr": 1.49,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-06-27",
+     "clicks": 4424,
+     "impr": 283052,
+     "ctr": 1.56,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-06-28",
+     "clicks": 4993,
+     "impr": 298285,
+     "ctr": 1.67,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-29",
+     "clicks": 5963,
+     "impr": 350209,
+     "ctr": 1.7,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-06-30",
+     "clicks": 5506,
+     "impr": 369998,
+     "ctr": 1.49,
+     "pos": 11.8
+    },
+    {
+     "d": "2026-07-01",
+     "clicks": 5058,
+     "impr": 338571,
+     "ctr": 1.49,
+     "pos": 11.1
+    },
+    {
+     "d": "2026-07-02",
+     "clicks": 5019,
+     "impr": 332437,
+     "ctr": 1.51,
+     "pos": 11.4
+    },
+    {
+     "d": "2026-07-03",
+     "clicks": 4682,
+     "impr": 299302,
+     "ctr": 1.56,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-07-04",
+     "clicks": 4502,
+     "impr": 270330,
+     "ctr": 1.67,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-05",
+     "clicks": 5574,
+     "impr": 315854,
+     "ctr": 1.76,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-07-06",
+     "clicks": 8606,
+     "impr": 435929,
+     "ctr": 1.97,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-07",
+     "clicks": 6463,
+     "impr": 385295,
+     "ctr": 1.68,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-08",
+     "clicks": 5607,
+     "impr": 356671,
+     "ctr": 1.57,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-07-09",
+     "clicks": 5241,
+     "impr": 308644,
+     "ctr": 1.7,
+     "pos": 9.0
+    },
+    {
+     "d": "2026-07-10",
+     "clicks": 4586,
+     "impr": 301308,
+     "ctr": 1.52,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-11",
+     "clicks": 4062,
+     "impr": 278396,
+     "ctr": 1.46,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-07-12",
+     "clicks": 4460,
+     "impr": 280651,
+     "ctr": 1.59,
+     "pos": 9.5
+    },
+    {
+     "d": "2026-07-13",
+     "clicks": 5324,
+     "impr": 316833,
+     "ctr": 1.68,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-14",
+     "clicks": 5282,
+     "impr": 322830,
+     "ctr": 1.64,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-07-15",
+     "clicks": 4599,
+     "impr": 283767,
+     "ctr": 1.62,
+     "pos": 8.8
+    },
+    {
+     "d": "2026-07-16",
+     "clicks": 4732,
+     "impr": 291682,
+     "ctr": 1.62,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-17",
+     "clicks": 4351,
+     "impr": 283293,
+     "ctr": 1.54,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-07-18",
+     "clicks": 3798,
+     "impr": 267733,
+     "ctr": 1.42,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-19",
+     "clicks": 4189,
+     "impr": 257020,
+     "ctr": 1.63,
+     "pos": 8.9
+    },
+    {
+     "d": "2026-07-20",
+     "clicks": 4903,
+     "impr": 314713,
+     "ctr": 1.56,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-21",
+     "clicks": 4807,
+     "impr": 313348,
+     "ctr": 1.53,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-07-22",
+     "clicks": 4837,
+     "impr": 304232,
+     "ctr": 1.59,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-07-23",
+     "clicks": 4373,
+     "impr": 300788,
+     "ctr": 1.45,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-07-24",
+     "clicks": 4131,
+     "impr": 275891,
+     "ctr": 1.5,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-25",
+     "clicks": 3599,
+     "impr": 245459,
+     "ctr": 1.47,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-07-26",
+     "clicks": 4345,
+     "impr": 263739,
+     "ctr": 1.65,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-07-27",
+     "clicks": 4962,
+     "impr": 297986,
+     "ctr": 1.67,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-07-28",
+     "clicks": 4721,
+     "impr": 311125,
+     "ctr": 1.52,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-29",
+     "clicks": 4428,
+     "impr": 287490,
+     "ctr": 1.54,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 4297,
+     "impr": 292832,
+     "ctr": 1.47,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 4123,
+     "impr": 276840,
+     "ctr": 1.49,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 3627,
+     "impr": 268834,
+     "ctr": 1.35,
+     "pos": 11.5
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 4322,
+     "impr": 281508,
+     "ctr": 1.54,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 4944,
+     "impr": 285637,
+     "ctr": 1.73,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 4900,
+     "impr": 324625,
+     "ctr": 1.51,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 4760,
+     "impr": 294704,
+     "ctr": 1.62,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 4391,
+     "impr": 293512,
+     "ctr": 1.5,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 3848,
+     "impr": 268279,
+     "ctr": 1.43,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 3414,
+     "impr": 260901,
+     "ctr": 1.31,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 4027,
+     "impr": 292763,
+     "ctr": 1.38,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 10056,
+     "impr": 359366,
+     "ctr": 2.8,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 9110,
+     "impr": 343552,
+     "ctr": 2.65,
+     "pos": 9.0
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 5177,
+     "impr": 339238,
+     "ctr": 1.53,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 4987,
+     "impr": 324177,
+     "ctr": 1.54,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 4607,
+     "impr": 310523,
+     "ctr": 1.48,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 3806,
+     "impr": 250351,
+     "ctr": 1.52,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 4098,
+     "impr": 291940,
+     "ctr": 1.4,
+     "pos": 11.3
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 4737,
+     "impr": 316850,
+     "ctr": 1.5,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 4741,
+     "impr": 304226,
+     "ctr": 1.56,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 4577,
+     "impr": 289302,
+     "ctr": 1.58,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 4066,
+     "impr": 271111,
+     "ctr": 1.5,
+     "pos": 10.5
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 3706,
+     "impr": 248988,
+     "ctr": 1.49,
+     "pos": 10.5
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 3205,
+     "impr": 240388,
+     "ctr": 1.33,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 3923,
+     "impr": 248787,
+     "ctr": 1.58,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 5679,
+     "impr": 321151,
+     "ctr": 1.77,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 4785,
+     "impr": 304640,
+     "ctr": 1.57,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 4559,
+     "impr": 291306,
+     "ctr": 1.57,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 5219,
+     "impr": 294194,
+     "ctr": 1.77,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 4079,
+     "impr": 266119,
+     "ctr": 1.53,
+     "pos": 11.3
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 3549,
+     "impr": 236201,
+     "ctr": 1.5,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 3710,
+     "impr": 239147,
+     "ctr": 1.55,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 4442,
+     "impr": 271594,
+     "ctr": 1.64,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 4615,
+     "impr": 272777,
+     "ctr": 1.69,
+     "pos": 9.7
+    }
+   ],
+   "page": [
+    {
+     "d": "2026-06-03",
+     "clicks": 36,
+     "impr": 6947,
+     "ctr": 0.52,
+     "pos": 12.4
+    },
+    {
+     "d": "2026-06-04",
+     "clicks": 43,
+     "impr": 8688,
+     "ctr": 0.49,
+     "pos": 16.2
+    },
+    {
+     "d": "2026-06-05",
+     "clicks": 37,
+     "impr": 6597,
+     "ctr": 0.56,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-06-06",
+     "clicks": 44,
+     "impr": 6055,
+     "ctr": 0.73,
+     "pos": 16.6
+    },
+    {
+     "d": "2026-06-07",
+     "clicks": 36,
+     "impr": 6391,
+     "ctr": 0.56,
+     "pos": 17.7
+    },
+    {
+     "d": "2026-06-08",
+     "clicks": 48,
+     "impr": 7850,
+     "ctr": 0.61,
+     "pos": 17.0
+    },
+    {
+     "d": "2026-06-09",
+     "clicks": 46,
+     "impr": 6766,
+     "ctr": 0.68,
+     "pos": 15.3
+    },
+    {
+     "d": "2026-06-10",
+     "clicks": 61,
+     "impr": 7251,
+     "ctr": 0.84,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-06-11",
+     "clicks": 78,
+     "impr": 6983,
+     "ctr": 1.12,
+     "pos": 13.6
+    },
+    {
+     "d": "2026-06-12",
+     "clicks": 85,
+     "impr": 7878,
+     "ctr": 1.08,
+     "pos": 14.3
+    },
+    {
+     "d": "2026-06-13",
+     "clicks": 44,
+     "impr": 6481,
+     "ctr": 0.68,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-06-14",
+     "clicks": 56,
+     "impr": 6760,
+     "ctr": 0.83,
+     "pos": 14.0
+    },
+    {
+     "d": "2026-06-15",
+     "clicks": 94,
+     "impr": 8487,
+     "ctr": 1.11,
+     "pos": 13.0
+    },
+    {
+     "d": "2026-06-16",
+     "clicks": 81,
+     "impr": 7450,
+     "ctr": 1.09,
+     "pos": 11.4
+    },
+    {
+     "d": "2026-06-17",
+     "clicks": 67,
+     "impr": 7547,
+     "ctr": 0.89,
+     "pos": 14.0
+    },
+    {
+     "d": "2026-06-18",
+     "clicks": 74,
+     "impr": 7659,
+     "ctr": 0.97,
+     "pos": 13.5
+    },
+    {
+     "d": "2026-06-19",
+     "clicks": 57,
+     "impr": 8095,
+     "ctr": 0.7,
+     "pos": 14.8
+    },
+    {
+     "d": "2026-06-20",
+     "clicks": 54,
+     "impr": 6761,
+     "ctr": 0.8,
+     "pos": 14.8
+    },
+    {
+     "d": "2026-06-21",
+     "clicks": 70,
+     "impr": 6499,
+     "ctr": 1.08,
+     "pos": 14.0
+    },
+    {
+     "d": "2026-06-22",
+     "clicks": 66,
+     "impr": 8070,
+     "ctr": 0.82,
+     "pos": 14.2
+    },
+    {
+     "d": "2026-06-23",
+     "clicks": 67,
+     "impr": 7332,
+     "ctr": 0.91,
+     "pos": 12.8
+    },
+    {
+     "d": "2026-06-24",
+     "clicks": 84,
+     "impr": 7073,
+     "ctr": 1.19,
+     "pos": 12.9
+    },
+    {
+     "d": "2026-06-25",
+     "clicks": 55,
+     "impr": 6589,
+     "ctr": 0.83,
+     "pos": 12.4
+    },
+    {
+     "d": "2026-06-26",
+     "clicks": 65,
+     "impr": 6543,
+     "ctr": 0.99,
+     "pos": 14.5
+    },
+    {
+     "d": "2026-06-27",
+     "clicks": 56,
+     "impr": 6154,
+     "ctr": 0.91,
+     "pos": 15.4
+    },
+    {
+     "d": "2026-06-28",
+     "clicks": 56,
+     "impr": 6303,
+     "ctr": 0.89,
+     "pos": 15.3
+    },
+    {
+     "d": "2026-06-29",
+     "clicks": 74,
+     "impr": 7974,
+     "ctr": 0.93,
+     "pos": 13.8
+    },
+    {
+     "d": "2026-06-30",
+     "clicks": 55,
+     "impr": 8062,
+     "ctr": 0.68,
+     "pos": 15.9
+    },
+    {
+     "d": "2026-07-01",
+     "clicks": 57,
+     "impr": 7099,
+     "ctr": 0.8,
+     "pos": 12.9
+    },
+    {
+     "d": "2026-07-02",
+     "clicks": 56,
+     "impr": 6687,
+     "ctr": 0.84,
+     "pos": 14.3
+    },
+    {
+     "d": "2026-07-03",
+     "clicks": 50,
+     "impr": 6082,
+     "ctr": 0.82,
+     "pos": 12.9
+    },
+    {
+     "d": "2026-07-04",
+     "clicks": 91,
+     "impr": 5988,
+     "ctr": 1.52,
+     "pos": 13.1
+    },
+    {
+     "d": "2026-07-05",
+     "clicks": 114,
+     "impr": 6538,
+     "ctr": 1.74,
+     "pos": 13.0
+    },
+    {
+     "d": "2026-07-06",
+     "clicks": 235,
+     "impr": 10394,
+     "ctr": 2.26,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-07-07",
+     "clicks": 102,
+     "impr": 8401,
+     "ctr": 1.21,
+     "pos": 12.3
+    },
+    {
+     "d": "2026-07-08",
+     "clicks": 70,
+     "impr": 7331,
+     "ctr": 0.95,
+     "pos": 13.5
+    },
+    {
+     "d": "2026-07-09",
+     "clicks": 58,
+     "impr": 6511,
+     "ctr": 0.89,
+     "pos": 13.1
+    },
+    {
+     "d": "2026-07-10",
+     "clicks": 46,
+     "impr": 6479,
+     "ctr": 0.71,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-07-11",
+     "clicks": 72,
+     "impr": 5922,
+     "ctr": 1.22,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-07-12",
+     "clicks": 56,
+     "impr": 5224,
+     "ctr": 1.07,
+     "pos": 14.8
+    },
+    {
+     "d": "2026-07-13",
+     "clicks": 49,
+     "impr": 6135,
+     "ctr": 0.8,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-07-14",
+     "clicks": 61,
+     "impr": 6129,
+     "ctr": 1.0,
+     "pos": 13.1
+    },
+    {
+     "d": "2026-07-15",
+     "clicks": 52,
+     "impr": 5199,
+     "ctr": 1.0,
+     "pos": 12.0
+    },
+    {
+     "d": "2026-07-16",
+     "clicks": 60,
+     "impr": 5704,
+     "ctr": 1.05,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-07-17",
+     "clicks": 69,
+     "impr": 5191,
+     "ctr": 1.33,
+     "pos": 12.6
+    },
+    {
+     "d": "2026-07-18",
+     "clicks": 35,
+     "impr": 4740,
+     "ctr": 0.74,
+     "pos": 14.3
+    },
+    {
+     "d": "2026-07-19",
+     "clicks": 35,
+     "impr": 4748,
+     "ctr": 0.74,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-07-20",
+     "clicks": 46,
+     "impr": 6673,
+     "ctr": 0.69,
+     "pos": 13.5
+    },
+    {
+     "d": "2026-07-21",
+     "clicks": 53,
+     "impr": 5815,
+     "ctr": 0.91,
+     "pos": 13.0
+    },
+    {
+     "d": "2026-07-22",
+     "clicks": 45,
+     "impr": 5396,
+     "ctr": 0.83,
+     "pos": 14.7
+    },
+    {
+     "d": "2026-07-23",
+     "clicks": 46,
+     "impr": 5653,
+     "ctr": 0.81,
+     "pos": 15.0
+    },
+    {
+     "d": "2026-07-24",
+     "clicks": 50,
+     "impr": 5901,
+     "ctr": 0.85,
+     "pos": 16.6
+    },
+    {
+     "d": "2026-07-25",
+     "clicks": 31,
+     "impr": 5045,
+     "ctr": 0.61,
+     "pos": 16.8
+    },
+    {
+     "d": "2026-07-26",
+     "clicks": 55,
+     "impr": 5204,
+     "ctr": 1.06,
+     "pos": 13.4
+    },
+    {
+     "d": "2026-07-27",
+     "clicks": 62,
+     "impr": 6261,
+     "ctr": 0.99,
+     "pos": 12.1
+    },
+    {
+     "d": "2026-07-28",
+     "clicks": 69,
+     "impr": 6209,
+     "ctr": 1.11,
+     "pos": 13.7
+    },
+    {
+     "d": "2026-07-29",
+     "clicks": 81,
+     "impr": 7750,
+     "ctr": 1.05,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 47,
+     "impr": 6375,
+     "ctr": 0.74,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 58,
+     "impr": 6255,
+     "ctr": 0.93,
+     "pos": 15.0
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 39,
+     "impr": 5617,
+     "ctr": 0.69,
+     "pos": 16.6
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 60,
+     "impr": 5826,
+     "ctr": 1.03,
+     "pos": 15.2
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 57,
+     "impr": 6000,
+     "ctr": 0.95,
+     "pos": 13.4
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 46,
+     "impr": 6100,
+     "ctr": 0.75,
+     "pos": 14.0
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 50,
+     "impr": 6323,
+     "ctr": 0.79,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 41,
+     "impr": 6003,
+     "ctr": 0.68,
+     "pos": 17.1
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 28,
+     "impr": 5535,
+     "ctr": 0.51,
+     "pos": 16.6
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 29,
+     "impr": 7064,
+     "ctr": 0.41,
+     "pos": 14.7
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 38,
+     "impr": 6537,
+     "ctr": 0.58,
+     "pos": 18.8
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 55,
+     "impr": 7163,
+     "ctr": 0.77,
+     "pos": 16.1
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 45,
+     "impr": 7261,
+     "ctr": 0.62,
+     "pos": 17.9
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 46,
+     "impr": 7234,
+     "ctr": 0.64,
+     "pos": 18.7
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 57,
+     "impr": 6789,
+     "ctr": 0.84,
+     "pos": 18.3
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 46,
+     "impr": 6528,
+     "ctr": 0.7,
+     "pos": 17.2
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 40,
+     "impr": 4409,
+     "ctr": 0.91,
+     "pos": 22.7
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 36,
+     "impr": 5475,
+     "ctr": 0.66,
+     "pos": 24.9
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 51,
+     "impr": 6195,
+     "ctr": 0.82,
+     "pos": 24.5
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 43,
+     "impr": 5300,
+     "ctr": 0.81,
+     "pos": 20.7
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 43,
+     "impr": 5141,
+     "ctr": 0.84,
+     "pos": 19.1
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 36,
+     "impr": 4701,
+     "ctr": 0.77,
+     "pos": 21.0
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 32,
+     "impr": 4147,
+     "ctr": 0.77,
+     "pos": 22.0
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 33,
+     "impr": 4580,
+     "ctr": 0.72,
+     "pos": 24.3
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 35,
+     "impr": 4391,
+     "ctr": 0.8,
+     "pos": 21.3
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 62,
+     "impr": 6512,
+     "ctr": 0.95,
+     "pos": 19.3
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 78,
+     "impr": 7479,
+     "ctr": 1.04,
+     "pos": 17.3
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 59,
+     "impr": 7433,
+     "ctr": 0.79,
+     "pos": 16.7
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 71,
+     "impr": 10143,
+     "ctr": 0.7,
+     "pos": 16.6
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 58,
+     "impr": 7936,
+     "ctr": 0.73,
+     "pos": 17.8
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 46,
+     "impr": 6115,
+     "ctr": 0.75,
+     "pos": 17.4
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 50,
+     "impr": 7198,
+     "ctr": 0.69,
+     "pos": 18.7
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 60,
+     "impr": 7690,
+     "ctr": 0.78,
+     "pos": 16.3
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 58,
+     "impr": 7726,
+     "ctr": 0.75,
+     "pos": 14.6
+    }
+   ]
+  },
+  "gscq": {
+   "rows": [
+    {
+     "q": "simple online pharmacy",
+     "clicks": 748,
+     "impr": 48871,
+     "ctr": 1.5,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 937,
+      "impr": 54765,
+      "ctr": 1.7,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple pharmacy",
+     "clicks": 39,
+     "impr": 3286,
+     "ctr": 1.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 45,
+      "impr": 3510,
+      "ctr": 1.3,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simply online pharmacy",
+     "clicks": 24,
+     "impr": 2214,
+     "ctr": 1.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 37,
+      "impr": 2576,
+      "ctr": 1.4,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "cheap weight loss pills",
+     "clicks": 16,
+     "impr": 356,
+     "ctr": 4.5,
+     "pos": 3.6,
+     "prev": {
+      "clicks": 16,
+      "impr": 178,
+      "ctr": 9.0,
+      "pos": 5.2
+     }
+    },
+    {
+     "q": "simpleonlinepharmacy",
+     "clicks": 10,
+     "impr": 830,
+     "ctr": 1.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 6,
+      "impr": 849,
+      "ctr": 0.7,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple pharmacy online",
+     "clicks": 10,
+     "impr": 413,
+     "ctr": 2.4,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 7,
+      "impr": 429,
+      "ctr": 1.6,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "cheapest weight loss pills",
+     "clicks": 10,
+     "impr": 178,
+     "ctr": 5.6,
+     "pos": 1.3,
+     "prev": {
+      "clicks": 14,
+      "impr": 224,
+      "ctr": 6.2,
+      "pos": 1.3
+     }
+    },
+    {
+     "q": "simply pharmacy",
+     "clicks": 9,
+     "impr": 1097,
+     "ctr": 0.8,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 11,
+      "impr": 964,
+      "ctr": 1.1,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy weight loss",
+     "clicks": 9,
+     "impr": 73,
+     "ctr": 12.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 6,
+      "impr": 71,
+      "ctr": 8.5,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple.online pharmacy",
+     "clicks": 7,
+     "impr": 300,
+     "ctr": 2.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 6,
+      "impr": 383,
+      "ctr": 1.6,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "online pharmacy weight loss",
+     "clicks": 6,
+     "impr": 1515,
+     "ctr": 0.4,
+     "pos": 7.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 811,
+      "ctr": 0.1,
+      "pos": 5.2
+     }
+    },
+    {
+     "q": "simple weight loss",
+     "clicks": 6,
+     "impr": 156,
+     "ctr": 3.8,
+     "pos": 5.2,
+     "prev": {
+      "clicks": 5,
+      "impr": 145,
+      "ctr": 3.4,
+      "pos": 5.2
+     }
+    },
+    {
+     "q": "weight loss pills cheap",
+     "clicks": 6,
+     "impr": 47,
+     "ctr": 12.8,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 28,
+      "ctr": 3.6,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "slimming tablets",
+     "clicks": 5,
+     "impr": 287,
+     "ctr": 1.7,
+     "pos": 14.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 33,
+      "ctr": 0.0,
+      "pos": 9.0
+     }
+    },
+    {
+     "q": "cheapest weight loss pill",
+     "clicks": 5,
+     "impr": 47,
+     "ctr": 10.6,
+     "pos": 1.5,
+     "prev": {
+      "clicks": 1,
+      "impr": 79,
+      "ctr": 1.3,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "weight loss injections",
+     "clicks": 4,
+     "impr": 1345,
+     "ctr": 0.3,
+     "pos": 32.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 1240,
+      "ctr": 0.0,
+      "pos": 32.4
+     }
+    },
+    {
+     "q": "weight loss pills",
+     "clicks": 4,
+     "impr": 757,
+     "ctr": 0.5,
+     "pos": 29.3,
+     "prev": {
+      "clicks": 16,
+      "impr": 2464,
+      "ctr": 0.6,
+      "pos": 7.7
+     }
+    },
+    {
+     "q": "simple on line pharmacy",
+     "clicks": 4,
+     "impr": 286,
+     "ctr": 1.4,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 7,
+      "impr": 353,
+      "ctr": 2.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "best online pharmacy for weight loss",
+     "clicks": 4,
+     "impr": 55,
+     "ctr": 7.3,
+     "pos": 3.3,
+     "prev": {
+      "clicks": 2,
+      "impr": 62,
+      "ctr": 3.2,
+      "pos": 6.3
+     }
+    },
+    {
+     "q": "weight loss pills simple online pharmacy",
+     "clicks": 4,
+     "impr": 11,
+     "ctr": 36.4,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 2,
+      "impr": 4,
+      "ctr": 50.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "mounjaro simple online pharmacy",
+     "clicks": 3,
+     "impr": 210,
+     "ctr": 1.4,
+     "pos": 3.7,
+     "prev": {
+      "clicks": 2,
+      "impr": 201,
+      "ctr": 1.0,
+      "pos": 2.5
+     }
+    },
+    {
+     "q": "simple pharmacy mounjaro",
+     "clicks": 3,
+     "impr": 104,
+     "ctr": 2.9,
+     "pos": 3.5,
+     "prev": {
+      "clicks": 1,
+      "impr": 116,
+      "ctr": 0.9,
+      "pos": 2.4
+     }
+    },
+    {
+     "q": "simple.pharmacy online",
+     "clicks": 3,
+     "impr": 29,
+     "ctr": 10.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 42,
+      "ctr": 2.4,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simply weight loss",
+     "clicks": 3,
+     "impr": 9,
+     "ctr": 33.3,
+     "pos": 1.1,
+     "prev": {
+      "clicks": 1,
+      "impr": 18,
+      "ctr": 5.6,
+      "pos": 2.2
+     }
+    },
+    {
+     "q": "simple online",
+     "clicks": 2,
+     "impr": 550,
+     "ctr": 0.4,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 13,
+      "impr": 384,
+      "ctr": 3.4,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "online simple pharmacy",
+     "clicks": 2,
+     "impr": 337,
+     "ctr": 0.6,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 4,
+      "impr": 464,
+      "ctr": 0.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy mounjaro",
+     "clicks": 2,
+     "impr": 311,
+     "ctr": 0.6,
+     "pos": 4.9,
+     "prev": {
+      "clicks": 1,
+      "impr": 271,
+      "ctr": 0.4,
+      "pos": 2.7
+     }
+    },
+    {
+     "q": "online weight loss injections",
+     "clicks": 2,
+     "impr": 293,
+     "ctr": 0.7,
+     "pos": 9.3,
+     "prev": {
+      "clicks": 9,
+      "impr": 457,
+      "ctr": 2.0,
+      "pos": 6.5
+     }
+    },
+    {
+     "q": "simple online pharmacy reorder",
+     "clicks": 2,
+     "impr": 129,
+     "ctr": 1.6,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 31,
+      "ctr": 3.2,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "simple online pharmacy app",
+     "clicks": 2,
+     "impr": 108,
+     "ctr": 1.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 111,
+      "ctr": 0.9,
+      "pos": 1.3
+     }
+    },
+    {
+     "q": "simple online oharmacy",
+     "clicks": 2,
+     "impr": 105,
+     "ctr": 1.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 4,
+      "impr": 91,
+      "ctr": 4.4,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "cheap weight loss tablets",
+     "clicks": 2,
+     "impr": 47,
+     "ctr": 4.3,
+     "pos": 1.5,
+     "prev": {
+      "clicks": 2,
+      "impr": 20,
+      "ctr": 10.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "weight loss online pharmacy",
+     "clicks": 2,
+     "impr": 43,
+     "ctr": 4.7,
+     "pos": 9.0,
+     "prev": {
+      "clicks": 3,
+      "impr": 46,
+      "ctr": 6.5,
+      "pos": 9.0
+     }
+    },
+    {
+     "q": "simple online pharmcy",
+     "clicks": 2,
+     "impr": 38,
+     "ctr": 5.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 32,
+      "ctr": 3.1,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "cheapest online weight loss medication",
+     "clicks": 2,
+     "impr": 25,
+     "ctr": 8.0,
+     "pos": 18.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 23,
+      "ctr": 0.0,
+      "pos": 3.9
+     }
+    },
+    {
+     "q": "simple online pharmacy weight loss tablets",
+     "clicks": 2,
+     "impr": 17,
+     "ctr": 11.8,
+     "pos": 1.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 47,
+      "ctr": 0.0,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "buy mounjaro simple online pharmacy",
+     "clicks": 2,
+     "impr": 9,
+     "ctr": 22.2,
+     "pos": 2.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 8,
+      "ctr": 0.0,
+      "pos": 2.1
+     }
+    },
+    {
+     "q": "cheapest weight loss pills online",
+     "clicks": 2,
+     "impr": 9,
+     "ctr": 22.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 11,
+      "ctr": 0.0,
+      "pos": 1.2
+     }
+    },
+    {
+     "q": "best cheap weight loss tablets",
+     "clicks": 2,
+     "impr": 8,
+     "ctr": 25.0,
+     "pos": 3.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "best online weight loss medication",
+     "clicks": 2,
+     "impr": 8,
+     "ctr": 25.0,
+     "pos": 8.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 5,
+      "ctr": 0.0,
+      "pos": 11.0
+     }
+    },
+    {
+     "q": "low cost weight loss pills",
+     "clicks": 2,
+     "impr": 3,
+     "ctr": 66.7,
+     "pos": 1.0
+    },
+    {
+     "q": "simple online pharmacy uk",
+     "clicks": 1,
+     "impr": 440,
+     "ctr": 0.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 248,
+      "ctr": 0.4,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "buy weight loss pills",
+     "clicks": 1,
+     "impr": 386,
+     "ctr": 0.3,
+     "pos": 12.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 317,
+      "ctr": 0.0,
+      "pos": 11.7
+     }
+    },
+    {
+     "q": "simpleonline pharmacy",
+     "clicks": 1,
+     "impr": 145,
+     "ctr": 0.7,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 179,
+      "ctr": 0.6,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "happen weight loss",
+     "clicks": 1,
+     "impr": 132,
+     "ctr": 0.8,
+     "pos": 6.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 141,
+      "ctr": 0.0,
+      "pos": 7.1
+     }
+    },
+    {
+     "q": "buy glp-1 online",
+     "clicks": 1,
+     "impr": 104,
+     "ctr": 1.0,
+     "pos": 9.6,
+     "prev": {
+      "clicks": 2,
+      "impr": 162,
+      "ctr": 1.2,
+      "pos": 9.4
+     }
+    },
+    {
+     "q": "simply pharmacy online",
+     "clicks": 1,
+     "impr": 94,
+     "ctr": 1.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 2,
+      "impr": 95,
+      "ctr": 2.1,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simplepharmacy",
+     "clicks": 1,
+     "impr": 75,
+     "ctr": 1.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 90,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "wegovy simple online pharmacy",
+     "clicks": 1,
+     "impr": 69,
+     "ctr": 1.4,
+     "pos": 8.6,
+     "prev": {
+      "clicks": 0,
+      "impr": 104,
+      "ctr": 0.0,
+      "pos": 6.8
+     }
+    },
+    {
+     "q": "simply online",
+     "clicks": 1,
+     "impr": 59,
+     "ctr": 1.7,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 75,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "best online weight loss prescription",
+     "clicks": 1,
+     "impr": 57,
+     "ctr": 1.8,
+     "pos": 7.9,
+     "prev": {
+      "clicks": 1,
+      "impr": 68,
+      "ctr": 1.5,
+      "pos": 11.9
+     }
+    },
+    {
+     "q": "simple online.pharmacy",
+     "clicks": 1,
+     "impr": 50,
+     "ctr": 2.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 57,
+      "ctr": 1.8,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "buy weight loss medication online",
+     "clicks": 1,
+     "impr": 38,
+     "ctr": 2.6,
+     "pos": 11.6,
+     "prev": {
+      "clicks": 0,
+      "impr": 45,
+      "ctr": 0.0,
+      "pos": 9.4
+     }
+    },
+    {
+     "q": "buy weight loss injections online uk",
+     "clicks": 1,
+     "impr": 37,
+     "ctr": 2.7,
+     "pos": 9.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 37,
+      "ctr": 0.0,
+      "pos": 6.6
+     }
+    },
+    {
+     "q": "wegovy pill simple online pharmacy",
+     "clicks": 1,
+     "impr": 36,
+     "ctr": 2.8,
+     "pos": 5.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 126,
+      "ctr": 0.0,
+      "pos": 4.9
+     }
+    },
+    {
+     "q": "buy glp1 online",
+     "clicks": 1,
+     "impr": 30,
+     "ctr": 3.3,
+     "pos": 8.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 50,
+      "ctr": 0.0,
+      "pos": 9.1
+     }
+    },
+    {
+     "q": "online weight loss pharmacy",
+     "clicks": 1,
+     "impr": 22,
+     "ctr": 4.5,
+     "pos": 7.9,
+     "prev": {
+      "clicks": 1,
+      "impr": 7,
+      "ctr": 14.3,
+      "pos": 8.4
+     }
+    },
+    {
+     "q": "cheapest glp 1 online",
+     "clicks": 1,
+     "impr": 18,
+     "ctr": 5.6,
+     "pos": 3.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 21,
+      "ctr": 0.0,
+      "pos": 6.0
+     }
+    },
+    {
+     "q": "simple chemist",
+     "clicks": 1,
+     "impr": 17,
+     "ctr": 5.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 35,
+      "ctr": 2.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "affordable weight loss pills",
+     "clicks": 1,
+     "impr": 16,
+     "ctr": 6.2,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 1,
+      "impr": 3,
+      "ctr": 33.3,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "best price for weight loss pills",
+     "clicks": 1,
+     "impr": 12,
+     "ctr": 8.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 15,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "buy glp-1 online uk",
+     "clicks": 1,
+     "impr": 12,
+     "ctr": 8.3,
+     "pos": 7.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 16,
+      "ctr": 6.2,
+      "pos": 5.8
+     }
+    },
+    {
+     "q": "cheapest weight loss tablets uk",
+     "clicks": 1,
+     "impr": 12,
+     "ctr": 8.3,
+     "pos": 2.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 26,
+      "ctr": 3.8,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "pharmacy weight loss",
+     "clicks": 1,
+     "impr": 11,
+     "ctr": 9.1,
+     "pos": 18.7,
+     "prev": {
+      "clicks": 1,
+      "impr": 11,
+      "ctr": 9.1,
+      "pos": 8.7
+     }
+    },
+    {
+     "q": "simple mounjaro",
+     "clicks": 1,
+     "impr": 11,
+     "ctr": 9.1,
+     "pos": 2.2,
+     "prev": {
+      "clicks": 0,
+      "impr": 14,
+      "ctr": 0.0,
+      "pos": 2.8
+     }
+    },
+    {
+     "q": "best and cheapest weight loss medication",
+     "clicks": 1,
+     "impr": 10,
+     "ctr": 10.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 24,
+      "ctr": 4.2,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "best online pharmacy for weight loss uk",
+     "clicks": 1,
+     "impr": 10,
+     "ctr": 10.0,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 3,
+      "impr": 28,
+      "ctr": 10.7,
+      "pos": 1.8
+     }
+    },
+    {
+     "q": "cheaper weight loss pills",
+     "clicks": 1,
+     "impr": 10,
+     "ctr": 10.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 4,
+      "ctr": 25.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "cheapest glp-1 online",
+     "clicks": 1,
+     "impr": 8,
+     "ctr": 12.5,
+     "pos": 2.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 10,
+      "ctr": 0.0,
+      "pos": 4.7
+     }
+    },
+    {
+     "q": "affordable weight loss medication",
+     "clicks": 1,
+     "impr": 7,
+     "ctr": 14.3,
+     "pos": 12.9,
+     "prev": {
+      "clicks": 4,
+      "impr": 63,
+      "ctr": 6.3,
+      "pos": 4.0
+     }
+    },
+    {
+     "q": "glp1 buy online",
+     "clicks": 1,
+     "impr": 7,
+     "ctr": 14.3,
+     "pos": 8.1,
+     "prev": {
+      "clicks": 2,
+      "impr": 31,
+      "ctr": 6.5,
+      "pos": 8.1
+     }
+    },
+    {
+     "q": "simple health pharmacy",
+     "clicks": 1,
+     "impr": 7,
+     "ctr": 14.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 1,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "order weight loss tablets",
+     "clicks": 1,
+     "impr": 6,
+     "ctr": 16.7,
+     "pos": 5.7
+    },
+    {
+     "q": "slimming pills for women",
+     "clicks": 1,
+     "impr": 6,
+     "ctr": 16.7,
+     "pos": 1.0
+    },
+    {
+     "q": "best cheap weight loss pills",
+     "clicks": 1,
+     "impr": 5,
+     "ctr": 20.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 3,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "cheapest diet pills",
+     "clicks": 1,
+     "impr": 4,
+     "ctr": 25.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 7,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "retatrutide 20mg uk",
+     "clicks": 1,
+     "impr": 3,
+     "ctr": 33.3,
+     "pos": 50.0
+    },
+    {
+     "q": "uk weight loss",
+     "clicks": 1,
+     "impr": 3,
+     "ctr": 33.3,
+     "pos": 33.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 3,
+      "ctr": 0.0,
+      "pos": 33.0
+     }
+    },
+    {
+     "q": "glp 1 online no subscription",
+     "clicks": 1,
+     "impr": 2,
+     "ctr": 50.0,
+     "pos": 1.0
+    },
+    {
+     "q": "how much do weight loss tablets cost",
+     "clicks": 1,
+     "impr": 2,
+     "ctr": 50.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 3,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "bmi over 30",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 4.0
+    },
+    {
+     "q": "cheapest glp1",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 31.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 1,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "clearpay weight loss",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 1,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "does marijuana lower blood sugar",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 112.0
+    },
+    {
+     "q": "does sodaslim work",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 3.0
+    },
+    {
+     "q": "fat pills",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 28.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 27.5
+     }
+    },
+    {
+     "q": "kamagra fast.com",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 64.0
+    },
+    {
+     "q": "liraglutide supplier",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 89.0
+    },
+    {
+     "q": "lowest cost",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0
+    },
+    {
+     "q": "most effective weight loss tablets uk",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0
+    },
+    {
+     "q": "mounjaro price simple online pharmacy",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 5.0
+     }
+    },
+    {
+     "q": "online service",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 2.0
+    },
+    {
+     "q": "real weight loss pills",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0
+    },
+    {
+     "q": "reta pens",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 55.0
+    },
+    {
+     "q": "retatrutide pen 10mg",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 50.0
+    },
+    {
+     "q": "simple glp1",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 3,
+      "impr": 4,
+      "ctr": 75.0,
+      "pos": 5.0
+     }
+    },
+    {
+     "q": "specific details",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0
+    },
+    {
+     "q": "tirzepatide 40mg injection pen kit",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 40.0
+    },
+    {
+     "q": "trusted weight loss pills",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 3.0
+    },
+    {
+     "q": "under 50\u00a3",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0
+    }
+   ],
+   "as_of": "2026-09-01",
+   "days": 28
+  },
+  "gsckw": {
+   "weight loss pills": [
+    {
+     "d": "2026-06-03",
+     "pos": 26.1,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 25.3,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 26.1,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 26.0,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 26.2,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 25.9,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 25.0,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 28.2,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 28.7,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 26.7,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 44
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 28.9,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 27.5,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 26.7,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 27.5,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 26.5,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 25.8,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 19.5,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 22.0,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 21.0,
+     "clicks": 1,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 23.2,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 25.0,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 18.2,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 19.1,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 25.6,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 31.1,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 29.9,
+     "clicks": 1,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 28.9,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 26.7,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 28.2,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 28.5,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 30.2,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 32.1,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 32.0,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 31.8,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 25.6,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 31.7,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 25.2,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 30.4,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 23.5,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 30.8,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 32.2,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 28.6,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 26.5,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 29.7,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 2.2,
+     "clicks": 3,
+     "impr": 298
+    },
+    {
+     "d": "2026-07-21",
+     "pos": 3.6,
+     "clicks": 2,
+     "impr": 278
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 1.5,
+     "clicks": 9,
+     "impr": 1331
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 24.5,
+     "clicks": 1,
+     "impr": 31
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 7.1,
+     "clicks": 3,
+     "impr": 74
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 25.5,
+     "clicks": 1,
+     "impr": 35
+    }
+   ],
+   "weight loss injections": [
+    {
+     "d": "2026-06-03",
+     "pos": 27.9,
+     "clicks": 0,
+     "impr": 63
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 85
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 31.2,
+     "clicks": 0,
+     "impr": 62
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 31.7,
+     "clicks": 0,
+     "impr": 52
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 32.5,
+     "clicks": 0,
+     "impr": 57
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 32.8,
+     "clicks": 0,
+     "impr": 57
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 29.7,
+     "clicks": 0,
+     "impr": 56
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 29.5,
+     "clicks": 0,
+     "impr": 66
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 28.9,
+     "clicks": 0,
+     "impr": 51
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 21.9,
+     "clicks": 0,
+     "impr": 80
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 29.6,
+     "clicks": 0,
+     "impr": 69
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 25.2,
+     "clicks": 0,
+     "impr": 73
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 29.3,
+     "clicks": 0,
+     "impr": 67
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 27.1,
+     "clicks": 0,
+     "impr": 70
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 28.3,
+     "clicks": 0,
+     "impr": 71
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 29.7,
+     "clicks": 0,
+     "impr": 49
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 27.8,
+     "clicks": 1,
+     "impr": 69
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 31.0,
+     "clicks": 0,
+     "impr": 47
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 28.2,
+     "clicks": 0,
+     "impr": 75
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 29.9,
+     "clicks": 0,
+     "impr": 63
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 58
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 24.7,
+     "clicks": 0,
+     "impr": 58
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 22.4,
+     "clicks": 0,
+     "impr": 65
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 28.3,
+     "clicks": 0,
+     "impr": 50
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 29.9,
+     "clicks": 2,
+     "impr": 59
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 30.2,
+     "clicks": 0,
+     "impr": 60
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 28.6,
+     "clicks": 0,
+     "impr": 69
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 27.5,
+     "clicks": 0,
+     "impr": 64
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 31.1,
+     "clicks": 0,
+     "impr": 47
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 31.4,
+     "clicks": 0,
+     "impr": 69
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 30.3,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 21.4,
+     "clicks": 0,
+     "impr": 80
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 26.6,
+     "clicks": 0,
+     "impr": 68
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 29.2,
+     "clicks": 0,
+     "impr": 54
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 31.7,
+     "clicks": 0,
+     "impr": 47
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 34.1,
+     "clicks": 0,
+     "impr": 43
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 30.9,
+     "clicks": 0,
+     "impr": 63
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 34.5,
+     "clicks": 0,
+     "impr": 47
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 29.9,
+     "clicks": 0,
+     "impr": 54
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 31.1,
+     "clicks": 0,
+     "impr": 56
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 34.5,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 30.1,
+     "clicks": 0,
+     "impr": 56
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 32.8,
+     "clicks": 0,
+     "impr": 41
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 33.0,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 30.6,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 33.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 29.2,
+     "clicks": 0,
+     "impr": 46
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 29.2,
+     "clicks": 1,
+     "impr": 64
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 34.3,
+     "clicks": 1,
+     "impr": 38
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 35.5,
+     "clicks": 2,
+     "impr": 39
+    }
+   ],
+   "weight loss injections uk": [
+    {
+     "d": "2026-06-03",
+     "pos": 18.3,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 17.1,
+     "clicks": 0,
+     "impr": 44
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 23.5,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 25.4,
+     "clicks": 1,
+     "impr": 41
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 20.9,
+     "clicks": 1,
+     "impr": 43
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 23.1,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 21.3,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 22.8,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 22.5,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 19.3,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 21.5,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 23.0,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 22.2,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 21.5,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 20.7,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 19.1,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 21.7,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 22.6,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 23.5,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 22.4,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 21.6,
+     "clicks": 0,
+     "impr": 41
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 23.9,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 24.6,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 26.6,
+     "clicks": 1,
+     "impr": 41
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 24.3,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 25.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 23.6,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 23.6,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 22.7,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 22.6,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 25.8,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 25.7,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 24.5,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 22.1,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 25.8,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 24.4,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 27.4,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 28.0,
+     "clicks": 0,
+     "impr": 43
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 25.9,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 26.9,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 26.2,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 27.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 27.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 25.3,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 27.6,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 28.3,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-07-26",
+     "pos": 27.9,
+     "clicks": 1,
+     "impr": 21
+    }
+   ],
+   "weight loss jabs": [
+    {
+     "d": "2026-06-03",
+     "pos": 22.7,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 23.9,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 26.1,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 25.8,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 24.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 24.9,
+     "clicks": 1,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 23.3,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 23.2,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 22.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 24.6,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 21.5,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 24.0,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 26.6,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 23.4,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 24.5,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 23.6,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 24.3,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 22.5,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 25.7,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 25.6,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 24.8,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 24.8,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 23.4,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 27.2,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 26.4,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 24.7,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 24.8,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 23.7,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 26.8,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 26.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 26.6,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 28.6,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 25.4,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 24.3,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 26.3,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 28.5,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 28.3,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 26.3,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 30.4,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 29.1,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 28.8,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 28.9,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 31.1,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-07-22",
+     "pos": 30.9,
+     "clicks": 1,
+     "impr": 21
+    }
+   ],
+   "weight loss treatment": [
+    {
+     "d": "2026-06-03",
+     "pos": 22.9,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 24.3,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 31.9,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 28.1,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 27.7,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 27.2,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 23.5,
+     "clicks": 0,
+     "impr": 48
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 23.4,
+     "clicks": 0,
+     "impr": 56
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 25.0,
+     "clicks": 0,
+     "impr": 43
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 16.7,
+     "clicks": 0,
+     "impr": 110
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 18.8,
+     "clicks": 0,
+     "impr": 59
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 9.7,
+     "clicks": 0,
+     "impr": 52
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 26.2,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 25.5,
+     "clicks": 0,
+     "impr": 41
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 25.6,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 25.1,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 25.2,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 24.8,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 26.2,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 26.7,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 27.7,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 30.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 29.0,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 35.2,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 33.0,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 31.1,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 31.1,
+     "clicks": 1,
+     "impr": 33
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 29.5,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 27.6,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 30.2,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 33.3,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 29.9,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 26.0,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 28.6,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 28.2,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 24.2,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 26.6,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 30.3,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 28.6,
+     "clicks": 0,
+     "impr": 39
+    }
+   ],
+   "weight loss medication": [
+    {
+     "d": "2026-06-03",
+     "pos": 18.0,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 31.8,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 36.6,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 35.3,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 34.7,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 34.8,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 37.2,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 35.7,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 30.5,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 29.4,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 27.1,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 32.9,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 30.1,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 33.8,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 33.2,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 30.2,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 30.3,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 30.4,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 29.8,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 29.1,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 28.7,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 24.2,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 23.1,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 26.5,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 25.8,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 26.4,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 24.6,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 25.9,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 26.6,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 27.4,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 28.1,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 28.8,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 26.1,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 26.7,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 28.0,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 29.6,
+     "clicks": 1,
+     "impr": 36
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 29.7,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 28.8,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 26.9,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 29.6,
+     "clicks": 1,
+     "impr": 31
+    }
+   ],
+   "weight loss tablets": [
+    {
+     "d": "2026-06-03",
+     "pos": 28.2,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 25.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 27.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 26.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 27.1,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 26.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 25.0,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 25.7,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 23.1,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 23.9,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 23.9,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 20.7,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 25.2,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 25.5,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 25.7,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 26.9,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 24.7,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 22.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 22.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 26.5,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 28.8,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 27.1,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 28.1,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 25.3,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 28.1,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 27.7,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 32.4,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 28.5,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 34.0,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 29.6,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 27.7,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 31.3,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 26.5,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 29.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 28.1,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 30.8,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 30.2,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 28.5,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 29.8,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 25.7,
+     "clicks": 1,
+     "impr": 45
+    }
+   ],
+   "best weight loss injections": [
+    {
+     "d": "2026-06-03",
+     "pos": 23.9,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 23.6,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 26.3,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 26.3,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 25.4,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 23.5,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 24.8,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 24.1,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 23.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 26.3,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 26.7,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 25.2,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 23.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 23.6,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 19.4,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 21.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 24.9,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 24.2,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 21.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 25.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 27.1,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 27.4,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 27.4,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 30.2,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 30.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 28.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 27.5,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 27.8,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 28.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 28.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 29.9,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 26.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 26.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 27.4,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 27.4,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 28.0,
+     "clicks": 0,
+     "impr": 11
+    }
+   ],
+   "medical weight loss": [
+    {
+     "d": "2026-06-03",
+     "pos": 44.1,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 44.3,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 48.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 51.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 50.9,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 52.4,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 50.3,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 48.1,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 47.2,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 47.7,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 47.1,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 50.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 47.0,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 46.5,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 43.2,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 38.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 39.2,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 39.8,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 40.9,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 40.7,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 48.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 44.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 48.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 48.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 44.5,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 50.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 45.3,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 48.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 48.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 49.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 47.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 49.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 53.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 50.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 49.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 51.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 52.8,
+     "clicks": 0,
+     "impr": 4
+    }
+   ],
+   "prescription weight loss": [
+    {
+     "d": "2026-06-03",
+     "pos": 24.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 28.1,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 29.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 26.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 21.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 28.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 30.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 31.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 22.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 24.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 23.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 25.1,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 23.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 21.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 23.8,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 21.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 21.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 24.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 21.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 21.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 23.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 22.6,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 24.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 19.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 16.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 24.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 20.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 21.8,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 20.7,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 21.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 24.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 24.6,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 26.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 24.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 24.0,
+     "clicks": 0,
+     "impr": 9
+    }
+   ],
+   "weight loss pen": [
+    {
+     "d": "2026-06-03",
+     "pos": 18.3,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 19.3,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 20.5,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 20.9,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 21.2,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 19.9,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 19.2,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 19.2,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 19.2,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 19.9,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 19.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 19.4,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 18.9,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 19.1,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 18.5,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 20.2,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 19.8,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 17.7,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 20.0,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 19.1,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 21.1,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 19.8,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 19.5,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 19.4,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 20.5,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 20.8,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 19.3,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 19.5,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 20.9,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 20.5,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 22.7,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 20.6,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 20.1,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 21.5,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 20.8,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 22.8,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 22.0,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 23.4,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 22.0,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 22.2,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 22.5,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 22.1,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 21.8,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 20.7,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 21.8,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 22.3,
+     "clicks": 0,
+     "impr": 19
+    }
+   ],
+   "skinny jab": [
+    {
+     "d": "2026-06-04",
+     "pos": 71.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 74.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 70.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 61.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 70.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 62.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 65.2,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 62.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 71.0,
+     "clicks": 0,
+     "impr": 2
+    }
+   ],
+   "how do weight loss injections work": [
+    {
+     "d": "2026-06-06",
+     "pos": 3.0,
+     "clicks": 0,
+     "impr": 2
+    }
+   ],
+   "glp-1 injections": [
+    {
+     "d": "2026-06-19",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 2
+    }
+   ]
+  },
+  "ga4": {
+   "page": [
+    {
+     "d": "2026-06-05",
+     "sessions": 610,
+     "events": 429
+    },
+    {
+     "d": "2026-06-06",
+     "sessions": 553,
+     "events": 418
+    },
+    {
+     "d": "2026-06-07",
+     "sessions": 612,
+     "events": 454
+    },
+    {
+     "d": "2026-06-08",
+     "sessions": 599,
+     "events": 376
+    },
+    {
+     "d": "2026-06-09",
+     "sessions": 706,
+     "events": 351
+    },
+    {
+     "d": "2026-06-10",
+     "sessions": 924,
+     "events": 490
+    },
+    {
+     "d": "2026-06-11",
+     "sessions": 6362,
+     "events": 606
+    },
+    {
+     "d": "2026-06-12",
+     "sessions": 6136,
+     "events": 1153
+    },
+    {
+     "d": "2026-06-13",
+     "sessions": 3579,
+     "events": 1218
+    },
+    {
+     "d": "2026-06-14",
+     "sessions": 6447,
+     "events": 1399
+    },
+    {
+     "d": "2026-06-15",
+     "sessions": 6385,
+     "events": 1455
+    },
+    {
+     "d": "2026-06-16",
+     "sessions": 7235,
+     "events": 1462
+    },
+    {
+     "d": "2026-06-17",
+     "sessions": 3401,
+     "events": 1160
+    },
+    {
+     "d": "2026-06-18",
+     "sessions": 11892,
+     "events": 1748
+    },
+    {
+     "d": "2026-06-19",
+     "sessions": 7192,
+     "events": 1660
+    },
+    {
+     "d": "2026-06-20",
+     "sessions": 5356,
+     "events": 1312
+    },
+    {
+     "d": "2026-06-21",
+     "sessions": 4847,
+     "events": 1218
+    },
+    {
+     "d": "2026-06-22",
+     "sessions": 3259,
+     "events": 954
+    },
+    {
+     "d": "2026-06-23",
+     "sessions": 3781,
+     "events": 985
+    },
+    {
+     "d": "2026-06-24",
+     "sessions": 3175,
+     "events": 891
+    },
+    {
+     "d": "2026-06-25",
+     "sessions": 2582,
+     "events": 863
+    },
+    {
+     "d": "2026-06-26",
+     "sessions": 2210,
+     "events": 846
+    },
+    {
+     "d": "2026-06-27",
+     "sessions": 2136,
+     "events": 810
+    },
+    {
+     "d": "2026-06-28",
+     "sessions": 2323,
+     "events": 890
+    },
+    {
+     "d": "2026-06-29",
+     "sessions": 2740,
+     "events": 826
+    },
+    {
+     "d": "2026-06-30",
+     "sessions": 2532,
+     "events": 1187
+    },
+    {
+     "d": "2026-07-01",
+     "sessions": 2729,
+     "events": 1054
+    },
+    {
+     "d": "2026-07-02",
+     "sessions": 1699,
+     "events": 802
+    },
+    {
+     "d": "2026-07-03",
+     "sessions": 1078,
+     "events": 628
+    },
+    {
+     "d": "2026-07-04",
+     "sessions": 1116,
+     "events": 632
+    },
+    {
+     "d": "2026-07-05",
+     "sessions": 1361,
+     "events": 920
+    },
+    {
+     "d": "2026-07-06",
+     "sessions": 2827,
+     "events": 1398
+    },
+    {
+     "d": "2026-07-07",
+     "sessions": 1793,
+     "events": 844
+    },
+    {
+     "d": "2026-07-08",
+     "sessions": 1268,
+     "events": 629
+    },
+    {
+     "d": "2026-07-09",
+     "sessions": 1015,
+     "events": 558
+    },
+    {
+     "d": "2026-07-10",
+     "sessions": 978,
+     "events": 571
+    },
+    {
+     "d": "2026-07-11",
+     "sessions": 865,
+     "events": 511
+    },
+    {
+     "d": "2026-07-12",
+     "sessions": 824,
+     "events": 558
+    },
+    {
+     "d": "2026-07-13",
+     "sessions": 942,
+     "events": 588
+    },
+    {
+     "d": "2026-07-14",
+     "sessions": 1017,
+     "events": 596
+    },
+    {
+     "d": "2026-07-15",
+     "sessions": 941,
+     "events": 575
+    },
+    {
+     "d": "2026-07-16",
+     "sessions": 956,
+     "events": 557
+    },
+    {
+     "d": "2026-07-17",
+     "sessions": 839,
+     "events": 565
+    },
+    {
+     "d": "2026-07-18",
+     "sessions": 694,
+     "events": 458
+    },
+    {
+     "d": "2026-07-19",
+     "sessions": 732,
+     "events": 550
+    },
+    {
+     "d": "2026-07-20",
+     "sessions": 854,
+     "events": 537
+    },
+    {
+     "d": "2026-07-21",
+     "sessions": 974,
+     "events": 773
+    },
+    {
+     "d": "2026-07-22",
+     "sessions": 912,
+     "events": 679
+    },
+    {
+     "d": "2026-07-23",
+     "sessions": 783,
+     "events": 571
+    },
+    {
+     "d": "2026-07-24",
+     "sessions": 838,
+     "events": 717
+    },
+    {
+     "d": "2026-07-25",
+     "sessions": 678,
+     "events": 450
+    },
+    {
+     "d": "2026-07-26",
+     "sessions": 774,
+     "events": 549
+    },
+    {
+     "d": "2026-07-27",
+     "sessions": 870,
+     "events": 749
+    },
+    {
+     "d": "2026-07-28",
+     "sessions": 786,
+     "events": 580
+    },
+    {
+     "d": "2026-07-29",
+     "sessions": 434,
+     "events": 344
+    },
+    {
+     "d": "2026-07-30",
+     "sessions": 579,
+     "events": 495
+    },
+    {
+     "d": "2026-07-31",
+     "sessions": 743,
+     "events": 605
+    },
+    {
+     "d": "2026-08-01",
+     "sessions": 364,
+     "events": 219
+    },
+    {
+     "d": "2026-08-02",
+     "sessions": 316,
+     "events": 239
+    },
+    {
+     "d": "2026-08-03",
+     "sessions": 392,
+     "events": 304
+    },
+    {
+     "d": "2026-08-04",
+     "sessions": 320,
+     "events": 309
+    },
+    {
+     "d": "2026-08-05",
+     "sessions": 294,
+     "events": 212
+    },
+    {
+     "d": "2026-08-06",
+     "sessions": 259,
+     "events": 171
+    },
+    {
+     "d": "2026-08-07",
+     "sessions": 209,
+     "events": 138
+    },
+    {
+     "d": "2026-08-08",
+     "sessions": 201,
+     "events": 197
+    },
+    {
+     "d": "2026-08-09",
+     "sessions": 206,
+     "events": 151
+    },
+    {
+     "d": "2026-08-10",
+     "sessions": 346,
+     "events": 206
+    },
+    {
+     "d": "2026-08-11",
+     "sessions": 268,
+     "events": 207
+    },
+    {
+     "d": "2026-08-12",
+     "sessions": 244,
+     "events": 190
+    },
+    {
+     "d": "2026-08-13",
+     "sessions": 220,
+     "events": 174
+    },
+    {
+     "d": "2026-08-14",
+     "sessions": 286,
+     "events": 203
+    },
+    {
+     "d": "2026-08-15",
+     "sessions": 192,
+     "events": 82
+    },
+    {
+     "d": "2026-08-16",
+     "sessions": 202,
+     "events": 183
+    },
+    {
+     "d": "2026-08-17",
+     "sessions": 246,
+     "events": 197
+    },
+    {
+     "d": "2026-08-18",
+     "sessions": 463,
+     "events": 301
+    },
+    {
+     "d": "2026-08-19",
+     "sessions": 483,
+     "events": 365
+    },
+    {
+     "d": "2026-08-20",
+     "sessions": 502,
+     "events": 462
+    },
+    {
+     "d": "2026-08-21",
+     "sessions": 407,
+     "events": 320
+    },
+    {
+     "d": "2026-08-22",
+     "sessions": 453,
+     "events": 357
+    },
+    {
+     "d": "2026-08-23",
+     "sessions": 442,
+     "events": 323
+    },
+    {
+     "d": "2026-08-24",
+     "sessions": 557,
+     "events": 397
+    },
+    {
+     "d": "2026-08-25",
+     "sessions": 541,
+     "events": 363
+    },
+    {
+     "d": "2026-08-26",
+     "sessions": 608,
+     "events": 443
+    },
+    {
+     "d": "2026-08-27",
+     "sessions": 478,
+     "events": 293
+    },
+    {
+     "d": "2026-08-28",
+     "sessions": 497,
+     "events": 444
+    },
+    {
+     "d": "2026-08-29",
+     "sessions": 426,
+     "events": 250
+    },
+    {
+     "d": "2026-08-30",
+     "sessions": 409,
+     "events": 272
+    },
+    {
+     "d": "2026-08-31",
+     "sessions": 470,
+     "events": 325
+    },
+    {
+     "d": "2026-09-01",
+     "sessions": 554,
+     "events": 397
+    },
+    {
+     "d": "2026-09-02",
+     "sessions": 497,
+     "events": 299
+    },
+    {
+     "d": "2026-09-03",
+     "sessions": 509,
+     "events": 447
+    }
+   ],
+   "as_of": "2026-09-03"
+  },
+  "ga4rev": {
+   "months": [
+    {
+     "m": "2026-02",
+     "revenue": 454.93,
+     "sessions": 25
+    },
+    {
+     "m": "2026-03",
+     "revenue": 3688.44,
+     "sessions": 424
+    },
+    {
+     "m": "2026-04",
+     "revenue": 5109.85,
+     "sessions": 577
+    },
+    {
+     "m": "2026-05",
+     "revenue": 23384.32,
+     "sessions": 2702
+    },
+    {
+     "m": "2026-06",
+     "revenue": 29028.34,
+     "sessions": 5413
+    },
+    {
+     "m": "2026-07",
+     "revenue": 59399.31,
+     "sessions": 7023
+    },
+    {
+     "m": "2026-08",
+     "revenue": 27774.83,
+     "sessions": 2749
+    },
+    {
+     "m": "2026-09",
+     "revenue": 5422.59,
+     "sessions": 507
+    }
+   ],
+   "as_of": "2026-09-03"
+  },
+  "m": {
+   "pill": 33,
+   "bwInj": null,
+   "blD": 4,
+   "blT": 6
+  },
+  "flags": {
+   "wrong": true,
+   "legacy": true,
+   "cann": 0
+  },
+  "kwmeta": {
+   "weight loss injections": {
+    "v": 165000,
+    "feat": [
+     9,
+     20,
+     21,
+     36,
+     52
+    ]
+   },
+   "weight loss injections uk": {
+    "v": 22200,
+    "feat": [
+     6,
+     9,
+     14,
+     15,
+     20,
+     21,
+     36,
+     52
+    ]
+   },
+   "weight loss pills": {
+    "v": 27100,
+    "feat": [
+     9,
+     20,
+     21,
+     36,
+     52
+    ]
+   },
+   "weight loss medication": {
+    "v": 18100,
+    "feat": [
+     6,
+     21,
+     36,
+     52
+    ]
+   },
+   "weight loss treatment": {
+    "v": 3600,
+    "feat": [
+     3,
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "weight loss tablets": {
+    "v": 22200,
+    "feat": [
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "weight loss pen": {
+    "v": 1600,
+    "feat": [
+     5,
+     13,
+     21,
+     36,
+     52
+    ]
+   },
+   "weight loss jabs": {
+    "v": 22200,
+    "feat": [
+     9,
+     15,
+     20,
+     21,
+     36,
+     52
+    ]
+   },
+   "skinny jab": {
+    "v": 2400,
+    "feat": [
+     9,
+     13,
+     21,
+     36,
+     52
+    ]
+   },
+   "prescription weight loss": {
+    "v": 140,
+    "feat": [
+     9,
+     20,
+     21,
+     36,
+     52
+    ]
+   },
+   "glp-1 injections": {
+    "v": 720,
+    "feat": [
+     6,
+     9,
+     20,
+     21,
+     36,
+     52
+    ]
+   },
+   "medical weight loss": {
+    "v": 1300,
+    "feat": [
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "best weight loss injections": {
+    "v": 4400,
+    "feat": [
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "weight loss injections vs pills": {
+    "v": 30,
+    "feat": []
+   },
+   "how do weight loss injections work": {
+    "v": 2900,
+    "feat": [
+     6,
+     9,
+     11,
+     21,
+     36
+    ]
+   }
+  },
+  "tech": {
+   "checks": [
+    {
+     "name": "HTTP status",
+     "state": "pass",
+     "evidence": "200 OK, no redirect (https://www.simpleonlinepharmacy.co.uk/weight-loss/)"
+    },
+    {
+     "name": "Canonical tag",
+     "state": "pass",
+     "evidence": "self-referencing (https://www.simpleonlinepharmacy.co.uk/weight-loss/)"
+    },
+    {
+     "name": "Meta robots",
+     "state": "pass",
+     "evidence": "index,follow"
+    },
+    {
+     "name": "Structured data",
+     "state": "pass",
+     "evidence": "has FAQPage, MedicalWebPage, Product"
+    },
+    {
+     "name": "H1 count",
+     "state": "pass",
+     "evidence": "exactly one H1"
+    },
+    {
+     "name": "Internal links",
+     "state": "pass",
+     "evidence": "13 links from 2 hub page(s)"
+    }
+   ],
+   "score": 6,
+   "of": 6
+  },
+  "psi": {
+   "score": 48,
+   "lcp": "12.2 s",
+   "cls": "0",
+   "tbt": "490 ms",
+   "fcp": "4.7 s",
+   "si": "6.6 s",
+   "strategy": "mobile",
+   "field": {
+    "lcp_ms": 535,
+    "lcp_ms_cat": "FAST",
+    "inp_ms": 96,
+    "inp_ms_cat": "FAST",
+    "cls100": 0,
+    "cls100_cat": "FAST"
+   }
+  },
+  "links": {
+   "ours": 4,
+   "comp": {
+    "Superdrug": 98,
+    "Chemist4U": 130,
+    "MedExpress": 73,
+    "Boots": 200
+   },
+   "prospects": [
+    {
+     "d": "acelb.co",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "dcoutesnjacob.com",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "equipetrol.com.ec",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "icylv5.azurewebsites.net",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "metro.co.uk",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "primebeautylounge.com",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "sante.gov.mg",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s1.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s10.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s2.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s3.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s4.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s5.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s6.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s7.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s8.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s9.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "simplygaurav.com",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "thesun.co.uk",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "thesun.ie",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "yahoo.com",
+     "n": 3,
+     "who": [
+      "Boots",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "911auto.it",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Chemist4U"
+     ]
+    },
+    {
+     "d": "academia.edu.gt",
+     "n": 2,
+     "who": [
+      "Boots",
+      "MedExpress"
+     ]
+    },
+    {
+     "d": "bhs-links-bg.xyz",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Chemist4U"
+     ]
+    },
+    {
+     "d": "bhs-links-er.xyz",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Chemist4U"
+     ]
+    }
+   ],
+   "strong": 96
+  }
+ }
+]

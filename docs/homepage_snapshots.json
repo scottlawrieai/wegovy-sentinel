@@ -1,0 +1,7439 @@
+[
+ {
+  "date": "2026-09-04",
+  "mode": "semrush",
+  "best": {
+   "simple online pharmacy": {
+    "p": 1,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/",
+    "n": 1,
+    "v": 60500
+   },
+   "simple online pharmacy uk": null,
+   "simple pharmacy": {
+    "p": 1,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/",
+    "n": 1,
+    "v": 4400
+   },
+   "online pharmacy": {
+    "p": 19,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/",
+    "n": 1,
+    "v": 27100
+   },
+   "online pharmacy uk": {
+    "p": 17,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/",
+    "n": 2,
+    "v": 12100
+   },
+   "uk online pharmacy": null,
+   "online chemist": {
+    "p": 14,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/",
+    "n": 1,
+    "v": 2900
+   },
+   "online chemist uk": {
+    "p": 17,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/",
+    "n": 2,
+    "v": 1900
+   },
+   "pharmacy online": {
+    "p": 17,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/",
+    "n": 2,
+    "v": 14800
+   },
+   "cheap online pharmacy": null,
+   "online doctor": null,
+   "online doctor uk": {
+    "p": 29,
+    "c": "other",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/",
+    "n": 2,
+    "v": 2400
+   },
+   "nhs prescriptions online": null,
+   "private prescription online": null,
+   "repeat prescription online": null
+  },
+  "comp": {
+   "Pharmacy2U": {
+    "online pharmacy": {
+     "p": 1,
+     "u": "https://www.pharmacy2u.co.uk/"
+    },
+    "online pharmacy uk": {
+     "p": 1,
+     "u": "https://www.pharmacy2u.co.uk/"
+    },
+    "online chemist": {
+     "p": 7,
+     "u": "https://www.pharmacy2u.co.uk/"
+    },
+    "online chemist uk": {
+     "p": 8,
+     "u": "https://www.pharmacy2u.co.uk/"
+    },
+    "pharmacy online": {
+     "p": 2,
+     "u": "https://www.pharmacy2u.co.uk/"
+    },
+    "online doctor": {
+     "p": 13,
+     "u": "https://www.pharmacy2u.co.uk/online-doctor"
+    },
+    "online doctor uk": {
+     "p": 13,
+     "u": "https://www.pharmacy2u.co.uk/online-doctor"
+    }
+   },
+   "Boots": {
+    "online pharmacy": {
+     "p": 20,
+     "u": "https://www.boots.com/online/pharmacy/"
+    },
+    "online doctor": {
+     "p": 2,
+     "u": "https://onlinedoctor.boots.com/"
+    }
+   },
+   "Chemist4U": {
+    "online pharmacy": {
+     "p": 16,
+     "u": "https://www.chemist-4-u.com/"
+    },
+    "online pharmacy uk": {
+     "p": 19,
+     "u": "https://www.chemist-4-u.com/"
+    },
+    "uk online pharmacy": {
+     "p": 21,
+     "u": "https://www.chemist-4-u.com/"
+    },
+    "online chemist": {
+     "p": 1,
+     "u": "https://www.chemist-4-u.com/"
+    },
+    "online chemist uk": {
+     "p": 1,
+     "u": "https://www.chemist-4-u.com/"
+    },
+    "pharmacy online": {
+     "p": 21,
+     "u": "https://www.chemist-4-u.com/"
+    }
+   },
+   "Superdrug": {
+    "online pharmacy": {
+     "p": 3,
+     "u": "https://onlinepharmacy.superdrug.com/"
+    },
+    "online chemist": {
+     "p": 11,
+     "u": "https://onlinepharmacy.superdrug.com/"
+    },
+    "online chemist uk": {
+     "p": 14,
+     "u": "https://onlinepharmacy.superdrug.com/"
+    },
+    "pharmacy online": {
+     "p": 49,
+     "u": "https://onlinedoctor.superdrug.com/uk/"
+    },
+    "online doctor": {
+     "p": 3,
+     "u": "https://onlinedoctor.superdrug.com/uk/"
+    },
+    "online doctor uk": {
+     "p": 4,
+     "u": "https://onlinedoctor.superdrug.com/uk/"
+    }
+   },
+   "ChemistDirect": {
+    "simple online pharmacy": {
+     "p": 15,
+     "u": "https://www.chemistdirect.co.uk/"
+    },
+    "simple pharmacy": {
+     "p": 24,
+     "u": "https://www.chemistdirect.co.uk/"
+    },
+    "online pharmacy": {
+     "p": 4,
+     "u": "https://www.chemistdirect.co.uk/"
+    },
+    "online pharmacy uk": {
+     "p": 5,
+     "u": "https://www.chemistdirect.co.uk/"
+    },
+    "uk online pharmacy": {
+     "p": 2,
+     "u": "https://www.chemistdirect.co.uk/"
+    },
+    "online chemist": {
+     "p": 2,
+     "u": "https://www.chemistdirect.co.uk/"
+    },
+    "online chemist uk": {
+     "p": 4,
+     "u": "https://www.chemistdirect.co.uk/"
+    },
+    "pharmacy online": {
+     "p": 7,
+     "u": "https://www.chemistdirect.co.uk/"
+    }
+   }
+  },
+  "src": {
+   "gsc": {
+    "simple online pharmacy": {
+     "pos": 1.1,
+     "clicks": 17376,
+     "impr": 49387,
+     "ctr": 35.2
+    },
+    "simple pharmacy": {
+     "pos": 2.4,
+     "clicks": 1153,
+     "impr": 3500,
+     "ctr": 32.9
+    },
+    "simple online pharmacy uk": {
+     "pos": 1.0,
+     "clicks": 78,
+     "impr": 450,
+     "ctr": 17.3
+    },
+    "online pharmacy": {
+     "pos": 20.1,
+     "clicks": 42,
+     "impr": 2369,
+     "ctr": 1.8
+    },
+    "online pharmacy uk": {
+     "pos": 19.0,
+     "clicks": 31,
+     "impr": 1362,
+     "ctr": 2.3
+    },
+    "pharmacy online": {
+     "pos": 15.9,
+     "clicks": 8,
+     "impr": 1132,
+     "ctr": 0.7
+    }
+   },
+   "awr": {}
+  },
+  "gscts": {
+   "as_of": "2026-09-01",
+   "days": 90,
+   "site": [
+    {
+     "d": "2026-06-03",
+     "clicks": 5179,
+     "impr": 338614,
+     "ctr": 1.53,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-04",
+     "clicks": 5235,
+     "impr": 332632,
+     "ctr": 1.57,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-05",
+     "clicks": 4366,
+     "impr": 297866,
+     "ctr": 1.47,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-06-06",
+     "clicks": 4079,
+     "impr": 285372,
+     "ctr": 1.43,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-06-07",
+     "clicks": 4581,
+     "impr": 295968,
+     "ctr": 1.55,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-08",
+     "clicks": 5298,
+     "impr": 343683,
+     "ctr": 1.54,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-09",
+     "clicks": 4957,
+     "impr": 322643,
+     "ctr": 1.54,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-06-10",
+     "clicks": 4779,
+     "impr": 328895,
+     "ctr": 1.45,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-11",
+     "clicks": 6252,
+     "impr": 367196,
+     "ctr": 1.7,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-12",
+     "clicks": 6275,
+     "impr": 352266,
+     "ctr": 1.78,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-06-13",
+     "clicks": 4784,
+     "impr": 306952,
+     "ctr": 1.56,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-06-14",
+     "clicks": 5427,
+     "impr": 317797,
+     "ctr": 1.71,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-06-15",
+     "clicks": 6290,
+     "impr": 350526,
+     "ctr": 1.79,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-06-16",
+     "clicks": 6281,
+     "impr": 345351,
+     "ctr": 1.82,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-06-17",
+     "clicks": 5542,
+     "impr": 336738,
+     "ctr": 1.65,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-06-18",
+     "clicks": 5719,
+     "impr": 351781,
+     "ctr": 1.63,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-06-19",
+     "clicks": 5364,
+     "impr": 350960,
+     "ctr": 1.53,
+     "pos": 11.8
+    },
+    {
+     "d": "2026-06-20",
+     "clicks": 4731,
+     "impr": 315817,
+     "ctr": 1.5,
+     "pos": 11.4
+    },
+    {
+     "d": "2026-06-21",
+     "clicks": 4984,
+     "impr": 313256,
+     "ctr": 1.59,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-06-22",
+     "clicks": 5693,
+     "impr": 347236,
+     "ctr": 1.64,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-23",
+     "clicks": 5310,
+     "impr": 310483,
+     "ctr": 1.71,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-24",
+     "clicks": 5141,
+     "impr": 300566,
+     "ctr": 1.71,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-06-25",
+     "clicks": 4970,
+     "impr": 304026,
+     "ctr": 1.63,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-26",
+     "clicks": 4593,
+     "impr": 308500,
+     "ctr": 1.49,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-06-27",
+     "clicks": 4424,
+     "impr": 283052,
+     "ctr": 1.56,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-06-28",
+     "clicks": 4993,
+     "impr": 298285,
+     "ctr": 1.67,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-29",
+     "clicks": 5963,
+     "impr": 350209,
+     "ctr": 1.7,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-06-30",
+     "clicks": 5506,
+     "impr": 369998,
+     "ctr": 1.49,
+     "pos": 11.8
+    },
+    {
+     "d": "2026-07-01",
+     "clicks": 5058,
+     "impr": 338571,
+     "ctr": 1.49,
+     "pos": 11.1
+    },
+    {
+     "d": "2026-07-02",
+     "clicks": 5019,
+     "impr": 332437,
+     "ctr": 1.51,
+     "pos": 11.4
+    },
+    {
+     "d": "2026-07-03",
+     "clicks": 4682,
+     "impr": 299302,
+     "ctr": 1.56,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-07-04",
+     "clicks": 4502,
+     "impr": 270330,
+     "ctr": 1.67,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-05",
+     "clicks": 5574,
+     "impr": 315854,
+     "ctr": 1.76,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-07-06",
+     "clicks": 8606,
+     "impr": 435929,
+     "ctr": 1.97,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-07",
+     "clicks": 6463,
+     "impr": 385295,
+     "ctr": 1.68,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-08",
+     "clicks": 5607,
+     "impr": 356671,
+     "ctr": 1.57,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-07-09",
+     "clicks": 5241,
+     "impr": 308644,
+     "ctr": 1.7,
+     "pos": 9.0
+    },
+    {
+     "d": "2026-07-10",
+     "clicks": 4586,
+     "impr": 301308,
+     "ctr": 1.52,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-11",
+     "clicks": 4062,
+     "impr": 278396,
+     "ctr": 1.46,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-07-12",
+     "clicks": 4460,
+     "impr": 280651,
+     "ctr": 1.59,
+     "pos": 9.5
+    },
+    {
+     "d": "2026-07-13",
+     "clicks": 5324,
+     "impr": 316833,
+     "ctr": 1.68,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-14",
+     "clicks": 5282,
+     "impr": 322830,
+     "ctr": 1.64,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-07-15",
+     "clicks": 4599,
+     "impr": 283767,
+     "ctr": 1.62,
+     "pos": 8.8
+    },
+    {
+     "d": "2026-07-16",
+     "clicks": 4732,
+     "impr": 291682,
+     "ctr": 1.62,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-17",
+     "clicks": 4351,
+     "impr": 283293,
+     "ctr": 1.54,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-07-18",
+     "clicks": 3798,
+     "impr": 267733,
+     "ctr": 1.42,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-19",
+     "clicks": 4189,
+     "impr": 257020,
+     "ctr": 1.63,
+     "pos": 8.9
+    },
+    {
+     "d": "2026-07-20",
+     "clicks": 4903,
+     "impr": 314713,
+     "ctr": 1.56,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-21",
+     "clicks": 4807,
+     "impr": 313348,
+     "ctr": 1.53,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-07-22",
+     "clicks": 4837,
+     "impr": 304232,
+     "ctr": 1.59,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-07-23",
+     "clicks": 4373,
+     "impr": 300788,
+     "ctr": 1.45,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-07-24",
+     "clicks": 4131,
+     "impr": 275891,
+     "ctr": 1.5,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-25",
+     "clicks": 3599,
+     "impr": 245459,
+     "ctr": 1.47,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-07-26",
+     "clicks": 4345,
+     "impr": 263739,
+     "ctr": 1.65,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-07-27",
+     "clicks": 4962,
+     "impr": 297986,
+     "ctr": 1.67,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-07-28",
+     "clicks": 4721,
+     "impr": 311125,
+     "ctr": 1.52,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-29",
+     "clicks": 4428,
+     "impr": 287490,
+     "ctr": 1.54,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 4297,
+     "impr": 292832,
+     "ctr": 1.47,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 4123,
+     "impr": 276840,
+     "ctr": 1.49,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 3627,
+     "impr": 268834,
+     "ctr": 1.35,
+     "pos": 11.5
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 4322,
+     "impr": 281508,
+     "ctr": 1.54,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 4944,
+     "impr": 285637,
+     "ctr": 1.73,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 4900,
+     "impr": 324625,
+     "ctr": 1.51,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 4760,
+     "impr": 294704,
+     "ctr": 1.62,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 4391,
+     "impr": 293512,
+     "ctr": 1.5,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 3848,
+     "impr": 268279,
+     "ctr": 1.43,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 3414,
+     "impr": 260901,
+     "ctr": 1.31,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 4027,
+     "impr": 292763,
+     "ctr": 1.38,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 10056,
+     "impr": 359366,
+     "ctr": 2.8,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 9110,
+     "impr": 343552,
+     "ctr": 2.65,
+     "pos": 9.0
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 5177,
+     "impr": 339238,
+     "ctr": 1.53,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 4987,
+     "impr": 324177,
+     "ctr": 1.54,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 4607,
+     "impr": 310523,
+     "ctr": 1.48,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 3806,
+     "impr": 250351,
+     "ctr": 1.52,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 4098,
+     "impr": 291940,
+     "ctr": 1.4,
+     "pos": 11.3
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 4737,
+     "impr": 316850,
+     "ctr": 1.5,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 4741,
+     "impr": 304226,
+     "ctr": 1.56,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 4577,
+     "impr": 289302,
+     "ctr": 1.58,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 4066,
+     "impr": 271111,
+     "ctr": 1.5,
+     "pos": 10.5
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 3706,
+     "impr": 248988,
+     "ctr": 1.49,
+     "pos": 10.5
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 3205,
+     "impr": 240388,
+     "ctr": 1.33,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 3923,
+     "impr": 248787,
+     "ctr": 1.58,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 5679,
+     "impr": 321151,
+     "ctr": 1.77,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 4785,
+     "impr": 304640,
+     "ctr": 1.57,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 4559,
+     "impr": 291306,
+     "ctr": 1.57,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 5219,
+     "impr": 294194,
+     "ctr": 1.77,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 4079,
+     "impr": 266119,
+     "ctr": 1.53,
+     "pos": 11.3
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 3549,
+     "impr": 236201,
+     "ctr": 1.5,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 3710,
+     "impr": 239147,
+     "ctr": 1.55,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 4442,
+     "impr": 271594,
+     "ctr": 1.64,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 4615,
+     "impr": 272777,
+     "ctr": 1.69,
+     "pos": 9.7
+    }
+   ],
+   "page": [
+    {
+     "d": "2026-06-03",
+     "clicks": 907,
+     "impr": 8839,
+     "ctr": 10.26,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-06-04",
+     "clicks": 863,
+     "impr": 8634,
+     "ctr": 10.0,
+     "pos": 11.1
+    },
+    {
+     "d": "2026-06-05",
+     "clicks": 793,
+     "impr": 7151,
+     "ctr": 11.09,
+     "pos": 11.1
+    },
+    {
+     "d": "2026-06-06",
+     "clicks": 585,
+     "impr": 7583,
+     "ctr": 7.71,
+     "pos": 13.6
+    },
+    {
+     "d": "2026-06-07",
+     "clicks": 641,
+     "impr": 6846,
+     "ctr": 9.36,
+     "pos": 13.3
+    },
+    {
+     "d": "2026-06-08",
+     "clicks": 874,
+     "impr": 8474,
+     "ctr": 10.31,
+     "pos": 12.8
+    },
+    {
+     "d": "2026-06-09",
+     "clicks": 779,
+     "impr": 8538,
+     "ctr": 9.12,
+     "pos": 13.7
+    },
+    {
+     "d": "2026-06-10",
+     "clicks": 747,
+     "impr": 7557,
+     "ctr": 9.88,
+     "pos": 13.5
+    },
+    {
+     "d": "2026-06-11",
+     "clicks": 847,
+     "impr": 9765,
+     "ctr": 8.67,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-06-12",
+     "clicks": 1023,
+     "impr": 11330,
+     "ctr": 9.03,
+     "pos": 18.3
+    },
+    {
+     "d": "2026-06-13",
+     "clicks": 647,
+     "impr": 9564,
+     "ctr": 6.76,
+     "pos": 17.4
+    },
+    {
+     "d": "2026-06-14",
+     "clicks": 838,
+     "impr": 13599,
+     "ctr": 6.16,
+     "pos": 25.3
+    },
+    {
+     "d": "2026-06-15",
+     "clicks": 1123,
+     "impr": 10682,
+     "ctr": 10.51,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-06-16",
+     "clicks": 1189,
+     "impr": 11968,
+     "ctr": 9.93,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-06-17",
+     "clicks": 936,
+     "impr": 11541,
+     "ctr": 8.11,
+     "pos": 17.4
+    },
+    {
+     "d": "2026-06-18",
+     "clicks": 990,
+     "impr": 10815,
+     "ctr": 9.15,
+     "pos": 16.3
+    },
+    {
+     "d": "2026-06-19",
+     "clicks": 956,
+     "impr": 10998,
+     "ctr": 8.69,
+     "pos": 16.7
+    },
+    {
+     "d": "2026-06-20",
+     "clicks": 648,
+     "impr": 12098,
+     "ctr": 5.36,
+     "pos": 15.2
+    },
+    {
+     "d": "2026-06-21",
+     "clicks": 754,
+     "impr": 8552,
+     "ctr": 8.82,
+     "pos": 14.4
+    },
+    {
+     "d": "2026-06-22",
+     "clicks": 1027,
+     "impr": 9426,
+     "ctr": 10.9,
+     "pos": 12.9
+    },
+    {
+     "d": "2026-06-23",
+     "clicks": 1098,
+     "impr": 9570,
+     "ctr": 11.47,
+     "pos": 12.6
+    },
+    {
+     "d": "2026-06-24",
+     "clicks": 1015,
+     "impr": 9264,
+     "ctr": 10.96,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-06-25",
+     "clicks": 967,
+     "impr": 10710,
+     "ctr": 9.03,
+     "pos": 17.9
+    },
+    {
+     "d": "2026-06-26",
+     "clicks": 886,
+     "impr": 9581,
+     "ctr": 9.25,
+     "pos": 18.7
+    },
+    {
+     "d": "2026-06-27",
+     "clicks": 758,
+     "impr": 10605,
+     "ctr": 7.15,
+     "pos": 22.2
+    },
+    {
+     "d": "2026-06-28",
+     "clicks": 818,
+     "impr": 10659,
+     "ctr": 7.67,
+     "pos": 20.9
+    },
+    {
+     "d": "2026-06-29",
+     "clicks": 1206,
+     "impr": 15764,
+     "ctr": 7.65,
+     "pos": 23.6
+    },
+    {
+     "d": "2026-06-30",
+     "clicks": 1138,
+     "impr": 21954,
+     "ctr": 5.18,
+     "pos": 27.2
+    },
+    {
+     "d": "2026-07-01",
+     "clicks": 1049,
+     "impr": 19765,
+     "ctr": 5.31,
+     "pos": 27.4
+    },
+    {
+     "d": "2026-07-02",
+     "clicks": 1042,
+     "impr": 18110,
+     "ctr": 5.75,
+     "pos": 26.7
+    },
+    {
+     "d": "2026-07-03",
+     "clicks": 935,
+     "impr": 16417,
+     "ctr": 5.7,
+     "pos": 26.4
+    },
+    {
+     "d": "2026-07-04",
+     "clicks": 863,
+     "impr": 15950,
+     "ctr": 5.41,
+     "pos": 28.4
+    },
+    {
+     "d": "2026-07-05",
+     "clicks": 1027,
+     "impr": 16405,
+     "ctr": 6.26,
+     "pos": 25.5
+    },
+    {
+     "d": "2026-07-06",
+     "clicks": 1792,
+     "impr": 15997,
+     "ctr": 11.2,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-07-07",
+     "clicks": 1265,
+     "impr": 14665,
+     "ctr": 8.63,
+     "pos": 20.5
+    },
+    {
+     "d": "2026-07-08",
+     "clicks": 1049,
+     "impr": 12900,
+     "ctr": 8.13,
+     "pos": 20.0
+    },
+    {
+     "d": "2026-07-09",
+     "clicks": 909,
+     "impr": 8269,
+     "ctr": 10.99,
+     "pos": 14.1
+    },
+    {
+     "d": "2026-07-10",
+     "clicks": 874,
+     "impr": 9034,
+     "ctr": 9.67,
+     "pos": 17.4
+    },
+    {
+     "d": "2026-07-11",
+     "clicks": 666,
+     "impr": 8539,
+     "ctr": 7.8,
+     "pos": 19.5
+    },
+    {
+     "d": "2026-07-12",
+     "clicks": 692,
+     "impr": 7625,
+     "ctr": 9.08,
+     "pos": 18.7
+    },
+    {
+     "d": "2026-07-13",
+     "clicks": 993,
+     "impr": 9145,
+     "ctr": 10.86,
+     "pos": 16.8
+    },
+    {
+     "d": "2026-07-14",
+     "clicks": 903,
+     "impr": 9367,
+     "ctr": 9.64,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-07-15",
+     "clicks": 849,
+     "impr": 7158,
+     "ctr": 11.86,
+     "pos": 13.7
+    },
+    {
+     "d": "2026-07-16",
+     "clicks": 888,
+     "impr": 7146,
+     "ctr": 12.43,
+     "pos": 12.9
+    },
+    {
+     "d": "2026-07-17",
+     "clicks": 785,
+     "impr": 7316,
+     "ctr": 10.73,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-07-18",
+     "clicks": 566,
+     "impr": 6391,
+     "ctr": 8.86,
+     "pos": 14.3
+    },
+    {
+     "d": "2026-07-19",
+     "clicks": 625,
+     "impr": 5455,
+     "ctr": 11.46,
+     "pos": 12.7
+    },
+    {
+     "d": "2026-07-20",
+     "clicks": 902,
+     "impr": 9264,
+     "ctr": 9.74,
+     "pos": 14.7
+    },
+    {
+     "d": "2026-07-21",
+     "clicks": 783,
+     "impr": 10719,
+     "ctr": 7.3,
+     "pos": 20.7
+    },
+    {
+     "d": "2026-07-22",
+     "clicks": 760,
+     "impr": 9068,
+     "ctr": 8.38,
+     "pos": 19.3
+    },
+    {
+     "d": "2026-07-23",
+     "clicks": 768,
+     "impr": 8164,
+     "ctr": 9.41,
+     "pos": 17.8
+    },
+    {
+     "d": "2026-07-24",
+     "clicks": 840,
+     "impr": 8091,
+     "ctr": 10.38,
+     "pos": 17.2
+    },
+    {
+     "d": "2026-07-25",
+     "clicks": 604,
+     "impr": 7788,
+     "ctr": 7.76,
+     "pos": 19.8
+    },
+    {
+     "d": "2026-07-26",
+     "clicks": 722,
+     "impr": 7917,
+     "ctr": 9.12,
+     "pos": 18.5
+    },
+    {
+     "d": "2026-07-27",
+     "clicks": 1040,
+     "impr": 9377,
+     "ctr": 11.09,
+     "pos": 17.4
+    },
+    {
+     "d": "2026-07-28",
+     "clicks": 867,
+     "impr": 8529,
+     "ctr": 10.17,
+     "pos": 17.7
+    },
+    {
+     "d": "2026-07-29",
+     "clicks": 811,
+     "impr": 7804,
+     "ctr": 10.39,
+     "pos": 18.6
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 777,
+     "impr": 7999,
+     "ctr": 9.71,
+     "pos": 18.0
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 739,
+     "impr": 8347,
+     "ctr": 8.85,
+     "pos": 18.0
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 564,
+     "impr": 6564,
+     "ctr": 8.59,
+     "pos": 17.9
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 667,
+     "impr": 6392,
+     "ctr": 10.43,
+     "pos": 17.1
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 908,
+     "impr": 6332,
+     "ctr": 14.34,
+     "pos": 12.4
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 825,
+     "impr": 7671,
+     "ctr": 10.75,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 875,
+     "impr": 7162,
+     "ctr": 12.22,
+     "pos": 14.4
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 749,
+     "impr": 6154,
+     "ctr": 12.17,
+     "pos": 14.8
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 667,
+     "impr": 6706,
+     "ctr": 9.95,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 520,
+     "impr": 5945,
+     "ctr": 8.75,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 608,
+     "impr": 7517,
+     "ctr": 8.09,
+     "pos": 18.5
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 833,
+     "impr": 8595,
+     "ctr": 9.69,
+     "pos": 15.9
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 733,
+     "impr": 6584,
+     "ctr": 11.13,
+     "pos": 14.5
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 672,
+     "impr": 8597,
+     "ctr": 7.82,
+     "pos": 18.9
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 699,
+     "impr": 6312,
+     "ctr": 11.07,
+     "pos": 14.9
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 764,
+     "impr": 7603,
+     "ctr": 10.05,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 597,
+     "impr": 6647,
+     "ctr": 8.98,
+     "pos": 16.0
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 632,
+     "impr": 8096,
+     "ctr": 7.81,
+     "pos": 18.4
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 813,
+     "impr": 8507,
+     "ctr": 9.56,
+     "pos": 15.9
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 891,
+     "impr": 8586,
+     "ctr": 10.38,
+     "pos": 16.9
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 909,
+     "impr": 8861,
+     "ctr": 10.26,
+     "pos": 17.1
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 716,
+     "impr": 7341,
+     "ctr": 9.75,
+     "pos": 17.1
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 598,
+     "impr": 6125,
+     "ctr": 9.76,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 546,
+     "impr": 7200,
+     "ctr": 7.58,
+     "pos": 17.3
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 611,
+     "impr": 6576,
+     "ctr": 9.29,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 862,
+     "impr": 7872,
+     "ctr": 10.95,
+     "pos": 14.2
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 1072,
+     "impr": 8734,
+     "ctr": 12.27,
+     "pos": 15.9
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 945,
+     "impr": 7739,
+     "ctr": 12.21,
+     "pos": 15.2
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 1453,
+     "impr": 9989,
+     "ctr": 14.55,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 895,
+     "impr": 7699,
+     "ctr": 11.62,
+     "pos": 14.5
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 612,
+     "impr": 6539,
+     "ctr": 9.36,
+     "pos": 15.6
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 674,
+     "impr": 6793,
+     "ctr": 9.92,
+     "pos": 15.3
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 909,
+     "impr": 8029,
+     "ctr": 11.32,
+     "pos": 14.4
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 1046,
+     "impr": 7939,
+     "ctr": 13.18,
+     "pos": 12.1
+    }
+   ]
+  },
+  "gscq": {
+   "rows": [
+    {
+     "q": "simple online pharmacy",
+     "clicks": 16081,
+     "impr": 49212,
+     "ctr": 32.7,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 17308,
+      "impr": 55186,
+      "ctr": 31.4,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple pharmacy",
+     "clicks": 1086,
+     "impr": 3339,
+     "ctr": 32.5,
+     "pos": 1.1,
+     "prev": {
+      "clicks": 1149,
+      "impr": 3622,
+      "ctr": 31.7,
+      "pos": 1.7
+     }
+    },
+    {
+     "q": "simply online pharmacy",
+     "clicks": 604,
+     "impr": 2230,
+     "ctr": 27.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 729,
+      "impr": 2610,
+      "ctr": 27.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simply pharmacy",
+     "clicks": 271,
+     "impr": 1121,
+     "ctr": 24.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 319,
+      "impr": 995,
+      "ctr": 32.1,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simpleonlinepharmacy",
+     "clicks": 255,
+     "impr": 842,
+     "ctr": 30.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 285,
+      "impr": 870,
+      "ctr": 32.8,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy login",
+     "clicks": 250,
+     "impr": 903,
+     "ctr": 27.7,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 233,
+      "impr": 963,
+      "ctr": 24.2,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "simple online pharmacy sign in",
+     "clicks": 165,
+     "impr": 494,
+     "ctr": 33.4,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 160,
+      "impr": 460,
+      "ctr": 34.8,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "simple online",
+     "clicks": 145,
+     "impr": 737,
+     "ctr": 19.7,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 183,
+      "impr": 542,
+      "ctr": 33.8,
+      "pos": 1.3
+     }
+    },
+    {
+     "q": "simple pharmacy online",
+     "clicks": 130,
+     "impr": 415,
+     "ctr": 31.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 135,
+      "impr": 436,
+      "ctr": 31.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "online simple pharmacy",
+     "clicks": 114,
+     "impr": 340,
+     "ctr": 33.5,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 141,
+      "impr": 470,
+      "ctr": 30.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple.online pharmacy",
+     "clicks": 98,
+     "impr": 300,
+     "ctr": 32.7,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 143,
+      "impr": 386,
+      "ctr": 37.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy uk",
+     "clicks": 77,
+     "impr": 447,
+     "ctr": 17.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 78,
+      "impr": 278,
+      "ctr": 28.1,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy reorder",
+     "clicks": 73,
+     "impr": 159,
+     "ctr": 45.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 35,
+      "impr": 105,
+      "ctr": 33.3,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simpleonline pharmacy",
+     "clicks": 66,
+     "impr": 147,
+     "ctr": 44.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 98,
+      "impr": 181,
+      "ctr": 54.1,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online oharmacy",
+     "clicks": 50,
+     "impr": 105,
+     "ctr": 47.6,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 56,
+      "impr": 95,
+      "ctr": 58.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simpleonline",
+     "clicks": 49,
+     "impr": 106,
+     "ctr": 46.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 70,
+      "impr": 121,
+      "ctr": 57.9,
+      "pos": 1.2
+     }
+    },
+    {
+     "q": "simply online pharmacy login",
+     "clicks": 48,
+     "impr": 152,
+     "ctr": 31.6,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 32,
+      "impr": 77,
+      "ctr": 41.6,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "simple online pharmacy discount code",
+     "clicks": 41,
+     "impr": 1819,
+     "ctr": 2.3,
+     "pos": 1.8,
+     "prev": {
+      "clicks": 53,
+      "impr": 1589,
+      "ctr": 3.3,
+      "pos": 1.6
+     }
+    },
+    {
+     "q": "online pharmacy",
+     "clicks": 40,
+     "impr": 1926,
+     "ctr": 2.1,
+     "pos": 14.5,
+     "prev": {
+      "clicks": 109,
+      "impr": 3107,
+      "ctr": 3.5,
+      "pos": 10.5
+     }
+    },
+    {
+     "q": "simple on line pharmacy",
+     "clicks": 40,
+     "impr": 292,
+     "ctr": 13.7,
+     "pos": 1.4,
+     "prev": {
+      "clicks": 51,
+      "impr": 377,
+      "ctr": 13.5,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "simple online healthcare",
+     "clicks": 39,
+     "impr": 525,
+     "ctr": 7.4,
+     "pos": 1.9,
+     "prev": {
+      "clicks": 12,
+      "impr": 269,
+      "ctr": 4.5,
+      "pos": 2.3
+     }
+    },
+    {
+     "q": "simple online pharmacy login uk",
+     "clicks": 34,
+     "impr": 118,
+     "ctr": 28.8,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 29,
+      "impr": 104,
+      "ctr": 27.9,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "online pharmacy uk",
+     "clicks": 28,
+     "impr": 1165,
+     "ctr": 2.4,
+     "pos": 12.9,
+     "prev": {
+      "clicks": 38,
+      "impr": 1353,
+      "ctr": 2.8,
+      "pos": 12.1
+     }
+    },
+    {
+     "q": "simple online pharmacy app",
+     "clicks": 28,
+     "impr": 145,
+     "ctr": 19.3,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 48,
+      "impr": 170,
+      "ctr": 28.2,
+      "pos": 1.4
+     }
+    },
+    {
+     "q": "my simple online pharmacy",
+     "clicks": 25,
+     "impr": 73,
+     "ctr": 34.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 16,
+      "impr": 64,
+      "ctr": 25.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simplepharmacy",
+     "clicks": 21,
+     "impr": 74,
+     "ctr": 28.4,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 28,
+      "impr": 95,
+      "ctr": 29.5,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmcy",
+     "clicks": 21,
+     "impr": 37,
+     "ctr": 56.8,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 13,
+      "impr": 32,
+      "ctr": 40.6,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "sinple online pharmacy",
+     "clicks": 20,
+     "impr": 37,
+     "ctr": 54.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 37,
+      "impr": 49,
+      "ctr": 75.5,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online.pharmacy",
+     "clicks": 19,
+     "impr": 49,
+     "ctr": 38.8,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 29,
+      "impr": 57,
+      "ctr": 50.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmaxy",
+     "clicks": 19,
+     "impr": 24,
+     "ctr": 79.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 29,
+      "impr": 41,
+      "ctr": 70.7,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "online pharmacy glasgow",
+     "clicks": 18,
+     "impr": 259,
+     "ctr": 6.9,
+     "pos": 1.4,
+     "prev": {
+      "clicks": 16,
+      "impr": 278,
+      "ctr": 5.8,
+      "pos": 1.2
+     }
+    },
+    {
+     "q": "simple online pharmacy diazepam",
+     "clicks": 17,
+     "impr": 100,
+     "ctr": 17.0,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 12,
+      "impr": 80,
+      "ctr": 15.0,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "simply pharmacy online",
+     "clicks": 17,
+     "impr": 95,
+     "ctr": 17.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 24,
+      "impr": 96,
+      "ctr": 25.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simply online",
+     "clicks": 17,
+     "impr": 86,
+     "ctr": 19.8,
+     "pos": 1.1,
+     "prev": {
+      "clicks": 35,
+      "impr": 130,
+      "ctr": 26.9,
+      "pos": 1.2
+     }
+    },
+    {
+     "q": "simple online pharmacy log in",
+     "clicks": 17,
+     "impr": 72,
+     "ctr": 23.6,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 14,
+      "impr": 116,
+      "ctr": 12.1,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "simple online login",
+     "clicks": 16,
+     "impr": 77,
+     "ctr": 20.8,
+     "pos": 2.1,
+     "prev": {
+      "clicks": 30,
+      "impr": 92,
+      "ctr": 32.6,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "simole online pharmacy",
+     "clicks": 16,
+     "impr": 28,
+     "ctr": 57.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 12,
+      "impr": 27,
+      "ctr": 44.4,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "suppline pharmacy",
+     "clicks": 15,
+     "impr": 57,
+     "ctr": 26.3,
+     "pos": 1.6,
+     "prev": {
+      "clicks": 9,
+      "impr": 66,
+      "ctr": 13.6,
+      "pos": 1.5
+     }
+    },
+    {
+     "q": "simple pharmacy login",
+     "clicks": 15,
+     "impr": 51,
+     "ctr": 29.4,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 42,
+      "impr": 99,
+      "ctr": 42.4,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "simple online pharmacy.",
+     "clicks": 14,
+     "impr": 27,
+     "ctr": 51.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 7,
+      "impr": 26,
+      "ctr": 26.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy telephone number",
+     "clicks": 13,
+     "impr": 94,
+     "ctr": 13.8,
+     "pos": 3.5,
+     "prev": {
+      "clicks": 5,
+      "impr": 148,
+      "ctr": 3.4,
+      "pos": 4.0
+     }
+    },
+    {
+     "q": "my simple pharmacy",
+     "clicks": 13,
+     "impr": 43,
+     "ctr": 30.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 13,
+      "impr": 44,
+      "ctr": 29.5,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "online pharmacy scotland",
+     "clicks": 12,
+     "impr": 278,
+     "ctr": 4.3,
+     "pos": 5.4,
+     "prev": {
+      "clicks": 8,
+      "impr": 329,
+      "ctr": 2.4,
+      "pos": 4.6
+     }
+    },
+    {
+     "q": "simplyonline",
+     "clicks": 12,
+     "impr": 42,
+     "ctr": 28.6,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 15,
+      "impr": 53,
+      "ctr": 28.3,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simpleonlinepharmacy.co.uk",
+     "clicks": 12,
+     "impr": 32,
+     "ctr": 37.5,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 14,
+      "impr": 31,
+      "ctr": 45.2,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharamcy",
+     "clicks": 12,
+     "impr": 30,
+     "ctr": 40.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 10,
+      "impr": 29,
+      "ctr": 34.5,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy contact number",
+     "clicks": 11,
+     "impr": 421,
+     "ctr": 2.6,
+     "pos": 3.6,
+     "prev": {
+      "clicks": 17,
+      "impr": 602,
+      "ctr": 2.8,
+      "pos": 3.8
+     }
+    },
+    {
+     "q": "cheapest online pharmacy uk",
+     "clicks": 11,
+     "impr": 319,
+     "ctr": 3.4,
+     "pos": 9.1,
+     "prev": {
+      "clicks": 8,
+      "impr": 283,
+      "ctr": 2.8,
+      "pos": 9.6
+     }
+    },
+    {
+     "q": "simple online pharmacy voucher code",
+     "clicks": 10,
+     "impr": 484,
+     "ctr": 2.1,
+     "pos": 8.6,
+     "prev": {
+      "clicks": 14,
+      "impr": 446,
+      "ctr": 3.1,
+      "pos": 7.0
+     }
+    },
+    {
+     "q": "simple online pharmacy phone number",
+     "clicks": 10,
+     "impr": 348,
+     "ctr": 2.9,
+     "pos": 3.3,
+     "prev": {
+      "clicks": 3,
+      "impr": 403,
+      "ctr": 0.7,
+      "pos": 3.5
+     }
+    },
+    {
+     "q": "simplyonlinepharmacy",
+     "clicks": 10,
+     "impr": 27,
+     "ctr": 37.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 8,
+      "impr": 23,
+      "ctr": 34.8,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "login simple online pharmacy",
+     "clicks": 10,
+     "impr": 25,
+     "ctr": 40.0,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 12,
+      "impr": 19,
+      "ctr": 63.2,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "is simple online pharmacy legit",
+     "clicks": 9,
+     "impr": 381,
+     "ctr": 2.4,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 9,
+      "impr": 391,
+      "ctr": 2.3,
+      "pos": 2.2
+     }
+    },
+    {
+     "q": "simple.pharmacy online",
+     "clicks": 9,
+     "impr": 28,
+     "ctr": 32.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 13,
+      "impr": 41,
+      "ctr": 31.7,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "the simple pharmacy",
+     "clicks": 9,
+     "impr": 22,
+     "ctr": 40.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 9,
+      "impr": 22,
+      "ctr": 40.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple chemist",
+     "clicks": 9,
+     "impr": 16,
+     "ctr": 56.2,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 18,
+      "impr": 39,
+      "ctr": 46.2,
+      "pos": 1.2
+     }
+    },
+    {
+     "q": "simple inline pharmacy",
+     "clicks": 9,
+     "impr": 15,
+     "ctr": 60.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 13,
+      "impr": 18,
+      "ctr": 72.2,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "pharmacy online",
+     "clicks": 8,
+     "impr": 922,
+     "ctr": 0.9,
+     "pos": 12.3,
+     "prev": {
+      "clicks": 11,
+      "impr": 1091,
+      "ctr": 1.0,
+      "pos": 9.9
+     }
+    },
+    {
+     "q": "simple online pharmacy code",
+     "clicks": 8,
+     "impr": 450,
+     "ctr": 1.8,
+     "pos": 2.8,
+     "prev": {
+      "clicks": 2,
+      "impr": 311,
+      "ctr": 0.6,
+      "pos": 5.0
+     }
+    },
+    {
+     "q": "simple pharmacy discount code",
+     "clicks": 8,
+     "impr": 149,
+     "ctr": 5.4,
+     "pos": 1.3,
+     "prev": {
+      "clicks": 5,
+      "impr": 108,
+      "ctr": 4.6,
+      "pos": 1.4
+     }
+    },
+    {
+     "q": "simple online pharmacy contact number opening times",
+     "clicks": 8,
+     "impr": 85,
+     "ctr": 9.4,
+     "pos": 2.3,
+     "prev": {
+      "clicks": 7,
+      "impr": 76,
+      "ctr": 9.2,
+      "pos": 2.6
+     }
+    },
+    {
+     "q": "simple online pharmacy glasgow",
+     "clicks": 8,
+     "impr": 41,
+     "ctr": 19.5,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 12,
+      "impr": 71,
+      "ctr": 16.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simplypharmacy",
+     "clicks": 8,
+     "impr": 26,
+     "ctr": 30.8,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 9,
+      "impr": 21,
+      "ctr": 42.9,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "online pharmacy simple",
+     "clicks": 8,
+     "impr": 15,
+     "ctr": 53.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 10,
+      "impr": 19,
+      "ctr": 52.6,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy logo",
+     "clicks": 8,
+     "impr": 14,
+     "ctr": 57.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 3,
+      "impr": 13,
+      "ctr": 23.1,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online phatmacy",
+     "clicks": 8,
+     "impr": 12,
+     "ctr": 66.7,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 5,
+      "impr": 7,
+      "ctr": 71.4,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple pharmaxy",
+     "clicks": 8,
+     "impr": 12,
+     "ctr": 66.7,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 10,
+      "impr": 15,
+      "ctr": 66.7,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "pharmacy near me",
+     "clicks": 7,
+     "impr": 715,
+     "ctr": 1.0,
+     "pos": 2.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 29,
+      "ctr": 0.0,
+      "pos": 21.4
+     }
+    },
+    {
+     "q": "simple pharmacy uk",
+     "clicks": 7,
+     "impr": 245,
+     "ctr": 2.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 10,
+      "impr": 38,
+      "ctr": 26.3,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "sop ltd glasgow",
+     "clicks": 7,
+     "impr": 59,
+     "ctr": 11.9,
+     "pos": 1.5,
+     "prev": {
+      "clicks": 12,
+      "impr": 93,
+      "ctr": 12.9,
+      "pos": 1.5
+     }
+    },
+    {
+     "q": "simpl online pharmacy",
+     "clicks": 7,
+     "impr": 28,
+     "ctr": 25.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 3,
+      "impr": 18,
+      "ctr": 16.7,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "simple online pharmacy reviews",
+     "clicks": 6,
+     "impr": 641,
+     "ctr": 0.9,
+     "pos": 4.2,
+     "prev": {
+      "clicks": 8,
+      "impr": 578,
+      "ctr": 1.4,
+      "pos": 4.9
+     }
+    },
+    {
+     "q": "is simple online pharmacy legit uk",
+     "clicks": 6,
+     "impr": 45,
+     "ctr": 13.3,
+     "pos": 1.5,
+     "prev": {
+      "clicks": 4,
+      "impr": 71,
+      "ctr": 5.6,
+      "pos": 3.2
+     }
+    },
+    {
+     "q": "the simple online pharmacy",
+     "clicks": 6,
+     "impr": 35,
+     "ctr": 17.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 12,
+      "impr": 46,
+      "ctr": 26.1,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online phamacy",
+     "clicks": 6,
+     "impr": 14,
+     "ctr": 42.9,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 15,
+      "impr": 24,
+      "ctr": 62.5,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "sumple online pharmacy",
+     "clicks": 6,
+     "impr": 12,
+     "ctr": 50.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 7,
+      "impr": 10,
+      "ctr": 70.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "aimple online pharmacy",
+     "clicks": 6,
+     "impr": 8,
+     "ctr": 75.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 6,
+      "impr": 12,
+      "ctr": 50.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "the online pharmacy",
+     "clicks": 5,
+     "impr": 272,
+     "ctr": 1.8,
+     "pos": 9.6,
+     "prev": {
+      "clicks": 0,
+      "impr": 266,
+      "ctr": 0.0,
+      "pos": 10.0
+     }
+    },
+    {
+     "q": "simole",
+     "clicks": 5,
+     "impr": 234,
+     "ctr": 2.1,
+     "pos": 3.5,
+     "prev": {
+      "clicks": 4,
+      "impr": 195,
+      "ctr": 2.1,
+      "pos": 2.8
+     }
+    },
+    {
+     "q": "simply online pharmacy discount code",
+     "clicks": 5,
+     "impr": 94,
+     "ctr": 5.3,
+     "pos": 1.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 28,
+      "ctr": 0.0,
+      "pos": 6.2
+     }
+    },
+    {
+     "q": "contact simple online pharmacy",
+     "clicks": 5,
+     "impr": 79,
+     "ctr": 6.3,
+     "pos": 3.2,
+     "prev": {
+      "clicks": 2,
+      "impr": 118,
+      "ctr": 1.7,
+      "pos": 3.3
+     }
+    },
+    {
+     "q": "suppline",
+     "clicks": 5,
+     "impr": 26,
+     "ctr": 19.2,
+     "pos": 4.2,
+     "prev": {
+      "clicks": 13,
+      "impr": 45,
+      "ctr": 28.9,
+      "pos": 4.9
+     }
+    },
+    {
+     "q": "contact number for simple online pharmacy",
+     "clicks": 5,
+     "impr": 11,
+     "ctr": 45.5,
+     "pos": 3.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 14,
+      "ctr": 0.0,
+      "pos": 3.6
+     }
+    },
+    {
+     "q": "www.simpleonlinepharmacy",
+     "clicks": 5,
+     "impr": 10,
+     "ctr": 50.0,
+     "pos": 1.0
+    },
+    {
+     "q": "sinple pharmacy",
+     "clicks": 5,
+     "impr": 9,
+     "ctr": 55.6,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 8,
+      "impr": 23,
+      "ctr": 34.8,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "best online pharmacy uk",
+     "clicks": 4,
+     "impr": 302,
+     "ctr": 1.3,
+     "pos": 12.5,
+     "prev": {
+      "clicks": 5,
+      "impr": 279,
+      "ctr": 1.8,
+      "pos": 12.6
+     }
+    },
+    {
+     "q": "simple online pharmacy voucher code existing customers",
+     "clicks": 4,
+     "impr": 121,
+     "ctr": 3.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 58,
+      "ctr": 0.0,
+      "pos": 1.2
+     }
+    },
+    {
+     "q": "simple meds",
+     "clicks": 4,
+     "impr": 76,
+     "ctr": 5.3,
+     "pos": 4.7,
+     "prev": {
+      "clicks": 1,
+      "impr": 118,
+      "ctr": 0.8,
+      "pos": 3.8
+     }
+    },
+    {
+     "q": "yes",
+     "clicks": 4,
+     "impr": 65,
+     "ctr": 6.2,
+     "pos": 3.6,
+     "prev": {
+      "clicks": 4,
+      "impr": 59,
+      "ctr": 6.8,
+      "pos": 2.8
+     }
+    },
+    {
+     "q": "simple online pharmacy opening times",
+     "clicks": 4,
+     "impr": 51,
+     "ctr": 7.8,
+     "pos": 1.4,
+     "prev": {
+      "clicks": 4,
+      "impr": 54,
+      "ctr": 7.4,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "simple.online pharmacy discount code",
+     "clicks": 4,
+     "impr": 42,
+     "ctr": 9.5,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 0,
+      "impr": 22,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy number",
+     "clicks": 4,
+     "impr": 39,
+     "ctr": 10.3,
+     "pos": 2.7,
+     "prev": {
+      "clicks": 3,
+      "impr": 53,
+      "ctr": 5.7,
+      "pos": 3.3
+     }
+    },
+    {
+     "q": "simple online pharmacy refer a friend",
+     "clicks": 4,
+     "impr": 36,
+     "ctr": 11.1,
+     "pos": 1.3,
+     "prev": {
+      "clicks": 11,
+      "impr": 65,
+      "ctr": 16.9,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "simple online healthcare limited",
+     "clicks": 4,
+     "impr": 29,
+     "ctr": 13.8,
+     "pos": 2.2,
+     "prev": {
+      "clicks": 2,
+      "impr": 33,
+      "ctr": 6.1,
+      "pos": 3.9
+     }
+    },
+    {
+     "q": "simple on line",
+     "clicks": 4,
+     "impr": 15,
+     "ctr": 26.7,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 9,
+      "impr": 26,
+      "ctr": 34.6,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online healthcare ltd",
+     "clicks": 4,
+     "impr": 15,
+     "ctr": 26.7,
+     "pos": 1.3,
+     "prev": {
+      "clicks": 1,
+      "impr": 12,
+      "ctr": 8.3,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "simple online pharmac",
+     "clicks": 4,
+     "impr": 11,
+     "ctr": 36.4,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 4,
+      "impr": 12,
+      "ctr": 33.3,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "pharmacy delivery",
+     "clicks": 3,
+     "impr": 49,
+     "ctr": 6.1,
+     "pos": 23.5,
+     "prev": {
+      "clicks": 1,
+      "impr": 50,
+      "ctr": 2.0,
+      "pos": 28.3
+     }
+    },
+    {
+     "q": "77 dunn street glasgow",
+     "clicks": 3,
+     "impr": 22,
+     "ctr": 13.6,
+     "pos": 2.6,
+     "prev": {
+      "clicks": 1,
+      "impr": 38,
+      "ctr": 2.6,
+      "pos": 2.9
+     }
+    },
+    {
+     "q": "buy elvanse online",
+     "clicks": 3,
+     "impr": 10,
+     "ctr": 30.0,
+     "pos": 41.2,
+     "prev": {
+      "clicks": 0,
+      "impr": 6,
+      "ctr": 0.0,
+      "pos": 39.0
+     }
+    }
+   ],
+   "as_of": "2026-09-01",
+   "days": 28
+  },
+  "gsckw": {
+   "simple online pharmacy": [
+    {
+     "d": "2026-06-03",
+     "pos": 1.0,
+     "clicks": 622,
+     "impr": 2150
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 1.0,
+     "clicks": 591,
+     "impr": 2162
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 1.0,
+     "clicks": 533,
+     "impr": 1865
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 1.0,
+     "clicks": 410,
+     "impr": 1466
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 1.0,
+     "clicks": 450,
+     "impr": 1541
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 1.0,
+     "clicks": 604,
+     "impr": 1919
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 1.0,
+     "clicks": 501,
+     "impr": 1691
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 1.0,
+     "clicks": 501,
+     "impr": 1767
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 1.0,
+     "clicks": 588,
+     "impr": 1943
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 1.0,
+     "clicks": 711,
+     "impr": 2356
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 1.0,
+     "clicks": 422,
+     "impr": 1583
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 1.0,
+     "clicks": 558,
+     "impr": 2004
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 1.0,
+     "clicks": 771,
+     "impr": 2675
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 1.0,
+     "clicks": 827,
+     "impr": 2638
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 1.0,
+     "clicks": 677,
+     "impr": 2154
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 1.0,
+     "clicks": 686,
+     "impr": 2269
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 1.0,
+     "clicks": 681,
+     "impr": 2143
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 1.0,
+     "clicks": 419,
+     "impr": 1571
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 1.0,
+     "clicks": 519,
+     "impr": 1780
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 1.0,
+     "clicks": 714,
+     "impr": 2315
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 1.0,
+     "clicks": 760,
+     "impr": 2421
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 1.0,
+     "clicks": 672,
+     "impr": 2256
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 1.0,
+     "clicks": 671,
+     "impr": 2276
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 1.0,
+     "clicks": 607,
+     "impr": 2019
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 1.0,
+     "clicks": 513,
+     "impr": 1627
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 1.0,
+     "clicks": 550,
+     "impr": 1885
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 1.0,
+     "clicks": 821,
+     "impr": 2616
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 1.0,
+     "clicks": 764,
+     "impr": 2463
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 1.0,
+     "clicks": 737,
+     "impr": 2415
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 1.0,
+     "clicks": 705,
+     "impr": 2355
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 1.0,
+     "clicks": 651,
+     "impr": 2128
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 1.0,
+     "clicks": 597,
+     "impr": 1932
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 1.0,
+     "clicks": 737,
+     "impr": 2263
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 1.0,
+     "clicks": 1329,
+     "impr": 4451
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 1.0,
+     "clicks": 916,
+     "impr": 2951
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 1.0,
+     "clicks": 766,
+     "impr": 2417
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 1.0,
+     "clicks": 624,
+     "impr": 2084
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 1.0,
+     "clicks": 626,
+     "impr": 1960
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 1.0,
+     "clicks": 482,
+     "impr": 1458
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 1.0,
+     "clicks": 481,
+     "impr": 1528
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 1.0,
+     "clicks": 690,
+     "impr": 2233
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 1.0,
+     "clicks": 619,
+     "impr": 2075
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 1.0,
+     "clicks": 594,
+     "impr": 1990
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 1.0,
+     "clicks": 627,
+     "impr": 1891
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 1.0,
+     "clicks": 551,
+     "impr": 1747
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 1.0,
+     "clicks": 408,
+     "impr": 1308
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 1.0,
+     "clicks": 454,
+     "impr": 1480
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 1.0,
+     "clicks": 595,
+     "impr": 1887
+    },
+    {
+     "d": "2026-07-21",
+     "pos": 1.0,
+     "clicks": 527,
+     "impr": 1741
+    },
+    {
+     "d": "2026-07-22",
+     "pos": 1.0,
+     "clicks": 498,
+     "impr": 1681
+    },
+    {
+     "d": "2026-07-23",
+     "pos": 1.0,
+     "clicks": 521,
+     "impr": 1699
+    },
+    {
+     "d": "2026-07-24",
+     "pos": 1.0,
+     "clicks": 596,
+     "impr": 1774
+    },
+    {
+     "d": "2026-07-25",
+     "pos": 1.0,
+     "clicks": 446,
+     "impr": 1363
+    },
+    {
+     "d": "2026-07-26",
+     "pos": 1.0,
+     "clicks": 512,
+     "impr": 1541
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 1.0,
+     "clicks": 734,
+     "impr": 2117
+    },
+    {
+     "d": "2026-07-28",
+     "pos": 1.0,
+     "clicks": 585,
+     "impr": 1831
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 1.0,
+     "clicks": 566,
+     "impr": 1734
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 1.0,
+     "clicks": 553,
+     "impr": 1825
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 1.0,
+     "clicks": 514,
+     "impr": 1701
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 1.0,
+     "clicks": 413,
+     "impr": 1312
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 1.0,
+     "clicks": 466,
+     "impr": 1503
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 1.0,
+     "clicks": 615,
+     "impr": 1904
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 1.0,
+     "clicks": 599,
+     "impr": 1783
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 1.0,
+     "clicks": 609,
+     "impr": 1862
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 1.0,
+     "clicks": 549,
+     "impr": 1648
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 1.0,
+     "clicks": 484,
+     "impr": 1414
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 1.0,
+     "clicks": 356,
+     "impr": 1242
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 1.0,
+     "clicks": 435,
+     "impr": 1364
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 1.0,
+     "clicks": 596,
+     "impr": 1811
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 1.0,
+     "clicks": 495,
+     "impr": 1572
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 1.0,
+     "clicks": 462,
+     "impr": 1456
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 1.0,
+     "clicks": 483,
+     "impr": 1498
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 1.0,
+     "clicks": 549,
+     "impr": 1642
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 1.0,
+     "clicks": 431,
+     "impr": 1315
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 1.0,
+     "clicks": 441,
+     "impr": 1475
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 1.0,
+     "clicks": 572,
+     "impr": 1814
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 1.0,
+     "clicks": 663,
+     "impr": 1865
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 1.0,
+     "clicks": 649,
+     "impr": 1957
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 1.0,
+     "clicks": 499,
+     "impr": 1577
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 1.0,
+     "clicks": 412,
+     "impr": 1352
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 1.0,
+     "clicks": 375,
+     "impr": 1217
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 1.0,
+     "clicks": 429,
+     "impr": 1486
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 1.0,
+     "clicks": 601,
+     "impr": 1944
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 1.0,
+     "clicks": 792,
+     "impr": 1928
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 1.0,
+     "clicks": 679,
+     "impr": 1963
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 1.0,
+     "clicks": 1035,
+     "impr": 2820
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 1.0,
+     "clicks": 635,
+     "impr": 1934
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 1.0,
+     "clicks": 405,
+     "impr": 1373
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 1.0,
+     "clicks": 456,
+     "impr": 1503
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 1.0,
+     "clicks": 644,
+     "impr": 2068
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 1.0,
+     "clicks": 746,
+     "impr": 2329
+    }
+   ],
+   "simple pharmacy": [
+    {
+     "d": "2026-06-03",
+     "pos": 1.0,
+     "clicks": 39,
+     "impr": 136
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 1.1,
+     "clicks": 46,
+     "impr": 130
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 1.0,
+     "clicks": 59,
+     "impr": 141
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 1.0,
+     "clicks": 23,
+     "impr": 102
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 1.0,
+     "clicks": 35,
+     "impr": 102
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 1.1,
+     "clicks": 53,
+     "impr": 134
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 1.1,
+     "clicks": 48,
+     "impr": 128
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 1.0,
+     "clicks": 47,
+     "impr": 139
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 1.2,
+     "clicks": 34,
+     "impr": 131
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 1.1,
+     "clicks": 60,
+     "impr": 191
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 1.0,
+     "clicks": 44,
+     "impr": 143
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 1.0,
+     "clicks": 48,
+     "impr": 149
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 1.0,
+     "clicks": 54,
+     "impr": 160
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 1.1,
+     "clicks": 57,
+     "impr": 178
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 1.0,
+     "clicks": 38,
+     "impr": 139
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 1.1,
+     "clicks": 62,
+     "impr": 149
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 1.0,
+     "clicks": 51,
+     "impr": 155
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 1.3,
+     "clicks": 36,
+     "impr": 119
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 1.1,
+     "clicks": 38,
+     "impr": 153
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 1.1,
+     "clicks": 56,
+     "impr": 151
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 1.0,
+     "clicks": 58,
+     "impr": 180
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 2.1,
+     "clicks": 58,
+     "impr": 169
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 1.8,
+     "clicks": 50,
+     "impr": 157
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 1.0,
+     "clicks": 59,
+     "impr": 164
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 1.0,
+     "clicks": 40,
+     "impr": 114
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 2.0,
+     "clicks": 57,
+     "impr": 151
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 1.2,
+     "clicks": 67,
+     "impr": 194
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 1.0,
+     "clicks": 52,
+     "impr": 171
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 1.0,
+     "clicks": 50,
+     "impr": 148
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 1.0,
+     "clicks": 57,
+     "impr": 150
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 1.0,
+     "clicks": 46,
+     "impr": 144
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 1.0,
+     "clicks": 52,
+     "impr": 134
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 8.4,
+     "clicks": 57,
+     "impr": 181
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 1.2,
+     "clicks": 69,
+     "impr": 240
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 1.0,
+     "clicks": 48,
+     "impr": 174
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 1.0,
+     "clicks": 46,
+     "impr": 150
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 1.0,
+     "clicks": 41,
+     "impr": 154
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 1.0,
+     "clicks": 36,
+     "impr": 127
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 1.1,
+     "clicks": 30,
+     "impr": 104
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 3.2,
+     "clicks": 41,
+     "impr": 127
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 2.5,
+     "clicks": 30,
+     "impr": 117
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 1.0,
+     "clicks": 46,
+     "impr": 132
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 1.1,
+     "clicks": 33,
+     "impr": 107
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 1.0,
+     "clicks": 38,
+     "impr": 122
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 1.1,
+     "clicks": 40,
+     "impr": 105
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 1.0,
+     "clicks": 25,
+     "impr": 87
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 15.3,
+     "clicks": 22,
+     "impr": 123
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 1.4,
+     "clicks": 51,
+     "impr": 131
+    },
+    {
+     "d": "2026-07-21",
+     "pos": 1.2,
+     "clicks": 42,
+     "impr": 125
+    },
+    {
+     "d": "2026-07-22",
+     "pos": 1.0,
+     "clicks": 49,
+     "impr": 132
+    },
+    {
+     "d": "2026-07-23",
+     "pos": 1.0,
+     "clicks": 37,
+     "impr": 102
+    },
+    {
+     "d": "2026-07-24",
+     "pos": 1.0,
+     "clicks": 39,
+     "impr": 85
+    },
+    {
+     "d": "2026-07-25",
+     "pos": 1.0,
+     "clicks": 26,
+     "impr": 99
+    },
+    {
+     "d": "2026-07-26",
+     "pos": 1.0,
+     "clicks": 28,
+     "impr": 105
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 1.0,
+     "clicks": 39,
+     "impr": 136
+    },
+    {
+     "d": "2026-07-28",
+     "pos": 1.0,
+     "clicks": 54,
+     "impr": 139
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 1.0,
+     "clicks": 49,
+     "impr": 115
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 1.0,
+     "clicks": 43,
+     "impr": 133
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 1.0,
+     "clicks": 36,
+     "impr": 124
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 1.0,
+     "clicks": 38,
+     "impr": 100
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 1.0,
+     "clicks": 29,
+     "impr": 94
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 1.0,
+     "clicks": 44,
+     "impr": 133
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 1.1,
+     "clicks": 28,
+     "impr": 97
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 1.0,
+     "clicks": 39,
+     "impr": 111
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 1.1,
+     "clicks": 27,
+     "impr": 76
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 1.0,
+     "clicks": 23,
+     "impr": 77
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 1.0,
+     "clicks": 32,
+     "impr": 92
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 1.0,
+     "clicks": 36,
+     "impr": 101
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 1.1,
+     "clicks": 39,
+     "impr": 98
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 1.1,
+     "clicks": 50,
+     "impr": 116
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 1.1,
+     "clicks": 30,
+     "impr": 89
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 1.0,
+     "clicks": 31,
+     "impr": 93
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 1.1,
+     "clicks": 46,
+     "impr": 105
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 1.2,
+     "clicks": 37,
+     "impr": 91
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 1.0,
+     "clicks": 37,
+     "impr": 105
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 1.0,
+     "clicks": 40,
+     "impr": 126
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 1.0,
+     "clicks": 38,
+     "impr": 100
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 1.0,
+     "clicks": 28,
+     "impr": 111
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 1.0,
+     "clicks": 33,
+     "impr": 90
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 1.6,
+     "clicks": 36,
+     "impr": 126
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 1.0,
+     "clicks": 26,
+     "impr": 99
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 1.0,
+     "clicks": 29,
+     "impr": 115
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 1.0,
+     "clicks": 47,
+     "impr": 134
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 1.1,
+     "clicks": 54,
+     "impr": 161
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 1.0,
+     "clicks": 45,
+     "impr": 151
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 1.1,
+     "clicks": 53,
+     "impr": 168
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 1.1,
+     "clicks": 47,
+     "impr": 146
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 1.0,
+     "clicks": 26,
+     "impr": 125
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 1.4,
+     "clicks": 39,
+     "impr": 126
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 1.0,
+     "clicks": 47,
+     "impr": 168
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 1.0,
+     "clicks": 43,
+     "impr": 142
+    }
+   ],
+   "online pharmacy": [
+    {
+     "d": "2026-06-03",
+     "pos": 14.8,
+     "clicks": 2,
+     "impr": 72
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 11.5,
+     "clicks": 0,
+     "impr": 77
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 12.2,
+     "clicks": 2,
+     "impr": 73
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 12.0,
+     "clicks": 4,
+     "impr": 83
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 13.4,
+     "clicks": 2,
+     "impr": 76
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 13.4,
+     "clicks": 3,
+     "impr": 84
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 12.0,
+     "clicks": 0,
+     "impr": 71
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 12.8,
+     "clicks": 3,
+     "impr": 80
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 14.0,
+     "clicks": 1,
+     "impr": 88
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 9.5,
+     "clicks": 2,
+     "impr": 212
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 7.4,
+     "clicks": 5,
+     "impr": 381
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 7.2,
+     "clicks": 10,
+     "impr": 430
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 7.2,
+     "clicks": 14,
+     "impr": 489
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 6.5,
+     "clicks": 26,
+     "impr": 552
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 7.2,
+     "clicks": 8,
+     "impr": 475
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 77
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 13.5,
+     "clicks": 1,
+     "impr": 72
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 12.9,
+     "clicks": 3,
+     "impr": 86
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 12.9,
+     "clicks": 3,
+     "impr": 76
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 11.8,
+     "clicks": 6,
+     "impr": 79
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 11.7,
+     "clicks": 8,
+     "impr": 94
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 8.9,
+     "clicks": 7,
+     "impr": 94
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 10.3,
+     "clicks": 6,
+     "impr": 92
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 10.1,
+     "clicks": 5,
+     "impr": 71
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 10.4,
+     "clicks": 4,
+     "impr": 69
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 9.5,
+     "clicks": 5,
+     "impr": 89
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 11.3,
+     "clicks": 5,
+     "impr": 101
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 9.7,
+     "clicks": 9,
+     "impr": 111
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 12.0,
+     "clicks": 4,
+     "impr": 105
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 9.5,
+     "clicks": 5,
+     "impr": 101
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 10.1,
+     "clicks": 8,
+     "impr": 90
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 10.7,
+     "clicks": 5,
+     "impr": 108
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 8.1,
+     "clicks": 5,
+     "impr": 90
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 9.1,
+     "clicks": 11,
+     "impr": 142
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 9.9,
+     "clicks": 4,
+     "impr": 126
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 10.2,
+     "clicks": 9,
+     "impr": 121
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 9.6,
+     "clicks": 7,
+     "impr": 124
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 9.5,
+     "clicks": 5,
+     "impr": 135
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 11.2,
+     "clicks": 2,
+     "impr": 79
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 9.9,
+     "clicks": 1,
+     "impr": 87
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 9.9,
+     "clicks": 2,
+     "impr": 94
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 9.2,
+     "clicks": 7,
+     "impr": 150
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 11.2,
+     "clicks": 2,
+     "impr": 103
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 8.5,
+     "clicks": 6,
+     "impr": 130
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 9.5,
+     "clicks": 2,
+     "impr": 79
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 12.1,
+     "clicks": 1,
+     "impr": 136
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 9.2,
+     "clicks": 2,
+     "impr": 83
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 10.4,
+     "clicks": 5,
+     "impr": 127
+    },
+    {
+     "d": "2026-07-21",
+     "pos": 9.9,
+     "clicks": 2,
+     "impr": 126
+    },
+    {
+     "d": "2026-07-22",
+     "pos": 12.2,
+     "clicks": 5,
+     "impr": 113
+    },
+    {
+     "d": "2026-07-23",
+     "pos": 13.6,
+     "clicks": 3,
+     "impr": 88
+    },
+    {
+     "d": "2026-07-24",
+     "pos": 11.3,
+     "clicks": 2,
+     "impr": 78
+    },
+    {
+     "d": "2026-07-25",
+     "pos": 12.2,
+     "clicks": 2,
+     "impr": 67
+    },
+    {
+     "d": "2026-07-26",
+     "pos": 10.8,
+     "clicks": 3,
+     "impr": 89
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 11.1,
+     "clicks": 3,
+     "impr": 107
+    },
+    {
+     "d": "2026-07-28",
+     "pos": 13.8,
+     "clicks": 2,
+     "impr": 76
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 13.5,
+     "clicks": 1,
+     "impr": 85
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 13.4,
+     "clicks": 2,
+     "impr": 84
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 10.3,
+     "clicks": 4,
+     "impr": 115
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 10.2,
+     "clicks": 3,
+     "impr": 121
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 8.8,
+     "clicks": 7,
+     "impr": 122
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 9.2,
+     "clicks": 4,
+     "impr": 120
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 12.8,
+     "clicks": 2,
+     "impr": 79
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 13.7,
+     "clicks": 2,
+     "impr": 90
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 12.7,
+     "clicks": 1,
+     "impr": 58
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 14.8,
+     "clicks": 1,
+     "impr": 54
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 14.5,
+     "clicks": 1,
+     "impr": 74
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 15.3,
+     "clicks": 1,
+     "impr": 64
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 15.1,
+     "clicks": 1,
+     "impr": 89
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 12.7,
+     "clicks": 3,
+     "impr": 77
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 15.7,
+     "clicks": 1,
+     "impr": 53
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 14.0,
+     "clicks": 1,
+     "impr": 69
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 16.2,
+     "clicks": 2,
+     "impr": 60
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 13.1,
+     "clicks": 3,
+     "impr": 78
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 15.1,
+     "clicks": 2,
+     "impr": 68
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 13.5,
+     "clicks": 1,
+     "impr": 66
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 12.4,
+     "clicks": 1,
+     "impr": 56
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 13.4,
+     "clicks": 1,
+     "impr": 62
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 18.2,
+     "clicks": 1,
+     "impr": 92
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 15.2,
+     "clicks": 1,
+     "impr": 73
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 12.9,
+     "clicks": 5,
+     "impr": 87
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 13.6,
+     "clicks": 2,
+     "impr": 42
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 16.6,
+     "clicks": 1,
+     "impr": 41
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 16.4,
+     "clicks": 3,
+     "impr": 59
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 16.6,
+     "clicks": 3,
+     "impr": 49
+    }
+   ],
+   "online pharmacy uk": [
+    {
+     "d": "2026-06-03",
+     "pos": 11.9,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 12.8,
+     "clicks": 1,
+     "impr": 44
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 14.7,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 14.7,
+     "clicks": 1,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 16.0,
+     "clicks": 1,
+     "impr": 26
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 16.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 13.3,
+     "clicks": 1,
+     "impr": 45
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 14.8,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 15.8,
+     "clicks": 1,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 9.3,
+     "clicks": 3,
+     "impr": 100
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 7.7,
+     "clicks": 0,
+     "impr": 112
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 8.5,
+     "clicks": 5,
+     "impr": 163
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 8.2,
+     "clicks": 4,
+     "impr": 153
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 8.3,
+     "clicks": 6,
+     "impr": 223
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 8.2,
+     "clicks": 9,
+     "impr": 207
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 15.8,
+     "clicks": 2,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 18.8,
+     "clicks": 2,
+     "impr": 32
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 15.5,
+     "clicks": 2,
+     "impr": 34
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 16.0,
+     "clicks": 1,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 12.7,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 9.2,
+     "clicks": 3,
+     "impr": 38
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 11.3,
+     "clicks": 3,
+     "impr": 48
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 9.9,
+     "clicks": 2,
+     "impr": 51
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 10.0,
+     "clicks": 3,
+     "impr": 44
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 10.1,
+     "clicks": 2,
+     "impr": 44
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 10.7,
+     "clicks": 4,
+     "impr": 66
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 11.2,
+     "clicks": 5,
+     "impr": 61
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 12.0,
+     "clicks": 1,
+     "impr": 45
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 12.8,
+     "clicks": 1,
+     "impr": 40
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 11.1,
+     "clicks": 2,
+     "impr": 57
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 10.4,
+     "clicks": 3,
+     "impr": 56
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 14.8,
+     "clicks": 1,
+     "impr": 69
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 12.1,
+     "clicks": 2,
+     "impr": 56
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 10.3,
+     "clicks": 2,
+     "impr": 62
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 9.4,
+     "clicks": 1,
+     "impr": 75
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 10.8,
+     "clicks": 1,
+     "impr": 51
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 9.9,
+     "clicks": 1,
+     "impr": 49
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 10.6,
+     "clicks": 1,
+     "impr": 58
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 11.5,
+     "clicks": 2,
+     "impr": 62
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 11.3,
+     "clicks": 2,
+     "impr": 38
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 10.3,
+     "clicks": 1,
+     "impr": 42
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 12.6,
+     "clicks": 1,
+     "impr": 38
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 14.1,
+     "clicks": 1,
+     "impr": 39
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 13.5,
+     "clicks": 1,
+     "impr": 52
+    },
+    {
+     "d": "2026-07-21",
+     "pos": 13.9,
+     "clicks": 2,
+     "impr": 41
+    },
+    {
+     "d": "2026-07-23",
+     "pos": 11.4,
+     "clicks": 4,
+     "impr": 44
+    },
+    {
+     "d": "2026-07-24",
+     "pos": 12.7,
+     "clicks": 1,
+     "impr": 35
+    },
+    {
+     "d": "2026-07-25",
+     "pos": 12.2,
+     "clicks": 3,
+     "impr": 35
+    },
+    {
+     "d": "2026-07-26",
+     "pos": 11.5,
+     "clicks": 4,
+     "impr": 41
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 11.3,
+     "clicks": 2,
+     "impr": 47
+    },
+    {
+     "d": "2026-07-28",
+     "pos": 12.9,
+     "clicks": 1,
+     "impr": 50
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 13.4,
+     "clicks": 1,
+     "impr": 36
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 11.7,
+     "clicks": 1,
+     "impr": 33
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 12.5,
+     "clicks": 1,
+     "impr": 29
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 12.8,
+     "clicks": 1,
+     "impr": 33
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 13.2,
+     "clicks": 1,
+     "impr": 55
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 12.2,
+     "clicks": 2,
+     "impr": 43
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 12.5,
+     "clicks": 1,
+     "impr": 48
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 12.1,
+     "clicks": 2,
+     "impr": 48
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 13.3,
+     "clicks": 4,
+     "impr": 37
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 14.4,
+     "clicks": 2,
+     "impr": 39
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 12.7,
+     "clicks": 2,
+     "impr": 29
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 15.7,
+     "clicks": 1,
+     "impr": 30
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 15.6,
+     "clicks": 1,
+     "impr": 31
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 12.7,
+     "clicks": 1,
+     "impr": 36
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 13.8,
+     "clicks": 1,
+     "impr": 31
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 12.1,
+     "clicks": 1,
+     "impr": 36
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 14.1,
+     "clicks": 2,
+     "impr": 43
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 13.5,
+     "clicks": 2,
+     "impr": 25
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 11.9,
+     "clicks": 2,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 15.1,
+     "clicks": 2,
+     "impr": 46
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 15.8,
+     "clicks": 1,
+     "impr": 33
+    }
+   ],
+   "simple online pharmacy uk": [
+    {
+     "d": "2026-06-03",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 14
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 21
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 1.0,
+     "clicks": 8,
+     "impr": 25
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 18
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 1.0,
+     "clicks": 6,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 1.0,
+     "clicks": 6,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 1.0,
+     "clicks": 6,
+     "impr": 15
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 1.0,
+     "clicks": 7,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 1.0,
+     "clicks": 8,
+     "impr": 21
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 13
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 14
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 1.0,
+     "clicks": 5,
+     "impr": 16
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 1.1,
+     "clicks": 6,
+     "impr": 16
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 1.0,
+     "clicks": 6,
+     "impr": 31
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 1.0,
+     "clicks": 5,
+     "impr": 13
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 1.0,
+     "clicks": 5,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 14
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 7
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 10
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 9
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 1.0,
+     "clicks": 6,
+     "impr": 10
+    },
+    {
+     "d": "2026-07-22",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-23",
+     "pos": 1.0,
+     "clicks": 6,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-24",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 5
+    },
+    {
+     "d": "2026-07-26",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 7
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 1.0,
+     "clicks": 5,
+     "impr": 20
+    },
+    {
+     "d": "2026-07-28",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 3
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 8
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 13
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 5
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 8
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 1.1,
+     "clicks": 2,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 5
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 4
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 6
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 1.0,
+     "clicks": 5,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 1.0,
+     "clicks": 6,
+     "impr": 13
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 1.0,
+     "clicks": 6,
+     "impr": 13
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 27
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 29
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 1.0,
+     "clicks": 3,
+     "impr": 17
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 30
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 25
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 29
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 1.0,
+     "clicks": 5,
+     "impr": 35
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 35
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 32
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 1.0,
+     "clicks": 4,
+     "impr": 29
+    }
+   ],
+   "pharmacy online": [
+    {
+     "d": "2026-06-03",
+     "pos": 7.4,
+     "clicks": 1,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 8.7,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 9.7,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 12.3,
+     "clicks": 1,
+     "impr": 23
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 10.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 8.8,
+     "clicks": 0,
+     "impr": 51
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 10.2,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 10.3,
+     "clicks": 1,
+     "impr": 22
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 10.5,
+     "clicks": 1,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 11.3,
+     "clicks": 1,
+     "impr": 32
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 8.6,
+     "clicks": 0,
+     "impr": 54
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 9.0,
+     "clicks": 1,
+     "impr": 50
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 8.2,
+     "clicks": 3,
+     "impr": 62
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 9.2,
+     "clicks": 0,
+     "impr": 75
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 9.0,
+     "clicks": 3,
+     "impr": 52
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 10.6,
+     "clicks": 0,
+     "impr": 50
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 12.3,
+     "clicks": 0,
+     "impr": 46
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 13.4,
+     "clicks": 2,
+     "impr": 32
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 11.1,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 12.8,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 8.3,
+     "clicks": 1,
+     "impr": 49
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 8.6,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 10.3,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 13.6,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 8.3,
+     "clicks": 0,
+     "impr": 42
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 8.7,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 8.5,
+     "clicks": 1,
+     "impr": 52
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 8.4,
+     "clicks": 1,
+     "impr": 50
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 12.0,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 11.4,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 11.2,
+     "clicks": 1,
+     "impr": 36
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 11.0,
+     "clicks": 1,
+     "impr": 28
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 9.1,
+     "clicks": 2,
+     "impr": 33
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 10.7,
+     "clicks": 1,
+     "impr": 47
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 9.6,
+     "clicks": 1,
+     "impr": 42
+    },
+    {
+     "d": "2026-07-23",
+     "pos": 11.1,
+     "clicks": 1,
+     "impr": 30
+    },
+    {
+     "d": "2026-07-24",
+     "pos": 12.0,
+     "clicks": 1,
+     "impr": 25
+    },
+    {
+     "d": "2026-07-26",
+     "pos": 10.1,
+     "clicks": 1,
+     "impr": 25
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 10.8,
+     "clicks": 1,
+     "impr": 36
+    },
+    {
+     "d": "2026-07-28",
+     "pos": 9.6,
+     "clicks": 1,
+     "impr": 39
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 9.3,
+     "clicks": 1,
+     "impr": 32
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 11.8,
+     "clicks": 1,
+     "impr": 41
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 9.8,
+     "clicks": 2,
+     "impr": 42
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 9.8,
+     "clicks": 1,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 11.3,
+     "clicks": 1,
+     "impr": 25
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 12.3,
+     "clicks": 1,
+     "impr": 27
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 11.9,
+     "clicks": 2,
+     "impr": 48
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 12.9,
+     "clicks": 2,
+     "impr": 23
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 15.5,
+     "clicks": 1,
+     "impr": 26
+    }
+   ],
+   "online chemist": [
+    {
+     "d": "2026-06-03",
+     "pos": 11.8,
+     "clicks": 1,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 14.5,
+     "clicks": 1,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 16.7,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 15.0,
+     "clicks": 1,
+     "impr": 14
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 13.9,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 14.9,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 14.6,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 12.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 15.6,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 14.9,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 15.3,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 15.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 14.5,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 16.5,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 15.4,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 13.4,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 17.9,
+     "clicks": 1,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 16.7,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 15.8,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 9.9,
+     "clicks": 2,
+     "impr": 18
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 12.7,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 16.6,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 15.2,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 18.6,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 15.4,
+     "clicks": 1,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 13.8,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 15.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 14.7,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 19.5,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 13.8,
+     "clicks": 1,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 14.5,
+     "clicks": 1,
+     "impr": 11
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 11.8,
+     "clicks": 1,
+     "impr": 17
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 10.9,
+     "clicks": 1,
+     "impr": 14
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 15.7,
+     "clicks": 1,
+     "impr": 19
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 12.8,
+     "clicks": 1,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 13.9,
+     "clicks": 1,
+     "impr": 14
+    }
+   ],
+   "uk online pharmacy": [
+    {
+     "d": "2026-06-03",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 12.3,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 23.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 15.1,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 16.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 15.7,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 15.4,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 15.5,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 19.3,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 17.8,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 12.0,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 12.2,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 13.8,
+     "clicks": 1,
+     "impr": 14
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 12.6,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 19.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 17.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 21.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 18.7,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 21.4,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 14.3,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 18.5,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 15.4,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 15.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 16.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 13.0,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 12.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 15.2,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 12.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 17.1,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 17.3,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 16.5,
+     "clicks": 1,
+     "impr": 4
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 16.9,
+     "clicks": 1,
+     "impr": 12
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 15.9,
+     "clicks": 1,
+     "impr": 16
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 16.0,
+     "clicks": 1,
+     "impr": 8
+    }
+   ],
+   "online chemist uk": [
+    {
+     "d": "2026-06-03",
+     "pos": 14.2,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 13.6,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 16.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-06",
+     "pos": 16.6,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 19.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 15.6,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 18.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 18.7,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 16.6,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 16.6,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 16.2,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 19.2,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 18.2,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 20.2,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 15.3,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 17.3,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 19.4,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 18.8,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 21.2,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 17.1,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 18.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 17.7,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 15.0,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 13.6,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 15.0,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 17.0,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 17.8,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 18.1,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 20.4,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 19.7,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 23.1,
+     "clicks": 1,
+     "impr": 16
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 18.5,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-23",
+     "pos": 16.4,
+     "clicks": 1,
+     "impr": 9
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 17.3,
+     "clicks": 1,
+     "impr": 14
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 18.5,
+     "clicks": 1,
+     "impr": 6
+    }
+   ],
+   "cheap online pharmacy": [
+    {
+     "d": "2026-06-03",
+     "pos": 6.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 9.5,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 5.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 5.4,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 20.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 7.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 15.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 9.5,
+     "clicks": 0,
+     "impr": 2
+    }
+   ],
+   "online doctor": [
+    {
+     "d": "2026-06-06",
+     "pos": 55.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 13.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 51.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 25.0,
+     "clicks": 0,
+     "impr": 2
+    }
+   ],
+   "private prescription online": [
+    {
+     "d": "2026-06-07",
+     "pos": 44.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 42.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 43.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 44.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 53.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 50.7,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 39.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 41.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 40.5,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 38.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 44.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 41.6,
+     "clicks": 0,
+     "impr": 5
+    }
+   ],
+   "online doctor uk": [
+    {
+     "d": "2026-06-12",
+     "pos": 60.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 60.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 55.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 37.5,
+     "clicks": 0,
+     "impr": 2
+    }
+   ]
+  },
+  "ga4": {
+   "page": [
+    {
+     "d": "2026-06-05",
+     "sessions": 34353,
+     "events": 11920
+    },
+    {
+     "d": "2026-06-06",
+     "sessions": 27516,
+     "events": 9827
+    },
+    {
+     "d": "2026-06-07",
+     "sessions": 29188,
+     "events": 11186
+    },
+    {
+     "d": "2026-06-08",
+     "sessions": 30081,
+     "events": 9876
+    },
+    {
+     "d": "2026-06-09",
+     "sessions": 27484,
+     "events": 8830
+    },
+    {
+     "d": "2026-06-10",
+     "sessions": 27570,
+     "events": 10444
+    },
+    {
+     "d": "2026-06-11",
+     "sessions": 34885,
+     "events": 10698
+    },
+    {
+     "d": "2026-06-12",
+     "sessions": 36166,
+     "events": 12124
+    },
+    {
+     "d": "2026-06-13",
+     "sessions": 29262,
+     "events": 11476
+    },
+    {
+     "d": "2026-06-14",
+     "sessions": 33676,
+     "events": 11941
+    },
+    {
+     "d": "2026-06-15",
+     "sessions": 34724,
+     "events": 12781
+    },
+    {
+     "d": "2026-06-16",
+     "sessions": 37141,
+     "events": 11821
+    },
+    {
+     "d": "2026-06-17",
+     "sessions": 33123,
+     "events": 13600
+    },
+    {
+     "d": "2026-06-18",
+     "sessions": 39460,
+     "events": 13130
+    },
+    {
+     "d": "2026-06-19",
+     "sessions": 28356,
+     "events": 11017
+    },
+    {
+     "d": "2026-06-20",
+     "sessions": 21031,
+     "events": 7649
+    },
+    {
+     "d": "2026-06-21",
+     "sessions": 19839,
+     "events": 8189
+    },
+    {
+     "d": "2026-06-22",
+     "sessions": 21510,
+     "events": 9335
+    },
+    {
+     "d": "2026-06-23",
+     "sessions": 22363,
+     "events": 9353
+    },
+    {
+     "d": "2026-06-24",
+     "sessions": 22093,
+     "events": 9112
+    },
+    {
+     "d": "2026-06-25",
+     "sessions": 21711,
+     "events": 10194
+    },
+    {
+     "d": "2026-06-26",
+     "sessions": 20173,
+     "events": 10690
+    },
+    {
+     "d": "2026-06-27",
+     "sessions": 17777,
+     "events": 9048
+    },
+    {
+     "d": "2026-06-28",
+     "sessions": 18077,
+     "events": 9377
+    },
+    {
+     "d": "2026-06-29",
+     "sessions": 24229,
+     "events": 10831
+    },
+    {
+     "d": "2026-06-30",
+     "sessions": 27452,
+     "events": 15980
+    },
+    {
+     "d": "2026-07-01",
+     "sessions": 26431,
+     "events": 13700
+    },
+    {
+     "d": "2026-07-02",
+     "sessions": 25590,
+     "events": 12978
+    },
+    {
+     "d": "2026-07-03",
+     "sessions": 22813,
+     "events": 10783
+    },
+    {
+     "d": "2026-07-04",
+     "sessions": 21025,
+     "events": 10119
+    },
+    {
+     "d": "2026-07-05",
+     "sessions": 24207,
+     "events": 12566
+    },
+    {
+     "d": "2026-07-06",
+     "sessions": 43614,
+     "events": 20252
+    },
+    {
+     "d": "2026-07-07",
+     "sessions": 34359,
+     "events": 15428
+    },
+    {
+     "d": "2026-07-08",
+     "sessions": 26908,
+     "events": 12485
+    },
+    {
+     "d": "2026-07-09",
+     "sessions": 24387,
+     "events": 11023
+    },
+    {
+     "d": "2026-07-10",
+     "sessions": 22174,
+     "events": 9976
+    },
+    {
+     "d": "2026-07-11",
+     "sessions": 17464,
+     "events": 8168
+    },
+    {
+     "d": "2026-07-12",
+     "sessions": 17433,
+     "events": 9536
+    },
+    {
+     "d": "2026-07-13",
+     "sessions": 23618,
+     "events": 12214
+    },
+    {
+     "d": "2026-07-14",
+     "sessions": 22481,
+     "events": 11502
+    },
+    {
+     "d": "2026-07-15",
+     "sessions": 21287,
+     "events": 11040
+    },
+    {
+     "d": "2026-07-16",
+     "sessions": 21817,
+     "events": 10160
+    },
+    {
+     "d": "2026-07-17",
+     "sessions": 18741,
+     "events": 9399
+    },
+    {
+     "d": "2026-07-18",
+     "sessions": 15866,
+     "events": 8243
+    },
+    {
+     "d": "2026-07-19",
+     "sessions": 17655,
+     "events": 9732
+    },
+    {
+     "d": "2026-07-20",
+     "sessions": 19609,
+     "events": 11853
+    },
+    {
+     "d": "2026-07-21",
+     "sessions": 20489,
+     "events": 12554
+    },
+    {
+     "d": "2026-07-22",
+     "sessions": 20478,
+     "events": 12125
+    },
+    {
+     "d": "2026-07-23",
+     "sessions": 19698,
+     "events": 11743
+    },
+    {
+     "d": "2026-07-24",
+     "sessions": 21548,
+     "events": 15539
+    },
+    {
+     "d": "2026-07-25",
+     "sessions": 16501,
+     "events": 10245
+    },
+    {
+     "d": "2026-07-26",
+     "sessions": 18188,
+     "events": 11214
+    },
+    {
+     "d": "2026-07-27",
+     "sessions": 21397,
+     "events": 14840
+    },
+    {
+     "d": "2026-07-28",
+     "sessions": 21061,
+     "events": 14401
+    },
+    {
+     "d": "2026-07-29",
+     "sessions": 12597,
+     "events": 7712
+    },
+    {
+     "d": "2026-07-30",
+     "sessions": 15939,
+     "events": 10308
+    },
+    {
+     "d": "2026-07-31",
+     "sessions": 19875,
+     "events": 14880
+    },
+    {
+     "d": "2026-08-01",
+     "sessions": 12730,
+     "events": 6236
+    },
+    {
+     "d": "2026-08-02",
+     "sessions": 9894,
+     "events": 6172
+    },
+    {
+     "d": "2026-08-03",
+     "sessions": 13256,
+     "events": 8186
+    },
+    {
+     "d": "2026-08-04",
+     "sessions": 10938,
+     "events": 6884
+    },
+    {
+     "d": "2026-08-05",
+     "sessions": 10328,
+     "events": 6460
+    },
+    {
+     "d": "2026-08-06",
+     "sessions": 9277,
+     "events": 5192
+    },
+    {
+     "d": "2026-08-07",
+     "sessions": 8112,
+     "events": 4795
+    },
+    {
+     "d": "2026-08-08",
+     "sessions": 7265,
+     "events": 3898
+    },
+    {
+     "d": "2026-08-09",
+     "sessions": 7624,
+     "events": 4385
+    },
+    {
+     "d": "2026-08-10",
+     "sessions": 9543,
+     "events": 6028
+    },
+    {
+     "d": "2026-08-11",
+     "sessions": 9389,
+     "events": 5669
+    },
+    {
+     "d": "2026-08-12",
+     "sessions": 9083,
+     "events": 5888
+    },
+    {
+     "d": "2026-08-13",
+     "sessions": 9617,
+     "events": 5126
+    },
+    {
+     "d": "2026-08-14",
+     "sessions": 11308,
+     "events": 5761
+    },
+    {
+     "d": "2026-08-15",
+     "sessions": 8826,
+     "events": 4215
+    },
+    {
+     "d": "2026-08-16",
+     "sessions": 8172,
+     "events": 4961
+    },
+    {
+     "d": "2026-08-17",
+     "sessions": 9648,
+     "events": 5970
+    },
+    {
+     "d": "2026-08-18",
+     "sessions": 14682,
+     "events": 9117
+    },
+    {
+     "d": "2026-08-19",
+     "sessions": 18780,
+     "events": 10343
+    },
+    {
+     "d": "2026-08-20",
+     "sessions": 15899,
+     "events": 10273
+    },
+    {
+     "d": "2026-08-21",
+     "sessions": 15654,
+     "events": 9087
+    },
+    {
+     "d": "2026-08-22",
+     "sessions": 15035,
+     "events": 7770
+    },
+    {
+     "d": "2026-08-23",
+     "sessions": 15477,
+     "events": 9263
+    },
+    {
+     "d": "2026-08-24",
+     "sessions": 20571,
+     "events": 12436
+    },
+    {
+     "d": "2026-08-25",
+     "sessions": 20106,
+     "events": 12314
+    },
+    {
+     "d": "2026-08-26",
+     "sessions": 20379,
+     "events": 11935
+    },
+    {
+     "d": "2026-08-27",
+     "sessions": 23968,
+     "events": 12843
+    },
+    {
+     "d": "2026-08-28",
+     "sessions": 22649,
+     "events": 14641
+    },
+    {
+     "d": "2026-08-29",
+     "sessions": 18038,
+     "events": 9409
+    },
+    {
+     "d": "2026-08-30",
+     "sessions": 17321,
+     "events": 9798
+    },
+    {
+     "d": "2026-08-31",
+     "sessions": 21109,
+     "events": 12554
+    },
+    {
+     "d": "2026-09-01",
+     "sessions": 24259,
+     "events": 13082
+    },
+    {
+     "d": "2026-09-02",
+     "sessions": 23135,
+     "events": 11564
+    },
+    {
+     "d": "2026-09-03",
+     "sessions": 21054,
+     "events": 10757
+    }
+   ],
+   "as_of": "2026-09-03"
+  },
+  "ga4rev": {
+   "months": [
+    {
+     "m": "2025-09",
+     "revenue": 1031215.47,
+     "sessions": 157680
+    },
+    {
+     "m": "2025-10",
+     "revenue": 1332745.73,
+     "sessions": 176260
+    },
+    {
+     "m": "2025-11",
+     "revenue": 1130849.88,
+     "sessions": 126585
+    },
+    {
+     "m": "2025-12",
+     "revenue": 1006281.5,
+     "sessions": 116393
+    },
+    {
+     "m": "2026-01",
+     "revenue": 1224066.0,
+     "sessions": 122850
+    },
+    {
+     "m": "2026-02",
+     "revenue": 944472.15,
+     "sessions": 95218
+    },
+    {
+     "m": "2026-03",
+     "revenue": 868110.91,
+     "sessions": 96497
+    },
+    {
+     "m": "2026-04",
+     "revenue": 526346.48,
+     "sessions": 116104
+    },
+    {
+     "m": "2026-05",
+     "revenue": 527174.18,
+     "sessions": 107170
+    },
+    {
+     "m": "2026-06",
+     "revenue": 577914.62,
+     "sessions": 126539
+    },
+    {
+     "m": "2026-07",
+     "revenue": 1011863.13,
+     "sessions": 154877
+    },
+    {
+     "m": "2026-08",
+     "revenue": 667633.49,
+     "sessions": 87263
+    },
+    {
+     "m": "2026-09",
+     "revenue": 89762.87,
+     "sessions": 13630
+    }
+   ],
+   "as_of": "2026-09-03"
+  },
+  "m": {
+   "pill": 1,
+   "bwInj": null,
+   "blD": 1107,
+   "blT": 4764
+  },
+  "flags": {
+   "wrong": true,
+   "cann": 4
+  },
+  "kwmeta": {
+   "simple online pharmacy": {
+    "v": 60500,
+    "feat": [
+     6,
+     9,
+     21,
+     36
+    ]
+   },
+   "simple online pharmacy uk": {
+    "v": 260,
+    "feat": [
+     1,
+     6,
+     9,
+     21,
+     36
+    ]
+   },
+   "simple pharmacy": {
+    "v": 4400,
+    "feat": [
+     3,
+     6,
+     9,
+     21,
+     36
+    ]
+   },
+   "online pharmacy": {
+    "v": 27100,
+    "feat": [
+     9,
+     36,
+     52
+    ]
+   },
+   "online pharmacy uk": {
+    "v": 12100,
+    "feat": [
+     9,
+     14,
+     21,
+     36
+    ]
+   },
+   "uk online pharmacy": {
+    "v": 1300,
+    "feat": [
+     9,
+     36
+    ]
+   },
+   "online chemist": {
+    "v": 2900,
+    "feat": [
+     21,
+     36,
+     52
+    ]
+   },
+   "online chemist uk": {
+    "v": 1900,
+    "feat": [
+     21,
+     36,
+     52
+    ]
+   },
+   "pharmacy online": {
+    "v": 14800,
+    "feat": [
+     6,
+     9,
+     36,
+     37
+    ]
+   },
+   "cheap online pharmacy": {
+    "v": 140,
+    "feat": [
+     9,
+     15,
+     21,
+     36
+    ]
+   },
+   "online doctor": {
+    "v": 8100,
+    "feat": [
+     9,
+     13,
+     21,
+     36
+    ]
+   },
+   "online doctor uk": {
+    "v": 2400,
+    "feat": [
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "nhs prescriptions online": {
+    "v": 1000,
+    "feat": [
+     9,
+     21,
+     36
+    ]
+   },
+   "private prescription online": {
+    "v": 480,
+    "feat": [
+     9,
+     36,
+     52
+    ]
+   },
+   "repeat prescription online": {
+    "v": 2900,
+    "feat": [
+     9,
+     21,
+     36
+    ]
+   }
+  },
+  "tech": {
+   "checks": [
+    {
+     "name": "HTTP status",
+     "state": "pass",
+     "evidence": "200 OK, no redirect (https://www.simpleonlinepharmacy.co.uk/)"
+    },
+    {
+     "name": "Canonical tag",
+     "state": "pass",
+     "evidence": "self-referencing (https://www.simpleonlinepharmacy.co.uk/)"
+    },
+    {
+     "name": "Meta robots",
+     "state": "pass",
+     "evidence": "index,follow"
+    },
+    {
+     "name": "Structured data",
+     "state": "warn",
+     "evidence": "has FAQPage; missing Product, MedicalWebPage"
+    },
+    {
+     "name": "H1 count",
+     "state": "pass",
+     "evidence": "exactly one H1"
+    },
+    {
+     "name": "Internal links",
+     "state": "pass",
+     "evidence": "109 links from 2 hub page(s)"
+    }
+   ],
+   "score": 5,
+   "of": 6
+  },
+  "psi": {
+   "score": 56,
+   "lcp": "11.2 s",
+   "cls": "0",
+   "tbt": "190 ms",
+   "fcp": "5.5 s",
+   "si": "6.5 s",
+   "strategy": "mobile",
+   "field": {
+    "lcp_ms": 882,
+    "lcp_ms_cat": "FAST",
+    "inp_ms": 97,
+    "inp_ms_cat": "FAST",
+    "cls100": 0,
+    "cls100_cat": "FAST"
+   }
+  },
+  "links": {
+   "ours": 200,
+   "comp": {
+    "Pharmacy2U": 200,
+    "Boots": 70,
+    "Chemist4U": 200,
+    "Superdrug": 200,
+    "ChemistDirect": 200
+   },
+   "prospects": [
+    {
+     "d": "loginslink.com",
+     "n": 4,
+     "who": [
+      "Boots",
+      "ChemistDirect",
+      "Pharmacy2U",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "moneysavingexpert.com",
+     "n": 4,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "allare.io",
+     "n": 3,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bellasartesiquitos.edu.pe",
+     "n": 3,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "couponmatrix.uk",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "healthynexercise.com",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "lzlcloudserver.top",
+     "n": 3,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "milled.com",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "aipinmedia.com",
+     "n": 2,
+     "who": [
+      "Pharmacy2U",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "allcouponsarehere.com",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "automaned.com",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bankholidaysales.co.uk",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "bayshop.com",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "bestfree.nl",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "bing.com",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "charteredstudies.in",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "cidadetoda.com.br",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "couponcodegroup.com",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "couponcrowd.app",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "dailychoicehub.site",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "dailyrecord.co.uk",
+     "n": 2,
+     "who": [
+      "Pharmacy2U",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "dancingaardvarks.co.uk",
+     "n": 2,
+     "who": [
+      "ChemistDirect",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "disabilityhorizons.com",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Pharmacy2U"
+     ]
+    },
+    {
+     "d": "distancingwithdementia.org.uk",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "dowjones.io",
+     "n": 2,
+     "who": [
+      "Chemist4U",
+      "Pharmacy2U"
+     ]
+    }
+   ],
+   "strong": 47
+  }
+ }
+]

@@ -52557,8 +52557,8 @@
     },
     {
      "d": "2026-09-03",
-     "sessions": 38,
-     "events": 16
+     "sessions": 56,
+     "events": 38
     }
    ],
    "as_of": "2026-09-03"
@@ -52588,7 +52588,7 @@
     {
      "m": "2026-09",
      "revenue": 307.98,
-     "sessions": 41
+     "sessions": 51
     }
    ],
    "as_of": "2026-09-03"
@@ -52597,7 +52597,7 @@
    "pill": 44,
    "bwInj": null,
    "blD": 19,
-   "blT": 50
+   "blT": 51
   },
   "flags": {
    "wrong": true,
@@ -52801,12 +52801,12 @@
    "of": 6
   },
   "psi": {
-   "score": 42,
-   "lcp": "8.8 s",
+   "score": 57,
+   "lcp": "10.3 s",
    "cls": "0",
-   "tbt": "940 ms",
-   "fcp": "3.5 s",
-   "si": "6.0 s",
+   "tbt": "200 ms",
+   "fcp": "5.0 s",
+   "si": "6.3 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 724,
@@ -52821,7 +52821,7 @@
    "ours": 19,
    "comp": {
     "Superdrug": 44,
-    "Chemist4U": 21,
+    "Chemist4U": 22,
     "FamilyChemist": 6,
     "MedExpress": 17,
     "Boots": 8
@@ -52953,6 +52953,14 @@
      ]
     },
     {
+     "d": "bhs-links-r260.xyz",
+     "n": 2,
+     "who": [
+      "Chemist4U",
+      "Superdrug"
+     ]
+    },
+    {
      "d": "findlina.com",
      "n": 2,
      "who": [
@@ -52998,13 +53006,6 @@
      ]
     },
     {
-     "d": "bhs-links-r260.xyz",
-     "n": 1,
-     "who": [
-      "Superdrug"
-     ]
-    },
-    {
      "d": "cvspharmacie.com",
      "n": 1,
      "who": [
@@ -53033,7 +53034,7 @@
      ]
     }
    ],
-   "strong": 17
+   "strong": 18
   }
  }
 ]

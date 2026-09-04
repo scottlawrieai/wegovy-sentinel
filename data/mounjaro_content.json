@@ -1086,7 +1086,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 5905,
+   "wc": 5970,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -1169,7 +1169,7 @@
     "thyroid": 2,
     "BMI eligibility": 5,
     "Wegovy / semaglutide": 29,
-    "price per month": 35,
+    "price per month": 36,
     "clinician review": 45
    },
    "phrases": [
@@ -1178,13 +1178,13 @@
     "september out",
     "september out stars",
     "week week",
-    "stars verified",
-    "out stars verified",
     "mounjaro tirzepatide",
     "blood sugar",
     "order next",
     "next pen",
-    "pen week"
+    "pen week",
+    "stars verified",
+    "order next pen"
    ],
    "imgs": 25,
    "videos": 0,
@@ -1347,14 +1347,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 707,
+    "bytes": 708,
     "psi": {
-     "score": 56,
-     "lcp": "7.5 s",
-     "cls": "0.014",
-     "tbt": "420 ms",
-     "fcp": "2.6 s",
-     "si": "6.4 s",
+     "score": 65,
+     "lcp": "8.3 s",
+     "cls": "0.125",
+     "tbt": "50 ms",
+     "fcp": "2.3 s",
+     "si": "5.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1193,
@@ -1434,12 +1434,12 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 22,
-     "lcp": "13.0 s",
+     "score": 33,
+     "lcp": "11.3 s",
      "cls": "0.518",
-     "tbt": "530 ms",
-     "fcp": "9.2 s",
-     "si": "9.2 s",
+     "tbt": "170 ms",
+     "fcp": "9.5 s",
+     "si": "9.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1732,
@@ -1608,11 +1608,11 @@
     "bytes": 317,
     "psi": {
      "score": 72,
-     "lcp": "7.4 s",
+     "lcp": "6.8 s",
      "cls": "0.026",
-     "tbt": "0 ms",
+     "tbt": "50 ms",
      "fcp": "2.4 s",
-     "si": "3.8 s",
+     "si": "4.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1026,
@@ -1842,7 +1842,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 5905,
+    "wc": 5970,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -1925,7 +1925,7 @@
      "thyroid": 2,
      "BMI eligibility": 5,
      "Wegovy / semaglutide": 29,
-     "price per month": 35,
+     "price per month": 36,
      "clinician review": 45
     },
     "phrases": [
@@ -1934,13 +1934,13 @@
      "september out",
      "september out stars",
      "week week",
-     "stars verified",
-     "out stars verified",
      "mounjaro tirzepatide",
      "blood sugar",
      "order next",
      "next pen",
-     "pen week"
+     "pen week",
+     "stars verified",
+     "order next pen"
     ],
     "imgs": 25,
     "videos": 0,
@@ -2006,7 +2006,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "5905 words vs competitor median 5369"
+     "evidence": "5970 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",
