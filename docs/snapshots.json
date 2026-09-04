@@ -49517,7 +49517,7 @@
     },
     {
      "d": "2026-09-03",
-     "sessions": 35,
+     "sessions": 37,
      "events": 16
     }
    ],
@@ -49761,12 +49761,12 @@
    "of": 6
   },
   "psi": {
-   "score": 83,
+   "score": 58,
    "lcp": "3.7 s",
    "cls": "0",
-   "tbt": "210 ms",
-   "fcp": "2.4 s",
-   "si": "2.4 s",
+   "tbt": "1,980 ms",
+   "fcp": "2.5 s",
+   "si": "3.3 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 724,

@@ -6156,12 +6156,12 @@
    "of": 6
   },
   "psi": {
-   "score": 45,
-   "lcp": "6.8 s",
+   "score": 47,
+   "lcp": "8.9 s",
    "cls": "0",
-   "tbt": "1,610 ms",
-   "fcp": "2.3 s",
-   "si": "4.6 s",
+   "tbt": "740 ms",
+   "fcp": "3.3 s",
+   "si": "5.5 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 776,

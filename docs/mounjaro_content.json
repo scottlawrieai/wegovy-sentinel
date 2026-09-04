@@ -1086,7 +1086,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 5893,
+   "wc": 5882,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -1164,7 +1164,7 @@
     "Eli Lilly": 4,
     "prescription-only": 7,
     "nausea / GI side effects": 20,
-    "side effects": 19,
+    "side effects": 20,
     "pancreatitis": 3,
     "thyroid": 2,
     "BMI eligibility": 5,
@@ -1349,12 +1349,12 @@
     "authors": [],
     "bytes": 707,
     "psi": {
-     "score": 64,
-     "lcp": "8.6 s",
-     "cls": "0.122",
-     "tbt": "50 ms",
-     "fcp": "2.6 s",
-     "si": "5.2 s",
+     "score": 30,
+     "lcp": "7.1 s",
+     "cls": "0.101",
+     "tbt": "3,480 ms",
+     "fcp": "2.7 s",
+     "si": "14.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1193,
@@ -1434,12 +1434,12 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 14,
-     "lcp": "11.5 s",
+     "score": 15,
+     "lcp": "11.6 s",
      "cls": "0.518",
-     "tbt": "5,040 ms",
+     "tbt": "4,020 ms",
      "fcp": "3.4 s",
-     "si": "4.8 s",
+     "si": "4.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1732,
@@ -1607,12 +1607,12 @@
     "authors": [],
     "bytes": 319,
     "psi": {
-     "score": 74,
-     "lcp": "6.3 s",
-     "cls": "0.026",
-     "tbt": "30 ms",
-     "fcp": "2.3 s",
-     "si": "3.8 s",
+     "score": 56,
+     "lcp": "7.8 s",
+     "cls": "0.002",
+     "tbt": "430 ms",
+     "fcp": "3.2 s",
+     "si": "5.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1026,
@@ -1842,7 +1842,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 5893,
+    "wc": 5882,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -1920,7 +1920,7 @@
      "Eli Lilly": 4,
      "prescription-only": 7,
      "nausea / GI side effects": 20,
-     "side effects": 19,
+     "side effects": 20,
      "pancreatitis": 3,
      "thyroid": 2,
      "BMI eligibility": 5,
@@ -2006,7 +2006,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "5893 words vs competitor median 5369"
+     "evidence": "5882 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",
