@@ -48,6 +48,18 @@ PRODUCTS = {
         "module": "wegovy_injection_sentinel",
         "title": "Sentinel alerts (Wegovy injection)",
     },
+    "homepage": {
+        "snaps": os.path.join(HERE, "docs", "homepage_snapshots.json"),
+        "state": os.path.join(HERE, "data", "homepage_alerts_state.json"),
+        "module": "homepage_sentinel",
+        "title": "Sentinel alerts (Homepage)",
+    },
+    "weightloss": {
+        "snaps": os.path.join(HERE, "docs", "weightloss_snapshots.json"),
+        "state": os.path.join(HERE, "data", "weightloss_alerts_state.json"),
+        "module": "weightloss_sentinel",
+        "title": "Sentinel alerts (Weight loss hub)",
+    },
 }
 
 DROP_THRESHOLD = 5

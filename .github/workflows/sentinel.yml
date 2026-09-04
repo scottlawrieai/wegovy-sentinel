@@ -128,6 +128,74 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python alerts.py --product wegovy-injection
 
+      - name: Run Homepage Sentinel
+        if: always()
+        env:
+          SEMRUSH_API_KEY: ${{ secrets.SEMRUSH_API_KEY }}
+          # Google Search Console (optional -- OAuth refresh-token auth)
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
+          # PageSpeed Insights (optional key -- keyless works but is rate-limited)
+          PSI_API_KEY: ${{ secrets.PSI_API_KEY }}
+          # Advanced Web Ranking (optional -- AWR Cloud v2 get API)
+          AWR_API_TOKEN: ${{ secrets.AWR_API_TOKEN }}
+          AWR_PROJECT: ${{ vars.AWR_PROJECT }}
+          AWR_GEO: ${{ vars.AWR_GEO }}
+          AWR_DEVICE: ${{ vars.AWR_DEVICE }}
+          # Google Analytics 4 (optional -- sessions/key events for the pill page)
+          GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+          GA4_REFRESH_TOKEN: ${{ secrets.GA4_REFRESH_TOKEN }}
+          GA4_CLIENT_ID: ${{ secrets.GA4_CLIENT_ID }}
+          GA4_CLIENT_SECRET: ${{ secrets.GA4_CLIENT_SECRET }}
+          AWR_PROJECT_HOMEPAGE: ${{ vars.AWR_PROJECT_HOMEPAGE }}
+        run: python homepage_sentinel.py
+
+      - name: Homepage changelog
+        if: always()
+        run: python changelog.py --product homepage
+
+      - name: Homepage alerts
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python alerts.py --product homepage
+
+      - name: Run Weight Loss Hub Sentinel
+        if: always()
+        env:
+          SEMRUSH_API_KEY: ${{ secrets.SEMRUSH_API_KEY }}
+          # Google Search Console (optional -- OAuth refresh-token auth)
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
+          # PageSpeed Insights (optional key -- keyless works but is rate-limited)
+          PSI_API_KEY: ${{ secrets.PSI_API_KEY }}
+          # Advanced Web Ranking (optional -- AWR Cloud v2 get API)
+          AWR_API_TOKEN: ${{ secrets.AWR_API_TOKEN }}
+          AWR_PROJECT: ${{ vars.AWR_PROJECT }}
+          AWR_GEO: ${{ vars.AWR_GEO }}
+          AWR_DEVICE: ${{ vars.AWR_DEVICE }}
+          # Google Analytics 4 (optional -- sessions/key events for the pill page)
+          GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+          GA4_REFRESH_TOKEN: ${{ secrets.GA4_REFRESH_TOKEN }}
+          GA4_CLIENT_ID: ${{ secrets.GA4_CLIENT_ID }}
+          GA4_CLIENT_SECRET: ${{ secrets.GA4_CLIENT_SECRET }}
+          AWR_PROJECT_WEIGHTLOSS: ${{ vars.AWR_PROJECT_WEIGHTLOSS }}
+        run: python weightloss_sentinel.py
+
+      - name: Weight loss hub changelog
+        if: always()
+        run: python changelog.py --product weightloss
+
+      - name: Weight loss hub alerts
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python alerts.py --product weightloss
+
       - name: Run Foundayo Sentinel
         if: always()
         env:
@@ -154,6 +222,14 @@ jobs:
                    data/wegovy_injection_content.json docs/wegovy_injection_content.json \
                    data/wegovy_injection_changelog.json docs/wegovy_injection_changelog.json \
                    data/wegovy_injection_alerts_state.json \
+                   data/homepage_snapshots.json docs/homepage_snapshots.json \
+                   data/homepage_content.json docs/homepage_content.json \
+                   data/homepage_changelog.json docs/homepage_changelog.json \
+                   data/homepage_alerts_state.json \
+                   data/weightloss_snapshots.json docs/weightloss_snapshots.json \
+                   data/weightloss_content.json docs/weightloss_content.json \
+                   data/weightloss_changelog.json docs/weightloss_changelog.json \
+                   data/weightloss_alerts_state.json \
                    data/foundayo_snapshots.json docs/foundayo_snapshots.json; do
             if [ -e "$f" ]; then git add "$f"; fi
           done

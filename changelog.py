@@ -43,6 +43,18 @@ PRODUCTS = {
         "data": os.path.join(HERE, "data", "wegovy_injection_changelog.json"),
         "docs": os.path.join(HERE, "docs", "wegovy_injection_changelog.json"),
     },
+    "homepage": {
+        "content": os.path.join(HERE, "docs", "homepage_content.json"),
+        "manual": os.path.join(HERE, "data", "homepage_changelog_manual.json"),
+        "data": os.path.join(HERE, "data", "homepage_changelog.json"),
+        "docs": os.path.join(HERE, "docs", "homepage_changelog.json"),
+    },
+    "weightloss": {
+        "content": os.path.join(HERE, "docs", "weightloss_content.json"),
+        "manual": os.path.join(HERE, "data", "weightloss_changelog_manual.json"),
+        "data": os.path.join(HERE, "data", "weightloss_changelog.json"),
+        "docs": os.path.join(HERE, "docs", "weightloss_changelog.json"),
+    },
 }
 
 
