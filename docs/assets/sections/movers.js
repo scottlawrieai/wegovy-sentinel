@@ -194,7 +194,8 @@
       '<tbody>' + (trs || '<tr><td colspan="7"><div class="empty">No ranking data.</div></td></tr>') +
       '</tbody></table></div></div>' +
       '<div class="mv-note">Movers — Semrush position now vs 7 patrols earlier, biggest moves first. ' +
-      'Gap compares our position with the best-ranked competitor for the keyword.</div>';
+      'Gap compares our position with the best-ranked competitor for the keyword. ' +
+      'Positions are the best-ranking URL on each site, whichever page that is.</div>';
 
     body.innerHTML = html;
   }

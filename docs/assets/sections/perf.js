@@ -220,7 +220,9 @@
       '<thead><tr><th>Query</th><th class="num">Clicks</th><th class="num">Impressions</th>' +
       '<th class="num">CTR</th><th class="num">Position</th></tr></thead>' +
       '<tbody>' + trs + '</tbody></table></div>' +
-      (gq.rows.length > 50 ? '<div class="perf-chart-note">Top 50 of ' + C.esc(String(gq.rows.length)) + ' queries, by clicks</div>' : '') +
+      '<div class="perf-chart-note">' +
+      (gq.rows.length > 50 ? 'Top 50 of ' + C.esc(String(gq.rows.length)) + ' queries, by clicks · ' : '') +
+      'Google omits queries below its privacy threshold, so these rows do not sum to the totals in the cards above.</div>' +
       '</div>';
   }
 

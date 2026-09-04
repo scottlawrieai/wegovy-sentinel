@@ -193,7 +193,7 @@
       }
       return seriesCard(S, kw,
         [{ label: 'AWR', color: '#E8590C', points: C.inRange(ap, S.state) }],
-        false, C.fmtInt(tracked) + ' tracked days');
+        false, C.fmtInt(tracked) + ' tracked days · AWR · site best URL');
     }
 
     if (activeSrc === 'comp') {
@@ -203,10 +203,19 @@
       return seriesCard(S, kw, series, true, '');
     }
 
-    // default: Semrush
+    // default: Semrush. best[] tracks the best-ranking SOP URL for the
+    // keyword, which is not always this product's page -- say so when the
+    // latest ranking URL is a different page class.
+    var last = snaps.length ? snaps[snaps.length - 1] : null;
+    var b = last && last.best ? last.best[kw] : null;
+    var ownClass = (S.product && S.product.key === 'wegovy') ? 'pill' : 'product';
+    var note = 'Semrush · best-ranking SOP URL';
+    if (b && b.c && b.c !== ownClass) {
+      note += ' — currently ranking via a ' + b.c + ' page, not this one';
+    }
     return seriesCard(S, kw,
       [{ label: 'Semrush', color: '#1C7ED6', points: C.inRange(semrushPoints(snaps, kw), S.state) }],
-      false, '');
+      false, note);
   }
 
   // Semrush SERP-feature codes -> labels (unknown codes shown as F<code>)
