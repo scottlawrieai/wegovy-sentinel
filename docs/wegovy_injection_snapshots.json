@@ -2849,12 +2849,12 @@
    "of": 6
   },
   "psi": {
-   "score": 66,
+   "score": 84,
    "lcp": "2.6 s",
    "cls": "0",
-   "tbt": "1,760 ms",
+   "tbt": "410 ms",
    "fcp": "2.3 s",
-   "si": "3.9 s",
+   "si": "2.3 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 574,

@@ -1086,7 +1086,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 6166,
+   "wc": 5885,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -1153,7 +1153,7 @@
     "weekly injection": 18,
     "injection site": 10,
     "missed dose": 4,
-    "storage in fridge": 5,
+    "storage in fridge": 6,
     "KwikPen": 1,
     "pre-filled pen": 1,
     "needle": 6,
@@ -1168,9 +1168,9 @@
     "pancreatitis": 3,
     "thyroid": 2,
     "BMI eligibility": 5,
-    "Wegovy / semaglutide": 30,
-    "price per month": 36,
-    "clinician review": 49
+    "Wegovy / semaglutide": 29,
+    "price per month": 35,
+    "clinician review": 45
    },
    "phrases": [
     "side effects",
@@ -1178,13 +1178,13 @@
     "september out",
     "september out stars",
     "week week",
+    "stars verified",
+    "out stars verified",
     "mounjaro tirzepatide",
     "blood sugar",
     "order next",
     "next pen",
-    "pen week",
-    "stars verified",
-    "order next pen"
+    "pen week"
    ],
    "imgs": 25,
    "videos": 0,
@@ -1212,11 +1212,11 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Laura mcmichan",
-    "TRUPRINT",
-    "Hilary Burnett"
+    "Clare",
+    "IRENA ANGELOVA-COX",
+    "Parvin"
    ],
-   "bytes": 461
+   "bytes": 458
   },
   "pages": [
    {
@@ -1347,14 +1347,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 708,
+    "bytes": 707,
     "psi": {
-     "score": 57,
-     "lcp": "7.7 s",
-     "cls": "0.014",
-     "tbt": "370 ms",
+     "score": 56,
+     "lcp": "7.8 s",
+     "cls": "0.101",
+     "tbt": "350 ms",
      "fcp": "2.6 s",
-     "si": "6.5 s",
+     "si": "6.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1193,
@@ -1434,12 +1434,12 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 33,
-     "lcp": "13.2 s",
+     "score": 13,
+     "lcp": "14.4 s",
      "cls": "0.518",
-     "tbt": "540 ms",
-     "fcp": "3.4 s",
-     "si": "3.7 s",
+     "tbt": "980 ms",
+     "fcp": "9.4 s",
+     "si": "9.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1732,
@@ -1605,14 +1605,14 @@
      "CollegeOrUniversity"
     ],
     "authors": [],
-    "bytes": 319,
+    "bytes": 322,
     "psi": {
-     "score": 65,
-     "lcp": "6.8 s",
+     "score": 70,
+     "lcp": "7.0 s",
      "cls": "0.026",
-     "tbt": "350 ms",
-     "fcp": "2.0 s",
-     "si": "4.5 s",
+     "tbt": "240 ms",
+     "fcp": "2.1 s",
+     "si": "3.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1026,
@@ -1842,7 +1842,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 6166,
+    "wc": 5885,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -1909,7 +1909,7 @@
      "weekly injection": 18,
      "injection site": 10,
      "missed dose": 4,
-     "storage in fridge": 5,
+     "storage in fridge": 6,
      "KwikPen": 1,
      "pre-filled pen": 1,
      "needle": 6,
@@ -1924,9 +1924,9 @@
      "pancreatitis": 3,
      "thyroid": 2,
      "BMI eligibility": 5,
-     "Wegovy / semaglutide": 30,
-     "price per month": 36,
-     "clinician review": 49
+     "Wegovy / semaglutide": 29,
+     "price per month": 35,
+     "clinician review": 45
     },
     "phrases": [
      "side effects",
@@ -1934,13 +1934,13 @@
      "september out",
      "september out stars",
      "week week",
+     "stars verified",
+     "out stars verified",
      "mounjaro tirzepatide",
      "blood sugar",
      "order next",
      "next pen",
-     "pen week",
-     "stars verified",
-     "order next pen"
+     "pen week"
     ],
     "imgs": 25,
     "videos": 0,
@@ -1968,11 +1968,11 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Laura mcmichan",
-     "TRUPRINT",
-     "Hilary Burnett"
+     "Clare",
+     "IRENA ANGELOVA-COX",
+     "Parvin"
     ],
-    "bytes": 461
+    "bytes": 458
    }
   ],
   "align": {
@@ -2006,7 +2006,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6166 words vs competitor median 5369"
+     "evidence": "5885 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",

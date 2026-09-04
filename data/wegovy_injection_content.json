@@ -50,7 +50,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 43,
-   "wc": 3633,
+   "wc": 3647,
    "faqs": [
     "What is Wegovy?",
     "Is it for me?",
@@ -125,7 +125,7 @@
     "weekly injection": 20,
     "injection site rotation": 5,
     "missed dose": 3,
-    "fridge / storage": 9,
+    "fridge / storage": 10,
     "FlexTouch pen": 2,
     "pre-filled pen": 2,
     "needle": 1,
@@ -149,10 +149,10 @@
     "september out stars",
     "week week",
     "common side",
-    "once weekly",
     "stars verified",
-    "common side effects",
     "out stars verified",
+    "once weekly",
+    "common side effects",
     "subscribe save",
     "reviews out"
    ],
@@ -181,12 +181,12 @@
     "DrugClass"
    ],
    "authors": [
-    "Ann Leadbeater",
     "Michael",
     "Mariola",
-    "Tlewis"
+    "Tlewis",
+    "Gay perry"
    ],
-   "bytes": 413
+   "bytes": 414
   },
   "pages": [
    {
@@ -312,14 +312,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 661,
+    "bytes": 659,
     "psi": {
-     "score": 63,
-     "lcp": "12.8 s",
-     "cls": "0.085",
-     "tbt": "30 ms",
-     "fcp": "3.0 s",
-     "si": "5.8 s",
+     "score": 54,
+     "lcp": "12.0 s",
+     "cls": "0.014",
+     "tbt": "470 ms",
+     "fcp": "2.6 s",
+     "si": "6.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1087,
@@ -436,12 +436,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 39,
-     "lcp": "15.1 s",
+     "score": 43,
+     "lcp": "15.9 s",
      "cls": "0",
-     "tbt": "750 ms",
-     "fcp": "5.7 s",
-     "si": "8.9 s",
+     "tbt": "580 ms",
+     "fcp": "5.6 s",
+     "si": "8.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4192,
@@ -544,12 +544,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 63,
-     "lcp": "8.9 s",
-     "cls": "0.004",
-     "tbt": "250 ms",
-     "fcp": "3.5 s",
-     "si": "3.6 s",
+     "score": 44,
+     "lcp": "8.6 s",
+     "cls": "0.006",
+     "tbt": "780 ms",
+     "fcp": "3.6 s",
+     "si": "6.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 714,
@@ -805,7 +805,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 332
+    "bytes": 336
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -889,7 +889,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 43,
-    "wc": 3633,
+    "wc": 3647,
     "faqs": [
      "What is Wegovy?",
      "Is it for me?",
@@ -964,7 +964,7 @@
      "weekly injection": 20,
      "injection site rotation": 5,
      "missed dose": 3,
-     "fridge / storage": 9,
+     "fridge / storage": 10,
      "FlexTouch pen": 2,
      "pre-filled pen": 2,
      "needle": 1,
@@ -988,10 +988,10 @@
      "september out stars",
      "week week",
      "common side",
-     "once weekly",
      "stars verified",
-     "common side effects",
      "out stars verified",
+     "once weekly",
+     "common side effects",
      "subscribe save",
      "reviews out"
     ],
@@ -1020,12 +1020,12 @@
      "DrugClass"
     ],
     "authors": [
-     "Ann Leadbeater",
      "Michael",
      "Mariola",
-     "Tlewis"
+     "Tlewis",
+     "Gay perry"
     ],
-    "bytes": 413
+    "bytes": 414
    }
   ],
   "align": {
@@ -1059,7 +1059,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "warn",
-     "evidence": "3633 words vs competitor median 6028"
+     "evidence": "3647 words vs competitor median 6028"
     },
     {
      "name": "FAQ coverage",
@@ -1108,7 +1108,7 @@
   },
   "opps": [
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
-   "Strengthen body depth (words) for a primary term (3633 words vs competitor median 6028)",
+   "Strengthen body depth (words) for a primary term (3647 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
    "Add missing entities competitors cover: Rybelsus, STEP trials",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
