@@ -312,14 +312,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 660,
+    "bytes": 659,
     "psi": {
-     "score": 65,
-     "lcp": "12.0 s",
-     "cls": "0.014",
-     "tbt": "160 ms",
-     "fcp": "2.6 s",
-     "si": "5.6 s",
+     "score": 54,
+     "lcp": "14.8 s",
+     "cls": "0",
+     "tbt": "240 ms",
+     "fcp": "5.4 s",
+     "si": "7.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1090,
@@ -436,12 +436,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 42,
-     "lcp": "15.9 s",
+     "score": 31,
+     "lcp": "14.0 s",
      "cls": "0",
-     "tbt": "590 ms",
-     "fcp": "5.6 s",
-     "si": "8.5 s",
+     "tbt": "1,580 ms",
+     "fcp": "5.7 s",
+     "si": "8.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4191,
@@ -544,12 +544,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 46,
-     "lcp": "9.2 s",
-     "cls": "0",
-     "tbt": "790 ms",
-     "fcp": "3.6 s",
-     "si": "5.1 s",
+     "score": 60,
+     "lcp": "8.7 s",
+     "cls": "0.006",
+     "tbt": "330 ms",
+     "fcp": "3.5 s",
+     "si": "3.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 713,
@@ -805,7 +805,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 336
+    "bytes": 332
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -1077,11 +1077,11 @@
    "term_gaps": [],
    "entity_gaps": [
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     },
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     }
    ],
@@ -1110,7 +1110,7 @@
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
    "Strengthen body depth (words) for a primary term (3943 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: Rybelsus, STEP trials",
+   "Add missing entities competitors cover: STEP trials, Rybelsus",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],
   "fetched": 7,

@@ -44771,463 +44771,3156 @@
    }
   },
   "src": {
-   "gsc": {},
+   "gsc": {
+    "wegovy side effects": {
+     "pos": 10.6,
+     "clicks": 17,
+     "impr": 13309,
+     "ctr": 0.1
+    },
+    "wegovy pill": {
+     "pos": 11.5,
+     "clicks": 14,
+     "impr": 3452,
+     "ctr": 0.4
+    },
+    "buy wegovy pills": {
+     "pos": 22.7,
+     "clicks": 8,
+     "impr": 289,
+     "ctr": 2.8
+    }
+   },
    "awr": {
-    "buy wegovy pills": 16
+    "buy wegovy pills": 13
    }
   },
   "gsci": {
    "pill_page": [
     {
-     "q": "wegovy pill uk where to buy",
-     "pos": 7.94,
-     "clicks": 98,
-     "impr": 4768,
-     "ctr": 2.1
-    },
-    {
-     "q": "wegovy pill",
-     "pos": 7.21,
-     "clicks": 33,
-     "impr": 2035,
-     "ctr": 1.6
-    },
-    {
-     "q": "buy wegovy pill",
-     "pos": 7.04,
-     "clicks": 78,
-     "impr": 1047,
-     "ctr": 7.5
-    },
-    {
-     "q": "wegovy pill cost uk",
-     "pos": 7.67,
-     "clicks": 7,
-     "impr": 672,
-     "ctr": 1.0
-    },
-    {
-     "q": "wegovy tablets uk",
-     "pos": 14.27,
+     "q": "wegovy pill price comparison",
+     "pos": 9.1,
      "clicks": 5,
-     "impr": 643,
+     "impr": 532,
+     "ctr": 0.9
+    },
+    {
+     "q": "wegovy pill uk price comparison",
+     "pos": 8.2,
+     "clicks": 6,
+     "impr": 456,
+     "ctr": 1.3
+    },
+    {
+     "q": "wegovy price uk",
+     "pos": 8.3,
+     "clicks": 3,
+     "impr": 357,
      "ctr": 0.8
     },
     {
-     "q": "wegovy pill uk price",
-     "pos": 7.17,
-     "clicks": 7,
-     "impr": 628,
-     "ctr": 1.1
+     "q": "simple online pharmacy wegovy",
+     "pos": 6.5,
+     "clicks": 3,
+     "impr": 337,
+     "ctr": 0.9
+    },
+    {
+     "q": "voy wegovy pill price",
+     "pos": 6.7,
+     "clicks": 3,
+     "impr": 305,
+     "ctr": 1.0
+    },
+    {
+     "q": "cheapest wegovy pill uk",
+     "pos": 9.3,
+     "clicks": 2,
+     "impr": 231,
+     "ctr": 0.9
     },
     {
      "q": "buy wegovy pills",
-     "pos": 6.92,
-     "clicks": 78,
-     "impr": 598,
-     "ctr": 13.0
+     "pos": 15.8,
+     "clicks": 8,
+     "impr": 219,
+     "ctr": 3.7
     },
     {
-     "q": "wegovy tablets price uk",
-     "pos": 5.62,
-     "clicks": 17,
-     "impr": 535,
-     "ctr": 3.2
+     "q": "buy wegovy pill",
+     "pos": 15.4,
+     "clicks": 4,
+     "impr": 122,
+     "ctr": 3.3
     },
     {
-     "q": "wegovy tablets uk price",
-     "pos": 5.05,
-     "clicks": 25,
-     "impr": 459,
-     "ctr": 5.4
+     "q": "wegovy simple online pharmacy",
+     "pos": 5.3,
+     "clicks": 4,
+     "impr": 120,
+     "ctr": 3.3
     },
     {
-     "q": "wegovy pill uk",
-     "pos": 18.06,
-     "clicks": 21,
-     "impr": 454,
-     "ctr": 4.6
+     "q": "simple online pharmacy wegovy pill",
+     "pos": 1.0,
+     "clicks": 31,
+     "impr": 110,
+     "ctr": 28.2
     },
     {
-     "q": "wegovy pills",
-     "pos": 11.41,
-     "clicks": 15,
-     "impr": 443,
-     "ctr": 3.4
+     "q": "how much is the wegovy pill",
+     "pos": 9.1,
+     "clicks": 2,
+     "impr": 100,
+     "ctr": 2.0
     },
     {
-     "q": "wegovy pill price uk",
-     "pos": 6.03,
-     "clicks": 6,
-     "impr": 403,
-     "ctr": 1.5
+     "q": "wegovy pill simple online pharmacy",
+     "pos": 1.0,
+     "clicks": 34,
+     "impr": 71,
+     "ctr": 47.9
     },
     {
-     "q": "wegovy pill where to buy",
-     "pos": 8.61,
-     "clicks": 14,
-     "impr": 397,
-     "ctr": 3.5
+     "q": "simple pharmacy wegovy",
+     "pos": 3.0,
+     "clicks": 2,
+     "impr": 20,
+     "ctr": 10.0
     },
     {
-     "q": "wegovy pills uk",
-     "pos": 14.01,
-     "clicks": 9,
-     "impr": 386,
-     "ctr": 2.3
+     "q": "simple online pharmacy wegovy tablets",
+     "pos": 1.0,
+     "clicks": 2,
+     "impr": 15,
+     "ctr": 13.3
     },
     {
-     "q": "wegovy tablets",
-     "pos": 18.5,
-     "clicks": 6,
-     "impr": 373,
-     "ctr": 1.6
+     "q": "simple online pharmacy wegovy pill price",
+     "pos": 1.4,
+     "clicks": 5,
+     "impr": 12,
+     "ctr": 41.7
     }
    ],
    "untracked": [
     {
-     "q": "wegovy pill cost",
-     "clicks": 849,
-     "impr": 24616,
-     "pos": 5.1,
-     "ctr": 3.4
-    },
-    {
      "q": "wegovy pill side effects",
-     "clicks": 144,
-     "impr": 8008,
-     "pos": 3.55,
-     "ctr": 1.8,
-     "exp": 7.0,
-     "lost": 416
+     "clicks": 53,
+     "impr": 11063,
+     "pos": 2.3,
+     "ctr": 0.5,
+     "exp": 10.0,
+     "lost": 1050
     },
     {
-     "q": "wegovy pill cost uk",
-     "clicks": 455,
-     "impr": 5877,
-     "pos": 3.53,
-     "ctr": 7.7
+     "q": "wegovy injection sites",
+     "clicks": 12,
+     "impr": 4499,
+     "pos": 2.4,
+     "ctr": 0.3,
+     "exp": 10.0,
+     "lost": 436
+    },
+    {
+     "q": "where to inject wegovy",
+     "clicks": 9,
+     "impr": 4358,
+     "pos": 3.0,
+     "ctr": 0.2,
+     "exp": 10.0,
+     "lost": 427
+    },
+    {
+     "q": "wegovy pill reviews",
+     "clicks": 71,
+     "impr": 4287,
+     "pos": 6.0,
+     "ctr": 1.7,
+     "exp": 3.5,
+     "lost": 77
+    },
+    {
+     "q": "eli lilly weight loss pill uk",
+     "clicks": 6,
+     "impr": 3452,
+     "pos": 7.9,
+     "ctr": 0.2,
+     "exp": 3.5,
+     "lost": 113
+    },
+    {
+     "q": "is wegovy safe",
+     "clicks": 15,
+     "impr": 3340,
+     "pos": 7.3,
+     "ctr": 0.4,
+     "exp": 3.5,
+     "lost": 103
     },
     {
      "q": "wegovy pill vs injection",
-     "clicks": 363,
-     "impr": 5697,
-     "pos": 1.49,
-     "ctr": 6.4,
-     "exp": 15.0,
-     "lost": 489
+     "clicks": 54,
+     "impr": 3072,
+     "pos": 3.2,
+     "ctr": 1.8,
+     "exp": 7.0,
+     "lost": 159
     },
     {
-     "q": "wegovy pill uk where to buy",
-     "clicks": 98,
-     "impr": 4768,
-     "pos": 7.94,
-     "ctr": 2.1
+     "q": "side effects of wegovy",
+     "clicks": 3,
+     "impr": 2615,
+     "pos": 10.3,
+     "ctr": 0.1,
+     "exp": 1.0,
+     "lost": 23
     },
     {
-     "q": "wegovy pill price",
-     "clicks": 186,
-     "impr": 4298,
-     "pos": 5.19,
-     "ctr": 4.3
+     "q": "simple online pharmacy wegovy",
+     "clicks": 86,
+     "impr": 2360,
+     "pos": 1.0,
+     "ctr": 3.6,
+     "exp": 28.0,
+     "lost": 575
     },
     {
-     "q": "how much is the wegovy pill",
-     "clicks": 158,
-     "impr": 4174,
-     "pos": 3.91,
-     "ctr": 3.8
+     "q": "can wegovy make you tired",
+     "clicks": 32,
+     "impr": 2104,
+     "pos": 1.5,
+     "ctr": 1.5
     },
     {
-     "q": "wegovy pill price uk",
-     "clicks": 219,
-     "impr": 3938,
-     "pos": 4.4,
-     "ctr": 5.6
+     "q": "foundation vs wegovy pill",
+     "clicks": 60,
+     "impr": 2072,
+     "pos": 1.3,
+     "ctr": 2.9
     },
     {
-     "q": "wegovy pill uk price",
-     "clicks": 219,
-     "impr": 3351,
-     "pos": 4.12,
-     "ctr": 6.5
+     "q": "side effects of wegovy pill",
+     "clicks": 15,
+     "impr": 2069,
+     "pos": 5.0,
+     "ctr": 0.7
     },
     {
-     "q": "how much will the wegovy pill cost",
-     "clicks": 195,
-     "impr": 2534,
-     "pos": 3.01,
-     "ctr": 7.7
+     "q": "does wegovy make you tired",
+     "clicks": 61,
+     "impr": 1923,
+     "pos": 1.5,
+     "ctr": 3.2
     },
     {
-     "q": "wegovy discount code",
-     "clicks": 27,
-     "impr": 666,
-     "pos": 2.83,
-     "ctr": 4.1,
-     "exp": 10.0,
-     "lost": 39
+     "q": "best place to inject wegovy",
+     "clicks": 2,
+     "impr": 1909,
+     "pos": 6.4,
+     "ctr": 0.1
     },
     {
-     "q": "wegovy tablets uk",
-     "clicks": 5,
-     "impr": 643,
-     "pos": 14.27,
-     "ctr": 0.8
-    },
-    {
-     "q": "wegovy tablets uk price",
-     "clicks": 25,
-     "impr": 459,
-     "pos": 5.05,
-     "ctr": 5.4
-    },
-    {
-     "q": "wegovy pills uk",
-     "clicks": 9,
-     "impr": 386,
-     "pos": 14.01,
-     "ctr": 2.3
+     "q": "wegovy tablets side effects",
+     "clicks": 17,
+     "impr": 1888,
+     "pos": 5.6,
+     "ctr": 0.9
     }
    ],
    "ctr_opps": [
     {
-     "q": "wegovy pill",
-     "clicks": 190,
-     "impr": 16169,
-     "pos": 5.52,
-     "ctr": 1.2,
-     "exp": 3.5,
-     "lost": 371
-    },
-    {
      "q": "wegovy side effects",
-     "clicks": 42,
-     "impr": 11701,
-     "pos": 7.11,
-     "ctr": 0.4,
-     "exp": 3.5,
-     "lost": 362
+     "clicks": 15,
+     "impr": 12314,
+     "pos": 10.1,
+     "ctr": 0.1,
+     "exp": 1.0,
+     "lost": 110
     },
     {
      "q": "wegovy pill side effects",
-     "clicks": 144,
-     "impr": 8008,
-     "pos": 3.55,
-     "ctr": 1.8,
-     "exp": 7.0,
-     "lost": 416
+     "clicks": 53,
+     "impr": 11063,
+     "pos": 2.3,
+     "ctr": 0.5,
+     "exp": 10.0,
+     "lost": 1050
+    },
+    {
+     "q": "wegovy injection sites",
+     "clicks": 12,
+     "impr": 4499,
+     "pos": 2.4,
+     "ctr": 0.3,
+     "exp": 10.0,
+     "lost": 436
+    },
+    {
+     "q": "where to inject wegovy",
+     "clicks": 9,
+     "impr": 4358,
+     "pos": 3.0,
+     "ctr": 0.2,
+     "exp": 10.0,
+     "lost": 427
+    },
+    {
+     "q": "wegovy pill reviews",
+     "clicks": 71,
+     "impr": 4287,
+     "pos": 6.0,
+     "ctr": 1.7,
+     "exp": 3.5,
+     "lost": 77
+    },
+    {
+     "q": "eli lilly weight loss pill uk",
+     "clicks": 6,
+     "impr": 3452,
+     "pos": 7.9,
+     "ctr": 0.2,
+     "exp": 3.5,
+     "lost": 113
+    },
+    {
+     "q": "is wegovy safe",
+     "clicks": 15,
+     "impr": 3340,
+     "pos": 7.3,
+     "ctr": 0.4,
+     "exp": 3.5,
+     "lost": 103
     },
     {
      "q": "wegovy pill vs injection",
-     "clicks": 363,
-     "impr": 5697,
-     "pos": 1.49,
-     "ctr": 6.4,
-     "exp": 15.0,
-     "lost": 489
+     "clicks": 54,
+     "impr": 3072,
+     "pos": 3.2,
+     "ctr": 1.8,
+     "exp": 7.0,
+     "lost": 159
     },
     {
-     "q": "wegovy price",
-     "clicks": 19,
-     "impr": 3821,
-     "pos": 9.19,
-     "ctr": 0.5,
-     "exp": 2.5,
-     "lost": 76
+     "q": "side effects of wegovy",
+     "clicks": 3,
+     "impr": 2615,
+     "pos": 10.3,
+     "ctr": 0.1,
+     "exp": 1.0,
+     "lost": 23
     },
     {
-     "q": "wegovy discount code",
-     "clicks": 27,
-     "impr": 666,
-     "pos": 2.83,
-     "ctr": 4.1,
-     "exp": 10.0,
-     "lost": 39
+     "q": "simple online pharmacy wegovy",
+     "clicks": 86,
+     "impr": 2360,
+     "pos": 1.0,
+     "ctr": 3.6,
+     "exp": 28.0,
+     "lost": 575
     }
    ],
    "routing": [
     {
-     "q": "wegovy pill cost",
-     "impr": 24616,
+     "q": "simple online pharmacy wegovy",
+     "impr": 2360,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/"
+    },
+    {
+     "q": "wegovy vs mounjaro cost",
+     "impr": 868,
+     "multi": false,
+     "top": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-vs-mounjaro/"
+    },
+    {
+     "q": "buy wegovy online",
+     "impr": 767,
+     "multi": false,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/"
+    },
+    {
+     "q": "simple online pharmacy wegovy prices",
+     "impr": 627,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/"
+    },
+    {
+     "q": "wegovy online",
+     "impr": 550,
+     "multi": false,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/"
+    },
+    {
+     "q": "wegovy pill vs injection cost",
+     "impr": 518,
      "multi": true,
      "top": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk/"
     },
     {
-     "q": "buy wegovy pill",
-     "impr": 1327,
+     "q": "cheapest wegovy pill",
+     "impr": 455,
+     "multi": true,
+     "top": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk/"
+    },
+    {
+     "q": "cheapest wegovy pill uk",
+     "impr": 388,
      "multi": true,
      "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
     },
     {
-     "q": "buy wegovy pills",
-     "impr": 785,
+     "q": "wegovy where to buy",
+     "impr": 386,
+     "multi": false,
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/"
+    },
+    {
+     "q": "wegovy simple online pharmacy",
+     "impr": 378,
      "multi": true,
-     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/"
+     "top": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/"
     }
    ],
    "striking": [
     {
-     "q": "wegovy tablets uk",
-     "clicks": 5,
-     "impr": 643,
-     "pos": 14.27,
+     "q": "wegovy pill",
+     "clicks": 6,
+     "impr": 1101,
+     "pos": 12.6,
+     "ctr": 0.5
+    },
+    {
+     "q": "buy wegovy online",
+     "clicks": 3,
+     "impr": 767,
+     "pos": 13.7,
+     "ctr": 0.4
+    },
+    {
+     "q": "wegovy online",
+     "clicks": 3,
+     "impr": 550,
+     "pos": 14.7,
+     "ctr": 0.5
+    },
+    {
+     "q": "wegovy where to buy",
+     "clicks": 3,
+     "impr": 386,
+     "pos": 14.0,
      "ctr": 0.8
     },
     {
-     "q": "wegovy pills",
-     "clicks": 15,
-     "impr": 443,
-     "pos": 11.41,
-     "ctr": 3.4
+     "q": "coming off wegovy",
+     "clicks": 4,
+     "impr": 259,
+     "pos": 11.6,
+     "ctr": 1.5
     },
     {
-     "q": "wegovy pills uk",
-     "clicks": 9,
-     "impr": 386,
-     "pos": 14.01,
-     "ctr": 2.3
+     "q": "buy wegovy pills",
+     "clicks": 8,
+     "impr": 219,
+     "pos": 15.8,
+     "ctr": 3.7
     },
     {
-     "q": "wegovy tablets",
-     "clicks": 6,
-     "impr": 373,
-     "pos": 18.5,
-     "ctr": 1.6
+     "q": "buy wegovy pill",
+     "clicks": 4,
+     "impr": 122,
+     "pos": 15.4,
+     "ctr": 3.3
     }
    ],
    "splits": [
     {
-     "q": "wegovy pill cost",
-     "impr": 24616,
+     "q": "wegovy pill side effects",
+     "impr": 11063,
      "n": 2,
      "pill_pct": 0,
      "pages": [
       {
-       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
-       "impr": 18773,
-       "pos": 5.76
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects",
+       "impr": 10581,
+       "pos": 6.4
       },
       {
-       "page": "/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
-       "impr": 5843,
-       "pos": 5.1
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-vs-injection",
+       "impr": 482,
+       "pos": 2.3
       }
      ]
     },
     {
-     "q": "wegovy pill",
-     "impr": 16169,
-     "n": 5,
-     "pill_pct": 13,
-     "pages": [
-      {
-       "page": "/health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill",
-       "impr": 7890,
-       "pos": 9.51
-      },
-      {
-       "page": "/health-advice/weight-loss/wegovy-pill/switching-wegovy-injection-to-pill",
-       "impr": 4433,
-       "pos": 11.65
-      },
-      {
-       "page": "/weight-loss/wegovy-pill",
-       "impr": 2035,
-       "pos": 7.21
-      },
-      {
-       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
-       "impr": 1165,
-       "pos": 13.68
-      },
-      {
-       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
-       "impr": 646,
-       "pos": 5.52
-      }
-     ]
-    },
-    {
-     "q": "wegovy pill uk",
-     "impr": 2825,
-     "n": 4,
-     "pill_pct": 16,
-     "pages": [
-      {
-       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk",
-       "impr": 1302,
-       "pos": 4.04
-      },
-      {
-       "page": "/health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill",
-       "impr": 740,
-       "pos": 8.1
-      },
-      {
-       "page": "/weight-loss/wegovy-pill",
-       "impr": 454,
-       "pos": 18.06
-      },
-      {
-       "page": "/health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
-       "impr": 329,
-       "pos": 12.57
-      }
-     ]
-    },
-    {
-     "q": "buy wegovy pill",
-     "impr": 1327,
+     "q": "wegovy pill reviews",
+     "impr": 4287,
      "n": 2,
-     "pill_pct": 79,
+     "pill_pct": 0,
      "pages": [
       {
-       "page": "/weight-loss/wegovy-pill",
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects",
+       "impr": 3982,
+       "pos": 6.0
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-results",
+       "impr": 305,
+       "pos": 13.1
+      }
+     ]
+    },
+    {
+     "q": "eli lilly weight loss pill uk",
+     "impr": 3452,
+     "n": 2,
+     "pill_pct": 0,
+     "pages": [
+      {
+       "page": "/online-doctor/weight-loss/orforglipron",
+       "impr": 3365,
+       "pos": 7.9
+      },
+      {
+       "page": "/online-doctor/weight-loss-pills/foundayo",
+       "impr": 87,
+       "pos": 8.6
+      }
+     ]
+    },
+    {
+     "q": "simple online pharmacy wegovy",
+     "impr": 2360,
+     "n": 6,
+     "pill_pct": 14,
+     "pages": [
+      {
+       "page": "/weight-loss/wegovy",
+       "impr": 412,
+       "pos": 1.1
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy/wegovy-dosage-maintenance",
+       "impr": 411,
+       "pos": 1.0
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy/mounjaro-wegovy-cost-stock-uk",
+       "impr": 410,
+       "pos": 1.0
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy-nhs",
+       "impr": 401,
+       "pos": 3.6
+      },
+      {
+       "page": "/price-comparison-table/?cat_id=3489",
+       "impr": 389,
+       "pos": 4.0
+      }
+     ]
+    },
+    {
+     "q": "can wegovy make you tired",
+     "impr": 2104,
+     "n": 2,
+     "pill_pct": 0,
+     "pages": [
+      {
+       "page": "/health-advice/weight-loss/wegovy/does-wegovy-make-you-tired",
+       "impr": 1057,
+       "pos": 1.5
+      },
+      {
+       "page": "/health-advice/weight-loss/wegovy/does-wegovy-make-you-tired/#h-is-feeling-tired-on-wegovy-normal",
        "impr": 1047,
-       "pos": 7.04
-      },
-      {
-       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
-       "impr": 280,
-       "pos": 9.9
+       "pos": 2.6
       }
      ]
     },
     {
-     "q": "buy wegovy pills",
-     "impr": 785,
+     "q": "foundation vs wegovy pill",
+     "impr": 2072,
      "n": 2,
-     "pill_pct": 76,
+     "pill_pct": 0,
      "pages": [
       {
-       "page": "/weight-loss/wegovy-pill",
-       "impr": 598,
-       "pos": 6.92
+       "page": "/health-advice/weight-loss/wegovy-pill/wegovy-pill-vs-foundayo",
+       "impr": 1063,
+       "pos": 1.3
       },
       {
-       "page": "/online-doctor/weight-loss-pills/wegovy-pills",
-       "impr": 187,
-       "pos": 9.47
+       "page": "/health-advice/weight-loss/foundayo/foundayo-vs-wegovy-pill",
+       "impr": 1009,
+       "pos": 6.9
       }
      ]
     }
    ],
    "actions": [
-    "Consolidate \"wegovy pill cost\" -- 24,616 impressions split across 2 URLs (pill page gets 0%). Point internal links and intent at one URL: /health-advice/weight-loss/wegovy-pill/wegovy-pill-cost-uk, /health-advice/weight-loss/wegovy-pill/oral-wegovy-price-comparison-uk",
-    "Consolidate \"wegovy pill\" -- 16,169 impressions split across 5 URLs (pill page gets 13%). Point internal links and intent at one URL: /health-advice/weight-loss/wegovy-pill/switching-mounjaro-to-wegovy-pill, /health-advice/weight-loss/wegovy-pill/switching-wegovy-injection-to-pill, /weight-loss/wegovy-pill",
-    "Rewrite title/meta for \"wegovy pill\" -- position 5.52 but CTR 1.2% vs ~3.5% expected: ~371 clicks/window being left on the table",
-    "Rewrite title/meta for \"wegovy side effects\" -- position 7.11 but CTR 0.4% vs ~3.5% expected: ~362 clicks/window being left on the table",
-    "Push \"wegovy tablets uk\" onto page one -- position 14.27 with 643 impressions waiting",
-    "Push \"wegovy pills\" onto page one -- position 11.41 with 443 impressions waiting"
+    "Consolidate \"wegovy pill side effects\" -- 11,063 impressions split across 2 URLs (pill page gets 0%). Point internal links and intent at one URL: /health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects, /health-advice/weight-loss/wegovy-pill/wegovy-pill-vs-injection",
+    "Consolidate \"wegovy pill reviews\" -- 4,287 impressions split across 2 URLs (pill page gets 0%). Point internal links and intent at one URL: /health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects, /health-advice/weight-loss/wegovy-pill/wegovy-pill-results",
+    "Rewrite title/meta for \"wegovy side effects\" -- position 10.1 but CTR 0.1% vs ~1.0% expected: ~110 clicks/window being left on the table",
+    "Rewrite title/meta for \"wegovy pill side effects\" -- position 2.3 but CTR 0.5% vs ~10.0% expected: ~1,050 clicks/window being left on the table",
+    "Push \"wegovy pill\" onto page one -- position 12.6 with 1,101 impressions waiting",
+    "Push \"buy wegovy online\" onto page one -- position 13.7 with 767 impressions waiting"
    ],
-   "rows": 33,
-   "queries": 23,
-   "as_of": "2026-07-08",
-   "seed": "pulled live via GSC API (Ryze); carried forward daily until GSC secrets are set"
+   "rows": 897,
+   "queries": 845
   },
-  "gscts": {},
-  "gsckw": {},
+  "gscts": {
+   "as_of": "2026-09-01",
+   "days": 90,
+   "site": [
+    {
+     "d": "2026-06-03",
+     "clicks": 5179,
+     "impr": 338614,
+     "ctr": 1.53,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-04",
+     "clicks": 5235,
+     "impr": 332632,
+     "ctr": 1.57,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-05",
+     "clicks": 4366,
+     "impr": 297866,
+     "ctr": 1.47,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-06-06",
+     "clicks": 4079,
+     "impr": 285372,
+     "ctr": 1.43,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-06-07",
+     "clicks": 4581,
+     "impr": 295968,
+     "ctr": 1.55,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-08",
+     "clicks": 5298,
+     "impr": 343683,
+     "ctr": 1.54,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-09",
+     "clicks": 4957,
+     "impr": 322643,
+     "ctr": 1.54,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-06-10",
+     "clicks": 4779,
+     "impr": 328895,
+     "ctr": 1.45,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-11",
+     "clicks": 6252,
+     "impr": 367196,
+     "ctr": 1.7,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-06-12",
+     "clicks": 6275,
+     "impr": 352266,
+     "ctr": 1.78,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-06-13",
+     "clicks": 4784,
+     "impr": 306952,
+     "ctr": 1.56,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-06-14",
+     "clicks": 5427,
+     "impr": 317797,
+     "ctr": 1.71,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-06-15",
+     "clicks": 6290,
+     "impr": 350526,
+     "ctr": 1.79,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-06-16",
+     "clicks": 6281,
+     "impr": 345351,
+     "ctr": 1.82,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-06-17",
+     "clicks": 5542,
+     "impr": 336738,
+     "ctr": 1.65,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-06-18",
+     "clicks": 5719,
+     "impr": 351781,
+     "ctr": 1.63,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-06-19",
+     "clicks": 5364,
+     "impr": 350960,
+     "ctr": 1.53,
+     "pos": 11.8
+    },
+    {
+     "d": "2026-06-20",
+     "clicks": 4731,
+     "impr": 315817,
+     "ctr": 1.5,
+     "pos": 11.4
+    },
+    {
+     "d": "2026-06-21",
+     "clicks": 4984,
+     "impr": 313256,
+     "ctr": 1.59,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-06-22",
+     "clicks": 5693,
+     "impr": 347236,
+     "ctr": 1.64,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-23",
+     "clicks": 5310,
+     "impr": 310483,
+     "ctr": 1.71,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-24",
+     "clicks": 5141,
+     "impr": 300566,
+     "ctr": 1.71,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-06-25",
+     "clicks": 4970,
+     "impr": 304026,
+     "ctr": 1.63,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-06-26",
+     "clicks": 4593,
+     "impr": 308500,
+     "ctr": 1.49,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-06-27",
+     "clicks": 4424,
+     "impr": 283052,
+     "ctr": 1.56,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-06-28",
+     "clicks": 4993,
+     "impr": 298285,
+     "ctr": 1.67,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-29",
+     "clicks": 5963,
+     "impr": 350209,
+     "ctr": 1.7,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-06-30",
+     "clicks": 5506,
+     "impr": 369998,
+     "ctr": 1.49,
+     "pos": 11.8
+    },
+    {
+     "d": "2026-07-01",
+     "clicks": 5058,
+     "impr": 338571,
+     "ctr": 1.49,
+     "pos": 11.1
+    },
+    {
+     "d": "2026-07-02",
+     "clicks": 5019,
+     "impr": 332437,
+     "ctr": 1.51,
+     "pos": 11.4
+    },
+    {
+     "d": "2026-07-03",
+     "clicks": 4682,
+     "impr": 299302,
+     "ctr": 1.56,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-07-04",
+     "clicks": 4502,
+     "impr": 270330,
+     "ctr": 1.67,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-05",
+     "clicks": 5574,
+     "impr": 315854,
+     "ctr": 1.76,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-07-06",
+     "clicks": 8606,
+     "impr": 435929,
+     "ctr": 1.97,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-07",
+     "clicks": 6463,
+     "impr": 385295,
+     "ctr": 1.68,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-08",
+     "clicks": 5607,
+     "impr": 356671,
+     "ctr": 1.57,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-07-09",
+     "clicks": 5241,
+     "impr": 308644,
+     "ctr": 1.7,
+     "pos": 9.0
+    },
+    {
+     "d": "2026-07-10",
+     "clicks": 4586,
+     "impr": 301308,
+     "ctr": 1.52,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-11",
+     "clicks": 4062,
+     "impr": 278396,
+     "ctr": 1.46,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-07-12",
+     "clicks": 4460,
+     "impr": 280651,
+     "ctr": 1.59,
+     "pos": 9.5
+    },
+    {
+     "d": "2026-07-13",
+     "clicks": 5324,
+     "impr": 316833,
+     "ctr": 1.68,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-14",
+     "clicks": 5282,
+     "impr": 322830,
+     "ctr": 1.64,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-07-15",
+     "clicks": 4599,
+     "impr": 283767,
+     "ctr": 1.62,
+     "pos": 8.8
+    },
+    {
+     "d": "2026-07-16",
+     "clicks": 4732,
+     "impr": 291682,
+     "ctr": 1.62,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-17",
+     "clicks": 4351,
+     "impr": 283293,
+     "ctr": 1.54,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-07-18",
+     "clicks": 3798,
+     "impr": 267733,
+     "ctr": 1.42,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-19",
+     "clicks": 4189,
+     "impr": 257020,
+     "ctr": 1.63,
+     "pos": 8.9
+    },
+    {
+     "d": "2026-07-20",
+     "clicks": 4903,
+     "impr": 314713,
+     "ctr": 1.56,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-21",
+     "clicks": 4807,
+     "impr": 313348,
+     "ctr": 1.53,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-07-22",
+     "clicks": 4837,
+     "impr": 304232,
+     "ctr": 1.59,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-07-23",
+     "clicks": 4373,
+     "impr": 300788,
+     "ctr": 1.45,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-07-24",
+     "clicks": 4131,
+     "impr": 275891,
+     "ctr": 1.5,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-25",
+     "clicks": 3599,
+     "impr": 245459,
+     "ctr": 1.47,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-07-26",
+     "clicks": 4345,
+     "impr": 263739,
+     "ctr": 1.65,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-07-27",
+     "clicks": 4962,
+     "impr": 297986,
+     "ctr": 1.67,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-07-28",
+     "clicks": 4721,
+     "impr": 311125,
+     "ctr": 1.52,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-07-29",
+     "clicks": 4428,
+     "impr": 287490,
+     "ctr": 1.54,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 4297,
+     "impr": 292832,
+     "ctr": 1.47,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 4123,
+     "impr": 276840,
+     "ctr": 1.49,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 3627,
+     "impr": 268834,
+     "ctr": 1.35,
+     "pos": 11.5
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 4322,
+     "impr": 281508,
+     "ctr": 1.54,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 4944,
+     "impr": 285637,
+     "ctr": 1.73,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 4900,
+     "impr": 324625,
+     "ctr": 1.51,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 4760,
+     "impr": 294704,
+     "ctr": 1.62,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 4391,
+     "impr": 293512,
+     "ctr": 1.5,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 3848,
+     "impr": 268279,
+     "ctr": 1.43,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 3414,
+     "impr": 260901,
+     "ctr": 1.31,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 4027,
+     "impr": 292763,
+     "ctr": 1.38,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 10056,
+     "impr": 359366,
+     "ctr": 2.8,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 9110,
+     "impr": 343552,
+     "ctr": 2.65,
+     "pos": 9.0
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 5177,
+     "impr": 339238,
+     "ctr": 1.53,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 4987,
+     "impr": 324177,
+     "ctr": 1.54,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 4607,
+     "impr": 310523,
+     "ctr": 1.48,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 3806,
+     "impr": 250351,
+     "ctr": 1.52,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 4098,
+     "impr": 291940,
+     "ctr": 1.4,
+     "pos": 11.3
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 4737,
+     "impr": 316850,
+     "ctr": 1.5,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 4741,
+     "impr": 304226,
+     "ctr": 1.56,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 4577,
+     "impr": 289302,
+     "ctr": 1.58,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 4066,
+     "impr": 271111,
+     "ctr": 1.5,
+     "pos": 10.5
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 3706,
+     "impr": 248988,
+     "ctr": 1.49,
+     "pos": 10.5
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 3205,
+     "impr": 240388,
+     "ctr": 1.33,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 3923,
+     "impr": 248787,
+     "ctr": 1.58,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 5679,
+     "impr": 321151,
+     "ctr": 1.77,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 4785,
+     "impr": 304640,
+     "ctr": 1.57,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 4559,
+     "impr": 291306,
+     "ctr": 1.57,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 5219,
+     "impr": 294194,
+     "ctr": 1.77,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 4079,
+     "impr": 266119,
+     "ctr": 1.53,
+     "pos": 11.3
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 3549,
+     "impr": 236201,
+     "ctr": 1.5,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 3710,
+     "impr": 239147,
+     "ctr": 1.55,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 4442,
+     "impr": 271594,
+     "ctr": 1.64,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 4615,
+     "impr": 272777,
+     "ctr": 1.69,
+     "pos": 9.7
+    }
+   ],
+   "page": [
+    {
+     "d": "2026-06-03",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
+    },
+    {
+     "d": "2026-06-04",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
+    },
+    {
+     "d": "2026-06-05",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
+    },
+    {
+     "d": "2026-06-06",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
+    },
+    {
+     "d": "2026-06-07",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
+    },
+    {
+     "d": "2026-06-08",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
+    },
+    {
+     "d": "2026-06-09",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
+    },
+    {
+     "d": "2026-06-10",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
+    },
+    {
+     "d": "2026-06-11",
+     "clicks": 6,
+     "impr": 34,
+     "ctr": 17.65,
+     "pos": 3.3
+    },
+    {
+     "d": "2026-06-12",
+     "clicks": 141,
+     "impr": 4365,
+     "ctr": 3.23,
+     "pos": 9.5
+    },
+    {
+     "d": "2026-06-13",
+     "clicks": 184,
+     "impr": 4806,
+     "ctr": 3.83,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-14",
+     "clicks": 204,
+     "impr": 4524,
+     "ctr": 4.51,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-06-15",
+     "clicks": 242,
+     "impr": 4187,
+     "ctr": 5.78,
+     "pos": 8.9
+    },
+    {
+     "d": "2026-06-16",
+     "clicks": 145,
+     "impr": 3177,
+     "ctr": 4.56,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-06-17",
+     "clicks": 52,
+     "impr": 1695,
+     "ctr": 3.07,
+     "pos": 16.6
+    },
+    {
+     "d": "2026-06-18",
+     "clicks": 73,
+     "impr": 1511,
+     "ctr": 4.83,
+     "pos": 12.5
+    },
+    {
+     "d": "2026-06-19",
+     "clicks": 54,
+     "impr": 1498,
+     "ctr": 3.6,
+     "pos": 13.4
+    },
+    {
+     "d": "2026-06-20",
+     "clicks": 34,
+     "impr": 860,
+     "ctr": 3.95,
+     "pos": 16.9
+    },
+    {
+     "d": "2026-06-21",
+     "clicks": 35,
+     "impr": 1046,
+     "ctr": 3.35,
+     "pos": 16.0
+    },
+    {
+     "d": "2026-06-22",
+     "clicks": 58,
+     "impr": 1565,
+     "ctr": 3.71,
+     "pos": 16.2
+    },
+    {
+     "d": "2026-06-23",
+     "clicks": 49,
+     "impr": 1312,
+     "ctr": 3.73,
+     "pos": 13.4
+    },
+    {
+     "d": "2026-06-24",
+     "clicks": 93,
+     "impr": 1780,
+     "ctr": 5.22,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-06-25",
+     "clicks": 78,
+     "impr": 2139,
+     "ctr": 3.65,
+     "pos": 13.4
+    },
+    {
+     "d": "2026-06-26",
+     "clicks": 68,
+     "impr": 1602,
+     "ctr": 4.24,
+     "pos": 16.9
+    },
+    {
+     "d": "2026-06-27",
+     "clicks": 73,
+     "impr": 1540,
+     "ctr": 4.74,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-06-28",
+     "clicks": 58,
+     "impr": 1621,
+     "ctr": 3.58,
+     "pos": 14.1
+    },
+    {
+     "d": "2026-06-29",
+     "clicks": 46,
+     "impr": 1619,
+     "ctr": 2.84,
+     "pos": 13.4
+    },
+    {
+     "d": "2026-06-30",
+     "clicks": 47,
+     "impr": 1769,
+     "ctr": 2.66,
+     "pos": 20.3
+    },
+    {
+     "d": "2026-07-01",
+     "clicks": 66,
+     "impr": 1887,
+     "ctr": 3.5,
+     "pos": 14.0
+    },
+    {
+     "d": "2026-07-02",
+     "clicks": 61,
+     "impr": 2123,
+     "ctr": 2.87,
+     "pos": 21.1
+    },
+    {
+     "d": "2026-07-03",
+     "clicks": 62,
+     "impr": 2684,
+     "ctr": 2.31,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-07-04",
+     "clicks": 77,
+     "impr": 2391,
+     "ctr": 3.22,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-07-05",
+     "clicks": 85,
+     "impr": 4547,
+     "ctr": 1.87,
+     "pos": 8.2
+    },
+    {
+     "d": "2026-07-06",
+     "clicks": 293,
+     "impr": 12656,
+     "ctr": 2.32,
+     "pos": 6.5
+    },
+    {
+     "d": "2026-07-07",
+     "clicks": 72,
+     "impr": 3861,
+     "ctr": 1.86,
+     "pos": 12.4
+    },
+    {
+     "d": "2026-07-08",
+     "clicks": 50,
+     "impr": 2353,
+     "ctr": 2.12,
+     "pos": 15.7
+    },
+    {
+     "d": "2026-07-09",
+     "clicks": 39,
+     "impr": 1719,
+     "ctr": 2.27,
+     "pos": 16.0
+    },
+    {
+     "d": "2026-07-10",
+     "clicks": 37,
+     "impr": 1787,
+     "ctr": 2.07,
+     "pos": 19.9
+    },
+    {
+     "d": "2026-07-11",
+     "clicks": 20,
+     "impr": 1582,
+     "ctr": 1.26,
+     "pos": 20.2
+    },
+    {
+     "d": "2026-07-12",
+     "clicks": 30,
+     "impr": 1596,
+     "ctr": 1.88,
+     "pos": 19.8
+    },
+    {
+     "d": "2026-07-13",
+     "clicks": 33,
+     "impr": 1703,
+     "ctr": 1.94,
+     "pos": 19.2
+    },
+    {
+     "d": "2026-07-14",
+     "clicks": 37,
+     "impr": 1983,
+     "ctr": 1.87,
+     "pos": 14.1
+    },
+    {
+     "d": "2026-07-15",
+     "clicks": 32,
+     "impr": 1738,
+     "ctr": 1.84,
+     "pos": 14.9
+    },
+    {
+     "d": "2026-07-16",
+     "clicks": 33,
+     "impr": 1610,
+     "ctr": 2.05,
+     "pos": 13.6
+    },
+    {
+     "d": "2026-07-17",
+     "clicks": 24,
+     "impr": 1310,
+     "ctr": 1.83,
+     "pos": 17.7
+    },
+    {
+     "d": "2026-07-18",
+     "clicks": 23,
+     "impr": 1143,
+     "ctr": 2.01,
+     "pos": 16.3
+    },
+    {
+     "d": "2026-07-19",
+     "clicks": 13,
+     "impr": 979,
+     "ctr": 1.33,
+     "pos": 15.6
+    },
+    {
+     "d": "2026-07-20",
+     "clicks": 25,
+     "impr": 1203,
+     "ctr": 2.08,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-07-21",
+     "clicks": 32,
+     "impr": 2215,
+     "ctr": 1.44,
+     "pos": 11.9
+    },
+    {
+     "d": "2026-07-22",
+     "clicks": 40,
+     "impr": 2968,
+     "ctr": 1.35,
+     "pos": 11.7
+    },
+    {
+     "d": "2026-07-23",
+     "clicks": 48,
+     "impr": 5622,
+     "ctr": 0.85,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-07-24",
+     "clicks": 47,
+     "impr": 5138,
+     "ctr": 0.91,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-25",
+     "clicks": 48,
+     "impr": 4489,
+     "ctr": 1.07,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-07-26",
+     "clicks": 48,
+     "impr": 5222,
+     "ctr": 0.92,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-07-27",
+     "clicks": 54,
+     "impr": 5374,
+     "ctr": 1.0,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-07-28",
+     "clicks": 48,
+     "impr": 5551,
+     "ctr": 0.86,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-07-29",
+     "clicks": 54,
+     "impr": 5307,
+     "ctr": 1.02,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 58,
+     "impr": 6238,
+     "ctr": 0.93,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 62,
+     "impr": 5470,
+     "ctr": 1.13,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 39,
+     "impr": 5070,
+     "ctr": 0.77,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 42,
+     "impr": 5735,
+     "ctr": 0.73,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 51,
+     "impr": 5209,
+     "ctr": 0.98,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 38,
+     "impr": 3151,
+     "ctr": 1.21,
+     "pos": 12.6
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 17,
+     "impr": 2110,
+     "ctr": 0.81,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 21,
+     "impr": 2081,
+     "ctr": 1.01,
+     "pos": 17.7
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 17,
+     "impr": 1451,
+     "ctr": 1.17,
+     "pos": 16.8
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 11,
+     "impr": 1694,
+     "ctr": 0.65,
+     "pos": 16.1
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 17,
+     "impr": 2466,
+     "ctr": 0.69,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 21,
+     "impr": 2288,
+     "ctr": 0.92,
+     "pos": 14.9
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 22,
+     "impr": 2950,
+     "ctr": 0.75,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 15,
+     "impr": 2694,
+     "ctr": 0.56,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 18,
+     "impr": 3140,
+     "ctr": 0.57,
+     "pos": 18.2
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 18,
+     "impr": 2290,
+     "ctr": 0.79,
+     "pos": 14.2
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 12,
+     "impr": 2135,
+     "ctr": 0.56,
+     "pos": 15.6
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 17,
+     "impr": 2599,
+     "ctr": 0.65,
+     "pos": 15.6
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 26,
+     "impr": 2755,
+     "ctr": 0.94,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 14,
+     "impr": 2269,
+     "ctr": 0.62,
+     "pos": 16.0
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 17,
+     "impr": 2246,
+     "ctr": 0.76,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 17,
+     "impr": 2148,
+     "ctr": 0.79,
+     "pos": 17.8
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 14,
+     "impr": 1417,
+     "ctr": 0.99,
+     "pos": 18.8
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 12,
+     "impr": 1395,
+     "ctr": 0.86,
+     "pos": 21.6
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 18,
+     "impr": 1394,
+     "ctr": 1.29,
+     "pos": 18.2
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 12,
+     "impr": 1855,
+     "ctr": 0.65,
+     "pos": 18.9
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 21,
+     "impr": 1953,
+     "ctr": 1.08,
+     "pos": 17.8
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 12,
+     "impr": 2249,
+     "ctr": 0.53,
+     "pos": 16.7
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 17,
+     "impr": 1834,
+     "ctr": 0.93,
+     "pos": 20.3
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 6,
+     "impr": 1699,
+     "ctr": 0.35,
+     "pos": 22.5
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 19,
+     "impr": 1788,
+     "ctr": 1.06,
+     "pos": 17.3
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 11,
+     "impr": 1793,
+     "ctr": 0.61,
+     "pos": 19.1
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 24,
+     "impr": 2145,
+     "ctr": 1.12,
+     "pos": 17.6
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 14,
+     "impr": 2155,
+     "ctr": 0.65,
+     "pos": 14.5
+    }
+   ]
+  },
+  "gsckw": {
+   "wegovy pill": [
+    {
+     "d": "2026-06-04",
+     "pos": 10.5,
+     "clicks": 2,
+     "impr": 101
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 12.1,
+     "clicks": 3,
+     "impr": 108
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 11.0,
+     "clicks": 3,
+     "impr": 92
+    },
+    {
+     "d": "2026-06-10",
+     "pos": 24.3,
+     "clicks": 4,
+     "impr": 92
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 11.3,
+     "clicks": 5,
+     "impr": 575
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 10.6,
+     "clicks": 38,
+     "impr": 4237
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 4.2,
+     "clicks": 12,
+     "impr": 957
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 5.5,
+     "clicks": 9,
+     "impr": 686
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 9.9,
+     "clicks": 8,
+     "impr": 427
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 9.8,
+     "clicks": 4,
+     "impr": 199
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 10.6,
+     "clicks": 13,
+     "impr": 1191
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 9.1,
+     "clicks": 53,
+     "impr": 6329
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 9.8,
+     "clicks": 14,
+     "impr": 778
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 11.3,
+     "clicks": 4,
+     "impr": 195
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 7.5,
+     "clicks": 7,
+     "impr": 150
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 8.8,
+     "clicks": 12,
+     "impr": 248
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 9.8,
+     "clicks": 6,
+     "impr": 154
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 3.0,
+     "clicks": 3,
+     "impr": 433
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 7.0,
+     "clicks": 4,
+     "impr": 294
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 4.3,
+     "clicks": 6,
+     "impr": 399
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 4.9,
+     "clicks": 8,
+     "impr": 833
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 7.6,
+     "clicks": 7,
+     "impr": 290
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 11.2,
+     "clicks": 2,
+     "impr": 218
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 13.9,
+     "clicks": 3,
+     "impr": 179
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 17.6,
+     "clicks": 4,
+     "impr": 150
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 12.1,
+     "clicks": 2,
+     "impr": 184
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 6.0,
+     "clicks": 2,
+     "impr": 261
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 6.3,
+     "clicks": 2,
+     "impr": 301
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 6.4,
+     "clicks": 5,
+     "impr": 250
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 7.8,
+     "clicks": 5,
+     "impr": 264
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 7.8,
+     "clicks": 7,
+     "impr": 235
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 8.4,
+     "clicks": 6,
+     "impr": 242
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 8.0,
+     "clicks": 4,
+     "impr": 226
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 8.1,
+     "clicks": 3,
+     "impr": 270
+    },
+    {
+     "d": "2026-07-21",
+     "pos": 8.5,
+     "clicks": 3,
+     "impr": 210
+    },
+    {
+     "d": "2026-07-22",
+     "pos": 7.5,
+     "clicks": 2,
+     "impr": 288
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 10.2,
+     "clicks": 2,
+     "impr": 111
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 7.2,
+     "clicks": 6,
+     "impr": 245
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 9.6,
+     "clicks": 3,
+     "impr": 151
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 8.7,
+     "clicks": 2,
+     "impr": 152
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 9.6,
+     "clicks": 2,
+     "impr": 211
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 7.4,
+     "clicks": 3,
+     "impr": 303
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 13.3,
+     "clicks": 2,
+     "impr": 121
+    }
+   ],
+   "buy wegovy pill": [
+    {
+     "d": "2026-06-11",
+     "pos": 9.7,
+     "clicks": 13,
+     "impr": 137
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 8.5,
+     "clicks": 12,
+     "impr": 140
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 8.3,
+     "clicks": 15,
+     "impr": 82
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 7.8,
+     "clicks": 3,
+     "impr": 63
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 7.3,
+     "clicks": 4,
+     "impr": 56
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 7.7,
+     "clicks": 6,
+     "impr": 58
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 10.0,
+     "clicks": 2,
+     "impr": 43
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 9.2,
+     "clicks": 3,
+     "impr": 35
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 10.1,
+     "clicks": 3,
+     "impr": 58
+    },
+    {
+     "d": "2026-06-21",
+     "pos": 9.4,
+     "clicks": 3,
+     "impr": 44
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 8.9,
+     "clicks": 3,
+     "impr": 70
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 9.1,
+     "clicks": 3,
+     "impr": 40
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 2.6,
+     "clicks": 5,
+     "impr": 30
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 9.0,
+     "clicks": 6,
+     "impr": 36
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 8.5,
+     "clicks": 3,
+     "impr": 23
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 6.4,
+     "clicks": 2,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 6.3,
+     "clicks": 3,
+     "impr": 35
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 8.0,
+     "clicks": 4,
+     "impr": 66
+    },
+    {
+     "d": "2026-07-04",
+     "pos": 3.3,
+     "clicks": 3,
+     "impr": 55
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 4.7,
+     "clicks": 5,
+     "impr": 113
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 6.1,
+     "clicks": 5,
+     "impr": 566
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 8.4,
+     "clicks": 2,
+     "impr": 213
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 6.9,
+     "clicks": 5,
+     "impr": 134
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 7.1,
+     "clicks": 2,
+     "impr": 96
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 13.9,
+     "clicks": 2,
+     "impr": 18
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 11.5,
+     "clicks": 2,
+     "impr": 25
+    }
+   ],
+   "wegovy pill uk": [
+    {
+     "d": "2026-06-04",
+     "pos": 11.5,
+     "clicks": 1,
+     "impr": 67
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 6.9,
+     "clicks": 3,
+     "impr": 168
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 11.8,
+     "clicks": 2,
+     "impr": 84
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 14.1,
+     "clicks": 3,
+     "impr": 122
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 11.7,
+     "clicks": 4,
+     "impr": 148
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 11.8,
+     "clicks": 3,
+     "impr": 79
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 12.8,
+     "clicks": 4,
+     "impr": 51
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 14.9,
+     "clicks": 4,
+     "impr": 28
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 13.1,
+     "clicks": 2,
+     "impr": 161
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 6.9,
+     "clicks": 15,
+     "impr": 537
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 4.5,
+     "clicks": 5,
+     "impr": 206
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 3.8,
+     "clicks": 4,
+     "impr": 150
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 7.5,
+     "clicks": 2,
+     "impr": 66
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 5.2,
+     "clicks": 3,
+     "impr": 83
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 2.7,
+     "clicks": 10,
+     "impr": 234
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 2.3,
+     "clicks": 2,
+     "impr": 85
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 17.5,
+     "clicks": 2,
+     "impr": 190
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 7.4,
+     "clicks": 5,
+     "impr": 41
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 8.0,
+     "clicks": 6,
+     "impr": 123
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 13.4,
+     "clicks": 2,
+     "impr": 34
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 16.6,
+     "clicks": 2,
+     "impr": 30
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 26.5,
+     "clicks": 2,
+     "impr": 8
+    }
+   ],
+   "wegovy side effects": [
+    {
+     "d": "2026-06-12",
+     "pos": 9.2,
+     "clicks": 2,
+     "impr": 133
+    },
+    {
+     "d": "2026-06-24",
+     "pos": 5.1,
+     "clicks": 2,
+     "impr": 781
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 6.0,
+     "clicks": 8,
+     "impr": 842
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 6.3,
+     "clicks": 5,
+     "impr": 881
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 6.8,
+     "clicks": 3,
+     "impr": 959
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 5.6,
+     "clicks": 5,
+     "impr": 1018
+    },
+    {
+     "d": "2026-06-29",
+     "pos": 7.6,
+     "clicks": 4,
+     "impr": 977
+    },
+    {
+     "d": "2026-06-30",
+     "pos": 9.5,
+     "clicks": 2,
+     "impr": 777
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 8.7,
+     "clicks": 2,
+     "impr": 908
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 6.1,
+     "clicks": 12,
+     "impr": 1733
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 5.3,
+     "clicks": 13,
+     "impr": 2993
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 4.5,
+     "clicks": 8,
+     "impr": 1560
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 5.4,
+     "clicks": 7,
+     "impr": 1259
+    },
+    {
+     "d": "2026-07-09",
+     "pos": 4.8,
+     "clicks": 9,
+     "impr": 1146
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 6.4,
+     "clicks": 3,
+     "impr": 776
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 8.2,
+     "clicks": 3,
+     "impr": 1025
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 8.7,
+     "clicks": 4,
+     "impr": 1160
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 7.8,
+     "clicks": 2,
+     "impr": 880
+    },
+    {
+     "d": "2026-07-18",
+     "pos": 7.9,
+     "clicks": 4,
+     "impr": 890
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 8.5,
+     "clicks": 3,
+     "impr": 1063
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 8.0,
+     "clicks": 2,
+     "impr": 819
+    },
+    {
+     "d": "2026-07-24",
+     "pos": 10.3,
+     "clicks": 2,
+     "impr": 677
+    },
+    {
+     "d": "2026-07-25",
+     "pos": 10.2,
+     "clicks": 3,
+     "impr": 639
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 9.1,
+     "clicks": 3,
+     "impr": 497
+    },
+    {
+     "d": "2026-07-28",
+     "pos": 9.9,
+     "clicks": 3,
+     "impr": 1149
+    },
+    {
+     "d": "2026-07-29",
+     "pos": 9.9,
+     "clicks": 3,
+     "impr": 729
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 10.2,
+     "clicks": 4,
+     "impr": 774
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 11.0,
+     "clicks": 2,
+     "impr": 583
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 10.6,
+     "clicks": 2,
+     "impr": 822
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 10.7,
+     "clicks": 3,
+     "impr": 910
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 10.2,
+     "clicks": 2,
+     "impr": 504
+    }
+   ],
+   "buy wegovy pills": [
+    {
+     "d": "2026-06-09",
+     "pos": 9.0,
+     "clicks": 2,
+     "impr": 14
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 9.6,
+     "clicks": 8,
+     "impr": 86
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 7.7,
+     "clicks": 12,
+     "impr": 70
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 8.1,
+     "clicks": 10,
+     "impr": 46
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 8.8,
+     "clicks": 7,
+     "impr": 36
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 5.9,
+     "clicks": 7,
+     "impr": 49
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 7.7,
+     "clicks": 3,
+     "impr": 43
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 8.8,
+     "clicks": 6,
+     "impr": 25
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 9.0,
+     "clicks": 9,
+     "impr": 46
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 11.5,
+     "clicks": 6,
+     "impr": 37
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 10.1,
+     "clicks": 3,
+     "impr": 22
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 10.2,
+     "clicks": 6,
+     "impr": 41
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 7.1,
+     "clicks": 4,
+     "impr": 20
+    },
+    {
+     "d": "2026-06-25",
+     "pos": 8.8,
+     "clicks": 2,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 16.4,
+     "clicks": 6,
+     "impr": 27
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 3.9,
+     "clicks": 2,
+     "impr": 39
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 6.4,
+     "clicks": 5,
+     "impr": 236
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 32.8,
+     "clicks": 2,
+     "impr": 11
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 17.5,
+     "clicks": 2,
+     "impr": 2
+    }
+   ],
+   "wegovy pills": [
+    {
+     "d": "2026-06-11",
+     "pos": 22.8,
+     "clicks": 2,
+     "impr": 34
+    },
+    {
+     "d": "2026-06-12",
+     "pos": 12.1,
+     "clicks": 10,
+     "impr": 222
+    },
+    {
+     "d": "2026-06-14",
+     "pos": 17.9,
+     "clicks": 2,
+     "impr": 55
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 18.1,
+     "clicks": 2,
+     "impr": 48
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 15.1,
+     "clicks": 3,
+     "impr": 47
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 14.8,
+     "clicks": 3,
+     "impr": 56
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 15.9,
+     "clicks": 3,
+     "impr": 45
+    },
+    {
+     "d": "2026-06-22",
+     "pos": 21.7,
+     "clicks": 2,
+     "impr": 42
+    },
+    {
+     "d": "2026-06-23",
+     "pos": 18.6,
+     "clicks": 2,
+     "impr": 28
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 12.9,
+     "clicks": 2,
+     "impr": 25
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 10.2,
+     "clicks": 3,
+     "impr": 116
+    }
+   ],
+   "wegovy vs mounjaro": [
+    {
+     "d": "2026-06-04",
+     "pos": 3.5,
+     "clicks": 9,
+     "impr": 623
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 7.0,
+     "clicks": 3,
+     "impr": 201
+    }
+   ],
+   "wegovy price": [
+    {
+     "d": "2026-06-03",
+     "pos": 10.3,
+     "clicks": 2,
+     "impr": 381
+    },
+    {
+     "d": "2026-06-04",
+     "pos": 10.6,
+     "clicks": 2,
+     "impr": 335
+    },
+    {
+     "d": "2026-06-05",
+     "pos": 10.2,
+     "clicks": 4,
+     "impr": 285
+    },
+    {
+     "d": "2026-06-07",
+     "pos": 10.4,
+     "clicks": 3,
+     "impr": 320
+    },
+    {
+     "d": "2026-06-08",
+     "pos": 9.8,
+     "clicks": 2,
+     "impr": 378
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 10.4,
+     "clicks": 2,
+     "impr": 202
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 12.5,
+     "clicks": 3,
+     "impr": 116
+    },
+    {
+     "d": "2026-06-26",
+     "pos": 10.9,
+     "clicks": 2,
+     "impr": 228
+    },
+    {
+     "d": "2026-06-27",
+     "pos": 9.5,
+     "clicks": 2,
+     "impr": 230
+    },
+    {
+     "d": "2026-06-28",
+     "pos": 9.4,
+     "clicks": 2,
+     "impr": 279
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 10.8,
+     "clicks": 3,
+     "impr": 261
+    },
+    {
+     "d": "2026-07-02",
+     "pos": 11.4,
+     "clicks": 2,
+     "impr": 308
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 9.2,
+     "clicks": 3,
+     "impr": 416
+    },
+    {
+     "d": "2026-07-06",
+     "pos": 9.7,
+     "clicks": 2,
+     "impr": 615
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 9.7,
+     "clicks": 2,
+     "impr": 256
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 7.8,
+     "clicks": 2,
+     "impr": 199
+    },
+    {
+     "d": "2026-07-15",
+     "pos": 8.7,
+     "clicks": 2,
+     "impr": 224
+    },
+    {
+     "d": "2026-07-20",
+     "pos": 9.5,
+     "clicks": 2,
+     "impr": 219
+    }
+   ],
+   "wegovy tablets": [
+    {
+     "d": "2026-06-11",
+     "pos": 10.1,
+     "clicks": 3,
+     "impr": 201
+    },
+    {
+     "d": "2026-06-13",
+     "pos": 9.3,
+     "clicks": 3,
+     "impr": 132
+    },
+    {
+     "d": "2026-06-15",
+     "pos": 17.5,
+     "clicks": 4,
+     "impr": 77
+    },
+    {
+     "d": "2026-06-16",
+     "pos": 13.7,
+     "clicks": 2,
+     "impr": 103
+    },
+    {
+     "d": "2026-06-17",
+     "pos": 21.3,
+     "clicks": 2,
+     "impr": 65
+    },
+    {
+     "d": "2026-07-03",
+     "pos": 13.6,
+     "clicks": 3,
+     "impr": 64
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 6.8,
+     "clicks": 2,
+     "impr": 82
+    },
+    {
+     "d": "2026-07-08",
+     "pos": 17.3,
+     "clicks": 4,
+     "impr": 94
+    },
+    {
+     "d": "2026-07-11",
+     "pos": 14.3,
+     "clicks": 2,
+     "impr": 40
+    },
+    {
+     "d": "2026-07-14",
+     "pos": 9.3,
+     "clicks": 2,
+     "impr": 49
+    },
+    {
+     "d": "2026-07-21",
+     "pos": 13.6,
+     "clicks": 2,
+     "impr": 36
+    },
+    {
+     "d": "2026-07-27",
+     "pos": 11.0,
+     "clicks": 4,
+     "impr": 59
+    }
+   ],
+   "wegovy price uk": [
+    {
+     "d": "2026-06-03",
+     "pos": 11.6,
+     "clicks": 1,
+     "impr": 89
+    },
+    {
+     "d": "2026-06-09",
+     "pos": 10.0,
+     "clicks": 2,
+     "impr": 67
+    },
+    {
+     "d": "2026-06-18",
+     "pos": 9.6,
+     "clicks": 2,
+     "impr": 90
+    },
+    {
+     "d": "2026-06-19",
+     "pos": 9.8,
+     "clicks": 4,
+     "impr": 77
+    },
+    {
+     "d": "2026-06-20",
+     "pos": 10.0,
+     "clicks": 2,
+     "impr": 87
+    },
+    {
+     "d": "2026-07-01",
+     "pos": 7.9,
+     "clicks": 2,
+     "impr": 67
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 7.1,
+     "clicks": 4,
+     "impr": 109
+    },
+    {
+     "d": "2026-07-12",
+     "pos": 6.1,
+     "clicks": 2,
+     "impr": 73
+    },
+    {
+     "d": "2026-07-16",
+     "pos": 7.4,
+     "clicks": 3,
+     "impr": 81
+    },
+    {
+     "d": "2026-07-17",
+     "pos": 6.2,
+     "clicks": 2,
+     "impr": 71
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 4.6,
+     "clicks": 2,
+     "impr": 66
+    },
+    {
+     "d": "2026-07-22",
+     "pos": 5.1,
+     "clicks": 2,
+     "impr": 77
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 8.2,
+     "clicks": 2,
+     "impr": 39
+    }
+   ],
+   "wegovy uk": [
+    {
+     "d": "2026-06-08",
+     "pos": 16.0,
+     "clicks": 2,
+     "impr": 67
+    },
+    {
+     "d": "2026-06-11",
+     "pos": 11.9,
+     "clicks": 3,
+     "impr": 98
+    },
+    {
+     "d": "2026-07-07",
+     "pos": 48.2,
+     "clicks": 2,
+     "impr": 51
+    }
+   ],
+   "cheapest wegovy uk": [
+    {
+     "d": "2026-07-02",
+     "pos": 9.0,
+     "clicks": 2,
+     "impr": 119
+    },
+    {
+     "d": "2026-07-05",
+     "pos": 7.5,
+     "clicks": 2,
+     "impr": 104
+    },
+    {
+     "d": "2026-07-10",
+     "pos": 9.7,
+     "clicks": 3,
+     "impr": 87
+    },
+    {
+     "d": "2026-07-13",
+     "pos": 7.4,
+     "clicks": 2,
+     "impr": 105
+    },
+    {
+     "d": "2026-07-19",
+     "pos": 8.6,
+     "clicks": 3,
+     "impr": 156
+    },
+    {
+     "d": "2026-07-24",
+     "pos": 10.0,
+     "clicks": 2,
+     "impr": 141
+    }
+   ],
+   "buy wegovy": [
+    {
+     "d": "2026-06-11",
+     "pos": 11.6,
+     "clicks": 2,
+     "impr": 70
+    }
+   ]
+  },
   "ga4": {},
   "ga4rev": {},
   "m": {
@@ -45438,12 +48131,12 @@
    "of": 6
   },
   "psi": {
-   "score": 48,
-   "lcp": "7.9 s",
+   "score": 55,
+   "lcp": "3.7 s",
    "cls": "0",
-   "tbt": "1,090 ms",
-   "fcp": "2.5 s",
-   "si": "3.8 s",
+   "tbt": "2,990 ms",
+   "fcp": "2.6 s",
+   "si": "3.7 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 724,
