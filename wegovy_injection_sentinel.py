@@ -291,7 +291,7 @@ def fetch_extra_sources() -> dict:
     try:
         # This product can track its keywords in its own AWR project; without
         # the dedicated variable it falls back to the shared AWR_PROJECT.
-        _proj = os.environ.get("AWR_PROJECT_INJECTION", "")
+        _proj = os.environ.get("AWR_PROJECT_INJECTION", "SOP - Wegovy - Weekly")
         if _proj:
             os.environ["AWR_PROJECT"] = _proj
         src["awr"] = rank_sources.fetch_awr(kws)
