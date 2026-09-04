@@ -3,7 +3,13 @@
   "date": "2026-09-04",
   "mode": "semrush",
   "best": {
-   "wegovy": null,
+   "wegovy": {
+    "p": 31,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
+    "n": 1,
+    "v": 135000
+   },
    "wegovy uk": {
     "p": 20,
     "c": "product",
@@ -40,18 +46,18 @@
    },
    "semaglutide injection": null,
    "wegovy side effects": {
-    "p": 64,
+    "p": 10,
     "c": "advice",
-    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/serious-side-effects-wegovy-pill/",
-    "n": 2,
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects/",
+    "n": 3,
     "v": 27100
    },
    "wegovy dosage": null,
    "wegovy vs mounjaro": {
-    "p": 26,
+    "p": 27,
     "c": "advice",
     "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-vs-mounjaro/",
-    "n": 3,
+    "n": 4,
     "v": 27100
    },
    "wegovy reviews": {
@@ -108,11 +114,11 @@
      "u": "https://onlinedoctor.superdrug.com/semaglutide.html"
     },
     "wegovy side effects": {
-     "p": 11,
+     "p": 7,
      "u": "https://onlinedoctor.superdrug.com/wegovy-pill-side-effects.html"
     },
     "wegovy vs mounjaro": {
-     "p": 23,
+     "p": 24,
      "u": "https://onlinedoctor.superdrug.com/mounjaro-vs-wegovy.html"
     },
     "wegovy reviews": {
@@ -126,7 +132,7 @@
    },
    "Chemist4U": {
     "wegovy": {
-     "p": 26,
+     "p": 21,
      "u": "https://www.chemist-4-u.com/wegovy"
     },
     "wegovy uk": {
@@ -158,11 +164,11 @@
      "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-prices/"
     },
     "wegovy side effects": {
-     "p": 27,
+     "p": 32,
      "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-side-effects/"
     },
     "wegovy vs mounjaro": {
-     "p": 9,
+     "p": 8,
      "u": "https://www.chemist-4-u.com/guides/weight-loss/mounjaro-vs-wegovy/"
     },
     "wegovy reviews": {
@@ -175,10 +181,6 @@
     }
    },
    "FamilyChemist": {
-    "wegovy": {
-     "p": 39,
-     "u": "https://www.thefamilychemist.co.uk/wegovy/"
-    },
     "wegovy uk": {
      "p": 31,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
@@ -211,18 +213,14 @@
      "p": 63,
      "u": "https://www.thefamilychemist.co.uk/what-is-semaglutide/"
     },
-    "wegovy side effects": {
-     "p": 51,
-     "u": "https://www.thefamilychemist.co.uk/managing-wegovy-side-effects/"
-    },
     "wegovy vs mounjaro": {
-     "p": 34,
+     "p": 37,
      "u": "https://www.thefamilychemist.co.uk/mounjaro-vs-wegovy-the-verdict-on-the-best-weight-loss-medication/"
     }
    },
    "MedExpress": {
     "wegovy": {
-     "p": 15,
+     "p": 19,
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "wegovy uk": {
@@ -241,6 +239,10 @@
      "p": 4,
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
+    "wegovy pen": {
+     "p": 3,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
     "wegovy price": {
      "p": 3,
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
@@ -254,8 +256,12 @@
      "u": "https://www.medexpress.co.uk/health-centre/semaglutide-tablets/"
     },
     "wegovy side effects": {
-     "p": 37,
+     "p": 35,
      "u": "https://www.medexpress.co.uk/health-centre/wegovy-side-effects/"
+    },
+    "wegovy dosage": {
+     "p": 22,
+     "u": "https://www.medexpress.co.uk/health-centre/wegovy-dosing-schedule/"
     },
     "wegovy vs mounjaro": {
      "p": 56,
@@ -272,7 +278,7 @@
    },
    "Boots": {
     "wegovy": {
-     "p": 6,
+     "p": 5,
      "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
     },
     "wegovy uk": {
@@ -318,6 +324,10 @@
     "wegovy dosage": {
      "p": 13,
      "u": "https://onlinedoctor.boots.com/articles/wegovy-72"
+    },
+    "wegovy vs mounjaro": {
+     "p": 21,
+     "u": "https://www.boots.com/healthhub/weight-loss-medications/wegovy-vs-mounjaro-explained"
     },
     "wegovy weight loss": {
      "p": 1,
@@ -2113,10 +2123,10 @@
   "ga4": {},
   "ga4rev": {},
   "m": {
-   "pill": null,
+   "pill": 31,
    "bwInj": null,
-   "blD": 45,
-   "blT": 138
+   "blD": 48,
+   "blT": 141
   },
   "flags": {
    "wrong": true,
@@ -2336,15 +2346,15 @@
    "of": 6
   },
   "psi": {
-   "score": 65,
+   "score": 66,
    "lcp": "2.6 s",
    "cls": "0",
-   "tbt": "2,490 ms",
+   "tbt": "2,270 ms",
    "fcp": "2.3 s",
-   "si": "2.8 s",
+   "si": "3.0 s",
    "strategy": "mobile",
    "field": {
-    "lcp_ms": 573,
+    "lcp_ms": 574,
     "lcp_ms_cat": "FAST",
     "inp_ms": 87,
     "inp_ms_cat": "FAST",
@@ -2353,25 +2363,14 @@
    }
   },
   "links": {
-   "ours": 45,
+   "ours": 48,
    "comp": {
-    "Superdrug": 74,
-    "Chemist4U": 17,
-    "FamilyChemist": 3,
+    "Superdrug": 75,
+    "Chemist4U": 19,
     "MedExpress": 77,
     "Boots": 8
    },
    "prospects": [
-    {
-     "d": "glpinfo.com",
-     "n": 4,
-     "who": [
-      "Chemist4U",
-      "FamilyChemist",
-      "MedExpress",
-      "Superdrug"
-     ]
-    },
     {
      "d": "pepcred.com",
      "n": 4,
@@ -2384,6 +2383,15 @@
     },
     {
      "d": "glp1tablets.co.uk",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "glpinfo.com",
      "n": 3,
      "who": [
       "Chemist4U",
@@ -2406,14 +2414,6 @@
      "who": [
       "Chemist4U",
       "MedExpress",
-      "Superdrug"
-     ]
-    },
-    {
-     "d": "bhs-links-r257.xyz",
-     "n": 2,
-     "who": [
-      "Chemist4U",
       "Superdrug"
      ]
     },
@@ -2568,9 +2568,17 @@
       "MedExpress",
       "Superdrug"
      ]
+    },
+    {
+     "d": "seo-cartel-3w.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
     }
    ],
-   "strong": 34
+   "strong": 33
   }
  }
 ]

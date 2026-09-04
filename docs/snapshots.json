@@ -44525,17 +44525,17 @@
    "buy wegovy uk": null,
    "buy wegovy online": null,
    "wegovy side effects": {
-    "p": 64,
+    "p": 10,
     "c": "advice",
-    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/serious-side-effects-wegovy-pill/",
-    "n": 2,
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects/",
+    "n": 3,
     "v": 27100
    },
    "wegovy vs mounjaro": {
-    "p": 26,
+    "p": 27,
     "c": "advice",
     "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-vs-mounjaro/",
-    "n": 3,
+    "n": 4,
     "v": 27100
    },
    "wegovy reviews": {
@@ -44585,11 +44585,11 @@
      "u": "https://onlinedoctor.superdrug.com/wegovy.html"
     },
     "wegovy side effects": {
-     "p": 11,
+     "p": 7,
      "u": "https://onlinedoctor.superdrug.com/wegovy-pill-side-effects.html"
     },
     "wegovy vs mounjaro": {
-     "p": 23,
+     "p": 24,
      "u": "https://onlinedoctor.superdrug.com/mounjaro-vs-wegovy.html"
     },
     "wegovy reviews": {
@@ -44631,11 +44631,11 @@
      "u": "https://www.chemist-4-u.com/wegovy-pills"
     },
     "wegovy side effects": {
-     "p": 27,
+     "p": 32,
      "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-side-effects/"
     },
     "wegovy vs mounjaro": {
-     "p": 9,
+     "p": 8,
      "u": "https://www.chemist-4-u.com/guides/weight-loss/mounjaro-vs-wegovy/"
     },
     "wegovy reviews": {
@@ -44676,12 +44676,8 @@
      "p": 15,
      "u": "https://www.thefamilychemist.co.uk/wegovy/"
     },
-    "wegovy side effects": {
-     "p": 51,
-     "u": "https://www.thefamilychemist.co.uk/managing-wegovy-side-effects/"
-    },
     "wegovy vs mounjaro": {
-     "p": 34,
+     "p": 37,
      "u": "https://www.thefamilychemist.co.uk/mounjaro-vs-wegovy-the-verdict-on-the-best-weight-loss-medication/"
     }
    },
@@ -44719,7 +44715,7 @@
      "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
     },
     "wegovy side effects": {
-     "p": 37,
+     "p": 35,
      "u": "https://www.medexpress.co.uk/health-centre/wegovy-side-effects/"
     },
     "wegovy vs mounjaro": {
@@ -44767,6 +44763,10 @@
     "buy wegovy online": {
      "p": 3,
      "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "wegovy vs mounjaro": {
+     "p": 21,
+     "u": "https://www.boots.com/healthhub/weight-loss-medications/wegovy-vs-mounjaro-explained"
     }
    }
   },
@@ -47927,7 +47927,7 @@
    "pill": 44,
    "bwInj": null,
    "blD": 19,
-   "blT": 42
+   "blT": 49
   },
   "flags": {
    "wrong": true,
@@ -48131,12 +48131,12 @@
    "of": 6
   },
   "psi": {
-   "score": 45,
-   "lcp": "10.2 s",
+   "score": 50,
+   "lcp": "10.3 s",
    "cls": "0",
-   "tbt": "600 ms",
+   "tbt": "400 ms",
    "fcp": "4.8 s",
-   "si": "6.6 s",
+   "si": "6.7 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 724,
@@ -48151,9 +48151,9 @@
    "ours": 19,
    "comp": {
     "Superdrug": 42,
-    "Chemist4U": 19,
+    "Chemist4U": 21,
     "FamilyChemist": 6,
-    "MedExpress": 13,
+    "MedExpress": 14,
     "Boots": 8
    },
    "prospects": [
@@ -48178,6 +48178,15 @@
     },
     {
      "d": "bhs-links-r242.xyz",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "bhs-links-r243.xyz",
      "n": 3,
      "who": [
       "Chemist4U",
@@ -48296,10 +48305,10 @@
      ]
     },
     {
-     "d": "bhs-links-r243.xyz",
+     "d": "bhs-links-r258.xyz",
      "n": 1,
      "who": [
-      "Superdrug"
+      "Chemist4U"
      ]
     },
     {
@@ -48350,16 +48359,9 @@
      "who": [
       "MedExpress"
      ]
-    },
-    {
-     "d": "pepcred.com",
-     "n": 1,
-     "who": [
-      "Boots"
-     ]
     }
    ],
-   "strong": 15
+   "strong": 16
   }
  }
 ]

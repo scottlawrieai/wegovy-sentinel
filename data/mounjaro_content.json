@@ -1086,7 +1086,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 6173,
+   "wc": 6177,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -1169,8 +1169,8 @@
     "thyroid": 2,
     "BMI eligibility": 5,
     "Wegovy / semaglutide": 30,
-    "price per month": 37,
-    "clinician review": 48
+    "price per month": 35,
+    "clinician review": 49
    },
    "phrases": [
     "side effects",
@@ -1183,8 +1183,8 @@
     "order next",
     "next pen",
     "pen week",
-    "order next pen",
-    "mounjaro mounjaro"
+    "stars verified",
+    "order next pen"
    ],
    "imgs": 25,
    "videos": 0,
@@ -1212,9 +1212,9 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "John Gleave",
-    "Sahar",
-    "Jonathan"
+    "Lyn Leigh",
+    "Mrs sally anne lockhart",
+    "julie connell"
    ],
    "bytes": 461
   },
@@ -1347,17 +1347,17 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 708,
+    "bytes": 709,
     "psi": {
-     "score": 58,
-     "lcp": "10.6 s",
-     "cls": "0",
-     "tbt": "80 ms",
-     "fcp": "5.6 s",
-     "si": "7.3 s",
+     "score": 61,
+     "lcp": "7.9 s",
+     "cls": "0.122",
+     "tbt": "160 ms",
+     "fcp": "3.0 s",
+     "si": "5.1 s",
      "strategy": "mobile",
      "field": {
-      "lcp_ms": 1197,
+      "lcp_ms": 1193,
       "lcp_ms_cat": "FAST",
       "inp_ms": 84,
       "inp_ms_cat": "FAST",
@@ -1434,19 +1434,19 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 34,
+     "score": 18,
      "lcp": "11.5 s",
      "cls": "0.518",
-     "tbt": "510 ms",
-     "fcp": "3.2 s",
-     "si": "3.4 s",
+     "tbt": "700 ms",
+     "fcp": "9.2 s",
+     "si": "9.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1732,
       "lcp_ms_cat": "FAST",
       "inp_ms": 72,
       "inp_ms_cat": "FAST",
-      "cls100": 57,
+      "cls100": 56,
       "cls100_cat": "SLOW"
      }
     }
@@ -1605,24 +1605,7 @@
      "CollegeOrUniversity"
     ],
     "authors": [],
-    "bytes": 322,
-    "psi": {
-     "score": 72,
-     "lcp": "6.8 s",
-     "cls": "0.026",
-     "tbt": "90 ms",
-     "fcp": "2.0 s",
-     "si": "4.7 s",
-     "strategy": "mobile",
-     "field": {
-      "lcp_ms": 1022,
-      "lcp_ms_cat": "FAST",
-      "inp_ms": 79,
-      "inp_ms_cat": "FAST",
-      "cls100": 1,
-      "cls100_cat": "FAST"
-     }
-    }
+    "bytes": 322
    },
    {
     "url": "https://onlinedoctor.boots.com/treatments/mounjaro",
@@ -1842,7 +1825,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 6173,
+    "wc": 6177,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -1925,8 +1908,8 @@
      "thyroid": 2,
      "BMI eligibility": 5,
      "Wegovy / semaglutide": 30,
-     "price per month": 37,
-     "clinician review": 48
+     "price per month": 35,
+     "clinician review": 49
     },
     "phrases": [
      "side effects",
@@ -1939,8 +1922,8 @@
      "order next",
      "next pen",
      "pen week",
-     "order next pen",
-     "mounjaro mounjaro"
+     "stars verified",
+     "order next pen"
     ],
     "imgs": 25,
     "videos": 0,
@@ -1968,9 +1951,9 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "John Gleave",
-     "Sahar",
-     "Jonathan"
+     "Lyn Leigh",
+     "Mrs sally anne lockhart",
+     "julie connell"
     ],
     "bytes": 461
    }
@@ -2006,7 +1989,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6173 words vs competitor median 5369"
+     "evidence": "6177 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",
