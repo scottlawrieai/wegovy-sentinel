@@ -3790,8 +3790,8 @@
   "m": {
    "pill": 31,
    "bwInj": null,
-   "blD": 49,
-   "blT": 142
+   "blD": 50,
+   "blT": 143
   },
   "flags": {
    "wrong": true,
@@ -4011,12 +4011,12 @@
    "of": 6
   },
   "psi": {
-   "score": 52,
-   "lcp": "9.2 s",
+   "score": 71,
+   "lcp": "2.6 s",
    "cls": "0",
-   "tbt": "340 ms",
-   "fcp": "5.6 s",
-   "si": "6.1 s",
+   "tbt": "1,050 ms",
+   "fcp": "2.3 s",
+   "si": "3.0 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 574,
@@ -4028,7 +4028,7 @@
    }
   },
   "links": {
-   "ours": 49,
+   "ours": 50,
    "comp": {
     "Superdrug": 75,
     "Chemist4U": 20,

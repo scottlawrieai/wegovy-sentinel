@@ -44791,9 +44791,7 @@
      "ctr": 2.8
     }
    },
-   "awr": {
-    "buy wegovy pills": 13
-   }
+   "awr": {}
   },
   "gsci": {
    "pill_page": [
@@ -49761,12 +49759,12 @@
    "of": 6
   },
   "psi": {
-   "score": 65,
-   "lcp": "8.4 s",
+   "score": 57,
+   "lcp": "3.8 s",
    "cls": "0",
-   "tbt": "110 ms",
-   "fcp": "3.4 s",
-   "si": "4.9 s",
+   "tbt": "1,680 ms",
+   "fcp": "2.5 s",
+   "si": "4.0 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 724,
