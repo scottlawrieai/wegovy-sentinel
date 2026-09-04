@@ -34062,12 +34062,12 @@
     "authors": [],
     "bytes": 625,
     "psi": {
-     "score": 50,
-     "lcp": "7.0 s",
-     "cls": "0.007",
-     "tbt": "690 ms",
+     "score": 61,
+     "lcp": "6.2 s",
+     "cls": "0.014",
+     "tbt": "360 ms",
      "fcp": "2.4 s",
-     "si": "6.7 s",
+     "si": "5.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1133,
@@ -34194,12 +34194,12 @@
     "authors": [],
     "bytes": 323,
     "psi": {
-     "score": 54,
-     "lcp": "12.4 s",
+     "score": 46,
+     "lcp": "12.8 s",
      "cls": "0",
-     "tbt": "220 ms",
+     "tbt": "480 ms",
      "fcp": "4.8 s",
-     "si": "8.3 s",
+     "si": "8.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3498,
@@ -34358,7 +34358,7 @@
      "cls": "0",
      "tbt": "0 ms",
      "fcp": "3.7 s",
-     "si": "4.1 s",
+     "si": "3.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1369,

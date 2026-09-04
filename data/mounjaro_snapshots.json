@@ -5887,7 +5887,7 @@
     },
     {
      "d": "2026-09-03",
-     "sessions": 112,
+     "sessions": 115,
      "events": 90
     }
    ],
@@ -5933,7 +5933,7 @@
     {
      "m": "2026-09",
      "revenue": 2949.8,
-     "sessions": 233
+     "sessions": 234
     }
    ],
    "as_of": "2026-09-03"
@@ -6156,12 +6156,12 @@
    "of": 6
   },
   "psi": {
-   "score": 47,
-   "lcp": "8.9 s",
+   "score": 57,
+   "lcp": "9.1 s",
    "cls": "0",
-   "tbt": "740 ms",
-   "fcp": "3.3 s",
-   "si": "5.5 s",
+   "tbt": "210 ms",
+   "fcp": "4.6 s",
+   "si": "6.4 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 776,
@@ -6175,7 +6175,7 @@
   "links": {
    "ours": 44,
    "comp": {
-    "Superdrug": 69,
+    "Superdrug": 70,
     "Chemist4U": 152,
     "FamilyChemist": 3,
     "MedExpress": 53,
@@ -6409,7 +6409,7 @@
      ]
     }
    ],
-   "strong": 61
+   "strong": 62
   }
  }
 ]
