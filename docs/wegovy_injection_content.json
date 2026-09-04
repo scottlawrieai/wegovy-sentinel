@@ -314,12 +314,12 @@
     "authors": [],
     "bytes": 659,
     "psi": {
-     "score": 56,
-     "lcp": "11.7 s",
-     "cls": "0.014",
-     "tbt": "380 ms",
-     "fcp": "2.6 s",
-     "si": "6.8 s",
+     "score": 61,
+     "lcp": "12.4 s",
+     "cls": "0.082",
+     "tbt": "260 ms",
+     "fcp": "2.3 s",
+     "si": "5.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1087,
@@ -436,12 +436,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 28,
-     "lcp": "12.2 s",
+     "score": 42,
+     "lcp": "15.2 s",
      "cls": "0",
-     "tbt": "2,590 ms",
-     "fcp": "4.6 s",
-     "si": "10.4 s",
+     "tbt": "610 ms",
+     "fcp": "5.6 s",
+     "si": "8.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4192,
@@ -544,12 +544,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 34,
-     "lcp": "6.0 s",
+     "score": 74,
+     "lcp": "4.7 s",
      "cls": "0.004",
-     "tbt": "4,250 ms",
-     "fcp": "3.7 s",
-     "si": "7.5 s",
+     "tbt": "170 ms",
+     "fcp": "3.4 s",
+     "si": "3.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 714,
@@ -1077,11 +1077,11 @@
    "term_gaps": [],
    "entity_gaps": [
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     },
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     }
    ],
@@ -1110,7 +1110,7 @@
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
    "Strengthen body depth (words) for a primary term (3639 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: STEP trials, Rybelsus",
+   "Add missing entities competitors cover: Rybelsus, STEP trials",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],
   "fetched": 7,

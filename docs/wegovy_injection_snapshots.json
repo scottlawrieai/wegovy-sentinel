@@ -344,7 +344,21 @@
      "ctr": 0.1
     }
    },
-   "awr": {}
+   "awr": {
+    "wegovy price": 1,
+    "wegovy weight loss": 1,
+    "buy wegovy online": 1,
+    "wegovy side effects": 1,
+    "wegovy vs mounjaro": 1,
+    "wegovy injection": 1,
+    "wegovy": 2,
+    "buy wegovy uk": 1,
+    "wegovy injections": 1,
+    "wegovy dosage": 2,
+    "wegovy uk": 1,
+    "wegovy pen": 8,
+    "buy wegovy": 1
+   }
   },
   "gscts": {
    "as_of": "2026-09-01",
@@ -4011,12 +4025,12 @@
    "of": 6
   },
   "psi": {
-   "score": 71,
-   "lcp": "2.6 s",
+   "score": 49,
+   "lcp": "6.8 s",
    "cls": "0",
-   "tbt": "1,050 ms",
-   "fcp": "2.3 s",
-   "si": "3.0 s",
+   "tbt": "850 ms",
+   "fcp": "3.3 s",
+   "si": "3.6 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 574,

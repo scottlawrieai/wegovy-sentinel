@@ -1117,7 +1117,17 @@
      "ctr": 0.4
     }
    },
-   "awr": {}
+   "awr": {
+    "buy mounjaro": 8,
+    "buy mounjaro uk": 8,
+    "mounjaro price": 17,
+    "mounjaro pen": 26,
+    "buy mounjaro online": 6,
+    "mounjaro uk": 15,
+    "mounjaro": 47,
+    "mounjaro weight loss": 28,
+    "mounjaro injection": 20
+   }
   },
   "gscts": {
    "as_of": "2026-09-01",
@@ -6156,12 +6166,12 @@
    "of": 6
   },
   "psi": {
-   "score": 91,
-   "lcp": "2.6 s",
+   "score": 59,
+   "lcp": "7.2 s",
    "cls": "0",
-   "tbt": "210 ms",
-   "fcp": "2.3 s",
-   "si": "2.3 s",
+   "tbt": "420 ms",
+   "fcp": "3.3 s",
+   "si": "3.7 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 776,
