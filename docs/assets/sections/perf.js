@@ -107,6 +107,11 @@
     '#sec-perf .rev-bar-wrap{position:relative;background:#F1F3F4;border-radius:4px;height:20px;overflow:hidden}' +
     '#sec-perf .rev-bar{position:absolute;left:0;top:0;bottom:0;background:#BBDDC9;border-radius:4px}' +
     '#sec-perf .rev-val{position:relative;z-index:1;font-size:11.5px;font-weight:700;line-height:20px;padding-left:8px;display:block;text-align:left}' +
+    '#sec-perf .q-delta{display:inline-block;margin-left:6px;font-size:10px;font-weight:700}' +
+    '#sec-perf .q-up{color:#2F9E44}' +
+    '#sec-perf .q-down{color:#E03131}' +
+    '#sec-perf .q-flat{color:#94A3B8}' +
+    '#sec-perf .q-new{color:#1C7ED6;font-size:9px;letter-spacing:.04em;text-transform:uppercase}' +
     '</style>';
 
   function revenuePanel(S, snaps) {
@@ -173,20 +178,44 @@
     var iMax = Math.max.apply(null, rows.map(function (r) { return r.impr; }).concat([1]));
     var pv = rows.map(function (r) { return r.pos; });
     var pMin = Math.min.apply(null, pv), pMax = Math.max.apply(null, pv);
+    // small coloured delta vs the preceding equal-length window
+    function pctDelta(cur, prev) {
+      if (prev == null) return '<span class="q-delta q-new">new</span>';
+      if (!prev) return '';
+      var d = (cur - prev) / prev * 100;
+      if (Math.abs(d) < 0.5) return '<span class="q-delta q-flat">=</span>';
+      var up = d > 0;
+      return '<span class="q-delta ' + (up ? 'q-up' : 'q-down') + '">' +
+        (up ? '▲' : '▼') + Math.abs(d).toFixed(0) + '%</span>';
+    }
+    function posDelta(cur, prev) {
+      if (prev == null) return '<span class="q-delta q-new">new</span>';
+      var d = prev - cur;                       // + = improved (moved up)
+      if (Math.abs(d) < 0.05) return '<span class="q-delta q-flat">=</span>';
+      var good = d > 0;
+      return '<span class="q-delta ' + (good ? 'q-up' : 'q-down') + '">' +
+        (good ? '▲' : '▼') + Math.abs(d).toFixed(1) + '</span>';
+    }
+    var anyPrev = rows.some(function (r) { return r.prev; });
     var trs = rows.map(function (r) {
+      var pv = r.prev || null;
       return '<tr>' +
         '<td>' + C.esc(r.q) + '</td>' +
-        '<td class="num" style="background:' + C.esc(C.heat(r.clicks, 0, cMax)) + '">' + C.esc(C.fmtInt(r.clicks)) + '</td>' +
-        '<td class="num" style="background:' + C.esc(C.heat(r.impr, 0, iMax)) + '">' + C.esc(C.fmtInt(r.impr)) + '</td>' +
-        '<td class="num">' + C.esc(r.ctr.toFixed(1)) + '%</td>' +
-        '<td class="num" style="background:' + C.esc(C.heat(r.pos, pMin, pMax, true)) + '">' + C.esc(r.pos.toFixed(1)) + '</td>' +
+        '<td class="num" style="background:' + C.esc(C.heat(r.clicks, 0, cMax)) + '">' + C.esc(C.fmtInt(r.clicks)) +
+          (anyPrev ? pctDelta(r.clicks, pv ? pv.clicks : null) : '') + '</td>' +
+        '<td class="num" style="background:' + C.esc(C.heat(r.impr, 0, iMax)) + '">' + C.esc(C.fmtInt(r.impr)) +
+          (anyPrev ? pctDelta(r.impr, pv ? pv.impr : null) : '') + '</td>' +
+        '<td class="num">' + C.esc(r.ctr.toFixed(1)) + '%' +
+          (anyPrev ? pctDelta(r.ctr, pv ? pv.ctr : null) : '') + '</td>' +
+        '<td class="num" style="background:' + C.esc(C.heat(r.pos, pMin, pMax, true)) + '">' + C.esc(r.pos.toFixed(1)) +
+          (anyPrev ? posDelta(r.pos, pv ? pv.pos : null) : '') + '</td>' +
         '</tr>';
     }).join('');
     return '<div class="panel" style="margin-top:14px">' +
       '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px">' +
       '<span class="eyebrow-sm">Search queries — ' + label + '</span>' +
       '<span style="font-size:11px;color:#94A3B8">Google Search Console · every query serving this page · trailing ' +
-      C.esc(String(gq.days || 28)) + ' days' + (gq.as_of ? ' · data to ' + C.esc(gq.as_of) : '') + '</span></div>' +
+      C.esc(String(gq.days || 28)) + ' days vs the preceding ' + C.esc(String(gq.days || 28)) + (gq.as_of ? ' · data to ' + C.esc(gq.as_of) : '') + '</span></div>' +
       '<div class="tbl-wrap"><table class="tbl">' +
       '<thead><tr><th>Query</th><th class="num">Clicks</th><th class="num">Impressions</th>' +
       '<th class="num">CTR</th><th class="num">Position</th></tr></thead>' +

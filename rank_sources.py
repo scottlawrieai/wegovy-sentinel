@@ -333,32 +333,51 @@ def fetch_gsc_queries(page_url: str = PILL_PAGE, limit: int = 100) -> dict:
         days = 28
     end = _today_uk() - timedelta(days=3)
     start = end - timedelta(days=days)
-    payload = _gsc_query(token, prop, {
-        "startDate": start.isoformat(),
-        "endDate": end.isoformat(),
-        "dimensions": ["query"],
-        "dimensionFilterGroups": [{
-            "groupType": "and",
-            "filters": [{"dimension": "page", "operator": "equals",
-                         "expression": page_url}],
-        }],
-        "rowLimit": limit,
-        "type": "web",
-    })
-    rows = []
-    for row in payload.get("rows", []):
-        q = ((row.get("keys") or [""])[0] or "").strip()
-        if not q:
-            continue
-        rows.append({
-            "q": q,
-            "clicks": int(row.get("clicks", 0)),
-            "impr": int(row.get("impressions", 0)),
-            "ctr": round(float(row.get("ctr", 0)) * 100, 1),
-            "pos": round(float(row.get("position", 0)), 1),
+    def window(w_start, w_end, w_limit):
+        payload = _gsc_query(token, prop, {
+            "startDate": w_start.isoformat(),
+            "endDate": w_end.isoformat(),
+            "dimensions": ["query"],
+            "dimensionFilterGroups": [{
+                "groupType": "and",
+                "filters": [{"dimension": "page", "operator": "equals",
+                             "expression": page_url}],
+            }],
+            "rowLimit": w_limit,
+            "type": "web",
         })
+        out = []
+        for row in payload.get("rows", []):
+            q = ((row.get("keys") or [""])[0] or "").strip()
+            if not q:
+                continue
+            out.append({
+                "q": q,
+                "clicks": int(row.get("clicks", 0)),
+                "impr": int(row.get("impressions", 0)),
+                "ctr": round(float(row.get("ctr", 0)) * 100, 1),
+                "pos": round(float(row.get("position", 0)), 1),
+            })
+        return out
+
+    rows = window(start, end, limit)
+    if not rows:
+        return {}
+    # Preceding window of equal length, so the table can show change vs the
+    # previous period. A failure here degrades to a table without deltas.
+    try:
+        prev_rows = window(start - timedelta(days=days + 1),
+                           start - timedelta(days=1), 25000)
+        prev = {r["q"].lower(): r for r in prev_rows}
+        for r in rows:
+            pr = prev.get(r["q"].lower())
+            if pr:
+                r["prev"] = {"clicks": pr["clicks"], "impr": pr["impr"],
+                             "ctr": pr["ctr"], "pos": pr["pos"]}
+    except Exception as e:
+        print(f"[warn] GSC queries prev window: {e}", file=sys.stderr)
     rows.sort(key=lambda r: (-r["clicks"], -r["impr"]))
-    return {"rows": rows, "as_of": end.isoformat(), "days": days} if rows else {}
+    return {"rows": rows, "as_of": end.isoformat(), "days": days}
 
 
 def fetch_ga4_revenue(page_url: str = PILL_PAGE) -> dict:
