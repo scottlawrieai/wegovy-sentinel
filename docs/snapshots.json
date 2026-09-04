@@ -48131,12 +48131,12 @@
    "of": 6
   },
   "psi": {
-   "score": 55,
-   "lcp": "3.7 s",
+   "score": 45,
+   "lcp": "10.2 s",
    "cls": "0",
-   "tbt": "2,990 ms",
-   "fcp": "2.6 s",
-   "si": "3.7 s",
+   "tbt": "600 ms",
+   "fcp": "4.8 s",
+   "si": "6.6 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 724,

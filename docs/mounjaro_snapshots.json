@@ -4353,12 +4353,12 @@
    "of": 6
   },
   "psi": {
-   "score": 56,
-   "lcp": "8.6 s",
+   "score": 48,
+   "lcp": "8.7 s",
    "cls": "0",
-   "tbt": "480 ms",
-   "fcp": "2.6 s",
-   "si": "5.2 s",
+   "tbt": "690 ms",
+   "fcp": "3.3 s",
+   "si": "5.4 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 781,

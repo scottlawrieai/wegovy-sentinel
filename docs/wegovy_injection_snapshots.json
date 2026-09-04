@@ -2336,10 +2336,10 @@
    "of": 6
   },
   "psi": {
-   "score": 79,
+   "score": 65,
    "lcp": "2.6 s",
    "cls": "0",
-   "tbt": "600 ms",
+   "tbt": "2,490 ms",
    "fcp": "2.3 s",
    "si": "2.8 s",
    "strategy": "mobile",

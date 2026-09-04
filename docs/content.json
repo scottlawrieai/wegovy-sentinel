@@ -34060,14 +34060,14 @@
      "OfferShippingDetails"
     ],
     "authors": [],
-    "bytes": 625,
+    "bytes": 624,
     "psi": {
-     "score": 34,
-     "lcp": "6.9 s",
-     "cls": "0.019",
-     "tbt": "4,660 ms",
+     "score": 68,
+     "lcp": "5.7 s",
+     "cls": "0.03",
+     "tbt": "180 ms",
      "fcp": "2.4 s",
-     "si": "14.3 s",
+     "si": "5.8 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1133,
@@ -34194,12 +34194,12 @@
     "authors": [],
     "bytes": 323,
     "psi": {
-     "score": 43,
-     "lcp": "12.3 s",
+     "score": 50,
+     "lcp": "12.0 s",
      "cls": "0",
-     "tbt": "550 ms",
-     "fcp": "5.0 s",
-     "si": "9.5 s",
+     "tbt": "340 ms",
+     "fcp": "5.1 s",
+     "si": "9.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3503,
@@ -34353,12 +34353,12 @@
     "authors": [],
     "bytes": 300,
     "psi": {
-     "score": 67,
-     "lcp": "14.6 s",
+     "score": 64,
+     "lcp": "15.5 s",
      "cls": "0",
      "tbt": "0 ms",
-     "fcp": "3.7 s",
-     "si": "3.7 s",
+     "fcp": "4.0 s",
+     "si": "5.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1369,
@@ -34391,7 +34391,7 @@
      "Find out if Wegovy Pill is right for you"
     ],
     "h3n": 52,
-    "wc": 3934,
+    "wc": 3930,
     "faqs": [
      "What is Wegovy Pill?",
      "How does Wegovy Pill work?",
@@ -34477,7 +34477,7 @@
      "price / cost": 18,
      "UK availability": 2,
      "NHS": 8,
-     "online consultation": 5,
+     "online consultation": 9,
      "delivery": 15
     },
     "phrases": [
@@ -34890,7 +34890,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "7343 words vs competitor median 3757"
+     "evidence": "7343 words vs competitor median 3755"
     },
     {
      "name": "FAQ coverage",
@@ -34936,7 +34936,7 @@
    ],
    "body_cov": 97,
    "faq_cov": 43,
-   "comp_median_wc": 3757
+   "comp_median_wc": 3755
   },
   "opps": [
    "Strengthen faq coverage for a primary term (26 FAQs, 43% of competitor FAQ topics covered)",
