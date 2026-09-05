@@ -49,7 +49,29 @@ def _label(url: str) -> str:
 
 
 def select_candidates(rows: list) -> list:
-    """Pick the cohort from GSC page rows [{page, impr, pos, clicks}]."""
+    """Pick the cohort from GSC page rows [{page, impr, pos, clicks}].
+
+    GSC reports anchor deep-links (featured-snippet jumps) as separate pages;
+    fragment variants are merged into their base URL first -- impressions and
+    clicks summed, position impression-weighted -- so one strong article
+    cannot fill several cohort slots.
+    """
+    merged = {}
+    for r in rows:
+        base = (r.get("page") or "").split("#", 1)[0]
+        if not base:
+            continue
+        m = merged.setdefault(base, {"page": base, "impr": 0, "clicks": 0,
+                                     "_pw": 0.0})
+        m["impr"] += r.get("impr", 0)
+        m["clicks"] += r.get("clicks", 0)
+        if r.get("pos") is not None:
+            m["_pw"] += r["pos"] * r.get("impr", 0)
+    for m in merged.values():
+        m["pos"] = round(m["_pw"] / m["impr"], 1) if m["impr"] else None
+        del m["_pw"]
+    rows = list(merged.values())
+
     picks = []
     for r in sorted(rows, key=lambda x: -x.get("impr", 0)):
         url = r.get("page") or ""
@@ -120,8 +142,15 @@ def main():
             {"page": "https://x/health-advice/i/", "impr": 2000, "pos": 12.0, "clicks": 40},
             {"page": "https://x/health-advice/j/", "impr": 1000, "pos": 11.0, "clicks": 20},
         ]
+        rows += [
+            {"page": "https://x/health-advice/a/#toc-1", "impr": 3000, "pos": 6.0, "clicks": 50},
+            {"page": "https://x/health-advice/a/#toc-2", "impr": 2000, "pos": 6.5, "clicks": 30},
+        ]
         picks = select_candidates(rows)
         urls = [p["url"] for p in picks]
+        assert not any("#" in u for u in urls), urls
+        a = [p for p in picks if p["url"] == "https://x/health-advice/a/"][0]
+        assert a["picked"]["impr"] == 14000, a          # 9000 + 3000 + 2000 merged
         assert len(picks) == COHORT_SIZE, picks
         assert "https://x/health-advice/a/" in urls
         assert "https://x/health-advice/b/" not in urls      # pos < 5
