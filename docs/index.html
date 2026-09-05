@@ -19,6 +19,7 @@
       <button type="button" class="pill" data-value="injection">Wegovy injection</button>
       <button type="button" class="pill" data-value="weightloss">Weight loss hub</button>
       <button type="button" class="pill" data-value="home">Homepage</button>
+      <button type="button" class="pill" data-value="blogs">Blog test</button>
     </div>
   </div>
   <div class="topbar-right">
@@ -97,6 +98,14 @@
                changelog: './homepage_changelog.json',
                content: './homepage_content.json' }
     },
+    blogs: {
+      key: 'blogs', label: 'Blog test', pageLabel: 'Blog pages',
+      hero: '', mainKws: [],
+      sections: ['blogtest'],
+      title: 'Blog template test — before & after',
+      sub: 'A cohort of striking-distance blog pages moving to the new template, measured against their GSC baseline.',
+      files: { snaps: './__none__.json', changelog: './__none__.json', content: './__none__.json' }
+    },
     mounjaro: {
       key: 'mounjaro', label: 'Mounjaro', pageLabel: 'Mounjaro page',
       hero: 'mounjaro',
@@ -136,6 +145,11 @@
             '<div class="card-body"></div>';
           main.appendChild(card);
         }
+        var S = window.Sentinel;
+        var allowed = !(sec.only && sec.only !== S.product.key) &&
+          !(S.product.sections && S.product.sections.indexOf(sec.id) === -1);
+        card.hidden = !allowed;
+        if (!allowed) return;
         card.querySelector('.card-title').textContent = sec.title || '';
         var subEl = card.querySelector('.card-sub');
         subEl.textContent = sec.sub || '';
@@ -318,6 +332,7 @@
 <script defer src="assets/sections/movers.js" onerror="this.remove()"></script>
 <script defer src="assets/sections/rankings.js" onerror="this.remove()"></script>
 <script defer src="assets/sections/content.js" onerror="this.remove()"></script>
+<script defer src="assets/sections/blogtest.js" onerror="this.remove()"></script>
 
 </body>
 </html>
