@@ -61163,7 +61163,7 @@
     },
     {
      "d": "2026-09-04",
-     "sessions": 50,
+     "sessions": 53,
      "events": 14
     }
    ],
@@ -61194,7 +61194,7 @@
     {
      "m": "2026-09",
      "revenue": 391.97,
-     "sessions": 69
+     "sessions": 70
     }
    ],
    "as_of": "2026-09-04"
@@ -61407,12 +61407,12 @@
    "of": 6
   },
   "psi": {
-   "score": 47,
-   "lcp": "10.4 s",
+   "score": 56,
+   "lcp": "3.7 s",
    "cls": "0",
-   "tbt": "470 ms",
-   "fcp": "5.8 s",
-   "si": "6.8 s",
+   "tbt": "1,890 ms",
+   "fcp": "2.5 s",
+   "si": "4.1 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 726,

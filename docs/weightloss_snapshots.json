@@ -12900,8 +12900,8 @@
     },
     {
      "d": "2026-09-04",
-     "sessions": 395,
-     "events": 297
+     "sessions": 430,
+     "events": 327
     }
    ],
    "as_of": "2026-09-04"
@@ -12945,8 +12945,8 @@
     },
     {
      "m": "2026-09",
-     "revenue": 6462.11,
-     "sessions": 626
+     "revenue": 6596.1,
+     "sessions": 638
     }
    ],
    "as_of": "2026-09-04"
@@ -13147,12 +13147,12 @@
    "of": 6
   },
   "psi": {
-   "score": 48,
-   "lcp": "10.9 s",
+   "score": 58,
+   "lcp": "12.1 s",
    "cls": "0",
-   "tbt": "630 ms",
-   "fcp": "3.4 s",
-   "si": "6.0 s",
+   "tbt": "160 ms",
+   "fcp": "4.7 s",
+   "si": "6.5 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 529,
@@ -13166,9 +13166,9 @@
   "links": {
    "ours": 5,
    "comp": {
-    "Superdrug": 102,
+    "Superdrug": 104,
     "Chemist4U": 130,
-    "MedExpress": 76,
+    "MedExpress": 77,
     "Boots": 200
    },
    "prospects": [
@@ -13214,6 +13214,15 @@
      "who": [
       "Boots",
       "Chemist4U",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "myweightchoices.com",
+     "n": 3,
+     "who": [
+      "Boots",
+      "MedExpress",
       "Superdrug"
      ]
     },
@@ -13384,17 +13393,9 @@
       "Boots",
       "Chemist4U"
      ]
-    },
-    {
-     "d": "bhs-links-er.xyz",
-     "n": 2,
-     "who": [
-      "Boots",
-      "Chemist4U"
-     ]
     }
    ],
-   "strong": 100
+   "strong": 102
   }
  }
 ]

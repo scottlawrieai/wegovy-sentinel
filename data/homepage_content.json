@@ -644,7 +644,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1096,
+   "wc": 1085,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -683,8 +683,8 @@
     "simple online pharmacy",
     "out stars",
     "stars verified",
-    "september out",
     "out stars verified",
+    "september out",
     "september out stars",
     "recommend simple",
     "recommend simple online",
@@ -745,12 +745,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 31,
-     "lcp": "12.6 s",
-     "cls": "0.064",
-     "tbt": "3,210 ms",
+     "score": 34,
+     "lcp": "14.0 s",
+     "cls": "0.062",
+     "tbt": "1,860 ms",
      "fcp": "2.6 s",
-     "si": "14.1 s",
+     "si": "12.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3074,
@@ -834,12 +834,12 @@
     "authors": [],
     "bytes": 320,
     "psi": {
-     "score": 66,
-     "lcp": "11.2 s",
+     "score": 61,
+     "lcp": "10.5 s",
      "cls": "0",
-     "tbt": "30 ms",
-     "fcp": "2.3 s",
-     "si": "6.7 s",
+     "tbt": "160 ms",
+     "fcp": "3.2 s",
+     "si": "6.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1384,
@@ -881,10 +881,10 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 77,
-     "lcp": "5.6 s",
+     "score": 80,
+     "lcp": "4.8 s",
      "cls": "0",
-     "tbt": "30 ms",
+     "tbt": "20 ms",
      "fcp": "1.5 s",
      "si": "4.0 s",
      "strategy": "mobile",
@@ -1064,7 +1064,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1096,
+    "wc": 1085,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -1103,8 +1103,8 @@
      "simple online pharmacy",
      "out stars",
      "stars verified",
-     "september out",
      "out stars verified",
+     "september out",
      "september out stars",
      "recommend simple",
      "recommend simple online",
@@ -1170,7 +1170,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1096 words vs competitor median 297"
+     "evidence": "1085 words vs competitor median 297"
     },
     {
      "name": "FAQ coverage",

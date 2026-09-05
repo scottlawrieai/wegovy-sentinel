@@ -1167,7 +1167,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 43,
-   "wc": 3597,
+   "wc": 3589,
    "faqs": [
     "What is Wegovy?",
     "Is it for me?",
@@ -1296,10 +1296,10 @@
     "DrugClass"
    ],
    "authors": [
-    "Gay perry",
     "Lynda",
     "ALISON JACKMAN",
-    "GEMMA CHADWICK"
+    "GEMMA CHADWICK",
+    "Lynette Wilkinson"
    ],
    "bytes": 414
   },
@@ -1427,14 +1427,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 660,
+    "bytes": 659,
     "psi": {
-     "score": 64,
-     "lcp": "12.4 s",
-     "cls": "0.082",
-     "tbt": "160 ms",
-     "fcp": "2.3 s",
-     "si": "6.1 s",
+     "score": 55,
+     "lcp": "11.6 s",
+     "cls": "0.007",
+     "tbt": "400 ms",
+     "fcp": "2.7 s",
+     "si": "6.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1079,
@@ -1551,12 +1551,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 50,
-     "lcp": "15.7 s",
+     "score": 43,
+     "lcp": "15.4 s",
      "cls": "0",
-     "tbt": "310 ms",
-     "fcp": "5.5 s",
-     "si": "8.5 s",
+     "tbt": "570 ms",
+     "fcp": "5.6 s",
+     "si": "8.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4190,
@@ -1659,12 +1659,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 70,
-     "lcp": "4.5 s",
-     "cls": "0.004",
-     "tbt": "310 ms",
-     "fcp": "3.4 s",
-     "si": "3.4 s",
+     "score": 55,
+     "lcp": "10.0 s",
+     "cls": "0",
+     "tbt": "370 ms",
+     "fcp": "3.5 s",
+     "si": "5.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 719,
@@ -1920,7 +1920,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 331
+    "bytes": 330
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -2004,7 +2004,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 43,
-    "wc": 3597,
+    "wc": 3589,
     "faqs": [
      "What is Wegovy?",
      "Is it for me?",
@@ -2133,10 +2133,10 @@
      "DrugClass"
     ],
     "authors": [
-     "Gay perry",
      "Lynda",
      "ALISON JACKMAN",
-     "GEMMA CHADWICK"
+     "GEMMA CHADWICK",
+     "Lynette Wilkinson"
     ],
     "bytes": 414
    }
@@ -2172,7 +2172,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "warn",
-     "evidence": "3597 words vs competitor median 6028"
+     "evidence": "3589 words vs competitor median 6028"
     },
     {
      "name": "FAQ coverage",
@@ -2195,11 +2195,11 @@
    ],
    "entity_gaps": [
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     },
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     }
    ],
@@ -2226,9 +2226,9 @@
   },
   "opps": [
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
-   "Strengthen body depth (words) for a primary term (3597 words vs competitor median 6028)",
+   "Strengthen body depth (words) for a primary term (3589 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: STEP trials, Rybelsus",
+   "Add missing entities competitors cover: Rybelsus, STEP trials",
    "Cover missing topics/terms: needle",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],

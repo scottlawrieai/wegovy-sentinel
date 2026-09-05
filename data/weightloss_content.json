@@ -1016,7 +1016,7 @@
     "Weight loss FAQs"
    ],
    "h3n": 26,
-   "wc": 2537,
+   "wc": 2526,
    "faqs": [
     "Injectable vs oral treatments: what's the difference?",
     "How do clinicians decide which treatment is suitable?",
@@ -1086,8 +1086,8 @@
     "side effects",
     "out stars",
     "stars verified",
-    "september out",
     "out stars verified",
+    "september out",
     "september out stars",
     "subscribe save",
     "once-weekly injection",
@@ -1121,7 +1121,7 @@
     "Pharmacy"
    ],
    "authors": [],
-   "bytes": 387
+   "bytes": 388
   },
   "pages": [
    {
@@ -1160,12 +1160,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 61,
-     "lcp": "8.8 s",
-     "cls": "0.16",
-     "tbt": "130 ms",
-     "fcp": "3.2 s",
-     "si": "3.2 s",
+     "score": 37,
+     "lcp": "9.5 s",
+     "cls": "0.131",
+     "tbt": "1,150 ms",
+     "fcp": "3.4 s",
+     "si": "5.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 550,
@@ -1253,10 +1253,10 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 46,
-     "lcp": "11.4 s",
+     "score": 30,
+     "lcp": "11.5 s",
      "cls": "0.518",
-     "tbt": "140 ms",
+     "tbt": "680 ms",
      "fcp": "3.2 s",
      "si": "3.2 s",
      "strategy": "mobile",
@@ -1405,10 +1405,10 @@
     "authors": [],
     "bytes": 343,
     "psi": {
-     "score": 80,
+     "score": 82,
      "lcp": "4.0 s",
-     "cls": "0.026",
-     "tbt": "220 ms",
+     "cls": "0.013",
+     "tbt": "130 ms",
      "fcp": "2.3 s",
      "si": "3.7 s",
      "strategy": "mobile",
@@ -1733,7 +1733,7 @@
      "Weight loss FAQs"
     ],
     "h3n": 26,
-    "wc": 2537,
+    "wc": 2526,
     "faqs": [
      "Injectable vs oral treatments: what's the difference?",
      "How do clinicians decide which treatment is suitable?",
@@ -1803,8 +1803,8 @@
      "side effects",
      "out stars",
      "stars verified",
-     "september out",
      "out stars verified",
+     "september out",
      "september out stars",
      "subscribe save",
      "once-weekly injection",
@@ -1838,7 +1838,7 @@
      "Pharmacy"
     ],
     "authors": [],
-    "bytes": 387
+    "bytes": 388
    }
   ],
   "align": {
@@ -1872,7 +1872,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "2537 words vs competitor median 1098"
+     "evidence": "2526 words vs competitor median 1098"
     },
     {
      "name": "FAQ coverage",
