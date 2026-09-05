@@ -604,5 +604,613 @@
    "www.chemistdirect.co.uk",
    "www.weldricks.co.uk"
   ]
+ },
+ {
+  "date": "2026-09-05",
+  "mode": "live",
+  "phrase": "online pharmacy",
+  "primary": [
+   "online pharmacy",
+   "simple online pharmacy",
+   "online pharmacy uk"
+  ],
+  "secondary": [
+   "online chemist",
+   "pharmacy online",
+   "online doctor",
+   "repeat prescription",
+   "private prescription"
+  ],
+  "us": {
+   "url": "https://www.simpleonlinepharmacy.co.uk/",
+   "domain": "simpleonlinepharmacy.co.uk",
+   "rank": null,
+   "role": "us",
+   "status": "ok",
+   "title": "Simple Online Pharmacy | UK Trusted Online PharmacyToggle Menu",
+   "meta": "Explore clinically-proven weight loss treatments including Mounjaro and Wegovy. Clinician-led service with discreet delivery.",
+   "robots": "index,follow",
+   "h1": "Simple Online Pharmacy - Clinician-Led Online Doctor",
+   "h2": [
+    "Expert Healthcare built around you",
+    "What our patients value most",
+    "Real stories from our patients",
+    "How to get started",
+    "Our expert team",
+    "48,000+ verified customer reviews",
+    "Working with leading pharmaceutical brands to deliver better health outcomes",
+    "Why Simple Online Pharmacy",
+    "What AI says about us",
+    "Questions we hear often"
+   ],
+   "h3n": 7,
+   "wc": 1096,
+   "faqs": [
+    "Do I need to decide today?",
+    "Is this a clinical assessment?",
+    "How do I know what is right for me?"
+   ],
+   "open": "Rated 4.6 on Trustpilot | Listed in The Sunday Times 100, 2026 Rated 4.6 on Trustpilot Listed in The Sunday Times 100, 2026 Take the first steps to feeling healthier overall Weight Loss Treatments Simple Online Pharmacy - Clinician-Led Online Doctor Expert Healthcare built around you 4.6 48,000+ reviews Weight Loss Treatments \u2192 Weight loss treatments with no long-term commitment.",
+   "terms": [
+    "GPhC registered",
+    "Trustpilot reviews",
+    "clinical assessment",
+    "customer service",
+    "discreet packaging",
+    "dispensing",
+    "next-day delivery",
+    "online doctor consultation",
+    "prescriber",
+    "regulated pharmacy",
+    "weight loss treatments"
+   ],
+   "termhits": {
+    "GPhC registered": 6,
+    "regulated pharmacy": 1,
+    "online doctor consultation": 2,
+    "dispensing": 1,
+    "clinical assessment": 7,
+    "prescriber": 2,
+    "weight loss treatments": 13,
+    "next-day delivery": 1,
+    "discreet packaging": 7,
+    "Trustpilot reviews": 17,
+    "customer service": 2
+   },
+   "phrases": [
+    "simple online",
+    "online pharmacy",
+    "simple online pharmacy",
+    "out stars",
+    "stars verified",
+    "september out",
+    "out stars verified",
+    "september out stars",
+    "recommend simple",
+    "recommend simple online",
+    "discreet delivery",
+    "pharmacy because"
+   ],
+   "imgs": 27,
+   "videos": 0,
+   "links_int": 16,
+   "links_ext": 13,
+   "articles": {
+    "n": 8,
+    "paths": [
+     "/health-advice/abdal-alvi/",
+     "/health-advice/author/laura-perez/",
+     "/health-advice/aamina-rafiq/",
+     "/health-advice/ayisha-mushtaq/",
+     "/health-advice/rebekah-parker/"
+    ]
+   },
+   "schema": [
+    "WebPage",
+    "BreadcrumbList",
+    "ListItem",
+    "Organization",
+    "AggregateRating",
+    "ContactPoint",
+    "PostalAddress",
+    "FAQPage"
+   ],
+   "authors": [],
+   "bytes": 252
+  },
+  "pages": [
+   {
+    "url": "https://www.pharmacy2u.co.uk/",
+    "domain": "www.pharmacy2u.co.uk",
+    "rank": 1,
+    "role": "competitor",
+    "status": "blocked",
+    "title": "",
+    "meta": "",
+    "h1": "",
+    "h2": [],
+    "wc": 0,
+    "faqs": [],
+    "terms": [],
+    "phrases": [],
+    "imgs": 0,
+    "videos": 0,
+    "links_int": 0,
+    "links_ext": 0,
+    "articles": {
+     "n": 0,
+     "paths": []
+    },
+    "schema": [],
+    "authors": [],
+    "bytes": 0,
+    "psi": {
+     "score": 41,
+     "lcp": "12.0 s",
+     "cls": "0.024",
+     "tbt": "1,060 ms",
+     "fcp": "2.1 s",
+     "si": "11.0 s",
+     "strategy": "mobile",
+     "field": {
+      "lcp_ms": 3074,
+      "lcp_ms_cat": "AVERAGE",
+      "inp_ms": 280,
+      "inp_ms_cat": "AVERAGE",
+      "cls100": 20,
+      "cls100_cat": "AVERAGE"
+     }
+    }
+   },
+   {
+    "url": "https://www.pharmacyonline.co.uk/",
+    "domain": "www.pharmacyonline.co.uk",
+    "rank": 2,
+    "role": "competitor",
+    "status": "ok",
+    "title": "Online Pharmacy & Doctor UK Registered",
+    "meta": "Order your prescription drugs online today at Pharmacy Online. Fast & discreet delivery straight to your door. Free online doctor consultations available now.",
+    "robots": "",
+    "h1": "Your Trusted Online Pharmacy.",
+    "h2": [
+     "Popular products",
+     "Discover healthcare that's designed to suit you.",
+     "Let's show you how it works",
+     "We're Pharmacists first but our most vital part is a happy healthy customer"
+    ],
+    "h3n": 17,
+    "wc": 231,
+    "faqs": [],
+    "open": "Skip to main content Your Trusted Online Pharmacy. Improving the lives of our patients by making high-quality care accessible and convenient. Order before 15:30 on Monday to Friday for next day delivery Rated 4.73 Based on 5203 Reviews Fully inspected and regulated service UK registered pharmacy Approved UK-licensed treatments Discreet next day delivery Popular products View all products \u2192 UK",
+    "terms": [
+     "Trustpilot reviews",
+     "clinical assessment",
+     "discreet packaging",
+     "next-day delivery",
+     "online doctor consultation",
+     "prescriber",
+     "weight loss treatments"
+    ],
+    "termhits": {
+     "online doctor consultation": 2,
+     "clinical assessment": 1,
+     "prescriber": 1,
+     "weight loss treatments": 1,
+     "next-day delivery": 3,
+     "discreet packaging": 1,
+     "Trustpilot reviews": 2
+    },
+    "phrases": [
+     "next day",
+     "improving lives",
+     "lives patients",
+     "patients making",
+     "making high-quality",
+     "high-quality care",
+     "care accessible",
+     "accessible convenient",
+     "day delivery",
+     "improving lives patients",
+     "lives patients making",
+     "patients making high-quality"
+    ],
+    "imgs": 15,
+    "videos": 0,
+    "links_int": 11,
+    "links_ext": 2,
+    "articles": {
+     "n": 0,
+     "paths": []
+    },
+    "schema": [
+     "Organization",
+     "ContactPoint",
+     "LocalBusiness",
+     "Pharmacy",
+     "PostalAddress",
+     "WebSite",
+     "SearchAction"
+    ],
+    "authors": [],
+    "bytes": 320,
+    "psi": {
+     "score": 62,
+     "lcp": "11.4 s",
+     "cls": "0",
+     "tbt": "220 ms",
+     "fcp": "2.3 s",
+     "si": "7.0 s",
+     "strategy": "mobile",
+     "field": {
+      "lcp_ms": 1384,
+      "lcp_ms_cat": "FAST",
+      "inp_ms": 171,
+      "inp_ms_cat": "FAST",
+      "cls100": 0,
+      "cls100_cat": "FAST"
+     }
+    }
+   },
+   {
+    "url": "https://www.pharmica.co.uk/",
+    "domain": "www.pharmica.co.uk",
+    "rank": 3,
+    "role": "competitor",
+    "status": "ok",
+    "title": "",
+    "meta": "",
+    "robots": "",
+    "h1": "",
+    "h2": [],
+    "h3n": 0,
+    "wc": 0,
+    "faqs": [],
+    "open": "",
+    "terms": [],
+    "termhits": {},
+    "phrases": [],
+    "imgs": 0,
+    "videos": 0,
+    "links_int": 0,
+    "links_ext": 0,
+    "articles": {
+     "n": 0,
+     "paths": []
+    },
+    "schema": [],
+    "authors": [],
+    "bytes": 2,
+    "psi": {
+     "score": 86,
+     "lcp": "2.6 s",
+     "cls": "0.063",
+     "tbt": "400 ms",
+     "fcp": "1.5 s",
+     "si": "2.1 s",
+     "strategy": "mobile",
+     "field": {
+      "lcp_ms": 882,
+      "lcp_ms_cat": "FAST",
+      "inp_ms": 98,
+      "inp_ms_cat": "FAST",
+      "cls100": 0,
+      "cls100_cat": "FAST"
+     }
+    }
+   },
+   {
+    "url": "https://www.clickpharmacy.co.uk/",
+    "domain": "www.clickpharmacy.co.uk",
+    "rank": 4,
+    "role": "competitor",
+    "status": "ok",
+    "title": "Click Pharmacy UK | Online Pharmacy & Prescriptions",
+    "meta": "Click Pharmacy is a leading UK online pharmacy, offering NHS, private prescriptions and over the counter medications. A safe and convenient service for secure next day delivery.",
+    "robots": "",
+    "h1": "",
+    "h2": [
+     "How we can help",
+     "Why choose us?",
+     "Frequently Asked Questions"
+    ],
+    "h3n": 9,
+    "wc": 363,
+    "faqs": [
+     "Why choose us?",
+     "How is Click Pharmacy regulated?",
+     "What services do you provide?",
+     "Is Click Pharmacy located in the UK?",
+     "Is your service discreet and confidential?",
+     "Where does Click Pharmacy source its medicines from?",
+     "How to contact Click Pharmacy?"
+    ],
+    "open": "How we can help Select one of the categories below to view your treatment options. All Treatments Why choose us? Fast Next Day Delivery Guaranteed next day delivery available. UK registered pharmacy Our UK online pharmacy is registered with the GPhC. Discreet & Confidential We deliver in secure plain packaging. What our customers say Trustpilot Trustpilot Frequently Asked Questions How",
+    "terms": [
+     "GPhC registered",
+     "NHS",
+     "Trustpilot reviews",
+     "clinical assessment",
+     "discreet packaging",
+     "dispensing",
+     "distance selling pharmacy",
+     "next-day delivery",
+     "over-the-counter",
+     "prescriber",
+     "private prescription",
+     "weight loss treatments"
+    ],
+    "termhits": {
+     "GPhC registered": 4,
+     "NHS": 4,
+     "distance selling pharmacy": 1,
+     "private prescription": 3,
+     "dispensing": 1,
+     "clinical assessment": 1,
+     "prescriber": 1,
+     "weight loss treatments": 1,
+     "next-day delivery": 6,
+     "discreet packaging": 2,
+     "Trustpilot reviews": 2,
+     "over-the-counter": 1
+    },
+    "phrases": [
+     "click pharmacy",
+     "next day",
+     "day delivery",
+     "next day delivery",
+     "further information",
+     "online pharmacy",
+     "pharmacy registered",
+     "discreet confidential",
+     "confidential deliver",
+     "general pharmaceutical",
+     "pharmaceutical council",
+     "pharmacy contact"
+    ],
+    "imgs": 0,
+    "videos": 0,
+    "links_int": 7,
+    "links_ext": 7,
+    "articles": {
+     "n": 0,
+     "paths": []
+    },
+    "schema": [
+     "MedicalOrganization",
+     "Pharmacy",
+     "ContactPoint",
+     "PostalAddress",
+     "ImageObject",
+     "WebSite",
+     "SearchAction"
+    ],
+    "authors": [
+     "Mohammed A Rahman"
+    ],
+    "bytes": 106
+   },
+   {
+    "url": "https://www.chemistdirect.co.uk/",
+    "domain": "www.chemistdirect.co.uk",
+    "rank": 5,
+    "role": "competitor",
+    "status": "blocked",
+    "title": "",
+    "meta": "",
+    "h1": "",
+    "h2": [],
+    "wc": 0,
+    "faqs": [],
+    "terms": [],
+    "phrases": [],
+    "imgs": 0,
+    "videos": 0,
+    "links_int": 0,
+    "links_ext": 0,
+    "articles": {
+     "n": 0,
+     "paths": []
+    },
+    "schema": [],
+    "authors": [],
+    "bytes": 0
+   },
+   {
+    "url": "https://www.weldricks.co.uk/",
+    "domain": "www.weldricks.co.uk",
+    "rank": 6,
+    "role": "competitor",
+    "status": "blocked",
+    "title": "",
+    "meta": "",
+    "h1": "",
+    "h2": [],
+    "wc": 0,
+    "faqs": [],
+    "terms": [],
+    "phrases": [],
+    "imgs": 0,
+    "videos": 0,
+    "links_int": 0,
+    "links_ext": 0,
+    "articles": {
+     "n": 0,
+     "paths": []
+    },
+    "schema": [],
+    "authors": [],
+    "bytes": 0
+   },
+   {
+    "url": "https://www.simpleonlinepharmacy.co.uk/",
+    "domain": "simpleonlinepharmacy.co.uk",
+    "rank": null,
+    "role": "us",
+    "status": "ok",
+    "title": "Simple Online Pharmacy | UK Trusted Online PharmacyToggle Menu",
+    "meta": "Explore clinically-proven weight loss treatments including Mounjaro and Wegovy. Clinician-led service with discreet delivery.",
+    "robots": "index,follow",
+    "h1": "Simple Online Pharmacy - Clinician-Led Online Doctor",
+    "h2": [
+     "Expert Healthcare built around you",
+     "What our patients value most",
+     "Real stories from our patients",
+     "How to get started",
+     "Our expert team",
+     "48,000+ verified customer reviews",
+     "Working with leading pharmaceutical brands to deliver better health outcomes",
+     "Why Simple Online Pharmacy",
+     "What AI says about us",
+     "Questions we hear often"
+    ],
+    "h3n": 7,
+    "wc": 1096,
+    "faqs": [
+     "Do I need to decide today?",
+     "Is this a clinical assessment?",
+     "How do I know what is right for me?"
+    ],
+    "open": "Rated 4.6 on Trustpilot | Listed in The Sunday Times 100, 2026 Rated 4.6 on Trustpilot Listed in The Sunday Times 100, 2026 Take the first steps to feeling healthier overall Weight Loss Treatments Simple Online Pharmacy - Clinician-Led Online Doctor Expert Healthcare built around you 4.6 48,000+ reviews Weight Loss Treatments \u2192 Weight loss treatments with no long-term commitment.",
+    "terms": [
+     "GPhC registered",
+     "Trustpilot reviews",
+     "clinical assessment",
+     "customer service",
+     "discreet packaging",
+     "dispensing",
+     "next-day delivery",
+     "online doctor consultation",
+     "prescriber",
+     "regulated pharmacy",
+     "weight loss treatments"
+    ],
+    "termhits": {
+     "GPhC registered": 6,
+     "regulated pharmacy": 1,
+     "online doctor consultation": 2,
+     "dispensing": 1,
+     "clinical assessment": 7,
+     "prescriber": 2,
+     "weight loss treatments": 13,
+     "next-day delivery": 1,
+     "discreet packaging": 7,
+     "Trustpilot reviews": 17,
+     "customer service": 2
+    },
+    "phrases": [
+     "simple online",
+     "online pharmacy",
+     "simple online pharmacy",
+     "out stars",
+     "stars verified",
+     "september out",
+     "out stars verified",
+     "september out stars",
+     "recommend simple",
+     "recommend simple online",
+     "discreet delivery",
+     "pharmacy because"
+    ],
+    "imgs": 27,
+    "videos": 0,
+    "links_int": 16,
+    "links_ext": 13,
+    "articles": {
+     "n": 8,
+     "paths": [
+      "/health-advice/abdal-alvi/",
+      "/health-advice/author/laura-perez/",
+      "/health-advice/aamina-rafiq/",
+      "/health-advice/ayisha-mushtaq/",
+      "/health-advice/rebekah-parker/"
+     ]
+    },
+    "schema": [
+     "WebPage",
+     "BreadcrumbList",
+     "ListItem",
+     "Organization",
+     "AggregateRating",
+     "ContactPoint",
+     "PostalAddress",
+     "FAQPage"
+    ],
+    "authors": [],
+    "bytes": 252
+   }
+  ],
+  "align": {
+   "score": 64,
+   "checks": [
+    {
+     "name": "Title tag",
+     "key": "title",
+     "state": "pass",
+     "evidence": "Simple Online Pharmacy | UK Trusted Online PharmacyToggle Menu"
+    },
+    {
+     "name": "Meta description",
+     "key": "meta",
+     "state": "fail",
+     "evidence": "Explore clinically-proven weight loss treatments including Mounjaro and Wegovy. Clinician-led service with discreet delivery."
+    },
+    {
+     "name": "H1 heading",
+     "key": "h1",
+     "state": "warn",
+     "evidence": "Simple Online Pharmacy - Clinician-Led Online Doctor"
+    },
+    {
+     "name": "Opening copy (60w)",
+     "key": "open",
+     "state": "pass",
+     "evidence": "Rated 4.6 on Trustpilot | Listed in The Sunday Times 100, 2026 Rated 4.6 on Trustpilot Listed in The Sunday Times 100, 2026 Take the first steps to feeling heal"
+    },
+    {
+     "name": "Body depth (words)",
+     "key": "wc",
+     "state": "pass",
+     "evidence": "1096 words vs competitor median 297"
+    },
+    {
+     "name": "FAQ coverage",
+     "key": "faq",
+     "state": "fail",
+     "evidence": "3 FAQs, 0% of competitor FAQ topics covered"
+    },
+    {
+     "name": "Semantic coverage",
+     "key": "body",
+     "state": "pass",
+     "evidence": "100% of terms used by 2+ competitors"
+    }
+   ],
+   "term_gaps": [],
+   "entity_gaps": [],
+   "faq_gaps": [
+    "Why choose us?",
+    "How is Click Pharmacy regulated?",
+    "What services do you provide?",
+    "Is Click Pharmacy located in the UK?",
+    "Is your service discreet and confidential?",
+    "Where does Click Pharmacy source its medicines from?",
+    "How to contact Click Pharmacy?"
+   ],
+   "body_cov": 100,
+   "faq_cov": 0,
+   "comp_median_wc": 297
+  },
+  "opps": [
+   "Fix meta description: Explore clinically-proven weight loss treatments including Mounjaro and Wegovy. ",
+   "Fix faq coverage: 3 FAQs, 0% of competitor FAQ topics covered",
+   "Strengthen h1 heading for a primary term (Simple Online Pharmacy - Clinician-Led Online Doctor)",
+   "Add 7 FAQ(s) competitors answer that we don't, e.g. \u201cWhy choose us?\u201d"
+  ],
+  "fetched": 4,
+  "blocked": [
+   "www.pharmacy2u.co.uk",
+   "www.chemistdirect.co.uk",
+   "www.weldricks.co.uk"
+  ]
  }
 ]

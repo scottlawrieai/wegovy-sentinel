@@ -1,1 +1,22 @@
-[]
+[
+ {
+  "date": "2026-09-05",
+  "changes": [
+   {
+    "type": "seo",
+    "text": "H1 changed: “Expert Healthcare built around you” → “Simple Online Pharmacy - Clinician-Led Online Doctor”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Expert Healthcare built around you”",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Body copy −98 words (1,194 → 1,096)",
+    "source": "auto"
+   }
+  ]
+ }
+]
