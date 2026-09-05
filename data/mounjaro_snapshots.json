@@ -14861,12 +14861,12 @@
    "of": 6
   },
   "psi": {
-   "score": 58,
-   "lcp": "8.9 s",
+   "score": 48,
+   "lcp": "8.8 s",
    "cls": "0",
-   "tbt": "150 ms",
-   "fcp": "5.6 s",
-   "si": "6.3 s",
+   "tbt": "520 ms",
+   "fcp": "4.7 s",
+   "si": "6.1 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 764,

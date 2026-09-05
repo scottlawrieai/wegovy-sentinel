@@ -1167,7 +1167,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 43,
-   "wc": 3608,
+   "wc": 3597,
    "faqs": [
     "What is Wegovy?",
     "Is it for me?",
@@ -1218,7 +1218,6 @@
     "maintenance dose",
     "missed dose",
     "nausea",
-    "needle",
     "pancreatitis",
     "pre-filled pen",
     "pregnancy warning",
@@ -1245,7 +1244,6 @@
     "fridge / storage": 9,
     "FlexTouch pen": 2,
     "pre-filled pen": 2,
-    "needle": 1,
     "weight loss %": 4,
     "Novo Nordisk": 2,
     "prescription-only": 7,
@@ -1266,10 +1264,10 @@
     "september out stars",
     "week week",
     "common side",
-    "once weekly",
     "stars verified",
-    "common side effects",
     "out stars verified",
+    "once weekly",
+    "common side effects",
     "subscribe save",
     "reviews out"
    ],
@@ -1298,10 +1296,10 @@
     "DrugClass"
    ],
    "authors": [
-    "Tlewis",
     "Gay perry",
     "Lynda",
-    "ALISON JACKMAN"
+    "ALISON JACKMAN",
+    "GEMMA CHADWICK"
    ],
    "bytes": 414
   },
@@ -1429,14 +1427,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 659,
+    "bytes": 660,
     "psi": {
-     "score": 67,
-     "lcp": "12.3 s",
+     "score": 64,
+     "lcp": "12.4 s",
      "cls": "0.082",
-     "tbt": "130 ms",
+     "tbt": "160 ms",
      "fcp": "2.3 s",
-     "si": "4.4 s",
+     "si": "6.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1079,
@@ -1553,12 +1551,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 33,
-     "lcp": "16.1 s",
+     "score": 50,
+     "lcp": "15.7 s",
      "cls": "0",
-     "tbt": "1,320 ms",
-     "fcp": "5.7 s",
-     "si": "8.2 s",
+     "tbt": "310 ms",
+     "fcp": "5.5 s",
+     "si": "8.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4190,
@@ -1661,12 +1659,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 64,
-     "lcp": "9.6 s",
-     "cls": "0.006",
-     "tbt": "190 ms",
-     "fcp": "3.5 s",
-     "si": "3.6 s",
+     "score": 70,
+     "lcp": "4.5 s",
+     "cls": "0.004",
+     "tbt": "310 ms",
+     "fcp": "3.4 s",
+     "si": "3.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 719,
@@ -1922,7 +1920,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 330
+    "bytes": 331
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -2006,7 +2004,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 43,
-    "wc": 3608,
+    "wc": 3597,
     "faqs": [
      "What is Wegovy?",
      "Is it for me?",
@@ -2057,7 +2055,6 @@
      "maintenance dose",
      "missed dose",
      "nausea",
-     "needle",
      "pancreatitis",
      "pre-filled pen",
      "pregnancy warning",
@@ -2084,7 +2081,6 @@
      "fridge / storage": 9,
      "FlexTouch pen": 2,
      "pre-filled pen": 2,
-     "needle": 1,
      "weight loss %": 4,
      "Novo Nordisk": 2,
      "prescription-only": 7,
@@ -2105,10 +2101,10 @@
      "september out stars",
      "week week",
      "common side",
-     "once weekly",
      "stars verified",
-     "common side effects",
      "out stars verified",
+     "once weekly",
+     "common side effects",
      "subscribe save",
      "reviews out"
     ],
@@ -2137,10 +2133,10 @@
      "DrugClass"
     ],
     "authors": [
-     "Tlewis",
      "Gay perry",
      "Lynda",
-     "ALISON JACKMAN"
+     "ALISON JACKMAN",
+     "GEMMA CHADWICK"
     ],
     "bytes": 414
    }
@@ -2176,7 +2172,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "warn",
-     "evidence": "3608 words vs competitor median 6028"
+     "evidence": "3597 words vs competitor median 6028"
     },
     {
      "name": "FAQ coverage",
@@ -2188,17 +2184,22 @@
      "name": "Semantic coverage",
      "key": "body",
      "state": "pass",
-     "evidence": "93% of terms used by 2+ competitors"
+     "evidence": "90% of terms used by 2+ competitors"
     }
    ],
-   "term_gaps": [],
+   "term_gaps": [
+    {
+     "term": "needle",
+     "competitors": 3
+    }
+   ],
    "entity_gaps": [
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     },
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     }
    ],
@@ -2219,15 +2220,16 @@
     "Is there a generic version of Wegovy?",
     "Why am I still hungry on Wegovy?"
    ],
-   "body_cov": 93,
+   "body_cov": 90,
    "faq_cov": 44,
    "comp_median_wc": 6028
   },
   "opps": [
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
-   "Strengthen body depth (words) for a primary term (3608 words vs competitor median 6028)",
+   "Strengthen body depth (words) for a primary term (3597 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: Rybelsus, STEP trials",
+   "Add missing entities competitors cover: STEP trials, Rybelsus",
+   "Cover missing topics/terms: needle",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],
   "fetched": 7,

@@ -14631,12 +14631,12 @@
    "of": 6
   },
   "psi": {
-   "score": 50,
-   "lcp": "7.3 s",
+   "score": 88,
+   "lcp": "2.6 s",
    "cls": "0",
-   "tbt": "770 ms",
-   "fcp": "3.4 s",
-   "si": "3.8 s",
+   "tbt": "310 ms",
+   "fcp": "2.3 s",
+   "si": "2.3 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 875,

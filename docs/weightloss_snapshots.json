@@ -13147,12 +13147,12 @@
    "of": 6
   },
   "psi": {
-   "score": 58,
-   "lcp": "12.1 s",
+   "score": 48,
+   "lcp": "10.9 s",
    "cls": "0",
-   "tbt": "170 ms",
-   "fcp": "5.7 s",
-   "si": "6.3 s",
+   "tbt": "630 ms",
+   "fcp": "3.4 s",
+   "si": "6.0 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 529,
@@ -13168,7 +13168,7 @@
    "comp": {
     "Superdrug": 102,
     "Chemist4U": 130,
-    "MedExpress": 75,
+    "MedExpress": 76,
     "Boots": 200
    },
    "prospects": [

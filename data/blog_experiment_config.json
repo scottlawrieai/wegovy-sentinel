@@ -1,0 +1,56 @@
+{
+ "pages": [
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/mounjaro/sulphur-burps-mounjaro/",
+   "label": "sulphur burps mounjaro",
+   "live": null,
+   "picked": {
+    "pos": 6.5,
+    "impr": 482457,
+    "clicks": 1573
+   }
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/ozempic/what-is-the-ozempic-dosage-for-weight-loss/",
+   "label": "what is the ozempic dosage for weight loss",
+   "live": null,
+   "picked": {
+    "pos": 5.1,
+    "impr": 481964,
+    "clicks": 3068
+   }
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/mounjaro/mounjaro-hair-loss/",
+   "label": "mounjaro hair loss",
+   "live": null,
+   "picked": {
+    "pos": 6.0,
+    "impr": 298991,
+    "clicks": 644
+   }
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/mounjaro/combat-mounjaro-fatigue/",
+   "label": "combat mounjaro fatigue",
+   "live": null,
+   "picked": {
+    "pos": 5.7,
+    "impr": 291603,
+    "clicks": 1285
+   }
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/how-long-wegovy-pill-to-work/",
+   "label": "how long wegovy pill to work",
+   "live": null,
+   "picked": {
+    "pos": 5.6,
+    "impr": 237594,
+    "clicks": 1850
+   }
+  }
+ ],
+ "selected": "2026-09-05",
+ "criteria": "health-advice pages, avg pos 5.0-15.0, >= 300 impressions/28d, top 5 by impressions"
+}

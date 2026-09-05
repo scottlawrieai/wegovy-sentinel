@@ -15562,12 +15562,12 @@
    "of": 6
   },
   "psi": {
-   "score": 67,
-   "lcp": "7.4 s",
+   "score": 54,
+   "lcp": "9.1 s",
    "cls": "0",
-   "tbt": "150 ms",
-   "fcp": "3.2 s",
-   "si": "3.7 s",
+   "tbt": "280 ms",
+   "fcp": "5.6 s",
+   "si": "6.1 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 577,
