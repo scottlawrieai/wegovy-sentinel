@@ -22031,12 +22031,12 @@
    "of": 6
   },
   "psi": {
-   "score": 58,
-   "lcp": "9.0 s",
+   "score": 50,
+   "lcp": "8.9 s",
    "cls": "0",
-   "tbt": "180 ms",
-   "fcp": "5.6 s",
-   "si": "6.1 s",
+   "tbt": "430 ms",
+   "fcp": "4.7 s",
+   "si": "6.3 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 746,
@@ -22051,7 +22051,7 @@
    "ours": 44,
    "comp": {
     "Superdrug": 79,
-    "Chemist4U": 158,
+    "Chemist4U": 160,
     "FamilyChemist": 3,
     "MedExpress": 63,
     "Boots": 200

@@ -2286,7 +2286,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 43,
-   "wc": 3536,
+   "wc": 3604,
    "faqs": [
     "What is Wegovy?",
     "Is it for me?",
@@ -2367,7 +2367,7 @@
     "Novo Nordisk": 2,
     "prescription-only": 7,
     "nausea": 19,
-    "side effects": 15,
+    "side effects": 17,
     "pancreatitis": 1,
     "thyroid warning": 6,
     "pregnancy warning": 7,
@@ -2385,9 +2385,9 @@
     "common side",
     "stars verified",
     "out stars verified",
+    "subscribe save",
     "once weekly",
     "common side effects",
-    "subscribe save",
     "reviews out"
    ],
    "imgs": 23,
@@ -2415,12 +2415,12 @@
     "DrugClass"
    ],
    "authors": [
-    "Lynette Lamb",
-    "Wilma Mitten",
-    "Jayne",
-    "Stephanie Lee"
+    "Brenda Re",
+    "Karolyn Towner",
+    "Jackie",
+    "Maria Mendes"
    ],
-   "bytes": 413
+   "bytes": 414
   },
   "pages": [
    {
@@ -2546,14 +2546,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 660,
+    "bytes": 659,
     "psi": {
-     "score": 68,
-     "lcp": "12.6 s",
+     "score": 37,
+     "lcp": "12.3 s",
      "cls": "0.085",
-     "tbt": "60 ms",
-     "fcp": "2.3 s",
-     "si": "4.7 s",
+     "tbt": "1,160 ms",
+     "fcp": "2.6 s",
+     "si": "10.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1075,
@@ -2670,12 +2670,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 28,
-     "lcp": "13.1 s",
+     "score": 40,
+     "lcp": "15.9 s",
      "cls": "0",
-     "tbt": "2,520 ms",
-     "fcp": "4.6 s",
-     "si": "10.1 s",
+     "tbt": "720 ms",
+     "fcp": "5.6 s",
+     "si": "8.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4184,
@@ -2778,12 +2778,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 43,
-     "lcp": "8.9 s",
+     "score": 50,
+     "lcp": "9.5 s",
      "cls": "0",
-     "tbt": "950 ms",
-     "fcp": "3.5 s",
-     "si": "5.1 s",
+     "tbt": "580 ms",
+     "fcp": "3.6 s",
+     "si": "4.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 726,
@@ -3123,7 +3123,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 43,
-    "wc": 3536,
+    "wc": 3604,
     "faqs": [
      "What is Wegovy?",
      "Is it for me?",
@@ -3204,7 +3204,7 @@
      "Novo Nordisk": 2,
      "prescription-only": 7,
      "nausea": 19,
-     "side effects": 15,
+     "side effects": 17,
      "pancreatitis": 1,
      "thyroid warning": 6,
      "pregnancy warning": 7,
@@ -3222,9 +3222,9 @@
      "common side",
      "stars verified",
      "out stars verified",
+     "subscribe save",
      "once weekly",
      "common side effects",
-     "subscribe save",
      "reviews out"
     ],
     "imgs": 23,
@@ -3252,12 +3252,12 @@
      "DrugClass"
     ],
     "authors": [
-     "Lynette Lamb",
-     "Wilma Mitten",
-     "Jayne",
-     "Stephanie Lee"
+     "Brenda Re",
+     "Karolyn Towner",
+     "Jackie",
+     "Maria Mendes"
     ],
-    "bytes": 413
+    "bytes": 414
    }
   ],
   "align": {
@@ -3291,7 +3291,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "warn",
-     "evidence": "3536 words vs competitor median 6028"
+     "evidence": "3604 words vs competitor median 6028"
     },
     {
      "name": "FAQ coverage",
@@ -3314,11 +3314,11 @@
    ],
    "entity_gaps": [
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     },
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     }
    ],
@@ -3345,9 +3345,9 @@
   },
   "opps": [
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
-   "Strengthen body depth (words) for a primary term (3536 words vs competitor median 6028)",
+   "Strengthen body depth (words) for a primary term (3604 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: Rybelsus, STEP trials",
+   "Add missing entities competitors cover: STEP trials, Rybelsus",
    "Cover missing topics/terms: needle",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],

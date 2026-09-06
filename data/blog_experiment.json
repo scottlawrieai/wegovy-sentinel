@@ -748,7 +748,29 @@
       "pos": 6.7
      }
     }
-   ]
+   ],
+   "health": {
+    "status": "ok",
+    "title": "Mounjaro Giving You Sulphur Burps?",
+    "meta": "If Mounjaro is causing unpleasant eggy burps, you're not alone. Find out why they happen, how to ease them and when to talk to a healthcare professional.",
+    "robots": "index,follow,max-image-preview:large",
+    "h1": "Sulphur Burps on Mounjaro: How to Get Rid of Them",
+    "h2n": 8,
+    "faqs": 4,
+    "wc": 1654,
+    "schema": [
+     "Article",
+     "BreadcrumbList",
+     "ContactPoint",
+     "Country",
+     "CreativeWork",
+     "EducationalOccupationalCredential",
+     "ImageObject",
+     "ListItem",
+     "MedicalWebPage",
+     "Organization"
+    ]
+   }
   },
   {
    "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/ozempic/what-is-the-ozempic-dosage-for-weight-loss/",
@@ -1498,7 +1520,29 @@
       "pos": 2.1
      }
     }
-   ]
+   ],
+   "health": {
+    "status": "ok",
+    "title": "What is the Ozempic Dosage for Weight Loss? | Simple Online Pharmacy",
+    "meta": "Learn about the recommended Ozempic dosage for weight loss, including starting dose, adjustments, and considerations for effective use.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": "What is the Ozempic Dosage for Weight Loss?",
+    "h2n": 8,
+    "faqs": 6,
+    "wc": 1468,
+    "schema": [
+     "Article",
+     "BreadcrumbList",
+     "EntryPoint",
+     "ImageObject",
+     "ListItem",
+     "MedicalWebPage",
+     "Organization",
+     "Person",
+     "PropertyValueSpecification",
+     "ReadAction"
+    ]
+   }
   },
   {
    "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/mounjaro/mounjaro-hair-loss/",
@@ -2248,7 +2292,29 @@
       "pos": 5.8
      }
     }
-   ]
+   ],
+   "health": {
+    "status": "ok",
+    "title": "Mounjaro Hair Loss: What Causes It and How to Stop It",
+    "meta": "Mounjaro may cause hair loss due to rapid weight loss. Get expert insights on causes like telogen effluvium, nutrient gaps and learn how to manage it.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": "Mounjaro Hair Loss: What Causes It and How to Stop It",
+    "h2n": 9,
+    "faqs": 3,
+    "wc": 1582,
+    "schema": [
+     "Article",
+     "BreadcrumbList",
+     "EntryPoint",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "Person",
+     "PropertyValueSpecification",
+     "ReadAction",
+     "SearchAction"
+    ]
+   }
   },
   {
    "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/mounjaro/combat-mounjaro-fatigue/",
@@ -2998,7 +3064,29 @@
       "pos": 2.3
      }
     }
-   ]
+   ],
+   "health": {
+    "status": "ok",
+    "title": "How to Combat Mounjaro Fatigue | Simple Online Pharmacy",
+    "meta": "Don\u2019t let Mounjaro fatigue slow you down. Learn how to improve your energy levels with better nutrition, sleep habits, hydration and gentle exercise.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": "Mounjaro Fatigue: Why It Happens & Simple Steps to Combat It",
+    "h2n": 6,
+    "faqs": 2,
+    "wc": 1760,
+    "schema": [
+     "Article",
+     "BreadcrumbList",
+     "EntryPoint",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "Person",
+     "PropertyValueSpecification",
+     "ReadAction",
+     "SearchAction"
+    ]
+   }
   },
   {
    "url": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/how-long-wegovy-pill-to-work/",
@@ -3748,7 +3836,29 @@
       "pos": 7.2
      }
     }
-   ]
+   ],
+   "health": {
+    "status": "ok",
+    "title": "How Long Does the Wegovy Pill Take to Work for Weight Loss?",
+    "meta": "Wegovy pill results usually build over months, not days. Learn when appetite changes start, when weight loss becomes visible, and why month one is too early to judge.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": "How Long Does the Wegovy Pill Take to Work?",
+    "h2n": 12,
+    "faqs": 8,
+    "wc": 2583,
+    "schema": [
+     "Article",
+     "BreadcrumbList",
+     "EntryPoint",
+     "ImageObject",
+     "ListItem",
+     "Organization",
+     "Person",
+     "PropertyValueSpecification",
+     "ReadAction",
+     "SearchAction"
+    ]
+   }
   }
  ],
  "as_of": "2026-09-06",

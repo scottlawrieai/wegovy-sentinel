@@ -1252,7 +1252,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1035,
+   "wc": 1098,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -1353,12 +1353,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 29,
-     "lcp": "12.7 s",
-     "cls": "0.011",
-     "tbt": "2,960 ms",
-     "fcp": "3.8 s",
-     "si": "13.2 s",
+     "score": 34,
+     "lcp": "14.0 s",
+     "cls": "0.026",
+     "tbt": "3,490 ms",
+     "fcp": "2.1 s",
+     "si": "14.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3072,
@@ -1442,12 +1442,12 @@
     "authors": [],
     "bytes": 320,
     "psi": {
-     "score": 65,
-     "lcp": "10.1 s",
-     "cls": "0",
-     "tbt": "150 ms",
-     "fcp": "2.3 s",
-     "si": "6.2 s",
+     "score": 44,
+     "lcp": "10.7 s",
+     "cls": "0.004",
+     "tbt": "1,030 ms",
+     "fcp": "2.1 s",
+     "si": "7.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1379,
@@ -1489,12 +1489,12 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 69,
-     "lcp": "3.0 s",
+     "score": 97,
+     "lcp": "2.2 s",
      "cls": "0.063",
-     "tbt": "990 ms",
+     "tbt": "100 ms",
      "fcp": "1.5 s",
-     "si": "4.4 s",
+     "si": "1.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 874,
@@ -1672,7 +1672,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1035,
+    "wc": 1098,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -1778,7 +1778,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1035 words vs competitor median 297"
+     "evidence": "1098 words vs competitor median 297"
     },
     {
      "name": "FAQ coverage",
