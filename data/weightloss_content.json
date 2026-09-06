@@ -1989,7 +1989,7 @@
     "Weight loss FAQs"
    ],
    "h3n": 26,
-   "wc": 2545,
+   "wc": 2539,
    "faqs": [
     "Injectable vs oral treatments: what's the difference?",
     "How do clinicians decide which treatment is suitable?",
@@ -2133,12 +2133,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 31,
-     "lcp": "7.6 s",
-     "cls": "0.131",
-     "tbt": "2,860 ms",
-     "fcp": "3.5 s",
-     "si": "5.8 s",
+     "score": 62,
+     "lcp": "11.0 s",
+     "cls": "0",
+     "tbt": "200 ms",
+     "fcp": "3.4 s",
+     "si": "5.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 552,
@@ -2226,12 +2226,12 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 24,
-     "lcp": "13.2 s",
+     "score": 42,
+     "lcp": "11.3 s",
      "cls": "0.518",
-     "tbt": "420 ms",
-     "fcp": "9.4 s",
-     "si": "9.4 s",
+     "tbt": "230 ms",
+     "fcp": "3.3 s",
+     "si": "3.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1732,
@@ -2378,12 +2378,12 @@
     "authors": [],
     "bytes": 343,
     "psi": {
-     "score": 87,
-     "lcp": "3.5 s",
-     "cls": "0.013",
-     "tbt": "60 ms",
-     "fcp": "2.3 s",
-     "si": "3.4 s",
+     "score": 85,
+     "lcp": "3.8 s",
+     "cls": "0.026",
+     "tbt": "10 ms",
+     "fcp": "2.4 s",
+     "si": "2.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 665,
@@ -2706,7 +2706,7 @@
      "Weight loss FAQs"
     ],
     "h3n": 26,
-    "wc": 2545,
+    "wc": 2539,
     "faqs": [
      "Injectable vs oral treatments: what's the difference?",
      "How do clinicians decide which treatment is suitable?",
@@ -2845,7 +2845,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "2545 words vs competitor median 1098"
+     "evidence": "2539 words vs competitor median 1098"
     },
     {
      "name": "FAQ coverage",

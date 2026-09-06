@@ -23485,12 +23485,12 @@
    "of": 6
   },
   "psi": {
-   "score": 47,
-   "lcp": "8.9 s",
+   "score": 51,
+   "lcp": "7.2 s",
    "cls": "0",
-   "tbt": "740 ms",
+   "tbt": "570 ms",
    "fcp": "3.3 s",
-   "si": "5.4 s",
+   "si": "5.5 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 576,

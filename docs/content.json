@@ -33926,7 +33926,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 58,
-   "wc": 7111,
+   "wc": 7105,
    "faqs": [
     "What is the Wegovy pill?",
     "How does the Wegovy pill work?",
@@ -34240,14 +34240,14 @@
      "OfferShippingDetails"
     ],
     "authors": [],
-    "bytes": 624,
+    "bytes": 625,
     "psi": {
      "score": 59,
      "lcp": "10.7 s",
      "cls": "0",
-     "tbt": "70 ms",
-     "fcp": "5.9 s",
-     "si": "6.9 s",
+     "tbt": "60 ms",
+     "fcp": "6.0 s",
+     "si": "7.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1140,
@@ -34374,12 +34374,12 @@
     "authors": [],
     "bytes": 323,
     "psi": {
-     "score": 35,
-     "lcp": "13.3 s",
+     "score": 56,
+     "lcp": "12.5 s",
      "cls": "0",
-     "tbt": "1,090 ms",
+     "tbt": "180 ms",
      "fcp": "4.8 s",
-     "si": "9.3 s",
+     "si": "8.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3493,
@@ -34531,14 +34531,14 @@
      "AggregateOffer"
     ],
     "authors": [],
-    "bytes": 301,
+    "bytes": 300,
     "psi": {
      "score": 66,
      "lcp": "15.6 s",
      "cls": "0.023",
      "tbt": "0 ms",
      "fcp": "3.7 s",
-     "si": "4.3 s",
+     "si": "4.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1354,
@@ -34654,10 +34654,10 @@
      "Wegovy injection": 5,
      "Mounjaro / tirzepatide": 5,
      "orforglipron / Foundayo": 4,
-     "price / cost": 18,
+     "price / cost": 17,
      "UK availability": 2,
      "NHS": 8,
-     "online consultation": 9,
+     "online consultation": 5,
      "delivery": 15
     },
     "phrases": [
@@ -34876,7 +34876,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 58,
-    "wc": 7111,
+    "wc": 7105,
     "faqs": [
      "What is the Wegovy pill?",
      "How does the Wegovy pill work?",
@@ -35070,7 +35070,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "7111 words vs competitor median 3757"
+     "evidence": "7105 words vs competitor median 3757"
     },
     {
      "name": "FAQ coverage",

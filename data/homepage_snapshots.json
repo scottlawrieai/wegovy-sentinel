@@ -22078,12 +22078,12 @@
    "of": 6
   },
   "psi": {
-   "score": 40,
-   "lcp": "10.3 s",
+   "score": 45,
+   "lcp": "8.6 s",
    "cls": "0",
-   "tbt": "870 ms",
-   "fcp": "4.7 s",
-   "si": "6.4 s",
+   "tbt": "1,310 ms",
+   "fcp": "2.2 s",
+   "si": "4.5 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 881,

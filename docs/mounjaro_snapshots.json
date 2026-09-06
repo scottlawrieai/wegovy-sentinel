@@ -22031,12 +22031,12 @@
    "of": 6
   },
   "psi": {
-   "score": 50,
+   "score": 57,
    "lcp": "8.9 s",
    "cls": "0",
-   "tbt": "430 ms",
-   "fcp": "4.7 s",
-   "si": "6.3 s",
+   "tbt": "210 ms",
+   "fcp": "5.6 s",
+   "si": "6.2 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 746,

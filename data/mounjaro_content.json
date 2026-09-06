@@ -3152,7 +3152,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 6042,
+   "wc": 6041,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -3413,14 +3413,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 707,
+    "bytes": 709,
     "psi": {
-     "score": 65,
-     "lcp": "8.2 s",
-     "cls": "0.014",
-     "tbt": "190 ms",
-     "fcp": "2.6 s",
-     "si": "5.3 s",
+     "score": 66,
+     "lcp": "7.8 s",
+     "cls": "0.125",
+     "tbt": "30 ms",
+     "fcp": "2.3 s",
+     "si": "4.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1192,
@@ -3500,10 +3500,10 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 31,
-     "lcp": "14.8 s",
+     "score": 23,
+     "lcp": "14.9 s",
      "cls": "0.518",
-     "tbt": "240 ms",
+     "tbt": "490 ms",
      "fcp": "9.2 s",
      "si": "9.2 s",
      "strategy": "mobile",
@@ -3671,14 +3671,14 @@
      "CollegeOrUniversity"
     ],
     "authors": [],
-    "bytes": 317,
+    "bytes": 319,
     "psi": {
      "score": 73,
-     "lcp": "6.8 s",
+     "lcp": "6.5 s",
      "cls": "0.026",
-     "tbt": "10 ms",
+     "tbt": "50 ms",
      "fcp": "2.4 s",
-     "si": "3.1 s",
+     "si": "3.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1028,
@@ -3908,7 +3908,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 6042,
+    "wc": 6041,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -4072,7 +4072,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6042 words vs competitor median 5369"
+     "evidence": "6041 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",
