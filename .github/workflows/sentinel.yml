@@ -203,6 +203,7 @@ jobs:
           GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
           GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python blog_experiment_sentinel.py
 
       - name: Run Foundayo Sentinel

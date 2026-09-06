@@ -118,6 +118,72 @@ def fetch_page_rows() -> list:
     return rows
 
 
+def page_health(url: str) -> dict:
+    """Fetch the live page and capture its SEO-critical shape.
+
+    Runs for every cohort page so a template rollout is verified the same
+    day: title/meta/robots/H1/schema/word count. Never fatal.
+    """
+    try:
+        import content_audit
+        st, html = content_audit.fetch_html(url)
+        if st != "ok":
+            return {"status": st}
+        pg = content_audit.parse_page(html)
+        types = set()
+
+        def walk(x):
+            if isinstance(x, dict):
+                t = x.get("@type")
+                if isinstance(t, str):
+                    types.add(t)
+                elif isinstance(t, list):
+                    types.update(str(i) for i in t)
+                for v in x.values():
+                    walk(v)
+            elif isinstance(x, list):
+                for v in x:
+                    walk(v)
+
+        for blob in pg.ld_json:
+            try:
+                walk(json.loads(blob))
+            except ValueError:
+                pass
+        body = " ".join(pg.text_parts)
+        return {"status": "ok", "title": pg.title, "meta": pg.meta_desc,
+                "robots": pg.meta_robots, "h1": pg.h1, "h2n": len(pg.h2),
+                "faqs": len(pg.faq_questions), "wc": len(body.split()),
+                "schema": sorted(types)[:10]}
+    except Exception as e:
+        return {"status": f"error:{type(e).__name__}"}
+
+
+def health_problems(prev: dict, cur: dict, live: bool) -> list:
+    """Critical template-health regressions worth waking a human for."""
+    probs = []
+    st = cur.get("status")
+    if st != "ok":
+        if live:
+            probs.append(f"page not fetchable ({st})")
+        return probs
+    if "noindex" in (cur.get("robots") or ""):
+        probs.append(f"ROBOTS NOINDEX present ({cur.get('robots')})")
+    if not cur.get("title"):
+        probs.append("title tag empty")
+    if not cur.get("h1"):
+        probs.append("H1 missing")
+    if prev and prev.get("status") == "ok":
+        ps, cs = set(prev.get("schema") or []), set(cur.get("schema") or [])
+        lost = ps - cs
+        if lost:
+            probs.append(f"schema types lost: {', '.join(sorted(lost))}")
+        pw, cw = prev.get("wc") or 0, cur.get("wc") or 0
+        if pw and cw < pw * 0.7:
+            probs.append(f"word count fell {pw} -> {cw}")
+    return probs
+
+
 def load_json(path, default):
     if os.path.exists(path):
         try:
@@ -211,6 +277,29 @@ def main():
             print(f"[warn] blog-exp queries {url}: {e}", file=sys.stderr)
             entry["queries"] = []
         out_pages.append(entry)
+
+    prev_out = load_json(DOCS, {}) or {}
+    prev_health = {p.get("url"): p.get("health") for p in prev_out.get("pages", [])}
+    alerts_lines = []
+    for entry in out_pages:
+        entry["health"] = page_health(entry["url"])
+        probs = health_problems(prev_health.get(entry["url"]), entry["health"],
+                                bool(entry.get("live")))
+        for pr in probs:
+            line = f"{entry['label']}: {pr}"
+            print(f"[blog-exp][warn] {line}", file=sys.stderr)
+            if entry.get("live"):
+                alerts_lines.append(line)
+    if alerts_lines:
+        try:
+            import alerts as alerts_mod
+            alerts_mod.open_issue(
+                f"Blog template alert — {today_uk()}",
+                "Template-health regressions on LIVE experiment pages:\n\n"
+                + "\n".join("- " + l for l in alerts_lines)
+                + "\n\nhttps://scottlawrieai.github.io/wegovy-sentinel/#blogs")
+        except Exception as e:
+            print(f"[warn] blog-exp alert failed: {e}", file=sys.stderr)
 
     if not any(p["series"] for p in out_pages):
         prev = load_json(DOCS, None)
