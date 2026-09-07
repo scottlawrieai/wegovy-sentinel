@@ -1860,7 +1860,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1076,
+   "wc": 1071,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -1885,7 +1885,7 @@
     "regulated pharmacy": 1,
     "online doctor consultation": 2,
     "dispensing": 1,
-    "clinical assessment": 7,
+    "clinical assessment": 9,
     "prescriber": 2,
     "weight loss treatments": 13,
     "next-day delivery": 1,
@@ -1899,13 +1899,13 @@
     "simple online pharmacy",
     "out stars",
     "stars verified",
-    "september out",
     "out stars verified",
+    "september out",
     "september out stars",
     "recommend simple",
     "recommend simple online",
     "discreet delivery",
-    "great service"
+    "pharmacy because"
    ],
    "imgs": 27,
    "videos": 0,
@@ -1961,12 +1961,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 38,
-     "lcp": "12.1 s",
-     "cls": "0.062",
-     "tbt": "1,090 ms",
+     "score": 32,
+     "lcp": "15.1 s",
+     "cls": "0.015",
+     "tbt": "5,940 ms",
      "fcp": "2.6 s",
-     "si": "11.2 s",
+     "si": "17.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3071,
@@ -2050,12 +2050,12 @@
     "authors": [],
     "bytes": 320,
     "psi": {
-     "score": 57,
-     "lcp": "10.6 s",
+     "score": 64,
+     "lcp": "9.9 s",
      "cls": "0",
-     "tbt": "430 ms",
-     "fcp": "2.1 s",
-     "si": "6.1 s",
+     "tbt": "40 ms",
+     "fcp": "3.0 s",
+     "si": "6.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1371,
@@ -2097,12 +2097,12 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 96,
-     "lcp": "2.6 s",
-     "cls": "0.063",
-     "tbt": "40 ms",
+     "score": 75,
+     "lcp": "5.0 s",
+     "cls": "0",
+     "tbt": "260 ms",
      "fcp": "1.5 s",
-     "si": "1.5 s",
+     "si": "4.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 869,
@@ -2280,7 +2280,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1076,
+    "wc": 1071,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -2305,7 +2305,7 @@
      "regulated pharmacy": 1,
      "online doctor consultation": 2,
      "dispensing": 1,
-     "clinical assessment": 7,
+     "clinical assessment": 9,
      "prescriber": 2,
      "weight loss treatments": 13,
      "next-day delivery": 1,
@@ -2319,13 +2319,13 @@
      "simple online pharmacy",
      "out stars",
      "stars verified",
-     "september out",
      "out stars verified",
+     "september out",
      "september out stars",
      "recommend simple",
      "recommend simple online",
      "discreet delivery",
-     "great service"
+     "pharmacy because"
     ],
     "imgs": 27,
     "videos": 0,
@@ -2386,7 +2386,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1076 words vs competitor median 297"
+     "evidence": "1071 words vs competitor median 297"
     },
     {
      "name": "FAQ coverage",

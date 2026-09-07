@@ -3405,7 +3405,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 43,
-   "wc": 3602,
+   "wc": 3608,
    "faqs": [
     "What is Wegovy?",
     "Is it for me?",
@@ -3493,7 +3493,7 @@
     "BMI eligibility": 9,
     "Ozempic": 4,
     "price per month": 30,
-    "clinician review": 34
+    "clinician review": 36
    },
    "phrases": [
     "out stars",
@@ -3534,10 +3534,10 @@
     "DrugClass"
    ],
    "authors": [
-    "ryan stanley",
     "Scooper",
     "Amanda Jayne Bates",
-    "Andrea"
+    "Andrea",
+    "Sara Hughes"
    ],
    "bytes": 414
   },
@@ -3665,14 +3665,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 661,
+    "bytes": 659,
     "psi": {
      "score": 66,
      "lcp": "11.9 s",
      "cls": "0.085",
-     "tbt": "40 ms",
+     "tbt": "60 ms",
      "fcp": "2.6 s",
-     "si": "5.0 s",
+     "si": "4.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1072,
@@ -3789,11 +3789,11 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 36,
-     "lcp": "15.6 s",
+     "score": 45,
+     "lcp": "15.8 s",
      "cls": "0",
-     "tbt": "930 ms",
-     "fcp": "6.2 s",
+     "tbt": "480 ms",
+     "fcp": "5.5 s",
      "si": "8.3 s",
      "strategy": "mobile",
      "field": {
@@ -3897,12 +3897,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 53,
-     "lcp": "10.2 s",
-     "cls": "0.004",
-     "tbt": "450 ms",
-     "fcp": "3.5 s",
-     "si": "5.1 s",
+     "score": 41,
+     "lcp": "8.6 s",
+     "cls": "0",
+     "tbt": "1,160 ms",
+     "fcp": "3.6 s",
+     "si": "5.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 728,
@@ -4158,7 +4158,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 332
+    "bytes": 331
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -4242,7 +4242,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 43,
-    "wc": 3602,
+    "wc": 3608,
     "faqs": [
      "What is Wegovy?",
      "Is it for me?",
@@ -4330,7 +4330,7 @@
      "BMI eligibility": 9,
      "Ozempic": 4,
      "price per month": 30,
-     "clinician review": 34
+     "clinician review": 36
     },
     "phrases": [
      "out stars",
@@ -4371,10 +4371,10 @@
      "DrugClass"
     ],
     "authors": [
-     "ryan stanley",
      "Scooper",
      "Amanda Jayne Bates",
-     "Andrea"
+     "Andrea",
+     "Sara Hughes"
     ],
     "bytes": 414
    }
@@ -4410,7 +4410,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "warn",
-     "evidence": "3602 words vs competitor median 6028"
+     "evidence": "3608 words vs competitor median 6028"
     },
     {
      "name": "FAQ coverage",
@@ -4433,11 +4433,11 @@
    ],
    "entity_gaps": [
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     },
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     }
    ],
@@ -4464,9 +4464,9 @@
   },
   "opps": [
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
-   "Strengthen body depth (words) for a primary term (3602 words vs competitor median 6028)",
+   "Strengthen body depth (words) for a primary term (3608 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: STEP trials, Rybelsus",
+   "Add missing entities competitors cover: Rybelsus, STEP trials",
    "Cover missing topics/terms: needle",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],

@@ -4269,7 +4269,7 @@
     "BMI eligibility": 5,
     "Wegovy / semaglutide": 29,
     "price per month": 34,
-    "clinician review": 45
+    "clinician review": 47
    },
    "phrases": [
     "side effects",
@@ -4448,12 +4448,12 @@
     "authors": [],
     "bytes": 707,
     "psi": {
-     "score": 54,
-     "lcp": "10.6 s",
-     "cls": "0",
-     "tbt": "310 ms",
-     "fcp": "4.6 s",
-     "si": "6.6 s",
+     "score": 65,
+     "lcp": "8.6 s",
+     "cls": "0.098",
+     "tbt": "100 ms",
+     "fcp": "2.6 s",
+     "si": "4.8 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1192,
@@ -4533,10 +4533,10 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 25,
-     "lcp": "14.8 s",
+     "score": 33,
+     "lcp": "14.6 s",
      "cls": "0.518",
-     "tbt": "410 ms",
+     "tbt": "170 ms",
      "fcp": "9.2 s",
      "si": "9.2 s",
      "strategy": "mobile",
@@ -4706,12 +4706,12 @@
     "authors": [],
     "bytes": 317,
     "psi": {
-     "score": 74,
-     "lcp": "6.2 s",
+     "score": 73,
+     "lcp": "6.6 s",
      "cls": "0.026",
-     "tbt": "0 ms",
+     "tbt": "70 ms",
      "fcp": "2.4 s",
-     "si": "3.1 s",
+     "si": "3.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1029,
@@ -5025,7 +5025,7 @@
      "BMI eligibility": 5,
      "Wegovy / semaglutide": 29,
      "price per month": 34,
-     "clinician review": 45
+     "clinician review": 47
     },
     "phrases": [
      "side effects",

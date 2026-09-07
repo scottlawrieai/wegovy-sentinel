@@ -29241,8 +29241,8 @@
     },
     {
      "d": "2026-09-06",
-     "sessions": 14487,
-     "events": 6372
+     "sessions": 19592,
+     "events": 9885
     }
    ],
    "as_of": "2026-09-06"
@@ -29311,8 +29311,8 @@
     },
     {
      "m": "2026-09",
-     "revenue": 143516.35,
-     "sessions": 23000
+     "revenue": 151431.05,
+     "sessions": 23814
     }
    ],
    "as_of": "2026-09-06"
@@ -29320,8 +29320,8 @@
   "m": {
    "pill": 1,
    "bwInj": null,
-   "blD": 1118,
-   "blT": 4800
+   "blD": 1119,
+   "blT": 4801
   },
   "flags": {
    "wrong": true,
@@ -29495,12 +29495,12 @@
    "of": 6
   },
   "psi": {
-   "score": 44,
-   "lcp": "8.5 s",
+   "score": 52,
+   "lcp": "9.7 s",
    "cls": "0",
-   "tbt": "910 ms",
-   "fcp": "3.4 s",
-   "si": "5.4 s",
+   "tbt": "380 ms",
+   "fcp": "4.7 s",
+   "si": "6.2 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 879,
