@@ -206,6 +206,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python blog_experiment_sentinel.py
 
+      - name: Product page experiment
+        if: always()
+        env:
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python blog_experiment_sentinel.py --mode product
+
       - name: Run Foundayo Sentinel
         if: always()
         env:
@@ -242,6 +252,8 @@ jobs:
                    data/weightloss_alerts_state.json \
                    data/blog_experiment_config.json \
                    data/blog_experiment.json docs/blog_experiment.json \
+                   data/product_experiment_config.json \
+                   data/product_experiment.json docs/product_experiment.json \
                    data/foundayo_snapshots.json docs/foundayo_snapshots.json; do
             if [ -e "$f" ]; then git add "$f"; fi
           done

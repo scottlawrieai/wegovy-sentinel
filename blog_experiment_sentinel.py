@@ -32,6 +32,25 @@ CONFIG = os.path.join(HERE, "data", "blog_experiment_config.json")
 DATA = os.path.join(HERE, "data", "blog_experiment.json")
 DOCS = os.path.join(HERE, "docs", "blog_experiment.json")
 
+# --mode product tracks hand-picked product/treatment pages moving to the new
+# template. No auto-selection: pages come only from the config file.
+MODES = {
+    "blog": {
+        "config": CONFIG, "data": DATA, "docs": DOCS,
+        "tag": "blog-exp", "select": True,
+        "alert_title": "Blog template alert",
+        "anchor": "#blogs",
+    },
+    "product": {
+        "config": os.path.join(HERE, "data", "product_experiment_config.json"),
+        "data": os.path.join(HERE, "data", "product_experiment.json"),
+        "docs": os.path.join(HERE, "docs", "product_experiment.json"),
+        "tag": "prod-exp", "select": False,
+        "alert_title": "Product template alert",
+        "anchor": "#prodtests",
+    },
+}
+
 POS_MIN, POS_MAX = 5.0, 15.0        # striking-distance band for selection
 MIN_IMPR = 300                      # 28-day impressions floor
 COHORT_SIZE = 5
@@ -230,25 +249,39 @@ def main():
 
     import rank_sources
 
-    config = load_json(CONFIG, {})
+    mode_name = "blog"
+    if "--mode" in sys.argv:
+        i = sys.argv.index("--mode")
+        mode_name = sys.argv[i + 1] if i + 1 < len(sys.argv) else "blog"
+        if mode_name not in MODES:
+            print(f"[error] unknown mode {mode_name!r}; choose from "
+                  f"{', '.join(sorted(MODES))}", file=sys.stderr)
+            raise SystemExit(2)
+    mode = MODES[mode_name]
+    tag = mode["tag"]
+
+    config = load_json(mode["config"], {})
     pages = (config.get("pages") or [])[:MAX_PAGES]
 
+    if not pages and not mode["select"]:
+        print(f"[{tag}] no pages configured in {mode['config']}; nothing to do")
+        return
     if not pages:
         rows = fetch_page_rows()
         if not rows:
-            print("[blog-exp] no GSC credentials/rows; cannot select cohort yet")
+            print(f"[{tag}] no GSC credentials/rows; cannot select cohort yet")
             return
         pages = select_candidates(rows)
         if not pages:
-            print("[blog-exp] no health-advice pages matched the 5-15 band")
+            print(f"[{tag}] no health-advice pages matched the 5-15 band")
             return
         config = {"pages": pages, "selected": today_uk(),
                   "criteria": f"health-advice pages, avg pos {POS_MIN}-{POS_MAX}, "
                               f">= {MIN_IMPR} impressions/28d, top {COHORT_SIZE} by impressions"}
-        os.makedirs(os.path.dirname(CONFIG), exist_ok=True)
-        with open(CONFIG, "w") as f:
+        os.makedirs(os.path.dirname(mode["config"]), exist_ok=True)
+        with open(mode["config"], "w") as f:
             json.dump(config, f, indent=1)
-        print(f"[blog-exp] cohort selected ({len(pages)} pages):")
+        print(f"[{tag}] cohort selected ({len(pages)} pages):")
         for p in pages:
             print(f"  - {p['url']}  (pos {p['picked']['pos']}, "
                   f"{p['picked']['impr']} impr/28d)")
@@ -268,17 +301,17 @@ def main():
             start = end - timedelta(days=90)
             entry["series"] = rank_sources._gsc_series(token, prop, start, end, url)
         except Exception as e:
-            print(f"[warn] blog-exp series {url}: {e}", file=sys.stderr)
+            print(f"[warn] {tag} series {url}: {e}", file=sys.stderr)
             entry["series"] = []
         try:
             q = rank_sources.fetch_gsc_queries(page_url=url, limit=10)
             entry["queries"] = (q.get("rows") or [])[:8]
         except Exception as e:
-            print(f"[warn] blog-exp queries {url}: {e}", file=sys.stderr)
+            print(f"[warn] {tag} queries {url}: {e}", file=sys.stderr)
             entry["queries"] = []
         out_pages.append(entry)
 
-    prev_out = load_json(DOCS, {}) or {}
+    prev_out = load_json(mode["docs"], {}) or {}
     prev_health = {p.get("url"): p.get("health") for p in prev_out.get("pages", [])}
     alerts_lines = []
     for entry in out_pages:
@@ -287,34 +320,35 @@ def main():
                                 bool(entry.get("live")))
         for pr in probs:
             line = f"{entry['label']}: {pr}"
-            print(f"[blog-exp][warn] {line}", file=sys.stderr)
+            print(f"[{tag}][warn] {line}", file=sys.stderr)
             if entry.get("live"):
                 alerts_lines.append(line)
     if alerts_lines:
         try:
             import alerts as alerts_mod
             alerts_mod.open_issue(
-                f"Blog template alert — {today_uk()}",
+                f"{mode['alert_title']} — {today_uk()}",
                 "Template-health regressions on LIVE experiment pages:\n\n"
                 + "\n".join("- " + l for l in alerts_lines)
-                + "\n\nhttps://scottlawrieai.github.io/wegovy-sentinel/#blogs")
+                + "\n\nhttps://scottlawrieai.github.io/wegovy-sentinel/"
+                + mode["anchor"])
         except Exception as e:
-            print(f"[warn] blog-exp alert failed: {e}", file=sys.stderr)
+            print(f"[warn] {tag} alert failed: {e}", file=sys.stderr)
 
     if not any(p["series"] for p in out_pages):
-        prev = load_json(DOCS, None)
+        prev = load_json(mode["docs"], None)
         if prev:
-            print("[blog-exp] no fresh series; keeping previous output")
+            print(f"[{tag}] no fresh series; keeping previous output")
             return
 
     out = {"pages": out_pages, "as_of": today_uk(),
            "criteria": config.get("criteria", "")}
-    for path in (DATA, DOCS):
+    for path in (mode["data"], mode["docs"]):
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
             json.dump(out, f, indent=1)
     live_n = sum(1 for p in out_pages if p.get("live"))
-    print(f"[blog-exp] tracked {len(out_pages)} pages ({live_n} live on the "
+    print(f"[{tag}] tracked {len(out_pages)} pages ({live_n} live on the "
           f"new template); series days: "
           + ", ".join(str(len(p['series'])) for p in out_pages))
 

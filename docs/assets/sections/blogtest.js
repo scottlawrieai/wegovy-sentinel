@@ -1,24 +1,26 @@
 (function () {
   'use strict';
 
-  // Blog template experiment: per-page before/after view around each page's
-  // template go-live date, in the style of the migration report. Data comes
-  // from docs/blog_experiment.json (written by blog_experiment_sentinel.py);
-  // this section fetches it itself since the shape differs from snapshots.
+  // Template experiments: per-page before/after view around each page's
+  // go-live date. One factory powers two tabs — the blog template test
+  // (blog_experiment.json) and the product page test
+  // (product_experiment.json), both written by blog_experiment_sentinel.py.
+  // Each section fetches its own file since the shape differs from snapshots.
 
-  var STYLE = '<style>' +
-    '#sec-blogtest .bt-url{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;color:#5B6B83;word-break:break-all}' +
-    '#sec-blogtest .bt-label{font-size:15px;font-weight:700;text-transform:capitalize}' +
-    '#sec-blogtest .bt-kpis{display:flex;flex-wrap:wrap;gap:22px;margin:10px 0 6px}' +
-    '#sec-blogtest .bt-kpi .n{font-size:24px;font-weight:800}' +
-    '#sec-blogtest .bt-kpi .l{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#5B6B83;font-weight:600}' +
-    '#sec-blogtest .bt-up{color:#2F9E44}#sec-blogtest .bt-down{color:#E03131}' +
-    '#sec-blogtest .bt-live{font-size:10px;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:10px;background:#E7F0FE;color:#1D4ED8;border:1px solid #BCD4F6}' +
-    '#sec-blogtest .bt-baseline{font-size:10px;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:10px;background:#FEF7E0;color:#B06000;border:1px solid #FDE293}' +
-    '#sec-blogtest tr.band td{background:#E7F0FE;border-top:1px solid #BCD4F6;border-bottom:1px solid #BCD4F6;font-size:12px;font-weight:700;color:#1D4ED8}' +
-    '</style>';
-
-  var CACHE = null;
+  function styleFor(id) {
+    var s = '#sec-' + id;
+    return '<style>' +
+      s + ' .bt-url{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;color:#5B6B83;word-break:break-all}' +
+      s + ' .bt-label{font-size:15px;font-weight:700;text-transform:capitalize}' +
+      s + ' .bt-kpis{display:flex;flex-wrap:wrap;gap:22px;margin:10px 0 6px}' +
+      s + ' .bt-kpi .n{font-size:24px;font-weight:800}' +
+      s + ' .bt-kpi .l{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#5B6B83;font-weight:600}' +
+      s + ' .bt-up{color:#2F9E44}' + s + ' .bt-down{color:#E03131}' +
+      s + ' .bt-live{font-size:10px;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:10px;background:#E7F0FE;color:#1D4ED8;border:1px solid #BCD4F6}' +
+      s + ' .bt-baseline{font-size:10px;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:10px;background:#FEF7E0;color:#B06000;border:1px solid #FDE293}' +
+      s + ' tr.band td{background:#E7F0FE;border-top:1px solid #BCD4F6;border-bottom:1px solid #BCD4F6;font-size:12px;font-weight:700;color:#1D4ED8}' +
+      '</style>';
+  }
 
   function weeklies(series, state) {
     var rows = C.inRange(series || [], state);
@@ -52,7 +54,7 @@
       (v > 0 ? '▲' : '▼') + Math.abs(v).toFixed(0) + '%</span>';
   }
 
-  function pageCard(p, S) {
+  function pageCard(p, S, exp) {
     var live = p.live || null;
     var daily = p.series || [];
     var wk = weeklies(daily, S.state);
@@ -60,8 +62,8 @@
     var head = '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline">' +
       '<div><div class="bt-label">' + C.esc(p.label || '') + '</div>' +
       '<div class="bt-url">' + C.esc(p.url || '') + '</div></div>' +
-      (live ? '<span class="bt-live">NEW TEMPLATE LIVE ' + C.esc(live) + '</span>'
-            : '<span class="bt-baseline">BASELINE — template not live yet</span>') +
+      (live ? '<span class="bt-live">' + exp.liveTag + ' ' + C.esc(live) + '</span>'
+            : '<span class="bt-baseline">BASELINE — not live yet</span>') +
       '</div>';
 
     // before/after KPIs: equal-length windows either side of the live date,
@@ -93,7 +95,7 @@
     } else if (!live) {
       kpis = '<div style="font-size:12px;color:#5B6B83;margin:8px 0">Baseline collecting — ' +
         daily.length + ' days of GSC history banked. Set <code>"live": "YYYY-MM-DD"</code> for this page in ' +
-        '<code>data/blog_experiment_config.json</code> when the new template ships.</div>';
+        '<code>' + exp.configName + '</code> when it ships.</div>';
     }
 
     var markers = live ? [{ d: live, letter: 'T', color: '#1D4ED8' }] : [];
@@ -108,7 +110,7 @@
     var trs = '';
     wk.forEach(function (w) {
       if (live && live >= w.from && live <= w.to) {
-        trs += '<tr class="band"><td colspan="5">T · New template live · ' + C.esc(live) + '</td></tr>';
+        trs += '<tr class="band"><td colspan="5">T · ' + exp.bandLabel + ' · ' + C.esc(live) + '</td></tr>';
       }
       var phase = !live ? '—' : (w.to < live ? 'Before' : (w.from >= live ? 'After' : 'Cutover'));
       trs += '<tr>' +
@@ -132,48 +134,78 @@
       '</div>';
   }
 
-  function render(body, S) {
-    if (S.product.key !== 'blogs') { body.innerHTML = ''; return; }
-    if (CACHE) {
-      draw(body, S, CACHE);
-    } else {
-      body.innerHTML = STYLE + '<div class="panel"><div class="empty">Loading experiment data…</div></div>';
+  function makeSection(exp) {
+    var cache = null;
+
+    function draw(body, S, d) {
+      if (!d || !(d.pages || []).length) {
+        body.innerHTML = styleFor(exp.id) + '<div class="panel"><div class="empty">' +
+          exp.emptyMsg + '</div></div>';
+        return;
+      }
+      var liveN = d.pages.filter(function (p) { return p.live; }).length;
+      var html = styleFor(exp.id) +
+        '<div style="font-size:12.5px;color:#5B6B83;margin-bottom:12px">' +
+        C.esc(String(d.pages.length)) + ' pages in the cohort · ' + C.esc(String(liveN)) +
+        ' live on the new template' +
+        (d.criteria ? ' · selection: ' + C.esc(d.criteria) : '') +
+        (d.as_of ? ' · data to ' + C.esc(d.as_of) : '') + '</div>';
+      d.pages.forEach(function (p) { html += pageCard(p, S, exp); });
+      body.innerHTML = html;
     }
-    fetch('./blog_experiment.json', { cache: 'no-store' })
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (d) {
-        var had = !!CACHE;
-        CACHE = d;
-        if (S.product.key === 'blogs' && (!had || d)) draw(body, S, d);
-      })
-      .catch(function () { if (!CACHE) draw(body, S, null); });
+
+    function render(body, S) {
+      if (S.product.key !== exp.only) { body.innerHTML = ''; return; }
+      if (cache) {
+        draw(body, S, cache);
+      } else {
+        body.innerHTML = styleFor(exp.id) + '<div class="panel"><div class="empty">Loading experiment data…</div></div>';
+      }
+      fetch(exp.file, { cache: 'no-store' })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) {
+          var had = !!cache;
+          cache = d;
+          if (S.product.key === exp.only && (!had || d)) draw(body, S, d);
+        })
+        .catch(function () { if (!cache) draw(body, S, null); });
+    }
+
+    Sentinel.register({
+      id: exp.id,
+      only: exp.only,
+      title: exp.title,
+      sub: exp.sub,
+      order: 5,
+      render: render
+    });
   }
 
-  function draw(body, S, d) {
-    if (!d || !(d.pages || []).length) {
-      body.innerHTML = STYLE + '<div class="panel"><div class="empty">' +
-        'The cohort is selected automatically on the first patrol with GSC access: ' +
-        'the health-advice pages with the most impressions sitting at average position 5–15. ' +
-        'Check back after the next patrol, or edit <code>data/blog_experiment_config.json</code> to choose pages by hand.' +
-        '</div></div>';
-      return;
-    }
-    var liveN = d.pages.filter(function (p) { return p.live; }).length;
-    var html = STYLE +
-      '<div style="font-size:12.5px;color:#5B6B83;margin-bottom:12px">' +
-      C.esc(String(d.pages.length)) + ' pages in the cohort · ' + C.esc(String(liveN)) +
-      ' live on the new template · selection: ' + C.esc(d.criteria || '') +
-      (d.as_of ? ' · data to ' + C.esc(d.as_of) : '') + '</div>';
-    d.pages.forEach(function (p) { html += pageCard(p, S); });
-    body.innerHTML = html;
-  }
-
-  Sentinel.register({
+  makeSection({
     id: 'blogtest',
     only: 'blogs',
+    file: './blog_experiment.json',
+    configName: 'data/blog_experiment_config.json',
+    liveTag: 'NEW TEMPLATE LIVE',
+    bandLabel: 'New template live',
     title: 'Blog template test',
     sub: 'Each page against its own Search Console baseline — flip a page to the new template, set its live date, and read the uplift.',
-    order: 5,
-    render: render
+    emptyMsg: 'The cohort is selected automatically on the first patrol with GSC access: ' +
+      'the health-advice pages with the most impressions sitting at average position 5–15. ' +
+      'Check back after the next patrol, or edit <code>data/blog_experiment_config.json</code> to choose pages by hand.'
+  });
+
+  makeSection({
+    id: 'prodtest',
+    only: 'prodtests',
+    file: './product_experiment.json',
+    configName: 'data/product_experiment_config.json',
+    liveTag: 'NEW PAGE LIVE',
+    bandLabel: 'New page live',
+    title: 'Product page test',
+    sub: 'Rebuilt treatment pages against their own Search Console baseline — set each page\'s live date and read the uplift.',
+    emptyMsg: 'No product pages configured yet. Add pages to ' +
+      '<code>data/product_experiment_config.json</code> ({"pages":[{"url":"…","live":"YYYY-MM-DD"}]}) ' +
+      'and the next patrol starts tracking them.'
   });
 })();
