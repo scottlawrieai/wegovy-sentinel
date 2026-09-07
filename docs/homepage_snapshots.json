@@ -29495,12 +29495,12 @@
    "of": 6
   },
   "psi": {
-   "score": 52,
-   "lcp": "9.7 s",
+   "score": 59,
+   "lcp": "9.8 s",
    "cls": "0",
-   "tbt": "380 ms",
-   "fcp": "4.7 s",
-   "si": "6.2 s",
+   "tbt": "150 ms",
+   "fcp": "4.6 s",
+   "si": "6.1 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 879,

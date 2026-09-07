@@ -1,1 +1,772 @@
-{"pages": [{"url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/erectile-dysfunction/cialis/", "label": "cialis", "live": "2026-09-07", "series": [], "queries": []}], "as_of": null, "criteria": "hand-picked page-2 treatment pages rebuilt on the new set-up"}
+{
+ "pages": [
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/erectile-dysfunction/cialis/",
+   "label": "cialis",
+   "live": "2026-09-07",
+   "series": [
+    {
+     "d": "2026-06-06",
+     "clicks": 1,
+     "impr": 257,
+     "ctr": 0.39,
+     "pos": 21.4
+    },
+    {
+     "d": "2026-06-07",
+     "clicks": 0,
+     "impr": 212,
+     "ctr": 0.0,
+     "pos": 18.9
+    },
+    {
+     "d": "2026-06-08",
+     "clicks": 0,
+     "impr": 297,
+     "ctr": 0.0,
+     "pos": 19.9
+    },
+    {
+     "d": "2026-06-09",
+     "clicks": 0,
+     "impr": 228,
+     "ctr": 0.0,
+     "pos": 17.1
+    },
+    {
+     "d": "2026-06-10",
+     "clicks": 0,
+     "impr": 239,
+     "ctr": 0.0,
+     "pos": 17.2
+    },
+    {
+     "d": "2026-06-11",
+     "clicks": 3,
+     "impr": 249,
+     "ctr": 1.2,
+     "pos": 16.2
+    },
+    {
+     "d": "2026-06-12",
+     "clicks": 0,
+     "impr": 223,
+     "ctr": 0.0,
+     "pos": 17.4
+    },
+    {
+     "d": "2026-06-13",
+     "clicks": 0,
+     "impr": 239,
+     "ctr": 0.0,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-06-14",
+     "clicks": 0,
+     "impr": 267,
+     "ctr": 0.0,
+     "pos": 16.9
+    },
+    {
+     "d": "2026-06-15",
+     "clicks": 0,
+     "impr": 223,
+     "ctr": 0.0,
+     "pos": 15.2
+    },
+    {
+     "d": "2026-06-16",
+     "clicks": 1,
+     "impr": 308,
+     "ctr": 0.32,
+     "pos": 18.0
+    },
+    {
+     "d": "2026-06-17",
+     "clicks": 2,
+     "impr": 188,
+     "ctr": 1.06,
+     "pos": 20.5
+    },
+    {
+     "d": "2026-06-18",
+     "clicks": 0,
+     "impr": 248,
+     "ctr": 0.0,
+     "pos": 20.4
+    },
+    {
+     "d": "2026-06-19",
+     "clicks": 1,
+     "impr": 224,
+     "ctr": 0.45,
+     "pos": 22.3
+    },
+    {
+     "d": "2026-06-20",
+     "clicks": 0,
+     "impr": 236,
+     "ctr": 0.0,
+     "pos": 20.1
+    },
+    {
+     "d": "2026-06-21",
+     "clicks": 0,
+     "impr": 355,
+     "ctr": 0.0,
+     "pos": 18.6
+    },
+    {
+     "d": "2026-06-22",
+     "clicks": 0,
+     "impr": 268,
+     "ctr": 0.0,
+     "pos": 16.0
+    },
+    {
+     "d": "2026-06-23",
+     "clicks": 1,
+     "impr": 229,
+     "ctr": 0.44,
+     "pos": 15.7
+    },
+    {
+     "d": "2026-06-24",
+     "clicks": 0,
+     "impr": 211,
+     "ctr": 0.0,
+     "pos": 14.5
+    },
+    {
+     "d": "2026-06-25",
+     "clicks": 1,
+     "impr": 279,
+     "ctr": 0.36,
+     "pos": 14.3
+    },
+    {
+     "d": "2026-06-26",
+     "clicks": 1,
+     "impr": 297,
+     "ctr": 0.34,
+     "pos": 16.0
+    },
+    {
+     "d": "2026-06-27",
+     "clicks": 0,
+     "impr": 303,
+     "ctr": 0.0,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-06-28",
+     "clicks": 1,
+     "impr": 247,
+     "ctr": 0.4,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-06-29",
+     "clicks": 2,
+     "impr": 350,
+     "ctr": 0.57,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-06-30",
+     "clicks": 1,
+     "impr": 384,
+     "ctr": 0.26,
+     "pos": 16.1
+    },
+    {
+     "d": "2026-07-01",
+     "clicks": 1,
+     "impr": 379,
+     "ctr": 0.26,
+     "pos": 14.7
+    },
+    {
+     "d": "2026-07-02",
+     "clicks": 1,
+     "impr": 286,
+     "ctr": 0.35,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-07-03",
+     "clicks": 0,
+     "impr": 284,
+     "ctr": 0.0,
+     "pos": 15.8
+    },
+    {
+     "d": "2026-07-04",
+     "clicks": 1,
+     "impr": 263,
+     "ctr": 0.38,
+     "pos": 15.8
+    },
+    {
+     "d": "2026-07-05",
+     "clicks": 1,
+     "impr": 298,
+     "ctr": 0.34,
+     "pos": 15.8
+    },
+    {
+     "d": "2026-07-06",
+     "clicks": 1,
+     "impr": 293,
+     "ctr": 0.34,
+     "pos": 15.0
+    },
+    {
+     "d": "2026-07-07",
+     "clicks": 0,
+     "impr": 289,
+     "ctr": 0.0,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-07-08",
+     "clicks": 1,
+     "impr": 276,
+     "ctr": 0.36,
+     "pos": 16.1
+    },
+    {
+     "d": "2026-07-09",
+     "clicks": 0,
+     "impr": 234,
+     "ctr": 0.0,
+     "pos": 14.7
+    },
+    {
+     "d": "2026-07-10",
+     "clicks": 1,
+     "impr": 250,
+     "ctr": 0.4,
+     "pos": 16.7
+    },
+    {
+     "d": "2026-07-11",
+     "clicks": 0,
+     "impr": 218,
+     "ctr": 0.0,
+     "pos": 16.8
+    },
+    {
+     "d": "2026-07-12",
+     "clicks": 0,
+     "impr": 226,
+     "ctr": 0.0,
+     "pos": 15.4
+    },
+    {
+     "d": "2026-07-13",
+     "clicks": 1,
+     "impr": 188,
+     "ctr": 0.53,
+     "pos": 16.8
+    },
+    {
+     "d": "2026-07-14",
+     "clicks": 3,
+     "impr": 221,
+     "ctr": 1.36,
+     "pos": 16.4
+    },
+    {
+     "d": "2026-07-15",
+     "clicks": 1,
+     "impr": 136,
+     "ctr": 0.74,
+     "pos": 14.7
+    },
+    {
+     "d": "2026-07-16",
+     "clicks": 0,
+     "impr": 226,
+     "ctr": 0.0,
+     "pos": 15.7
+    },
+    {
+     "d": "2026-07-17",
+     "clicks": 0,
+     "impr": 233,
+     "ctr": 0.0,
+     "pos": 16.3
+    },
+    {
+     "d": "2026-07-18",
+     "clicks": 2,
+     "impr": 257,
+     "ctr": 0.78,
+     "pos": 18.4
+    },
+    {
+     "d": "2026-07-19",
+     "clicks": 0,
+     "impr": 202,
+     "ctr": 0.0,
+     "pos": 16.7
+    },
+    {
+     "d": "2026-07-20",
+     "clicks": 1,
+     "impr": 221,
+     "ctr": 0.45,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-07-21",
+     "clicks": 1,
+     "impr": 185,
+     "ctr": 0.54,
+     "pos": 15.2
+    },
+    {
+     "d": "2026-07-22",
+     "clicks": 1,
+     "impr": 200,
+     "ctr": 0.5,
+     "pos": 17.7
+    },
+    {
+     "d": "2026-07-23",
+     "clicks": 1,
+     "impr": 234,
+     "ctr": 0.43,
+     "pos": 18.0
+    },
+    {
+     "d": "2026-07-24",
+     "clicks": 0,
+     "impr": 230,
+     "ctr": 0.0,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-07-25",
+     "clicks": 0,
+     "impr": 220,
+     "ctr": 0.0,
+     "pos": 18.6
+    },
+    {
+     "d": "2026-07-26",
+     "clicks": 1,
+     "impr": 192,
+     "ctr": 0.52,
+     "pos": 18.0
+    },
+    {
+     "d": "2026-07-27",
+     "clicks": 2,
+     "impr": 242,
+     "ctr": 0.83,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-07-28",
+     "clicks": 0,
+     "impr": 310,
+     "ctr": 0.0,
+     "pos": 16.8
+    },
+    {
+     "d": "2026-07-29",
+     "clicks": 1,
+     "impr": 234,
+     "ctr": 0.43,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 1,
+     "impr": 288,
+     "ctr": 0.35,
+     "pos": 18.0
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 1,
+     "impr": 224,
+     "ctr": 0.45,
+     "pos": 16.8
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 1,
+     "impr": 260,
+     "ctr": 0.38,
+     "pos": 16.7
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 3,
+     "impr": 265,
+     "ctr": 1.13,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 3,
+     "impr": 201,
+     "ctr": 1.49,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 1,
+     "impr": 213,
+     "ctr": 0.47,
+     "pos": 15.9
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 0,
+     "impr": 184,
+     "ctr": 0.0,
+     "pos": 15.4
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 0,
+     "impr": 225,
+     "ctr": 0.0,
+     "pos": 15.0
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 0,
+     "impr": 160,
+     "ctr": 0.0,
+     "pos": 13.4
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 1,
+     "impr": 227,
+     "ctr": 0.44,
+     "pos": 12.3
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 1,
+     "impr": 278,
+     "ctr": 0.36,
+     "pos": 13.0
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 2,
+     "impr": 310,
+     "ctr": 0.65,
+     "pos": 14.1
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 1,
+     "impr": 433,
+     "ctr": 0.23,
+     "pos": 12.8
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 0,
+     "impr": 515,
+     "ctr": 0.0,
+     "pos": 12.5
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 1,
+     "impr": 498,
+     "ctr": 0.2,
+     "pos": 12.5
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 2,
+     "impr": 470,
+     "ctr": 0.43,
+     "pos": 12.7
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 1,
+     "impr": 384,
+     "ctr": 0.26,
+     "pos": 13.7
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 0,
+     "impr": 456,
+     "ctr": 0.0,
+     "pos": 13.3
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 2,
+     "impr": 505,
+     "ctr": 0.4,
+     "pos": 14.2
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 0,
+     "impr": 374,
+     "ctr": 0.0,
+     "pos": 13.5
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 1,
+     "impr": 392,
+     "ctr": 0.26,
+     "pos": 15.4
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 0,
+     "impr": 410,
+     "ctr": 0.0,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 1,
+     "impr": 325,
+     "ctr": 0.31,
+     "pos": 15.2
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 1,
+     "impr": 485,
+     "ctr": 0.21,
+     "pos": 15.4
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 0,
+     "impr": 374,
+     "ctr": 0.0,
+     "pos": 14.9
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 3,
+     "impr": 388,
+     "ctr": 0.77,
+     "pos": 16.8
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 1,
+     "impr": 421,
+     "ctr": 0.24,
+     "pos": 17.6
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 1,
+     "impr": 318,
+     "ctr": 0.31,
+     "pos": 15.9
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 1,
+     "impr": 499,
+     "ctr": 0.2,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 1,
+     "impr": 404,
+     "ctr": 0.25,
+     "pos": 16.1
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 0,
+     "impr": 405,
+     "ctr": 0.0,
+     "pos": 17.3
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 2,
+     "impr": 368,
+     "ctr": 0.54,
+     "pos": 14.8
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 0,
+     "impr": 522,
+     "ctr": 0.0,
+     "pos": 19.8
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 1,
+     "impr": 313,
+     "ctr": 0.32,
+     "pos": 15.2
+    },
+    {
+     "d": "2026-09-02",
+     "clicks": 2,
+     "impr": 324,
+     "ctr": 0.62,
+     "pos": 15.6
+    },
+    {
+     "d": "2026-09-03",
+     "clicks": 0,
+     "impr": 327,
+     "ctr": 0.0,
+     "pos": 16.4
+    },
+    {
+     "d": "2026-09-04",
+     "clicks": 2,
+     "impr": 307,
+     "ctr": 0.65,
+     "pos": 16.9
+    }
+   ],
+   "queries": [
+    {
+     "q": "buy cialis online",
+     "clicks": 3,
+     "impr": 647,
+     "ctr": 0.5,
+     "pos": 10.6,
+     "prev": {
+      "clicks": 5,
+      "impr": 515,
+      "ctr": 1.0,
+      "pos": 12.3
+     }
+    },
+    {
+     "q": "cialis online",
+     "clicks": 2,
+     "impr": 292,
+     "ctr": 0.7,
+     "pos": 15.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 306,
+      "ctr": 0.0,
+      "pos": 15.4
+     }
+    },
+    {
+     "q": "buy cialis 20mg online",
+     "clicks": 2,
+     "impr": 5,
+     "ctr": 40.0,
+     "pos": 8.6
+    },
+    {
+     "q": "cialis 20mg online",
+     "clicks": 2,
+     "impr": 3,
+     "ctr": 66.7,
+     "pos": 18.0,
+     "prev": {
+      "clicks": 2,
+      "impr": 6,
+      "ctr": 33.3,
+      "pos": 9.0
+     }
+    },
+    {
+     "q": "buy cialis online uk",
+     "clicks": 1,
+     "impr": 287,
+     "ctr": 0.3,
+     "pos": 9.6,
+     "prev": {
+      "clicks": 1,
+      "impr": 234,
+      "ctr": 0.4,
+      "pos": 9.9
+     }
+    },
+    {
+     "q": "cialis online uk",
+     "clicks": 1,
+     "impr": 266,
+     "ctr": 0.4,
+     "pos": 10.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 266,
+      "ctr": 0.0,
+      "pos": 10.6
+     }
+    },
+    {
+     "q": "cialis tablets",
+     "clicks": 1,
+     "impr": 202,
+     "ctr": 0.5,
+     "pos": 30.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 291,
+      "ctr": 0.0,
+      "pos": 29.2
+     }
+    },
+    {
+     "q": "cialis online pharmacy",
+     "clicks": 1,
+     "impr": 88,
+     "ctr": 1.1,
+     "pos": 9.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 72,
+      "ctr": 1.4,
+      "pos": 8.7
+     }
+    }
+   ],
+   "health": {
+    "status": "ok",
+    "title": "Buy Cialis Tablets for Erectile Dysfunction Online in the UKToggle Menu",
+    "meta": "Cialis (branded Tadalafil) is an effective erectile dysfunction treatment that lasts up to 36 hours. You can buy Cialis online from our UK prescribing service.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "h1": "Cialis",
+    "h2n": 24,
+    "faqs": 28,
+    "wc": 3370,
+    "schema": [
+     "Answer",
+     "Brand",
+     "BreadcrumbList",
+     "BuyAction",
+     "CollegeOrUniversity",
+     "ContactPoint",
+     "Country",
+     "CreativeWork",
+     "DefinedRegion",
+     "Drug"
+    ]
+   }
+  }
+ ],
+ "as_of": "2026-09-07",
+ "criteria": "hand-picked page-2 treatment pages rebuilt on the new set-up"
+}

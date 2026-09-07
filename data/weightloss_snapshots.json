@@ -26679,12 +26679,12 @@
    "of": 6
   },
   "psi": {
-   "score": 54,
+   "score": 56,
    "lcp": "12.1 s",
    "cls": "0",
-   "tbt": "270 ms",
-   "fcp": "5.7 s",
-   "si": "6.6 s",
+   "tbt": "250 ms",
+   "fcp": "4.7 s",
+   "si": "6.2 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 526,

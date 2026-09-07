@@ -78852,12 +78852,12 @@
    "of": 6
   },
   "psi": {
-   "score": 56,
-   "lcp": "10.1 s",
+   "score": 80,
+   "lcp": "3.7 s",
    "cls": "0",
-   "tbt": "210 ms",
-   "fcp": "5.7 s",
-   "si": "6.6 s",
+   "tbt": "270 ms",
+   "fcp": "2.5 s",
+   "si": "3.1 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 720,

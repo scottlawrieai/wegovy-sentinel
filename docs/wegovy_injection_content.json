@@ -3405,7 +3405,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 43,
-   "wc": 3608,
+   "wc": 3638,
    "faqs": [
     "What is Wegovy?",
     "Is it for me?",
@@ -3475,7 +3475,7 @@
     "0.25 mg starting dose": 9,
     "2.4 mg maintenance dose": 10,
     "maintenance dose": 2,
-    "dose escalation / titration": 23,
+    "dose escalation / titration": 24,
     "weekly injection": 20,
     "injection site rotation": 5,
     "missed dose": 3,
@@ -3486,14 +3486,14 @@
     "Novo Nordisk": 2,
     "prescription-only": 7,
     "nausea": 19,
-    "side effects": 17,
+    "side effects": 16,
     "pancreatitis": 1,
     "thyroid warning": 6,
     "pregnancy warning": 7,
     "BMI eligibility": 9,
     "Ozempic": 4,
     "price per month": 30,
-    "clinician review": 36
+    "clinician review": 34
    },
    "phrases": [
     "out stars",
@@ -3534,10 +3534,10 @@
     "DrugClass"
    ],
    "authors": [
-    "Scooper",
-    "Amanda Jayne Bates",
     "Andrea",
-    "Sara Hughes"
+    "Sara Hughes",
+    "customercait",
+    "Miss Marissa Robinson"
    ],
    "bytes": 414
   },
@@ -3667,12 +3667,12 @@
     "authors": [],
     "bytes": 659,
     "psi": {
-     "score": 66,
-     "lcp": "11.9 s",
-     "cls": "0.085",
-     "tbt": "60 ms",
+     "score": 60,
+     "lcp": "12.4 s",
+     "cls": "0.014",
+     "tbt": "290 ms",
      "fcp": "2.6 s",
-     "si": "4.9 s",
+     "si": "6.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1072,
@@ -3790,11 +3790,11 @@
     "bytes": 378,
     "psi": {
      "score": 45,
-     "lcp": "15.8 s",
+     "lcp": "15.5 s",
      "cls": "0",
-     "tbt": "480 ms",
+     "tbt": "500 ms",
      "fcp": "5.5 s",
-     "si": "8.3 s",
+     "si": "8.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4179,
@@ -3897,10 +3897,10 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 41,
-     "lcp": "8.6 s",
-     "cls": "0",
-     "tbt": "1,160 ms",
+     "score": 45,
+     "lcp": "7.7 s",
+     "cls": "0.004",
+     "tbt": "890 ms",
      "fcp": "3.6 s",
      "si": "5.2 s",
      "strategy": "mobile",
@@ -4158,7 +4158,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 331
+    "bytes": 330
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -4242,7 +4242,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 43,
-    "wc": 3608,
+    "wc": 3638,
     "faqs": [
      "What is Wegovy?",
      "Is it for me?",
@@ -4312,7 +4312,7 @@
      "0.25 mg starting dose": 9,
      "2.4 mg maintenance dose": 10,
      "maintenance dose": 2,
-     "dose escalation / titration": 23,
+     "dose escalation / titration": 24,
      "weekly injection": 20,
      "injection site rotation": 5,
      "missed dose": 3,
@@ -4323,14 +4323,14 @@
      "Novo Nordisk": 2,
      "prescription-only": 7,
      "nausea": 19,
-     "side effects": 17,
+     "side effects": 16,
      "pancreatitis": 1,
      "thyroid warning": 6,
      "pregnancy warning": 7,
      "BMI eligibility": 9,
      "Ozempic": 4,
      "price per month": 30,
-     "clinician review": 36
+     "clinician review": 34
     },
     "phrases": [
      "out stars",
@@ -4371,10 +4371,10 @@
      "DrugClass"
     ],
     "authors": [
-     "Scooper",
-     "Amanda Jayne Bates",
      "Andrea",
-     "Sara Hughes"
+     "Sara Hughes",
+     "customercait",
+     "Miss Marissa Robinson"
     ],
     "bytes": 414
    }
@@ -4410,7 +4410,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "warn",
-     "evidence": "3608 words vs competitor median 6028"
+     "evidence": "3638 words vs competitor median 6028"
     },
     {
      "name": "FAQ coverage",
@@ -4433,11 +4433,11 @@
    ],
    "entity_gaps": [
     {
-     "term": "Rybelsus",
+     "term": "STEP trials",
      "competitors": 2
     },
     {
-     "term": "STEP trials",
+     "term": "Rybelsus",
      "competitors": 2
     }
    ],
@@ -4464,9 +4464,9 @@
   },
   "opps": [
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
-   "Strengthen body depth (words) for a primary term (3608 words vs competitor median 6028)",
+   "Strengthen body depth (words) for a primary term (3638 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
-   "Add missing entities competitors cover: Rybelsus, STEP trials",
+   "Add missing entities competitors cover: STEP trials, Rybelsus",
    "Cover missing topics/terms: needle",
    "Add 15 FAQ(s) competitors answer that we don't, e.g. \u201cLost the Weight and Ready to Keep it Off?\u201d"
   ],
