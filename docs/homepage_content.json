@@ -1860,7 +1860,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1071,
+   "wc": 1076,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -1899,13 +1899,13 @@
     "simple online pharmacy",
     "out stars",
     "stars verified",
-    "out stars verified",
     "september out",
+    "out stars verified",
     "september out stars",
     "recommend simple",
     "recommend simple online",
     "discreet delivery",
-    "fast reliable"
+    "great service"
    ],
    "imgs": 27,
    "videos": 0,
@@ -1961,12 +1961,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 34,
-     "lcp": "13.1 s",
-     "cls": "0.033",
-     "tbt": "2,050 ms",
+     "score": 38,
+     "lcp": "12.1 s",
+     "cls": "0.062",
+     "tbt": "1,090 ms",
      "fcp": "2.6 s",
-     "si": "11.4 s",
+     "si": "11.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3071,
@@ -2050,12 +2050,12 @@
     "authors": [],
     "bytes": 320,
     "psi": {
-     "score": 69,
-     "lcp": "11.3 s",
-     "cls": "0.014",
-     "tbt": "40 ms",
-     "fcp": "1.2 s",
-     "si": "6.3 s",
+     "score": 57,
+     "lcp": "10.6 s",
+     "cls": "0",
+     "tbt": "430 ms",
+     "fcp": "2.1 s",
+     "si": "6.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1371,
@@ -2097,12 +2097,12 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 78,
-     "lcp": "5.1 s",
-     "cls": "0",
-     "tbt": "100 ms",
+     "score": 96,
+     "lcp": "2.6 s",
+     "cls": "0.063",
+     "tbt": "40 ms",
      "fcp": "1.5 s",
-     "si": "4.0 s",
+     "si": "1.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 869,
@@ -2280,7 +2280,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1071,
+    "wc": 1076,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -2319,13 +2319,13 @@
      "simple online pharmacy",
      "out stars",
      "stars verified",
-     "out stars verified",
      "september out",
+     "out stars verified",
      "september out stars",
      "recommend simple",
      "recommend simple online",
      "discreet delivery",
-     "fast reliable"
+     "great service"
     ],
     "imgs": 27,
     "videos": 0,
@@ -2386,7 +2386,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1071 words vs competitor median 297"
+     "evidence": "1076 words vs competitor median 297"
     },
     {
      "name": "FAQ coverage",

@@ -31420,12 +31420,12 @@
    "of": 6
   },
   "psi": {
-   "score": 57,
-   "lcp": "3.5 s",
+   "score": 74,
+   "lcp": "2.6 s",
    "cls": "0",
-   "tbt": "8,120 ms",
+   "tbt": "820 ms",
    "fcp": "2.4 s",
-   "si": "3.7 s",
+   "si": "2.7 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 577,

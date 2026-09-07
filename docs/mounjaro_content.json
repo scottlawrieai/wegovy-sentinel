@@ -4185,7 +4185,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 5940,
+   "wc": 5945,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -4263,12 +4263,12 @@
     "Eli Lilly": 4,
     "prescription-only": 7,
     "nausea / GI side effects": 20,
-    "side effects": 19,
+    "side effects": 20,
     "pancreatitis": 3,
     "thyroid": 2,
     "BMI eligibility": 5,
     "Wegovy / semaglutide": 29,
-    "price per month": 35,
+    "price per month": 34,
     "clinician review": 45
    },
    "phrases": [
@@ -4311,9 +4311,9 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Caroline Sutherland",
     "Elaine",
-    "Charlotte O"
+    "Charlotte O",
+    "Mrs V Mccann"
    ],
    "bytes": 459
   },
@@ -4446,14 +4446,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 708,
+    "bytes": 707,
     "psi": {
-     "score": 63,
-     "lcp": "8.8 s",
-     "cls": "0.122",
-     "tbt": "130 ms",
-     "fcp": "2.3 s",
-     "si": "5.7 s",
+     "score": 54,
+     "lcp": "10.6 s",
+     "cls": "0",
+     "tbt": "310 ms",
+     "fcp": "4.6 s",
+     "si": "6.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1192,
@@ -4533,12 +4533,12 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 31,
-     "lcp": "13.3 s",
+     "score": 25,
+     "lcp": "14.8 s",
      "cls": "0.518",
-     "tbt": "630 ms",
-     "fcp": "3.2 s",
-     "si": "3.3 s",
+     "tbt": "410 ms",
+     "fcp": "9.2 s",
+     "si": "9.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1737,
@@ -4706,12 +4706,12 @@
     "authors": [],
     "bytes": 317,
     "psi": {
-     "score": 72,
-     "lcp": "7.0 s",
+     "score": 74,
+     "lcp": "6.2 s",
      "cls": "0.026",
-     "tbt": "10 ms",
+     "tbt": "0 ms",
      "fcp": "2.4 s",
-     "si": "3.9 s",
+     "si": "3.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1029,
@@ -4941,7 +4941,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 5940,
+    "wc": 5945,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -5019,12 +5019,12 @@
      "Eli Lilly": 4,
      "prescription-only": 7,
      "nausea / GI side effects": 20,
-     "side effects": 19,
+     "side effects": 20,
      "pancreatitis": 3,
      "thyroid": 2,
      "BMI eligibility": 5,
      "Wegovy / semaglutide": 29,
-     "price per month": 35,
+     "price per month": 34,
      "clinician review": 45
     },
     "phrases": [
@@ -5067,9 +5067,9 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Caroline Sutherland",
      "Elaine",
-     "Charlotte O"
+     "Charlotte O",
+     "Mrs V Mccann"
     ],
     "bytes": 459
    }
@@ -5105,7 +5105,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "5940 words vs competitor median 5369"
+     "evidence": "5945 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",

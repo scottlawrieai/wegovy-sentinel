@@ -29189,12 +29189,12 @@
    "of": 6
   },
   "psi": {
-   "score": 55,
-   "lcp": "9.1 s",
+   "score": 47,
+   "lcp": "8.5 s",
    "cls": "0",
-   "tbt": "290 ms",
-   "fcp": "4.6 s",
-   "si": "6.4 s",
+   "tbt": "730 ms",
+   "fcp": "3.3 s",
+   "si": "5.6 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 737,

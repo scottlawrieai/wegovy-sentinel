@@ -3405,7 +3405,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 43,
-   "wc": 3609,
+   "wc": 3602,
    "faqs": [
     "What is Wegovy?",
     "Is it for me?",
@@ -3665,14 +3665,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 659,
+    "bytes": 661,
     "psi": {
-     "score": 67,
-     "lcp": "12.8 s",
+     "score": 66,
+     "lcp": "11.9 s",
      "cls": "0.085",
-     "tbt": "20 ms",
-     "fcp": "2.3 s",
-     "si": "5.1 s",
+     "tbt": "40 ms",
+     "fcp": "2.6 s",
+     "si": "5.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1072,
@@ -3789,12 +3789,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 55,
-     "lcp": "15.7 s",
+     "score": 36,
+     "lcp": "15.6 s",
      "cls": "0",
-     "tbt": "180 ms",
+     "tbt": "930 ms",
      "fcp": "6.2 s",
-     "si": "8.5 s",
+     "si": "8.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4179,
@@ -3897,12 +3897,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 61,
-     "lcp": "10.8 s",
+     "score": 53,
+     "lcp": "10.2 s",
      "cls": "0.004",
-     "tbt": "190 ms",
+     "tbt": "450 ms",
      "fcp": "3.5 s",
-     "si": "5.4 s",
+     "si": "5.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 728,
@@ -4158,7 +4158,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 331
+    "bytes": 332
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -4242,7 +4242,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 43,
-    "wc": 3609,
+    "wc": 3602,
     "faqs": [
      "What is Wegovy?",
      "Is it for me?",
@@ -4410,7 +4410,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "warn",
-     "evidence": "3609 words vs competitor median 6028"
+     "evidence": "3602 words vs competitor median 6028"
     },
     {
      "name": "FAQ coverage",
@@ -4464,7 +4464,7 @@
   },
   "opps": [
    "Strengthen h1 heading for a primary term (Wegovy weight loss injections)",
-   "Strengthen body depth (words) for a primary term (3609 words vs competitor median 6028)",
+   "Strengthen body depth (words) for a primary term (3602 words vs competitor median 6028)",
    "Strengthen faq coverage for a primary term (30 FAQs, 44% of competitor FAQ topics covered)",
    "Add missing entities competitors cover: STEP trials, Rybelsus",
    "Cover missing topics/terms: needle",
