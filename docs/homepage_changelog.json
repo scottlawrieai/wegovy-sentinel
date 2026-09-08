@@ -28,5 +28,15 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-08",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +93 words (1,071 → 1,164)",
+    "source": "auto"
+   }
+  ]
  }
 ]

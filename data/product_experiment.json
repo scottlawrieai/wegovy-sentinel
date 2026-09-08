@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-06-06",
-     "clicks": 1,
-     "impr": 257,
-     "ctr": 0.39,
-     "pos": 21.4
-    },
-    {
      "d": "2026-06-07",
      "clicks": 0,
      "impr": 212,
@@ -641,33 +634,40 @@
      "impr": 307,
      "ctr": 0.65,
      "pos": 16.9
+    },
+    {
+     "d": "2026-09-05",
+     "clicks": 1,
+     "impr": 316,
+     "ctr": 0.32,
+     "pos": 18.1
     }
    ],
    "queries": [
     {
      "q": "buy cialis online",
      "clicks": 3,
-     "impr": 647,
+     "impr": 656,
      "ctr": 0.5,
      "pos": 10.6,
      "prev": {
       "clicks": 5,
-      "impr": 515,
+      "impr": 500,
       "ctr": 1.0,
-      "pos": 12.3
+      "pos": 12.2
      }
     },
     {
      "q": "cialis online",
-     "clicks": 2,
-     "impr": 292,
-     "ctr": 0.7,
-     "pos": 15.8,
+     "clicks": 3,
+     "impr": 296,
+     "ctr": 1.0,
+     "pos": 15.9,
      "prev": {
       "clicks": 0,
-      "impr": 306,
+      "impr": 297,
       "ctr": 0.0,
-      "pos": 15.4
+      "pos": 15.6
      }
     },
     {
@@ -693,12 +693,12 @@
     {
      "q": "buy cialis online uk",
      "clicks": 1,
-     "impr": 287,
+     "impr": 288,
      "ctr": 0.3,
-     "pos": 9.6,
+     "pos": 9.7,
      "prev": {
       "clicks": 1,
-      "impr": 234,
+      "impr": 230,
       "ctr": 0.4,
       "pos": 9.9
      }
@@ -706,39 +706,39 @@
     {
      "q": "cialis online uk",
      "clicks": 1,
-     "impr": 266,
+     "impr": 269,
      "ctr": 0.4,
      "pos": 10.7,
      "prev": {
       "clicks": 0,
-      "impr": 266,
+      "impr": 256,
       "ctr": 0.0,
-      "pos": 10.6
+      "pos": 10.8
      }
     },
     {
      "q": "cialis tablets",
      "clicks": 1,
-     "impr": 202,
+     "impr": 203,
      "ctr": 0.5,
-     "pos": 30.3,
+     "pos": 30.2,
      "prev": {
       "clicks": 0,
-      "impr": 291,
+      "impr": 282,
       "ctr": 0.0,
-      "pos": 29.2
+      "pos": 29.5
      }
     },
     {
      "q": "cialis online pharmacy",
      "clicks": 1,
-     "impr": 88,
-     "ctr": 1.1,
-     "pos": 9.4,
+     "impr": 84,
+     "ctr": 1.2,
+     "pos": 9.5,
      "prev": {
       "clicks": 1,
-      "impr": 72,
-      "ctr": 1.4,
+      "impr": 78,
+      "ctr": 1.3,
       "pos": 8.7
      }
     }
@@ -767,6 +767,6 @@
    }
   }
  ],
- "as_of": "2026-09-07",
+ "as_of": "2026-09-08",
  "criteria": "hand-picked page-2 treatment pages rebuilt on the new set-up"
 }
