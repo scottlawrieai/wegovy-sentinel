@@ -216,6 +216,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python blog_experiment_sentinel.py --mode product
 
+      - name: Content flux probe
+        if: always()
+        run: python flux_probe.py
+
       - name: Run Foundayo Sentinel
         if: always()
         env:
@@ -254,6 +258,7 @@ jobs:
                    data/blog_experiment.json docs/blog_experiment.json \
                    data/product_experiment_config.json \
                    data/product_experiment.json docs/product_experiment.json \
+                   data/flux_probe.json \
                    data/foundayo_snapshots.json docs/foundayo_snapshots.json; do
             if [ -e "$f" ]; then git add "$f"; fi
           done
