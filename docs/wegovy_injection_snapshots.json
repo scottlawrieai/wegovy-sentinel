@@ -47264,12 +47264,12 @@
    "of": 6
   },
   "psi": {
-   "score": 82,
-   "lcp": "2.6 s",
+   "score": 53,
+   "lcp": "9.0 s",
    "cls": "0",
-   "tbt": "470 ms",
-   "fcp": "2.3 s",
-   "si": "2.8 s",
+   "tbt": "330 ms",
+   "fcp": "4.8 s",
+   "si": "6.2 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 577,

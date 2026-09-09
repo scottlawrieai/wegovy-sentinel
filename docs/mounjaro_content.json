@@ -6251,7 +6251,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 5832,
+   "wc": 5895,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -6307,7 +6307,7 @@
    "termhits": {
     "tirzepatide": 19,
     "GIP": 5,
-    "GLP-1": 12,
+    "GLP-1": 13,
     "dual agonist": 1,
     "appetite suppression": 10,
     "blood sugar": 7,
@@ -6335,7 +6335,7 @@
     "BMI eligibility": 5,
     "Wegovy / semaglutide": 29,
     "price per month": 34,
-    "clinician review": 45
+    "clinician review": 46
    },
    "phrases": [
     "side effects",
@@ -6343,13 +6343,13 @@
     "september out",
     "september out stars",
     "week week",
-    "stars verified",
-    "out stars verified",
     "mounjaro tirzepatide",
     "blood sugar",
     "order next",
     "next pen",
-    "pen week"
+    "pen week",
+    "stars verified",
+    "order next pen"
    ],
    "imgs": 25,
    "videos": 0,
@@ -6381,7 +6381,7 @@
     "Dania Gbemisola",
     "Consumer"
    ],
-   "bytes": 419
+   "bytes": 420
   },
   "pages": [
    {
@@ -6514,12 +6514,12 @@
     "authors": [],
     "bytes": 707,
     "psi": {
-     "score": 65,
-     "lcp": "8.2 s",
-     "cls": "0.122",
-     "tbt": "30 ms",
-     "fcp": "2.6 s",
-     "si": "4.9 s",
+     "score": 58,
+     "lcp": "11.0 s",
+     "cls": "0",
+     "tbt": "100 ms",
+     "fcp": "5.4 s",
+     "si": "7.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1192,
@@ -6599,12 +6599,12 @@
     ],
     "bytes": 43,
     "psi": {
-     "score": 28,
-     "lcp": "13.9 s",
+     "score": 24,
+     "lcp": "11.4 s",
      "cls": "0.518",
-     "tbt": "330 ms",
-     "fcp": "9.1 s",
-     "si": "9.1 s",
+     "tbt": "1,000 ms",
+     "fcp": "3.4 s",
+     "si": "3.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1732,
@@ -6770,14 +6770,14 @@
      "CollegeOrUniversity"
     ],
     "authors": [],
-    "bytes": 318,
+    "bytes": 317,
     "psi": {
      "score": 73,
      "lcp": "6.5 s",
-     "cls": "0.026",
-     "tbt": "20 ms",
+     "cls": "0.003",
+     "tbt": "50 ms",
      "fcp": "2.4 s",
-     "si": "3.8 s",
+     "si": "3.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1036,
@@ -7007,7 +7007,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 5832,
+    "wc": 5895,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -7063,7 +7063,7 @@
     "termhits": {
      "tirzepatide": 19,
      "GIP": 5,
-     "GLP-1": 12,
+     "GLP-1": 13,
      "dual agonist": 1,
      "appetite suppression": 10,
      "blood sugar": 7,
@@ -7091,7 +7091,7 @@
      "BMI eligibility": 5,
      "Wegovy / semaglutide": 29,
      "price per month": 34,
-     "clinician review": 45
+     "clinician review": 46
     },
     "phrases": [
      "side effects",
@@ -7099,13 +7099,13 @@
      "september out",
      "september out stars",
      "week week",
-     "stars verified",
-     "out stars verified",
      "mounjaro tirzepatide",
      "blood sugar",
      "order next",
      "next pen",
-     "pen week"
+     "pen week",
+     "stars verified",
+     "order next pen"
     ],
     "imgs": 25,
     "videos": 0,
@@ -7137,7 +7137,7 @@
      "Dania Gbemisola",
      "Consumer"
     ],
-    "bytes": 419
+    "bytes": 420
    }
   ],
   "align": {
@@ -7171,7 +7171,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "5832 words vs competitor median 5369"
+     "evidence": "5895 words vs competitor median 5369"
     },
     {
      "name": "FAQ coverage",
