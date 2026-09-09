@@ -34196,7 +34196,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 58,
-   "wc": 6988,
+   "wc": 7080,
    "faqs": [
     "What is the Wegovy pill?",
     "How does the Wegovy pill work?",
@@ -34273,7 +34273,7 @@
     "semaglutide": 18,
     "oral semaglutide": 6,
     "GLP-1 receptor agonist": 1,
-    "GLP-1": 17,
+    "GLP-1": 18,
     "appetite suppression": 12,
     "satiety / fullness": 2,
     "slows gastric emptying": 1,
@@ -34301,7 +34301,7 @@
     "cardiovascular benefit": 1,
     "Wegovy injection": 31,
     "Ozempic": 2,
-    "Mounjaro / tirzepatide": 27,
+    "Mounjaro / tirzepatide": 28,
     "Rybelsus": 1,
     "orforglipron / Foundayo": 9,
     "Saxenda / liraglutide": 6,
@@ -34309,8 +34309,8 @@
     "price / cost": 43,
     "UK availability": 7,
     "NHS": 12,
-    "online consultation": 52,
-    "delivery": 12
+    "online consultation": 53,
+    "delivery": 10
    },
    "phrases": [
     "side effects",
@@ -34320,11 +34320,11 @@
     "september out stars",
     "weekly injection",
     "maintenance dose",
+    "simple online",
+    "online pharmacy",
+    "simple online pharmacy",
     "dose increases",
-    "stars verified",
-    "average body",
-    "out stars verified",
-    "oral semaglutide"
+    "stars verified"
    ],
    "imgs": 25,
    "videos": 0,
@@ -34356,7 +34356,7 @@
     "David",
     "Jim"
    ],
-   "bytes": 487
+   "bytes": 488
   },
   "pages": [
    {
@@ -34510,14 +34510,14 @@
      "OfferShippingDetails"
     ],
     "authors": [],
-    "bytes": 627,
+    "bytes": 626,
     "psi": {
      "score": 68,
-     "lcp": "6.3 s",
+     "lcp": "7.3 s",
      "cls": "0.02",
-     "tbt": "230 ms",
-     "fcp": "2.1 s",
-     "si": "4.7 s",
+     "tbt": "110 ms",
+     "fcp": "2.4 s",
+     "si": "5.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1146,
@@ -34644,12 +34644,12 @@
     "authors": [],
     "bytes": 323,
     "psi": {
-     "score": 27,
-     "lcp": "12.8 s",
+     "score": 56,
+     "lcp": "12.1 s",
      "cls": "0",
-     "tbt": "2,920 ms",
+     "tbt": "130 ms",
      "fcp": "4.8 s",
-     "si": "13.8 s",
+     "si": "8.8 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3513,
@@ -34803,12 +34803,12 @@
     "authors": [],
     "bytes": 300,
     "psi": {
-     "score": 64,
-     "lcp": "16.3 s",
+     "score": 65,
+     "lcp": "15.6 s",
      "cls": "0.023",
      "tbt": "0 ms",
-     "fcp": "3.9 s",
-     "si": "4.7 s",
+     "fcp": "3.8 s",
+     "si": "4.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1354,
@@ -35148,7 +35148,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 58,
-    "wc": 6988,
+    "wc": 7080,
     "faqs": [
      "What is the Wegovy pill?",
      "How does the Wegovy pill work?",
@@ -35225,7 +35225,7 @@
      "semaglutide": 18,
      "oral semaglutide": 6,
      "GLP-1 receptor agonist": 1,
-     "GLP-1": 17,
+     "GLP-1": 18,
      "appetite suppression": 12,
      "satiety / fullness": 2,
      "slows gastric emptying": 1,
@@ -35253,7 +35253,7 @@
      "cardiovascular benefit": 1,
      "Wegovy injection": 31,
      "Ozempic": 2,
-     "Mounjaro / tirzepatide": 27,
+     "Mounjaro / tirzepatide": 28,
      "Rybelsus": 1,
      "orforglipron / Foundayo": 9,
      "Saxenda / liraglutide": 6,
@@ -35261,8 +35261,8 @@
      "price / cost": 43,
      "UK availability": 7,
      "NHS": 12,
-     "online consultation": 52,
-     "delivery": 12
+     "online consultation": 53,
+     "delivery": 10
     },
     "phrases": [
      "side effects",
@@ -35272,11 +35272,11 @@
      "september out stars",
      "weekly injection",
      "maintenance dose",
+     "simple online",
+     "online pharmacy",
+     "simple online pharmacy",
      "dose increases",
-     "stars verified",
-     "average body",
-     "out stars verified",
-     "oral semaglutide"
+     "stars verified"
     ],
     "imgs": 25,
     "videos": 0,
@@ -35308,7 +35308,7 @@
      "David",
      "Jim"
     ],
-    "bytes": 487
+    "bytes": 488
    }
   ],
   "align": {
@@ -35342,7 +35342,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6988 words vs competitor median 3755"
+     "evidence": "7080 words vs competitor median 3755"
     },
     {
      "name": "FAQ coverage",

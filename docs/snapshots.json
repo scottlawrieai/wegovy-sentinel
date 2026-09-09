@@ -96592,12 +96592,12 @@
    "of": 6
   },
   "psi": {
-   "score": 66,
-   "lcp": "3.7 s",
+   "score": 45,
+   "lcp": "11.4 s",
    "cls": "0",
-   "tbt": "880 ms",
-   "fcp": "2.5 s",
-   "si": "2.9 s",
+   "tbt": "600 ms",
+   "fcp": "4.8 s",
+   "si": "6.7 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 706,

@@ -43492,12 +43492,12 @@
    "of": 6
   },
   "psi": {
-   "score": 40,
-   "lcp": "7.6 s",
+   "score": 45,
+   "lcp": "9.8 s",
    "cls": "0",
-   "tbt": "2,880 ms",
-   "fcp": "2.3 s",
-   "si": "5.1 s",
+   "tbt": "600 ms",
+   "fcp": "4.7 s",
+   "si": "6.2 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 721,

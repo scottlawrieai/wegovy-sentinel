@@ -3175,24 +3175,7 @@
     },
     "schema": [],
     "authors": [],
-    "bytes": 0,
-    "psi": {
-     "score": 32,
-     "lcp": "14.2 s",
-     "cls": "0.015",
-     "tbt": "4,370 ms",
-     "fcp": "2.6 s",
-     "si": "16.0 s",
-     "strategy": "mobile",
-     "field": {
-      "lcp_ms": 3065,
-      "lcp_ms_cat": "AVERAGE",
-      "inp_ms": 281,
-      "inp_ms_cat": "AVERAGE",
-      "cls100": 20,
-      "cls100_cat": "AVERAGE"
-     }
-    }
+    "bytes": 0
    },
    {
     "url": "https://www.pharmacyonline.co.uk/",
@@ -3266,12 +3249,12 @@
     "authors": [],
     "bytes": 320,
     "psi": {
-     "score": 66,
-     "lcp": "10.3 s",
-     "cls": "0.004",
-     "tbt": "190 ms",
-     "fcp": "2.1 s",
-     "si": "5.3 s",
+     "score": 59,
+     "lcp": "10.2 s",
+     "cls": "0",
+     "tbt": "230 ms",
+     "fcp": "3.2 s",
+     "si": "6.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1369,
@@ -3313,12 +3296,12 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 99,
-     "lcp": "1.7 s",
-     "cls": "0.063",
-     "tbt": "40 ms",
+     "score": 81,
+     "lcp": "4.7 s",
+     "cls": "0",
+     "tbt": "70 ms",
      "fcp": "1.2 s",
-     "si": "1.2 s",
+     "si": "3.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 882,

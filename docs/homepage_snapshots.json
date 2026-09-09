@@ -44327,12 +44327,12 @@
    "of": 6
   },
   "psi": {
-   "score": 43,
-   "lcp": "8.8 s",
+   "score": 52,
+   "lcp": "10.3 s",
    "cls": "0",
-   "tbt": "940 ms",
-   "fcp": "3.4 s",
-   "si": "5.7 s",
+   "tbt": "490 ms",
+   "fcp": "3.3 s",
+   "si": "5.5 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 860,

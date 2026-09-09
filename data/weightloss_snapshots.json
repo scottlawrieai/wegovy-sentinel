@@ -40266,12 +40266,12 @@
    "of": 6
   },
   "psi": {
-   "score": 72,
-   "lcp": "4.2 s",
+   "score": 52,
+   "lcp": "12.7 s",
    "cls": "0",
-   "tbt": "450 ms",
-   "fcp": "2.3 s",
-   "si": "2.5 s",
+   "tbt": "350 ms",
+   "fcp": "4.7 s",
+   "si": "6.7 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 520,

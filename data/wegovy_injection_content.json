@@ -5905,12 +5905,12 @@
     "authors": [],
     "bytes": 659,
     "psi": {
-     "score": 49,
-     "lcp": "14.9 s",
-     "cls": "0.003",
-     "tbt": "410 ms",
-     "fcp": "5.4 s",
-     "si": "7.3 s",
+     "score": 67,
+     "lcp": "12.6 s",
+     "cls": "0.082",
+     "tbt": "110 ms",
+     "fcp": "2.3 s",
+     "si": "5.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1065,
@@ -6027,12 +6027,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 30,
-     "lcp": "13.5 s",
+     "score": 38,
+     "lcp": "15.0 s",
      "cls": "0",
-     "tbt": "1,680 ms",
-     "fcp": "5.5 s",
-     "si": "9.8 s",
+     "tbt": "790 ms",
+     "fcp": "5.7 s",
+     "si": "9.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4177,
@@ -6135,12 +6135,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 53,
-     "lcp": "10.5 s",
-     "cls": "0",
-     "tbt": "440 ms",
-     "fcp": "3.6 s",
-     "si": "5.2 s",
+     "score": 69,
+     "lcp": "4.5 s",
+     "cls": "0.004",
+     "tbt": "340 ms",
+     "fcp": "3.4 s",
+     "si": "3.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 728,
@@ -6396,7 +6396,7 @@
      "FAQPage"
     ],
     "authors": [],
-    "bytes": 330
+    "bytes": 331
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
