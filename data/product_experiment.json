@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-06-08",
-     "clicks": 0,
-     "impr": 297,
-     "ctr": 0.0,
-     "pos": 19.9
-    },
-    {
      "d": "2026-06-09",
      "clicks": 0,
      "impr": 228,
@@ -641,33 +634,53 @@
      "impr": 353,
      "ctr": 0.28,
      "pos": 17.3
+    },
+    {
+     "d": "2026-09-07",
+     "clicks": 13,
+     "impr": 402,
+     "ctr": 3.23,
+     "pos": 17.8
     }
    ],
    "queries": [
     {
      "q": "buy cialis online",
-     "clicks": 4,
-     "impr": 654,
-     "ctr": 0.6,
-     "pos": 10.6,
+     "clicks": 9,
+     "impr": 665,
+     "ctr": 1.4,
+     "pos": 10.7,
      "prev": {
       "clicks": 5,
-      "impr": 491,
+      "impr": 484,
       "ctr": 1.0,
-      "pos": 12.1
+      "pos": 12.0
+     }
+    },
+    {
+     "q": "buy cialis",
+     "clicks": 4,
+     "impr": 678,
+     "ctr": 0.6,
+     "pos": 15.6,
+     "prev": {
+      "clicks": 1,
+      "impr": 214,
+      "ctr": 0.5,
+      "pos": 15.3
      }
     },
     {
      "q": "cialis online",
-     "clicks": 2,
-     "impr": 289,
-     "ctr": 0.7,
-     "pos": 16.0,
+     "clicks": 4,
+     "impr": 294,
+     "ctr": 1.4,
+     "pos": 16.1,
      "prev": {
       "clicks": 1,
-      "impr": 303,
+      "impr": 292,
       "ctr": 0.3,
-      "pos": 15.5
+      "pos": 15.6
      }
     },
     {
@@ -693,12 +706,12 @@
     {
      "q": "buy cialis online uk",
      "clicks": 1,
-     "impr": 292,
+     "impr": 296,
      "ctr": 0.3,
-     "pos": 9.7,
+     "pos": 9.8,
      "prev": {
       "clicks": 1,
-      "impr": 222,
+      "impr": 215,
       "ctr": 0.5,
       "pos": 9.9
      }
@@ -706,40 +719,27 @@
     {
      "q": "cialis online uk",
      "clicks": 1,
-     "impr": 266,
+     "impr": 265,
      "ctr": 0.4,
-     "pos": 10.8,
+     "pos": 10.9,
      "prev": {
       "clicks": 0,
-      "impr": 255,
+      "impr": 256,
       "ctr": 0.0,
-      "pos": 10.9
-     }
-    },
-    {
-     "q": "cialis tablets",
-     "clicks": 1,
-     "impr": 199,
-     "ctr": 0.5,
-     "pos": 30.5,
-     "prev": {
-      "clicks": 0,
-      "impr": 277,
-      "ctr": 0.0,
-      "pos": 29.7
+      "pos": 11.0
      }
     },
     {
      "q": "cialis online pharmacy",
      "clicks": 1,
-     "impr": 85,
+     "impr": 84,
      "ctr": 1.2,
      "pos": 9.5,
      "prev": {
       "clicks": 1,
-      "impr": 76,
+      "impr": 79,
       "ctr": 1.3,
-      "pos": 8.6
+      "pos": 8.7
      }
     }
    ],
@@ -767,6 +767,6 @@
    }
   }
  ],
- "as_of": "2026-09-09",
+ "as_of": "2026-09-10",
  "criteria": "hand-picked page-2 treatment pages rebuilt on the new set-up"
 }

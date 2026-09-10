@@ -123,5 +123,15 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-10",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +50 words (7,080 → 7,130)",
+    "source": "auto"
+   }
+  ]
  }
 ]
