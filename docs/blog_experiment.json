@@ -6,13 +6,6 @@
    "live": "2026-09-06",
    "series": [
     {
-     "d": "2026-06-09",
-     "clicks": 100,
-     "impr": 10679,
-     "ctr": 0.94,
-     "pos": 7.0
-    },
-    {
      "d": "2026-06-10",
      "clicks": 86,
      "impr": 10095,
@@ -641,111 +634,118 @@
      "impr": 5484,
      "ctr": 1.22,
      "pos": 5.8
+    },
+    {
+     "d": "2026-09-08",
+     "clicks": 60,
+     "impr": 5565,
+     "ctr": 1.08,
+     "pos": 5.5
     }
    ],
    "queries": [
     {
      "q": "sulphur burps",
      "clicks": 31,
-     "impr": 9398,
+     "impr": 9069,
      "ctr": 0.3,
      "pos": 8.9,
      "prev": {
-      "clicks": 38,
-      "impr": 9156,
+      "clicks": 35,
+      "impr": 9186,
       "ctr": 0.4,
       "pos": 8.9
      }
     },
     {
      "q": "how to get rid of eggy burps",
-     "clicks": 23,
-     "impr": 674,
-     "ctr": 3.4,
+     "clicks": 22,
+     "impr": 669,
+     "ctr": 3.3,
      "pos": 2.7,
      "prev": {
-      "clicks": 29,
-      "impr": 563,
-      "ctr": 5.2,
+      "clicks": 26,
+      "impr": 558,
+      "ctr": 4.7,
       "pos": 2.8
      }
     },
     {
      "q": "mounjaro sulfur burps and diarrhea",
-     "clicks": 20,
-     "impr": 459,
-     "ctr": 4.4,
+     "clicks": 19,
+     "impr": 473,
+     "ctr": 4.0,
      "pos": 2.0,
      "prev": {
-      "clicks": 23,
-      "impr": 472,
-      "ctr": 4.9,
-      "pos": 2.6
+      "clicks": 25,
+      "impr": 471,
+      "ctr": 5.3,
+      "pos": 2.5
      }
     },
     {
      "q": "sulphur burps mounjaro",
      "clicks": 15,
-     "impr": 1826,
+     "impr": 1813,
      "ctr": 0.8,
      "pos": 6.2,
      "prev": {
       "clicks": 19,
-      "impr": 1860,
+      "impr": 1834,
       "ctr": 1.0,
       "pos": 6.1
      }
     },
     {
      "q": "eggy burps mounjaro",
-     "clicks": 14,
-     "impr": 1096,
-     "ctr": 1.3,
-     "pos": 3.7,
+     "clicks": 15,
+     "impr": 1104,
+     "ctr": 1.4,
+     "pos": 3.8,
      "prev": {
       "clicks": 10,
-      "impr": 930,
+      "impr": 928,
       "ctr": 1.1,
       "pos": 4.1
      }
     },
     {
      "q": "eggy burps",
-     "clicks": 11,
-     "impr": 2344,
+     "clicks": 13,
+     "impr": 2458,
      "ctr": 0.5,
-     "pos": 6.2,
+     "pos": 6.1,
      "prev": {
       "clicks": 6,
-      "impr": 1031,
+      "impr": 1011,
       "ctr": 0.6,
-      "pos": 7.7
+      "pos": 7.5
      }
     },
     {
      "q": "sulfur burps",
      "clicks": 10,
-     "impr": 2057,
+     "impr": 1971,
      "ctr": 0.5,
-     "pos": 8.9,
+     "pos": 8.8,
      "prev": {
       "clicks": 9,
-      "impr": 1863,
+      "impr": 1901,
       "ctr": 0.5,
       "pos": 8.6
      }
     },
     {
-     "q": "sulfur burps and diarrhea mounjaro",
+     "q": "mounjaro sulphur burps",
      "clicks": 10,
-     "impr": 264,
-     "ctr": 3.8,
-     "pos": 2.1,
+     "impr": 1038,
+     "ctr": 1.0,
+     "pos": 6.9,
      "prev": {
       "clicks": 7,
-      "impr": 306,
-      "ctr": 2.3,
-      "pos": 2.7
+      "impr": 1169,
+      "ctr": 0.6,
+      "pos": 6.9
      }
     }
    ],
@@ -777,13 +777,6 @@
    "label": "what is the ozempic dosage for weight loss",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-06-09",
-     "clicks": 173,
-     "impr": 10095,
-     "ctr": 1.71,
-     "pos": 4.3
-    },
     {
      "d": "2026-06-10",
      "clicks": 138,
@@ -1413,110 +1406,117 @@
      "impr": 4863,
      "ctr": 2.59,
      "pos": 5.7
+    },
+    {
+     "d": "2026-09-08",
+     "clicks": 115,
+     "impr": 3909,
+     "ctr": 2.94,
+     "pos": 6.5
     }
    ],
    "queries": [
     {
      "q": "maximum dose of ozempic for weight loss",
-     "clicks": 84,
-     "impr": 7881,
+     "clicks": 86,
+     "impr": 7640,
      "ctr": 1.1,
-     "pos": 2.2,
+     "pos": 2.1,
      "prev": {
-      "clicks": 148,
-      "impr": 9517,
-      "ctr": 1.6,
-      "pos": 2.1
+      "clicks": 143,
+      "impr": 9595,
+      "ctr": 1.5,
+      "pos": 2.2
      }
     },
     {
      "q": "ozempic doses",
      "clicks": 72,
-     "impr": 7324,
+     "impr": 7227,
      "ctr": 1.0,
      "pos": 2.4,
      "prev": {
-      "clicks": 117,
-      "impr": 3742,
-      "ctr": 3.1,
+      "clicks": 118,
+      "impr": 3735,
+      "ctr": 3.2,
       "pos": 3.4
      }
     },
     {
      "q": "when to increase ozempic dose for weight loss",
-     "clicks": 65,
-     "impr": 1116,
-     "ctr": 5.8,
+     "clicks": 70,
+     "impr": 1129,
+     "ctr": 6.2,
      "pos": 4.0,
      "prev": {
       "clicks": 43,
-      "impr": 867,
+      "impr": 865,
       "ctr": 5.0,
-      "pos": 4.0
+      "pos": 3.9
      }
     },
     {
      "q": "what dose of ozempic is best for weight loss",
-     "clicks": 45,
-     "impr": 253,
-     "ctr": 17.8,
-     "pos": 1.8,
+     "clicks": 48,
+     "impr": 252,
+     "ctr": 19.0,
+     "pos": 1.7,
      "prev": {
       "clicks": 26,
-      "impr": 135,
-      "ctr": 19.3,
-      "pos": 2.4
+      "impr": 148,
+      "ctr": 17.6,
+      "pos": 2.3
      }
     },
     {
      "q": "ozempic dosage",
-     "clicks": 44,
-     "impr": 10347,
+     "clicks": 42,
+     "impr": 9931,
      "ctr": 0.4,
      "pos": 2.1,
      "prev": {
-      "clicks": 45,
-      "impr": 10909,
+      "clicks": 46,
+      "impr": 11093,
       "ctr": 0.4,
       "pos": 2.4
      }
     },
     {
+     "q": "ozempic dosage for weight loss",
+     "clicks": 32,
+     "impr": 1253,
+     "ctr": 2.6,
+     "pos": 2.4,
+     "prev": {
+      "clicks": 13,
+      "impr": 1458,
+      "ctr": 0.9,
+      "pos": 2.0
+     }
+    },
+    {
      "q": "ozempic doses for weight loss",
-     "clicks": 28,
-     "impr": 1407,
-     "ctr": 2.0,
+     "clicks": 31,
+     "impr": 1393,
+     "ctr": 2.2,
      "pos": 3.1,
      "prev": {
       "clicks": 19,
-      "impr": 1397,
-      "ctr": 1.4,
+      "impr": 1415,
+      "ctr": 1.3,
       "pos": 3.2
      }
     },
     {
-     "q": "ozempic dosage for weight loss",
-     "clicks": 28,
-     "impr": 1273,
-     "ctr": 2.2,
-     "pos": 2.3,
-     "prev": {
-      "clicks": 13,
-      "impr": 1451,
-      "ctr": 0.9,
-      "pos": 1.9
-     }
-    },
-    {
      "q": "what is the maximum dosage of ozempic",
-     "clicks": 27,
-     "impr": 4373,
-     "ctr": 0.6,
+     "clicks": 29,
+     "impr": 4268,
+     "ctr": 0.7,
      "pos": 2.0,
      "prev": {
-      "clicks": 28,
-      "impr": 4176,
-      "ctr": 0.7,
+      "clicks": 27,
+      "impr": 4208,
+      "ctr": 0.6,
       "pos": 2.1
      }
     }
@@ -1549,13 +1549,6 @@
    "label": "mounjaro hair loss",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-06-09",
-     "clicks": 33,
-     "impr": 2384,
-     "ctr": 1.38,
-     "pos": 5.8
-    },
     {
      "d": "2026-06-10",
      "clicks": 24,
@@ -2185,54 +2178,74 @@
      "impr": 2387,
      "ctr": 1.17,
      "pos": 5.6
+    },
+    {
+     "d": "2026-09-08",
+     "clicks": 55,
+     "impr": 2427,
+     "ctr": 2.27,
+     "pos": 5.0
     }
    ],
    "queries": [
     {
      "q": "mounjaro hair loss",
-     "clicks": 15,
-     "impr": 2797,
-     "ctr": 0.5,
-     "pos": 7.7,
+     "clicks": 19,
+     "impr": 2840,
+     "ctr": 0.7,
+     "pos": 7.6,
      "prev": {
       "clicks": 34,
-      "impr": 10556,
+      "impr": 10536,
       "ctr": 0.3,
       "pos": 6.8
      }
     },
     {
      "q": "hair loss mounjaro",
-     "clicks": 13,
+     "clicks": 14,
      "impr": 1245,
-     "ctr": 1.0,
+     "ctr": 1.1,
      "pos": 7.3,
      "prev": {
-      "clicks": 19,
-      "impr": 1357,
-      "ctr": 1.4,
-      "pos": 7.9
+      "clicks": 20,
+      "impr": 1353,
+      "ctr": 1.5,
+      "pos": 7.8
      }
     },
     {
      "q": "how to stop hair loss on mounjaro",
-     "clicks": 9,
-     "impr": 325,
-     "ctr": 2.8,
+     "clicks": 10,
+     "impr": 329,
+     "ctr": 3.0,
      "pos": 3.0,
      "prev": {
       "clicks": 14,
-      "impr": 379,
+      "impr": 383,
       "ctr": 3.7,
       "pos": 3.4
      }
     },
     {
+     "q": "hair loss on mounjaro",
+     "clicks": 8,
+     "impr": 625,
+     "ctr": 1.3,
+     "pos": 7.5,
+     "prev": {
+      "clicks": 9,
+      "impr": 648,
+      "ctr": 1.4,
+      "pos": 6.9
+     }
+    },
+    {
      "q": "how to prevent hair loss on mounjaro",
-     "clicks": 6,
-     "impr": 273,
-     "ctr": 2.2,
-     "pos": 4.1,
+     "clicks": 7,
+     "impr": 274,
+     "ctr": 2.6,
+     "pos": 4.0,
      "prev": {
       "clicks": 5,
       "impr": 278,
@@ -2243,51 +2256,38 @@
     {
      "q": "how to stop mounjaro hair loss female",
      "clicks": 5,
-     "impr": 798,
+     "impr": 805,
      "ctr": 0.6,
      "pos": 3.3,
      "prev": {
-      "clicks": 5,
-      "impr": 606,
-      "ctr": 0.8,
+      "clicks": 4,
+      "impr": 612,
+      "ctr": 0.7,
       "pos": 3.9
-     }
-    },
-    {
-     "q": "hair loss on mounjaro",
-     "clicks": 5,
-     "impr": 611,
-     "ctr": 0.8,
-     "pos": 7.7,
-     "prev": {
-      "clicks": 9,
-      "impr": 647,
-      "ctr": 1.4,
-      "pos": 6.9
      }
     },
     {
      "q": "hair loss from mounjaro",
      "clicks": 5,
-     "impr": 79,
-     "ctr": 6.3,
-     "pos": 7.0,
+     "impr": 86,
+     "ctr": 5.8,
+     "pos": 6.9,
      "prev": {
       "clicks": 1,
-      "impr": 102,
+      "impr": 100,
       "ctr": 1.0,
-      "pos": 5.3
+      "pos": 5.2
      }
     },
     {
      "q": "does mounjaro cause hair loss",
      "clicks": 4,
-     "impr": 2778,
+     "impr": 2824,
      "ctr": 0.1,
-     "pos": 7.5,
+     "pos": 7.6,
      "prev": {
-      "clicks": 9,
-      "impr": 3228,
+      "clicks": 10,
+      "impr": 3222,
       "ctr": 0.3,
       "pos": 6.9
      }
@@ -2321,13 +2321,6 @@
    "label": "combat mounjaro fatigue",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-06-09",
-     "clicks": 54,
-     "impr": 3529,
-     "ctr": 1.53,
-     "pos": 4.9
-    },
     {
      "d": "2026-06-10",
      "clicks": 54,
@@ -2957,111 +2950,118 @@
      "impr": 2377,
      "ctr": 2.15,
      "pos": 4.9
+    },
+    {
+     "d": "2026-09-08",
+     "clicks": 58,
+     "impr": 2301,
+     "ctr": 2.52,
+     "pos": 4.5
     }
    ],
    "queries": [
     {
      "q": "does mounjaro make you tired",
-     "clicks": 156,
-     "impr": 7336,
-     "ctr": 2.1,
+     "clicks": 164,
+     "impr": 7251,
+     "ctr": 2.3,
      "pos": 4.2,
      "prev": {
-      "clicks": 151,
-      "impr": 8846,
-      "ctr": 1.7,
+      "clicks": 156,
+      "impr": 8914,
+      "ctr": 1.8,
       "pos": 4.2
      }
     },
     {
      "q": "can mounjaro make you tired",
      "clicks": 69,
-     "impr": 2309,
+     "impr": 2276,
      "ctr": 3.0,
      "pos": 3.6,
      "prev": {
-      "clicks": 57,
-      "impr": 2611,
-      "ctr": 2.2,
+      "clicks": 59,
+      "impr": 2612,
+      "ctr": 2.3,
       "pos": 3.6
      }
     },
     {
      "q": "mounjaro tiredness",
      "clicks": 31,
-     "impr": 873,
+     "impr": 854,
      "ctr": 3.6,
-     "pos": 2.8,
+     "pos": 2.9,
      "prev": {
       "clicks": 38,
-      "impr": 1189,
+      "impr": 1200,
       "ctr": 3.2,
-      "pos": 3.0
+      "pos": 2.9
      }
     },
     {
      "q": "mounjaro fatigue",
      "clicks": 23,
-     "impr": 1458,
+     "impr": 1468,
      "ctr": 1.6,
      "pos": 5.0,
      "prev": {
       "clicks": 38,
-      "impr": 1680,
-      "ctr": 2.3,
+      "impr": 1700,
+      "ctr": 2.2,
       "pos": 4.8
      }
     },
     {
      "q": "why does mounjaro make you tired",
      "clicks": 19,
-     "impr": 603,
-     "ctr": 3.2,
-     "pos": 3.9,
+     "impr": 605,
+     "ctr": 3.1,
+     "pos": 4.0,
      "prev": {
-      "clicks": 15,
-      "impr": 607,
-      "ctr": 2.5,
-      "pos": 3.3
+      "clicks": 16,
+      "impr": 618,
+      "ctr": 2.6,
+      "pos": 3.2
      }
     },
     {
      "q": "mounjaro and tiredness",
      "clicks": 11,
-     "impr": 232,
-     "ctr": 4.7,
+     "impr": 228,
+     "ctr": 4.8,
      "pos": 2.6,
      "prev": {
       "clicks": 8,
-      "impr": 328,
-      "ctr": 2.4,
-      "pos": 2.5
+      "impr": 318,
+      "ctr": 2.5,
+      "pos": 2.4
      }
     },
     {
      "q": "does mounjaro cause fatigue",
      "clicks": 10,
-     "impr": 394,
-     "ctr": 2.5,
+     "impr": 389,
+     "ctr": 2.6,
      "pos": 5.0,
      "prev": {
       "clicks": 9,
-      "impr": 398,
-      "ctr": 2.3,
+      "impr": 405,
+      "ctr": 2.2,
       "pos": 4.3
      }
     },
     {
-     "q": "is tiredness a side effect of mounjaro",
+     "q": "mounjaro and fatigue",
      "clicks": 10,
-     "impr": 237,
-     "ctr": 4.2,
-     "pos": 2.4,
+     "impr": 313,
+     "ctr": 3.2,
+     "pos": 4.5,
      "prev": {
-      "clicks": 10,
-      "impr": 268,
-      "ctr": 3.7,
-      "pos": 2.5
+      "clicks": 8,
+      "impr": 452,
+      "ctr": 1.8,
+      "pos": 4.4
      }
     }
    ],
@@ -3093,13 +3093,6 @@
    "label": "how long wegovy pill to work",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-06-09",
-     "clicks": 0,
-     "impr": 0,
-     "ctr": 0.0,
-     "pos": 0.0
-    },
     {
      "d": "2026-06-10",
      "clicks": 0,
@@ -3729,96 +3722,90 @@
      "impr": 2157,
      "ctr": 3.06,
      "pos": 5.7
+    },
+    {
+     "d": "2026-09-08",
+     "clicks": 70,
+     "impr": 2139,
+     "ctr": 3.27,
+     "pos": 5.9
     }
    ],
    "queries": [
     {
      "q": "do wegovy pills work",
-     "clicks": 51,
-     "impr": 784,
-     "ctr": 6.5,
-     "pos": 3.1,
+     "clicks": 52,
+     "impr": 758,
+     "ctr": 6.9,
+     "pos": 2.9,
      "prev": {
-      "clicks": 21,
-      "impr": 1076,
+      "clicks": 22,
+      "impr": 1120,
       "ctr": 2.0,
       "pos": 5.3
      }
     },
     {
      "q": "wegovy pill does it work",
-     "clicks": 41,
-     "impr": 635,
-     "ctr": 6.5,
-     "pos": 3.2,
+     "clicks": 43,
+     "impr": 646,
+     "ctr": 6.7,
+     "pos": 3.1,
      "prev": {
       "clicks": 6,
-      "impr": 281,
+      "impr": 291,
       "ctr": 2.1,
       "pos": 5.4
      }
     },
     {
      "q": "does wegovy pill work",
-     "clicks": 36,
-     "impr": 809,
-     "ctr": 4.4,
-     "pos": 3.0,
+     "clicks": 39,
+     "impr": 800,
+     "ctr": 4.9,
+     "pos": 2.8,
      "prev": {
       "clicks": 11,
-      "impr": 733,
+      "impr": 744,
       "ctr": 1.5,
-      "pos": 5.1
+      "pos": 4.9
      }
     },
     {
      "q": "how long does wegovy pill take to work",
-     "clicks": 32,
-     "impr": 512,
-     "ctr": 6.2,
+     "clicks": 31,
+     "impr": 519,
+     "ctr": 6.0,
      "pos": 1.4,
      "prev": {
-      "clicks": 31,
-      "impr": 754,
-      "ctr": 4.1,
-      "pos": 2.0
+      "clicks": 32,
+      "impr": 732,
+      "ctr": 4.4,
+      "pos": 1.9
      }
     },
     {
      "q": "does the wegovy pill work",
      "clicks": 29,
-     "impr": 843,
-     "ctr": 3.4,
-     "pos": 3.1,
+     "impr": 814,
+     "ctr": 3.6,
+     "pos": 3.0,
      "prev": {
       "clicks": 17,
-      "impr": 1082,
+      "impr": 1093,
       "ctr": 1.6,
-      "pos": 5.5
-     }
-    },
-    {
-     "q": "how long does it take for wegovy pill to work",
-     "clicks": 28,
-     "impr": 525,
-     "ctr": 5.3,
-     "pos": 1.4,
-     "prev": {
-      "clicks": 35,
-      "impr": 739,
-      "ctr": 4.7,
-      "pos": 2.0
+      "pos": 5.3
      }
     },
     {
      "q": "do wegovy tablets work",
      "clicks": 28,
-     "impr": 383,
-     "ctr": 7.3,
-     "pos": 3.3,
+     "impr": 379,
+     "ctr": 7.4,
+     "pos": 3.1,
      "prev": {
       "clicks": 5,
-      "impr": 439,
+      "impr": 460,
       "ctr": 1.1,
       "pos": 6.4
      }
@@ -3826,14 +3813,27 @@
     {
      "q": "how long do wegovy pills take to work",
      "clicks": 26,
-     "impr": 392,
-     "ctr": 6.6,
+     "impr": 375,
+     "ctr": 6.9,
      "pos": 1.4,
      "prev": {
-      "clicks": 29,
-      "impr": 627,
-      "ctr": 4.6,
-      "pos": 1.8
+      "clicks": 28,
+      "impr": 622,
+      "ctr": 4.5,
+      "pos": 1.7
+     }
+    },
+    {
+     "q": "how long does it take for wegovy pill to work",
+     "clicks": 23,
+     "impr": 516,
+     "ctr": 4.5,
+     "pos": 1.3,
+     "prev": {
+      "clicks": 39,
+      "impr": 724,
+      "ctr": 5.4,
+      "pos": 1.9
      }
     }
    ],
@@ -3865,13 +3865,6 @@
    "label": "ask the expert wegovy pill",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-06-09",
-     "clicks": 0,
-     "impr": 0,
-     "ctr": 0.0,
-     "pos": 0.0
-    },
     {
      "d": "2026-06-10",
      "clicks": 0,
@@ -4501,6 +4494,13 @@
      "impr": 132,
      "ctr": 2.27,
      "pos": 6.5
+    },
+    {
+     "d": "2026-09-08",
+     "clicks": 3,
+     "impr": 96,
+     "ctr": 3.12,
+     "pos": 5.9
     }
    ],
    "queries": [
@@ -4512,9 +4512,9 @@
      "pos": 6.5,
      "prev": {
       "clicks": 0,
-      "impr": 15,
+      "impr": 13,
       "ctr": 0.0,
-      "pos": 7.9
+      "pos": 7.4
      }
     },
     {
@@ -4527,21 +4527,21 @@
     {
      "q": "wegovy pill equivalent to 1.7 mg injection",
      "clicks": 1,
-     "impr": 19,
-     "ctr": 5.3,
-     "pos": 10.4
+     "impr": 22,
+     "ctr": 4.5,
+     "pos": 10.3
     },
     {
      "q": "wegovy pill tips",
      "clicks": 1,
-     "impr": 12,
-     "ctr": 8.3,
-     "pos": 8.0,
+     "impr": 10,
+     "ctr": 10.0,
+     "pos": 7.3,
      "prev": {
       "clicks": 1,
-      "impr": 24,
-      "ctr": 4.2,
-      "pos": 4.0
+      "impr": 26,
+      "ctr": 3.8,
+      "pos": 4.6
      }
     },
     {
@@ -4609,6 +4609,6 @@
    }
   }
  ],
- "as_of": "2026-09-10",
+ "as_of": "2026-09-11",
  "criteria": "health-advice pages, avg pos 5.0-15.0, >= 300 impressions/28d, top 5 by impressions"
 }

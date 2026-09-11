@@ -38,5 +38,25 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-11",
+  "changes": [
+   {
+    "type": "seo",
+    "text": "H1 changed: “If weight loss has felt harder than it should, you’re not alone.” → “Weight Loss Injections and Pills”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “If weight loss has felt harder than it should, you’re not alone.”",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "4 FAQs removed: “Why do I feel so drained on weight loss medication?” +3 more",
+    "source": "auto"
+   }
+  ]
  }
 ]
