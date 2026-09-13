@@ -3371,12 +3371,13 @@
    }
   },
   "m": {
-   "foundayo": 1,
-   "orforglipron": 17
+   "foundayo": null,
+   "orforglipron": null
   },
   "flags": {
    "wrong": false,
-   "cann": 5
-  }
+   "cann": 0
+  },
+  "sem_as_of": "2026-09-13"
  }
 ]
