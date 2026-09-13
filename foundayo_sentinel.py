@@ -331,10 +331,26 @@ def main():
             rows = parse_rows(FIXTURE_ROWS)
             comp = FIXTURE_COMP
         else:
-            rows = fetch_positions()
+            try:
+                rows = fetch_positions()
+            except Exception as e:
+                # Semrush being down (e.g. a 403 on an expired key) must not
+                # kill the whole patrol -- GSC/AWR/content still collect.
+                print(f"[warn] semrush positions unavailable: {e}",
+                      file=sys.stderr)
+                rows = []
             comp = fetch_competitor_positions()
         snaps = load_history()
         snap = build_snapshot(rows, comp)
+
+        # Semrush outage: keep the previous ranking blocks.
+        if not rows:
+            for prev_s in reversed(snaps):
+                if prev_s.get("best"):
+                    snap["best"] = prev_s["best"]
+                    snap["comp"] = snap.get("comp") or prev_s.get("comp") or {}
+                    snap["sem_as_of"] = prev_s.get("sem_as_of", prev_s["date"])
+                    break
         snaps = [s for s in snaps if s["date"] != snap["date"]] + [snap]
         save_history(snaps)
         text = digest(snaps)

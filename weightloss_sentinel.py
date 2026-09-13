@@ -525,12 +525,33 @@ def main():
             comp = FIXTURE_COMP
             src = FIXTURE_SRC
         else:
-            rows = fetch_positions()
+            try:
+                rows = fetch_positions()
+            except Exception as e:
+                # Semrush being down (e.g. a 403 on an expired key) must not
+                # kill the whole patrol -- GSC/AWR/content still collect.
+                print(f"[warn] semrush positions unavailable: {e}",
+                      file=sys.stderr)
+                rows = []
             bl = fetch_backlinks()
             comp = fetch_competitor_positions()
             src = fetch_extra_sources()
         snaps = load_history()
         snap = build_snapshot(rows, bl, comp, src)
+
+        # Semrush outage: keep the previous ranking blocks instead of
+        # blanking the dashboard and firing false lost-page-one alerts.
+        if not rows:
+            for prev_s in reversed(snaps):
+                if prev_s.get("best"):
+                    snap["best"] = prev_s["best"]
+                    snap["comp"] = snap.get("comp") or prev_s.get("comp") or {}
+                    if prev_s.get("m"):
+                        snap["m"] = prev_s["m"]
+                    if prev_s.get("flags"):
+                        snap["flags"] = prev_s["flags"]
+                    snap["sem_as_of"] = prev_s.get("sem_as_of", prev_s["date"])
+                    break
 
         # Keyword meta: search volume + SERP feature codes per tracked keyword.
         snap["kwmeta"] = (FIXTURE_KWMETA if test else fetch_kw_meta())
