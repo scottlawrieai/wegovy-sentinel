@@ -3379,5 +3379,122 @@
    "cann": 0
   },
   "sem_as_of": "2026-09-13"
+ },
+ {
+  "date": "2026-09-14",
+  "mode": "semrush",
+  "best": {
+   "foundayo": {
+    "p": 1,
+    "c": "foundayo",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss-pills/foundayo/",
+    "n": 3
+   },
+   "foundayo pill": {
+    "p": 4,
+    "c": "foundayo",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss-pills/foundayo/",
+    "n": 3
+   },
+   "orforglipron": {
+    "p": 17,
+    "c": "orforglipron",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/",
+    "n": 2
+   },
+   "orforglipron uk": {
+    "p": 2,
+    "c": "orforglipron",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/",
+    "n": 2
+   },
+   "orforglipron price": {
+    "p": 2,
+    "c": "orforglipron",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/",
+    "n": 2
+   },
+   "orforglipron tablet": {
+    "p": 5,
+    "c": "orforglipron",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/",
+    "n": 1
+   },
+   "orforglipron tablets": null,
+   "orforglipron pill": null,
+   "orforglipron weight loss": null,
+   "orforglipron weight-loss pill": null,
+   "orforglipron side effects": {
+    "p": 34,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/what-is-orforglipron-weight-loss-pill/",
+    "n": 1
+   },
+   "orforglipron uk where to buy": {
+    "p": 1,
+    "c": "orforglipron",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/",
+    "n": 1
+   },
+   "orforglipron buy online": {
+    "p": 2,
+    "c": "orforglipron",
+    "u": "https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/orforglipron/",
+    "n": 1
+   },
+   "orforglipron price per month": null,
+   "eli lilly orforglipron weight loss": null
+  },
+  "comp": {
+   "Superdrug": {
+    "orforglipron": {
+     "p": 7,
+     "u": "https://onlinedoctor.superdrug.com/orforglipron-glp-1-pill.html"
+    },
+    "orforglipron uk": {
+     "p": 3,
+     "u": "https://onlinedoctor.superdrug.com/orforglipron-glp-1-pill.html"
+    },
+    "orforglipron price": {
+     "p": 4,
+     "u": "https://onlinedoctor.superdrug.com/orforglipron-glp-1-pill.html"
+    }
+   },
+   "OxfordPharm": {
+    "orforglipron uk": {
+     "p": 1,
+     "u": "https://www.oxfordonlinepharmacy.co.uk/blog/when-will-orforglipron-be-available-in-the-uk"
+    },
+    "orforglipron": {
+     "p": 4,
+     "u": "https://www.oxfordonlinepharmacy.co.uk/blog/when-will-orforglipron-be-available-in-the-uk"
+    }
+   },
+   "Chemist4U": {
+    "orforglipron": {
+     "p": 10,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/what-is-orforglipron-new-uk-weight-loss-pill/"
+    },
+    "orforglipron uk": {
+     "p": 7,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/what-is-orforglipron-new-uk-weight-loss-pill/"
+    }
+   },
+   "Boots": {
+    "orforglipron uk": {
+     "p": 14,
+     "u": "https://onlinedoctor.boots.com/treatments/orforglipron"
+    }
+   }
+  },
+  "m": {
+   "foundayo": null,
+   "orforglipron": null
+  },
+  "flags": {
+   "wrong": false,
+   "cann": 0
+  },
+  "sem_as_of": "2026-09-13"
  }
 ]

@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-06-12",
-     "clicks": 0,
-     "impr": 223,
-     "ctr": 0.0,
-     "pos": 17.4
-    },
-    {
      "d": "2026-06-13",
      "clicks": 0,
      "impr": 239,
@@ -641,44 +634,51 @@
      "impr": 145,
      "ctr": 0.0,
      "pos": 23.4
+    },
+    {
+     "d": "2026-09-11",
+     "clicks": 0,
+     "impr": 123,
+     "ctr": 0.0,
+     "pos": 25.7
     }
    ],
    "queries": [
     {
      "q": "buy cialis online",
      "clicks": 9,
-     "impr": 617,
+     "impr": 592,
      "ctr": 1.5,
-     "pos": 11.3,
+     "pos": 11.5,
      "prev": {
       "clicks": 6,
-      "impr": 526,
+      "impr": 548,
       "ctr": 1.1,
-      "pos": 11.5
+      "pos": 11.3
      }
     },
     {
      "q": "buy cialis",
      "clicks": 5,
-     "impr": 658,
+     "impr": 629,
      "ctr": 0.8,
-     "pos": 16.3,
+     "pos": 16.6,
      "prev": {
       "clicks": 0,
-      "impr": 262,
+      "impr": 302,
       "ctr": 0.0,
-      "pos": 14.5
+      "pos": 14.2
      }
     },
     {
      "q": "cialis online",
      "clicks": 4,
-     "impr": 281,
+     "impr": 277,
      "ctr": 1.4,
-     "pos": 16.7,
+     "pos": 16.9,
      "prev": {
       "clicks": 1,
-      "impr": 296,
+      "impr": 295,
       "ctr": 0.3,
       "pos": 15.6
      }
@@ -699,25 +699,25 @@
     {
      "q": "buy cialis uk",
      "clicks": 1,
-     "impr": 350,
+     "impr": 340,
      "ctr": 0.3,
-     "pos": 11.1,
+     "pos": 11.4,
      "prev": {
       "clicks": 1,
-      "impr": 126,
+      "impr": 132,
       "ctr": 0.8,
-      "pos": 12.9
+      "pos": 12.5
      }
     },
     {
      "q": "buy cialis online uk",
      "clicks": 1,
-     "impr": 279,
+     "impr": 267,
      "ctr": 0.4,
-     "pos": 10.3,
+     "pos": 10.5,
      "prev": {
       "clicks": 1,
-      "impr": 215,
+      "impr": 221,
       "ctr": 0.5,
       "pos": 9.8
      }
@@ -725,12 +725,12 @@
     {
      "q": "cialis online pharmacy",
      "clicks": 1,
-     "impr": 74,
-     "ctr": 1.4,
-     "pos": 10.2,
+     "impr": 68,
+     "ctr": 1.5,
+     "pos": 10.4,
      "prev": {
       "clicks": 1,
-      "impr": 87,
+      "impr": 91,
       "ctr": 1.1,
       "pos": 8.4
      }
@@ -751,28 +751,28 @@
    ],
    "health": {
     "status": "ok",
-    "title": "Buy Cialis Tablets for Erectile Dysfunction Online in the UKToggle Menu",
+    "title": "Buy Cialis Tablets for Erectile Dysfunction Online in the UK",
     "meta": "Cialis (branded Tadalafil) is an effective erectile dysfunction treatment that lasts up to 36 hours. You can buy Cialis online from our UK prescribing service.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "robots": "index, follow",
     "h1": "Cialis",
-    "h2n": 24,
-    "faqs": 28,
-    "wc": 3370,
+    "h2n": 13,
+    "faqs": 4,
+    "wc": 2937,
     "schema": [
-     "Answer",
+     "AggregateRating",
      "Brand",
-     "BreadcrumbList",
      "BuyAction",
-     "CollegeOrUniversity",
-     "ContactPoint",
      "Country",
-     "CreativeWork",
      "DefinedRegion",
-     "Drug"
+     "Drug",
+     "DrugClass",
+     "DrugLegalStatus",
+     "EntryPoint",
+     "MedicalCondition"
     ]
    }
   }
  ],
- "as_of": "2026-09-13",
+ "as_of": "2026-09-14",
  "criteria": "hand-picked page-2 treatment pages rebuilt on the new set-up"
 }
