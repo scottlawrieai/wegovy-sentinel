@@ -5,7 +5,19 @@
    "label": "cialis",
    "live": "2026-09-07",
    "note": "clone from sop-cialis-v2.pages.dev; page-2 treatment rebuild"
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/facial-hair-removal/vaniqa/",
+   "label": "vaniqa",
+   "live": null,
+   "note": "old-style template rebuild (faithful to old pages)"
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/erectile-dysfunction/sildenafil/",
+   "label": "sildenafil",
+   "live": null,
+   "note": "new-style template rebuild"
   }
  ],
- "criteria": "hand-picked page-2 treatment pages rebuilt on the new set-up"
+ "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
 }
