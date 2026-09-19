@@ -1,20 +1,5 @@
 [
  {
-  "date": "2026-08-04",
-  "changes": [
-   {
-    "type": "structure",
-    "text": "Section added: “46,000+ verified customer reviews”",
-    "source": "auto"
-   },
-   {
-    "type": "content",
-    "text": "Body copy +118 words (7,059 → 7,177)",
-    "source": "auto"
-   }
-  ]
- },
- {
   "date": "2026-08-14",
   "changes": [
    {
@@ -140,6 +125,16 @@
    {
     "type": "content",
     "text": "Body copy +158 words (6,970 → 7,128)",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-09-19",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy −120 words (7,128 → 7,008)",
     "source": "auto"
    }
   ]
