@@ -138,5 +138,20 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-20",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +152 words (7,008 → 7,160)",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Topic coverage gained: vs injection",
+    "source": "auto"
+   }
+  ]
  }
 ]
