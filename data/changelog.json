@@ -163,5 +163,25 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-22",
+  "changes": [
+   {
+    "type": "content",
+    "text": "1 FAQ added: “Which Wegovy pill dose would I start on?”",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Body copy +194 words (7,063 → 7,257)",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "H3 sub-headings 58 → 60",
+    "source": "auto"
+   }
+  ]
  }
 ]
