@@ -54,7 +54,7 @@ MODES = {
 POS_MIN, POS_MAX = 5.0, 15.0        # striking-distance band for selection
 MIN_IMPR = 300                      # 28-day impressions floor
 COHORT_SIZE = 5
-MAX_PAGES = 8                       # hard cap however the config is edited
+MAX_PAGES = 24                      # hard cap however the config is edited
 
 
 def today_uk() -> str:
