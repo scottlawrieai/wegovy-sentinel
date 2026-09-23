@@ -156996,11 +156996,11 @@
    "of": 6
   },
   "psi": {
-   "score": 52,
-   "lcp": "10.5 s",
+   "score": 56,
+   "lcp": "10.8 s",
    "cls": "0",
-   "tbt": "330 ms",
-   "fcp": "5.8 s",
+   "tbt": "210 ms",
+   "fcp": "4.7 s",
    "si": "6.5 s",
    "strategy": "mobile",
    "field": {

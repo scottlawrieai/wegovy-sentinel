@@ -15176,7 +15176,7 @@
     "Weight loss FAQs"
    ],
    "h3n": 26,
-   "wc": 2664,
+   "wc": 2536,
    "faqs": [
     "Injectable vs oral treatments: what's the difference?",
     "How do clinicians decide which treatment is suitable?",
@@ -15230,26 +15230,26 @@
     "injection pen": 2,
     "average weight loss %": 4,
     "BMI eligibility": 7,
-    "clinical assessment": 12,
+    "clinical assessment": 13,
     "prescription-only": 1,
     "NHS availability": 2,
     "side effects": 11,
     "nausea": 7,
-    "clinician review": 25,
+    "clinician review": 24,
     "price per month": 11
    },
    "phrases": [
     "side effects",
     "out stars",
     "stars verified",
-    "out stars verified",
-    "simple online",
-    "online pharmacy",
     "september out",
-    "simple online pharmacy",
+    "out stars verified",
     "september out stars",
     "subscribe save",
     "once-weekly injection",
+    "simple online",
+    "online pharmacy",
+    "simple online pharmacy",
     "regulate appetite"
    ],
    "imgs": 26,
@@ -15277,7 +15277,7 @@
     "Pharmacy"
    ],
    "authors": [],
-   "bytes": 355
+   "bytes": 354
   },
   "pages": [
    {
@@ -15316,12 +15316,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 47,
-     "lcp": "11.6 s",
+     "score": 40,
+     "lcp": "10.7 s",
      "cls": "0.131",
-     "tbt": "520 ms",
-     "fcp": "3.5 s",
-     "si": "5.2 s",
+     "tbt": "880 ms",
+     "fcp": "3.4 s",
+     "si": "5.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 568,
@@ -15363,10 +15363,10 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 17,
-     "lcp": "15.5 s",
+     "score": 19,
+     "lcp": "17.2 s",
      "cls": "0.518",
-     "tbt": "700 ms",
+     "tbt": "590 ms",
      "fcp": "11.5 s",
      "si": "11.5 s",
      "strategy": "mobile",
@@ -15513,14 +15513,14 @@
      "CollegeOrUniversity"
     ],
     "authors": [],
-    "bytes": 347,
+    "bytes": 349,
     "psi": {
-     "score": 85,
-     "lcp": "3.9 s",
+     "score": 87,
+     "lcp": "3.5 s",
      "cls": "0.037",
-     "tbt": "10 ms",
+     "tbt": "0 ms",
      "fcp": "2.4 s",
-     "si": "2.9 s",
+     "si": "3.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 662,
@@ -15844,7 +15844,7 @@
      "Weight loss FAQs"
     ],
     "h3n": 26,
-    "wc": 2664,
+    "wc": 2536,
     "faqs": [
      "Injectable vs oral treatments: what's the difference?",
      "How do clinicians decide which treatment is suitable?",
@@ -15898,26 +15898,26 @@
      "injection pen": 2,
      "average weight loss %": 4,
      "BMI eligibility": 7,
-     "clinical assessment": 12,
+     "clinical assessment": 13,
      "prescription-only": 1,
      "NHS availability": 2,
      "side effects": 11,
      "nausea": 7,
-     "clinician review": 25,
+     "clinician review": 24,
      "price per month": 11
     },
     "phrases": [
      "side effects",
      "out stars",
      "stars verified",
-     "out stars verified",
-     "simple online",
-     "online pharmacy",
      "september out",
-     "simple online pharmacy",
+     "out stars verified",
      "september out stars",
      "subscribe save",
      "once-weekly injection",
+     "simple online",
+     "online pharmacy",
+     "simple online pharmacy",
      "regulate appetite"
     ],
     "imgs": 26,
@@ -15945,7 +15945,7 @@
      "Pharmacy"
     ],
     "authors": [],
-    "bytes": 355
+    "bytes": 354
    }
   ],
   "align": {
@@ -15979,7 +15979,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "2664 words vs competitor median 1718"
+     "evidence": "2536 words vs competitor median 1718"
     },
     {
      "name": "FAQ coverage",

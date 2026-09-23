@@ -224405,12 +224405,12 @@
    "of": 6
   },
   "psi": {
-   "score": 59,
+   "score": 62,
    "lcp": "3.7 s",
    "cls": "0",
-   "tbt": "1,480 ms",
+   "tbt": "1,210 ms",
    "fcp": "2.5 s",
-   "si": "3.3 s",
+   "si": "3.1 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 698,

@@ -140730,7 +140730,7 @@
     },
     {
      "d": "2026-09-22",
-     "sessions": 155,
+     "sessions": 157,
      "events": 114
     }
    ],
@@ -140784,8 +140784,8 @@
   "m": {
    "pill": null,
    "bwInj": null,
-   "blD": 45,
-   "blT": 229
+   "blD": 46,
+   "blT": 231
   },
   "flags": {
    "wrong": false,
@@ -140999,12 +140999,12 @@
    "of": 6
   },
   "psi": {
-   "score": 51,
-   "lcp": "10.4 s",
+   "score": 48,
+   "lcp": "9.6 s",
    "cls": "0",
-   "tbt": "410 ms",
-   "fcp": "4.7 s",
-   "si": "6.3 s",
+   "tbt": "670 ms",
+   "fcp": "3.3 s",
+   "si": "5.3 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 655,
@@ -141016,7 +141016,7 @@
    }
   },
   "links": {
-   "ours": 45,
+   "ours": 46,
    "comp": {
     "Superdrug": 82,
     "Chemist4U": 200,
@@ -141127,15 +141127,6 @@
      ]
     },
     {
-     "d": "tirzepatide.uk",
-     "n": 3,
-     "who": [
-      "Chemist4U",
-      "MedExpress",
-      "Superdrug"
-     ]
-    },
-    {
      "d": "ashento.com",
      "n": 2,
      "who": [
@@ -141238,9 +141229,17 @@
       "MedExpress",
       "Superdrug"
      ]
+    },
+    {
+     "d": "bhs-links-r254.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
     }
    ],
-   "strong": 38
+   "strong": 37
   }
  }
 ]

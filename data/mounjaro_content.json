@@ -17925,7 +17925,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 6094,
+   "wc": 6056,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -17983,7 +17983,7 @@
     "GIP": 5,
     "GLP-1": 12,
     "dual agonist": 1,
-    "appetite suppression": 10,
+    "appetite suppression": 11,
     "blood sugar": 7,
     "type 2 diabetes": 3,
     "2.5 mg starting dose": 18,
@@ -18003,13 +18003,13 @@
     "Eli Lilly": 4,
     "prescription-only": 9,
     "nausea / GI side effects": 20,
-    "side effects": 20,
+    "side effects": 21,
     "pancreatitis": 3,
     "thyroid": 2,
     "BMI eligibility": 5,
     "Wegovy / semaglutide": 28,
-    "price per month": 49,
-    "clinician review": 46
+    "price per month": 50,
+    "clinician review": 47
    },
    "phrases": [
     "side effects",
@@ -18017,13 +18017,13 @@
     "september out",
     "september out stars",
     "week week",
-    "stars verified",
-    "out stars verified",
     "blood sugar",
     "order next",
     "next pen",
     "pen week",
-    "order next pen"
+    "stars verified",
+    "order next pen",
+    "out stars verified"
    ],
    "imgs": 25,
    "videos": 0,
@@ -18051,11 +18051,11 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Mr Burchell",
-    "Bridget",
-    "Mrs sally anne lockhart"
+    "Paul & Amanda Robertson",
+    "Elizabeth McKay",
+    "Teresa"
    ],
-   "bytes": 445
+   "bytes": 444
   },
   "pages": [
    {
@@ -18186,14 +18186,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 723,
+    "bytes": 718,
     "psi": {
-     "score": 63,
-     "lcp": "8.4 s",
-     "cls": "0.119",
-     "tbt": "100 ms",
-     "fcp": "2.6 s",
-     "si": "5.7 s",
+     "score": 64,
+     "lcp": "8.3 s",
+     "cls": "0.122",
+     "tbt": "130 ms",
+     "fcp": "2.3 s",
+     "si": "5.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1201,
@@ -18235,10 +18235,10 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 33,
-     "lcp": "13.6 s",
+     "score": 31,
+     "lcp": "13.9 s",
      "cls": "0.518",
-     "tbt": "310 ms",
+     "tbt": "380 ms",
      "fcp": "5.6 s",
      "si": "5.6 s",
      "strategy": "mobile",
@@ -18407,13 +18407,13 @@
      "WebPage"
     ],
     "authors": [],
-    "bytes": 324,
+    "bytes": 323,
     "psi": {
-     "score": 64,
+     "score": 65,
      "lcp": "8.3 s",
      "cls": "0",
-     "tbt": "40 ms",
-     "fcp": "3.6 s",
+     "tbt": "0 ms",
+     "fcp": "3.5 s",
      "si": "5.5 s",
      "strategy": "mobile",
      "field": {
@@ -18602,7 +18602,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 6094,
+    "wc": 6056,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -18660,7 +18660,7 @@
      "GIP": 5,
      "GLP-1": 12,
      "dual agonist": 1,
-     "appetite suppression": 10,
+     "appetite suppression": 11,
      "blood sugar": 7,
      "type 2 diabetes": 3,
      "2.5 mg starting dose": 18,
@@ -18680,13 +18680,13 @@
      "Eli Lilly": 4,
      "prescription-only": 9,
      "nausea / GI side effects": 20,
-     "side effects": 20,
+     "side effects": 21,
      "pancreatitis": 3,
      "thyroid": 2,
      "BMI eligibility": 5,
      "Wegovy / semaglutide": 28,
-     "price per month": 49,
-     "clinician review": 46
+     "price per month": 50,
+     "clinician review": 47
     },
     "phrases": [
      "side effects",
@@ -18694,13 +18694,13 @@
      "september out",
      "september out stars",
      "week week",
-     "stars verified",
-     "out stars verified",
      "blood sugar",
      "order next",
      "next pen",
      "pen week",
-     "order next pen"
+     "stars verified",
+     "order next pen",
+     "out stars verified"
     ],
     "imgs": 25,
     "videos": 0,
@@ -18728,11 +18728,11 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Mr Burchell",
-     "Bridget",
-     "Mrs sally anne lockhart"
+     "Paul & Amanda Robertson",
+     "Elizabeth McKay",
+     "Teresa"
     ],
-    "bytes": 445
+    "bytes": 444
    }
   ],
   "align": {
@@ -18766,7 +18766,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6094 words vs competitor median 5419"
+     "evidence": "6056 words vs competitor median 5419"
     },
     {
      "name": "FAQ coverage",
