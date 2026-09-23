@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-06-21",
-     "clicks": 0,
-     "impr": 355,
-     "ctr": 0.0,
-     "pos": 18.6
-    },
-    {
      "d": "2026-06-22",
      "clicks": 0,
      "impr": 268,
@@ -641,18 +634,25 @@
      "impr": 256,
      "ctr": 0.0,
      "pos": 19.1
+    },
+    {
+     "d": "2026-09-20",
+     "clicks": 0,
+     "impr": 216,
+     "ctr": 0.0,
+     "pos": 19.5
     }
    ],
    "queries": [
     {
      "q": "buy cialis online",
      "clicks": 8,
-     "impr": 535,
+     "impr": 521,
      "ctr": 1.5,
-     "pos": 12.4,
+     "pos": 12.5,
      "prev": {
       "clicks": 5,
-      "impr": 600,
+      "impr": 602,
       "ctr": 0.8,
       "pos": 10.5
      }
@@ -660,27 +660,27 @@
     {
      "q": "buy cialis",
      "clicks": 7,
-     "impr": 584,
+     "impr": 572,
      "ctr": 1.2,
-     "pos": 16.8,
+     "pos": 16.6,
      "prev": {
       "clicks": 0,
-      "impr": 476,
+      "impr": 489,
       "ctr": 0.0,
-      "pos": 14.2
+      "pos": 14.4
      }
     },
     {
      "q": "cialis online",
      "clicks": 5,
-     "impr": 259,
-     "ctr": 1.9,
+     "impr": 251,
+     "ctr": 2.0,
      "pos": 18.3,
      "prev": {
       "clicks": 1,
-      "impr": 304,
+      "impr": 307,
       "ctr": 0.3,
-      "pos": 15.1
+      "pos": 15.3
      }
     },
     {
@@ -699,25 +699,25 @@
     {
      "q": "buy cialis uk",
      "clicks": 1,
-     "impr": 328,
+     "impr": 313,
      "ctr": 0.3,
-     "pos": 12.5,
+     "pos": 12.6,
      "prev": {
       "clicks": 1,
-      "impr": 205,
+      "impr": 220,
       "ctr": 0.5,
-      "pos": 11.0
+      "pos": 10.8
      }
     },
     {
      "q": "buy cialis online uk",
      "clicks": 1,
-     "impr": 230,
+     "impr": 229,
      "ctr": 0.4,
      "pos": 11.6,
      "prev": {
       "clicks": 1,
-      "impr": 254,
+      "impr": 259,
       "ctr": 0.4,
       "pos": 9.5
      }
@@ -725,12 +725,12 @@
     {
      "q": "cialis online uk",
      "clicks": 1,
-     "impr": 222,
+     "impr": 219,
      "ctr": 0.5,
-     "pos": 12.4,
+     "pos": 12.5,
      "prev": {
       "clicks": 1,
-      "impr": 276,
+      "impr": 277,
       "ctr": 0.4,
       "pos": 11.0
      }
@@ -738,12 +738,12 @@
     {
      "q": "cialis online pharmacy",
      "clicks": 1,
-     "impr": 65,
+     "impr": 67,
      "ctr": 1.5,
      "pos": 10.9,
      "prev": {
       "clicks": 1,
-      "impr": 93,
+      "impr": 90,
       "ctr": 1.1,
       "pos": 8.5
      }
@@ -757,7 +757,7 @@
     "h1": "Cialis",
     "h2n": 13,
     "faqs": 4,
-    "wc": 2937,
+    "wc": 2944,
     "schema": [
      "AggregateRating",
      "Brand",
@@ -777,13 +777,6 @@
    "label": "vaniqa",
    "live": null,
    "series": [
-    {
-     "d": "2026-06-21",
-     "clicks": 2,
-     "impr": 361,
-     "ctr": 0.55,
-     "pos": 12.3
-    },
     {
      "d": "2026-06-22",
      "clicks": 2,
@@ -1413,54 +1406,61 @@
      "impr": 286,
      "ctr": 0.0,
      "pos": 8.7
+    },
+    {
+     "d": "2026-09-20",
+     "clicks": 3,
+     "impr": 334,
+     "ctr": 0.9,
+     "pos": 7.8
     }
    ],
    "queries": [
     {
      "q": "vaniqa cream uk",
-     "clicks": 12,
-     "impr": 633,
-     "ctr": 1.9,
-     "pos": 6.2,
+     "clicks": 11,
+     "impr": 626,
+     "ctr": 1.8,
+     "pos": 6.4,
      "prev": {
-      "clicks": 2,
-      "impr": 737,
-      "ctr": 0.3,
+      "clicks": 3,
+      "impr": 734,
+      "ctr": 0.4,
       "pos": 5.1
      }
     },
     {
      "q": "vaniqa cream",
-     "clicks": 6,
-     "impr": 2965,
+     "clicks": 7,
+     "impr": 2995,
      "ctr": 0.2,
      "pos": 6.6,
      "prev": {
       "clicks": 1,
-      "impr": 743,
+      "impr": 768,
       "ctr": 0.1,
-      "pos": 11.1
+      "pos": 10.8
      }
     },
     {
      "q": "vaniqa cream amazon",
      "clicks": 2,
-     "impr": 496,
+     "impr": 499,
      "ctr": 0.4,
      "pos": 8.5,
      "prev": {
-      "clicks": 4,
-      "impr": 611,
-      "ctr": 0.7,
-      "pos": 6.8
+      "clicks": 3,
+      "impr": 606,
+      "ctr": 0.5,
+      "pos": 6.9
      }
     },
     {
      "q": "can you buy vaniqa cream over the counter",
      "clicks": 1,
-     "impr": 8,
-     "ctr": 12.5,
-     "pos": 2.9,
+     "impr": 9,
+     "ctr": 11.1,
+     "pos": 2.7,
      "prev": {
       "clicks": 0,
       "impr": 4,
@@ -1511,7 +1511,7 @@
     "h1": "Vaniqa Cream",
     "h2n": 13,
     "faqs": 1,
-    "wc": 2096,
+    "wc": 2103,
     "schema": [
      "AdministrativeArea",
      "AggregateOffer",
@@ -1531,13 +1531,6 @@
    "label": "sildenafil",
    "live": null,
    "series": [
-    {
-     "d": "2026-06-21",
-     "clicks": 0,
-     "impr": 848,
-     "ctr": 0.0,
-     "pos": 15.8
-    },
     {
      "d": "2026-06-22",
      "clicks": 6,
@@ -2167,31 +2160,38 @@
      "impr": 517,
      "ctr": 0.77,
      "pos": 14.9
+    },
+    {
+     "d": "2026-09-20",
+     "clicks": 1,
+     "impr": 584,
+     "ctr": 0.17,
+     "pos": 13.8
     }
    ],
    "queries": [
     {
      "q": "cheapest sildenafil online",
      "clicks": 10,
-     "impr": 133,
-     "ctr": 7.5,
+     "impr": 136,
+     "ctr": 7.4,
      "pos": 4.3,
      "prev": {
       "clicks": 2,
-      "impr": 125,
+      "impr": 123,
       "ctr": 1.6,
-      "pos": 5.7
+      "pos": 5.6
      }
     },
     {
      "q": "buy sildenafil uk",
      "clicks": 6,
-     "impr": 431,
+     "impr": 417,
      "ctr": 1.4,
-     "pos": 14.5,
+     "pos": 14.6,
      "prev": {
       "clicks": 1,
-      "impr": 436,
+      "impr": 450,
       "ctr": 0.2,
       "pos": 12.7
      }
@@ -2199,14 +2199,14 @@
     {
      "q": "buy sildenafil online",
      "clicks": 5,
-     "impr": 504,
+     "impr": 498,
      "ctr": 1.0,
      "pos": 12.2,
      "prev": {
       "clicks": 2,
       "impr": 477,
       "ctr": 0.4,
-      "pos": 11.6
+      "pos": 11.5
      }
     },
     {
@@ -2225,25 +2225,25 @@
     {
      "q": "buy sildenafil",
      "clicks": 4,
-     "impr": 736,
+     "impr": 728,
      "ctr": 0.5,
      "pos": 12.0,
      "prev": {
       "clicks": 2,
-      "impr": 892,
+      "impr": 900,
       "ctr": 0.2,
       "pos": 11.1
      }
     },
     {
      "q": "cheapest sildenafil uk",
-     "clicks": 3,
-     "impr": 273,
-     "ctr": 1.1,
-     "pos": 4.7,
+     "clicks": 4,
+     "impr": 272,
+     "ctr": 1.5,
+     "pos": 4.6,
      "prev": {
       "clicks": 4,
-      "impr": 321,
+      "impr": 327,
       "ctr": 1.2,
       "pos": 7.2
      }
@@ -2258,19 +2258,19 @@
       "clicks": 3,
       "impr": 218,
       "ctr": 1.4,
-      "pos": 7.2
+      "pos": 7.1
      }
     },
     {
      "q": "cheapest sildenafil",
      "clicks": 3,
-     "impr": 99,
-     "ctr": 3.0,
-     "pos": 6.6,
+     "impr": 105,
+     "ctr": 2.9,
+     "pos": 6.7,
      "prev": {
       "clicks": 1,
-      "impr": 89,
-      "ctr": 1.1,
+      "impr": 86,
+      "ctr": 1.2,
       "pos": 6.9
      }
     }
@@ -2278,27 +2278,27 @@
    "health": {
     "status": "ok",
     "title": "Buy Sildenafil Tablets Online from 50p / Pill",
-    "meta": "Sildenafil (Generic Viagra), is an effective treament for erectile dysfunction. You can buy Sildenafil from our UK online doctor service from \u00a33.75.",
-    "robots": "index, follow",
+    "meta": "Sildenafil (Generic Viagra), is an effective treament for erectile dysfunction. You can buy Sildenafil from our UK online doctor service from \u00a31.00.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     "h1": "Sildenafil",
-    "h2n": 13,
-    "faqs": 1,
-    "wc": 2849,
+    "h2n": 14,
+    "faqs": 26,
+    "wc": 2325,
     "schema": [
-     "AggregateRating",
-     "Brand",
-     "BuyAction",
+     "Answer",
+     "BreadcrumbList",
      "Country",
-     "DefinedRegion",
      "Drug",
-     "DrugClass",
      "DrugLegalStatus",
-     "EntryPoint",
-     "MedicalCondition"
+     "FAQPage",
+     "ImageObject",
+     "ListItem",
+     "MedicalCondition",
+     "MedicalWebPage"
     ]
    }
   }
  ],
- "as_of": "2026-09-22",
+ "as_of": "2026-09-23",
  "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
 }
