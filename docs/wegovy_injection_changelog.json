@@ -113,5 +113,20 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-25",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +32 words (3,605 → 3,637)",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Topic coverage gained: needle",
+    "source": "auto"
+   }
+  ]
  }
 ]
