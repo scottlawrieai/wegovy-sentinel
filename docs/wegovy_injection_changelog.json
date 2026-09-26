@@ -128,5 +128,15 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-26",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Topic coverage lost: needle",
+    "source": "auto"
+   }
+  ]
  }
 ]

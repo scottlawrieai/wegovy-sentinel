@@ -108,5 +108,20 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-26",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy −60 words (1,173 → 1,113)",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Topic coverage gained: repeat prescriptions",
+    "source": "auto"
+   }
+  ]
  }
 ]

@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-06-24",
-     "clicks": 0,
-     "impr": 211,
-     "ctr": 0.0,
-     "pos": 14.5
-    },
-    {
      "d": "2026-06-25",
      "clicks": 1,
      "impr": 279,
@@ -641,83 +634,77 @@
      "impr": 304,
      "ctr": 0.0,
      "pos": 18.7
+    },
+    {
+     "d": "2026-09-23",
+     "clicks": 0,
+     "impr": 230,
+     "ctr": 0.0,
+     "pos": 19.9
     }
    ],
    "queries": [
     {
      "q": "buy cialis online",
      "clicks": 8,
-     "impr": 527,
+     "impr": 528,
      "ctr": 1.5,
      "pos": 12.6,
      "prev": {
       "clicks": 5,
-      "impr": 612,
+      "impr": 616,
       "ctr": 0.8,
-      "pos": 10.5
+      "pos": 10.6
      }
     },
     {
      "q": "buy cialis",
      "clicks": 7,
-     "impr": 578,
+     "impr": 575,
      "ctr": 1.2,
      "pos": 16.2,
      "prev": {
       "clicks": 0,
-      "impr": 509,
+      "impr": 523,
       "ctr": 0.0,
-      "pos": 14.8
+      "pos": 14.9
      }
     },
     {
      "q": "cialis online",
      "clicks": 5,
-     "impr": 260,
+     "impr": 266,
      "ctr": 1.9,
-     "pos": 18.1,
+     "pos": 18.0,
      "prev": {
       "clicks": 1,
-      "impr": 307,
+      "impr": 297,
       "ctr": 0.3,
       "pos": 15.4
      }
     },
     {
-     "q": "cialis 20mg online",
-     "clicks": 2,
-     "impr": 3,
-     "ctr": 66.7,
-     "pos": 18.0,
-     "prev": {
-      "clicks": 1,
-      "impr": 4,
-      "ctr": 25.0,
-      "pos": 9.2
-     }
-    },
-    {
      "q": "buy cialis uk",
      "clicks": 1,
-     "impr": 311,
+     "impr": 314,
      "ctr": 0.3,
-     "pos": 13.1,
+     "pos": 13.4,
      "prev": {
       "clicks": 1,
-      "impr": 238,
+      "impr": 245,
       "ctr": 0.4,
-      "pos": 10.8
+      "pos": 10.7
      }
     },
     {
      "q": "buy cialis online uk",
      "clicks": 1,
-     "impr": 235,
+     "impr": 231,
      "ctr": 0.4,
-     "pos": 11.8,
+     "pos": 12.0,
      "prev": {
       "clicks": 1,
-      "impr": 265,
+      "impr": 271,
       "ctr": 0.4,
       "pos": 9.5
      }
@@ -725,12 +712,12 @@
     {
      "q": "cialis online uk",
      "clicks": 1,
-     "impr": 220,
+     "impr": 215,
      "ctr": 0.5,
      "pos": 12.7,
      "prev": {
       "clicks": 1,
-      "impr": 288,
+      "impr": 289,
       "ctr": 0.3,
       "pos": 11.0
      }
@@ -740,12 +727,25 @@
      "clicks": 1,
      "impr": 70,
      "ctr": 1.4,
-     "pos": 11.3,
+     "pos": 11.2,
      "prev": {
       "clicks": 1,
-      "impr": 94,
-      "ctr": 1.1,
-      "pos": 8.5
+      "impr": 96,
+      "ctr": 1.0,
+      "pos": 8.6
+     }
+    },
+    {
+     "q": "cialis uk",
+     "clicks": 1,
+     "impr": 26,
+     "ctr": 3.8,
+     "pos": 21.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 11,
+      "ctr": 0.0,
+      "pos": 16.7
      }
     }
    ],
@@ -777,13 +777,6 @@
    "label": "vaniqa",
    "live": null,
    "series": [
-    {
-     "d": "2026-06-24",
-     "clicks": 2,
-     "impr": 304,
-     "ctr": 0.66,
-     "pos": 10.9
-    },
     {
      "d": "2026-06-25",
      "clicks": 0,
@@ -1413,54 +1406,54 @@
      "impr": 380,
      "ctr": 0.53,
      "pos": 7.0
+    },
+    {
+     "d": "2026-09-23",
+     "clicks": 1,
+     "impr": 400,
+     "ctr": 0.25,
+     "pos": 8.5
     }
    ],
    "queries": [
     {
      "q": "vaniqa cream uk",
-     "clicks": 11,
-     "impr": 604,
-     "ctr": 1.8,
-     "pos": 6.9,
+     "clicks": 9,
+     "impr": 601,
+     "ctr": 1.5,
+     "pos": 7.1,
      "prev": {
-      "clicks": 2,
-      "impr": 750,
-      "ctr": 0.3,
-      "pos": 5.0
+      "clicks": 4,
+      "impr": 753,
+      "ctr": 0.5,
+      "pos": 4.9
      }
     },
     {
      "q": "vaniqa cream",
      "clicks": 6,
-     "impr": 2992,
+     "impr": 2977,
      "ctr": 0.2,
      "pos": 6.4,
      "prev": {
       "clicks": 3,
-      "impr": 982,
+      "impr": 1112,
       "ctr": 0.3,
-      "pos": 10.0
+      "pos": 9.6
      }
     },
     {
      "q": "can you buy vaniqa cream over the counter",
      "clicks": 1,
-     "impr": 23,
-     "ctr": 4.3,
-     "pos": 1.7,
+     "impr": 35,
+     "ctr": 2.9,
+     "pos": 1.5,
      "prev": {
       "clicks": 0,
-      "impr": 4,
+      "impr": 3,
       "ctr": 0.0,
-      "pos": 1.5
+      "pos": 1.3
      }
-    },
-    {
-     "q": "best way to remove menopausal facial hair",
-     "clicks": 1,
-     "impr": 7,
-     "ctr": 14.3,
-     "pos": 1.0
     },
     {
      "q": "best way to remove menopause facial hair",
@@ -1495,6 +1488,13 @@
      "impr": 1,
      "ctr": 100.0,
      "pos": 6.0
+    },
+    {
+     "q": "lowest cost",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 2.0
     }
    ],
    "health": {
@@ -1525,13 +1525,6 @@
    "label": "sildenafil",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-06-24",
-     "clicks": 2,
-     "impr": 495,
-     "ctr": 0.4,
-     "pos": 15.9
-    },
     {
      "d": "2026-06-25",
      "clicks": 1,
@@ -2161,31 +2154,38 @@
      "impr": 752,
      "ctr": 0.53,
      "pos": 16.4
+    },
+    {
+     "d": "2026-09-23",
+     "clicks": 1,
+     "impr": 577,
+     "ctr": 0.17,
+     "pos": 16.1
     }
    ],
    "queries": [
     {
      "q": "cheapest sildenafil online",
-     "clicks": 10,
-     "impr": 142,
-     "ctr": 7.0,
+     "clicks": 9,
+     "impr": 135,
+     "ctr": 6.7,
      "pos": 4.5,
      "prev": {
-      "clicks": 2,
-      "impr": 114,
-      "ctr": 1.8,
-      "pos": 5.4
+      "clicks": 3,
+      "impr": 119,
+      "ctr": 2.5,
+      "pos": 5.3
      }
     },
     {
      "q": "buy sildenafil uk",
      "clicks": 7,
-     "impr": 434,
+     "impr": 432,
      "ctr": 1.6,
-     "pos": 14.8,
+     "pos": 14.9,
      "prev": {
       "clicks": 1,
-      "impr": 455,
+      "impr": 452,
       "ctr": 0.2,
       "pos": 12.6
      }
@@ -2193,12 +2193,12 @@
     {
      "q": "buy sildenafil online",
      "clicks": 5,
-     "impr": 519,
+     "impr": 513,
      "ctr": 1.0,
      "pos": 12.4,
      "prev": {
       "clicks": 1,
-      "impr": 483,
+      "impr": 484,
       "ctr": 0.2,
       "pos": 11.4
      }
@@ -2211,61 +2211,61 @@
      "pos": 7.8,
      "prev": {
       "clicks": 1,
-      "impr": 12,
-      "ctr": 8.3,
+      "impr": 10,
+      "ctr": 10.0,
       "pos": 9.9
      }
     },
     {
      "q": "buy sildenafil",
      "clicks": 4,
-     "impr": 724,
+     "impr": 711,
      "ctr": 0.6,
-     "pos": 12.2,
+     "pos": 12.3,
      "prev": {
-      "clicks": 2,
-      "impr": 922,
-      "ctr": 0.2,
-      "pos": 11.1
+      "clicks": 1,
+      "impr": 920,
+      "ctr": 0.1,
+      "pos": 11.2
      }
     },
     {
      "q": "cheapest sildenafil uk",
      "clicks": 4,
-     "impr": 282,
+     "impr": 286,
      "ctr": 1.4,
-     "pos": 4.4,
+     "pos": 4.3,
      "prev": {
       "clicks": 4,
-      "impr": 331,
+      "impr": 321,
       "ctr": 1.2,
       "pos": 7.0
      }
     },
     {
-     "q": "sildenafil online",
+     "q": "cheapest sildenafil",
      "clicks": 3,
-     "impr": 325,
-     "ctr": 0.9,
-     "pos": 12.9,
+     "impr": 115,
+     "ctr": 2.6,
+     "pos": 6.8,
      "prev": {
       "clicks": 1,
-      "impr": 374,
-      "ctr": 0.3,
-      "pos": 11.3
+      "impr": 97,
+      "ctr": 1.0,
+      "pos": 6.8
      }
     },
     {
-     "q": "cheapest sildenafil",
+     "q": "cheap sildenafil 100mg",
      "clicks": 3,
-     "impr": 116,
-     "ctr": 2.6,
-     "pos": 6.7,
+     "impr": 73,
+     "ctr": 4.1,
+     "pos": 9.0,
      "prev": {
       "clicks": 1,
-      "impr": 93,
-      "ctr": 1.1,
-      "pos": 6.9
+      "impr": 71,
+      "ctr": 1.4,
+      "pos": 10.5
      }
     }
    ],
@@ -2293,6 +2293,6 @@
    }
   }
  ],
- "as_of": "2026-09-25",
+ "as_of": "2026-09-26",
  "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
 }
