@@ -17,6 +17,12 @@
    "label": "sildenafil",
    "live": "2026-09-23",
    "note": "new-style template rebuild"
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
+   "label": "wegovy injection (reverted to legacy)",
+   "live": "2026-09-28",
+   "note": "reversion test: new layout rolled back to legacy layout + previous content"
   }
  ],
  "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
