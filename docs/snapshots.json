@@ -280155,12 +280155,12 @@
    "of": 6
   },
   "psi": {
-   "score": 70,
+   "score": 66,
    "lcp": "3.7 s",
    "cls": "0",
-   "tbt": "610 ms",
+   "tbt": "820 ms",
    "fcp": "2.5 s",
-   "si": "3.3 s",
+   "si": "3.1 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 659,

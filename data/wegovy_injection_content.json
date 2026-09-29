@@ -25870,7 +25870,7 @@
     "Access & Cost"
    ],
    "h3n": 33,
-   "wc": 5991,
+   "wc": 6292,
    "faqs": [
     "What Is Wegovy?",
     "Is Wegovy Effective for Weight Loss?",
@@ -25900,7 +25900,7 @@
     "How much does Wegovy cost?",
     "What are alternatives to Wegovy?"
    ],
-   "open": "Online Doctor Weight Care Weight Injections Treatments Available Mounjaro Wegovy Nevolat (Liraglutide) Saxenda Ozempic 1 Litre Sharps Bin Greenfine 4mm 32g Needles x 100 View All Treatments Weight Loss Pills Treatments Available Wegovy Pills Foundayo Orlistat Xenical View All Treatments In Development Treatments Available CargriSema Amycretin View All Treatments Men's Health Erectile Dysfunction Treatments Available Cialis Levitra Sildenafil Spedra Tadalafil",
+   "open": "Online Doctor Weight Care Weight Injections Treatments Available Mounjaro Wegovy Nevolat (Liraglutide) Saxenda Ozempic 1 Litre Sharps Bin Greenfine 4mm 32g Needles x 100 View All Treatments Weight Loss Pills Treatments Available Wegovy Pills Foundayo Orlistat Xenical Orlos View All Treatments In Development Treatments Available CargriSema Amycretin View All Treatments Men's Health Erectile Dysfunction Treatments Available Cialis Levitra Sildenafil Spedra",
    "terms": [
     "0.25 mg starting dose",
     "2.4 mg maintenance dose",
@@ -25933,7 +25933,7 @@
    "termhits": {
     "semaglutide": 15,
     "GLP-1 receptor agonist": 3,
-    "GLP-1": 6,
+    "GLP-1": 7,
     "appetite suppression": 12,
     "0.25 mg starting dose": 23,
     "2.4 mg maintenance dose": 24,
@@ -25942,7 +25942,7 @@
     "weekly injection": 15,
     "injection site rotation": 16,
     "missed dose": 3,
-    "fridge / storage": 3,
+    "fridge / storage": 4,
     "pre-filled pen": 2,
     "needle": 47,
     "STEP trials": 1,
@@ -25950,12 +25950,12 @@
     "Novo Nordisk": 2,
     "prescription-only": 9,
     "nausea": 14,
-    "side effects": 29,
+    "side effects": 32,
     "pancreatitis": 4,
     "thyroid warning": 6,
     "pregnancy warning": 10,
     "BMI eligibility": 8,
-    "Ozempic": 49,
+    "Ozempic": 55,
     "price per month": 209,
     "clinician review": 10
    },
@@ -25964,21 +25964,21 @@
     "ozempic equivalent",
     "equivalent month",
     "ozempic equivalent month",
+    "side effects",
     "month ozempic",
     "mounjaro pen",
     "pen xmounjaro",
     "equivalent month ozempic",
     "month ozempic equivalent",
     "mounjaro pen xmounjaro",
-    "side effects",
     "pen mounjaro pen"
    ],
    "imgs": 7,
    "videos": 0,
-   "links_int": 230,
+   "links_int": 272,
    "links_ext": 21,
    "articles": {
-    "n": 79,
+    "n": 118,
     "paths": [
      "/health-advice/",
      "/health-advice/weight-loss/",
@@ -26003,7 +26003,7 @@
     "Carol Thornton",
     "MAUREEN"
    ],
-   "bytes": 879
+   "bytes": 913
   },
   "pages": [
    {
@@ -26129,14 +26129,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 680,
+    "bytes": 683,
     "psi": {
-     "score": 60,
-     "lcp": "12.0 s",
-     "cls": "0.014",
-     "tbt": "320 ms",
-     "fcp": "2.6 s",
-     "si": "5.6 s",
+     "score": 67,
+     "lcp": "11.9 s",
+     "cls": "0.082",
+     "tbt": "30 ms",
+     "fcp": "2.4 s",
+     "si": "5.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1036,
@@ -26253,12 +26253,12 @@
     "authors": [],
     "bytes": 378,
     "psi": {
-     "score": 42,
-     "lcp": "15.9 s",
+     "score": 48,
+     "lcp": "15.7 s",
      "cls": "0",
-     "tbt": "610 ms",
-     "fcp": "5.6 s",
-     "si": "8.8 s",
+     "tbt": "380 ms",
+     "fcp": "5.5 s",
+     "si": "8.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3979,
@@ -26366,12 +26366,12 @@
     "authors": [],
     "bytes": 136,
     "psi": {
-     "score": 35,
-     "lcp": "6.3 s",
-     "cls": "0.004",
-     "tbt": "2,830 ms",
+     "score": 52,
+     "lcp": "10.4 s",
+     "cls": "0",
+     "tbt": "500 ms",
      "fcp": "3.5 s",
-     "si": "7.3 s",
+     "si": "5.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 743,
@@ -26627,7 +26627,7 @@
      "WebPage"
     ],
     "authors": [],
-    "bytes": 337
+    "bytes": 338
    },
    {
     "url": "https://www.medicines.org.uk/emc/files/pil.13800.pdf",
@@ -26713,7 +26713,7 @@
      "Access & Cost"
     ],
     "h3n": 33,
-    "wc": 5991,
+    "wc": 6292,
     "faqs": [
      "What Is Wegovy?",
      "Is Wegovy Effective for Weight Loss?",
@@ -26743,7 +26743,7 @@
      "How much does Wegovy cost?",
      "What are alternatives to Wegovy?"
     ],
-    "open": "Online Doctor Weight Care Weight Injections Treatments Available Mounjaro Wegovy Nevolat (Liraglutide) Saxenda Ozempic 1 Litre Sharps Bin Greenfine 4mm 32g Needles x 100 View All Treatments Weight Loss Pills Treatments Available Wegovy Pills Foundayo Orlistat Xenical View All Treatments In Development Treatments Available CargriSema Amycretin View All Treatments Men's Health Erectile Dysfunction Treatments Available Cialis Levitra Sildenafil Spedra Tadalafil",
+    "open": "Online Doctor Weight Care Weight Injections Treatments Available Mounjaro Wegovy Nevolat (Liraglutide) Saxenda Ozempic 1 Litre Sharps Bin Greenfine 4mm 32g Needles x 100 View All Treatments Weight Loss Pills Treatments Available Wegovy Pills Foundayo Orlistat Xenical Orlos View All Treatments In Development Treatments Available CargriSema Amycretin View All Treatments Men's Health Erectile Dysfunction Treatments Available Cialis Levitra Sildenafil Spedra",
     "terms": [
      "0.25 mg starting dose",
      "2.4 mg maintenance dose",
@@ -26776,7 +26776,7 @@
     "termhits": {
      "semaglutide": 15,
      "GLP-1 receptor agonist": 3,
-     "GLP-1": 6,
+     "GLP-1": 7,
      "appetite suppression": 12,
      "0.25 mg starting dose": 23,
      "2.4 mg maintenance dose": 24,
@@ -26785,7 +26785,7 @@
      "weekly injection": 15,
      "injection site rotation": 16,
      "missed dose": 3,
-     "fridge / storage": 3,
+     "fridge / storage": 4,
      "pre-filled pen": 2,
      "needle": 47,
      "STEP trials": 1,
@@ -26793,12 +26793,12 @@
      "Novo Nordisk": 2,
      "prescription-only": 9,
      "nausea": 14,
-     "side effects": 29,
+     "side effects": 32,
      "pancreatitis": 4,
      "thyroid warning": 6,
      "pregnancy warning": 10,
      "BMI eligibility": 8,
-     "Ozempic": 49,
+     "Ozempic": 55,
      "price per month": 209,
      "clinician review": 10
     },
@@ -26807,21 +26807,21 @@
      "ozempic equivalent",
      "equivalent month",
      "ozempic equivalent month",
+     "side effects",
      "month ozempic",
      "mounjaro pen",
      "pen xmounjaro",
      "equivalent month ozempic",
      "month ozempic equivalent",
      "mounjaro pen xmounjaro",
-     "side effects",
      "pen mounjaro pen"
     ],
     "imgs": 7,
     "videos": 0,
-    "links_int": 230,
+    "links_int": 272,
     "links_ext": 21,
     "articles": {
-     "n": 79,
+     "n": 118,
      "paths": [
       "/health-advice/",
       "/health-advice/weight-loss/",
@@ -26846,7 +26846,7 @@
      "Carol Thornton",
      "MAUREEN"
     ],
-    "bytes": 879
+    "bytes": 913
    }
   ],
   "align": {
@@ -26880,7 +26880,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "5991 words vs competitor median 6029"
+     "evidence": "6292 words vs competitor median 6029"
     },
     {
      "name": "FAQ coverage",

@@ -23649,7 +23649,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 6033,
+   "wc": 5982,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -23741,13 +23741,13 @@
     "september out",
     "september out stars",
     "week week",
+    "stars verified",
+    "out stars verified",
     "blood sugar",
     "order next",
     "next pen",
     "pen week",
-    "stars verified",
-    "order next pen",
-    "out stars verified"
+    "order next pen"
    ],
    "imgs": 25,
    "videos": 0,
@@ -23775,11 +23775,11 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Ann",
-    "Eve Morris",
-    "Jane"
+    "Mrs Cross",
+    "Emma",
+    "Daniel"
    ],
-   "bytes": 445
+   "bytes": 444
   },
   "pages": [
    {
@@ -23910,14 +23910,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 728,
+    "bytes": 719,
     "psi": {
-     "score": 46,
-     "lcp": "10.8 s",
-     "cls": "0.003",
-     "tbt": "530 ms",
-     "fcp": "4.6 s",
-     "si": "7.0 s",
+     "score": 63,
+     "lcp": "7.4 s",
+     "cls": "0.122",
+     "tbt": "170 ms",
+     "fcp": "2.3 s",
+     "si": "5.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1202,
@@ -23959,12 +23959,12 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 25,
-     "lcp": "15.6 s",
+     "score": 29,
+     "lcp": "13.4 s",
      "cls": "0.518",
-     "tbt": "380 ms",
-     "fcp": "11.5 s",
-     "si": "11.5 s",
+     "tbt": "250 ms",
+     "fcp": "11.3 s",
+     "si": "11.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1714,
@@ -24134,11 +24134,11 @@
     "bytes": 323,
     "psi": {
      "score": 73,
-     "lcp": "6.8 s",
+     "lcp": "7.1 s",
      "cls": "0.02",
      "tbt": "10 ms",
      "fcp": "2.4 s",
-     "si": "3.1 s",
+     "si": "3.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1054,
@@ -24326,7 +24326,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 6033,
+    "wc": 5982,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -24418,13 +24418,13 @@
      "september out",
      "september out stars",
      "week week",
+     "stars verified",
+     "out stars verified",
      "blood sugar",
      "order next",
      "next pen",
      "pen week",
-     "stars verified",
-     "order next pen",
-     "out stars verified"
+     "order next pen"
     ],
     "imgs": 25,
     "videos": 0,
@@ -24452,11 +24452,11 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Ann",
-     "Eve Morris",
-     "Jane"
+     "Mrs Cross",
+     "Emma",
+     "Daniel"
     ],
-    "bytes": 445
+    "bytes": 444
    }
   ],
   "align": {
@@ -24490,7 +24490,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6033 words vs competitor median 5419"
+     "evidence": "5982 words vs competitor median 5419"
     },
     {
      "name": "FAQ coverage",

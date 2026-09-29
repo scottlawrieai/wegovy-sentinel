@@ -20678,7 +20678,7 @@
     "Weight loss FAQs"
    ],
    "h3n": 26,
-   "wc": 2607,
+   "wc": 2568,
    "faqs": [
     "Injectable vs oral treatments: what's the difference?",
     "How do clinicians decide which treatment is suitable?",
@@ -20744,8 +20744,8 @@
     "side effects",
     "out stars",
     "stars verified",
-    "september out",
     "out stars verified",
+    "september out",
     "september out stars",
     "subscribe save",
     "once-weekly injection",
@@ -20818,12 +20818,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 36,
-     "lcp": "7.9 s",
-     "cls": "0.108",
-     "tbt": "1,410 ms",
+     "score": 41,
+     "lcp": "11.0 s",
+     "cls": "0.113",
+     "tbt": "850 ms",
      "fcp": "3.5 s",
-     "si": "5.2 s",
+     "si": "5.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 573,
@@ -20865,12 +20865,12 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 22,
-     "lcp": "13.9 s",
+     "score": 19,
+     "lcp": "13.5 s",
      "cls": "0.518",
-     "tbt": "480 ms",
-     "fcp": "11.5 s",
-     "si": "11.5 s",
+     "tbt": "630 ms",
+     "fcp": "10.7 s",
+     "si": "10.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1714,
@@ -21017,12 +21017,12 @@
     "authors": [],
     "bytes": 347,
     "psi": {
-     "score": 68,
-     "lcp": "6.4 s",
-     "cls": "0",
-     "tbt": "10 ms",
-     "fcp": "3.2 s",
-     "si": "4.9 s",
+     "score": 86,
+     "lcp": "3.9 s",
+     "cls": "0.013",
+     "tbt": "50 ms",
+     "fcp": "2.0 s",
+     "si": "3.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 710,
@@ -21341,7 +21341,7 @@
      "Weight loss FAQs"
     ],
     "h3n": 26,
-    "wc": 2607,
+    "wc": 2568,
     "faqs": [
      "Injectable vs oral treatments: what's the difference?",
      "How do clinicians decide which treatment is suitable?",
@@ -21407,8 +21407,8 @@
      "side effects",
      "out stars",
      "stars verified",
-     "september out",
      "out stars verified",
+     "september out",
      "september out stars",
      "subscribe save",
      "once-weekly injection",
@@ -21476,7 +21476,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "2607 words vs competitor median 1655"
+     "evidence": "2568 words vs competitor median 1655"
     },
     {
      "name": "FAQ coverage",

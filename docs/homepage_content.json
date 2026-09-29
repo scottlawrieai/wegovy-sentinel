@@ -13403,7 +13403,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1153,
+   "wc": 1114,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -13434,7 +13434,7 @@
     "next-day delivery": 1,
     "discreet packaging": 7,
     "Trustpilot reviews": 17,
-    "customer service": 4
+    "customer service": 2
    },
    "phrases": [
     "simple online",
@@ -13442,13 +13442,13 @@
     "simple online pharmacy",
     "out stars",
     "stars verified",
-    "september out",
     "out stars verified",
+    "september out",
     "september out stars",
     "recommend simple",
     "recommend simple online",
     "discreet delivery",
-    "customer service"
+    "pharmacy because"
    ],
    "imgs": 27,
    "videos": 0,
@@ -13504,12 +13504,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 32,
-     "lcp": "14.9 s",
+     "score": 34,
+     "lcp": "14.8 s",
      "cls": "0.014",
-     "tbt": "3,400 ms",
+     "tbt": "2,060 ms",
      "fcp": "2.6 s",
-     "si": "14.3 s",
+     "si": "16.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 2996,
@@ -13593,12 +13593,12 @@
     "authors": [],
     "bytes": 318,
     "psi": {
-     "score": 58,
-     "lcp": "9.6 s",
-     "cls": "0.05",
-     "tbt": "400 ms",
+     "score": 68,
+     "lcp": "10.5 s",
+     "cls": "0.053",
+     "tbt": "60 ms",
      "fcp": "2.1 s",
-     "si": "6.1 s",
+     "si": "5.8 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1377,
@@ -13640,12 +13640,12 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 97,
-     "lcp": "2.5 s",
-     "cls": "0.063",
-     "tbt": "60 ms",
+     "score": 81,
+     "lcp": "4.7 s",
+     "cls": "0",
+     "tbt": "80 ms",
      "fcp": "1.2 s",
-     "si": "1.2 s",
+     "si": "4.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 837,
@@ -13823,7 +13823,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1153,
+    "wc": 1114,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -13854,7 +13854,7 @@
      "next-day delivery": 1,
      "discreet packaging": 7,
      "Trustpilot reviews": 17,
-     "customer service": 4
+     "customer service": 2
     },
     "phrases": [
      "simple online",
@@ -13862,13 +13862,13 @@
      "simple online pharmacy",
      "out stars",
      "stars verified",
-     "september out",
      "out stars verified",
+     "september out",
      "september out stars",
      "recommend simple",
      "recommend simple online",
      "discreet delivery",
-     "customer service"
+     "pharmacy because"
     ],
     "imgs": 27,
     "videos": 0,
@@ -13929,7 +13929,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1153 words vs competitor median 297"
+     "evidence": "1114 words vs competitor median 297"
     },
     {
      "name": "FAQ coverage",
