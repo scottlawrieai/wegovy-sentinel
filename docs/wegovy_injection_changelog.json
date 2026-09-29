@@ -158,5 +158,240 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-09-29",
+  "changes": [
+   {
+    "type": "seo",
+    "text": "Title tag changed: “Buy Wegovy (Semaglutide) Weight Loss Injections | Simple Online Pharm…” → “Buy Wegovy Weight Loss Injections Online UK from £99”",
+    "source": "auto"
+   },
+   {
+    "type": "seo",
+    "text": "Meta description changed: “Buy Wegovy (Semaglutide) online in the UK through our clinician-led s…” → “Buy Wegovy weight loss injections online in the UK from our regulated…”",
+    "source": "auto"
+   },
+   {
+    "type": "seo",
+    "text": "H1 changed: “Wegovy weight loss injections” → “Wegovy Pens”",
+    "source": "auto"
+   },
+   {
+    "type": "technical",
+    "text": "Robots directive index,follow → index, follow",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Medication features”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Buy Wegovy Weight Loss Injection”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Wegovy Summary”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “How Wegovy Works”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Mounjaro vs Wegovy”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “How to Take Wegovy”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Using the Wegovy Pen”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Is Wegovy Effective for Weight Loss?”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Wegovy 7.2 mg”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Can Wegovy Help with Other Conditions?”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Wegovy Side Effects”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Contraindications & Drug Interactions”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Wegovy and Pregnancy”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Wegovy Alternatives”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Written by Qualified Experts”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “General Information”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Usage & Dosage”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Effectiveness & Results”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section added: “Storage”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Real Wegovy results from our patients”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “50,000+ verified customer reviews”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Eligibility”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Wegovy pen storage and travelling”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Results”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Mounjaro vs Wegovy at a glance”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “How it works”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “How to take and dosage”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Wegovy product reviews”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “How to get Wegovy”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “What our expert says”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Our expert team”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Understanding side effects”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Wegovy guides and expert tips”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Wegovy Titration Guide”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “FAQs”",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "Section removed: “Weight Loss Treatments”",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "6 FAQs added: “What Is Wegovy?” +5 more",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "9 FAQs removed: “What is Wegovy?” +8 more",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Body copy +2,404 words (3,587 → 5,991)",
+    "source": "auto"
+   },
+   {
+    "type": "structure",
+    "text": "H3 sub-headings 43 → 33",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Topic coverage gained: STEP trials, needle",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Topic coverage lost: FlexTouch pen",
+    "source": "auto"
+   }
+  ]
  }
 ]

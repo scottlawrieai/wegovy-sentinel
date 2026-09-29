@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-08-14",
-  "changes": [
-   {
-    "type": "structure",
-    "text": "H3 sub-headings 57 → 58",
-    "source": "auto"
-   }
-  ]
- },
- {
   "date": "2026-09-03",
   "changes": [
    {
@@ -235,6 +225,16 @@
    {
     "type": "content",
     "text": "Body copy +36 words (7,352 → 7,388)",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-09-29",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +55 words (7,388 → 7,443)",
     "source": "auto"
    }
   ]

@@ -1,4 +1,9 @@
 {
  "cann": "2026-09-19",
- "drop:wegovy uk": "2026-09-21"
+ "drop:wegovy uk": "2026-09-21",
+ "overtaken:Superdrug:buy wegovy": "2026-09-29",
+ "overtaken:Chemist4U:buy wegovy": "2026-09-29",
+ "overtaken:FamilyChemist:buy wegovy": "2026-09-29",
+ "overtaken:MedExpress:buy wegovy": "2026-09-29",
+ "overtaken:Boots:buy wegovy": "2026-09-29"
 }

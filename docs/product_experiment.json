@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-06-27",
-     "clicks": 0,
-     "impr": 303,
-     "ctr": 0.0,
-     "pos": 15.1
-    },
-    {
      "d": "2026-06-28",
      "clicks": 1,
      "impr": 247,
@@ -641,70 +634,77 @@
      "impr": 135,
      "ctr": 0.74,
      "pos": 17.0
+    },
+    {
+     "d": "2026-09-26",
+     "clicks": 0,
+     "impr": 122,
+     "ctr": 0.0,
+     "pos": 19.6
     }
    ],
    "queries": [
     {
      "q": "buy cialis",
      "clicks": 8,
-     "impr": 561,
+     "impr": 555,
      "ctr": 1.4,
      "pos": 16.0,
      "prev": {
       "clicks": 0,
-      "impr": 562,
+      "impr": 574,
       "ctr": 0.0,
-      "pos": 15.2
+      "pos": 15.3
      }
     },
     {
      "q": "buy cialis online",
-     "clicks": 8,
-     "impr": 522,
-     "ctr": 1.5,
+     "clicks": 7,
+     "impr": 510,
+     "ctr": 1.4,
      "pos": 12.7,
      "prev": {
-      "clicks": 5,
-      "impr": 631,
-      "ctr": 0.8,
-      "pos": 10.6
+      "clicks": 6,
+      "impr": 624,
+      "ctr": 1.0,
+      "pos": 10.5
      }
     },
     {
      "q": "cialis online",
      "clicks": 5,
-     "impr": 262,
+     "impr": 259,
      "ctr": 1.9,
      "pos": 17.7,
      "prev": {
       "clicks": 1,
-      "impr": 302,
+      "impr": 301,
       "ctr": 0.3,
-      "pos": 15.5
+      "pos": 15.6
      }
     },
     {
      "q": "buy cialis uk",
      "clicks": 1,
-     "impr": 300,
+     "impr": 292,
      "ctr": 0.3,
-     "pos": 13.8,
+     "pos": 14.0,
      "prev": {
       "clicks": 1,
-      "impr": 265,
+      "impr": 274,
       "ctr": 0.4,
-      "pos": 10.5
+      "pos": 10.4
      }
     },
     {
      "q": "buy cialis online uk",
      "clicks": 1,
-     "impr": 216,
+     "impr": 211,
      "ctr": 0.5,
-     "pos": 12.5,
+     "pos": 12.7,
      "prev": {
       "clicks": 1,
-      "impr": 279,
+      "impr": 276,
       "ctr": 0.4,
       "pos": 9.4
      }
@@ -712,40 +712,40 @@
     {
      "q": "cialis online uk",
      "clicks": 1,
-     "impr": 198,
+     "impr": 187,
      "ctr": 0.5,
-     "pos": 12.8,
+     "pos": 13.0,
      "prev": {
       "clicks": 1,
-      "impr": 286,
-      "ctr": 0.3,
-      "pos": 11.0
+      "impr": 284,
+      "ctr": 0.4,
+      "pos": 10.9
      }
     },
     {
      "q": "cialis online pharmacy",
      "clicks": 1,
-     "impr": 70,
+     "impr": 69,
      "ctr": 1.4,
-     "pos": 11.1,
+     "pos": 11.2,
      "prev": {
       "clicks": 1,
-      "impr": 92,
+      "impr": 91,
       "ctr": 1.1,
-      "pos": 8.8
+      "pos": 8.9
      }
     },
     {
      "q": "cialis uk",
      "clicks": 1,
-     "impr": 23,
-     "ctr": 4.3,
-     "pos": 22.1,
+     "impr": 27,
+     "ctr": 3.7,
+     "pos": 21.9,
      "prev": {
       "clicks": 0,
-      "impr": 12,
+      "impr": 15,
       "ctr": 0.0,
-      "pos": 16.9
+      "pos": 17.3
      }
     }
    ],
@@ -757,7 +757,7 @@
     "h1": "Cialis",
     "h2n": 13,
     "faqs": 4,
-    "wc": 2962,
+    "wc": 2999,
     "schema": [
      "AggregateRating",
      "Brand",
@@ -777,13 +777,6 @@
    "label": "vaniqa",
    "live": null,
    "series": [
-    {
-     "d": "2026-06-27",
-     "clicks": 3,
-     "impr": 254,
-     "ctr": 1.18,
-     "pos": 11.0
-    },
     {
      "d": "2026-06-28",
      "clicks": 1,
@@ -1413,18 +1406,25 @@
      "impr": 366,
      "ctr": 0.82,
      "pos": 7.1
+    },
+    {
+     "d": "2026-09-26",
+     "clicks": 0,
+     "impr": 265,
+     "ctr": 0.0,
+     "pos": 7.1
     }
    ],
    "queries": [
     {
      "q": "vaniqa cream uk",
      "clicks": 8,
-     "impr": 573,
+     "impr": 569,
      "ctr": 1.4,
-     "pos": 7.3,
+     "pos": 7.4,
      "prev": {
       "clicks": 5,
-      "impr": 760,
+      "impr": 761,
       "ctr": 0.7,
       "pos": 5.1
      }
@@ -1432,25 +1432,25 @@
     {
      "q": "vaniqa cream",
      "clicks": 5,
-     "impr": 2981,
+     "impr": 2955,
      "ctr": 0.2,
-     "pos": 6.4,
+     "pos": 6.3,
      "prev": {
       "clicks": 4,
-      "impr": 1347,
+      "impr": 1440,
       "ctr": 0.3,
-      "pos": 8.9
+      "pos": 8.6
      }
     },
     {
      "q": "vaniqa cream amazon",
      "clicks": 3,
-     "impr": 518,
+     "impr": 521,
      "ctr": 0.6,
      "pos": 8.4,
      "prev": {
       "clicks": 4,
-      "impr": 579,
+      "impr": 574,
       "ctr": 0.7,
       "pos": 7.3
      }
@@ -1458,12 +1458,12 @@
     {
      "q": "vaniqa cream price",
      "clicks": 2,
-     "impr": 174,
+     "impr": 175,
      "ctr": 1.1,
      "pos": 4.2,
      "prev": {
       "clicks": 3,
-      "impr": 233,
+      "impr": 239,
       "ctr": 1.3,
       "pos": 4.1
      }
@@ -1473,25 +1473,25 @@
      "clicks": 1,
      "impr": 216,
      "ctr": 0.5,
-     "pos": 8.5,
+     "pos": 8.1,
      "prev": {
       "clicks": 1,
-      "impr": 279,
+      "impr": 281,
       "ctr": 0.4,
-      "pos": 6.4
+      "pos": 6.5
      }
     },
     {
      "q": "can you buy vaniqa cream over the counter",
      "clicks": 1,
-     "impr": 44,
-     "ctr": 2.3,
+     "impr": 45,
+     "ctr": 2.2,
      "pos": 1.4,
      "prev": {
       "clicks": 0,
-      "impr": 5,
+      "impr": 6,
       "ctr": 0.0,
-      "pos": 1.2
+      "pos": 1.3
      }
     },
     {
@@ -1502,17 +1502,11 @@
      "pos": 1.0
     },
     {
-     "q": "eflornithine cost",
+     "q": "current pricing",
      "clicks": 1,
-     "impr": 2,
-     "ctr": 50.0,
-     "pos": 1.0,
-     "prev": {
-      "clicks": 0,
-      "impr": 1,
-      "ctr": 0.0,
-      "pos": 1.0
-     }
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 4.0
     }
    ],
    "health": {
@@ -1523,7 +1517,7 @@
     "h1": "Vaniqa Cream",
     "h2n": 13,
     "faqs": 1,
-    "wc": 2121,
+    "wc": 2158,
     "schema": [
      "AdministrativeArea",
      "AggregateOffer",
@@ -1543,13 +1537,6 @@
    "label": "sildenafil",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-06-27",
-     "clicks": 3,
-     "impr": 498,
-     "ctr": 0.6,
-     "pos": 15.1
-    },
     {
      "d": "2026-06-28",
      "clicks": 5,
@@ -2179,44 +2166,51 @@
      "impr": 379,
      "ctr": 1.85,
      "pos": 16.5
+    },
+    {
+     "d": "2026-09-26",
+     "clicks": 4,
+     "impr": 451,
+     "ctr": 0.89,
+     "pos": 17.9
     }
    ],
    "queries": [
     {
      "q": "cheapest sildenafil online",
-     "clicks": 9,
-     "impr": 129,
-     "ctr": 7.0,
-     "pos": 4.4,
+     "clicks": 10,
+     "impr": 132,
+     "ctr": 7.6,
+     "pos": 4.2,
      "prev": {
-      "clicks": 4,
-      "impr": 116,
-      "ctr": 3.4,
-      "pos": 5.1
+      "clicks": 3,
+      "impr": 109,
+      "ctr": 2.8,
+      "pos": 5.0
      }
     },
     {
      "q": "buy sildenafil online",
      "clicks": 7,
-     "impr": 490,
-     "ctr": 1.4,
-     "pos": 12.5,
+     "impr": 482,
+     "ctr": 1.5,
+     "pos": 12.6,
      "prev": {
       "clicks": 1,
-      "impr": 494,
+      "impr": 495,
       "ctr": 0.2,
-      "pos": 11.4
+      "pos": 11.3
      }
     },
     {
      "q": "buy sildenafil uk",
      "clicks": 7,
-     "impr": 409,
+     "impr": 410,
      "ctr": 1.7,
      "pos": 14.9,
      "prev": {
       "clicks": 1,
-      "impr": 463,
+      "impr": 456,
       "ctr": 0.2,
       "pos": 12.8
      }
@@ -2224,12 +2218,12 @@
     {
      "q": "buy sildenafil",
      "clicks": 6,
-     "impr": 681,
+     "impr": 680,
      "ctr": 0.9,
-     "pos": 12.5,
+     "pos": 12.6,
      "prev": {
       "clicks": 1,
-      "impr": 918,
+      "impr": 911,
       "ctr": 0.1,
       "pos": 11.2
      }
@@ -2237,9 +2231,9 @@
     {
      "q": "sildenafil 100mg 64 tablets",
      "clicks": 5,
-     "impr": 19,
-     "ctr": 26.3,
-     "pos": 7.4,
+     "impr": 21,
+     "ctr": 23.8,
+     "pos": 7.7,
      "prev": {
       "clicks": 1,
       "impr": 10,
@@ -2250,8 +2244,8 @@
     {
      "q": "cheapest sildenafil online uk",
      "clicks": 4,
-     "impr": 14,
-     "ctr": 28.6,
+     "impr": 15,
+     "ctr": 26.7,
      "pos": 2.3,
      "prev": {
       "clicks": 1,
@@ -2263,25 +2257,25 @@
     {
      "q": "cheapest sildenafil uk",
      "clicks": 3,
-     "impr": 274,
+     "impr": 270,
      "ctr": 1.1,
      "pos": 4.1,
      "prev": {
-      "clicks": 5,
-      "impr": 336,
-      "ctr": 1.5,
+      "clicks": 4,
+      "impr": 331,
+      "ctr": 1.2,
       "pos": 6.8
      }
     },
     {
      "q": "cheapest sildenafil",
      "clicks": 3,
-     "impr": 105,
+     "impr": 102,
      "ctr": 2.9,
      "pos": 6.7,
      "prev": {
       "clicks": 1,
-      "impr": 91,
+      "impr": 90,
       "ctr": 1.1,
       "pos": 6.6
      }
@@ -2311,6 +2305,6 @@
    }
   }
  ],
- "as_of": "2026-09-28",
+ "as_of": "2026-09-29",
  "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
 }
