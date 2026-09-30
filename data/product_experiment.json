@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-06-28",
-     "clicks": 1,
-     "impr": 247,
-     "ctr": 0.4,
-     "pos": 15.1
-    },
-    {
      "d": "2026-06-29",
      "clicks": 2,
      "impr": 350,
@@ -641,28 +634,35 @@
      "impr": 122,
      "ctr": 0.0,
      "pos": 19.6
+    },
+    {
+     "d": "2026-09-27",
+     "clicks": 1,
+     "impr": 135,
+     "ctr": 0.74,
+     "pos": 18.0
     }
    ],
    "queries": [
     {
      "q": "buy cialis",
      "clicks": 8,
-     "impr": 555,
-     "ctr": 1.4,
-     "pos": 16.0,
+     "impr": 543,
+     "ctr": 1.5,
+     "pos": 15.9,
      "prev": {
       "clicks": 0,
-      "impr": 574,
+      "impr": 589,
       "ctr": 0.0,
-      "pos": 15.3
+      "pos": 15.4
      }
     },
     {
      "q": "buy cialis online",
      "clicks": 7,
-     "impr": 510,
+     "impr": 504,
      "ctr": 1.4,
-     "pos": 12.7,
+     "pos": 12.8,
      "prev": {
       "clicks": 6,
       "impr": 624,
@@ -673,12 +673,12 @@
     {
      "q": "cialis online",
      "clicks": 5,
-     "impr": 259,
-     "ctr": 1.9,
+     "impr": 256,
+     "ctr": 2.0,
      "pos": 17.7,
      "prev": {
       "clicks": 1,
-      "impr": 301,
+      "impr": 305,
       "ctr": 0.3,
       "pos": 15.6
      }
@@ -686,12 +686,12 @@
     {
      "q": "buy cialis uk",
      "clicks": 1,
-     "impr": 292,
-     "ctr": 0.3,
-     "pos": 14.0,
+     "impr": 285,
+     "ctr": 0.4,
+     "pos": 14.2,
      "prev": {
       "clicks": 1,
-      "impr": 274,
+      "impr": 283,
       "ctr": 0.4,
       "pos": 10.4
      }
@@ -699,38 +699,38 @@
     {
      "q": "buy cialis online uk",
      "clicks": 1,
-     "impr": 211,
+     "impr": 205,
      "ctr": 0.5,
-     "pos": 12.7,
+     "pos": 12.8,
      "prev": {
-      "clicks": 1,
-      "impr": 276,
-      "ctr": 0.4,
-      "pos": 9.4
+      "clicks": 0,
+      "impr": 272,
+      "ctr": 0.0,
+      "pos": 9.3
      }
     },
     {
      "q": "cialis online uk",
      "clicks": 1,
-     "impr": 187,
+     "impr": 182,
      "ctr": 0.5,
-     "pos": 13.0,
+     "pos": 13.2,
      "prev": {
       "clicks": 1,
-      "impr": 284,
-      "ctr": 0.4,
-      "pos": 10.9
+      "impr": 286,
+      "ctr": 0.3,
+      "pos": 10.8
      }
     },
     {
      "q": "cialis online pharmacy",
      "clicks": 1,
-     "impr": 69,
-     "ctr": 1.4,
+     "impr": 67,
+     "ctr": 1.5,
      "pos": 11.2,
      "prev": {
       "clicks": 1,
-      "impr": 91,
+      "impr": 93,
       "ctr": 1.1,
       "pos": 8.9
      }
@@ -738,9 +738,9 @@
     {
      "q": "cialis uk",
      "clicks": 1,
-     "impr": 27,
-     "ctr": 3.7,
-     "pos": 21.9,
+     "impr": 34,
+     "ctr": 2.9,
+     "pos": 21.6,
      "prev": {
       "clicks": 0,
       "impr": 15,
@@ -757,7 +757,7 @@
     "h1": "Cialis",
     "h2n": 13,
     "faqs": 4,
-    "wc": 3300,
+    "wc": 3297,
     "schema": [
      "AggregateRating",
      "Brand",
@@ -777,13 +777,6 @@
    "label": "vaniqa",
    "live": null,
    "series": [
-    {
-     "d": "2026-06-28",
-     "clicks": 1,
-     "impr": 265,
-     "ctr": 0.38,
-     "pos": 11.1
-    },
     {
      "d": "2026-06-29",
      "clicks": 1,
@@ -1413,80 +1406,87 @@
      "impr": 265,
      "ctr": 0.0,
      "pos": 7.1
+    },
+    {
+     "d": "2026-09-27",
+     "clicks": 2,
+     "impr": 306,
+     "ctr": 0.65,
+     "pos": 7.7
     }
    ],
    "queries": [
     {
      "q": "vaniqa cream uk",
      "clicks": 8,
-     "impr": 569,
+     "impr": 557,
      "ctr": 1.4,
-     "pos": 7.4,
+     "pos": 7.5,
      "prev": {
-      "clicks": 5,
-      "impr": 761,
-      "ctr": 0.7,
+      "clicks": 4,
+      "impr": 747,
+      "ctr": 0.5,
       "pos": 5.1
      }
     },
     {
      "q": "vaniqa cream",
-     "clicks": 5,
-     "impr": 2955,
-     "ctr": 0.2,
+     "clicks": 4,
+     "impr": 2984,
+     "ctr": 0.1,
      "pos": 6.3,
      "prev": {
-      "clicks": 4,
-      "impr": 1440,
+      "clicks": 5,
+      "impr": 1497,
       "ctr": 0.3,
-      "pos": 8.6
+      "pos": 8.4
      }
     },
     {
      "q": "vaniqa cream amazon",
-     "clicks": 3,
-     "impr": 521,
-     "ctr": 0.6,
+     "clicks": 4,
+     "impr": 529,
+     "ctr": 0.8,
      "pos": 8.4,
      "prev": {
       "clicks": 4,
-      "impr": 574,
+      "impr": 553,
       "ctr": 0.7,
-      "pos": 7.3
+      "pos": 7.4
      }
     },
     {
      "q": "vaniqa cream price",
      "clicks": 2,
-     "impr": 175,
+     "impr": 183,
      "ctr": 1.1,
      "pos": 4.2,
      "prev": {
       "clicks": 3,
-      "impr": 239,
+      "impr": 232,
       "ctr": 1.3,
-      "pos": 4.1
+      "pos": 4.2
      }
     },
     {
      "q": "buy vaniqa",
      "clicks": 1,
-     "impr": 216,
-     "ctr": 0.5,
-     "pos": 8.1,
+     "impr": 225,
+     "ctr": 0.4,
+     "pos": 7.8,
      "prev": {
       "clicks": 1,
-      "impr": 281,
+      "impr": 280,
       "ctr": 0.4,
-      "pos": 6.5
+      "pos": 6.6
      }
     },
     {
      "q": "can you buy vaniqa cream over the counter",
      "clicks": 1,
-     "impr": 45,
-     "ctr": 2.2,
-     "pos": 1.4,
+     "impr": 49,
+     "ctr": 2.0,
+     "pos": 1.3,
      "prev": {
       "clicks": 0,
       "impr": 6,
@@ -1517,7 +1517,7 @@
     "h1": "Vaniqa Cream",
     "h2n": 13,
     "faqs": 1,
-    "wc": 2459,
+    "wc": 2456,
     "schema": [
      "AdministrativeArea",
      "AggregateOffer",
@@ -1537,13 +1537,6 @@
    "label": "sildenafil",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-06-28",
-     "clicks": 5,
-     "impr": 516,
-     "ctr": 0.97,
-     "pos": 13.2
-    },
     {
      "d": "2026-06-29",
      "clicks": 3,
@@ -2173,31 +2166,38 @@
      "impr": 451,
      "ctr": 0.89,
      "pos": 17.9
+    },
+    {
+     "d": "2026-09-27",
+     "clicks": 5,
+     "impr": 415,
+     "ctr": 1.2,
+     "pos": 18.4
     }
    ],
    "queries": [
     {
      "q": "cheapest sildenafil online",
      "clicks": 10,
-     "impr": 132,
+     "impr": 131,
      "ctr": 7.6,
      "pos": 4.2,
      "prev": {
       "clicks": 3,
-      "impr": 109,
-      "ctr": 2.8,
+      "impr": 110,
+      "ctr": 2.7,
       "pos": 5.0
      }
     },
     {
      "q": "buy sildenafil online",
      "clicks": 7,
-     "impr": 482,
+     "impr": 474,
      "ctr": 1.5,
-     "pos": 12.6,
+     "pos": 12.7,
      "prev": {
       "clicks": 1,
-      "impr": 495,
+      "impr": 499,
       "ctr": 0.2,
       "pos": 11.3
      }
@@ -2205,25 +2205,25 @@
     {
      "q": "buy sildenafil uk",
      "clicks": 7,
-     "impr": 410,
+     "impr": 406,
      "ctr": 1.7,
-     "pos": 14.9,
+     "pos": 14.7,
      "prev": {
-      "clicks": 1,
-      "impr": 456,
-      "ctr": 0.2,
-      "pos": 12.8
+      "clicks": 0,
+      "impr": 460,
+      "ctr": 0.0,
+      "pos": 12.9
      }
     },
     {
      "q": "buy sildenafil",
      "clicks": 6,
-     "impr": 680,
+     "impr": 661,
      "ctr": 0.9,
-     "pos": 12.6,
+     "pos": 12.7,
      "prev": {
       "clicks": 1,
-      "impr": 911,
+      "impr": 920,
       "ctr": 0.1,
       "pos": 11.2
      }
@@ -2242,42 +2242,42 @@
      }
     },
     {
-     "q": "cheapest sildenafil online uk",
-     "clicks": 4,
-     "impr": 15,
-     "ctr": 26.7,
-     "pos": 2.3,
-     "prev": {
-      "clicks": 1,
-      "impr": 3,
-      "ctr": 33.3,
-      "pos": 2.0
-     }
-    },
-    {
      "q": "cheapest sildenafil uk",
      "clicks": 3,
-     "impr": 270,
+     "impr": 271,
      "ctr": 1.1,
      "pos": 4.1,
      "prev": {
       "clicks": 4,
-      "impr": 331,
+      "impr": 328,
       "ctr": 1.2,
-      "pos": 6.8
+      "pos": 6.7
      }
     },
     {
      "q": "cheapest sildenafil",
      "clicks": 3,
-     "impr": 102,
-     "ctr": 2.9,
+     "impr": 98,
+     "ctr": 3.1,
      "pos": 6.7,
      "prev": {
       "clicks": 1,
-      "impr": 90,
+      "impr": 94,
       "ctr": 1.1,
       "pos": 6.6
+     }
+    },
+    {
+     "q": "cheap sildenafil 100mg",
+     "clicks": 3,
+     "impr": 65,
+     "ctr": 4.6,
+     "pos": 8.9,
+     "prev": {
+      "clicks": 1,
+      "impr": 66,
+      "ctr": 1.5,
+      "pos": 10.2
      }
     }
    ],
@@ -2309,13 +2309,6 @@
    "label": "wegovy injection (reverted to legacy)",
    "live": "2026-09-28",
    "series": [
-    {
-     "d": "2026-06-28",
-     "clicks": 40,
-     "impr": 2562,
-     "ctr": 1.56,
-     "pos": 14.9
-    },
     {
      "d": "2026-06-29",
      "clicks": 41,
@@ -2945,111 +2938,118 @@
      "impr": 1693,
      "ctr": 0.95,
      "pos": 13.9
+    },
+    {
+     "d": "2026-09-27",
+     "clicks": 17,
+     "impr": 1623,
+     "ctr": 1.05,
+     "pos": 12.7
     }
    ],
    "queries": [
     {
      "q": "simple online pharmacy wegovy",
-     "clicks": 54,
-     "impr": 375,
-     "ctr": 14.4,
-     "pos": 1.1,
+     "clicks": 52,
+     "impr": 367,
+     "ctr": 14.2,
+     "pos": 1.2,
      "prev": {
       "clicks": 62,
-      "impr": 406,
-      "ctr": 15.3,
+      "impr": 409,
+      "ctr": 15.2,
       "pos": 1.1
      }
     },
     {
      "q": "simple online pharmacy wegovy prices",
-     "clicks": 49,
-     "impr": 143,
+     "clicks": 48,
+     "impr": 140,
      "ctr": 34.3,
      "pos": 1.1,
      "prev": {
-      "clicks": 52,
-      "impr": 146,
-      "ctr": 35.6,
+      "clicks": 53,
+      "impr": 147,
+      "ctr": 36.1,
       "pos": 1.0
      }
     },
     {
      "q": "wegovy simple online pharmacy",
      "clicks": 26,
-     "impr": 148,
-     "ctr": 17.6,
-     "pos": 5.5,
+     "impr": 145,
+     "ctr": 17.9,
+     "pos": 5.6,
      "prev": {
-      "clicks": 29,
+      "clicks": 28,
       "impr": 146,
-      "ctr": 19.9,
+      "ctr": 19.2,
       "pos": 1.5
      }
     },
     {
      "q": "buy wegovy uk",
      "clicks": 6,
-     "impr": 591,
+     "impr": 589,
      "ctr": 1.0,
      "pos": 13.8,
      "prev": {
       "clicks": 0,
-      "impr": 360,
+      "impr": 380,
       "ctr": 0.0,
-      "pos": 15.0
+      "pos": 14.9
+     }
+    },
+    {
+     "q": "simple pharmacy wegovy prices",
+     "clicks": 6,
+     "impr": 22,
+     "ctr": 27.3,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 7,
+      "impr": 14,
+      "ctr": 50.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "buy wegovy",
+     "clicks": 5,
+     "impr": 891,
+     "ctr": 0.6,
+     "pos": 13.9,
+     "prev": {
+      "clicks": 1,
+      "impr": 902,
+      "ctr": 0.1,
+      "pos": 14.8
      }
     },
     {
      "q": "wegovy price",
      "clicks": 5,
-     "impr": 765,
+     "impr": 755,
      "ctr": 0.7,
-     "pos": 9.8,
+     "pos": 9.7,
      "prev": {
       "clicks": 0,
-      "impr": 398,
+      "impr": 424,
       "ctr": 0.0,
-      "pos": 13.8
-     }
-    },
-    {
-     "q": "wegovy 1.7mg price",
-     "clicks": 5,
-     "impr": 396,
-     "ctr": 1.3,
-     "pos": 10.8,
-     "prev": {
-      "clicks": 1,
-      "impr": 447,
-      "ctr": 0.2,
-      "pos": 12.2
+      "pos": 13.7
      }
     },
     {
      "q": "wegovy prices",
      "clicks": 5,
-     "impr": 390,
-     "ctr": 1.3,
-     "pos": 9.0,
+     "impr": 404,
+     "ctr": 1.2,
+     "pos": 9.1,
      "prev": {
       "clicks": 1,
-      "impr": 289,
+      "impr": 301,
       "ctr": 0.3,
-      "pos": 11.1
-     }
-    },
-    {
-     "q": "wegovy 1.7mg cheapest price",
-     "clicks": 5,
-     "impr": 91,
-     "ctr": 5.5,
-     "pos": 12.3,
-     "prev": {
-      "clicks": 1,
-      "impr": 60,
-      "ctr": 1.7,
-      "pos": 12.6
+      "pos": 11.0
      }
     }
    ],
@@ -3061,7 +3061,7 @@
     "h1": "Wegovy Pens",
     "h2n": 24,
     "faqs": 28,
-    "wc": 6292,
+    "wc": 6289,
     "schema": [
      "AdministrativeArea",
      "AggregateOffer",
@@ -3077,6 +3077,6 @@
    }
   }
  ],
- "as_of": "2026-09-29",
+ "as_of": "2026-09-30",
  "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
 }
