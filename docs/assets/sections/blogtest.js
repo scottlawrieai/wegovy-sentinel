@@ -126,6 +126,57 @@
       }
     }
 
+    // weekly rankings table — same output as the traffic table below:
+    // one row per week with Before/Cutover/After phase and the T band,
+    // one column per top query (impression-weighted position that week)
+    var kwTable = '';
+    if (kwKeys.length) {
+      var cols = kwKeys.slice(0, 5);
+      var wkmap = {};   // weekKey -> {q: {pw, impr}}
+      cols.forEach(function (k) {
+        C.inRange(p.kwseries[k] || [], S.state).forEach(function (r) {
+          if (r.pos == null) return;
+          var wkey = C.weekKey(r.d);
+          var cell = (wkmap[wkey] = wkmap[wkey] || {});
+          var agg = (cell[k] = cell[k] || { pw: 0, impr: 0, from: r.d, to: r.d });
+          var w2 = (r.impr || 0) || 1;   // weight by impressions, floor 1
+          agg.pw += r.pos * w2; agg.impr += w2;
+          if (r.d < agg.from) agg.from = r.d;
+          if (r.d > agg.to) agg.to = r.d;
+        });
+      });
+      var wkeys = Object.keys(wkmap).sort();
+      var ktrs = '';
+      wkeys.forEach(function (wkey) {
+        var cell = wkmap[wkey];
+        var from = null, to = null;
+        cols.forEach(function (k) {
+          if (cell[k]) {
+            if (from == null || cell[k].from < from) from = cell[k].from;
+            if (to == null || cell[k].to > to) to = cell[k].to;
+          }
+        });
+        if (live && from && to && live >= from && live <= to) {
+          ktrs += '<tr class="band"><td colspan="' + (cols.length + 2) + '">T · ' +
+            exp.bandLabel + ' · ' + C.esc(live) + '</td></tr>';
+        }
+        var phase = !live || !to ? '—'
+          : (to < live ? 'Before' : (from >= live ? 'After' : 'Cutover'));
+        ktrs += '<tr><td style="white-space:nowrap">' + C.esc(wkey) + '</td>' +
+          '<td style="color:#5B6B83">' + phase + '</td>' +
+          cols.map(function (k) {
+            var a = cell[k];
+            return '<td class="num">' + (a ? '#' + (a.pw / a.impr).toFixed(1) : '—') + '</td>';
+          }).join('') + '</tr>';
+      });
+      if (ktrs) {
+        kwTable = '<div class="tbl-wrap" style="margin-top:8px"><table class="tbl">' +
+          '<thead><tr><th>Week</th><th>Phase</th>' +
+          cols.map(function (k) { return '<th class="num">' + C.esc(k) + '</th>'; }).join('') +
+          '</tr></thead><tbody>' + ktrs + '</tbody></table></div>';
+      }
+    }
+
     var trs = '';
     wk.forEach(function (w) {
       if (live && live >= w.from && live <= w.to) {
@@ -145,7 +196,7 @@
       return C.esc(q.q) + ' <span style="color:#94A3B8">(' + C.esc(String(q.pos != null ? q.pos.toFixed(1) : '—')) + ')</span>';
     }).join(' · ');
 
-    return '<div class="panel" style="margin-bottom:14px">' + head + kpis + chart + kwChart +
+    return '<div class="panel" style="margin-bottom:14px">' + head + kpis + chart + kwChart + kwTable +
       '<div class="tbl-wrap" style="margin-top:8px"><table class="tbl">' +
       '<thead><tr><th>Week</th><th>Phase</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">Avg position</th></tr></thead>' +
       '<tbody>' + (trs || '<tr><td colspan="5"><div class="empty">No data in range.</div></td></tr>') + '</tbody></table></div>' +
