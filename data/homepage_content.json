@@ -14619,7 +14619,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1094,
+   "wc": 1157,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -14658,13 +14658,13 @@
     "simple online pharmacy",
     "out stars",
     "stars verified",
-    "out stars verified",
     "october out",
+    "out stars verified",
     "october out stars",
     "recommend simple",
     "recommend simple online",
     "discreet delivery",
-    "easy order"
+    "pharmacy because"
    ],
    "imgs": 27,
    "videos": 0,
@@ -14720,12 +14720,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 33,
-     "lcp": "14.6 s",
-     "cls": "0.013",
-     "tbt": "2,920 ms",
-     "fcp": "2.6 s",
-     "si": "14.2 s",
+     "score": 34,
+     "lcp": "14.2 s",
+     "cls": "0.012",
+     "tbt": "3,430 ms",
+     "fcp": "2.1 s",
+     "si": "13.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3015,
@@ -14809,12 +14809,12 @@
     "authors": [],
     "bytes": 318,
     "psi": {
-     "score": 68,
+     "score": 55,
      "lcp": "10.4 s",
-     "cls": "0.053",
-     "tbt": "30 ms",
+     "cls": "0.05",
+     "tbt": "460 ms",
      "fcp": "2.1 s",
-     "si": "5.7 s",
+     "si": "6.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1365,
@@ -14859,7 +14859,7 @@
      "score": 98,
      "lcp": "2.2 s",
      "cls": "0.063",
-     "tbt": "50 ms",
+     "tbt": "60 ms",
      "fcp": "1.5 s",
      "si": "1.5 s",
      "strategy": "mobile",
@@ -15039,7 +15039,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1094,
+    "wc": 1157,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -15078,13 +15078,13 @@
      "simple online pharmacy",
      "out stars",
      "stars verified",
-     "out stars verified",
      "october out",
+     "out stars verified",
      "october out stars",
      "recommend simple",
      "recommend simple online",
      "discreet delivery",
-     "easy order"
+     "pharmacy because"
     ],
     "imgs": 27,
     "videos": 0,
@@ -15145,7 +15145,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1094 words vs competitor median 297"
+     "evidence": "1157 words vs competitor median 297"
     },
     {
      "name": "FAQ coverage",

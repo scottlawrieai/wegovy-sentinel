@@ -25557,7 +25557,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 6092,
+   "wc": 6107,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -25622,7 +25622,7 @@
     "15 mg maintenance dose": 10,
     "dose titration": 58,
     "weekly injection": 18,
-    "injection site": 10,
+    "injection site": 11,
     "missed dose": 4,
     "storage in fridge": 5,
     "KwikPen": 1,
@@ -25639,23 +25639,23 @@
     "pancreatitis": 3,
     "thyroid": 3,
     "BMI eligibility": 5,
-    "Wegovy / semaglutide": 28,
+    "Wegovy / semaglutide": 30,
     "price per month": 51,
     "clinician review": 46
    },
    "phrases": [
     "side effects",
     "out stars",
-    "week week",
     "october out",
     "october out stars",
-    "stars verified",
-    "out stars verified",
+    "week week",
     "blood sugar",
     "order next",
     "next pen",
     "pen week",
-    "order next pen"
+    "stars verified",
+    "order next pen",
+    "out stars verified"
    ],
    "imgs": 25,
    "videos": 0,
@@ -25683,11 +25683,11 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Dawn Smith",
-    "Sagufta Julium",
-    "Katrina"
+    "Jonathan",
+    "mrs lord",
+    "JO"
    ],
-   "bytes": 446
+   "bytes": 445
   },
   "pages": [
    {
@@ -25818,14 +25818,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 736,
+    "bytes": 724,
     "psi": {
-     "score": 66,
-     "lcp": "7.8 s",
-     "cls": "0.014",
-     "tbt": "140 ms",
+     "score": 59,
+     "lcp": "9.5 s",
+     "cls": "0.101",
+     "tbt": "250 ms",
      "fcp": "2.6 s",
-     "si": "5.6 s",
+     "si": "5.8 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1204,
@@ -25867,12 +25867,12 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 23,
-     "lcp": "13.9 s",
+     "score": 33,
+     "lcp": "16.7 s",
      "cls": "0.518",
-     "tbt": "460 ms",
-     "fcp": "11.3 s",
-     "si": "11.3 s",
+     "tbt": "130 ms",
+     "fcp": "11.4 s",
+     "si": "11.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1720,
@@ -26042,11 +26042,11 @@
     "bytes": 323,
     "psi": {
      "score": 73,
-     "lcp": "7.4 s",
+     "lcp": "6.7 s",
      "cls": "0.02",
      "tbt": "0 ms",
-     "fcp": "2.3 s",
-     "si": "3.4 s",
+     "fcp": "2.4 s",
+     "si": "3.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1054,
@@ -26234,7 +26234,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 6092,
+    "wc": 6107,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -26299,7 +26299,7 @@
      "15 mg maintenance dose": 10,
      "dose titration": 58,
      "weekly injection": 18,
-     "injection site": 10,
+     "injection site": 11,
      "missed dose": 4,
      "storage in fridge": 5,
      "KwikPen": 1,
@@ -26316,23 +26316,23 @@
      "pancreatitis": 3,
      "thyroid": 3,
      "BMI eligibility": 5,
-     "Wegovy / semaglutide": 28,
+     "Wegovy / semaglutide": 30,
      "price per month": 51,
      "clinician review": 46
     },
     "phrases": [
      "side effects",
      "out stars",
-     "week week",
      "october out",
      "october out stars",
-     "stars verified",
-     "out stars verified",
+     "week week",
      "blood sugar",
      "order next",
      "next pen",
      "pen week",
-     "order next pen"
+     "stars verified",
+     "order next pen",
+     "out stars verified"
     ],
     "imgs": 25,
     "videos": 0,
@@ -26360,11 +26360,11 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Dawn Smith",
-     "Sagufta Julium",
-     "Katrina"
+     "Jonathan",
+     "mrs lord",
+     "JO"
     ],
-    "bytes": 446
+    "bytes": 445
    }
   ],
   "align": {
@@ -26398,7 +26398,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6092 words vs competitor median 5419"
+     "evidence": "6107 words vs competitor median 5419"
     },
     {
      "name": "FAQ coverage",

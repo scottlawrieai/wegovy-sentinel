@@ -35523,7 +35523,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 60,
-   "wc": 7217,
+   "wc": 7228,
    "faqs": [
     "What is the Wegovy pill?",
     "How does the Wegovy pill work?",
@@ -35622,7 +35622,7 @@
     "FDA approval": 1,
     "prescription-only": 6,
     "Novo Nordisk": 3,
-    "side effects": 30,
+    "side effects": 29,
     "GI side effects": 23,
     "BMI eligibility": 10,
     "contraindications": 15,
@@ -35638,7 +35638,7 @@
     "UK availability": 7,
     "NHS": 12,
     "online consultation": 55,
-    "delivery": 16
+    "delivery": 10
    },
    "phrases": [
     "side effects",
@@ -35648,10 +35648,10 @@
     "maintenance dose",
     "october out",
     "october out stars",
-    "stars verified",
-    "out stars verified",
     "dose increases",
+    "stars verified",
     "average body",
+    "out stars verified",
     "oral semaglutide"
    ],
    "imgs": 25,
@@ -35680,9 +35680,9 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Bryan Renyard",
     "Mr Mark Lloyd",
-    "Ruth"
+    "Ruth",
+    "Melissa"
    ],
    "bytes": 523
   },
@@ -35838,14 +35838,14 @@
      "OfferShippingDetails"
     ],
     "authors": [],
-    "bytes": 643,
+    "bytes": 641,
     "psi": {
-     "score": 69,
-     "lcp": "6.9 s",
-     "cls": "0.02",
-     "tbt": "80 ms",
-     "fcp": "2.4 s",
-     "si": "5.5 s",
+     "score": 67,
+     "lcp": "7.5 s",
+     "cls": "0.023",
+     "tbt": "160 ms",
+     "fcp": "2.1 s",
+     "si": "5.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1152,
@@ -35972,12 +35972,12 @@
     "authors": [],
     "bytes": 323,
     "psi": {
-     "score": 58,
-     "lcp": "12.1 s",
+     "score": 55,
+     "lcp": "12.4 s",
      "cls": "0",
-     "tbt": "110 ms",
+     "tbt": "180 ms",
      "fcp": "4.8 s",
-     "si": "8.0 s",
+     "si": "9.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3522,
@@ -36458,7 +36458,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 60,
-    "wc": 7217,
+    "wc": 7228,
     "faqs": [
      "What is the Wegovy pill?",
      "How does the Wegovy pill work?",
@@ -36557,7 +36557,7 @@
      "FDA approval": 1,
      "prescription-only": 6,
      "Novo Nordisk": 3,
-     "side effects": 30,
+     "side effects": 29,
      "GI side effects": 23,
      "BMI eligibility": 10,
      "contraindications": 15,
@@ -36573,7 +36573,7 @@
      "UK availability": 7,
      "NHS": 12,
      "online consultation": 55,
-     "delivery": 16
+     "delivery": 10
     },
     "phrases": [
      "side effects",
@@ -36583,10 +36583,10 @@
      "maintenance dose",
      "october out",
      "october out stars",
-     "stars verified",
-     "out stars verified",
      "dose increases",
+     "stars verified",
      "average body",
+     "out stars verified",
      "oral semaglutide"
     ],
     "imgs": 25,
@@ -36615,9 +36615,9 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Bryan Renyard",
      "Mr Mark Lloyd",
-     "Ruth"
+     "Ruth",
+     "Melissa"
     ],
     "bytes": 523
    }
@@ -36653,7 +36653,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "7217 words vs competitor median 3756"
+     "evidence": "7228 words vs competitor median 3756"
     },
     {
      "name": "FAQ coverage",
