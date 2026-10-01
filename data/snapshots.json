@@ -298838,12 +298838,12 @@
    "of": 6
   },
   "psi": {
-   "score": 86,
-   "lcp": "3.7 s",
+   "score": 56,
+   "lcp": "11.7 s",
    "cls": "0",
-   "tbt": "30 ms",
-   "fcp": "2.5 s",
-   "si": "2.6 s",
+   "tbt": "230 ms",
+   "fcp": "4.9 s",
+   "si": "6.7 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 660,

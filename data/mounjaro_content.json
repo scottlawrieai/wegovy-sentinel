@@ -25557,7 +25557,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 6345,
+   "wc": 6092,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -25619,8 +25619,8 @@
     "blood sugar": 7,
     "type 2 diabetes": 3,
     "2.5 mg starting dose": 18,
-    "15 mg maintenance dose": 11,
-    "dose titration": 59,
+    "15 mg maintenance dose": 10,
+    "dose titration": 58,
     "weekly injection": 18,
     "injection site": 10,
     "missed dose": 4,
@@ -25635,9 +25635,9 @@
     "Eli Lilly": 4,
     "prescription-only": 9,
     "nausea / GI side effects": 20,
-    "side effects": 19,
+    "side effects": 21,
     "pancreatitis": 3,
-    "thyroid": 2,
+    "thyroid": 3,
     "BMI eligibility": 5,
     "Wegovy / semaglutide": 28,
     "price per month": 51,
@@ -25646,16 +25646,16 @@
    "phrases": [
     "side effects",
     "out stars",
-    "september out",
     "week week",
-    "september out stars",
+    "october out",
+    "october out stars",
+    "stars verified",
+    "out stars verified",
     "blood sugar",
     "order next",
     "next pen",
     "pen week",
-    "order next pen",
-    "mounjaro mounjaro",
-    "mounjaro tirzepatide"
+    "order next pen"
    ],
    "imgs": 25,
    "videos": 0,
@@ -25683,11 +25683,11 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Michael",
-    "Eileen Rudge",
-    "Dawn Smith"
+    "Dawn Smith",
+    "Sagufta Julium",
+    "Katrina"
    ],
-   "bytes": 448
+   "bytes": 446
   },
   "pages": [
    {
@@ -25818,14 +25818,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 728,
+    "bytes": 736,
     "psi": {
-     "score": 63,
-     "lcp": "8.6 s",
-     "cls": "0.125",
-     "tbt": "50 ms",
-     "fcp": "2.7 s",
-     "si": "5.3 s",
+     "score": 66,
+     "lcp": "7.8 s",
+     "cls": "0.014",
+     "tbt": "140 ms",
+     "fcp": "2.6 s",
+     "si": "5.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1204,
@@ -25867,10 +25867,10 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 27,
-     "lcp": "13.5 s",
+     "score": 23,
+     "lcp": "13.9 s",
      "cls": "0.518",
-     "tbt": "340 ms",
+     "tbt": "460 ms",
      "fcp": "11.3 s",
      "si": "11.3 s",
      "strategy": "mobile",
@@ -26039,14 +26039,14 @@
      "WebPage"
     ],
     "authors": [],
-    "bytes": 324,
+    "bytes": 323,
     "psi": {
      "score": 73,
-     "lcp": "6.6 s",
+     "lcp": "7.4 s",
      "cls": "0.02",
      "tbt": "0 ms",
      "fcp": "2.3 s",
-     "si": "3.6 s",
+     "si": "3.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1054,
@@ -26234,7 +26234,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 6345,
+    "wc": 6092,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -26296,8 +26296,8 @@
      "blood sugar": 7,
      "type 2 diabetes": 3,
      "2.5 mg starting dose": 18,
-     "15 mg maintenance dose": 11,
-     "dose titration": 59,
+     "15 mg maintenance dose": 10,
+     "dose titration": 58,
      "weekly injection": 18,
      "injection site": 10,
      "missed dose": 4,
@@ -26312,9 +26312,9 @@
      "Eli Lilly": 4,
      "prescription-only": 9,
      "nausea / GI side effects": 20,
-     "side effects": 19,
+     "side effects": 21,
      "pancreatitis": 3,
-     "thyroid": 2,
+     "thyroid": 3,
      "BMI eligibility": 5,
      "Wegovy / semaglutide": 28,
      "price per month": 51,
@@ -26323,16 +26323,16 @@
     "phrases": [
      "side effects",
      "out stars",
-     "september out",
      "week week",
-     "september out stars",
+     "october out",
+     "october out stars",
+     "stars verified",
+     "out stars verified",
      "blood sugar",
      "order next",
      "next pen",
      "pen week",
-     "order next pen",
-     "mounjaro mounjaro",
-     "mounjaro tirzepatide"
+     "order next pen"
     ],
     "imgs": 25,
     "videos": 0,
@@ -26360,11 +26360,11 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Michael",
-     "Eileen Rudge",
-     "Dawn Smith"
+     "Dawn Smith",
+     "Sagufta Julium",
+     "Katrina"
     ],
-    "bytes": 448
+    "bytes": 446
    }
   ],
   "align": {
@@ -26398,7 +26398,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "6345 words vs competitor median 5419"
+     "evidence": "6092 words vs competitor median 5419"
     },
     {
      "name": "FAQ coverage",

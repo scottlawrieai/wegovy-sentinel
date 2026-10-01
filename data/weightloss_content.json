@@ -22506,7 +22506,7 @@
     "Weight loss FAQs"
    ],
    "h3n": 26,
-   "wc": 2823,
+   "wc": 2568,
    "faqs": [
     "Injectable vs oral treatments: what's the difference?",
     "How do clinicians decide which treatment is suitable?",
@@ -22571,16 +22571,16 @@
    "phrases": [
     "side effects",
     "out stars",
+    "stars verified",
+    "out stars verified",
+    "october out",
+    "october out stars",
+    "subscribe save",
+    "once-weekly injection",
     "simple online",
     "online pharmacy",
     "simple online pharmacy",
-    "september out",
-    "september out stars",
-    "subscribe save",
-    "once-weekly injection",
-    "clinical team",
-    "stars verified",
-    "out stars verified"
+    "regulate appetite"
    ],
    "imgs": 26,
    "videos": 1,
@@ -22607,7 +22607,7 @@
     "Pharmacy"
    ],
    "authors": [],
-   "bytes": 356
+   "bytes": 355
   },
   "pages": [
    {
@@ -22646,12 +22646,12 @@
     "authors": [],
     "bytes": 127,
     "psi": {
-     "score": 41,
-     "lcp": "8.0 s",
-     "cls": "0.142",
-     "tbt": "530 ms",
-     "fcp": "3.2 s",
-     "si": "10.8 s",
+     "score": 48,
+     "lcp": "11.6 s",
+     "cls": "0",
+     "tbt": "650 ms",
+     "fcp": "3.5 s",
+     "si": "5.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 577,
@@ -22693,10 +22693,10 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 31,
-     "lcp": "15.0 s",
+     "score": 19,
+     "lcp": "16.5 s",
      "cls": "0.518",
-     "tbt": "210 ms",
+     "tbt": "600 ms",
      "fcp": "11.5 s",
      "si": "11.5 s",
      "strategy": "mobile",
@@ -22845,12 +22845,12 @@
     "authors": [],
     "bytes": 348,
     "psi": {
-     "score": 86,
-     "lcp": "3.5 s",
+     "score": 85,
+     "lcp": "3.8 s",
      "cls": "0.025",
-     "tbt": "40 ms",
+     "tbt": "0 ms",
      "fcp": "2.4 s",
-     "si": "3.8 s",
+     "si": "3.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 718,
@@ -23169,7 +23169,7 @@
      "Weight loss FAQs"
     ],
     "h3n": 26,
-    "wc": 2823,
+    "wc": 2568,
     "faqs": [
      "Injectable vs oral treatments: what's the difference?",
      "How do clinicians decide which treatment is suitable?",
@@ -23234,16 +23234,16 @@
     "phrases": [
      "side effects",
      "out stars",
+     "stars verified",
+     "out stars verified",
+     "october out",
+     "october out stars",
+     "subscribe save",
+     "once-weekly injection",
      "simple online",
      "online pharmacy",
      "simple online pharmacy",
-     "september out",
-     "september out stars",
-     "subscribe save",
-     "once-weekly injection",
-     "clinical team",
-     "stars verified",
-     "out stars verified"
+     "regulate appetite"
     ],
     "imgs": 26,
     "videos": 1,
@@ -23270,7 +23270,7 @@
      "Pharmacy"
     ],
     "authors": [],
-    "bytes": 356
+    "bytes": 355
    }
   ],
   "align": {
@@ -23304,7 +23304,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "2823 words vs competitor median 1655"
+     "evidence": "2568 words vs competitor median 1655"
     },
     {
      "name": "FAQ coverage",

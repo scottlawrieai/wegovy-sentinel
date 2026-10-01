@@ -183975,12 +183975,12 @@
    "of": 6
   },
   "psi": {
-   "score": 83,
-   "lcp": "2.9 s",
+   "score": 65,
+   "lcp": "11.3 s",
    "cls": "0",
-   "tbt": "370 ms",
-   "fcp": "2.3 s",
-   "si": "2.9 s",
+   "tbt": "130 ms",
+   "fcp": "3.5 s",
+   "si": "4.5 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 491,

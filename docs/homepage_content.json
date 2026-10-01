@@ -14619,7 +14619,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1369,
+   "wc": 1094,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -14629,7 +14629,6 @@
    "terms": [
     "GPhC registered",
     "Trustpilot reviews",
-    "branded vs generic medication",
     "clinical assessment",
     "customer service",
     "discreet packaging",
@@ -14647,26 +14646,25 @@
     "dispensing": 1,
     "clinical assessment": 7,
     "prescriber": 2,
-    "weight loss treatments": 14,
+    "weight loss treatments": 13,
     "next-day delivery": 1,
     "discreet packaging": 7,
     "Trustpilot reviews": 17,
-    "customer service": 2,
-    "branded vs generic medication": 1
+    "customer service": 2
    },
    "phrases": [
     "simple online",
     "online pharmacy",
     "simple online pharmacy",
     "out stars",
-    "september out",
-    "september out stars",
-    "recommend simple",
-    "recommend simple online",
     "stars verified",
     "out stars verified",
+    "october out",
+    "october out stars",
+    "recommend simple",
+    "recommend simple online",
     "discreet delivery",
-    "pharmacy because"
+    "easy order"
    ],
    "imgs": 27,
    "videos": 0,
@@ -14722,12 +14720,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 34,
-     "lcp": "16.0 s",
+     "score": 33,
+     "lcp": "14.6 s",
      "cls": "0.013",
-     "tbt": "3,100 ms",
-     "fcp": "2.1 s",
-     "si": "12.8 s",
+     "tbt": "2,920 ms",
+     "fcp": "2.6 s",
+     "si": "14.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3015,
@@ -14811,12 +14809,12 @@
     "authors": [],
     "bytes": 318,
     "psi": {
-     "score": 56,
-     "lcp": "10.7 s",
-     "cls": "0.05",
-     "tbt": "390 ms",
+     "score": 68,
+     "lcp": "10.4 s",
+     "cls": "0.053",
+     "tbt": "30 ms",
      "fcp": "2.1 s",
-     "si": "7.3 s",
+     "si": "5.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1365,
@@ -14858,10 +14856,10 @@
     "authors": [],
     "bytes": 2,
     "psi": {
-     "score": 97,
+     "score": 98,
      "lcp": "2.2 s",
      "cls": "0.063",
-     "tbt": "90 ms",
+     "tbt": "50 ms",
      "fcp": "1.5 s",
      "si": "1.5 s",
      "strategy": "mobile",
@@ -15041,7 +15039,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1369,
+    "wc": 1094,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -15051,7 +15049,6 @@
     "terms": [
      "GPhC registered",
      "Trustpilot reviews",
-     "branded vs generic medication",
      "clinical assessment",
      "customer service",
      "discreet packaging",
@@ -15069,26 +15066,25 @@
      "dispensing": 1,
      "clinical assessment": 7,
      "prescriber": 2,
-     "weight loss treatments": 14,
+     "weight loss treatments": 13,
      "next-day delivery": 1,
      "discreet packaging": 7,
      "Trustpilot reviews": 17,
-     "customer service": 2,
-     "branded vs generic medication": 1
+     "customer service": 2
     },
     "phrases": [
      "simple online",
      "online pharmacy",
      "simple online pharmacy",
      "out stars",
-     "september out",
-     "september out stars",
-     "recommend simple",
-     "recommend simple online",
      "stars verified",
      "out stars verified",
+     "october out",
+     "october out stars",
+     "recommend simple",
+     "recommend simple online",
      "discreet delivery",
-     "pharmacy because"
+     "easy order"
     ],
     "imgs": 27,
     "videos": 0,
@@ -15149,7 +15145,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1369 words vs competitor median 297"
+     "evidence": "1094 words vs competitor median 297"
     },
     {
      "name": "FAQ coverage",

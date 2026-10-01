@@ -35523,7 +35523,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 60,
-   "wc": 7492,
+   "wc": 7217,
    "faqs": [
     "What is the Wegovy pill?",
     "How does the Wegovy pill work?",
@@ -35638,21 +35638,21 @@
     "UK availability": 7,
     "NHS": 12,
     "online consultation": 55,
-    "delivery": 13
+    "delivery": 16
    },
    "phrases": [
     "side effects",
     "out stars",
     "clinical team",
-    "september out",
-    "september out stars",
     "weekly injection",
     "maintenance dose",
-    "simple online",
-    "online pharmacy",
-    "simple online pharmacy",
+    "october out",
+    "october out stars",
+    "stars verified",
+    "out stars verified",
     "dose increases",
-    "average body"
+    "average body",
+    "oral semaglutide"
    ],
    "imgs": 25,
    "videos": 0,
@@ -35684,7 +35684,7 @@
     "Mr Mark Lloyd",
     "Ruth"
    ],
-   "bytes": 526
+   "bytes": 523
   },
   "pages": [
    {
@@ -35838,14 +35838,14 @@
      "OfferShippingDetails"
     ],
     "authors": [],
-    "bytes": 646,
+    "bytes": 643,
     "psi": {
-     "score": 61,
-     "lcp": "5.7 s",
-     "cls": "0.03",
-     "tbt": "330 ms",
-     "fcp": "2.6 s",
-     "si": "7.1 s",
+     "score": 69,
+     "lcp": "6.9 s",
+     "cls": "0.02",
+     "tbt": "80 ms",
+     "fcp": "2.4 s",
+     "si": "5.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1152,
@@ -35972,12 +35972,12 @@
     "authors": [],
     "bytes": 323,
     "psi": {
-     "score": 56,
-     "lcp": "12.4 s",
+     "score": 58,
+     "lcp": "12.1 s",
      "cls": "0",
-     "tbt": "150 ms",
+     "tbt": "110 ms",
      "fcp": "4.8 s",
-     "si": "8.3 s",
+     "si": "8.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3522,
@@ -36458,7 +36458,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 60,
-    "wc": 7492,
+    "wc": 7217,
     "faqs": [
      "What is the Wegovy pill?",
      "How does the Wegovy pill work?",
@@ -36573,21 +36573,21 @@
      "UK availability": 7,
      "NHS": 12,
      "online consultation": 55,
-     "delivery": 13
+     "delivery": 16
     },
     "phrases": [
      "side effects",
      "out stars",
      "clinical team",
-     "september out",
-     "september out stars",
      "weekly injection",
      "maintenance dose",
-     "simple online",
-     "online pharmacy",
-     "simple online pharmacy",
+     "october out",
+     "october out stars",
+     "stars verified",
+     "out stars verified",
      "dose increases",
-     "average body"
+     "average body",
+     "oral semaglutide"
     ],
     "imgs": 25,
     "videos": 0,
@@ -36619,7 +36619,7 @@
      "Mr Mark Lloyd",
      "Ruth"
     ],
-    "bytes": 526
+    "bytes": 523
    }
   ],
   "align": {
@@ -36653,7 +36653,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "7492 words vs competitor median 3756"
+     "evidence": "7217 words vs competitor median 3756"
     },
     {
      "name": "FAQ coverage",
