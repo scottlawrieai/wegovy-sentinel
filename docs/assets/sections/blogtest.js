@@ -19,6 +19,11 @@
       s + ' .bt-live{font-size:10px;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:10px;background:#E7F0FE;color:#1D4ED8;border:1px solid #BCD4F6}' +
       s + ' .bt-baseline{font-size:10px;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:10px;background:#FEF7E0;color:#B06000;border:1px solid #FDE293}' +
       s + ' tr.band td{background:#E7F0FE;border-top:1px solid #BCD4F6;border-bottom:1px solid #BCD4F6;font-size:12px;font-weight:700;color:#1D4ED8}' +
+      s + ' .eyebrow-sm{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#5B6B83}' +
+      s + ' .q-delta{display:inline-block;margin-left:6px;font-size:10px;font-weight:700}' +
+      s + ' .q-up{color:#2F9E44}' + s + ' .q-down{color:#E03131}' +
+      s + ' .q-flat{color:#94A3B8}' +
+      s + ' .q-new{color:#1C7ED6;font-size:9px;letter-spacing:.04em;text-transform:uppercase}' +
       '</style>';
   }
 
@@ -126,57 +131,6 @@
       }
     }
 
-    // weekly rankings table — same output as the traffic table below:
-    // one row per week with Before/Cutover/After phase and the T band,
-    // one column per top query (impression-weighted position that week)
-    var kwTable = '';
-    if (kwKeys.length) {
-      var cols = kwKeys.slice(0, 5);
-      var wkmap = {};   // weekKey -> {q: {pw, impr}}
-      cols.forEach(function (k) {
-        C.inRange(p.kwseries[k] || [], S.state).forEach(function (r) {
-          if (r.pos == null) return;
-          var wkey = C.weekKey(r.d);
-          var cell = (wkmap[wkey] = wkmap[wkey] || {});
-          var agg = (cell[k] = cell[k] || { pw: 0, impr: 0, from: r.d, to: r.d });
-          var w2 = (r.impr || 0) || 1;   // weight by impressions, floor 1
-          agg.pw += r.pos * w2; agg.impr += w2;
-          if (r.d < agg.from) agg.from = r.d;
-          if (r.d > agg.to) agg.to = r.d;
-        });
-      });
-      var wkeys = Object.keys(wkmap).sort();
-      var ktrs = '';
-      wkeys.forEach(function (wkey) {
-        var cell = wkmap[wkey];
-        var from = null, to = null;
-        cols.forEach(function (k) {
-          if (cell[k]) {
-            if (from == null || cell[k].from < from) from = cell[k].from;
-            if (to == null || cell[k].to > to) to = cell[k].to;
-          }
-        });
-        if (live && from && to && live >= from && live <= to) {
-          ktrs += '<tr class="band"><td colspan="' + (cols.length + 2) + '">T · ' +
-            exp.bandLabel + ' · ' + C.esc(live) + '</td></tr>';
-        }
-        var phase = !live || !to ? '—'
-          : (to < live ? 'Before' : (from >= live ? 'After' : 'Cutover'));
-        ktrs += '<tr><td style="white-space:nowrap">' + C.esc(wkey) + '</td>' +
-          '<td style="color:#5B6B83">' + phase + '</td>' +
-          cols.map(function (k) {
-            var a = cell[k];
-            return '<td class="num">' + (a ? '#' + (a.pw / a.impr).toFixed(1) : '—') + '</td>';
-          }).join('') + '</tr>';
-      });
-      if (ktrs) {
-        kwTable = '<div class="tbl-wrap" style="margin-top:8px"><table class="tbl">' +
-          '<thead><tr><th>Week</th><th>Phase</th>' +
-          cols.map(function (k) { return '<th class="num">' + C.esc(k) + '</th>'; }).join('') +
-          '</tr></thead><tbody>' + ktrs + '</tbody></table></div>';
-      }
-    }
-
     var trs = '';
     wk.forEach(function (w) {
       if (live && live >= w.from && live <= w.to) {
@@ -192,15 +146,65 @@
         '</tr>';
     });
 
-    var queries = (p.queries || []).slice(0, 5).map(function (q) {
-      return C.esc(q.q) + ' <span style="color:#94A3B8">(' + C.esc(String(q.pos != null ? q.pos.toFixed(1) : '—')) + ')</span>';
-    }).join(' · ');
+    // Search-queries table, same output as the product tabs' SEARCH QUERIES
+    // panel: trailing 28 days vs the preceding 28, heat cells + deltas.
+    var qTable = '';
+    var qRows = (p.queries || []).filter(function (r) { return r && r.q; });
+    if (qRows.length) {
+      var cMax = Math.max.apply(null, qRows.map(function (r) { return r.clicks || 0; }).concat([1]));
+      var iMax = Math.max.apply(null, qRows.map(function (r) { return r.impr || 0; }).concat([1]));
+      var pvs = qRows.map(function (r) { return r.pos; }).filter(function (v) { return v != null; });
+      var pMin = Math.min.apply(null, pvs), pMax = Math.max.apply(null, pvs);
+      function pctDelta(cur, prev) {
+        if (prev == null) return '<span class="q-delta q-new">new</span>';
+        if (!prev) return '';
+        var d = (cur - prev) / prev * 100;
+        if (Math.abs(d) < 0.5) return '<span class="q-delta q-flat">=</span>';
+        var up = d > 0;
+        return '<span class="q-delta ' + (up ? 'q-up' : 'q-down') + '">' +
+          (up ? '\u25b2' : '\u25bc') + Math.abs(d).toFixed(0) + '%</span>';
+      }
+      function posDelta(cur, prev) {
+        if (prev == null) return '<span class="q-delta q-new">new</span>';
+        var d = prev - cur;
+        if (Math.abs(d) < 0.05) return '<span class="q-delta q-flat">=</span>';
+        var good = d > 0;
+        return '<span class="q-delta ' + (good ? 'q-up' : 'q-down') + '">' +
+          (good ? '\u25b2' : '\u25bc') + Math.abs(d).toFixed(1) + '</span>';
+      }
+      var anyPrev = qRows.some(function (r) { return r.prev; });
+      var qtrs = qRows.map(function (r) {
+        var pv = r.prev || null;
+        var ctr = r.impr ? (r.clicks / r.impr * 100) : (r.ctr || 0);
+        if (r.ctr != null) ctr = r.ctr;
+        var pctr = pv ? (pv.ctr != null ? pv.ctr : (pv.impr ? pv.clicks / pv.impr * 100 : null)) : null;
+        return '<tr>' +
+          '<td>' + C.esc(r.q) + '</td>' +
+          '<td class="num" style="background:' + C.esc(C.heat(r.clicks || 0, 0, cMax)) + '">' + C.esc(C.fmtInt(r.clicks || 0)) +
+            (anyPrev ? pctDelta(r.clicks || 0, pv ? pv.clicks : null) : '') + '</td>' +
+          '<td class="num" style="background:' + C.esc(C.heat(r.impr || 0, 0, iMax)) + '">' + C.esc(C.fmtInt(r.impr || 0)) +
+            (anyPrev ? pctDelta(r.impr || 0, pv ? pv.impr : null) : '') + '</td>' +
+          '<td class="num">' + C.esc((ctr || 0).toFixed(1)) + '%' +
+            (anyPrev ? pctDelta(ctr || 0, pctr) : '') + '</td>' +
+          '<td class="num" style="background:' + (r.pos != null ? C.esc(C.heat(r.pos, pMin, pMax, true)) : 'transparent') + '">' +
+            (r.pos != null ? C.esc(r.pos.toFixed(1)) : '\u2014') +
+            (anyPrev && r.pos != null ? posDelta(r.pos, pv ? pv.pos : null) : '') + '</td>' +
+          '</tr>';
+      }).join('');
+      qTable = '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:14px 0 6px">' +
+        '<span class="eyebrow-sm">Search queries \u2014 this page</span>' +
+        '<span style="font-size:11px;color:#94A3B8">Google Search Console \u00b7 trailing 28 days vs the preceding 28</span></div>' +
+        '<div class="tbl-wrap"><table class="tbl">' +
+        '<thead><tr><th>Query</th><th class="num">Clicks</th><th class="num">Impressions</th>' +
+        '<th class="num">CTR</th><th class="num">Position</th></tr></thead>' +
+        '<tbody>' + qtrs + '</tbody></table></div>';
+    }
 
-    return '<div class="panel" style="margin-bottom:14px">' + head + kpis + chart + kwChart + kwTable +
+    return '<div class="panel" style="margin-bottom:14px">' + head + kpis + chart + kwChart +
       '<div class="tbl-wrap" style="margin-top:8px"><table class="tbl">' +
       '<thead><tr><th>Week</th><th>Phase</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">Avg position</th></tr></thead>' +
       '<tbody>' + (trs || '<tr><td colspan="5"><div class="empty">No data in range.</div></td></tr>') + '</tbody></table></div>' +
-      (queries ? '<div class="perf-chart-note" style="margin-top:6px">Top queries: ' + queries + '</div>' : '') +
+      qTable +
       '</div>';
   }
 

@@ -304,8 +304,8 @@ def main():
             print(f"[warn] {tag} series {url}: {e}", file=sys.stderr)
             entry["series"] = []
         try:
-            q = rank_sources.fetch_gsc_queries(page_url=url, limit=10)
-            entry["queries"] = (q.get("rows") or [])[:8]
+            q = rank_sources.fetch_gsc_queries(page_url=url, limit=20)
+            entry["queries"] = (q.get("rows") or [])[:15]
         except Exception as e:
             print(f"[warn] {tag} queries {url}: {e}", file=sys.stderr)
             entry["queries"] = []
