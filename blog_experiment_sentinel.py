@@ -45,7 +45,7 @@ MODES = {
         "config": os.path.join(HERE, "data", "product_experiment_config.json"),
         "data": os.path.join(HERE, "data", "product_experiment.json"),
         "docs": os.path.join(HERE, "docs", "product_experiment.json"),
-        "tag": "prod-exp", "select": False,
+        "tag": "prod-exp", "select": False, "kwseries": True,
         "alert_title": "Product template alert",
         "anchor": "#prodtests",
     },
@@ -309,6 +309,14 @@ def main():
         except Exception as e:
             print(f"[warn] {tag} queries {url}: {e}", file=sys.stderr)
             entry["queries"] = []
+        if mode.get("kwseries") and entry.get("queries"):
+            try:
+                kws = [q["q"] for q in entry["queries"][:5] if q.get("q")]
+                entry["kwseries"] = rank_sources.fetch_gsc_keyword_series(
+                    kws, page_url=url)
+            except Exception as e:
+                print(f"[warn] {tag} kwseries {url}: {e}", file=sys.stderr)
+                entry["kwseries"] = {}
         out_pages.append(entry)
 
     prev_out = load_json(mode["docs"], {}) or {}

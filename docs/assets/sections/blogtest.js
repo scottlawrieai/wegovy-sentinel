@@ -107,6 +107,25 @@
       height: 170, markers: markers, showLegend: true
     });
 
+    var kwChart = '';
+    var kwKeys = p.kwseries ? Object.keys(p.kwseries) : [];
+    if (kwKeys.length) {
+      var kwColors = ['#1C7ED6', '#7048E8', '#2F9E44', '#E8590C', '#C2255C'];
+      var kwSeries = kwKeys.slice(0, 5).map(function (k, i) {
+        return { label: k, color: kwColors[i % kwColors.length],
+                 points: C.inRange(p.kwseries[k] || [], S.state)
+                   .filter(function (r) { return r.pos != null; })
+                   .map(function (r) { return { d: r.d, v: r.pos }; }) };
+      }).filter(function (s2) { return s2.points.length; });
+      if (kwSeries.length) {
+        kwChart = '<div style="font-size:10px;font-weight:700;letter-spacing:.08em;color:#5B6B83;margin-top:14px">' +
+          'GSC POSITION \u00b7 TOP QUERIES \u00b7 THIS PAGE ONLY (lower = better)</div>' +
+          C.lineChart({ series: kwSeries, height: 170, invertY: true,
+                        markers: markers, showLegend: true,
+                        yFmt: function (v) { return '#' + Math.round(v); } });
+      }
+    }
+
     var trs = '';
     wk.forEach(function (w) {
       if (live && live >= w.from && live <= w.to) {
@@ -126,7 +145,7 @@
       return C.esc(q.q) + ' <span style="color:#94A3B8">(' + C.esc(String(q.pos != null ? q.pos.toFixed(1) : '—')) + ')</span>';
     }).join(' · ');
 
-    return '<div class="panel" style="margin-bottom:14px">' + head + kpis + chart +
+    return '<div class="panel" style="margin-bottom:14px">' + head + kpis + chart + kwChart +
       '<div class="tbl-wrap" style="margin-top:8px"><table class="tbl">' +
       '<thead><tr><th>Week</th><th>Phase</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">Avg position</th></tr></thead>' +
       '<tbody>' + (trs || '<tr><td colspan="5"><div class="empty">No data in range.</div></td></tr>') + '</tbody></table></div>' +
