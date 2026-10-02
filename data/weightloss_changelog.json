@@ -148,5 +148,20 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-10-02",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy −90 words (2,611 → 2,521)",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Topic coverage gained: NICE guidance",
+    "source": "auto"
+   }
+  ]
  }
 ]
