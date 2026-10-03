@@ -163,5 +163,15 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-10-03",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Topic coverage lost: NICE guidance",
+    "source": "auto"
+   }
+  ]
  }
 ]
