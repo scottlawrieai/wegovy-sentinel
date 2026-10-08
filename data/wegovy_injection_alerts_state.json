@@ -8,5 +8,10 @@
  "overtaken:Boots:buy wegovy": "2026-09-29",
  "overtaken:Superdrug:wegovy price uk": "2026-10-07",
  "overtaken:MedExpress:wegovy price uk": "2026-10-07",
- "overtaken:Boots:wegovy price uk": "2026-10-07"
+ "overtaken:Boots:wegovy price uk": "2026-10-07",
+ "overtaken:Superdrug:wegovy injection": "2026-10-08",
+ "overtaken:Chemist4U:wegovy injection": "2026-10-08",
+ "overtaken:FamilyChemist:wegovy injection": "2026-10-08",
+ "overtaken:MedExpress:wegovy injection": "2026-10-08",
+ "overtaken:Boots:wegovy injection": "2026-10-08"
 }
