@@ -6,13 +6,6 @@
    "live": "2026-09-06",
    "series": [
     {
-     "d": "2026-07-09",
-     "clicks": 59,
-     "impr": 6390,
-     "ctr": 0.92,
-     "pos": 6.7
-    },
-    {
      "d": "2026-07-10",
      "clicks": 42,
      "impr": 6137,
@@ -634,80 +627,94 @@
      "impr": 6385,
      "ctr": 1.08,
      "pos": 5.0
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 85,
+     "impr": 6297,
+     "ctr": 1.35,
+     "pos": 4.8
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 76,
+     "impr": 6410,
+     "ctr": 1.19,
+     "pos": 4.8
     }
    ],
    "queries": [
     {
      "q": "how to get rid of sulfur burps",
-     "clicks": 48,
-     "impr": 2637,
-     "ctr": 1.8,
+     "clicks": 50,
+     "impr": 2690,
+     "ctr": 1.9,
      "pos": 2.0,
      "prev": {
       "clicks": 6,
-      "impr": 907,
+      "impr": 898,
       "ctr": 0.7,
-      "pos": 3.7
+      "pos": 3.6
      }
     },
     {
      "q": "how to get rid of eggy burps",
-     "clicks": 34,
-     "impr": 647,
+     "clicks": 35,
+     "impr": 657,
      "ctr": 5.3,
-     "pos": 1.9,
+     "pos": 1.7,
      "prev": {
-      "clicks": 22,
-      "impr": 669,
-      "ctr": 3.3,
+      "clicks": 21,
+      "impr": 684,
+      "ctr": 3.1,
       "pos": 2.7
      }
     },
     {
-     "q": "eggy burps",
-     "clicks": 24,
-     "impr": 3617,
-     "ctr": 0.7,
-     "pos": 5.2,
+     "q": "sulphur burps",
+     "clicks": 29,
+     "impr": 6609,
+     "ctr": 0.4,
+     "pos": 7.2,
      "prev": {
-      "clicks": 13,
-      "impr": 2458,
+      "clicks": 31,
+      "impr": 8803,
+      "ctr": 0.4,
+      "pos": 8.8
+     }
+    },
+    {
+     "q": "eggy burps",
+     "clicks": 27,
+     "impr": 3807,
+     "ctr": 0.7,
+     "pos": 5.1,
+     "prev": {
+      "clicks": 14,
+      "impr": 2562,
       "ctr": 0.5,
       "pos": 6.1
      }
     },
     {
-     "q": "sulphur burps",
-     "clicks": 22,
-     "impr": 5951,
-     "ctr": 0.4,
-     "pos": 7.5,
-     "prev": {
-      "clicks": 31,
-      "impr": 9069,
-      "ctr": 0.3,
-      "pos": 8.9
-     }
-    },
-    {
      "q": "how to get rid of sulfur burps instantly",
-     "clicks": 18,
-     "impr": 1946,
-     "ctr": 0.9,
-     "pos": 4.8,
+     "clicks": 21,
+     "impr": 2058,
+     "ctr": 1.0,
+     "pos": 4.6,
      "prev": {
       "clicks": 6,
-      "impr": 2566,
+      "impr": 2497,
       "ctr": 0.2,
-      "pos": 7.8
+      "pos": 7.9
      }
     },
     {
      "q": "how to stop eggy burps",
-     "clicks": 17,
-     "impr": 354,
-     "ctr": 4.8,
-     "pos": 2.0,
+     "clicks": 20,
+     "impr": 375,
+     "ctr": 5.3,
+     "pos": 1.9,
      "prev": {
       "clicks": 6,
       "impr": 320,
@@ -717,119 +724,119 @@
     },
     {
      "q": "how to get rid of sulphur burps",
-     "clicks": 16,
-     "impr": 2170,
-     "ctr": 0.7,
+     "clicks": 18,
+     "impr": 2248,
+     "ctr": 0.8,
      "pos": 4.1,
      "prev": {
       "clicks": 6,
       "impr": 2257,
       "ctr": 0.3,
-      "pos": 6.0
+      "pos": 5.9
      }
     },
     {
      "q": "how to stop sulfur burps",
-     "clicks": 13,
-     "impr": 876,
-     "ctr": 1.5,
-     "pos": 2.2,
+     "clicks": 14,
+     "impr": 899,
+     "ctr": 1.6,
+     "pos": 2.1,
      "prev": {
       "clicks": 2,
-      "impr": 690,
+      "impr": 664,
       "ctr": 0.3,
-      "pos": 6.0
+      "pos": 5.6
      }
     },
     {
      "q": "mounjaro sulfur burps and diarrhea",
      "clicks": 13,
-     "impr": 463,
-     "ctr": 2.8,
-     "pos": 2.2,
+     "impr": 476,
+     "ctr": 2.7,
+     "pos": 2.1,
      "prev": {
-      "clicks": 19,
-      "impr": 473,
-      "ctr": 4.0,
+      "clicks": 18,
+      "impr": 469,
+      "ctr": 3.8,
       "pos": 2.0
      }
     },
     {
      "q": "how to get rid of egg burps",
      "clicks": 12,
-     "impr": 202,
+     "impr": 205,
      "ctr": 5.9,
      "pos": 3.3,
      "prev": {
       "clicks": 5,
-      "impr": 222,
+      "impr": 217,
       "ctr": 2.3,
-      "pos": 3.3
-     }
-    },
-    {
-     "q": "sulphur burps remedy",
-     "clicks": 9,
-     "impr": 204,
-     "ctr": 4.4,
-     "pos": 4.4,
-     "prev": {
-      "clicks": 4,
-      "impr": 305,
-      "ctr": 1.3,
-      "pos": 7.1
+      "pos": 3.1
      }
     },
     {
      "q": "sulphur burps mounjaro",
-     "clicks": 8,
-     "impr": 1619,
-     "ctr": 0.5,
-     "pos": 6.6,
+     "clicks": 10,
+     "impr": 1696,
+     "ctr": 0.6,
+     "pos": 6.5,
      "prev": {
-      "clicks": 15,
-      "impr": 1813,
+      "clicks": 14,
+      "impr": 1798,
       "ctr": 0.8,
-      "pos": 6.2
-     }
-    },
-    {
-     "q": "how to stop sulphur burps",
-     "clicks": 8,
-     "impr": 915,
-     "ctr": 0.9,
-     "pos": 3.5,
-     "prev": {
-      "clicks": 2,
-      "impr": 1001,
-      "ctr": 0.2,
-      "pos": 6.5
+      "pos": 6.3
      }
     },
     {
      "q": "mounjaro burping",
-     "clicks": 8,
-     "impr": 670,
-     "ctr": 1.2,
-     "pos": 4.7,
+     "clicks": 10,
+     "impr": 708,
+     "ctr": 1.4,
+     "pos": 4.6,
      "prev": {
       "clicks": 9,
-      "impr": 843,
+      "impr": 845,
       "ctr": 1.1,
       "pos": 5.3
      }
     },
     {
-     "q": "what causes sulphur burps on mounjaro",
-     "clicks": 8,
-     "impr": 197,
-     "ctr": 4.1,
-     "pos": 3.4,
+     "q": "how to stop sulphur burps",
+     "clicks": 9,
+     "impr": 976,
+     "ctr": 0.9,
+     "pos": 3.5,
      "prev": {
       "clicks": 2,
-      "impr": 132,
-      "ctr": 1.5,
-      "pos": 4.1
+      "impr": 978,
+      "ctr": 0.2,
+      "pos": 6.5
+     }
+    },
+    {
+     "q": "what causes sulphur burps on mounjaro",
+     "clicks": 9,
+     "impr": 213,
+     "ctr": 4.2,
+     "pos": 3.5,
+     "prev": {
+      "clicks": 2,
+      "impr": 125,
+      "ctr": 1.6,
+      "pos": 4.0
+     }
+    },
+    {
+     "q": "sulphur burps remedy",
+     "clicks": 9,
+     "impr": 202,
+     "ctr": 4.5,
+     "pos": 4.5,
+     "prev": {
+      "clicks": 4,
+      "impr": 302,
+      "ctr": 1.3,
+      "pos": 7.0
      }
     }
    ],
@@ -861,13 +868,6 @@
    "label": "what is the ozempic dosage for weight loss",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 112,
-     "impr": 9711,
-     "ctr": 1.15,
-     "pos": 4.2
-    },
     {
      "d": "2026-07-10",
      "clicks": 128,
@@ -1490,202 +1490,216 @@
      "impr": 9337,
      "ctr": 1.56,
      "pos": 3.4
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 118,
+     "impr": 8142,
+     "ctr": 1.45,
+     "pos": 3.6
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 123,
+     "impr": 8183,
+     "ctr": 1.5,
+     "pos": 3.6
     }
    ],
    "queries": [
     {
      "q": "maximum dose of ozempic for weight loss",
-     "clicks": 82,
-     "impr": 6127,
+     "clicks": 83,
+     "impr": 6472,
      "ctr": 1.3,
-     "pos": 2.7,
+     "pos": 2.5,
      "prev": {
-      "clicks": 86,
-      "impr": 7640,
+      "clicks": 84,
+      "impr": 7522,
       "ctr": 1.1,
-      "pos": 2.1
+      "pos": 2.2
      }
     },
     {
      "q": "ozempic doses",
      "clicks": 72,
-     "impr": 7158,
+     "impr": 7485,
      "ctr": 1.0,
      "pos": 2.1,
      "prev": {
-      "clicks": 72,
-      "impr": 7227,
-      "ctr": 1.0,
+      "clicks": 76,
+      "impr": 7112,
+      "ctr": 1.1,
       "pos": 2.4
      }
     },
     {
      "q": "what dose of ozempic is best for weight loss",
-     "clicks": 57,
-     "impr": 251,
-     "ctr": 22.7,
+     "clicks": 59,
+     "impr": 261,
+     "ctr": 22.6,
      "pos": 1.4,
      "prev": {
-      "clicks": 48,
-      "impr": 252,
-      "ctr": 19.0,
+      "clicks": 50,
+      "impr": 254,
+      "ctr": 19.7,
       "pos": 1.7
      }
     },
     {
      "q": "when to increase ozempic dose for weight loss",
-     "clicks": 52,
-     "impr": 939,
+     "clicks": 53,
+     "impr": 971,
      "ctr": 5.5,
-     "pos": 3.9,
+     "pos": 3.8,
      "prev": {
-      "clicks": 70,
-      "impr": 1129,
+      "clicks": 71,
+      "impr": 1141,
       "ctr": 6.2,
       "pos": 4.0
      }
     },
     {
      "q": "ozempic dosage",
-     "clicks": 46,
-     "impr": 7087,
-     "ctr": 0.6,
+     "clicks": 52,
+     "impr": 7683,
+     "ctr": 0.7,
      "pos": 2.3,
      "prev": {
-      "clicks": 42,
-      "impr": 9931,
+      "clicks": 40,
+      "impr": 9577,
       "ctr": 0.4,
-      "pos": 2.1
+      "pos": 2.2
      }
     },
     {
      "q": "ozempic dose for weight loss",
-     "clicks": 39,
-     "impr": 1131,
+     "clicks": 41,
+     "impr": 1196,
      "ctr": 3.4,
-     "pos": 3.0,
+     "pos": 2.9,
      "prev": {
       "clicks": 16,
-      "impr": 1280,
-      "ctr": 1.2,
+      "impr": 1259,
+      "ctr": 1.3,
       "pos": 2.5
      }
     },
     {
      "q": "ozempic dosage chart",
-     "clicks": 37,
-     "impr": 3973,
+     "clicks": 38,
+     "impr": 4324,
      "ctr": 0.9,
      "pos": 1.6,
      "prev": {
-      "clicks": 25,
-      "impr": 4873,
+      "clicks": 23,
+      "impr": 4748,
       "ctr": 0.5,
       "pos": 1.2
      }
     },
     {
      "q": "what is the maximum dosage of ozempic",
-     "clicks": 34,
-     "impr": 2911,
-     "ctr": 1.2,
+     "clicks": 32,
+     "impr": 3179,
+     "ctr": 1.0,
      "pos": 2.3,
      "prev": {
-      "clicks": 29,
-      "impr": 4268,
-      "ctr": 0.7,
+      "clicks": 32,
+      "impr": 4114,
+      "ctr": 0.8,
       "pos": 2.0
-     }
-    },
-    {
-     "q": "how much ozempic for weight loss",
-     "clicks": 23,
-     "impr": 325,
-     "ctr": 7.1,
-     "pos": 4.2,
-     "prev": {
-      "clicks": 7,
-      "impr": 379,
-      "ctr": 1.8,
-      "pos": 6.1
      }
     },
     {
      "q": "how much ozempic to lose weight",
-     "clicks": 23,
-     "impr": 192,
-     "ctr": 12.0,
+     "clicks": 25,
+     "impr": 199,
+     "ctr": 12.6,
      "pos": 2.1,
      "prev": {
       "clicks": 17,
-      "impr": 137,
-      "ctr": 12.4,
-      "pos": 3.9
+      "impr": 141,
+      "ctr": 12.1,
+      "pos": 3.8
+     }
+    },
+    {
+     "q": "how much ozempic for weight loss",
+     "clicks": 24,
+     "impr": 328,
+     "ctr": 7.3,
+     "pos": 4.2,
+     "prev": {
+      "clicks": 7,
+      "impr": 380,
+      "ctr": 1.8,
+      "pos": 6.0
      }
     },
     {
      "q": "ozempic dosing",
-     "clicks": 22,
-     "impr": 4177,
+     "clicks": 23,
+     "impr": 4213,
      "ctr": 0.5,
      "pos": 2.1,
      "prev": {
       "clicks": 6,
-      "impr": 4965,
+      "impr": 4867,
       "ctr": 0.1,
       "pos": 2.0
+     }
+    },
+    {
+     "q": "ozempic dosage for weight loss",
+     "clicks": 22,
+     "impr": 1201,
+     "ctr": 1.8,
+     "pos": 2.9,
+     "prev": {
+      "clicks": 33,
+      "impr": 1253,
+      "ctr": 2.6,
+      "pos": 2.5
+     }
+    },
+    {
+     "q": "what is the highest dose of ozempic",
+     "clicks": 21,
+     "impr": 2219,
+     "ctr": 0.9,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 19,
+      "impr": 2901,
+      "ctr": 0.7,
+      "pos": 2.1
+     }
+    },
+    {
+     "q": "ozempic doses for weight loss",
+     "clicks": 21,
+     "impr": 1009,
+     "ctr": 2.1,
+     "pos": 2.8,
+     "prev": {
+      "clicks": 30,
+      "impr": 1349,
+      "ctr": 2.2,
+      "pos": 3.1
      }
     },
     {
      "q": "ozempic 2 mg dose for weight loss reviews",
      "clicks": 20,
-     "impr": 1289,
-     "ctr": 1.6,
-     "pos": 5.5,
+     "impr": 1339,
+     "ctr": 1.5,
+     "pos": 5.6,
      "prev": {
       "clicks": 25,
-      "impr": 1431,
-      "ctr": 1.7,
+      "impr": 1416,
+      "ctr": 1.8,
       "pos": 5.6
-     }
-    },
-    {
-     "q": "ozempic dosage for weight loss",
-     "clicks": 20,
-     "impr": 1157,
-     "ctr": 1.7,
-     "pos": 3.0,
-     "prev": {
-      "clicks": 32,
-      "impr": 1253,
-      "ctr": 2.6,
-      "pos": 2.4
-     }
-    },
-    {
-     "q": "ozempic dosing for weight loss",
-     "clicks": 19,
-     "impr": 4784,
-     "ctr": 0.4,
-     "pos": 4.8,
-     "prev": {
-      "clicks": 27,
-      "impr": 4200,
-      "ctr": 0.6,
-      "pos": 5.3
-     }
-    },
-    {
-     "q": "ozempic dose",
-     "clicks": 19,
-     "impr": 2703,
-     "ctr": 0.7,
-     "pos": 2.6,
-     "prev": {
-      "clicks": 1,
-      "impr": 1920,
-      "ctr": 0.1,
-      "pos": 2.7
      }
     }
    ],
@@ -1717,13 +1731,6 @@
    "label": "mounjaro hair loss",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 16,
-     "impr": 2082,
-     "ctr": 0.77,
-     "pos": 6.3
-    },
     {
      "d": "2026-07-10",
      "clicks": 20,
@@ -2346,31 +2353,45 @@
      "impr": 2303,
      "ctr": 1.13,
      "pos": 5.3
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 16,
+     "impr": 2266,
+     "ctr": 0.71,
+     "pos": 5.2
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 17,
+     "impr": 2343,
+     "ctr": 0.73,
+     "pos": 5.7
     }
    ],
    "queries": [
     {
      "q": "mounjaro hair loss",
-     "clicks": 34,
-     "impr": 2815,
-     "ctr": 1.2,
-     "pos": 5.7,
+     "clicks": 32,
+     "impr": 2909,
+     "ctr": 1.1,
+     "pos": 5.9,
      "prev": {
-      "clicks": 19,
-      "impr": 2840,
+      "clicks": 20,
+      "impr": 2875,
       "ctr": 0.7,
-      "pos": 7.6
+      "pos": 7.4
      }
     },
     {
      "q": "how to stop mounjaro hair loss female",
-     "clicks": 23,
-     "impr": 925,
+     "clicks": 24,
+     "impr": 978,
      "ctr": 2.5,
      "pos": 3.3,
      "prev": {
       "clicks": 5,
-      "impr": 805,
+      "impr": 803,
       "ctr": 0.6,
       "pos": 3.3
      }
@@ -2378,103 +2399,103 @@
     {
      "q": "hair loss mounjaro",
      "clicks": 19,
-     "impr": 1245,
+     "impr": 1295,
      "ctr": 1.5,
      "pos": 5.6,
      "prev": {
       "clicks": 14,
-      "impr": 1245,
+      "impr": 1240,
       "ctr": 1.1,
-      "pos": 7.3
+      "pos": 7.2
      }
     },
     {
      "q": "does mounjaro cause hair loss",
-     "clicks": 11,
-     "impr": 3290,
-     "ctr": 0.3,
+     "clicks": 12,
+     "impr": 3416,
+     "ctr": 0.4,
      "pos": 6.3,
      "prev": {
       "clicks": 4,
-      "impr": 2824,
+      "impr": 2877,
       "ctr": 0.1,
-      "pos": 7.6
-     }
-    },
-    {
-     "q": "how to stop hair loss on mounjaro",
-     "clicks": 11,
-     "impr": 385,
-     "ctr": 2.9,
-     "pos": 3.0,
-     "prev": {
-      "clicks": 10,
-      "impr": 329,
-      "ctr": 3.0,
-      "pos": 3.0
-     }
-    },
-    {
-     "q": "hair loss on mounjaro",
-     "clicks": 9,
-     "impr": 760,
-     "ctr": 1.2,
-     "pos": 6.1,
-     "prev": {
-      "clicks": 8,
-      "impr": 625,
-      "ctr": 1.3,
       "pos": 7.5
      }
     },
     {
+     "q": "how to stop hair loss on mounjaro",
+     "clicks": 12,
+     "impr": 405,
+     "ctr": 3.0,
+     "pos": 3.0,
+     "prev": {
+      "clicks": 10,
+      "impr": 331,
+      "ctr": 3.0,
+      "pos": 2.9
+     }
+    },
+    {
+     "q": "hair loss on mounjaro",
+     "clicks": 8,
+     "impr": 790,
+     "ctr": 1.0,
+     "pos": 6.2,
+     "prev": {
+      "clicks": 9,
+      "impr": 642,
+      "ctr": 1.4,
+      "pos": 7.3
+     }
+    },
+    {
      "q": "how to prevent hair loss on mounjaro",
-     "clicks": 6,
-     "impr": 217,
-     "ctr": 2.8,
+     "clicks": 7,
+     "impr": 226,
+     "ctr": 3.1,
      "pos": 3.0,
      "prev": {
       "clicks": 7,
-      "impr": 274,
+      "impr": 267,
       "ctr": 2.6,
-      "pos": 4.0
+      "pos": 3.9
      }
     },
     {
      "q": "mounjaro and hair loss",
      "clicks": 5,
-     "impr": 1049,
+     "impr": 1093,
      "ctr": 0.5,
      "pos": 7.1,
      "prev": {
       "clicks": 2,
-      "impr": 651,
+      "impr": 672,
       "ctr": 0.3,
-      "pos": 8.2
+      "pos": 8.1
      }
     },
     {
      "q": "hair loss and mounjaro",
      "clicks": 5,
-     "impr": 508,
+     "impr": 503,
      "ctr": 1.0,
-     "pos": 3.6,
+     "pos": 3.5,
      "prev": {
       "clicks": 3,
-      "impr": 546,
+      "impr": 552,
       "ctr": 0.5,
-      "pos": 7.2
+      "pos": 7.1
      }
     },
     {
      "q": "telogen effluvium mounjaro",
      "clicks": 5,
-     "impr": 33,
-     "ctr": 15.2,
-     "pos": 2.1,
+     "impr": 36,
+     "ctr": 13.9,
+     "pos": 2.2,
      "prev": {
       "clicks": 0,
-      "impr": 26,
+      "impr": 25,
       "ctr": 0.0,
       "pos": 1.5
      }
@@ -2482,22 +2503,35 @@
     {
      "q": "mounjaro hair loss will it grow back",
      "clicks": 4,
-     "impr": 308,
+     "impr": 316,
      "ctr": 1.3,
-     "pos": 8.1,
+     "pos": 8.3,
      "prev": {
       "clicks": 0,
-      "impr": 404,
+      "impr": 405,
       "ctr": 0.0,
       "pos": 7.3
      }
     },
     {
+     "q": "how to stop hair falling out on mounjaro",
+     "clicks": 4,
+     "impr": 93,
+     "ctr": 4.3,
+     "pos": 2.3,
+     "prev": {
+      "clicks": 1,
+      "impr": 103,
+      "ctr": 1.0,
+      "pos": 2.6
+     }
+    },
+    {
      "q": "how to stop your hair falling out on mounjaro",
      "clicks": 4,
-     "impr": 22,
-     "ctr": 18.2,
-     "pos": 1.3,
+     "impr": 25,
+     "ctr": 16.0,
+     "pos": 1.4,
      "prev": {
       "clicks": 1,
       "impr": 28,
@@ -2506,42 +2540,29 @@
      }
     },
     {
-     "q": "mounjaro and hair loss in women",
-     "clicks": 3,
-     "impr": 200,
-     "ctr": 1.5,
-     "pos": 5.2,
-     "prev": {
-      "clicks": 0,
-      "impr": 162,
-      "ctr": 0.0,
-      "pos": 5.3
-     }
-    },
-    {
      "q": "hair falling out mounjaro",
      "clicks": 3,
-     "impr": 169,
-     "ctr": 1.8,
-     "pos": 5.1,
+     "impr": 173,
+     "ctr": 1.7,
+     "pos": 5.2,
      "prev": {
       "clicks": 2,
       "impr": 132,
       "ctr": 1.5,
-      "pos": 5.2
+      "pos": 5.3
      }
     },
     {
      "q": "hair thinning mounjaro",
      "clicks": 3,
-     "impr": 142,
-     "ctr": 2.1,
+     "impr": 148,
+     "ctr": 2.0,
      "pos": 4.9,
      "prev": {
-      "clicks": 1,
-      "impr": 140,
-      "ctr": 0.7,
-      "pos": 5.5
+      "clicks": 2,
+      "impr": 134,
+      "ctr": 1.5,
+      "pos": 5.6
      }
     }
    ],
@@ -2573,13 +2594,6 @@
    "label": "combat mounjaro fatigue",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 28,
-     "impr": 2557,
-     "ctr": 1.1,
-     "pos": 5.0
-    },
     {
      "d": "2026-07-10",
      "clicks": 38,
@@ -3202,104 +3216,105 @@
      "impr": 2112,
      "ctr": 1.23,
      "pos": 4.6
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 18,
+     "impr": 1871,
+     "ctr": 0.96,
+     "pos": 4.7
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 18,
+     "impr": 1740,
+     "ctr": 1.03,
+     "pos": 4.7
     }
    ],
    "queries": [
     {
      "q": "does mounjaro make you tired",
      "clicks": 140,
-     "impr": 6739,
-     "ctr": 2.1,
+     "impr": 6973,
+     "ctr": 2.0,
      "pos": 3.6,
      "prev": {
-      "clicks": 164,
-      "impr": 7251,
+      "clicks": 161,
+      "impr": 7141,
       "ctr": 2.3,
-      "pos": 4.2
+      "pos": 4.1
      }
     },
     {
      "q": "can mounjaro make you tired",
      "clicks": 32,
-     "impr": 1924,
-     "ctr": 1.7,
+     "impr": 2007,
+     "ctr": 1.6,
      "pos": 3.2,
      "prev": {
-      "clicks": 69,
-      "impr": 2276,
-      "ctr": 3.0,
+      "clicks": 65,
+      "impr": 2240,
+      "ctr": 2.9,
       "pos": 3.6
      }
     },
     {
      "q": "mounjaro fatigue",
-     "clicks": 27,
-     "impr": 1185,
-     "ctr": 2.3,
-     "pos": 5.2,
+     "clicks": 25,
+     "impr": 1203,
+     "ctr": 2.1,
+     "pos": 5.3,
      "prev": {
-      "clicks": 23,
-      "impr": 1468,
+      "clicks": 24,
+      "impr": 1459,
       "ctr": 1.6,
       "pos": 5.0
      }
     },
     {
      "q": "why does mounjaro make you tired",
-     "clicks": 20,
-     "impr": 556,
-     "ctr": 3.6,
+     "clicks": 22,
+     "impr": 561,
+     "ctr": 3.9,
      "pos": 3.4,
      "prev": {
-      "clicks": 19,
+      "clicks": 20,
       "impr": 605,
-      "ctr": 3.1,
+      "ctr": 3.3,
       "pos": 4.0
      }
     },
     {
      "q": "mounjaro tiredness",
      "clicks": 18,
-     "impr": 822,
+     "impr": 837,
      "ctr": 2.2,
      "pos": 3.5,
      "prev": {
-      "clicks": 31,
-      "impr": 854,
-      "ctr": 3.6,
-      "pos": 2.9
+      "clicks": 30,
+      "impr": 850,
+      "ctr": 3.5,
+      "pos": 2.8
      }
     },
     {
      "q": "does mounjaro cause fatigue",
      "clicks": 9,
-     "impr": 329,
+     "impr": 339,
      "ctr": 2.7,
-     "pos": 4.2,
+     "pos": 4.1,
      "prev": {
       "clicks": 10,
-      "impr": 389,
+      "impr": 388,
       "ctr": 2.6,
       "pos": 5.0
      }
     },
     {
-     "q": "does mounjaro cause tiredness",
-     "clicks": 8,
-     "impr": 169,
-     "ctr": 4.7,
-     "pos": 3.0,
-     "prev": {
-      "clicks": 4,
-      "impr": 130,
-      "ctr": 3.1,
-      "pos": 2.8
-     }
-    },
-    {
      "q": "tiredness on mounjaro",
      "clicks": 8,
-     "impr": 139,
+     "impr": 137,
      "ctr": 5.8,
      "pos": 2.0,
      "prev": {
@@ -3312,92 +3327,105 @@
     {
      "q": "is tiredness a side effect of mounjaro",
      "clicks": 7,
-     "impr": 175,
-     "ctr": 4.0,
+     "impr": 178,
+     "ctr": 3.9,
      "pos": 2.0,
      "prev": {
       "clicks": 10,
-      "impr": 235,
-      "ctr": 4.3,
-      "pos": 2.4
+      "impr": 229,
+      "ctr": 4.4,
+      "pos": 2.3
      }
     },
     {
      "q": "mounjaro and tiredness",
-     "clicks": 6,
-     "impr": 172,
-     "ctr": 3.5,
-     "pos": 2.2,
+     "clicks": 7,
+     "impr": 177,
+     "ctr": 4.0,
+     "pos": 2.3,
      "prev": {
       "clicks": 11,
-      "impr": 228,
-      "ctr": 4.8,
+      "impr": 226,
+      "ctr": 4.9,
       "pos": 2.6
+     }
+    },
+    {
+     "q": "does mounjaro cause tiredness",
+     "clicks": 7,
+     "impr": 166,
+     "ctr": 4.2,
+     "pos": 3.0,
+     "prev": {
+      "clicks": 5,
+      "impr": 131,
+      "ctr": 3.8,
+      "pos": 2.7
      }
     },
     {
      "q": "tired on mounjaro",
      "clicks": 6,
-     "impr": 141,
-     "ctr": 4.3,
-     "pos": 3.1,
+     "impr": 144,
+     "ctr": 4.2,
+     "pos": 3.2,
      "prev": {
-      "clicks": 4,
-      "impr": 168,
-      "ctr": 2.4,
+      "clicks": 5,
+      "impr": 171,
+      "ctr": 2.9,
       "pos": 2.9
      }
     },
     {
      "q": "feeling tired on mounjaro",
      "clicks": 6,
-     "impr": 129,
+     "impr": 127,
      "ctr": 4.7,
      "pos": 2.7,
      "prev": {
       "clicks": 6,
-      "impr": 158,
+      "impr": 157,
       "ctr": 3.8,
       "pos": 1.8
      }
     },
     {
-     "q": "does mounjaro fatigue go away",
-     "clicks": 5,
-     "impr": 443,
-     "ctr": 1.1,
-     "pos": 5.4,
-     "prev": {
-      "clicks": 5,
-      "impr": 433,
-      "ctr": 1.2,
-      "pos": 5.4
-     }
-    },
-    {
-     "q": "fatigue on mounjaro",
-     "clicks": 4,
-     "impr": 186,
-     "ctr": 2.2,
-     "pos": 3.3,
-     "prev": {
-      "clicks": 7,
-      "impr": 241,
-      "ctr": 2.9,
-      "pos": 3.1
-     }
-    },
-    {
      "q": "why am i so tired on mounjaro",
-     "clicks": 4,
-     "impr": 94,
-     "ctr": 4.3,
+     "clicks": 5,
+     "impr": 95,
+     "ctr": 5.3,
      "pos": 2.6,
      "prev": {
       "clicks": 6,
       "impr": 138,
       "ctr": 4.3,
       "pos": 2.1
+     }
+    },
+    {
+     "q": "does mounjaro fatigue go away",
+     "clicks": 4,
+     "impr": 446,
+     "ctr": 0.9,
+     "pos": 5.5,
+     "prev": {
+      "clicks": 6,
+      "impr": 435,
+      "ctr": 1.4,
+      "pos": 5.4
+     }
+    },
+    {
+     "q": "mounjaro and fatigue",
+     "clicks": 4,
+     "impr": 261,
+     "ctr": 1.5,
+     "pos": 4.3,
+     "prev": {
+      "clicks": 9,
+      "impr": 310,
+      "ctr": 2.9,
+      "pos": 4.4
      }
     }
    ],
@@ -3429,13 +3457,6 @@
    "label": "how long wegovy pill to work",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 46,
-     "impr": 2363,
-     "ctr": 1.95,
-     "pos": 6.9
-    },
     {
      "d": "2026-07-10",
      "clicks": 72,
@@ -4058,202 +4079,216 @@
      "impr": 2420,
      "ctr": 3.18,
      "pos": 4.7
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 85,
+     "impr": 2280,
+     "ctr": 3.73,
+     "pos": 4.4
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 89,
+     "impr": 1948,
+     "ctr": 4.57,
+     "pos": 4.6
     }
    ],
    "queries": [
     {
      "q": "do wegovy pills work",
-     "clicks": 42,
-     "impr": 529,
-     "ctr": 7.9,
-     "pos": 1.7,
+     "clicks": 44,
+     "impr": 561,
+     "ctr": 7.8,
+     "pos": 1.8,
      "prev": {
       "clicks": 52,
-      "impr": 758,
-      "ctr": 6.9,
-      "pos": 2.9
+      "impr": 730,
+      "ctr": 7.1,
+      "pos": 2.7
      }
     },
     {
      "q": "does the wegovy pill work",
-     "clicks": 41,
-     "impr": 573,
-     "ctr": 7.2,
+     "clicks": 38,
+     "impr": 580,
+     "ctr": 6.6,
      "pos": 2.5,
      "prev": {
-      "clicks": 29,
-      "impr": 814,
-      "ctr": 3.6,
-      "pos": 3.0
+      "clicks": 33,
+      "impr": 789,
+      "ctr": 4.2,
+      "pos": 2.8
      }
     },
     {
      "q": "are wegovy pills effective",
-     "clicks": 36,
-     "impr": 408,
-     "ctr": 8.8,
+     "clicks": 37,
+     "impr": 423,
+     "ctr": 8.7,
      "pos": 2.4,
      "prev": {
-      "clicks": 13,
-      "impr": 272,
-      "ctr": 4.8,
-      "pos": 2.0
+      "clicks": 15,
+      "impr": 280,
+      "ctr": 5.4,
+      "pos": 2.1
      }
     },
     {
      "q": "how long for wegovy pill to work",
-     "clicks": 29,
-     "impr": 344,
-     "ctr": 8.4,
+     "clicks": 31,
+     "impr": 351,
+     "ctr": 8.8,
      "pos": 1.1,
      "prev": {
-      "clicks": 13,
-      "impr": 491,
-      "ctr": 2.6,
+      "clicks": 14,
+      "impr": 493,
+      "ctr": 2.8,
       "pos": 1.3
      }
     },
     {
      "q": "does wegovy pill work",
-     "clicks": 28,
-     "impr": 570,
+     "clicks": 29,
+     "impr": 593,
      "ctr": 4.9,
      "pos": 2.2,
      "prev": {
-      "clicks": 39,
-      "impr": 800,
-      "ctr": 4.9,
-      "pos": 2.8
+      "clicks": 37,
+      "impr": 781,
+      "ctr": 4.7,
+      "pos": 2.7
      }
     },
     {
      "q": "how long does it take for wegovy pill to work",
-     "clicks": 26,
-     "impr": 404,
-     "ctr": 6.4,
+     "clicks": 29,
+     "impr": 406,
+     "ctr": 7.1,
      "pos": 1.2,
      "prev": {
       "clicks": 23,
-      "impr": 516,
-      "ctr": 4.5,
-      "pos": 1.3
-     }
-    },
-    {
-     "q": "do wegovy tablets work",
-     "clicks": 24,
-     "impr": 262,
-     "ctr": 9.2,
-     "pos": 1.8,
-     "prev": {
-      "clicks": 28,
-      "impr": 379,
-      "ctr": 7.4,
-      "pos": 3.1
-     }
-    },
-    {
-     "q": "when does wegovy pill start working",
-     "clicks": 21,
-     "impr": 177,
-     "ctr": 11.9,
-     "pos": 1.2,
-     "prev": {
-      "clicks": 23,
-      "impr": 287,
-      "ctr": 8.0,
+      "impr": 517,
+      "ctr": 4.4,
       "pos": 1.4
      }
     },
     {
+     "q": "do wegovy tablets work",
+     "clicks": 25,
+     "impr": 269,
+     "ctr": 9.3,
+     "pos": 1.8,
+     "prev": {
+      "clicks": 31,
+      "impr": 381,
+      "ctr": 8.1,
+      "pos": 2.9
+     }
+    },
+    {
      "q": "how long does it take for wegovy tablets to work",
-     "clicks": 20,
-     "impr": 191,
-     "ctr": 10.5,
+     "clicks": 23,
+     "impr": 194,
+     "ctr": 11.9,
      "pos": 1.2,
      "prev": {
-      "clicks": 14,
-      "impr": 235,
-      "ctr": 6.0,
+      "clicks": 15,
+      "impr": 223,
+      "ctr": 6.7,
       "pos": 1.3
      }
     },
     {
      "q": "how long does wegovy pill take to work",
-     "clicks": 19,
-     "impr": 369,
-     "ctr": 5.1,
+     "clicks": 22,
+     "impr": 372,
+     "ctr": 5.9,
      "pos": 1.2,
      "prev": {
-      "clicks": 31,
-      "impr": 519,
-      "ctr": 6.0,
+      "clicks": 29,
+      "impr": 510,
+      "ctr": 5.7,
       "pos": 1.4
      }
     },
     {
      "q": "how does wegovy pill work",
-     "clicks": 18,
-     "impr": 405,
-     "ctr": 4.4,
+     "clicks": 19,
+     "impr": 413,
+     "ctr": 4.6,
      "pos": 6.3,
      "prev": {
       "clicks": 7,
-      "impr": 151,
+      "impr": 152,
       "ctr": 4.6,
-      "pos": 3.1
+      "pos": 3.6
+     }
+    },
+    {
+     "q": "when does wegovy pill start working",
+     "clicks": 18,
+     "impr": 175,
+     "ctr": 10.3,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 26,
+      "impr": 292,
+      "ctr": 8.9,
+      "pos": 1.4
      }
     },
     {
      "q": "how long do wegovy tablets take to work",
-     "clicks": 15,
-     "impr": 148,
-     "ctr": 10.1,
+     "clicks": 18,
+     "impr": 156,
+     "ctr": 11.5,
      "pos": 1.1,
      "prev": {
       "clicks": 12,
-      "impr": 215,
-      "ctr": 5.6,
+      "impr": 209,
+      "ctr": 5.7,
+      "pos": 1.3
+     }
+    },
+    {
+     "q": "does wegovy tablets work",
+     "clicks": 15,
+     "impr": 144,
+     "ctr": 10.4,
+     "pos": 1.8,
+     "prev": {
+      "clicks": 5,
+      "impr": 183,
+      "ctr": 2.7,
+      "pos": 3.2
+     }
+    },
+    {
+     "q": "how long before wegovy pill starts working",
+     "clicks": 14,
+     "impr": 147,
+     "ctr": 9.5,
+     "pos": 1.1,
+     "prev": {
+      "clicks": 15,
+      "impr": 246,
+      "ctr": 6.1,
       "pos": 1.3
      }
     },
     {
      "q": "wegovy pill how long does it take to start working",
-     "clicks": 15,
-     "impr": 123,
-     "ctr": 12.2,
+     "clicks": 14,
+     "impr": 119,
+     "ctr": 11.8,
      "pos": 1.1,
      "prev": {
-      "clicks": 8,
-      "impr": 149,
-      "ctr": 5.4,
+      "clicks": 9,
+      "impr": 154,
+      "ctr": 5.8,
       "pos": 1.4
-     }
-    },
-    {
-     "q": "how long do wegovy pills take to work",
-     "clicks": 14,
-     "impr": 266,
-     "ctr": 5.3,
-     "pos": 1.3,
-     "prev": {
-      "clicks": 26,
-      "impr": 375,
-      "ctr": 6.9,
-      "pos": 1.4
-     }
-    },
-    {
-     "q": "does wegovy tablets work",
-     "clicks": 14,
-     "impr": 146,
-     "ctr": 9.6,
-     "pos": 1.8,
-     "prev": {
-      "clicks": 5,
-      "impr": 177,
-      "ctr": 2.8,
-      "pos": 3.4
      }
     }
    ],
@@ -4285,13 +4320,6 @@
    "label": "ask the expert wegovy pill",
    "live": "2026-09-07",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 2,
-     "impr": 134,
-     "ctr": 1.49,
-     "pos": 6.1
-    },
     {
      "d": "2026-07-10",
      "clicks": 3,
@@ -4914,28 +4942,29 @@
      "impr": 157,
      "ctr": 0.64,
      "pos": 7.5
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 3,
+     "impr": 159,
+     "ctr": 1.89,
+     "pos": 7.3
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 2,
+     "impr": 123,
+     "ctr": 1.63,
+     "pos": 8.8
     }
    ],
    "queries": [
     {
-     "q": "can i drink water before taking wegovy pill",
-     "clicks": 2,
-     "impr": 51,
-     "ctr": 3.9,
-     "pos": 7.6,
-     "prev": {
-      "clicks": 0,
-      "impr": 15,
-      "ctr": 0.0,
-      "pos": 10.1
-     }
-    },
-    {
      "q": "can you drink water before taking wegovy pill",
      "clicks": 2,
-     "impr": 41,
-     "ctr": 4.9,
-     "pos": 7.3,
+     "impr": 50,
+     "ctr": 4.0,
+     "pos": 7.6,
      "prev": {
       "clicks": 1,
       "impr": 23,
@@ -4944,24 +4973,43 @@
      }
     },
     {
-     "q": "how long to fast before wegovy pill",
-     "clicks": 1,
-     "impr": 15,
-     "ctr": 6.7,
+     "q": "can i drink water before taking wegovy pill",
+     "clicks": 2,
+     "impr": 48,
+     "ctr": 4.2,
      "pos": 7.3,
      "prev": {
       "clicks": 0,
-      "impr": 23,
+      "impr": 20,
       "ctr": 0.0,
-      "pos": 6.7
+      "pos": 10.3
+     }
+    },
+    {
+     "q": "how long to fast before wegovy pill",
+     "clicks": 1,
+     "impr": 13,
+     "ctr": 7.7,
+     "pos": 7.5,
+     "prev": {
+      "clicks": 0,
+      "impr": 25,
+      "ctr": 0.0,
+      "pos": 6.6
      }
     },
     {
      "q": "wegovy pill 8 hour fast",
      "clicks": 1,
-     "impr": 3,
-     "ctr": 33.3,
-     "pos": 1.0
+     "impr": 2,
+     "ctr": 50.0,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 1,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
     },
     {
      "q": "can i take 2 wegovy 1.5 pills",
@@ -4969,6 +5017,13 @@
      "impr": 8,
      "ctr": 0.0,
      "pos": 9.2
+    },
+    {
+     "q": "can i drink water during the night before taking wegovy pill",
+     "clicks": 0,
+     "impr": 5,
+     "ctr": 0.0,
+     "pos": 10.6
     },
     {
      "q": "can i drink water before wegovy pill",
@@ -4982,13 +5037,6 @@
       "ctr": 0.0,
       "pos": 9.0
      }
-    },
-    {
-     "q": "can i drink water during the night before taking wegovy pill",
-     "clicks": 0,
-     "impr": 3,
-     "ctr": 0.0,
-     "pos": 11.0
     },
     {
      "q": "1.5 mg wegovy pill equivalent",
@@ -5016,13 +5064,6 @@
       "ctr": 0.0,
       "pos": 8.0
      }
-    },
-    {
-     "q": "can i take wegovy pill with water only",
-     "clicks": 0,
-     "impr": 2,
-     "ctr": 0.0,
-     "pos": 5.0
     },
     {
      "q": "25mg wegovy pill",
@@ -5057,6 +5098,13 @@
      "impr": 1,
      "ctr": 0.0,
      "pos": 4.0
+    },
+    {
+     "q": "9 mg to 25 mg wegovy pill",
+     "clicks": 0,
+     "impr": 1,
+     "ctr": 0.0,
+     "pos": 1.0
     }
    ],
    "health": {
@@ -5087,13 +5135,6 @@
    "label": "wegovy pill side effects",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 74,
-     "impr": 5416,
-     "ctr": 1.37,
-     "pos": 5.0
-    },
     {
      "d": "2026-07-10",
      "clicks": 79,
@@ -5716,40 +5757,67 @@
      "impr": 1407,
      "ctr": 0.57,
      "pos": 9.1
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 10,
+     "impr": 1333,
+     "ctr": 0.75,
+     "pos": 6.9
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 7,
+     "impr": 1135,
+     "ctr": 0.62,
+     "pos": 7.0
     }
    ],
    "queries": [
     {
      "q": "wegovy pill side effects",
-     "clicks": 21,
-     "impr": 6965,
+     "clicks": 22,
+     "impr": 7159,
      "ctr": 0.3,
-     "pos": 7.0,
+     "pos": 6.9,
      "prev": {
-      "clicks": 36,
-      "impr": 9836,
-      "ctr": 0.4,
-      "pos": 7.1
+      "clicks": 34,
+      "impr": 9745,
+      "ctr": 0.3,
+      "pos": 7.2
      }
     },
     {
      "q": "wegovy pill reviews",
-     "clicks": 16,
-     "impr": 1259,
-     "ctr": 1.3,
-     "pos": 4.1,
+     "clicks": 17,
+     "impr": 1194,
+     "ctr": 1.4,
+     "pos": 3.6,
      "prev": {
-      "clicks": 52,
-      "impr": 3699,
+      "clicks": 53,
+      "impr": 3813,
       "ctr": 1.4,
       "pos": 6.6
      }
     },
     {
+     "q": "wegovy tablets side effects",
+     "clicks": 6,
+     "impr": 1336,
+     "ctr": 0.4,
+     "pos": 6.1,
+     "prev": {
+      "clicks": 12,
+      "impr": 1758,
+      "ctr": 0.7,
+      "pos": 6.1
+     }
+    },
+    {
      "q": "when do wegovy pill side effects start",
      "clicks": 6,
-     "impr": 83,
-     "ctr": 7.2,
+     "impr": 86,
+     "ctr": 7.0,
      "pos": 1.7,
      "prev": {
       "clicks": 17,
@@ -5759,66 +5827,66 @@
      }
     },
     {
-     "q": "wegovy tablets side effects",
-     "clicks": 5,
-     "impr": 1305,
-     "ctr": 0.4,
-     "pos": 6.2,
+     "q": "side effects of wegovy pill",
+     "clicks": 4,
+     "impr": 1422,
+     "ctr": 0.3,
+     "pos": 5.8,
      "prev": {
-      "clicks": 13,
-      "impr": 1783,
-      "ctr": 0.7,
-      "pos": 6.0
+      "clicks": 12,
+      "impr": 1961,
+      "ctr": 0.6,
+      "pos": 5.5
      }
     },
     {
-     "q": "side effects of wegovy pill",
+     "q": "wegovy pill 1.5 mg reviews",
      "clicks": 4,
-     "impr": 1400,
-     "ctr": 0.3,
-     "pos": 5.9,
+     "impr": 65,
+     "ctr": 6.2,
+     "pos": 2.3,
      "prev": {
-      "clicks": 11,
-      "impr": 1972,
-      "ctr": 0.6,
-      "pos": 5.4
+      "clicks": 0,
+      "impr": 53,
+      "ctr": 0.0,
+      "pos": 4.9
      }
     },
     {
      "q": "when do side effects of wegovy pill start",
      "clicks": 4,
-     "impr": 18,
-     "ctr": 22.2,
+     "impr": 17,
+     "ctr": 23.5,
      "pos": 1.8,
      "prev": {
       "clicks": 9,
       "impr": 31,
       "ctr": 29.0,
-      "pos": 2.0
+      "pos": 2.1
      }
     },
     {
-     "q": "wegovy side effects",
+     "q": "wegovy tablet side effects",
      "clicks": 3,
-     "impr": 757,
-     "ctr": 0.4,
-     "pos": 10.7,
+     "impr": 478,
+     "ctr": 0.6,
+     "pos": 6.0,
      "prev": {
-      "clicks": 13,
-      "impr": 7045,
-      "ctr": 0.2,
-      "pos": 10.0
+      "clicks": 6,
+      "impr": 721,
+      "ctr": 0.8,
+      "pos": 5.7
      }
     },
     {
      "q": "wegovy pill reviews and complaints",
      "clicks": 3,
-     "impr": 294,
+     "impr": 304,
      "ctr": 1.0,
      "pos": 8.5,
      "prev": {
       "clicks": 8,
-      "impr": 412,
+      "impr": 415,
       "ctr": 1.9,
       "pos": 8.6
      }
@@ -5826,12 +5894,12 @@
     {
      "q": "wegovy pill reviews uk",
      "clicks": 3,
-     "impr": 285,
+     "impr": 268,
      "ctr": 1.1,
      "pos": 5.9,
      "prev": {
       "clicks": 8,
-      "impr": 1144,
+      "impr": 1165,
       "ctr": 0.7,
       "pos": 8.1
      }
@@ -5841,75 +5909,62 @@
      "clicks": 3,
      "impr": 147,
      "ctr": 2.0,
-     "pos": 3.6,
+     "pos": 3.4,
      "prev": {
       "clicks": 7,
-      "impr": 532,
+      "impr": 535,
       "ctr": 1.3,
-      "pos": 6.6
+      "pos": 6.5
      }
     },
     {
-     "q": "wegovy pill",
-     "clicks": 3,
-     "impr": 85,
-     "ctr": 3.5,
-     "pos": 21.4,
-     "prev": {
-      "clicks": 4,
-      "impr": 704,
-      "ctr": 0.6,
-      "pos": 15.7
-     }
-    },
-    {
-     "q": "wegovy pill 1.5 mg reviews",
-     "clicks": 3,
-     "impr": 63,
-     "ctr": 4.8,
-     "pos": 2.4,
-     "prev": {
-      "clicks": 0,
-      "impr": 51,
-      "ctr": 0.0,
-      "pos": 4.9
-     }
-    },
-    {
-     "q": "wegovy tablet side effects",
+     "q": "wegovy side effects",
      "clicks": 2,
-     "impr": 472,
-     "ctr": 0.4,
-     "pos": 6.1,
+     "impr": 758,
+     "ctr": 0.3,
+     "pos": 11.0,
      "prev": {
-      "clicks": 6,
-      "impr": 725,
-      "ctr": 0.8,
-      "pos": 5.6
+      "clicks": 14,
+      "impr": 6432,
+      "ctr": 0.2,
+      "pos": 9.9
      }
     },
     {
      "q": "side effects of wegovy tablets",
      "clicks": 2,
-     "impr": 363,
-     "ctr": 0.6,
-     "pos": 5.3,
+     "impr": 370,
+     "ctr": 0.5,
+     "pos": 5.2,
      "prev": {
       "clicks": 1,
-      "impr": 471,
+      "impr": 460,
       "ctr": 0.2,
       "pos": 5.1
      }
     },
     {
+     "q": "wegovy tablet reviews",
+     "clicks": 2,
+     "impr": 244,
+     "ctr": 0.8,
+     "pos": 5.9,
+     "prev": {
+      "clicks": 7,
+      "impr": 555,
+      "ctr": 1.3,
+      "pos": 6.6
+     }
+    },
+    {
      "q": "wegovy tablets side effects in women",
      "clicks": 2,
-     "impr": 181,
+     "impr": 182,
      "ctr": 1.1,
-     "pos": 7.9,
+     "pos": 8.0,
      "prev": {
       "clicks": 0,
-      "impr": 292,
+      "impr": 295,
       "ctr": 0.0,
       "pos": 7.5
      }
@@ -5943,13 +5998,6 @@
    "label": "can you drink alcohol on mounjaro",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 3,
-     "impr": 1743,
-     "ctr": 0.17,
-     "pos": 9.1
-    },
     {
      "d": "2026-07-10",
      "clicks": 8,
@@ -6572,18 +6620,32 @@
      "impr": 640,
      "ctr": 0.31,
      "pos": 8.9
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 3,
+     "impr": 580,
+     "ctr": 0.52,
+     "pos": 8.1
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 1,
+     "impr": 650,
+     "ctr": 0.15,
+     "pos": 7.8
     }
    ],
    "queries": [
     {
      "q": "can you drink alcohol on mounjaro",
      "clicks": 4,
-     "impr": 1284,
+     "impr": 1318,
      "ctr": 0.3,
      "pos": 9.7,
      "prev": {
       "clicks": 0,
-      "impr": 1532,
+      "impr": 1544,
       "ctr": 0.0,
       "pos": 9.5
      }
@@ -6591,38 +6653,51 @@
     {
      "q": "can you drink wine on mounjaro",
      "clicks": 1,
-     "impr": 123,
+     "impr": 128,
      "ctr": 0.8,
-     "pos": 8.3,
+     "pos": 8.2,
      "prev": {
       "clicks": 0,
-      "impr": 86,
+      "impr": 82,
       "ctr": 0.0,
-      "pos": 9.1
+      "pos": 9.2
      }
     },
     {
      "q": "can i drink alcohol while taking mounjaro",
      "clicks": 1,
-     "impr": 59,
-     "ctr": 1.7,
-     "pos": 8.5,
+     "impr": 63,
+     "ctr": 1.6,
+     "pos": 8.2,
      "prev": {
       "clicks": 1,
-      "impr": 52,
+      "impr": 54,
       "ctr": 1.9,
       "pos": 9.1
      }
     },
     {
-     "q": "mounjaro i\u011fne kullan\u0131rken alkol al\u0131n\u0131r m\u0131",
+     "q": "can you drink alcohol on manjaro",
      "clicks": 1,
-     "impr": 47,
-     "ctr": 2.1,
-     "pos": 10.2,
+     "impr": 60,
+     "ctr": 1.7,
+     "pos": 5.5,
      "prev": {
       "clicks": 0,
       "impr": 94,
+      "ctr": 0.0,
+      "pos": 7.4
+     }
+    },
+    {
+     "q": "mounjaro i\u011fne kullan\u0131rken alkol al\u0131n\u0131r m\u0131",
+     "clicks": 1,
+     "impr": 52,
+     "ctr": 1.9,
+     "pos": 10.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 91,
       "ctr": 0.0,
       "pos": 9.8
      }
@@ -6656,9 +6731,9 @@
     {
      "q": "when taking mounjaro can you drink alcohol",
      "clicks": 1,
-     "impr": 15,
-     "ctr": 6.7,
-     "pos": 5.0,
+     "impr": 16,
+     "ctr": 6.2,
+     "pos": 4.8,
      "prev": {
       "clicks": 0,
       "impr": 12,
@@ -6667,16 +6742,29 @@
      }
     },
     {
+     "q": "can an alcoholic take mounjaro",
+     "clicks": 1,
+     "impr": 8,
+     "ctr": 12.5,
+     "pos": 9.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 49,
+      "ctr": 0.0,
+      "pos": 10.0
+     }
+    },
+    {
      "q": "does mounjaro affect alcohol absorption",
      "clicks": 1,
-     "impr": 11,
-     "ctr": 9.1,
+     "impr": 8,
+     "ctr": 12.5,
      "pos": 9.2,
      "prev": {
       "clicks": 0,
-      "impr": 8,
+      "impr": 11,
       "ctr": 0.0,
-      "pos": 10.0
+      "pos": 9.7
      }
     },
     {
@@ -6695,9 +6783,15 @@
     {
      "q": "alcohol",
      "clicks": 1,
-     "impr": 3,
-     "ctr": 33.3,
-     "pos": 4.0
+     "impr": 2,
+     "ctr": 50.0,
+     "pos": 4.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 1,
+      "ctr": 0.0,
+      "pos": 4.0
+     }
     },
     {
      "q": "does alcohol affect weight loss on mounjaro",
@@ -6731,26 +6825,6 @@
       "ctr": 0.0,
       "pos": 10.2
      }
-    },
-    {
-     "q": "%nhs tirzepatide alcohol",
-     "clicks": 0,
-     "impr": 2,
-     "ctr": 0.0,
-     "pos": 11.0,
-     "prev": {
-      "clicks": 0,
-      "impr": 5,
-      "ctr": 0.0,
-      "pos": 9.2
-     }
-    },
-    {
-     "q": "%site.nhs.uk tirzepatide alcohol",
-     "clicks": 0,
-     "impr": 2,
-     "ctr": 0.0,
-     "pos": 10.0
     }
    ],
    "health": {
@@ -6781,13 +6855,6 @@
    "label": "mounjaro supplements",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 18,
-     "impr": 1522,
-     "ctr": 1.18,
-     "pos": 6.7
-    },
     {
      "d": "2026-07-10",
      "clicks": 8,
@@ -7410,31 +7477,45 @@
      "impr": 1203,
      "ctr": 0.33,
      "pos": 6.4
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 8,
+     "impr": 1023,
+     "ctr": 0.78,
+     "pos": 6.5
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 5,
+     "impr": 1026,
+     "ctr": 0.49,
+     "pos": 6.9
     }
    ],
    "queries": [
     {
      "q": "mounjaro supplement",
      "clicks": 6,
-     "impr": 82,
-     "ctr": 7.3,
+     "impr": 83,
+     "ctr": 7.2,
      "pos": 4.9,
      "prev": {
       "clicks": 3,
-      "impr": 94,
-      "ctr": 3.2,
-      "pos": 4.9
+      "impr": 88,
+      "ctr": 3.4,
+      "pos": 4.8
      }
     },
     {
      "q": "best vitamins to take while on mounjaro",
      "clicks": 5,
-     "impr": 94,
-     "ctr": 5.3,
-     "pos": 6.0,
+     "impr": 96,
+     "ctr": 5.2,
+     "pos": 6.2,
      "prev": {
       "clicks": 1,
-      "impr": 109,
+      "impr": 111,
       "ctr": 0.9,
       "pos": 6.9
      }
@@ -7444,10 +7525,10 @@
      "clicks": 3,
      "impr": 129,
      "ctr": 2.3,
-     "pos": 8.5,
+     "pos": 8.6,
      "prev": {
       "clicks": 1,
-      "impr": 246,
+      "impr": 247,
       "ctr": 0.4,
       "pos": 7.8
      }
@@ -7455,14 +7536,27 @@
     {
      "q": "what vitamins should i take with mounjaro",
      "clicks": 2,
-     "impr": 171,
-     "ctr": 1.2,
-     "pos": 7.1,
+     "impr": 177,
+     "ctr": 1.1,
+     "pos": 6.9,
      "prev": {
       "clicks": 2,
       "impr": 225,
       "ctr": 0.9,
-      "pos": 8.0
+      "pos": 8.1
+     }
+    },
+    {
+     "q": "best multivitamin while on mounjaro",
+     "clicks": 2,
+     "impr": 133,
+     "ctr": 1.5,
+     "pos": 7.6,
+     "prev": {
+      "clicks": 1,
+      "impr": 136,
+      "ctr": 0.7,
+      "pos": 8.6
      }
     },
     {
@@ -7470,38 +7564,51 @@
      "clicks": 2,
      "impr": 126,
      "ctr": 1.6,
-     "pos": 7.4,
+     "pos": 7.5,
      "prev": {
       "clicks": 1,
-      "impr": 175,
+      "impr": 170,
       "ctr": 0.6,
-      "pos": 9.9
-     }
-    },
-    {
-     "q": "best multivitamin while on mounjaro",
-     "clicks": 2,
-     "impr": 123,
-     "ctr": 1.6,
-     "pos": 7.6,
-     "prev": {
-      "clicks": 1,
-      "impr": 140,
-      "ctr": 0.7,
-      "pos": 8.7
+      "pos": 9.7
      }
     },
     {
      "q": "vitamins for mounjaro",
      "clicks": 2,
-     "impr": 104,
-     "ctr": 1.9,
+     "impr": 98,
+     "ctr": 2.0,
      "pos": 8.7,
      "prev": {
+      "clicks": 0,
+      "impr": 181,
+      "ctr": 0.0,
+      "pos": 9.8
+     }
+    },
+    {
+     "q": "what supplements should i take on mounjaro uk",
+     "clicks": 2,
+     "impr": 60,
+     "ctr": 3.3,
+     "pos": 7.4,
+     "prev": {
       "clicks": 1,
-      "impr": 171,
-      "ctr": 0.6,
-      "pos": 9.7
+      "impr": 34,
+      "ctr": 2.9,
+      "pos": 10.3
+     }
+    },
+    {
+     "q": "can you take magnesium with mounjaro",
+     "clicks": 2,
+     "impr": 47,
+     "ctr": 4.3,
+     "pos": 2.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 25,
+      "ctr": 4.0,
+      "pos": 1.8
      }
     },
     {
@@ -7512,30 +7619,30 @@
      "pos": 2.3,
      "prev": {
       "clicks": 0,
-      "impr": 25,
+      "impr": 27,
       "ctr": 0.0,
-      "pos": 4.4
+      "pos": 4.1
      }
     },
     {
      "q": "mounjaro vitamins to take",
      "clicks": 2,
-     "impr": 33,
-     "ctr": 6.1,
-     "pos": 4.8,
+     "impr": 31,
+     "ctr": 6.5,
+     "pos": 4.4,
      "prev": {
       "clicks": 0,
-      "impr": 33,
+      "impr": 36,
       "ctr": 0.0,
-      "pos": 6.2
+      "pos": 6.4
      }
     },
     {
      "q": "magnesium glycinate with mounjaro",
      "clicks": 2,
-     "impr": 17,
-     "ctr": 11.8,
-     "pos": 3.0,
+     "impr": 20,
+     "ctr": 10.0,
+     "pos": 2.9,
      "prev": {
       "clicks": 1,
       "impr": 9,
@@ -7544,42 +7651,16 @@
      }
     },
     {
-     "q": "best supplements to take while on mounjaro",
-     "clicks": 1,
-     "impr": 395,
-     "ctr": 0.3,
-     "pos": 8.6,
-     "prev": {
-      "clicks": 0,
-      "impr": 315,
-      "ctr": 0.0,
-      "pos": 9.1
-     }
-    },
-    {
-     "q": "best vitamins to take on mounjaro",
-     "clicks": 1,
-     "impr": 60,
-     "ctr": 1.7,
-     "pos": 7.0,
-     "prev": {
-      "clicks": 0,
-      "impr": 72,
-      "ctr": 0.0,
-      "pos": 7.3
-     }
-    },
-    {
      "q": "best supplements when on mounjaro",
      "clicks": 1,
-     "impr": 52,
-     "ctr": 1.9,
-     "pos": 8.9,
+     "impr": 56,
+     "ctr": 1.8,
+     "pos": 9.0,
      "prev": {
       "clicks": 1,
-      "impr": 41,
+      "impr": 42,
       "ctr": 2.4,
-      "pos": 9.4
+      "pos": 9.2
      }
     },
     {
@@ -7587,10 +7668,10 @@
      "clicks": 1,
      "impr": 48,
      "ctr": 2.1,
-     "pos": 8.6,
+     "pos": 8.4,
      "prev": {
       "clicks": 0,
-      "impr": 64,
+      "impr": 66,
       "ctr": 0.0,
       "pos": 9.6
      }
@@ -7598,14 +7679,14 @@
     {
      "q": "best supplements while on mounjaro",
      "clicks": 1,
-     "impr": 28,
-     "ctr": 3.6,
-     "pos": 7.5,
+     "impr": 26,
+     "ctr": 3.8,
+     "pos": 7.3,
      "prev": {
       "clicks": 0,
-      "impr": 46,
+      "impr": 49,
       "ctr": 0.0,
-      "pos": 10.5
+      "pos": 10.3
      }
     }
    ],
@@ -7637,13 +7718,6 @@
    "label": "how long can you take lymecycline for",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 8,
-     "impr": 1130,
-     "ctr": 0.71,
-     "pos": 8.3
-    },
     {
      "d": "2026-07-10",
      "clicks": 4,
@@ -8266,41 +8340,55 @@
      "impr": 916,
      "ctr": 0.44,
      "pos": 7.9
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 6,
+     "impr": 922,
+     "ctr": 0.65,
+     "pos": 8.4
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 6,
+     "impr": 860,
+     "ctr": 0.7,
+     "pos": 8.1
     }
    ],
    "queries": [
     {
+     "q": "does acne come back after lymecycline",
+     "clicks": 8,
+     "impr": 134,
+     "ctr": 6.0,
+     "pos": 2.3,
+     "prev": {
+      "clicks": 8,
+      "impr": 190,
+      "ctr": 4.2,
+      "pos": 2.2
+     }
+    },
+    {
      "q": "how long can you take lymecycline for",
      "clicks": 7,
-     "impr": 194,
+     "impr": 196,
      "ctr": 3.6,
-     "pos": 2.4,
+     "pos": 2.5,
      "prev": {
       "clicks": 7,
-      "impr": 263,
+      "impr": 258,
       "ctr": 2.7,
       "pos": 2.8
      }
     },
     {
-     "q": "does acne come back after lymecycline",
-     "clicks": 7,
-     "impr": 133,
-     "ctr": 5.3,
-     "pos": 2.4,
-     "prev": {
-      "clicks": 9,
-      "impr": 188,
-      "ctr": 4.8,
-      "pos": 2.2
-     }
-    },
-    {
      "q": "can you take lymecycline long term",
      "clicks": 5,
-     "impr": 106,
-     "ctr": 4.7,
-     "pos": 1.9,
+     "impr": 113,
+     "ctr": 4.4,
+     "pos": 2.0,
      "prev": {
       "clicks": 1,
       "impr": 78,
@@ -8311,14 +8399,14 @@
     {
      "q": "taking lymecycline for years",
      "clicks": 3,
-     "impr": 70,
-     "ctr": 4.3,
-     "pos": 3.1,
+     "impr": 77,
+     "ctr": 3.9,
+     "pos": 3.3,
      "prev": {
       "clicks": 4,
-      "impr": 167,
+      "impr": 166,
       "ctr": 2.4,
-      "pos": 3.1
+      "pos": 3.2
      }
     },
     {
@@ -8329,134 +8417,140 @@
      "pos": 1.6,
      "prev": {
       "clicks": 1,
-      "impr": 66,
-      "ctr": 1.5,
-      "pos": 2.3
+      "impr": 63,
+      "ctr": 1.6,
+      "pos": 2.1
      }
     },
     {
      "q": "lymecycline",
      "clicks": 2,
-     "impr": 500,
+     "impr": 517,
      "ctr": 0.4,
-     "pos": 13.3,
+     "pos": 13.4,
      "prev": {
       "clicks": 0,
-      "impr": 556,
+      "impr": 550,
       "ctr": 0.0,
-      "pos": 16.1
+      "pos": 16.2
      }
     },
     {
-     "q": "lymecycline for acne",
+     "q": "how long to take lymecycline for acne",
      "clicks": 2,
-     "impr": 169,
-     "ctr": 1.2,
-     "pos": 10.7,
+     "impr": 70,
+     "ctr": 2.9,
+     "pos": 2.3,
      "prev": {
-      "clicks": 2,
-      "impr": 318,
-      "ctr": 0.6,
-      "pos": 9.6
+      "clicks": 5,
+      "impr": 117,
+      "ctr": 4.3,
+      "pos": 2.3
      }
     },
     {
      "q": "is it safe to take lymecycline long term",
      "clicks": 2,
-     "impr": 59,
-     "ctr": 3.4,
-     "pos": 2.0,
+     "impr": 61,
+     "ctr": 3.3,
+     "pos": 2.1,
      "prev": {
       "clicks": 2,
-      "impr": 84,
-      "ctr": 2.4,
+      "impr": 79,
+      "ctr": 2.5,
       "pos": 2.5
      }
     },
     {
      "q": "how long should you take lymecycline for",
      "clicks": 2,
-     "impr": 27,
-     "ctr": 7.4,
-     "pos": 1.7,
+     "impr": 26,
+     "ctr": 7.7,
+     "pos": 1.8,
      "prev": {
       "clicks": 2,
-      "impr": 21,
-      "ctr": 9.5,
-      "pos": 2.0
+      "impr": 23,
+      "ctr": 8.7,
+      "pos": 1.9
      }
     },
     {
      "q": "how long can i take lymecycline for",
      "clicks": 2,
-     "impr": 19,
-     "ctr": 10.5,
-     "pos": 1.6,
+     "impr": 20,
+     "ctr": 10.0,
+     "pos": 1.9,
      "prev": {
       "clicks": 0,
-      "impr": 14,
+      "impr": 15,
       "ctr": 0.0,
+      "pos": 2.1
+     }
+    },
+    {
+     "q": "what happens when you stop taking lymecycline",
+     "clicks": 2,
+     "impr": 14,
+     "ctr": 14.3,
+     "pos": 2.7,
+     "prev": {
+      "clicks": 1,
+      "impr": 12,
+      "ctr": 8.3,
       "pos": 2.1
      }
     },
     {
      "q": "lymecycline duration for acne",
      "clicks": 2,
-     "impr": 14,
-     "ctr": 14.3,
-     "pos": 2.0,
+     "impr": 13,
+     "ctr": 15.4,
+     "pos": 2.1,
      "prev": {
       "clicks": 0,
-      "impr": 12,
+      "impr": 13,
       "ctr": 0.0,
       "pos": 1.0
      }
     },
     {
-     "q": "how long to take lymecycline for acne",
-     "clicks": 1,
-     "impr": 70,
-     "ctr": 1.4,
-     "pos": 2.2,
-     "prev": {
-      "clicks": 5,
-      "impr": 114,
-      "ctr": 4.4,
-      "pos": 2.3
-     }
-    },
-    {
      "q": "how long can you take lymecycline for acne",
      "clicks": 1,
-     "impr": 59,
-     "ctr": 1.7,
-     "pos": 2.0,
+     "impr": 54,
+     "ctr": 1.9,
+     "pos": 2.2,
      "prev": {
       "clicks": 1,
-      "impr": 83,
-      "ctr": 1.2,
+      "impr": 91,
+      "ctr": 1.1,
       "pos": 2.0
      }
     },
     {
      "q": "how long should i take lymecycline for acne",
      "clicks": 1,
-     "impr": 39,
-     "ctr": 2.6,
-     "pos": 1.8,
+     "impr": 42,
+     "ctr": 2.4,
+     "pos": 1.9,
      "prev": {
       "clicks": 1,
-      "impr": 90,
+      "impr": 89,
       "ctr": 1.1,
       "pos": 2.5
      }
     },
     {
-     "q": "how many lymecycline can you take a day",
+     "q": "how long do you take lymecycline for acne",
      "clicks": 1,
      "impr": 16,
      "ctr": 6.2,
-     "pos": 6.9
+     "pos": 1.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 3,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
     }
    ],
    "health": {
@@ -8487,13 +8581,6 @@
    "label": "pill straight after sex pregnancy",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 7,
-     "impr": 1694,
-     "ctr": 0.41,
-     "pos": 8.0
-    },
     {
      "d": "2026-07-10",
      "clicks": 12,
@@ -9116,20 +9203,34 @@
      "impr": 1472,
      "ctr": 0.54,
      "pos": 7.7
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 6,
+     "impr": 1214,
+     "ctr": 0.49,
+     "pos": 8.1
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 7,
+     "impr": 1299,
+     "ctr": 0.54,
+     "pos": 7.9
     }
    ],
    "queries": [
     {
-     "q": "can you get pregnant while using femiplan",
+     "q": "will i get pregnant if i have unprotected sex after taking contraceptive pills",
      "clicks": 1,
-     "impr": 17,
-     "ctr": 5.9,
-     "pos": 10.4,
+     "impr": 7,
+     "ctr": 14.3,
+     "pos": 4.9,
      "prev": {
       "clicks": 0,
-      "impr": 2,
+      "impr": 1,
       "ctr": 0.0,
-      "pos": 10.5
+      "pos": 1.0
      }
     },
     {
@@ -9156,9 +9257,9 @@
     {
      "q": "can i get pregnant while taking zinnia f",
      "clicks": 0,
-     "impr": 33,
+     "impr": 39,
      "ctr": 0.0,
-     "pos": 5.4,
+     "pos": 5.7,
      "prev": {
       "clicks": 0,
       "impr": 8,
@@ -9169,9 +9270,15 @@
     {
      "q": "can i get pregnant if i had unprotected sex 2 days before my.owriod while.on birth control",
      "clicks": 0,
-     "impr": 16,
+     "impr": 14,
      "ctr": 0.0,
-     "pos": 9.9
+     "pos": 10.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 9.0
+     }
     },
     {
      "q": "can i get pregnant while using femiplan pills",
@@ -9201,37 +9308,18 @@
      "pos": 10.7
     },
     {
-     "q": "can i get pregnant after taking levonorgestrel",
-     "clicks": 0,
-     "impr": 4,
-     "ctr": 0.0,
-     "pos": 37.2,
-     "prev": {
-      "clicks": 0,
-      "impr": 2,
-      "ctr": 0.0,
-      "pos": 49.0
-     }
-    },
-    {
-     "q": "can i get off of birth control after having s",
-     "clicks": 0,
-     "impr": 3,
-     "ctr": 0.0,
-     "pos": 8.0,
-     "prev": {
-      "clicks": 0,
-      "impr": 4,
-      "ctr": 0.0,
-      "pos": 8.2
-     }
-    },
-    {
      "q": "can i get pregnant on microgynon 30",
      "clicks": 0,
      "impr": 3,
      "ctr": 0.0,
      "pos": 36.0
+    },
+    {
+     "q": "can he cum inside me?",
+     "clicks": 0,
+     "impr": 2,
+     "ctr": 0.0,
+     "pos": 6.0
     },
     {
      "q": "can i get pregnant while on femiplan pills",
@@ -9259,6 +9347,13 @@
      "impr": 1,
      "ctr": 0.0,
      "pos": 5.0
+    },
+    {
+     "q": "after how long does femiplan start working",
+     "clicks": 0,
+     "impr": 1,
+     "ctr": 0.0,
+     "pos": 3.0
     }
    ],
    "health": {
@@ -9289,13 +9384,6 @@
    "label": "mounjaro vs wegovy",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 60,
-     "impr": 1174,
-     "ctr": 5.11,
-     "pos": 13.3
-    },
     {
      "d": "2026-07-10",
      "clicks": 29,
@@ -9918,20 +10006,47 @@
      "impr": 1136,
      "ctr": 0.44,
      "pos": 11.7
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 11,
+     "impr": 917,
+     "ctr": 1.2,
+     "pos": 13.6
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 4,
+     "impr": 1170,
+     "ctr": 0.34,
+     "pos": 11.3
     }
    ],
    "queries": [
     {
      "q": "wegovy doses vs mounjaro",
      "clicks": 6,
-     "impr": 47,
-     "ctr": 12.8,
-     "pos": 2.3,
+     "impr": 52,
+     "ctr": 11.5,
+     "pos": 2.4,
      "prev": {
       "clicks": 15,
-      "impr": 32,
-      "ctr": 46.9,
+      "impr": 33,
+      "ctr": 45.5,
       "pos": 1.3
+     }
+    },
+    {
+     "q": "wegovy dosage vs mounjaro",
+     "clicks": 4,
+     "impr": 44,
+     "ctr": 9.1,
+     "pos": 2.0,
+     "prev": {
+      "clicks": 7,
+      "impr": 41,
+      "ctr": 17.1,
+      "pos": 2.5
      }
     },
     {
@@ -9939,37 +10054,24 @@
      "clicks": 3,
      "impr": 62,
      "ctr": 4.8,
-     "pos": 5.2,
+     "pos": 5.5,
      "prev": {
       "clicks": 2,
-      "impr": 94,
+      "impr": 95,
       "ctr": 2.1,
       "pos": 1.4
      }
     },
     {
-     "q": "wegovy dosage vs mounjaro",
-     "clicks": 3,
-     "impr": 44,
-     "ctr": 6.8,
-     "pos": 2.4,
-     "prev": {
-      "clicks": 8,
-      "impr": 40,
-      "ctr": 20.0,
-      "pos": 2.1
-     }
-    },
-    {
      "q": "mounjaro vs wegovy doses",
      "clicks": 3,
-     "impr": 37,
-     "ctr": 8.1,
+     "impr": 40,
+     "ctr": 7.5,
      "pos": 2.1,
      "prev": {
       "clicks": 1,
-      "impr": 36,
-      "ctr": 2.8,
+      "impr": 35,
+      "ctr": 2.9,
       "pos": 1.3
      }
     },
@@ -9978,36 +10080,36 @@
      "clicks": 3,
      "impr": 23,
      "ctr": 13.0,
-     "pos": 2.1,
+     "pos": 2.2,
      "prev": {
       "clicks": 2,
-      "impr": 35,
-      "ctr": 5.7,
-      "pos": 3.2
+      "impr": 36,
+      "ctr": 5.6,
+      "pos": 3.1
      }
     },
     {
      "q": "wegovy vs mounjaro dose",
      "clicks": 3,
-     "impr": 17,
-     "ctr": 17.6,
+     "impr": 16,
+     "ctr": 18.8,
      "pos": 1.4,
      "prev": {
       "clicks": 2,
-      "impr": 23,
-      "ctr": 8.7,
+      "impr": 24,
+      "ctr": 8.3,
       "pos": 1.2
      }
     },
     {
      "q": "wegovy vs mounjaro dosage",
      "clicks": 2,
-     "impr": 59,
-     "ctr": 3.4,
+     "impr": 60,
+     "ctr": 3.3,
      "pos": 1.6,
      "prev": {
       "clicks": 2,
-      "impr": 72,
+      "impr": 71,
       "ctr": 2.8,
       "pos": 1.4
      }
@@ -10015,61 +10117,61 @@
     {
      "q": "wegovy and mounjaro dose comparison",
      "clicks": 2,
-     "impr": 50,
-     "ctr": 4.0,
-     "pos": 6.6,
+     "impr": 53,
+     "ctr": 3.8,
+     "pos": 6.4,
      "prev": {
       "clicks": 0,
-      "impr": 30,
+      "impr": 31,
       "ctr": 0.0,
-      "pos": 7.3
+      "pos": 7.2
      }
     },
     {
      "q": "wegovy dose vs mounjaro",
      "clicks": 2,
-     "impr": 43,
-     "ctr": 4.7,
+     "impr": 45,
+     "ctr": 4.4,
      "pos": 1.4,
      "prev": {
-      "clicks": 5,
-      "impr": 55,
-      "ctr": 9.1,
+      "clicks": 3,
+      "impr": 53,
+      "ctr": 5.7,
       "pos": 1.4
      }
     },
     {
      "q": "wegovy dosage compared to mounjaro",
      "clicks": 2,
-     "impr": 30,
-     "ctr": 6.7,
-     "pos": 11.7,
+     "impr": 29,
+     "ctr": 6.9,
+     "pos": 12.0,
      "prev": {
       "clicks": 1,
-      "impr": 33,
-      "ctr": 3.0,
-      "pos": 3.8
+      "impr": 35,
+      "ctr": 2.9,
+      "pos": 3.7
      }
     },
     {
      "q": "wegovy v mounjaro doses",
      "clicks": 2,
-     "impr": 26,
-     "ctr": 7.7,
+     "impr": 24,
+     "ctr": 8.3,
      "pos": 1.3,
      "prev": {
-      "clicks": 18,
-      "impr": 49,
-      "ctr": 36.7,
-      "pos": 1.4
+      "clicks": 17,
+      "impr": 48,
+      "ctr": 35.4,
+      "pos": 1.5
      }
     },
     {
      "q": "mounjaro 5mg wegovy equivalent",
      "clicks": 2,
-     "impr": 18,
-     "ctr": 11.1,
-     "pos": 3.3,
+     "impr": 19,
+     "ctr": 10.5,
+     "pos": 3.2,
      "prev": {
       "clicks": 0,
       "impr": 12,
@@ -10080,9 +10182,9 @@
     {
      "q": "mounjaro 5mg vs wegovy 2.4 mg",
      "clicks": 2,
-     "impr": 16,
-     "ctr": 12.5,
-     "pos": 2.6,
+     "impr": 18,
+     "ctr": 11.1,
+     "pos": 2.5,
      "prev": {
       "clicks": 0,
       "impr": 15,
@@ -10091,29 +10193,29 @@
      }
     },
     {
+     "q": "7.5mg mounjaro equivalent to wegovy",
+     "clicks": 2,
+     "impr": 14,
+     "ctr": 14.3,
+     "pos": 1.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 8,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
      "q": "7.5 mounjaro equivalent to wegovy",
      "clicks": 2,
-     "impr": 10,
-     "ctr": 20.0,
+     "impr": 13,
+     "ctr": 15.4,
      "pos": 3.4,
      "prev": {
       "clicks": 0,
       "impr": 4,
       "ctr": 0.0,
       "pos": 1.0
-     }
-    },
-    {
-     "q": "1mg wegovy equivalent to mounjaro",
-     "clicks": 1,
-     "impr": 101,
-     "ctr": 1.0,
-     "pos": 6.9,
-     "prev": {
-      "clicks": 1,
-      "impr": 32,
-      "ctr": 3.1,
-      "pos": 2.2
      }
     }
    ],
@@ -10145,13 +10247,6 @@
    "label": "wegovy pills vs mounjaro",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 47,
-     "impr": 1184,
-     "ctr": 3.97,
-     "pos": 11.1
-    },
     {
      "d": "2026-07-10",
      "clicks": 37,
@@ -10774,176 +10869,177 @@
      "impr": 867,
      "ctr": 1.15,
      "pos": 9.5
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 13,
+     "impr": 821,
+     "ctr": 1.58,
+     "pos": 8.4
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 12,
+     "impr": 717,
+     "ctr": 1.67,
+     "pos": 9.1
     }
    ],
    "queries": [
     {
      "q": "wegovy pill vs mounjaro injection",
-     "clicks": 27,
-     "impr": 276,
-     "ctr": 9.8,
+     "clicks": 28,
+     "impr": 275,
+     "ctr": 10.2,
      "pos": 1.4,
      "prev": {
       "clicks": 23,
-      "impr": 432,
-      "ctr": 5.3,
+      "impr": 419,
+      "ctr": 5.5,
       "pos": 1.2
      }
     },
     {
      "q": "wegovy pill vs mounjaro",
-     "clicks": 20,
-     "impr": 482,
-     "ctr": 4.1,
+     "clicks": 24,
+     "impr": 500,
+     "ctr": 4.8,
      "pos": 1.8,
      "prev": {
-      "clicks": 36,
-      "impr": 673,
+      "clicks": 35,
+      "impr": 664,
       "ctr": 5.3,
       "pos": 2.1
      }
     },
     {
      "q": "wegovy pill v mounjaro",
-     "clicks": 10,
-     "impr": 88,
-     "ctr": 11.4,
+     "clicks": 11,
+     "impr": 85,
+     "ctr": 12.9,
      "pos": 1.0,
      "prev": {
       "clicks": 11,
-      "impr": 152,
-      "ctr": 7.2,
+      "impr": 149,
+      "ctr": 7.4,
       "pos": 1.1
      }
     },
     {
      "q": "wegovy tablets vs mounjaro",
      "clicks": 8,
-     "impr": 98,
-     "ctr": 8.2,
+     "impr": 103,
+     "ctr": 7.8,
      "pos": 1.4,
      "prev": {
       "clicks": 10,
-      "impr": 132,
-      "ctr": 7.6,
-      "pos": 1.5
-     }
-    },
-    {
-     "q": "wegovy pill versus mounjaro",
-     "clicks": 8,
-     "impr": 28,
-     "ctr": 28.6,
-     "pos": 1.2,
-     "prev": {
-      "clicks": 4,
-      "impr": 45,
-      "ctr": 8.9,
-      "pos": 1.3
+      "impr": 126,
+      "ctr": 7.9,
+      "pos": 1.4
      }
     },
     {
      "q": "wegovy pill or mounjaro",
      "clicks": 7,
-     "impr": 100,
-     "ctr": 7.0,
+     "impr": 102,
+     "ctr": 6.9,
      "pos": 1.4,
      "prev": {
       "clicks": 14,
-      "impr": 125,
-      "ctr": 11.2,
+      "impr": 120,
+      "ctr": 11.7,
       "pos": 1.3
      }
     },
     {
      "q": "wegovy pills vs mounjaro injections",
      "clicks": 7,
-     "impr": 36,
-     "ctr": 19.4,
+     "impr": 38,
+     "ctr": 18.4,
      "pos": 1.0,
      "prev": {
       "clicks": 2,
+      "impr": 41,
+      "ctr": 4.9,
+      "pos": 1.2
+     }
+    },
+    {
+     "q": "wegovy pill versus mounjaro",
+     "clicks": 7,
+     "impr": 27,
+     "ctr": 25.9,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 5,
       "impr": 46,
-      "ctr": 4.3,
+      "ctr": 10.9,
       "pos": 1.3
      }
     },
     {
      "q": "mounjaro vs wegovy pill",
      "clicks": 6,
-     "impr": 74,
-     "ctr": 8.1,
+     "impr": 77,
+     "ctr": 7.8,
      "pos": 1.4,
      "prev": {
-      "clicks": 12,
-      "impr": 115,
-      "ctr": 10.4,
+      "clicks": 11,
+      "impr": 111,
+      "ctr": 9.9,
       "pos": 1.4
      }
     },
     {
      "q": "mounjaro injection vs wegovy pill",
      "clicks": 5,
-     "impr": 43,
-     "ctr": 11.6,
-     "pos": 1.3,
+     "impr": 44,
+     "ctr": 11.4,
+     "pos": 1.2,
      "prev": {
-      "clicks": 2,
-      "impr": 54,
-      "ctr": 3.7,
+      "clicks": 3,
+      "impr": 55,
+      "ctr": 5.5,
       "pos": 1.3
-     }
-    },
-    {
-     "q": "mounjaro pill form",
-     "clicks": 4,
-     "impr": 311,
-     "ctr": 1.3,
-     "pos": 5.6,
-     "prev": {
-      "clicks": 8,
-      "impr": 897,
-      "ctr": 0.9,
-      "pos": 5.7
      }
     },
     {
      "q": "wegovy pill v mounjaro injection",
      "clicks": 4,
-     "impr": 58,
-     "ctr": 6.9,
+     "impr": 61,
+     "ctr": 6.6,
      "pos": 1.1,
      "prev": {
       "clicks": 2,
-      "impr": 54,
-      "ctr": 3.7,
-      "pos": 1.3
+      "impr": 55,
+      "ctr": 3.6,
+      "pos": 1.4
      }
     },
     {
      "q": "mounjaro pill vs injection",
      "clicks": 4,
-     "impr": 57,
-     "ctr": 7.0,
+     "impr": 53,
+     "ctr": 7.5,
      "pos": 1.4,
      "prev": {
       "clicks": 0,
-      "impr": 98,
+      "impr": 95,
       "ctr": 0.0,
-      "pos": 3.5
+      "pos": 3.1
      }
     },
     {
      "q": "is the mounjaro pill as effective as the shot",
      "clicks": 4,
-     "impr": 52,
-     "ctr": 7.7,
+     "impr": 50,
+     "ctr": 8.0,
      "pos": 2.3,
      "prev": {
       "clicks": 3,
-      "impr": 60,
-      "ctr": 5.0,
-      "pos": 3.1
+      "impr": 61,
+      "ctr": 4.9,
+      "pos": 3.0
      }
     },
     {
@@ -10954,22 +11050,35 @@
      "pos": 1.3,
      "prev": {
       "clicks": 3,
-      "impr": 45,
-      "ctr": 6.7,
+      "impr": 46,
+      "ctr": 6.5,
       "pos": 1.4
      }
     },
     {
-     "q": "wegovy pill or mounjaro injection",
-     "clicks": 3,
-     "impr": 60,
-     "ctr": 5.0,
-     "pos": 1.4,
+     "q": "mounjaro injection vs tablets",
+     "clicks": 4,
+     "impr": 27,
+     "ctr": 14.8,
+     "pos": 1.3,
      "prev": {
-      "clicks": 5,
-      "impr": 83,
-      "ctr": 6.0,
-      "pos": 1.4
+      "clicks": 1,
+      "impr": 13,
+      "ctr": 7.7,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "mounjaro pill form",
+     "clicks": 3,
+     "impr": 306,
+     "ctr": 1.0,
+     "pos": 5.2,
+     "prev": {
+      "clicks": 8,
+      "impr": 818,
+      "ctr": 1.0,
+      "pos": 5.9
      }
     }
    ],
@@ -11001,13 +11110,6 @@
    "label": "switching mounjaro to wegovy pill",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 0,
-     "impr": 0,
-     "ctr": 0.0,
-     "pos": 0.0
-    },
     {
      "d": "2026-07-10",
      "clicks": 0,
@@ -11630,41 +11732,55 @@
      "impr": 368,
      "ctr": 1.36,
      "pos": 9.7
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 7,
+     "impr": 366,
+     "ctr": 1.91,
+     "pos": 5.9
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 9,
+     "impr": 406,
+     "ctr": 2.22,
+     "pos": 6.6
     }
    ],
    "queries": [
     {
      "q": "mounjaro tablets",
-     "clicks": 7,
-     "impr": 300,
-     "ctr": 2.3,
-     "pos": 1.9,
+     "clicks": 6,
+     "impr": 239,
+     "ctr": 2.5,
+     "pos": 2.1,
      "prev": {
-      "clicks": 50,
-      "impr": 1077,
-      "ctr": 4.6,
+      "clicks": 51,
+      "impr": 1135,
+      "ctr": 4.5,
       "pos": 1.7
      }
     },
     {
      "q": "when will mounjaro be available in tablet form",
      "clicks": 3,
-     "impr": 58,
-     "ctr": 5.2,
-     "pos": 5.2,
+     "impr": 59,
+     "ctr": 5.1,
+     "pos": 5.0,
      "prev": {
       "clicks": 4,
-      "impr": 96,
-      "ctr": 4.2,
+      "impr": 90,
+      "ctr": 4.4,
       "pos": 5.9
      }
     },
     {
      "q": "can you get mounjaro in tablet form",
      "clicks": 3,
-     "impr": 38,
-     "ctr": 7.9,
-     "pos": 6.8,
+     "impr": 43,
+     "ctr": 7.0,
+     "pos": 7.1,
      "prev": {
       "clicks": 0,
       "impr": 9,
@@ -11675,27 +11791,40 @@
     {
      "q": "is mounjaro available in tablet form",
      "clicks": 2,
-     "impr": 82,
-     "ctr": 2.4,
+     "impr": 80,
+     "ctr": 2.5,
      "pos": 9.0,
      "prev": {
       "clicks": 2,
-      "impr": 182,
+      "impr": 184,
       "ctr": 1.1,
       "pos": 9.9
      }
     },
     {
+     "q": "when will the mounjaro pill be available in the uk",
+     "clicks": 2,
+     "impr": 55,
+     "ctr": 3.6,
+     "pos": 8.1,
+     "prev": {
+      "clicks": 3,
+      "impr": 53,
+      "ctr": 5.7,
+      "pos": 5.4
+     }
+    },
+    {
      "q": "mounjaro tablet",
      "clicks": 2,
-     "impr": 26,
-     "ctr": 7.7,
-     "pos": 2.6,
+     "impr": 19,
+     "ctr": 10.5,
+     "pos": 3.2,
      "prev": {
       "clicks": 1,
-      "impr": 72,
+      "impr": 74,
       "ctr": 1.4,
-      "pos": 1.1
+      "pos": 1.0
      }
     },
     {
@@ -11715,12 +11844,12 @@
     {
      "q": "mounjaro tablets uk",
      "clicks": 1,
-     "impr": 295,
-     "ctr": 0.3,
-     "pos": 3.1,
+     "impr": 266,
+     "ctr": 0.4,
+     "pos": 2.6,
      "prev": {
       "clicks": 36,
-      "impr": 2838,
+      "impr": 2868,
       "ctr": 1.3,
       "pos": 8.0
      }
@@ -11728,22 +11857,22 @@
     {
      "q": "mounjaro pills uk",
      "clicks": 1,
-     "impr": 51,
+     "impr": 49,
      "ctr": 2.0,
      "pos": 1.0,
      "prev": {
       "clicks": 4,
-      "impr": 169,
-      "ctr": 2.4,
+      "impr": 171,
+      "ctr": 2.3,
       "pos": 1.6
      }
     },
     {
      "q": "mounjaro in tablet form",
      "clicks": 1,
-     "impr": 23,
-     "ctr": 4.3,
-     "pos": 4.7,
+     "impr": 30,
+     "ctr": 3.3,
+     "pos": 5.2,
      "prev": {
       "clicks": 0,
       "impr": 12,
@@ -11754,38 +11883,32 @@
     {
      "q": "changing from mounjaro to wegovy pill",
      "clicks": 1,
-     "impr": 17,
-     "ctr": 5.9,
-     "pos": 2.4,
+     "impr": 18,
+     "ctr": 5.6,
+     "pos": 2.3,
      "prev": {
       "clicks": 0,
-      "impr": 32,
+      "impr": 31,
       "ctr": 0.0,
       "pos": 1.9
      }
     },
     {
-     "q": "mounjaro to wegovy tablet dose conversion",
+     "q": "25mg wegovy pill equivalent chart mounjaro",
      "clicks": 1,
-     "impr": 6,
-     "ctr": 16.7,
-     "pos": 1.7,
-     "prev": {
-      "clicks": 0,
-      "impr": 19,
-      "ctr": 0.0,
-      "pos": 1.0
-     }
+     "impr": 7,
+     "ctr": 14.3,
+     "pos": 1.3
     },
     {
-     "q": "mounjaro vs pills",
+     "q": "mounjaro to wegovy tablet dose conversion",
      "clicks": 1,
      "impr": 5,
      "ctr": 20.0,
-     "pos": 1.0,
+     "pos": 1.8,
      "prev": {
       "clicks": 0,
-      "impr": 4,
+      "impr": 20,
       "ctr": 0.0,
       "pos": 1.0
      }
@@ -11802,13 +11925,6 @@
       "ctr": 8.3,
       "pos": 1.1
      }
-    },
-    {
-     "q": "manjaro tablet",
-     "clicks": 1,
-     "impr": 2,
-     "ctr": 50.0,
-     "pos": 3.5
     }
    ],
    "health": {
@@ -11839,13 +11955,6 @@
    "label": "how to take wegovy pills",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 28,
-     "impr": 1192,
-     "ctr": 2.35,
-     "pos": 5.2
-    },
     {
      "d": "2026-07-10",
      "clicks": 34,
@@ -12468,19 +12577,33 @@
      "impr": 266,
      "ctr": 0.38,
      "pos": 5.2
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 4,
+     "impr": 246,
+     "ctr": 1.63,
+     "pos": 4.4
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 10,
+     "impr": 267,
+     "ctr": 3.75,
+     "pos": 5.1
     }
    ],
    "queries": [
     {
      "q": "how to take wegovy pill",
-     "clicks": 7,
-     "impr": 303,
-     "ctr": 2.3,
-     "pos": 7.2,
+     "clicks": 6,
+     "impr": 309,
+     "ctr": 1.9,
+     "pos": 7.0,
      "prev": {
-      "clicks": 5,
-      "impr": 981,
-      "ctr": 0.5,
+      "clicks": 6,
+      "impr": 941,
+      "ctr": 0.6,
       "pos": 8.3
      }
     },
@@ -12499,23 +12622,23 @@
     },
     {
      "q": "wegovy pill fasting rules",
-     "clicks": 1,
-     "impr": 72,
-     "ctr": 1.4,
-     "pos": 3.1,
+     "clicks": 2,
+     "impr": 76,
+     "ctr": 2.6,
+     "pos": 2.8,
      "prev": {
       "clicks": 2,
       "impr": 103,
       "ctr": 1.9,
-      "pos": 2.2
+      "pos": 2.3
      }
     },
     {
      "q": "fasting on wegovy",
      "clicks": 1,
-     "impr": 31,
-     "ctr": 3.2,
-     "pos": 1.4,
+     "impr": 33,
+     "ctr": 3.0,
+     "pos": 1.3,
      "prev": {
       "clicks": 1,
       "impr": 22,
@@ -12531,61 +12654,61 @@
      "pos": 1.6,
      "prev": {
       "clicks": 2,
-      "impr": 11,
-      "ctr": 18.2,
-      "pos": 1.5
+      "impr": 12,
+      "ctr": 16.7,
+      "pos": 1.4
+     }
+    },
+    {
+     "q": "when is the best time to take wegovy tablet",
+     "clicks": 1,
+     "impr": 17,
+     "ctr": 5.9,
+     "pos": 6.6,
+     "prev": {
+      "clicks": 0,
+      "impr": 20,
+      "ctr": 0.0,
+      "pos": 7.1
      }
     },
     {
      "q": "how to take the wegovy pill",
      "clicks": 1,
-     "impr": 12,
-     "ctr": 8.3,
+     "impr": 14,
+     "ctr": 7.1,
      "pos": 1.0,
      "prev": {
       "clicks": 0,
-      "impr": 48,
+      "impr": 44,
       "ctr": 0.0,
-      "pos": 8.5
-     }
-    },
-    {
-     "q": "best way to take wegovy pill",
-     "clicks": 1,
-     "impr": 7,
-     "ctr": 14.3,
-     "pos": 1.0,
-     "prev": {
-      "clicks": 0,
-      "impr": 13,
-      "ctr": 0.0,
-      "pos": 1.0
+      "pos": 8.3
      }
     },
     {
      "q": "how to take wegovy pills",
      "clicks": 1,
-     "impr": 5,
-     "ctr": 20.0,
-     "pos": 3.8,
+     "impr": 6,
+     "ctr": 16.7,
+     "pos": 3.3,
      "prev": {
       "clicks": 0,
-      "impr": 29,
+      "impr": 27,
       "ctr": 0.0,
-      "pos": 7.5
+      "pos": 7.3
      }
     },
     {
-     "q": "wegovy pill time to take",
+     "q": "when should i take my wegovy pill",
      "clicks": 1,
      "impr": 1,
      "ctr": 100.0,
      "pos": 1.0,
      "prev": {
       "clicks": 0,
-      "impr": 4,
+      "impr": 3,
       "ctr": 0.0,
-      "pos": 1.0
+      "pos": 11.0
      }
     },
     {
@@ -12659,13 +12782,6 @@
    "label": "wegovy side effects",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-07-09",
-     "clicks": 3,
-     "impr": 431,
-     "ctr": 0.7,
-     "pos": 20.6
-    },
     {
      "d": "2026-07-10",
      "clicks": 2,
@@ -13288,31 +13404,45 @@
      "impr": 874,
      "ctr": 0.92,
      "pos": 7.4
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 7,
+     "impr": 897,
+     "ctr": 0.78,
+     "pos": 6.7
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 9,
+     "impr": 877,
+     "ctr": 1.03,
+     "pos": 6.9
     }
    ],
    "queries": [
     {
      "q": "wegovy acid reflux",
      "clicks": 16,
-     "impr": 200,
-     "ctr": 8.0,
-     "pos": 1.4,
+     "impr": 211,
+     "ctr": 7.6,
+     "pos": 1.3,
      "prev": {
       "clicks": 7,
-      "impr": 209,
-      "ctr": 3.3,
+      "impr": 208,
+      "ctr": 3.4,
       "pos": 1.4
      }
     },
     {
      "q": "does wegovy cause heartburn",
-     "clicks": 9,
-     "impr": 164,
-     "ctr": 5.5,
+     "clicks": 10,
+     "impr": 169,
+     "ctr": 5.9,
      "pos": 1.2,
      "prev": {
       "clicks": 4,
-      "impr": 182,
+      "impr": 181,
       "ctr": 2.2,
       "pos": 1.3
      }
@@ -13320,13 +13450,13 @@
     {
      "q": "can wegovy cause heartburn",
      "clicks": 6,
-     "impr": 124,
-     "ctr": 4.8,
+     "impr": 132,
+     "ctr": 4.5,
      "pos": 1.3,
      "prev": {
-      "clicks": 5,
-      "impr": 101,
-      "ctr": 5.0,
+      "clicks": 4,
+      "impr": 102,
+      "ctr": 3.9,
       "pos": 1.2
      }
     },
@@ -13335,10 +13465,10 @@
      "clicks": 6,
      "impr": 85,
      "ctr": 7.1,
-     "pos": 2.5,
+     "pos": 2.4,
      "prev": {
       "clicks": 3,
-      "impr": 96,
+      "impr": 98,
       "ctr": 3.1,
       "pos": 1.5
      }
@@ -13346,26 +13476,39 @@
     {
      "q": "does wegovy give you heartburn",
      "clicks": 5,
-     "impr": 122,
-     "ctr": 4.1,
+     "impr": 126,
+     "ctr": 4.0,
      "pos": 1.5,
      "prev": {
       "clicks": 2,
-      "impr": 87,
+      "impr": 86,
       "ctr": 2.3,
       "pos": 1.2
      }
     },
     {
+     "q": "acid reflux wegovy",
+     "clicks": 4,
+     "impr": 151,
+     "ctr": 2.6,
+     "pos": 1.7,
+     "prev": {
+      "clicks": 3,
+      "impr": 162,
+      "ctr": 1.9,
+      "pos": 1.7
+     }
+    },
+    {
      "q": "is heartburn a side effect of wegovy",
      "clicks": 4,
-     "impr": 81,
-     "ctr": 4.9,
+     "impr": 86,
+     "ctr": 4.7,
      "pos": 1.3,
      "prev": {
       "clicks": 5,
-      "impr": 68,
-      "ctr": 7.4,
+      "impr": 69,
+      "ctr": 7.2,
       "pos": 1.2
      }
     },
@@ -13377,48 +13520,35 @@
      "pos": 1.2,
      "prev": {
       "clicks": 0,
-      "impr": 10,
+      "impr": 11,
       "ctr": 0.0,
       "pos": 1.1
      }
     },
     {
-     "q": "acid reflux wegovy",
-     "clicks": 3,
-     "impr": 145,
-     "ctr": 2.1,
-     "pos": 1.7,
-     "prev": {
-      "clicks": 3,
-      "impr": 165,
-      "ctr": 1.8,
-      "pos": 1.7
-     }
-    },
-    {
      "q": "acid reflux on wegovy",
      "clicks": 3,
-     "impr": 62,
-     "ctr": 4.8,
+     "impr": 66,
+     "ctr": 4.5,
      "pos": 1.3,
      "prev": {
       "clicks": 5,
-      "impr": 78,
-      "ctr": 6.4,
+      "impr": 79,
+      "ctr": 6.3,
       "pos": 1.5
      }
     },
     {
      "q": "how to stop acid reflux on wegovy",
      "clicks": 2,
-     "impr": 46,
-     "ctr": 4.3,
-     "pos": 1.7,
+     "impr": 49,
+     "ctr": 4.1,
+     "pos": 1.1,
      "prev": {
       "clicks": 3,
-      "impr": 36,
-      "ctr": 8.3,
-      "pos": 2.0
+      "impr": 38,
+      "ctr": 7.9,
+      "pos": 2.7
      }
     },
     {
@@ -13441,10 +13571,10 @@
      "ctr": 1.5,
      "pos": 1.4,
      "prev": {
-      "clicks": 4,
-      "impr": 58,
-      "ctr": 6.9,
-      "pos": 1.4
+      "clicks": 3,
+      "impr": 57,
+      "ctr": 5.3,
+      "pos": 1.1
      }
     },
     {
@@ -13455,8 +13585,8 @@
      "pos": 1.6,
      "prev": {
       "clicks": 2,
-      "impr": 12,
-      "ctr": 16.7,
+      "impr": 13,
+      "ctr": 15.4,
       "pos": 1.2
      }
     },
@@ -13511,6 +13641,6 @@
    }
   }
  ],
- "as_of": "2026-10-10",
+ "as_of": "2026-10-11",
  "criteria": "health-advice pages, avg pos 5.0-15.0, >= 300 impressions/28d, top 5 by impressions"
 }

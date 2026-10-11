@@ -14,5 +14,7 @@
  "overtaken:FamilyChemist:wegovy injection": "2026-10-08",
  "overtaken:MedExpress:wegovy injection": "2026-10-08",
  "overtaken:Boots:wegovy injection": "2026-10-08",
- "drop:buy wegovy": "2026-10-10"
+ "drop:buy wegovy": "2026-10-10",
+ "overtaken:Superdrug:wegovy": "2026-10-11",
+ "overtaken:Boots:wegovy": "2026-10-11"
 }
