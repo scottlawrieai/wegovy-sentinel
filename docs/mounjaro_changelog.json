@@ -145,21 +145,6 @@
   ]
  },
  {
-  "date": "2026-09-11",
-  "changes": [
-   {
-    "type": "structure",
-    "text": "Sections reordered: How to get Mounjaro, Eligibility, Results",
-    "source": "auto"
-   },
-   {
-    "type": "content",
-    "text": "Body copy +139 words (5,884 → 6,023)",
-    "source": "auto"
-   }
-  ]
- },
- {
   "date": "2026-09-12",
   "changes": [
    {
@@ -355,6 +340,16 @@
    {
     "type": "content",
     "text": "Body copy +99 words (5,943 → 6,042)",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-12",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +68 words (6,043 → 6,111)",
     "source": "auto"
    }
   ]
