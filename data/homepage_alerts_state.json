@@ -9,9 +9,14 @@
  "drop:online pharmacy": "2026-10-03",
  "page_one:online pharmacy": "2026-10-03",
  "overtaken:Pharmacy2U:online pharmacy": "2026-10-03",
- "overtaken:ChemistDirect:online pharmacy": "2026-10-03",
+ "overtaken:ChemistDirect:online pharmacy": "2026-10-13",
  "drop:online pharmacy uk": "2026-10-07",
  "overtaken:Pharmacy2U:online pharmacy uk": "2026-10-07",
  "overtaken:ChemistDirect:online pharmacy uk": "2026-10-07",
- "overtaken:Pharmacy2U:pharmacy online": "2026-10-08"
+ "overtaken:Pharmacy2U:pharmacy online": "2026-10-08",
+ "overtaken:Chemist4U:online chemist": "2026-10-13",
+ "overtaken:Chemist4U:online chemist uk": "2026-10-13",
+ "overtaken:ChemistDirect:online chemist": "2026-10-13",
+ "overtaken:ChemistDirect:online chemist uk": "2026-10-13",
+ "overtaken:ChemistDirect:pharmacy online": "2026-10-13"
 }
