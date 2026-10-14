@@ -18,5 +18,16 @@
  "overtaken:Superdrug:wegovy": "2026-10-11",
  "overtaken:Boots:wegovy": "2026-10-11",
  "overtaken:MedExpress:wegovy uk": "2026-10-13",
- "overtaken:MedExpress:wegovy price": "2026-10-13"
+ "overtaken:MedExpress:wegovy price": "2026-10-13",
+ "drop:wegovy injection": "2026-10-14",
+ "drop:wegovy price uk": "2026-10-14",
+ "page_one:wegovy price uk": "2026-10-14",
+ "drop:cheapest wegovy uk": "2026-10-14",
+ "overtaken:Superdrug:cheapest wegovy uk": "2026-10-14",
+ "overtaken:Chemist4U:wegovy price uk": "2026-10-14",
+ "overtaken:Chemist4U:cheapest wegovy uk": "2026-10-14",
+ "overtaken:FamilyChemist:wegovy price uk": "2026-10-14",
+ "overtaken:FamilyChemist:cheapest wegovy uk": "2026-10-14",
+ "overtaken:MedExpress:cheapest wegovy uk": "2026-10-14",
+ "overtaken:Boots:cheapest wegovy uk": "2026-10-14"
 }
