@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-09-18",
-  "changes": [
-   {
-    "type": "content",
-    "text": "Body copy +155 words (1,094 → 1,249)",
-    "source": "auto"
-   }
-  ]
- },
- {
   "date": "2026-09-19",
   "changes": [
    {
@@ -165,6 +155,21 @@
    {
     "type": "content",
     "text": "Topic coverage gained: medication questionnaire",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-17",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +63 words (1,103 → 1,166)",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Topic coverage lost: medication questionnaire",
     "source": "auto"
    }
   ]
