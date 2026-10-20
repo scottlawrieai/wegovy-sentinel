@@ -2,7 +2,7 @@
  "drop:weight loss medication": "2026-09-06",
  "overtaken:MedExpress:weight loss tablets": "2026-10-07",
  "drop:weight loss injections": "2026-10-15",
- "overtaken:Chemist4U:weight loss injections": "2026-09-16",
+ "overtaken:Chemist4U:weight loss injections": "2026-10-20",
  "drop:skinny jab": "2026-09-20",
  "page_one:skinny jab": "2026-09-20",
  "cann": "2026-10-14",
@@ -21,5 +21,6 @@
  "overtaken:Boots:weight loss medication": "2026-10-12",
  "overtaken:Superdrug:weight loss injections": "2026-10-15",
  "overtaken:Boots:weight loss injections": "2026-10-15",
- "drop:weight loss injections uk": "2026-10-19"
+ "drop:weight loss injections uk": "2026-10-19",
+ "overtaken:MedExpress:weight loss injections": "2026-10-20"
 }
