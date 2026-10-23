@@ -188,5 +188,15 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-10-23",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +84 words (7,262 → 7,346)",
+    "source": "auto"
+   }
+  ]
  }
 ]
