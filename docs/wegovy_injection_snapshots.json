@@ -441458,5 +441458,7914 @@
    ],
    "strong": 32
   }
+ },
+ {
+  "date": "2026-10-30",
+  "mode": "semrush",
+  "best": {
+   "wegovy": {
+    "p": 34,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
+    "n": 1,
+    "v": 135000
+   },
+   "wegovy uk": {
+    "p": 25,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
+    "n": 2,
+    "v": 18100
+   },
+   "buy wegovy": {
+    "p": 16,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
+    "n": 2,
+    "v": 2900
+   },
+   "buy wegovy uk": null,
+   "buy wegovy online": null,
+   "wegovy injection": {
+    "p": 18,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/how-to-take-wegovy-injections/",
+    "n": 1,
+    "v": 6600
+   },
+   "wegovy injections": null,
+   "wegovy pen": null,
+   "wegovy price": null,
+   "wegovy price uk": null,
+   "cheapest wegovy uk": {
+    "p": 15,
+    "c": "pill",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
+    "n": 2,
+    "v": 4400
+   },
+   "semaglutide injection": null,
+   "wegovy side effects": {
+    "p": 14,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-side-effects/",
+    "n": 3,
+    "v": 33100
+   },
+   "wegovy dosage": null,
+   "wegovy vs mounjaro": {
+    "p": 28,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy/wegovy-vs-mounjaro/",
+    "n": 3,
+    "v": 27100
+   },
+   "wegovy reviews": {
+    "p": 18,
+    "c": "advice",
+    "u": "https://www.simpleonlinepharmacy.co.uk/health-advice/weight-loss/wegovy-pill/wegovy-pill-results/",
+    "n": 2,
+    "v": 5400
+   },
+   "wegovy weight loss": {
+    "p": 39,
+    "c": "product",
+    "u": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy/",
+    "n": 1,
+    "v": 5400
+   }
+  },
+  "comp": {
+   "Superdrug": {
+    "wegovy": {
+     "p": 2,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "wegovy uk": {
+     "p": 8,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "buy wegovy": {
+     "p": 1,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "buy wegovy online": {
+     "p": 2,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "wegovy injection": {
+     "p": 1,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "wegovy price": {
+     "p": 5,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "wegovy price uk": {
+     "p": 9,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "cheapest wegovy uk": {
+     "p": 18,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    },
+    "wegovy side effects": {
+     "p": 10,
+     "u": "https://onlinedoctor.superdrug.com/wegovy-pill-side-effects.html"
+    },
+    "wegovy vs mounjaro": {
+     "p": 29,
+     "u": "https://onlinedoctor.superdrug.com/mounjaro-vs-wegovy.html"
+    },
+    "wegovy weight loss": {
+     "p": 4,
+     "u": "https://onlinedoctor.superdrug.com/wegovy.html"
+    }
+   },
+   "Chemist4U": {
+    "wegovy": {
+     "p": 14,
+     "u": "https://www.chemist-4-u.com/wegovy"
+    },
+    "wegovy uk": {
+     "p": 55,
+     "u": "https://www.chemist-4-u.com/weight-loss"
+    },
+    "buy wegovy": {
+     "p": 15,
+     "u": "https://www.chemist-4-u.com/wegovy-pills"
+    },
+    "buy wegovy online": {
+     "p": 20,
+     "u": "https://www.chemist-4-u.com/wegovy-pills"
+    },
+    "wegovy injection": {
+     "p": 13,
+     "u": "https://www.chemist-4-u.com/wegovy"
+    },
+    "wegovy price": {
+     "p": 10,
+     "u": "https://www.chemist-4-u.com/wegovy-pills"
+    },
+    "cheapest wegovy uk": {
+     "p": 14,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-prices/"
+    },
+    "wegovy side effects": {
+     "p": 28,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-side-effects/"
+    },
+    "wegovy dosage": {
+     "p": 27,
+     "u": "https://www.chemist-4-u.com/guides/weight-loss/wegovy-7-2mg/"
+    },
+    "wegovy weight loss": {
+     "p": 79,
+     "u": "https://www.chemist-4-u.com/wegovy-pills"
+    }
+   },
+   "FamilyChemist": {
+    "wegovy": {
+     "p": 81,
+     "u": "https://www.thefamilychemist.co.uk/wegovy/"
+    },
+    "wegovy uk": {
+     "p": 30,
+     "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
+    },
+    "buy wegovy": {
+     "p": 17,
+     "u": "https://www.thefamilychemist.co.uk/wegovy/"
+    },
+    "buy wegovy online": {
+     "p": 67,
+     "u": "https://www.thefamilychemist.co.uk/all-about-wegovy/"
+    },
+    "wegovy pen": {
+     "p": 24,
+     "u": "https://www.thefamilychemist.co.uk/how-to-use-the-wegovy-pen/"
+    },
+    "wegovy price": {
+     "p": 21,
+     "u": "https://www.thefamilychemist.co.uk/wegovy/"
+    },
+    "wegovy price uk": {
+     "p": 51,
+     "u": "https://www.thefamilychemist.co.uk/wegovy-tablets/"
+    },
+    "cheapest wegovy uk": {
+     "p": 4,
+     "u": "https://www.thefamilychemist.co.uk/wegovy/"
+    },
+    "wegovy vs mounjaro": {
+     "p": 35,
+     "u": "https://www.thefamilychemist.co.uk/mounjaro-vs-wegovy-the-verdict-on-the-best-weight-loss-medication/"
+    }
+   },
+   "MedExpress": {
+    "wegovy": {
+     "p": 21,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "wegovy uk": {
+     "p": 3,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "buy wegovy": {
+     "p": 3,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "buy wegovy online": {
+     "p": 4,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "wegovy injection": {
+     "p": 7,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "wegovy injections": {
+     "p": 18,
+     "u": "https://www.medexpress.co.uk/health-centre/wegovy-injection-sites/"
+    },
+    "wegovy price": {
+     "p": 3,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "cheapest wegovy uk": {
+     "p": 19,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    },
+    "wegovy side effects": {
+     "p": 31,
+     "u": "https://www.medexpress.co.uk/health-centre/wegovy-side-effects/"
+    },
+    "wegovy dosage": {
+     "p": 30,
+     "u": "https://www.medexpress.co.uk/health-centre/wegovy-dosing-schedule/"
+    },
+    "wegovy vs mounjaro": {
+     "p": 50,
+     "u": "https://www.medexpress.co.uk/health-centre/mounjaro-vs-wegovy/"
+    },
+    "wegovy reviews": {
+     "p": 73,
+     "u": "https://www.medexpress.co.uk/health-centre/is-wegovy-safe/"
+    },
+    "wegovy weight loss": {
+     "p": 8,
+     "u": "https://www.medexpress.co.uk/clinics/weight-loss/wegovy"
+    }
+   },
+   "Boots": {
+    "wegovy": {
+     "p": 6,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "wegovy uk": {
+     "p": 2,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "buy wegovy": {
+     "p": 5,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "wegovy injection": {
+     "p": 4,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "wegovy price": {
+     "p": 4,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "wegovy price uk": {
+     "p": 2,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "cheapest wegovy uk": {
+     "p": 16,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    },
+    "semaglutide injection": {
+     "p": 19,
+     "u": "https://www.boots.com/healthhub/weight-loss-medications/semaglutide-explained"
+    },
+    "wegovy side effects": {
+     "p": 15,
+     "u": "https://onlinedoctor.boots.com/weight-loss/wegovy-saxenda-side-effects"
+    },
+    "wegovy vs mounjaro": {
+     "p": 2,
+     "u": "https://www.boots.com/healthhub/weight-loss-medications/wegovy-vs-mounjaro-explained"
+    },
+    "wegovy weight loss": {
+     "p": 1,
+     "u": "https://onlinedoctor.boots.com/treatments/wegovy/"
+    }
+   }
+  },
+  "src": {
+   "gsc": {
+    "buy wegovy": {
+     "pos": 17.1,
+     "clicks": 22,
+     "impr": 948,
+     "ctr": 2.3
+    },
+    "wegovy vs mounjaro": {
+     "pos": 4.5,
+     "clicks": 13,
+     "impr": 11010,
+     "ctr": 0.1
+    },
+    "buy wegovy online": {
+     "pos": 14.4,
+     "clicks": 10,
+     "impr": 771,
+     "ctr": 1.3
+    },
+    "wegovy": {
+     "pos": 15.5,
+     "clicks": 10,
+     "impr": 1785,
+     "ctr": 0.6
+    },
+    "cheapest wegovy uk": {
+     "pos": 14.6,
+     "clicks": 5,
+     "impr": 509,
+     "ctr": 1.0
+    },
+    "wegovy price uk": {
+     "pos": 8.8,
+     "clicks": 5,
+     "impr": 630,
+     "ctr": 0.8
+    }
+   },
+   "awr": {
+    "wegovy injection": 1,
+    "buy wegovy online": 1,
+    "wegovy side effects": 1,
+    "wegovy price": 1,
+    "wegovy uk": 1,
+    "wegovy weight loss": 1,
+    "wegovy injections": 1,
+    "wegovy": 5,
+    "wegovy pen": 1,
+    "buy wegovy uk": 1,
+    "buy wegovy": 1,
+    "wegovy vs mounjaro": 1,
+    "wegovy dosage": 1
+   }
+  },
+  "gscts": {
+   "as_of": "2026-10-27",
+   "days": 90,
+   "site": [
+    {
+     "d": "2026-07-29",
+     "clicks": 4428,
+     "impr": 287490,
+     "ctr": 1.54,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 4297,
+     "impr": 292832,
+     "ctr": 1.47,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 4123,
+     "impr": 276840,
+     "ctr": 1.49,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 3627,
+     "impr": 268834,
+     "ctr": 1.35,
+     "pos": 11.5
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 4322,
+     "impr": 281508,
+     "ctr": 1.54,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 4944,
+     "impr": 285637,
+     "ctr": 1.73,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 4900,
+     "impr": 324625,
+     "ctr": 1.51,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 4760,
+     "impr": 294704,
+     "ctr": 1.62,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 4391,
+     "impr": 293512,
+     "ctr": 1.5,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 3848,
+     "impr": 268279,
+     "ctr": 1.43,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 3414,
+     "impr": 260901,
+     "ctr": 1.31,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 4027,
+     "impr": 292763,
+     "ctr": 1.38,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 10056,
+     "impr": 359366,
+     "ctr": 2.8,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 9110,
+     "impr": 343552,
+     "ctr": 2.65,
+     "pos": 9.0
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 5177,
+     "impr": 339238,
+     "ctr": 1.53,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 4987,
+     "impr": 324177,
+     "ctr": 1.54,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 4607,
+     "impr": 310523,
+     "ctr": 1.48,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 3806,
+     "impr": 250351,
+     "ctr": 1.52,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 4098,
+     "impr": 291940,
+     "ctr": 1.4,
+     "pos": 11.3
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 4737,
+     "impr": 316850,
+     "ctr": 1.5,
+     "pos": 10.6
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 4741,
+     "impr": 304226,
+     "ctr": 1.56,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 4577,
+     "impr": 289302,
+     "ctr": 1.58,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 4066,
+     "impr": 271111,
+     "ctr": 1.5,
+     "pos": 10.5
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 3706,
+     "impr": 248988,
+     "ctr": 1.49,
+     "pos": 10.5
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 3205,
+     "impr": 240388,
+     "ctr": 1.33,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 3923,
+     "impr": 248787,
+     "ctr": 1.58,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 5679,
+     "impr": 321151,
+     "ctr": 1.77,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 4785,
+     "impr": 304640,
+     "ctr": 1.57,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 4559,
+     "impr": 291306,
+     "ctr": 1.57,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 5219,
+     "impr": 294194,
+     "ctr": 1.77,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 4079,
+     "impr": 266119,
+     "ctr": 1.53,
+     "pos": 11.3
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 3549,
+     "impr": 236201,
+     "ctr": 1.5,
+     "pos": 11.6
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 3710,
+     "impr": 239147,
+     "ctr": 1.55,
+     "pos": 10.9
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 4442,
+     "impr": 271594,
+     "ctr": 1.64,
+     "pos": 10.8
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 4615,
+     "impr": 272777,
+     "ctr": 1.69,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-09-02",
+     "clicks": 4496,
+     "impr": 269410,
+     "ctr": 1.67,
+     "pos": 9.1
+    },
+    {
+     "d": "2026-09-03",
+     "clicks": 4171,
+     "impr": 263186,
+     "ctr": 1.58,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-09-04",
+     "clicks": 3939,
+     "impr": 245563,
+     "ctr": 1.6,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-09-05",
+     "clicks": 3475,
+     "impr": 232396,
+     "ctr": 1.5,
+     "pos": 11.2
+    },
+    {
+     "d": "2026-09-06",
+     "clicks": 3705,
+     "impr": 236007,
+     "ctr": 1.57,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-09-07",
+     "clicks": 4503,
+     "impr": 260465,
+     "ctr": 1.73,
+     "pos": 10.4
+    },
+    {
+     "d": "2026-09-08",
+     "clicks": 4206,
+     "impr": 247275,
+     "ctr": 1.7,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-09-09",
+     "clicks": 3981,
+     "impr": 244139,
+     "ctr": 1.63,
+     "pos": 10.7
+    },
+    {
+     "d": "2026-09-10",
+     "clicks": 3821,
+     "impr": 213806,
+     "ctr": 1.79,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-09-11",
+     "clicks": 3344,
+     "impr": 206177,
+     "ctr": 1.62,
+     "pos": 10.1
+    },
+    {
+     "d": "2026-09-12",
+     "clicks": 3168,
+     "impr": 216558,
+     "ctr": 1.46,
+     "pos": 11.0
+    },
+    {
+     "d": "2026-09-13",
+     "clicks": 3592,
+     "impr": 209024,
+     "ctr": 1.72,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-09-14",
+     "clicks": 3891,
+     "impr": 236670,
+     "ctr": 1.64,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-09-15",
+     "clicks": 3492,
+     "impr": 201716,
+     "ctr": 1.73,
+     "pos": 8.8
+    },
+    {
+     "d": "2026-09-16",
+     "clicks": 3552,
+     "impr": 211399,
+     "ctr": 1.68,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-09-17",
+     "clicks": 3446,
+     "impr": 204546,
+     "ctr": 1.68,
+     "pos": 9.0
+    },
+    {
+     "d": "2026-09-18",
+     "clicks": 3159,
+     "impr": 200942,
+     "ctr": 1.57,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-09-19",
+     "clicks": 2911,
+     "impr": 203418,
+     "ctr": 1.43,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-09-20",
+     "clicks": 3262,
+     "impr": 210644,
+     "ctr": 1.55,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-09-21",
+     "clicks": 3886,
+     "impr": 247530,
+     "ctr": 1.57,
+     "pos": 9.1
+    },
+    {
+     "d": "2026-09-22",
+     "clicks": 3805,
+     "impr": 252259,
+     "ctr": 1.51,
+     "pos": 9.5
+    },
+    {
+     "d": "2026-09-23",
+     "clicks": 3624,
+     "impr": 218744,
+     "ctr": 1.66,
+     "pos": 8.3
+    },
+    {
+     "d": "2026-09-24",
+     "clicks": 3344,
+     "impr": 217428,
+     "ctr": 1.54,
+     "pos": 8.3
+    },
+    {
+     "d": "2026-09-25",
+     "clicks": 3194,
+     "impr": 192019,
+     "ctr": 1.66,
+     "pos": 7.6
+    },
+    {
+     "d": "2026-09-26",
+     "clicks": 2731,
+     "impr": 184239,
+     "ctr": 1.48,
+     "pos": 8.4
+    },
+    {
+     "d": "2026-09-27",
+     "clicks": 3359,
+     "impr": 195193,
+     "ctr": 1.72,
+     "pos": 7.9
+    },
+    {
+     "d": "2026-09-28",
+     "clicks": 3765,
+     "impr": 226620,
+     "ctr": 1.66,
+     "pos": 8.2
+    },
+    {
+     "d": "2026-09-29",
+     "clicks": 3521,
+     "impr": 209255,
+     "ctr": 1.68,
+     "pos": 7.6
+    },
+    {
+     "d": "2026-09-30",
+     "clicks": 3510,
+     "impr": 204150,
+     "ctr": 1.72,
+     "pos": 7.6
+    },
+    {
+     "d": "2026-10-01",
+     "clicks": 3300,
+     "impr": 210447,
+     "ctr": 1.57,
+     "pos": 8.1
+    },
+    {
+     "d": "2026-10-02",
+     "clicks": 2994,
+     "impr": 196919,
+     "ctr": 1.52,
+     "pos": 8.2
+    },
+    {
+     "d": "2026-10-03",
+     "clicks": 2729,
+     "impr": 178818,
+     "ctr": 1.53,
+     "pos": 8.5
+    },
+    {
+     "d": "2026-10-04",
+     "clicks": 2964,
+     "impr": 190036,
+     "ctr": 1.56,
+     "pos": 8.1
+    },
+    {
+     "d": "2026-10-05",
+     "clicks": 3432,
+     "impr": 226804,
+     "ctr": 1.51,
+     "pos": 8.1
+    },
+    {
+     "d": "2026-10-06",
+     "clicks": 3119,
+     "impr": 216625,
+     "ctr": 1.44,
+     "pos": 8.3
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 2818,
+     "impr": 208246,
+     "ctr": 1.35,
+     "pos": 8.6
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 2744,
+     "impr": 202112,
+     "ctr": 1.36,
+     "pos": 8.4
+    },
+    {
+     "d": "2026-10-09",
+     "clicks": 2443,
+     "impr": 192853,
+     "ctr": 1.27,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-10-10",
+     "clicks": 2405,
+     "impr": 176914,
+     "ctr": 1.36,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-10-11",
+     "clicks": 2530,
+     "impr": 185995,
+     "ctr": 1.36,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-10-12",
+     "clicks": 3014,
+     "impr": 204854,
+     "ctr": 1.47,
+     "pos": 8.5
+    },
+    {
+     "d": "2026-10-13",
+     "clicks": 2816,
+     "impr": 194185,
+     "ctr": 1.45,
+     "pos": 8.4
+    },
+    {
+     "d": "2026-10-14",
+     "clicks": 2609,
+     "impr": 198014,
+     "ctr": 1.32,
+     "pos": 8.8
+    },
+    {
+     "d": "2026-10-15",
+     "clicks": 2658,
+     "impr": 197984,
+     "ctr": 1.34,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-10-16",
+     "clicks": 2341,
+     "impr": 182356,
+     "ctr": 1.28,
+     "pos": 9.4
+    },
+    {
+     "d": "2026-10-17",
+     "clicks": 2124,
+     "impr": 170576,
+     "ctr": 1.25,
+     "pos": 9.7
+    },
+    {
+     "d": "2026-10-18",
+     "clicks": 2482,
+     "impr": 180067,
+     "ctr": 1.38,
+     "pos": 9.3
+    },
+    {
+     "d": "2026-10-19",
+     "clicks": 2802,
+     "impr": 209913,
+     "ctr": 1.33,
+     "pos": 9.5
+    },
+    {
+     "d": "2026-10-20",
+     "clicks": 2760,
+     "impr": 212834,
+     "ctr": 1.3,
+     "pos": 9.6
+    },
+    {
+     "d": "2026-10-21",
+     "clicks": 2778,
+     "impr": 205759,
+     "ctr": 1.35,
+     "pos": 9.2
+    },
+    {
+     "d": "2026-10-22",
+     "clicks": 2531,
+     "impr": 171201,
+     "ctr": 1.48,
+     "pos": 9.9
+    },
+    {
+     "d": "2026-10-23",
+     "clicks": 1805,
+     "impr": 104141,
+     "ctr": 1.73,
+     "pos": 10.3
+    },
+    {
+     "d": "2026-10-24",
+     "clicks": 1958,
+     "impr": 141495,
+     "ctr": 1.38,
+     "pos": 10.2
+    },
+    {
+     "d": "2026-10-25",
+     "clicks": 2422,
+     "impr": 157247,
+     "ctr": 1.54,
+     "pos": 10.0
+    },
+    {
+     "d": "2026-10-26",
+     "clicks": 2723,
+     "impr": 177390,
+     "ctr": 1.54,
+     "pos": 9.8
+    },
+    {
+     "d": "2026-10-27",
+     "clicks": 2721,
+     "impr": 174129,
+     "ctr": 1.56,
+     "pos": 9.1
+    }
+   ],
+   "page": [
+    {
+     "d": "2026-07-29",
+     "clicks": 19,
+     "impr": 1368,
+     "ctr": 1.39,
+     "pos": 19.3
+    },
+    {
+     "d": "2026-07-30",
+     "clicks": 22,
+     "impr": 2076,
+     "ctr": 1.06,
+     "pos": 22.4
+    },
+    {
+     "d": "2026-07-31",
+     "clicks": 18,
+     "impr": 1524,
+     "ctr": 1.18,
+     "pos": 21.0
+    },
+    {
+     "d": "2026-08-01",
+     "clicks": 16,
+     "impr": 1283,
+     "ctr": 1.25,
+     "pos": 23.0
+    },
+    {
+     "d": "2026-08-02",
+     "clicks": 16,
+     "impr": 1445,
+     "ctr": 1.11,
+     "pos": 20.3
+    },
+    {
+     "d": "2026-08-03",
+     "clicks": 38,
+     "impr": 1187,
+     "ctr": 3.2,
+     "pos": 19.9
+    },
+    {
+     "d": "2026-08-04",
+     "clicks": 26,
+     "impr": 3166,
+     "ctr": 0.82,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-08-05",
+     "clicks": 31,
+     "impr": 2905,
+     "ctr": 1.07,
+     "pos": 13.1
+    },
+    {
+     "d": "2026-08-06",
+     "clicks": 29,
+     "impr": 3559,
+     "ctr": 0.81,
+     "pos": 14.2
+    },
+    {
+     "d": "2026-08-07",
+     "clicks": 27,
+     "impr": 2460,
+     "ctr": 1.1,
+     "pos": 12.7
+    },
+    {
+     "d": "2026-08-08",
+     "clicks": 25,
+     "impr": 2935,
+     "ctr": 0.85,
+     "pos": 12.8
+    },
+    {
+     "d": "2026-08-09",
+     "clicks": 24,
+     "impr": 3187,
+     "ctr": 0.75,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-08-10",
+     "clicks": 15,
+     "impr": 2089,
+     "ctr": 0.72,
+     "pos": 16.1
+    },
+    {
+     "d": "2026-08-11",
+     "clicks": 19,
+     "impr": 1966,
+     "ctr": 0.97,
+     "pos": 15.8
+    },
+    {
+     "d": "2026-08-12",
+     "clicks": 23,
+     "impr": 2030,
+     "ctr": 1.13,
+     "pos": 16.4
+    },
+    {
+     "d": "2026-08-13",
+     "clicks": 17,
+     "impr": 2684,
+     "ctr": 0.63,
+     "pos": 18.7
+    },
+    {
+     "d": "2026-08-14",
+     "clicks": 13,
+     "impr": 1744,
+     "ctr": 0.75,
+     "pos": 15.0
+    },
+    {
+     "d": "2026-08-15",
+     "clicks": 13,
+     "impr": 1791,
+     "ctr": 0.73,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-08-16",
+     "clicks": 10,
+     "impr": 2305,
+     "ctr": 0.43,
+     "pos": 17.5
+    },
+    {
+     "d": "2026-08-17",
+     "clicks": 13,
+     "impr": 2401,
+     "ctr": 0.54,
+     "pos": 18.1
+    },
+    {
+     "d": "2026-08-18",
+     "clicks": 15,
+     "impr": 2087,
+     "ctr": 0.72,
+     "pos": 18.0
+    },
+    {
+     "d": "2026-08-19",
+     "clicks": 14,
+     "impr": 2185,
+     "ctr": 0.64,
+     "pos": 18.7
+    },
+    {
+     "d": "2026-08-20",
+     "clicks": 14,
+     "impr": 2216,
+     "ctr": 0.63,
+     "pos": 19.8
+    },
+    {
+     "d": "2026-08-21",
+     "clicks": 16,
+     "impr": 1658,
+     "ctr": 0.97,
+     "pos": 19.3
+    },
+    {
+     "d": "2026-08-22",
+     "clicks": 12,
+     "impr": 2548,
+     "ctr": 0.47,
+     "pos": 17.3
+    },
+    {
+     "d": "2026-08-23",
+     "clicks": 26,
+     "impr": 2421,
+     "ctr": 1.07,
+     "pos": 15.7
+    },
+    {
+     "d": "2026-08-24",
+     "clicks": 26,
+     "impr": 2855,
+     "ctr": 0.91,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-08-25",
+     "clicks": 27,
+     "impr": 2901,
+     "ctr": 0.93,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-08-26",
+     "clicks": 27,
+     "impr": 2961,
+     "ctr": 0.91,
+     "pos": 16.2
+    },
+    {
+     "d": "2026-08-27",
+     "clicks": 19,
+     "impr": 4278,
+     "ctr": 0.44,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-08-28",
+     "clicks": 22,
+     "impr": 2891,
+     "ctr": 0.76,
+     "pos": 15.7
+    },
+    {
+     "d": "2026-08-29",
+     "clicks": 19,
+     "impr": 2558,
+     "ctr": 0.74,
+     "pos": 14.4
+    },
+    {
+     "d": "2026-08-30",
+     "clicks": 17,
+     "impr": 3290,
+     "ctr": 0.52,
+     "pos": 15.5
+    },
+    {
+     "d": "2026-08-31",
+     "clicks": 23,
+     "impr": 3085,
+     "ctr": 0.75,
+     "pos": 14.5
+    },
+    {
+     "d": "2026-09-01",
+     "clicks": 21,
+     "impr": 3107,
+     "ctr": 0.68,
+     "pos": 13.0
+    },
+    {
+     "d": "2026-09-02",
+     "clicks": 38,
+     "impr": 3154,
+     "ctr": 1.2,
+     "pos": 13.1
+    },
+    {
+     "d": "2026-09-03",
+     "clicks": 21,
+     "impr": 3353,
+     "ctr": 0.63,
+     "pos": 15.2
+    },
+    {
+     "d": "2026-09-04",
+     "clicks": 26,
+     "impr": 2417,
+     "ctr": 1.08,
+     "pos": 14.0
+    },
+    {
+     "d": "2026-09-05",
+     "clicks": 24,
+     "impr": 2616,
+     "ctr": 0.92,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-09-06",
+     "clicks": 27,
+     "impr": 2694,
+     "ctr": 1.0,
+     "pos": 13.1
+    },
+    {
+     "d": "2026-09-07",
+     "clicks": 23,
+     "impr": 2925,
+     "ctr": 0.79,
+     "pos": 14.1
+    },
+    {
+     "d": "2026-09-08",
+     "clicks": 28,
+     "impr": 2653,
+     "ctr": 1.06,
+     "pos": 12.8
+    },
+    {
+     "d": "2026-09-09",
+     "clicks": 28,
+     "impr": 3177,
+     "ctr": 0.88,
+     "pos": 14.4
+    },
+    {
+     "d": "2026-09-10",
+     "clicks": 17,
+     "impr": 2889,
+     "ctr": 0.59,
+     "pos": 13.7
+    },
+    {
+     "d": "2026-09-11",
+     "clicks": 21,
+     "impr": 2347,
+     "ctr": 0.89,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-09-12",
+     "clicks": 15,
+     "impr": 2833,
+     "ctr": 0.53,
+     "pos": 16.1
+    },
+    {
+     "d": "2026-09-13",
+     "clicks": 25,
+     "impr": 2387,
+     "ctr": 1.05,
+     "pos": 13.5
+    },
+    {
+     "d": "2026-09-14",
+     "clicks": 23,
+     "impr": 3052,
+     "ctr": 0.75,
+     "pos": 13.8
+    },
+    {
+     "d": "2026-09-15",
+     "clicks": 21,
+     "impr": 2469,
+     "ctr": 0.85,
+     "pos": 12.9
+    },
+    {
+     "d": "2026-09-16",
+     "clicks": 17,
+     "impr": 2503,
+     "ctr": 0.68,
+     "pos": 14.4
+    },
+    {
+     "d": "2026-09-17",
+     "clicks": 24,
+     "impr": 2087,
+     "ctr": 1.15,
+     "pos": 12.5
+    },
+    {
+     "d": "2026-09-18",
+     "clicks": 19,
+     "impr": 2280,
+     "ctr": 0.83,
+     "pos": 12.8
+    },
+    {
+     "d": "2026-09-19",
+     "clicks": 21,
+     "impr": 1507,
+     "ctr": 1.39,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-09-20",
+     "clicks": 14,
+     "impr": 1638,
+     "ctr": 0.85,
+     "pos": 13.5
+    },
+    {
+     "d": "2026-09-21",
+     "clicks": 24,
+     "impr": 2191,
+     "ctr": 1.1,
+     "pos": 14.3
+    },
+    {
+     "d": "2026-09-22",
+     "clicks": 28,
+     "impr": 2587,
+     "ctr": 1.08,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-09-23",
+     "clicks": 16,
+     "impr": 2043,
+     "ctr": 0.78,
+     "pos": 13.1
+    },
+    {
+     "d": "2026-09-24",
+     "clicks": 19,
+     "impr": 2695,
+     "ctr": 0.71,
+     "pos": 14.5
+    },
+    {
+     "d": "2026-09-25",
+     "clicks": 13,
+     "impr": 1297,
+     "ctr": 1.0,
+     "pos": 14.2
+    },
+    {
+     "d": "2026-09-26",
+     "clicks": 16,
+     "impr": 1693,
+     "ctr": 0.95,
+     "pos": 13.9
+    },
+    {
+     "d": "2026-09-27",
+     "clicks": 17,
+     "impr": 1623,
+     "ctr": 1.05,
+     "pos": 12.7
+    },
+    {
+     "d": "2026-09-28",
+     "clicks": 28,
+     "impr": 1713,
+     "ctr": 1.63,
+     "pos": 13.5
+    },
+    {
+     "d": "2026-09-29",
+     "clicks": 18,
+     "impr": 1643,
+     "ctr": 1.1,
+     "pos": 12.6
+    },
+    {
+     "d": "2026-09-30",
+     "clicks": 36,
+     "impr": 2224,
+     "ctr": 1.62,
+     "pos": 12.9
+    },
+    {
+     "d": "2026-10-01",
+     "clicks": 33,
+     "impr": 2459,
+     "ctr": 1.34,
+     "pos": 14.1
+    },
+    {
+     "d": "2026-10-02",
+     "clicks": 16,
+     "impr": 1667,
+     "ctr": 0.96,
+     "pos": 14.2
+    },
+    {
+     "d": "2026-10-03",
+     "clicks": 22,
+     "impr": 1728,
+     "ctr": 1.27,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-10-04",
+     "clicks": 23,
+     "impr": 1863,
+     "ctr": 1.23,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-10-05",
+     "clicks": 24,
+     "impr": 2157,
+     "ctr": 1.11,
+     "pos": 15.7
+    },
+    {
+     "d": "2026-10-06",
+     "clicks": 14,
+     "impr": 2163,
+     "ctr": 0.65,
+     "pos": 15.7
+    },
+    {
+     "d": "2026-10-07",
+     "clicks": 15,
+     "impr": 2224,
+     "ctr": 0.67,
+     "pos": 16.2
+    },
+    {
+     "d": "2026-10-08",
+     "clicks": 20,
+     "impr": 2252,
+     "ctr": 0.89,
+     "pos": 13.7
+    },
+    {
+     "d": "2026-10-09",
+     "clicks": 19,
+     "impr": 1984,
+     "ctr": 0.96,
+     "pos": 14.6
+    },
+    {
+     "d": "2026-10-10",
+     "clicks": 17,
+     "impr": 1823,
+     "ctr": 0.93,
+     "pos": 15.9
+    },
+    {
+     "d": "2026-10-11",
+     "clicks": 16,
+     "impr": 2002,
+     "ctr": 0.8,
+     "pos": 14.2
+    },
+    {
+     "d": "2026-10-12",
+     "clicks": 22,
+     "impr": 1974,
+     "ctr": 1.11,
+     "pos": 12.4
+    },
+    {
+     "d": "2026-10-13",
+     "clicks": 13,
+     "impr": 1824,
+     "ctr": 0.71,
+     "pos": 14.4
+    },
+    {
+     "d": "2026-10-14",
+     "clicks": 18,
+     "impr": 2648,
+     "ctr": 0.68,
+     "pos": 15.1
+    },
+    {
+     "d": "2026-10-15",
+     "clicks": 13,
+     "impr": 3086,
+     "ctr": 0.42,
+     "pos": 15.8
+    },
+    {
+     "d": "2026-10-16",
+     "clicks": 17,
+     "impr": 2047,
+     "ctr": 0.83,
+     "pos": 16.0
+    },
+    {
+     "d": "2026-10-17",
+     "clicks": 17,
+     "impr": 2082,
+     "ctr": 0.82,
+     "pos": 15.6
+    },
+    {
+     "d": "2026-10-18",
+     "clicks": 15,
+     "impr": 2382,
+     "ctr": 0.63,
+     "pos": 15.7
+    },
+    {
+     "d": "2026-10-19",
+     "clicks": 16,
+     "impr": 2669,
+     "ctr": 0.6,
+     "pos": 15.3
+    },
+    {
+     "d": "2026-10-20",
+     "clicks": 13,
+     "impr": 2224,
+     "ctr": 0.58,
+     "pos": 15.3
+    },
+    {
+     "d": "2026-10-21",
+     "clicks": 15,
+     "impr": 2453,
+     "ctr": 0.61,
+     "pos": 15.0
+    },
+    {
+     "d": "2026-10-22",
+     "clicks": 20,
+     "impr": 3149,
+     "ctr": 0.64,
+     "pos": 16.5
+    },
+    {
+     "d": "2026-10-23",
+     "clicks": 9,
+     "impr": 1757,
+     "ctr": 0.51,
+     "pos": 17.4
+    },
+    {
+     "d": "2026-10-24",
+     "clicks": 16,
+     "impr": 2228,
+     "ctr": 0.72,
+     "pos": 17.3
+    },
+    {
+     "d": "2026-10-25",
+     "clicks": 15,
+     "impr": 2575,
+     "ctr": 0.58,
+     "pos": 15.9
+    },
+    {
+     "d": "2026-10-26",
+     "clicks": 14,
+     "impr": 2097,
+     "ctr": 0.67,
+     "pos": 16.4
+    },
+    {
+     "d": "2026-10-27",
+     "clicks": 9,
+     "impr": 1751,
+     "ctr": 0.51,
+     "pos": 17.1
+    }
+   ]
+  },
+  "gscq": {
+   "rows": [
+    {
+     "q": "simple online pharmacy wegovy",
+     "clicks": 36,
+     "impr": 316,
+     "ctr": 11.4,
+     "pos": 1.3,
+     "prev": {
+      "clicks": 52,
+      "impr": 366,
+      "ctr": 14.2,
+      "pos": 1.2
+     }
+    },
+    {
+     "q": "buy wegovy",
+     "clicks": 22,
+     "impr": 808,
+     "ctr": 2.7,
+     "pos": 13.9,
+     "prev": {
+      "clicks": 7,
+      "impr": 894,
+      "ctr": 0.8,
+      "pos": 13.9
+     }
+    },
+    {
+     "q": "simple online pharmacy wegovy prices",
+     "clicks": 21,
+     "impr": 114,
+     "ctr": 18.4,
+     "pos": 1.8,
+     "prev": {
+      "clicks": 48,
+      "impr": 137,
+      "ctr": 35.0,
+      "pos": 1.1
+     }
+    },
+    {
+     "q": "wegovy simple online pharmacy",
+     "clicks": 17,
+     "impr": 121,
+     "ctr": 14.0,
+     "pos": 1.1,
+     "prev": {
+      "clicks": 27,
+      "impr": 147,
+      "ctr": 18.4,
+      "pos": 5.5
+     }
+    },
+    {
+     "q": "buy wegovy online",
+     "clicks": 9,
+     "impr": 660,
+     "ctr": 1.4,
+     "pos": 13.0,
+     "prev": {
+      "clicks": 4,
+      "impr": 749,
+      "ctr": 0.5,
+      "pos": 12.7
+     }
+    },
+    {
+     "q": "wegovy",
+     "clicks": 7,
+     "impr": 490,
+     "ctr": 1.4,
+     "pos": 40.5,
+     "prev": {
+      "clicks": 0,
+      "impr": 337,
+      "ctr": 0.0,
+      "pos": 29.0
+     }
+    },
+    {
+     "q": "wegovy price uk",
+     "clicks": 5,
+     "impr": 518,
+     "ctr": 1.0,
+     "pos": 6.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 101,
+      "ctr": 1.0,
+      "pos": 12.3
+     }
+    },
+    {
+     "q": "simple pharmacy wegovy prices",
+     "clicks": 5,
+     "impr": 19,
+     "ctr": 26.3,
+     "pos": 1.2,
+     "prev": {
+      "clicks": 6,
+      "impr": 21,
+      "ctr": 28.6,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "buy wegovy uk",
+     "clicks": 4,
+     "impr": 696,
+     "ctr": 0.6,
+     "pos": 9.6,
+     "prev": {
+      "clicks": 6,
+      "impr": 605,
+      "ctr": 1.0,
+      "pos": 13.6
+     }
+    },
+    {
+     "q": "wegovy cost uk",
+     "clicks": 4,
+     "impr": 425,
+     "ctr": 0.9,
+     "pos": 8.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 48,
+      "ctr": 2.1,
+      "pos": 12.6
+     }
+    },
+    {
+     "q": "wegovy prices uk",
+     "clicks": 4,
+     "impr": 306,
+     "ctr": 1.3,
+     "pos": 4.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 65,
+      "ctr": 0.0,
+      "pos": 12.4
+     }
+    },
+    {
+     "q": "cheapest wegovy uk",
+     "clicks": 4,
+     "impr": 195,
+     "ctr": 2.1,
+     "pos": 9.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 14,
+      "ctr": 0.0,
+      "pos": 13.1
+     }
+    },
+    {
+     "q": "wegovy price",
+     "clicks": 3,
+     "impr": 1101,
+     "ctr": 0.3,
+     "pos": 9.1,
+     "prev": {
+      "clicks": 6,
+      "impr": 762,
+      "ctr": 0.8,
+      "pos": 9.7
+     }
+    },
+    {
+     "q": "wegovy online pharmacy",
+     "clicks": 3,
+     "impr": 388,
+     "ctr": 0.8,
+     "pos": 2.9,
+     "prev": {
+      "clicks": 2,
+      "impr": 343,
+      "ctr": 0.6,
+      "pos": 6.5
+     }
+    },
+    {
+     "q": "wegovy 2.4mg price uk",
+     "clicks": 3,
+     "impr": 302,
+     "ctr": 1.0,
+     "pos": 4.6,
+     "prev": {
+      "clicks": 2,
+      "impr": 111,
+      "ctr": 1.8,
+      "pos": 10.4
+     }
+    },
+    {
+     "q": "wegovy 1.7mg price",
+     "clicks": 3,
+     "impr": 281,
+     "ctr": 1.1,
+     "pos": 14.9,
+     "prev": {
+      "clicks": 5,
+      "impr": 373,
+      "ctr": 1.3,
+      "pos": 11.2
+     }
+    },
+    {
+     "q": "cost of wegovy uk",
+     "clicks": 3,
+     "impr": 125,
+     "ctr": 2.4,
+     "pos": 4.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 26,
+      "ctr": 0.0,
+      "pos": 12.3
+     }
+    },
+    {
+     "q": "wegovy bundles",
+     "clicks": 3,
+     "impr": 69,
+     "ctr": 4.3,
+     "pos": 13.7,
+     "prev": {
+      "clicks": 1,
+      "impr": 39,
+      "ctr": 2.6,
+      "pos": 11.5
+     }
+    },
+    {
+     "q": "wegovy 0.5 mg price uk",
+     "clicks": 3,
+     "impr": 68,
+     "ctr": 4.4,
+     "pos": 3.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 9,
+      "ctr": 0.0,
+      "pos": 11.2
+     }
+    },
+    {
+     "q": "wegovy injection price",
+     "clicks": 2,
+     "impr": 875,
+     "ctr": 0.2,
+     "pos": 10.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 239,
+      "ctr": 0.4,
+      "pos": 13.2
+     }
+    },
+    {
+     "q": "wegovy cost",
+     "clicks": 2,
+     "impr": 683,
+     "ctr": 0.3,
+     "pos": 9.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 695,
+      "ctr": 0.0,
+      "pos": 9.4
+     }
+    },
+    {
+     "q": "wegovy online",
+     "clicks": 2,
+     "impr": 440,
+     "ctr": 0.5,
+     "pos": 14.7,
+     "prev": {
+      "clicks": 4,
+      "impr": 435,
+      "ctr": 0.9,
+      "pos": 15.4
+     }
+    },
+    {
+     "q": "buy wegovy online uk",
+     "clicks": 2,
+     "impr": 399,
+     "ctr": 0.5,
+     "pos": 6.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 296,
+      "ctr": 0.0,
+      "pos": 12.2
+     }
+    },
+    {
+     "q": "wegovy 1mg price",
+     "clicks": 2,
+     "impr": 321,
+     "ctr": 0.6,
+     "pos": 5.6,
+     "prev": {
+      "clicks": 3,
+      "impr": 304,
+      "ctr": 1.0,
+      "pos": 7.0
+     }
+    },
+    {
+     "q": "wegovy weight loss price",
+     "clicks": 2,
+     "impr": 205,
+     "ctr": 1.0,
+     "pos": 9.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 255,
+      "ctr": 0.0,
+      "pos": 11.4
+     }
+    },
+    {
+     "q": "1mg wegovy price",
+     "clicks": 2,
+     "impr": 84,
+     "ctr": 2.4,
+     "pos": 3.5,
+     "prev": {
+      "clicks": 1,
+      "impr": 131,
+      "ctr": 0.8,
+      "pos": 6.4
+     }
+    },
+    {
+     "q": "wegovy injections uk",
+     "clicks": 2,
+     "impr": 84,
+     "ctr": 2.4,
+     "pos": 18.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 43,
+      "ctr": 0.0,
+      "pos": 24.5
+     }
+    },
+    {
+     "q": "wegovy bundle uk",
+     "clicks": 2,
+     "impr": 77,
+     "ctr": 2.6,
+     "pos": 13.6,
+     "prev": {
+      "clicks": 0,
+      "impr": 25,
+      "ctr": 0.0,
+      "pos": 11.9
+     }
+    },
+    {
+     "q": "simple online wegovy",
+     "clicks": 2,
+     "impr": 33,
+     "ctr": 6.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 3,
+      "impr": 45,
+      "ctr": 6.7,
+      "pos": 3.6
+     }
+    },
+    {
+     "q": "wegovy pen",
+     "clicks": 2,
+     "impr": 19,
+     "ctr": 10.5,
+     "pos": 18.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 19,
+      "ctr": 0.0,
+      "pos": 8.3
+     }
+    },
+    {
+     "q": "wegovy 3 month bundle",
+     "clicks": 2,
+     "impr": 16,
+     "ctr": 12.5,
+     "pos": 5.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 8,
+      "ctr": 0.0,
+      "pos": 9.9
+     }
+    },
+    {
+     "q": "wegovy 1.0mg price",
+     "clicks": 2,
+     "impr": 13,
+     "ctr": 15.4,
+     "pos": 7.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 8,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "wegovy online shop",
+     "clicks": 2,
+     "impr": 9,
+     "ctr": 22.2,
+     "pos": 4.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 5,
+      "ctr": 20.0,
+      "pos": 2.8
+     }
+    },
+    {
+     "q": "wegovy buy online",
+     "clicks": 1,
+     "impr": 349,
+     "ctr": 0.3,
+     "pos": 15.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 383,
+      "ctr": 0.3,
+      "pos": 14.5
+     }
+    },
+    {
+     "q": "order wegovy online",
+     "clicks": 1,
+     "impr": 317,
+     "ctr": 0.3,
+     "pos": 13.6,
+     "prev": {
+      "clicks": 0,
+      "impr": 339,
+      "ctr": 0.0,
+      "pos": 12.8
+     }
+    },
+    {
+     "q": "how much is wegovy in uk",
+     "clicks": 1,
+     "impr": 299,
+     "ctr": 0.3,
+     "pos": 8.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 346,
+      "ctr": 0.0,
+      "pos": 9.6
+     }
+    },
+    {
+     "q": "how much is wegovy",
+     "clicks": 1,
+     "impr": 260,
+     "ctr": 0.4,
+     "pos": 11.2,
+     "prev": {
+      "clicks": 1,
+      "impr": 478,
+      "ctr": 0.2,
+      "pos": 8.6
+     }
+    },
+    {
+     "q": "best place to buy wegovy uk",
+     "clicks": 1,
+     "impr": 178,
+     "ctr": 0.6,
+     "pos": 13.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 34,
+      "ctr": 0.0,
+      "pos": 13.2
+     }
+    },
+    {
+     "q": "wegovy 1.7",
+     "clicks": 1,
+     "impr": 176,
+     "ctr": 0.6,
+     "pos": 23.1,
+     "prev": {
+      "clicks": 1,
+      "impr": 79,
+      "ctr": 1.3,
+      "pos": 14.7
+     }
+    },
+    {
+     "q": "cheapest wegovy price uk",
+     "clicks": 1,
+     "impr": 175,
+     "ctr": 0.6,
+     "pos": 16.2,
+     "prev": {
+      "clicks": 3,
+      "impr": 29,
+      "ctr": 10.3,
+      "pos": 20.7
+     }
+    },
+    {
+     "q": "wegovy online uk",
+     "clicks": 1,
+     "impr": 166,
+     "ctr": 0.6,
+     "pos": 5.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 117,
+      "ctr": 0.0,
+      "pos": 12.7
+     }
+    },
+    {
+     "q": "how much is wegovy uk per month",
+     "clicks": 1,
+     "impr": 140,
+     "ctr": 0.7,
+     "pos": 6.3,
+     "prev": {
+      "clicks": 1,
+      "impr": 150,
+      "ctr": 0.7,
+      "pos": 5.6
+     }
+    },
+    {
+     "q": "wegovy price list",
+     "clicks": 1,
+     "impr": 137,
+     "ctr": 0.7,
+     "pos": 6.8,
+     "prev": {
+      "clicks": 1,
+      "impr": 81,
+      "ctr": 1.2,
+      "pos": 5.0
+     }
+    },
+    {
+     "q": "wegovy 2.4 mg price",
+     "clicks": 1,
+     "impr": 125,
+     "ctr": 0.8,
+     "pos": 10.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 155,
+      "ctr": 0.6,
+      "pos": 12.3
+     }
+    },
+    {
+     "q": "wegovy 5mg",
+     "clicks": 1,
+     "impr": 110,
+     "ctr": 0.9,
+     "pos": 10.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 67,
+      "ctr": 0.0,
+      "pos": 14.4
+     }
+    },
+    {
+     "q": "wegovy 2.4mg price",
+     "clicks": 1,
+     "impr": 102,
+     "ctr": 1.0,
+     "pos": 12.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 116,
+      "ctr": 0.0,
+      "pos": 6.4
+     }
+    },
+    {
+     "q": "wegovy bundle",
+     "clicks": 1,
+     "impr": 73,
+     "ctr": 1.4,
+     "pos": 13.2,
+     "prev": {
+      "clicks": 0,
+      "impr": 44,
+      "ctr": 0.0,
+      "pos": 12.5
+     }
+    },
+    {
+     "q": "wegovy doses in ml",
+     "clicks": 1,
+     "impr": 63,
+     "ctr": 1.6,
+     "pos": 2.0
+    },
+    {
+     "q": "wegovy cheapest uk",
+     "clicks": 1,
+     "impr": 47,
+     "ctr": 2.1,
+     "pos": 14.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 18,
+      "ctr": 0.0,
+      "pos": 14.8
+     }
+    },
+    {
+     "q": "wegovy 1mg cost",
+     "clicks": 1,
+     "impr": 43,
+     "ctr": 2.3,
+     "pos": 1.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 40,
+      "ctr": 0.0,
+      "pos": 3.5
+     }
+    },
+    {
+     "q": "wegovy costs uk",
+     "clicks": 1,
+     "impr": 38,
+     "ctr": 2.6,
+     "pos": 2.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 3,
+      "ctr": 0.0,
+      "pos": 10.3
+     }
+    },
+    {
+     "q": "wegovy 2.4 mg price uk",
+     "clicks": 1,
+     "impr": 29,
+     "ctr": 3.4,
+     "pos": 5.9,
+     "prev": {
+      "clicks": 0,
+      "impr": 16,
+      "ctr": 0.0,
+      "pos": 10.7
+     }
+    },
+    {
+     "q": "wegovy pill simple online pharmacy",
+     "clicks": 1,
+     "impr": 29,
+     "ctr": 3.4,
+     "pos": 2.9,
+     "prev": {
+      "clicks": 3,
+      "impr": 40,
+      "ctr": 7.5,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "cheapest wegovy 2.4",
+     "clicks": 1,
+     "impr": 25,
+     "ctr": 4.0,
+     "pos": 15.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 3,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "simple online pharmacy discount code wegovy",
+     "clicks": 1,
+     "impr": 22,
+     "ctr": 4.5,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 55,
+      "ctr": 1.8,
+      "pos": 5.4
+     }
+    },
+    {
+     "q": "compare wegovy prices uk",
+     "clicks": 1,
+     "impr": 17,
+     "ctr": 5.9,
+     "pos": 15.2,
+     "prev": {
+      "clicks": 0,
+      "impr": 11,
+      "ctr": 0.0,
+      "pos": 11.2
+     }
+    },
+    {
+     "q": "how much is wegovy 1mg",
+     "clicks": 1,
+     "impr": 16,
+     "ctr": 6.2,
+     "pos": 5.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 29,
+      "ctr": 0.0,
+      "pos": 5.8
+     }
+    },
+    {
+     "q": "wegovy 0.5 mg price",
+     "clicks": 1,
+     "impr": 16,
+     "ctr": 6.2,
+     "pos": 8.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 19,
+      "ctr": 0.0,
+      "pos": 9.6
+     }
+    },
+    {
+     "q": "wegovy cheapest price uk",
+     "clicks": 1,
+     "impr": 14,
+     "ctr": 7.1,
+     "pos": 12.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 14,
+      "ctr": 0.0,
+      "pos": 16.8
+     }
+    },
+    {
+     "q": "wegovy maintenance dose cost",
+     "clicks": 1,
+     "impr": 14,
+     "ctr": 7.1,
+     "pos": 4.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 11,
+      "ctr": 0.0,
+      "pos": 3.0
+     }
+    },
+    {
+     "q": "cheapest wegovy online uk",
+     "clicks": 1,
+     "impr": 13,
+     "ctr": 7.7,
+     "pos": 8.2,
+     "prev": {
+      "clicks": 0,
+      "impr": 10,
+      "ctr": 0.0,
+      "pos": 17.1
+     }
+    },
+    {
+     "q": "wegovy injection uk price",
+     "clicks": 1,
+     "impr": 13,
+     "ctr": 7.7,
+     "pos": 2.4,
+     "prev": {
+      "clicks": 1,
+      "impr": 2,
+      "ctr": 50.0,
+      "pos": 1.5
+     }
+    },
+    {
+     "q": "wegovy online buy",
+     "clicks": 1,
+     "impr": 13,
+     "ctr": 7.7,
+     "pos": 13.5,
+     "prev": {
+      "clicks": 0,
+      "impr": 19,
+      "ctr": 0.0,
+      "pos": 13.4
+     }
+    },
+    {
+     "q": "5mg wegovy price",
+     "clicks": 1,
+     "impr": 12,
+     "ctr": 8.3,
+     "pos": 2.0
+    },
+    {
+     "q": "cheapest wegovy 1mg",
+     "clicks": 1,
+     "impr": 11,
+     "ctr": 9.1,
+     "pos": 16.2,
+     "prev": {
+      "clicks": 0,
+      "impr": 17,
+      "ctr": 0.0,
+      "pos": 13.6
+     }
+    },
+    {
+     "q": "wegovy in uk",
+     "clicks": 1,
+     "impr": 11,
+     "ctr": 9.1,
+     "pos": 34.5,
+     "prev": {
+      "clicks": 0,
+      "impr": 13,
+      "ctr": 0.0,
+      "pos": 32.2
+     }
+    },
+    {
+     "q": "wegivy",
+     "clicks": 1,
+     "impr": 8,
+     "ctr": 12.5,
+     "pos": 20.6,
+     "prev": {
+      "clicks": 0,
+      "impr": 1,
+      "ctr": 0.0,
+      "pos": 3.0
+     }
+    },
+    {
+     "q": "how much is the wegovy injection",
+     "clicks": 1,
+     "impr": 7,
+     "ctr": 14.3,
+     "pos": 1.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 14,
+      "ctr": 0.0,
+      "pos": 2.4
+     }
+    },
+    {
+     "q": "wegovy buy online uk cheapest",
+     "clicks": 1,
+     "impr": 7,
+     "ctr": 14.3,
+     "pos": 9.4,
+     "prev": {
+      "clicks": 0,
+      "impr": 15,
+      "ctr": 0.0,
+      "pos": 16.3
+     }
+    },
+    {
+     "q": "1 mg wegovy pen",
+     "clicks": 1,
+     "impr": 6,
+     "ctr": 16.7,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 6,
+      "ctr": 0.0,
+      "pos": 3.8
+     }
+    },
+    {
+     "q": "best price wegovy uk",
+     "clicks": 1,
+     "impr": 6,
+     "ctr": 16.7,
+     "pos": 11.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 17.0
+     }
+    },
+    {
+     "q": "best wegovy price",
+     "clicks": 1,
+     "impr": 6,
+     "ctr": 16.7,
+     "pos": 15.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 5,
+      "ctr": 0.0,
+      "pos": 13.4
+     }
+    },
+    {
+     "q": "cost of weight loss injections per month",
+     "clicks": 1,
+     "impr": 6,
+     "ctr": 16.7,
+     "pos": 12.2
+    },
+    {
+     "q": "how much is a wegovy pen",
+     "clicks": 1,
+     "impr": 6,
+     "ctr": 16.7,
+     "pos": 5.5
+    },
+    {
+     "q": "buy wegovy pill online uk",
+     "clicks": 1,
+     "impr": 5,
+     "ctr": 20.0,
+     "pos": 1.0
+    },
+    {
+     "q": "morrisons wegovy prices",
+     "clicks": 1,
+     "impr": 5,
+     "ctr": 20.0,
+     "pos": 2.8
+    },
+    {
+     "q": "wegovy 0.75mg price",
+     "clicks": 1,
+     "impr": 4,
+     "ctr": 25.0,
+     "pos": 2.0
+    },
+    {
+     "q": "0.25",
+     "clicks": 1,
+     "impr": 3,
+     "ctr": 33.3,
+     "pos": 2.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 3.0
+     }
+    },
+    {
+     "q": "wegovy 2.5 mg",
+     "clicks": 1,
+     "impr": 3,
+     "ctr": 33.3,
+     "pos": 11.7
+    },
+    {
+     "q": "cost of 1.7 mg wegovy",
+     "clicks": 1,
+     "impr": 2,
+     "ctr": 50.0,
+     "pos": 9.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 8,
+      "ctr": 12.5,
+      "pos": 6.9
+     }
+    },
+    {
+     "q": "how much is 1 mg wegovy",
+     "clicks": 1,
+     "impr": 2,
+     "ctr": 50.0,
+     "pos": 4.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 1,
+      "ctr": 0.0,
+      "pos": 1.0
+     }
+    },
+    {
+     "q": "wegovy pack",
+     "clicks": 1,
+     "impr": 2,
+     "ctr": 50.0,
+     "pos": 7.5
+    },
+    {
+     "q": "0.5",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 13.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 2.0
+     }
+    },
+    {
+     "q": "7.2 wegovy",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 4.0
+    },
+    {
+     "q": "asda wegovy promo code",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 3.0
+    },
+    {
+     "q": "best price wegovy pill uk",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 3.0
+    },
+    {
+     "q": "bundle subscription",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 5.0
+    },
+    {
+     "q": "cheaper plan",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 2.0
+    },
+    {
+     "q": "cheapest option",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 3.0
+    },
+    {
+     "q": "cheapest place to get the wegovy pill",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 3.0
+    },
+    {
+     "q": "cheapest wegovy injection",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 14.0
+    },
+    {
+     "q": "ok send me some links",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 4.0
+    },
+    {
+     "q": "ready to visit",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0
+    },
+    {
+     "q": "show me some suppliers",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 6.0
+    },
+    {
+     "q": "simple please",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0
+    },
+    {
+     "q": "wago",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 4.0
+    },
+    {
+     "q": "wegivy 1mg",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 21.0
+    },
+    {
+     "q": "wegovy 1.7ml",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 19.0
+    },
+    {
+     "q": "wegovy 7.2 cena",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 10.0
+    },
+    {
+     "q": "wegovy injection 0.25 mg price",
+     "clicks": 1,
+     "impr": 1,
+     "ctr": 100.0,
+     "pos": 1.0
+    }
+   ],
+   "as_of": "2026-10-27",
+   "days": 28
+  },
+  "gsckw": {
+   "buy wegovy": [
+    {
+     "d": "2026-08-04",
+     "pos": 12.2,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 12.3,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 12.8,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 12.9,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 11.2,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 16.8,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 15.8,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 16.7,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 16.6,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 15.2,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 16.2,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 16.7,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 17.7,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 18.1,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 17.4,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 17.9,
+     "clicks": 1,
+     "impr": 36
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 16.6,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 13.3,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 13.5,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 13.8,
+     "clicks": 0,
+     "impr": 45
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 13.2,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 49
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 13.3,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 13.8,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 14.5,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 14.6,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 13.8,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 12.7,
+     "clicks": 0,
+     "impr": 41
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 13.4,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-09-04",
+     "pos": 14.1,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-09-05",
+     "pos": 14.9,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 13.6,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 14.4,
+     "clicks": 2,
+     "impr": 42
+    },
+    {
+     "d": "2026-09-08",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 14.2,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-09-10",
+     "pos": 13.8,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-09-11",
+     "pos": 13.8,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-09-13",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-14",
+     "pos": 14.3,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-09-15",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-09-16",
+     "pos": 12.9,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-17",
+     "pos": 12.3,
+     "clicks": 1,
+     "impr": 32
+    },
+    {
+     "d": "2026-09-18",
+     "pos": 14.1,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 13.9,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 14.0,
+     "clicks": 1,
+     "impr": 34
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-09-23",
+     "pos": 14.6,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 15.3,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 14.6,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-09-26",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-09-27",
+     "pos": 13.4,
+     "clicks": 1,
+     "impr": 23
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 13.1,
+     "clicks": 2,
+     "impr": 33
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 10.7,
+     "clicks": 3,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 10.0,
+     "clicks": 5,
+     "impr": 67
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 12.1,
+     "clicks": 5,
+     "impr": 57
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 16.8,
+     "clicks": 1,
+     "impr": 26
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 11.7,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 16.9,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 15.7,
+     "clicks": 1,
+     "impr": 26
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 14.1,
+     "clicks": 1,
+     "impr": 33
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 14.0,
+     "clicks": 3,
+     "impr": 31
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 16.0,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 14.1,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 16.4,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 16.3,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 16.2,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-13",
+     "pos": 16.0,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-15",
+     "pos": 17.1,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-10-16",
+     "pos": 16.8,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-10-17",
+     "pos": 13.4,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-10-19",
+     "pos": 12.9,
+     "clicks": 1,
+     "impr": 27
+    },
+    {
+     "d": "2026-10-24",
+     "pos": 12.0,
+     "clicks": 1,
+     "impr": 26
+    },
+    {
+     "d": "2026-10-26",
+     "pos": 13.3,
+     "clicks": 1,
+     "impr": 22
+    }
+   ],
+   "buy wegovy online": [
+    {
+     "d": "2026-07-29",
+     "pos": 15.9,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 14.4,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 1.5,
+     "clicks": 1,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 11.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 10.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 12.6,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 11.9,
+     "clicks": 1,
+     "impr": 25
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 12.0,
+     "clicks": 1,
+     "impr": 33
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 11.2,
+     "clicks": 1,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 13.3,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 12.7,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 13.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 13.5,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 13.5,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 13.3,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 15.4,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 15.9,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 14.1,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 15.2,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 15.1,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 13.4,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 12.0,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 13.9,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 13.8,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 13.0,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 14.4,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 14.1,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 14.4,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 14.8,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 15.7,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 13.9,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 13.9,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-09-04",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-05",
+     "pos": 15.3,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 13.6,
+     "clicks": 2,
+     "impr": 28
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 13.5,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-08",
+     "pos": 12.1,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 13.3,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-09-10",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-09-11",
+     "pos": 12.0,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 13.0,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-09-13",
+     "pos": 13.9,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-09-14",
+     "pos": 13.5,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-15",
+     "pos": 13.2,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-09-16",
+     "pos": 11.7,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-09-17",
+     "pos": 10.2,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-09-18",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 12.6,
+     "clicks": 1,
+     "impr": 28
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 13.3,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-09-23",
+     "pos": 12.1,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 10.8,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-09-26",
+     "pos": 10.5,
+     "clicks": 1,
+     "impr": 44
+    },
+    {
+     "d": "2026-09-27",
+     "pos": 10.4,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 10.8,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 10.6,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 9.1,
+     "clicks": 5,
+     "impr": 43
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 12.1,
+     "clicks": 1,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 14.6,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 15.3,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 15.7,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 15.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 16.4,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 14.7,
+     "clicks": 1,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 15.6,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 14.8,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 14.9,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 15.8,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 15.4,
+     "clicks": 1,
+     "impr": 19
+    },
+    {
+     "d": "2026-10-13",
+     "pos": 10.9,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 11.7,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-10-15",
+     "pos": 12.5,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-10-16",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-17",
+     "pos": 11.8,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-10-21",
+     "pos": 14.5,
+     "clicks": 1,
+     "impr": 23
+    }
+   ],
+   "buy wegovy uk": [
+    {
+     "d": "2026-08-01",
+     "pos": 19.6,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 12.5,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 15.6,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 13.5,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 11.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 15.1,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 14.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 16.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 16.4,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 16.9,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 17.2,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 17.5,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 14.7,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 13.4,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 14.7,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 14.8,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 14.3,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 14.2,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 14.5,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 13.3,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 13.6,
+     "clicks": 1,
+     "impr": 25
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 14.6,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-09-04",
+     "pos": 14.7,
+     "clicks": 1,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-05",
+     "pos": 14.4,
+     "clicks": 1,
+     "impr": 18
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 14.2,
+     "clicks": 1,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 14.9,
+     "clicks": 2,
+     "impr": 26
+    },
+    {
+     "d": "2026-09-08",
+     "pos": 14.2,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 15.0,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-09-10",
+     "pos": 14.3,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-11",
+     "pos": 14.7,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 14.8,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-09-13",
+     "pos": 14.9,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-09-14",
+     "pos": 14.5,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-15",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-09-16",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-17",
+     "pos": 12.5,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-09-18",
+     "pos": 12.9,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 13.5,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 14.2,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-09-23",
+     "pos": 11.6,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 12.2,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 12.6,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-09-26",
+     "pos": 11.8,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-27",
+     "pos": 12.1,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 11.1,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 10.4,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 9.6,
+     "clicks": 2,
+     "impr": 41
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 8.4,
+     "clicks": 1,
+     "impr": 37
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 7.1,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 5.9,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 8.5,
+     "clicks": 1,
+     "impr": 20
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 6.9,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 8.5,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 5.9,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 9.1,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 7.1,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 9.0,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 7.4,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 7.1,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-10-13",
+     "pos": 9.2,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 6.5,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-10-15",
+     "pos": 12.2,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-16",
+     "pos": 12.9,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-10-17",
+     "pos": 12.8,
+     "clicks": 0,
+     "impr": 20
+    }
+   ],
+   "wegovy price": [
+    {
+     "d": "2026-08-04",
+     "pos": 12.7,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 10.8,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 10.9,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 10.6,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 10.9,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 17.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 17.8,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 17.3,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 17.9,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 18.8,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 19.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 20.6,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 23.9,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 15.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 13.5,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 13.6,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 15.8,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 15.0,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 13.4,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 12.2,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 11.7,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 11.6,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 11.8,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 11.9,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 10.8,
+     "clicks": 1,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-04",
+     "pos": 10.6,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-09-05",
+     "pos": 12.3,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 7.8,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 11.4,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-09-08",
+     "pos": 7.2,
+     "clicks": 1,
+     "impr": 38
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 6.9,
+     "clicks": 2,
+     "impr": 49
+    },
+    {
+     "d": "2026-09-10",
+     "pos": 12.0,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-11",
+     "pos": 6.5,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 11.9,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-13",
+     "pos": 12.3,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-09-14",
+     "pos": 9.3,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-09-15",
+     "pos": 8.5,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-09-16",
+     "pos": 9.3,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-09-17",
+     "pos": 9.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-09-18",
+     "pos": 9.9,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 9.9,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 10.2,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 10.4,
+     "clicks": 1,
+     "impr": 37
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 9.0,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-09-23",
+     "pos": 9.8,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 9.6,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 6.2,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-09-26",
+     "pos": 9.3,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-27",
+     "pos": 9.2,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 10.1,
+     "clicks": 1,
+     "impr": 28
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 9.2,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 9.7,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 8.5,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 13.4,
+     "clicks": 2,
+     "impr": 27
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 9.0,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 8.6,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 10.0,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 9.4,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 10.5,
+     "clicks": 0,
+     "impr": 41
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 10.5,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 10.2,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 10.5,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 7.9,
+     "clicks": 0,
+     "impr": 48
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 8.3,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-10-13",
+     "pos": 9.0,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 9.0,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-10-15",
+     "pos": 9.5,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-10-16",
+     "pos": 9.8,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-10-19",
+     "pos": 10.2,
+     "clicks": 1,
+     "impr": 57
+    }
+   ],
+   "wegovy uk": [
+    {
+     "d": "2026-07-29",
+     "pos": 26.3,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 27.6,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 39.8,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 48.0,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 30.1,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 22.4,
+     "clicks": 1,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 15.5,
+     "clicks": 0,
+     "impr": 43
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 16.2,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 16.5,
+     "clicks": 0,
+     "impr": 41
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 14.8,
+     "clicks": 1,
+     "impr": 33
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 14.7,
+     "clicks": 0,
+     "impr": 46
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 20.8,
+     "clicks": 0,
+     "impr": 42
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 23.3,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 25.8,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 20.2,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 30.8,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 34.3,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 34.1,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 31.2,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 30.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 27.6,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 28.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 29.2,
+     "clicks": 0,
+     "impr": 29
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 24.2,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 23.4,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 22.6,
+     "clicks": 0,
+     "impr": 50
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 24.5,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 19.9,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 23.4,
+     "clicks": 0,
+     "impr": 33
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 21.6,
+     "clicks": 0,
+     "impr": 45
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 23.5,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 28.1,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 17.5,
+     "clicks": 0,
+     "impr": 55
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 22.8,
+     "clicks": 0,
+     "impr": 35
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 23.3,
+     "clicks": 0,
+     "impr": 41
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 20.6,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 23.9,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-09-04",
+     "pos": 18.8,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-09-05",
+     "pos": 19.5,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 20.2,
+     "clicks": 1,
+     "impr": 41
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 20.9,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-09-08",
+     "pos": 19.3,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 20.3,
+     "clicks": 0,
+     "impr": 44
+    },
+    {
+     "d": "2026-09-10",
+     "pos": 22.7,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-09-11",
+     "pos": 20.6,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 21.0,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-09-13",
+     "pos": 19.3,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-09-14",
+     "pos": 19.2,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-09-15",
+     "pos": 19.7,
+     "clicks": 1,
+     "impr": 26
+    },
+    {
+     "d": "2026-09-16",
+     "pos": 20.8,
+     "clicks": 0,
+     "impr": 40
+    },
+    {
+     "d": "2026-09-17",
+     "pos": 29.6,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-09-18",
+     "pos": 27.6,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 22.4,
+     "clicks": 0,
+     "impr": 32
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 22.5,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 22.2,
+     "clicks": 0,
+     "impr": 39
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 20.0,
+     "clicks": 0,
+     "impr": 44
+    },
+    {
+     "d": "2026-09-23",
+     "pos": 18.8,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 20.3,
+     "clicks": 0,
+     "impr": 44
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 22.4,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-26",
+     "pos": 23.2,
+     "clicks": 1,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-27",
+     "pos": 21.0,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 19.6,
+     "clicks": 0,
+     "impr": 34
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 19.7,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 19.5,
+     "clicks": 1,
+     "impr": 34
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 21.4,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 21.5,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 19.1,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 20.1,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 21.7,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 22.0,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 22.3,
+     "clicks": 0,
+     "impr": 31
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 22.9,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 22.0,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 22.4,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 22.5,
+     "clicks": 0,
+     "impr": 37
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 24.5,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-10-13",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 23.9,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-15",
+     "pos": 21.9,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-10-16",
+     "pos": 21.6,
+     "clicks": 0,
+     "impr": 36
+    }
+   ],
+   "wegovy": [
+    {
+     "d": "2026-07-29",
+     "pos": 44.6,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 42.2,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 47.5,
+     "clicks": 0,
+     "impr": 30
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 45.6,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 46.7,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 48.2,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 41.4,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 31.7,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 27.9,
+     "clicks": 0,
+     "impr": 38
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 27.7,
+     "clicks": 1,
+     "impr": 24
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 32.8,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 44.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-13",
+     "pos": 2.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-14",
+     "pos": 46.5,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 40.2,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 46.3,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 40.6,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 45.0,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 48.5,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 42.3,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 41.8,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 39.2,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 35.6,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 38.7,
+     "clicks": 0,
+     "impr": 41
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 31.4,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 36.8,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 27.1,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 25.9,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 16.3,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 26.3,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 28.4,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 32.6,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-04",
+     "pos": 25.5,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-09-05",
+     "pos": 38.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 34.8,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 31.7,
+     "clicks": 0,
+     "impr": 27
+    },
+    {
+     "d": "2026-09-08",
+     "pos": 28.1,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 18.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-10",
+     "pos": 30.8,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-11",
+     "pos": 34.5,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 34.0,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-09-13",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-14",
+     "pos": 27.0,
+     "clicks": 0,
+     "impr": 47
+    },
+    {
+     "d": "2026-09-15",
+     "pos": 29.8,
+     "clicks": 0,
+     "impr": 28
+    },
+    {
+     "d": "2026-09-16",
+     "pos": 27.6,
+     "clicks": 0,
+     "impr": 36
+    },
+    {
+     "d": "2026-09-17",
+     "pos": 29.8,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-09-18",
+     "pos": 3.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 1.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 1.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 32.8,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 30.5,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-09-23",
+     "pos": 29.9,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 19.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 47.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-27",
+     "pos": 2.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 22.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 30.7,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 36.8,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 38.3,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 42.1,
+     "clicks": 1,
+     "impr": 14
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 30.9,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 45.5,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 47.5,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 33.2,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 33.2,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 41.7,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 31.2,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 49.4,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 41.8,
+     "clicks": 1,
+     "impr": 19
+    },
+    {
+     "d": "2026-10-13",
+     "pos": 39.1,
+     "clicks": 1,
+     "impr": 20
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 43.3,
+     "clicks": 1,
+     "impr": 24
+    },
+    {
+     "d": "2026-10-15",
+     "pos": 43.0,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-10-16",
+     "pos": 46.6,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-10-17",
+     "pos": 36.8,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-10-18",
+     "pos": 40.3,
+     "clicks": 1,
+     "impr": 14
+    },
+    {
+     "d": "2026-10-21",
+     "pos": 38.3,
+     "clicks": 1,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-27",
+     "pos": 58.0,
+     "clicks": 1,
+     "impr": 10
+    }
+   ],
+   "wegovy injection": [
+    {
+     "d": "2026-07-29",
+     "pos": 37.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 37.7,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 37.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 40.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 25.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 30.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 29.8,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 30.1,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 34.8,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 23.3,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-15",
+     "pos": 39.8,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 41.5,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 41.3,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 40.1,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-19",
+     "pos": 37.6,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-20",
+     "pos": 38.8,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 35.9,
+     "clicks": 1,
+     "impr": 15
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 34.3,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 35.9,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 34.8,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 31.5,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-08-26",
+     "pos": 29.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 32.3,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 27.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 28.0,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 32.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 34.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 34.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 31.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-04",
+     "pos": 32.6,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 32.9,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 28.6,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 4.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-10",
+     "pos": 23.2,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-09-11",
+     "pos": 27.4,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 26.5,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-09-13",
+     "pos": 30.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-14",
+     "pos": 28.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-09-15",
+     "pos": 27.5,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-09-16",
+     "pos": 24.7,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-17",
+     "pos": 35.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 30.0,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 30.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 21.0,
+     "clicks": 1,
+     "impr": 1
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 16.5,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 21.9,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 32.6,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 45.2,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 46.3,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 28.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 47.1,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 34.3,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 39.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 39.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 36.5,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 47.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 44.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 47.7,
+     "clicks": 0,
+     "impr": 3
+    }
+   ],
+   "wegovy price uk": [
+    {
+     "d": "2026-07-30",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 13.8,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 14.9,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-25",
+     "pos": 16.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 13.2,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 12.8,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 13.2,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 13.4,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 13.1,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 12.4,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 11.7,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 10.2,
+     "clicks": 1,
+     "impr": 5
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 10.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-08",
+     "pos": 13.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 12.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 12.6,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 13.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-23",
+     "pos": 11.9,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 12.2,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 13.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-26",
+     "pos": 12.1,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 11.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 10.2,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 10.8,
+     "clicks": 1,
+     "impr": 6
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 10.9,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 5.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 2.9,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 6.3,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 4.4,
+     "clicks": 1,
+     "impr": 19
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 3.3,
+     "clicks": 1,
+     "impr": 18
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 4.2,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 10.1,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 5.7,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 3.8,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 5.6,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 5.2,
+     "clicks": 0,
+     "impr": 25
+    },
+    {
+     "d": "2026-10-13",
+     "pos": 5.9,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 5.2,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-10-15",
+     "pos": 13.1,
+     "clicks": 1,
+     "impr": 20
+    },
+    {
+     "d": "2026-10-16",
+     "pos": 7.0,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-10-22",
+     "pos": 6.3,
+     "clicks": 1,
+     "impr": 16
+    }
+   ],
+   "wegovy pen": [
+    {
+     "d": "2026-07-30",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-08-18",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 28.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 7.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 11.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 9.9,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 4.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 23.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 47.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 14.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 16.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 14.7,
+     "clicks": 1,
+     "impr": 3
+    },
+    {
+     "d": "2026-10-22",
+     "pos": 15.0,
+     "clicks": 1,
+     "impr": 1
+    }
+   ],
+   "cheapest wegovy uk": [
+    {
+     "d": "2026-08-01",
+     "pos": 3.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 3.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 15.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 24.3,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 11.4,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 16.3,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 13.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-02",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 3.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 17.0,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 4.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 17.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 15.5,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 5.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 4.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 18.1,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 14.2,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-10-12",
+     "pos": 11.2,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-10-15",
+     "pos": 1.0,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-10-16",
+     "pos": 1.0,
+     "clicks": 1,
+     "impr": 5
+    },
+    {
+     "d": "2026-10-24",
+     "pos": 15.1,
+     "clicks": 1,
+     "impr": 15
+    },
+    {
+     "d": "2026-10-25",
+     "pos": 8.9,
+     "clicks": 1,
+     "impr": 33
+    },
+    {
+     "d": "2026-10-26",
+     "pos": 11.0,
+     "clicks": 1,
+     "impr": 29
+    }
+   ],
+   "wegovy injections": [
+    {
+     "d": "2026-07-29",
+     "pos": 33.2,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-07-30",
+     "pos": 39.3,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-07-31",
+     "pos": 37.1,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-01",
+     "pos": 35.9,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-02",
+     "pos": 38.7,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-03",
+     "pos": 39.9,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-08-04",
+     "pos": 22.1,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-05",
+     "pos": 22.6,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-08-06",
+     "pos": 22.1,
+     "clicks": 0,
+     "impr": 24
+    },
+    {
+     "d": "2026-08-07",
+     "pos": 23.8,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-08-08",
+     "pos": 25.7,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-08-09",
+     "pos": 33.2,
+     "clicks": 0,
+     "impr": 18
+    },
+    {
+     "d": "2026-08-10",
+     "pos": 34.3,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-11",
+     "pos": 33.1,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-08-12",
+     "pos": 42.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-08-16",
+     "pos": 39.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-17",
+     "pos": 37.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-08-21",
+     "pos": 41.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-08-22",
+     "pos": 32.8,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-08-23",
+     "pos": 31.2,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-08-24",
+     "pos": 32.2,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-08-27",
+     "pos": 30.2,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-08-28",
+     "pos": 29.0,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-08-29",
+     "pos": 3.0,
+     "clicks": 0,
+     "impr": 1
+    },
+    {
+     "d": "2026-08-30",
+     "pos": 28.0,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-08-31",
+     "pos": 36.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-09-01",
+     "pos": 33.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-02",
+     "pos": 34.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-03",
+     "pos": 29.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-09-04",
+     "pos": 30.1,
+     "clicks": 0,
+     "impr": 8
+    },
+    {
+     "d": "2026-09-05",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 15
+    },
+    {
+     "d": "2026-09-06",
+     "pos": 26.1,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-09-07",
+     "pos": 25.2,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-09-08",
+     "pos": 24.8,
+     "clicks": 0,
+     "impr": 16
+    },
+    {
+     "d": "2026-09-09",
+     "pos": 25.0,
+     "clicks": 0,
+     "impr": 23
+    },
+    {
+     "d": "2026-09-10",
+     "pos": 27.1,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-11",
+     "pos": 27.4,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 28.2,
+     "clicks": 0,
+     "impr": 20
+    },
+    {
+     "d": "2026-09-13",
+     "pos": 27.2,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-14",
+     "pos": 27.1,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-09-15",
+     "pos": 27.3,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-09-16",
+     "pos": 23.6,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-17",
+     "pos": 19.9,
+     "clicks": 0,
+     "impr": 26
+    },
+    {
+     "d": "2026-09-18",
+     "pos": 23.2,
+     "clicks": 0,
+     "impr": 17
+    },
+    {
+     "d": "2026-09-19",
+     "pos": 25.5,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 24.1,
+     "clicks": 0,
+     "impr": 19
+    },
+    {
+     "d": "2026-09-21",
+     "pos": 28.9,
+     "clicks": 0,
+     "impr": 14
+    },
+    {
+     "d": "2026-09-22",
+     "pos": 28.5,
+     "clicks": 0,
+     "impr": 21
+    },
+    {
+     "d": "2026-09-23",
+     "pos": 27.7,
+     "clicks": 0,
+     "impr": 11
+    },
+    {
+     "d": "2026-09-24",
+     "pos": 24.9,
+     "clicks": 0,
+     "impr": 22
+    },
+    {
+     "d": "2026-09-25",
+     "pos": 22.2,
+     "clicks": 0,
+     "impr": 13
+    },
+    {
+     "d": "2026-09-26",
+     "pos": 22.9,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-09-27",
+     "pos": 30.4,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-09-28",
+     "pos": 22.5,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-09-29",
+     "pos": 16.3,
+     "clicks": 0,
+     "impr": 12
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 18.9,
+     "clicks": 0,
+     "impr": 9
+    },
+    {
+     "d": "2026-10-01",
+     "pos": 22.0,
+     "clicks": 0,
+     "impr": 6
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 37.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 45.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 29.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 39.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-13",
+     "pos": 35.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-14",
+     "pos": 37.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-17",
+     "pos": 34.5,
+     "clicks": 0,
+     "impr": 2
+    }
+   ],
+   "wegovy weight loss": [
+    {
+     "d": "2026-08-09",
+     "pos": 61.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-12",
+     "pos": 38.3,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-09-20",
+     "pos": 50.5,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-09-30",
+     "pos": 29.1,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-10-03",
+     "pos": 54.0,
+     "clicks": 0,
+     "impr": 2
+    },
+    {
+     "d": "2026-10-04",
+     "pos": 49.0,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-10-05",
+     "pos": 73.6,
+     "clicks": 0,
+     "impr": 7
+    },
+    {
+     "d": "2026-10-06",
+     "pos": 83.5,
+     "clicks": 0,
+     "impr": 10
+    },
+    {
+     "d": "2026-10-07",
+     "pos": 49.0,
+     "clicks": 0,
+     "impr": 4
+    },
+    {
+     "d": "2026-10-08",
+     "pos": 54.7,
+     "clicks": 0,
+     "impr": 3
+    },
+    {
+     "d": "2026-10-09",
+     "pos": 53.4,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-10-10",
+     "pos": 45.6,
+     "clicks": 0,
+     "impr": 5
+    },
+    {
+     "d": "2026-10-11",
+     "pos": 45.0,
+     "clicks": 0,
+     "impr": 2
+    }
+   ],
+   "wegovy dosage": [
+    {
+     "d": "2026-09-09",
+     "pos": 44.7,
+     "clicks": 0,
+     "impr": 3
+    }
+   ],
+   "wegovy reviews": [
+    {
+     "d": "2026-10-05",
+     "pos": 2.0,
+     "clicks": 0,
+     "impr": 1
+    }
+   ]
+  },
+  "ga4": {
+   "page": [
+    {
+     "d": "2026-07-31",
+     "sessions": 47,
+     "events": 12
+    },
+    {
+     "d": "2026-08-01",
+     "sessions": 42,
+     "events": 12
+    },
+    {
+     "d": "2026-08-02",
+     "sessions": 31,
+     "events": 7
+    },
+    {
+     "d": "2026-08-03",
+     "sessions": 24,
+     "events": 6
+    },
+    {
+     "d": "2026-08-04",
+     "sessions": 31,
+     "events": 4
+    },
+    {
+     "d": "2026-08-05",
+     "sessions": 26,
+     "events": 1
+    },
+    {
+     "d": "2026-08-06",
+     "sessions": 24,
+     "events": 9
+    },
+    {
+     "d": "2026-08-07",
+     "sessions": 31,
+     "events": 23
+    },
+    {
+     "d": "2026-08-08",
+     "sessions": 21,
+     "events": 3
+    },
+    {
+     "d": "2026-08-09",
+     "sessions": 17,
+     "events": 0
+    },
+    {
+     "d": "2026-08-10",
+     "sessions": 15,
+     "events": 7
+    },
+    {
+     "d": "2026-08-11",
+     "sessions": 19,
+     "events": 4
+    },
+    {
+     "d": "2026-08-12",
+     "sessions": 22,
+     "events": 8
+    },
+    {
+     "d": "2026-08-13",
+     "sessions": 25,
+     "events": 1
+    },
+    {
+     "d": "2026-08-14",
+     "sessions": 22,
+     "events": 0
+    },
+    {
+     "d": "2026-08-15",
+     "sessions": 16,
+     "events": 0
+    },
+    {
+     "d": "2026-08-16",
+     "sessions": 19,
+     "events": 6
+    },
+    {
+     "d": "2026-08-17",
+     "sessions": 27,
+     "events": 20
+    },
+    {
+     "d": "2026-08-18",
+     "sessions": 24,
+     "events": 25
+    },
+    {
+     "d": "2026-08-19",
+     "sessions": 43,
+     "events": 10
+    },
+    {
+     "d": "2026-08-20",
+     "sessions": 42,
+     "events": 12
+    },
+    {
+     "d": "2026-08-21",
+     "sessions": 42,
+     "events": 18
+    },
+    {
+     "d": "2026-08-22",
+     "sessions": 57,
+     "events": 1
+    },
+    {
+     "d": "2026-08-23",
+     "sessions": 43,
+     "events": 27
+    },
+    {
+     "d": "2026-08-24",
+     "sessions": 65,
+     "events": 23
+    },
+    {
+     "d": "2026-08-25",
+     "sessions": 45,
+     "events": 24
+    },
+    {
+     "d": "2026-08-26",
+     "sessions": 51,
+     "events": 20
+    },
+    {
+     "d": "2026-08-27",
+     "sessions": 52,
+     "events": 3
+    },
+    {
+     "d": "2026-08-28",
+     "sessions": 55,
+     "events": 32
+    },
+    {
+     "d": "2026-08-29",
+     "sessions": 51,
+     "events": 21
+    },
+    {
+     "d": "2026-08-30",
+     "sessions": 47,
+     "events": 13
+    },
+    {
+     "d": "2026-08-31",
+     "sessions": 46,
+     "events": 2
+    },
+    {
+     "d": "2026-09-01",
+     "sessions": 37,
+     "events": 14
+    },
+    {
+     "d": "2026-09-02",
+     "sessions": 52,
+     "events": 25
+    },
+    {
+     "d": "2026-09-03",
+     "sessions": 38,
+     "events": 49
+    },
+    {
+     "d": "2026-09-04",
+     "sessions": 58,
+     "events": 12
+    },
+    {
+     "d": "2026-09-05",
+     "sessions": 38,
+     "events": 22
+    },
+    {
+     "d": "2026-09-06",
+     "sessions": 44,
+     "events": 17
+    },
+    {
+     "d": "2026-09-07",
+     "sessions": 50,
+     "events": 17
+    },
+    {
+     "d": "2026-09-08",
+     "sessions": 62,
+     "events": 29
+    },
+    {
+     "d": "2026-09-09",
+     "sessions": 43,
+     "events": 27
+    },
+    {
+     "d": "2026-09-10",
+     "sessions": 51,
+     "events": 4
+    },
+    {
+     "d": "2026-09-11",
+     "sessions": 43,
+     "events": 16
+    },
+    {
+     "d": "2026-09-12",
+     "sessions": 44,
+     "events": 23
+    },
+    {
+     "d": "2026-09-13",
+     "sessions": 57,
+     "events": 19
+    },
+    {
+     "d": "2026-09-14",
+     "sessions": 36,
+     "events": 11
+    },
+    {
+     "d": "2026-09-15",
+     "sessions": 50,
+     "events": 14
+    },
+    {
+     "d": "2026-09-16",
+     "sessions": 39,
+     "events": 1
+    },
+    {
+     "d": "2026-09-17",
+     "sessions": 45,
+     "events": 11
+    },
+    {
+     "d": "2026-09-18",
+     "sessions": 64,
+     "events": 31
+    },
+    {
+     "d": "2026-09-19",
+     "sessions": 62,
+     "events": 35
+    },
+    {
+     "d": "2026-09-20",
+     "sessions": 43,
+     "events": 21
+    },
+    {
+     "d": "2026-09-21",
+     "sessions": 50,
+     "events": 9
+    },
+    {
+     "d": "2026-09-22",
+     "sessions": 55,
+     "events": 25
+    },
+    {
+     "d": "2026-09-23",
+     "sessions": 38,
+     "events": 16
+    },
+    {
+     "d": "2026-09-24",
+     "sessions": 47,
+     "events": 21
+    },
+    {
+     "d": "2026-09-25",
+     "sessions": 45,
+     "events": 9
+    },
+    {
+     "d": "2026-09-26",
+     "sessions": 43,
+     "events": 5
+    },
+    {
+     "d": "2026-09-27",
+     "sessions": 45,
+     "events": 6
+    },
+    {
+     "d": "2026-09-28",
+     "sessions": 43,
+     "events": 33
+    },
+    {
+     "d": "2026-09-29",
+     "sessions": 47,
+     "events": 15
+    },
+    {
+     "d": "2026-09-30",
+     "sessions": 63,
+     "events": 10
+    },
+    {
+     "d": "2026-10-01",
+     "sessions": 71,
+     "events": 14
+    },
+    {
+     "d": "2026-10-02",
+     "sessions": 82,
+     "events": 20
+    },
+    {
+     "d": "2026-10-03",
+     "sessions": 59,
+     "events": 9
+    },
+    {
+     "d": "2026-10-04",
+     "sessions": 49,
+     "events": 9
+    },
+    {
+     "d": "2026-10-05",
+     "sessions": 47,
+     "events": 20
+    },
+    {
+     "d": "2026-10-06",
+     "sessions": 72,
+     "events": 23
+    },
+    {
+     "d": "2026-10-07",
+     "sessions": 54,
+     "events": 6
+    },
+    {
+     "d": "2026-10-08",
+     "sessions": 52,
+     "events": 8
+    },
+    {
+     "d": "2026-10-09",
+     "sessions": 44,
+     "events": 5
+    },
+    {
+     "d": "2026-10-10",
+     "sessions": 34,
+     "events": 12
+    },
+    {
+     "d": "2026-10-11",
+     "sessions": 32,
+     "events": 23
+    },
+    {
+     "d": "2026-10-12",
+     "sessions": 56,
+     "events": 8
+    },
+    {
+     "d": "2026-10-13",
+     "sessions": 29,
+     "events": 4
+    },
+    {
+     "d": "2026-10-14",
+     "sessions": 34,
+     "events": 0
+    },
+    {
+     "d": "2026-10-15",
+     "sessions": 40,
+     "events": 29
+    },
+    {
+     "d": "2026-10-16",
+     "sessions": 59,
+     "events": 7
+    },
+    {
+     "d": "2026-10-17",
+     "sessions": 45,
+     "events": 8
+    },
+    {
+     "d": "2026-10-18",
+     "sessions": 41,
+     "events": 8
+    },
+    {
+     "d": "2026-10-19",
+     "sessions": 56,
+     "events": 17
+    },
+    {
+     "d": "2026-10-20",
+     "sessions": 81,
+     "events": 20
+    },
+    {
+     "d": "2026-10-21",
+     "sessions": 51,
+     "events": 16
+    },
+    {
+     "d": "2026-10-22",
+     "sessions": 44,
+     "events": 12
+    },
+    {
+     "d": "2026-10-23",
+     "sessions": 29,
+     "events": 1
+    },
+    {
+     "d": "2026-10-24",
+     "sessions": 46,
+     "events": 7
+    },
+    {
+     "d": "2026-10-25",
+     "sessions": 45,
+     "events": 10
+    },
+    {
+     "d": "2026-10-26",
+     "sessions": 44,
+     "events": 2
+    },
+    {
+     "d": "2026-10-27",
+     "sessions": 47,
+     "events": 6
+    },
+    {
+     "d": "2026-10-28",
+     "sessions": 41,
+     "events": 0
+    },
+    {
+     "d": "2026-10-29",
+     "sessions": 2,
+     "events": 2
+    }
+   ],
+   "as_of": "2026-10-29"
+  },
+  "ga4rev": {
+   "months": [
+    {
+     "m": "2026-02",
+     "revenue": 0.0,
+     "sessions": 1
+    },
+    {
+     "m": "2026-03",
+     "revenue": 241.73,
+     "sessions": 73
+    },
+    {
+     "m": "2026-04",
+     "revenue": 486.96,
+     "sessions": 58
+    },
+    {
+     "m": "2026-05",
+     "revenue": 2009.83,
+     "sessions": 618
+    },
+    {
+     "m": "2026-06",
+     "revenue": 4306.22,
+     "sessions": 585
+    },
+    {
+     "m": "2026-07",
+     "revenue": 4504.63,
+     "sessions": 620
+    },
+    {
+     "m": "2026-08",
+     "revenue": 3003.25,
+     "sessions": 291
+    },
+    {
+     "m": "2026-09",
+     "revenue": 4139.41,
+     "sessions": 463
+    },
+    {
+     "m": "2026-10",
+     "revenue": 1234.91,
+     "sessions": 391
+    }
+   ],
+   "as_of": "2026-10-29"
+  },
+  "m": {
+   "pill": 34,
+   "bwInj": null,
+   "blD": 63,
+   "blT": 174
+  },
+  "flags": {
+   "wrong": true,
+   "legacy": false,
+   "cann": 6
+  },
+  "kwmeta": {
+   "wegovy": {
+    "v": 165000,
+    "feat": [
+     5,
+     9,
+     13,
+     14,
+     15,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy uk": {
+    "v": 18100,
+    "feat": [
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "buy wegovy": {
+    "v": 2900,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "buy wegovy uk": {
+    "v": 1300,
+    "feat": [
+     6,
+     9,
+     20,
+     21,
+     36
+    ]
+   },
+   "buy wegovy online": {
+    "v": 2900,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy injection": {
+    "v": 4400,
+    "feat": [
+     5,
+     9,
+     13,
+     15,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy injections": {
+    "v": 1900,
+    "feat": [
+     5,
+     9,
+     13,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy pen": {
+    "v": 2400,
+    "feat": [
+     9,
+     13,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy price": {
+    "v": 18100,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy price uk": {
+    "v": 5400,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "cheapest wegovy uk": {
+    "v": 4400,
+    "feat": [
+     6,
+     9,
+     21,
+     36,
+     52
+    ]
+   },
+   "semaglutide injection": {
+    "v": 5400,
+    "feat": [
+     5,
+     9,
+     20,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy side effects": {
+    "v": 33100,
+    "feat": [
+     5,
+     6,
+     9,
+     13,
+     21,
+     36,
+     52
+    ]
+   },
+   "wegovy dosage": {
+    "v": 2400,
+    "feat": [
+     5,
+     6,
+     9,
+     13,
+     36
+    ]
+   },
+   "wegovy vs mounjaro": {
+    "v": 33100,
+    "feat": [
+     9,
+     13,
+     21,
+     36,
+     45,
+     52
+    ]
+   },
+   "wegovy reviews": {
+    "v": 5400,
+    "feat": [
+     9,
+     21,
+     36,
+     45,
+     52
+    ]
+   },
+   "wegovy weight loss": {
+    "v": 5400,
+    "feat": [
+     9,
+     13,
+     21,
+     36,
+     52
+    ]
+   }
+  },
+  "tech": {
+   "checks": [
+    {
+     "name": "HTTP status",
+     "state": "warn",
+     "evidence": "200 via redirect -> https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/wegovy/"
+    },
+    {
+     "name": "Canonical tag",
+     "state": "fail",
+     "evidence": "points elsewhere: https://www.simpleonlinepharmacy.co.uk/online-doctor/weight-loss/wegovy/ -- signals consolidate off-page"
+    },
+    {
+     "name": "Meta robots",
+     "state": "pass",
+     "evidence": "index, follow"
+    },
+    {
+     "name": "Structured data",
+     "state": "warn",
+     "evidence": "has Product; missing FAQPage, MedicalWebPage"
+    },
+    {
+     "name": "H1 count",
+     "state": "pass",
+     "evidence": "exactly one H1"
+    },
+    {
+     "name": "Internal links",
+     "state": "pass",
+     "evidence": "11 links from 2 hub page(s)"
+    }
+   ],
+   "score": 3,
+   "of": 6
+  },
+  "psi": {
+   "score": 51,
+   "lcp": "11.1 s",
+   "cls": "0.001",
+   "tbt": "1,040 ms",
+   "fcp": "1.4 s",
+   "si": "3.6 s",
+   "strategy": "mobile",
+   "field": {
+    "lcp_ms": 1489,
+    "lcp_ms_cat": "FAST",
+    "inp_ms": 116,
+    "inp_ms_cat": "FAST",
+    "cls100": 15,
+    "cls100_cat": "AVERAGE"
+   }
+  },
+  "links": {
+   "ours": 63,
+   "comp": {
+    "Superdrug": 92,
+    "Chemist4U": 35,
+    "FamilyChemist": 8,
+    "MedExpress": 84,
+    "Boots": 12
+   },
+   "prospects": [
+    {
+     "d": "pricemymeds.co.uk",
+     "n": 5,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "FamilyChemist",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "glpinfo.com",
+     "n": 4,
+     "who": [
+      "Chemist4U",
+      "FamilyChemist",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "pepcred.com",
+     "n": 4,
+     "who": [
+      "Boots",
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "glp1tablets.co.uk",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "weightlosscomparison.co.uk",
+     "n": 3,
+     "who": [
+      "Chemist4U",
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "comparewegovyprices.co.uk",
+     "n": 2,
+     "who": [
+      "Boots",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "healthcomparehub.com",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "islipsurgery.org.uk",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "myweightchoices.com",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "pharmacyuk.com",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s1.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s10.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s2.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s3.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s4.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s5.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s6.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s7.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s8.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-anomaly-s9.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-cartel-10w.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-cartel-1w.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-cartel-2w.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-cartel-3w.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    },
+    {
+     "d": "seo-cartel-4w.xyz",
+     "n": 2,
+     "who": [
+      "MedExpress",
+      "Superdrug"
+     ]
+    }
+   ],
+   "strong": 32
+  }
  }
 ]
