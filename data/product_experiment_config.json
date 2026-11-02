@@ -23,6 +23,36 @@
    "label": "wegovy injection (reverted to legacy)",
    "live": "2026-09-28",
    "note": "reversion test: new layout rolled back to legacy layout + previous content"
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/acid-reflux/omeprazole/",
+   "label": "omeprazole",
+   "live": null,
+   "note": "next-week template test batch (added 2026-11-02)"
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/stop-smoking-tablets/zyban/",
+   "label": "zyban",
+   "live": null,
+   "note": "next-week template test batch (added 2026-11-02)"
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/malaria-tablets/malarone/",
+   "label": "malarone",
+   "live": null,
+   "note": "next-week template test batch (added 2026-11-02)"
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/underactive-thyroid/levothyroxine/",
+   "label": "levothyroxine",
+   "live": null,
+   "note": "next-week template test batch (added 2026-11-02)"
+  },
+  {
+   "url": "https://www.simpleonlinepharmacy.co.uk/online-doctor/contraceptive-pill-online/cerelle/",
+   "label": "cerelle",
+   "live": null,
+   "note": "next-week template test batch (added 2026-11-02)"
   }
  ],
  "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
