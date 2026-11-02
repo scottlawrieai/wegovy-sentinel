@@ -598594,12 +598594,12 @@
    "of": 6
   },
   "psi": {
-   "score": 44,
-   "lcp": "10.5 s",
+   "score": 41,
+   "lcp": "9.9 s",
    "cls": "0",
-   "tbt": "1,180 ms",
-   "fcp": "2.3 s",
-   "si": "5.7 s",
+   "tbt": "1,320 ms",
+   "fcp": "2.4 s",
+   "si": "6.9 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 747,

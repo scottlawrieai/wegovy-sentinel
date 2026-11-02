@@ -472976,12 +472976,12 @@
    "of": 6
   },
   "psi": {
-   "score": 32,
-   "lcp": "14.6 s",
+   "score": 42,
+   "lcp": "12.1 s",
    "cls": "0",
-   "tbt": "2,150 ms",
-   "fcp": "3.3 s",
-   "si": "9.0 s",
+   "tbt": "1,320 ms",
+   "fcp": "2.5 s",
+   "si": "5.9 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 1494,

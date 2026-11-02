@@ -29377,7 +29377,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 48,
-   "wc": 5984,
+   "wc": 6018,
    "faqs": [
     "What is Mounjaro?",
     "How long does Mounjaro take to work?",
@@ -29455,7 +29455,7 @@
     "Eli Lilly": 4,
     "prescription-only": 9,
     "nausea / GI side effects": 20,
-    "side effects": 19,
+    "side effects": 20,
     "pancreatitis": 3,
     "thyroid": 2,
     "BMI eligibility": 5,
@@ -29469,11 +29469,11 @@
     "november out",
     "november out stars",
     "week week",
-    "next pen",
+    "order next",
     "stars verified",
     "out stars verified",
     "blood sugar",
-    "order next",
+    "next pen",
     "pen week",
     "order next pen"
    ],
@@ -29503,9 +29503,9 @@
    ],
    "authors": [
     "Aamina Rafiq",
-    "Gillian Celestin",
-    "Iain Simpson",
-    "Mens"
+    "Julie Darvill",
+    "customer",
+    "Kerry Thomasson"
    ],
    "bytes": 506
   },
@@ -29638,14 +29638,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 726,
+    "bytes": 714,
     "psi": {
-     "score": 54,
-     "lcp": "7.0 s",
-     "cls": "0.108",
-     "tbt": "460 ms",
+     "score": 60,
+     "lcp": "7.8 s",
+     "cls": "0.122",
+     "tbt": "250 ms",
      "fcp": "2.3 s",
-     "si": "6.1 s",
+     "si": "5.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1195,
@@ -29714,7 +29714,7 @@
      "Can you drink alcohol on Mounjaro?",
      "Can emergency contraception still work if I\u2019m taking Mounjaro?"
     ],
-    "open": "Next day delivery FREE ongoing doctor support Free weight loss support pack Best value provider New patient Halloween offer \ud83c\udf83 - Spend \u00a3140+ on consultations, save \u00a340 with EMNK35. Spending less? Save \u00a320 with LWHZ140. Ends 2 Nov Mounjaro Weekly weight loss injection with the active ingredient tirzepatide Trustpilot Get started In stock. Prices from \u00a3148.97 Simply fill in a",
+    "open": "Next day delivery FREE ongoing doctor support Free weight loss support pack Best value provider New patient Halloween offer \ud83c\udf83 - Spend \u00a3140+ on consultations, save \u00a340 with EMNK35. Spending less? Save \u00a320 with LWHZ140. Ends 3 Nov Mounjaro Weekly weight loss injection with the active ingredient tirzepatide Trustpilot Get started In stock. Prices from \u00a3148.97 Simply fill in a",
     "terms": [
      "% of body weight",
      "15 mg maintenance dose",
@@ -29812,14 +29812,14 @@
      "WebPage"
     ],
     "authors": [],
-    "bytes": 327,
+    "bytes": 326,
     "psi": {
-     "score": 77,
-     "lcp": "5.9 s",
-     "cls": "0.025",
-     "tbt": "30 ms",
+     "score": 76,
+     "lcp": "5.8 s",
+     "cls": "0.02",
+     "tbt": "60 ms",
      "fcp": "1.8 s",
-     "si": "3.0 s",
+     "si": "3.6 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1052,
@@ -29857,12 +29857,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 77,
-     "lcp": "3.6 s",
+     "score": 64,
+     "lcp": "4.2 s",
      "cls": "0.017",
-     "tbt": "120 ms",
-     "fcp": "3.6 s",
-     "si": "5.6 s",
+     "tbt": "770 ms",
+     "fcp": "2.1 s",
+     "si": "3.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 817,
@@ -30137,7 +30137,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 48,
-    "wc": 5984,
+    "wc": 6018,
     "faqs": [
      "What is Mounjaro?",
      "How long does Mounjaro take to work?",
@@ -30215,7 +30215,7 @@
      "Eli Lilly": 4,
      "prescription-only": 9,
      "nausea / GI side effects": 20,
-     "side effects": 19,
+     "side effects": 20,
      "pancreatitis": 3,
      "thyroid": 2,
      "BMI eligibility": 5,
@@ -30229,11 +30229,11 @@
      "november out",
      "november out stars",
      "week week",
-     "next pen",
+     "order next",
      "stars verified",
      "out stars verified",
      "blood sugar",
-     "order next",
+     "next pen",
      "pen week",
      "order next pen"
     ],
@@ -30263,9 +30263,9 @@
     ],
     "authors": [
      "Aamina Rafiq",
-     "Gillian Celestin",
-     "Iain Simpson",
-     "Mens"
+     "Julie Darvill",
+     "customer",
+     "Kerry Thomasson"
     ],
     "bytes": 506
    }
@@ -30301,7 +30301,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "5984 words vs competitor median 4424"
+     "evidence": "6018 words vs competitor median 4424"
     },
     {
      "name": "FAQ coverage",

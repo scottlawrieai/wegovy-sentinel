@@ -37239,7 +37239,7 @@
     "Weight Loss Treatments"
    ],
    "h3n": 60,
-   "wc": 7252,
+   "wc": 7325,
    "faqs": [
     "What is the Wegovy pill?",
     "How does the Wegovy pill work?",
@@ -37400,7 +37400,7 @@
     "Debbie",
     "Simon Roncoroni"
    ],
-   "bytes": 585
+   "bytes": 586
   },
   "pages": [
    {
@@ -37556,12 +37556,12 @@
     "authors": [],
     "bytes": 635,
     "psi": {
-     "score": 63,
-     "lcp": "5.6 s",
-     "cls": "0.031",
-     "tbt": "360 ms",
+     "score": 72,
+     "lcp": "5.7 s",
+     "cls": "0.02",
+     "tbt": "170 ms",
      "fcp": "2.1 s",
-     "si": "6.5 s",
+     "si": "4.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1147,
@@ -37717,12 +37717,12 @@
     "authors": [],
     "bytes": 464,
     "psi": {
-     "score": 68,
-     "lcp": "11.7 s",
-     "cls": "0",
-     "tbt": "160 ms",
+     "score": 56,
+     "lcp": "11.0 s",
+     "cls": "0.127",
+     "tbt": "330 ms",
      "fcp": "1.2 s",
-     "si": "5.9 s",
+     "si": "7.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1103,
@@ -37847,12 +37847,12 @@
     "authors": [],
     "bytes": 324,
     "psi": {
-     "score": 86,
-     "lcp": "1.2 s",
+     "score": 89,
+     "lcp": "1.1 s",
      "cls": "0",
-     "tbt": "280 ms",
-     "fcp": "1.2 s",
-     "si": "8.0 s",
+     "tbt": "210 ms",
+     "fcp": "1.1 s",
+     "si": "7.5 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3074,
@@ -37923,7 +37923,7 @@
      "Do I need a prescription for the Wegovy pill?",
      "Who makes the Wegovy pill?"
     ],
-    "open": "Next day delivery FREE ongoing doctor support Free weight loss support pack Best value provider New patient Halloween offer \ud83c\udf83 - Spend \u00a3140+ on consultations, save \u00a340 with EMNK35. Spending less? Save \u00a320 with LWHZ140. Ends 2 Nov Wegovy pill Oral semaglutide tablets for weight loss Trustpilot Get started In stock. Prices from \u00a387.97 Simply fill in a brief questionnaire.",
+    "open": "Next day delivery FREE ongoing doctor support Free weight loss support pack Best value provider New patient Halloween offer \ud83c\udf83 - Spend \u00a3140+ on consultations, save \u00a340 with EMNK35. Spending less? Save \u00a320 with LWHZ140. Ends 3 Nov Wegovy pill Oral semaglutide tablets for weight loss Trustpilot Get started In stock. Prices from \u00a387.97 Simply fill in a brief questionnaire.",
     "terms": [
      "% of body weight",
      "120ml water rule",
@@ -38271,7 +38271,7 @@
      "CollegeOrUniversity"
     ],
     "authors": [],
-    "bytes": 568
+    "bytes": 580
    },
    {
     "url": "https://www.simpleonlinepharmacy.co.uk/weight-loss/wegovy-pill/",
@@ -38306,7 +38306,7 @@
      "Weight Loss Treatments"
     ],
     "h3n": 60,
-    "wc": 7252,
+    "wc": 7325,
     "faqs": [
      "What is the Wegovy pill?",
      "How does the Wegovy pill work?",
@@ -38467,7 +38467,7 @@
      "Debbie",
      "Simon Roncoroni"
     ],
-    "bytes": 585
+    "bytes": 586
    }
   ],
   "align": {
@@ -38501,7 +38501,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "7252 words vs competitor median 3224"
+     "evidence": "7325 words vs competitor median 3224"
     },
     {
      "name": "FAQ coverage",

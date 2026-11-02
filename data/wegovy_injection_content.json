@@ -33035,11 +33035,11 @@
     "bytes": 392,
     "psi": {
      "score": 59,
-     "lcp": "15.4 s",
+     "lcp": "14.9 s",
      "cls": "0",
-     "tbt": "370 ms",
+     "tbt": "380 ms",
      "fcp": "1.4 s",
-     "si": "7.3 s",
+     "si": "6.9 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4367,
@@ -33174,14 +33174,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 669,
+    "bytes": 662,
     "psi": {
-     "score": 67,
-     "lcp": "11.7 s",
-     "cls": "0.095",
-     "tbt": "20 ms",
+     "score": 66,
+     "lcp": "11.9 s",
+     "cls": "0.079",
+     "tbt": "130 ms",
      "fcp": "2.3 s",
-     "si": "4.7 s",
+     "si": "5.4 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1081,
@@ -33248,7 +33248,7 @@
      "Is Wegovy safe?",
      "Why am I still hungry on Wegovy?"
     ],
-    "open": "Next day delivery FREE ongoing doctor support Free weight loss support pack Best value provider New patient Halloween offer \ud83c\udf83 - Spend \u00a3140+ on consultations, save \u00a340 with EMNK35. Spending less? Save \u00a320 with LWHZ140. Ends 2 Nov Wegovy Weekly weight loss injection with active ingredient semaglutide Get started In stock. from \u00a368.97 Was \u00a388.97 with code LWHZ140 Simply fill",
+    "open": "Next day delivery FREE ongoing doctor support Free weight loss support pack Best value provider New patient Halloween offer \ud83c\udf83 - Spend \u00a3140+ on consultations, save \u00a340 with EMNK35. Spending less? Save \u00a320 with LWHZ140. Ends 3 Nov Wegovy Weekly weight loss injection with active ingredient semaglutide Get started In stock. from \u00a368.97 Was \u00a388.97 with code LWHZ140 Simply fill",
     "terms": [
      "0.25 mg starting dose",
      "2.4 mg maintenance dose",
@@ -33340,12 +33340,12 @@
     "authors": [],
     "bytes": 341,
     "psi": {
-     "score": 69,
-     "lcp": "5.4 s",
+     "score": 83,
+     "lcp": "4.2 s",
      "cls": "0.035",
-     "tbt": "280 ms",
-     "fcp": "2.6 s",
-     "si": "3.9 s",
+     "tbt": "70 ms",
+     "fcp": "1.8 s",
+     "si": "3.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 916,

@@ -442081,8 +442081,8 @@
   "m": {
    "pill": 12,
    "bwInj": null,
-   "blD": 2284,
-   "blT": 6254
+   "blD": 2287,
+   "blT": 6258
   },
   "flags": {
    "wrong": false,
@@ -442261,12 +442261,12 @@
    "of": 6
   },
   "psi": {
-   "score": 73,
-   "lcp": "2.0 s",
+   "score": 96,
+   "lcp": "1.7 s",
    "cls": "0",
-   "tbt": "930 ms",
-   "fcp": "2.0 s",
-   "si": "4.7 s",
+   "tbt": "160 ms",
+   "fcp": "1.7 s",
+   "si": "3.6 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 922,

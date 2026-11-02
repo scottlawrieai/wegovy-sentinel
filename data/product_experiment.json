@@ -15334,18 +15334,18 @@
     "h1": "Omeprazole",
     "h2n": 11,
     "faqs": 1,
-    "wc": 3340,
+    "wc": 3329,
     "schema": [
      "AdministrativeArea",
      "AggregateOffer",
      "AggregateRating",
      "ContactPoint",
      "Country",
+     "DefinedRegion",
      "DeliveryChargeSpecification",
      "Drug",
      "DrugLegalStatus",
-     "ItemPage",
-     "MedicalTherapy"
+     "ItemPage"
     ]
    }
   },
@@ -18241,20 +18241,20 @@
     "meta": "Zyban is a medication prescribed to people who are quitting smoking. You can buy Zyban online after completing an online assessment.",
     "robots": "index, follow",
     "h1": "Zyban",
-    "h2n": 9,
+    "h2n": 10,
     "faqs": 2,
-    "wc": 2875,
+    "wc": 2908,
     "schema": [
      "AdministrativeArea",
      "AggregateOffer",
      "AggregateRating",
      "ContactPoint",
      "Country",
+     "DefinedRegion",
      "DeliveryChargeSpecification",
      "Drug",
      "DrugLegalStatus",
-     "ItemPage",
-     "MedicalTherapy"
+     "ItemPage"
     ]
    }
   },
@@ -21662,24 +21662,24 @@
    },
    "health": {
     "status": "ok",
-    "title": "Buy Malarone Malaria Tablets Online from \u00a31.45 each",
+    "title": "Buy Malarone Malaria Tablets Online from \u00a32.23 each",
     "meta": "Malarone or generic atovaquone/proguanil for malaria prevention is available to order from our UK online pharmacy. Just complete an online assessment.",
-    "robots": "index, follow",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     "h1": "Malarone",
     "h2n": 12,
-    "faqs": 1,
-    "wc": 3105,
+    "faqs": 22,
+    "wc": 2344,
     "schema": [
-     "AdministrativeArea",
-     "AggregateOffer",
      "AggregateRating",
-     "ContactPoint",
+     "Answer",
+     "BreadcrumbList",
      "Country",
-     "DeliveryChargeSpecification",
+     "DefinedRegion",
      "Drug",
      "DrugLegalStatus",
-     "ItemPage",
-     "MedicalTherapy"
+     "FAQPage",
+     "ImageObject",
+     "ListItem"
     ]
    }
   },
@@ -24692,23 +24692,23 @@
    "health": {
     "status": "ok",
     "title": "Buy Levothyroxine Tablets Online | Simple Online Pharmacy",
-    "meta": "You can buy Levothyroxine tablets online from 67p / tablet. We are a UK registered and regulated online pharmacy and doctor service.",
-    "robots": "index, follow",
+    "meta": "You can buy Levothyroxine tablets online from 82p / tablet. We are a UK registered and regulated online pharmacy and doctor service.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     "h1": "Levothyroxine",
     "h2n": 8,
-    "faqs": 9,
-    "wc": 2360,
+    "faqs": 16,
+    "wc": 1438,
     "schema": [
-     "AdministrativeArea",
-     "AggregateOffer",
-     "AggregateRating",
-     "ContactPoint",
+     "Answer",
+     "BreadcrumbList",
      "Country",
-     "DeliveryChargeSpecification",
      "Drug",
      "DrugLegalStatus",
-     "ItemPage",
-     "MedicalTherapy"
+     "FAQPage",
+     "ImageObject",
+     "ListItem",
+     "MedicalCondition",
+     "MedicalWebPage"
     ]
    }
   },
@@ -28010,22 +28010,22 @@
     "status": "ok",
     "title": "Buy Cerelle Contraceptive Pill Online \u00a310.99 | Simple Online Pharmacy",
     "meta": "We don't charge prescription fees. Buy Cerelle online from our UK registered online pharmacy & doctor service. 3 month supply for women already taking Cerelle.",
-    "robots": "index, follow",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     "h1": "Cerelle",
     "h2n": 9,
-    "faqs": 2,
-    "wc": 2998,
+    "faqs": 9,
+    "wc": 1971,
     "schema": [
-     "AdministrativeArea",
-     "AggregateOffer",
-     "AggregateRating",
-     "ContactPoint",
+     "Answer",
+     "BreadcrumbList",
      "Country",
-     "DeliveryChargeSpecification",
      "Drug",
      "DrugLegalStatus",
-     "ItemPage",
-     "MedicalTherapy"
+     "FAQPage",
+     "ImageObject",
+     "ListItem",
+     "MedicalCondition",
+     "MedicalWebPage"
     ]
    }
   }

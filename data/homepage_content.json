@@ -19113,7 +19113,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1052,
+   "wc": 1111,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -19158,7 +19158,7 @@
     "recommend simple",
     "recommend simple online",
     "discreet delivery",
-    "efficient service"
+    "pharmacy because"
    ],
    "imgs": 26,
    "videos": 0,
@@ -19227,12 +19227,12 @@
     "authors": [],
     "bytes": 65,
     "psi": {
-     "score": 75,
-     "lcp": "6.3 s",
+     "score": 76,
+     "lcp": "6.4 s",
      "cls": "0.001",
-     "tbt": "70 ms",
+     "tbt": "60 ms",
      "fcp": "1.5 s",
-     "si": "3.7 s",
+     "si": "3.3 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1802,
@@ -19277,12 +19277,12 @@
     "authors": [],
     "bytes": 309,
     "psi": {
-     "score": 56,
-     "lcp": "18.5 s",
-     "cls": "0.004",
-     "tbt": "550 ms",
-     "fcp": "1.1 s",
-     "si": "5.6 s",
+     "score": 49,
+     "lcp": "20.5 s",
+     "cls": "0",
+     "tbt": "490 ms",
+     "fcp": "2.8 s",
+     "si": "10.8 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1921,
@@ -19371,12 +19371,12 @@
     ],
     "bytes": 203,
     "psi": {
-     "score": 89,
-     "lcp": "3.3 s",
-     "cls": "0.001",
+     "score": 81,
+     "lcp": "4.7 s",
+     "cls": "0.002",
      "tbt": "0 ms",
-     "fcp": "2.0 s",
-     "si": "3.5 s",
+     "fcp": "1.8 s",
+     "si": "3.7 s",
      "strategy": "mobile"
     }
    },
@@ -19599,7 +19599,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1052,
+    "wc": 1111,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -19644,7 +19644,7 @@
      "recommend simple",
      "recommend simple online",
      "discreet delivery",
-     "efficient service"
+     "pharmacy because"
     ],
     "imgs": 26,
     "videos": 0,
@@ -19705,7 +19705,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1052 words vs competitor median 88"
+     "evidence": "1111 words vs competitor median 88"
     },
     {
      "name": "FAQ coverage",

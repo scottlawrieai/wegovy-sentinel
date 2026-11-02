@@ -395347,12 +395347,12 @@
    "of": 6
   },
   "psi": {
-   "score": 55,
-   "lcp": "13.2 s",
+   "score": 56,
+   "lcp": "9.1 s",
    "cls": "0",
-   "tbt": "250 ms",
-   "fcp": "5.6 s",
-   "si": "6.5 s",
+   "tbt": "730 ms",
+   "fcp": "1.5 s",
+   "si": "3.8 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 557,
