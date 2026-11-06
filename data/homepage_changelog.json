@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-10-08",
-  "changes": [
-   {
-    "type": "content",
-    "text": "Body copy +42 words (1,069 → 1,111)",
-    "source": "auto"
-   }
-  ]
- },
- {
   "date": "2026-10-09",
   "changes": [
    {
@@ -165,6 +155,16 @@
    {
     "type": "content",
     "text": "Body copy +42 words (1,064 → 1,106)",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-06",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy −26 words (1,106 → 1,080)",
     "source": "auto"
    }
   ]
