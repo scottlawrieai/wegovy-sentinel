@@ -2,10 +2,10 @@
  "overtaken:Pharmacy2U:online doctor": "2026-09-08",
  "overtaken:Boots:online doctor": "2026-09-08",
  "overtaken:Superdrug:online doctor": "2026-09-08",
- "overtaken:Superdrug:pharmacy online": "2026-10-08",
+ "overtaken:Superdrug:pharmacy online": "2026-11-07",
  "cann": "2026-11-03",
- "overtaken:Superdrug:online pharmacy": "2026-10-21",
- "overtaken:Superdrug:online pharmacy uk": "2026-09-25",
+ "overtaken:Superdrug:online pharmacy": "2026-11-07",
+ "overtaken:Superdrug:online pharmacy uk": "2026-11-07",
  "drop:online pharmacy": "2026-10-16",
  "page_one:online pharmacy": "2026-10-03",
  "overtaken:Pharmacy2U:online pharmacy": "2026-10-03",
@@ -22,5 +22,6 @@
  "page_one:simple online pharmacy": "2026-10-19",
  "page_one:online pharmacy uk": "2026-10-19",
  "overtaken:Chemist4U:online pharmacy uk": "2026-10-28",
- "overtaken:Boots:pharmacy online": "2026-11-03"
+ "overtaken:Boots:pharmacy online": "2026-11-03",
+ "overtaken:Boots:online pharmacy": "2026-11-07"
 }
