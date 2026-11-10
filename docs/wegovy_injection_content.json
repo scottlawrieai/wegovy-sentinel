@@ -32956,12 +32956,12 @@
     "authors": [],
     "bytes": 479,
     "psi": {
-     "score": 37,
-     "lcp": "15.0 s",
+     "score": 61,
+     "lcp": "15.1 s",
      "cls": "0",
-     "tbt": "2,220 ms",
-     "fcp": "1.7 s",
-     "si": "9.0 s",
+     "tbt": "310 ms",
+     "fcp": "1.5 s",
+     "si": "7.2 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 4468,
@@ -33096,14 +33096,14 @@
      "DoseSchedule"
     ],
     "authors": [],
-    "bytes": 686,
+    "bytes": 661,
     "psi": {
      "score": 68,
-     "lcp": "12.2 s",
-     "cls": "0.085",
-     "tbt": "30 ms",
+     "lcp": "11.9 s",
+     "cls": "0.082",
+     "tbt": "60 ms",
      "fcp": "2.3 s",
-     "si": "4.7 s",
+     "si": "5.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1064,
@@ -33214,12 +33214,12 @@
     ],
     "bytes": 49,
     "psi": {
-     "score": 78,
+     "score": 98,
      "lcp": "1.7 s",
-     "cls": "0.508",
+     "cls": "0",
      "tbt": "0 ms",
      "fcp": "1.7 s",
-     "si": "1.7 s",
+     "si": "3.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1575,
@@ -33263,7 +33263,7 @@
      "Why am I still hungry on Wegovy?"
     ],
     "h3n": 10,
-    "wc": 5510,
+    "wc": 5509,
     "faqs": [
      "What is Wegovy?",
      "Who is eligible for Wegovy?",

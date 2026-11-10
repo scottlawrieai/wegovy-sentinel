@@ -19691,7 +19691,7 @@
     "Questions we hear often"
    ],
    "h3n": 7,
-   "wc": 1147,
+   "wc": 1120,
    "faqs": [
     "Do I need to decide today?",
     "Is this a clinical assessment?",
@@ -19792,12 +19792,12 @@
     "authors": [],
     "bytes": 0,
     "psi": {
-     "score": 39,
-     "lcp": "14.3 s",
-     "cls": "0.013",
-     "tbt": "1,570 ms",
+     "score": 38,
+     "lcp": "13.9 s",
+     "cls": "0.011",
+     "tbt": "1,910 ms",
      "fcp": "1.6 s",
-     "si": "13.8 s",
+     "si": "10.7 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 3025,
@@ -19829,7 +19829,7 @@
      "Six things to look for in a weight loss provider"
     ],
     "h3n": 15,
-    "wc": 500,
+    "wc": 499,
     "faqs": [],
     "open": "Skip to main content Online pharmacy UK - trusted by thousands Your Trusted Online Pharmacy. 4.5 /5 Excellent Weight loss treatments Order before 15:30 on Monday to Friday for next day delivery Weight loss Acne Erectile Dysfunction Shop Fully inspected and regulated service UK registered pharmacy Approved UK-licensed treatments Discreet next day delivery Popular products View all products \u2192 Why",
     "terms": [
@@ -19855,8 +19855,8 @@
     "phrases": [
      "next day",
      "day delivery",
+     "quick delivery",
      "excellent service",
-     "fast delivery",
      "next day delivery",
      "online pharmacy",
      "order before",
@@ -19886,12 +19886,12 @@
     "authors": [],
     "bytes": 392,
     "psi": {
-     "score": 55,
-     "lcp": "11.6 s",
-     "cls": "0",
+     "score": 66,
+     "lcp": "12.3 s",
+     "cls": "0.001",
      "tbt": "270 ms",
-     "fcp": "4.2 s",
-     "si": "7.0 s",
+     "fcp": "1.2 s",
+     "si": "5.0 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 1497,
@@ -19954,14 +19954,14 @@
      "ListItem"
     ],
     "authors": [],
-    "bytes": 1040,
+    "bytes": 1047,
     "psi": {
-     "score": 18,
-     "lcp": "14.5 s",
-     "cls": "0.521",
-     "tbt": "1,320 ms",
+     "score": 34,
+     "lcp": "13.7 s",
+     "cls": "0.709",
+     "tbt": "400 ms",
      "fcp": "2.1 s",
-     "si": "9.4 s",
+     "si": "6.1 s",
      "strategy": "mobile",
      "field": {
       "lcp_ms": 2229,
@@ -20177,7 +20177,7 @@
      "Questions we hear often"
     ],
     "h3n": 7,
-    "wc": 1147,
+    "wc": 1120,
     "faqs": [
      "Do I need to decide today?",
      "Is this a clinical assessment?",
@@ -20283,7 +20283,7 @@
      "name": "Body depth (words)",
      "key": "wc",
      "state": "pass",
-     "evidence": "1147 words vs competitor median 382"
+     "evidence": "1120 words vs competitor median 382"
     },
     {
      "name": "FAQ coverage",

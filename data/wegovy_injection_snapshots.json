@@ -536228,12 +536228,12 @@
    "of": 6
   },
   "psi": {
-   "score": 36,
-   "lcp": "17.2 s",
+   "score": 39,
+   "lcp": "22.1 s",
    "cls": "0",
-   "tbt": "1,400 ms",
-   "fcp": "3.2 s",
-   "si": "7.8 s",
+   "tbt": "700 ms",
+   "fcp": "6.1 s",
+   "si": "9.3 s",
    "strategy": "mobile",
    "field": {
     "lcp_ms": 1493,
