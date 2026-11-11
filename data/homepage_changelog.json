@@ -188,5 +188,15 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-11-11",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Topic coverage gained: refill reminders",
+    "source": "auto"
+   }
+  ]
  }
 ]
