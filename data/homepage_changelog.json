@@ -198,5 +198,20 @@
     "source": "auto"
    }
   ]
+ },
+ {
+  "date": "2026-11-12",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy −49 words (1,140 → 1,091)",
+    "source": "auto"
+   },
+   {
+    "type": "content",
+    "text": "Topic coverage lost: refill reminders",
+    "source": "auto"
+   }
+  ]
  }
 ]

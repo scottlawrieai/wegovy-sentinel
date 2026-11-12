@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-08-10",
-     "clicks": 2,
-     "impr": 310,
-     "ctr": 0.65,
-     "pos": 14.1
-    },
-    {
      "d": "2026-08-11",
      "clicks": 1,
      "impr": 433,
@@ -641,20 +634,40 @@
      "impr": 283,
      "ctr": 0.0,
      "pos": 18.4
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 2,
+     "impr": 408,
+     "ctr": 0.49,
+     "pos": 22.0
     }
    ],
    "queries": [
     {
      "q": "buy cialis online",
      "clicks": 3,
-     "impr": 506,
+     "impr": 504,
      "ctr": 0.6,
-     "pos": 11.9,
+     "pos": 12.0,
      "prev": {
       "clicks": 1,
-      "impr": 507,
+      "impr": 504,
       "ctr": 0.2,
-      "pos": 12.5
+      "pos": 12.2
+     }
+    },
+    {
+     "q": "order cialis online",
+     "clicks": 1,
+     "impr": 80,
+     "ctr": 1.2,
+     "pos": 15.3,
+     "prev": {
+      "clicks": 0,
+      "impr": 58,
+      "ctr": 0.0,
+      "pos": 15.0
      }
     },
     {
@@ -662,12 +675,12 @@
      "clicks": 1,
      "impr": 38,
      "ctr": 2.6,
-     "pos": 12.4,
+     "pos": 12.2,
      "prev": {
       "clicks": 0,
-      "impr": 30,
+      "impr": 32,
       "ctr": 0.0,
-      "pos": 12.2
+      "pos": 12.1
      }
     },
     {
@@ -680,40 +693,40 @@
     {
      "q": "buy cialis",
      "clicks": 0,
-     "impr": 640,
+     "impr": 648,
      "ctr": 0.0,
-     "pos": 16.8,
+     "pos": 17.0,
      "prev": {
       "clicks": 3,
-      "impr": 538,
+      "impr": 534,
       "ctr": 0.6,
-      "pos": 15.6
+      "pos": 15.4
      }
     },
     {
      "q": "buy cheap cialis in england",
      "clicks": 0,
-     "impr": 14,
+     "impr": 13,
      "ctr": 0.0,
      "pos": 2.1,
      "prev": {
       "clicks": 0,
-      "impr": 5,
+      "impr": 6,
       "ctr": 0.0,
-      "pos": 2.8
+      "pos": 2.7
      }
     },
     {
      "q": "buy cheap cialis england",
      "clicks": 0,
-     "impr": 13,
+     "impr": 12,
      "ctr": 0.0,
-     "pos": 4.7,
+     "pos": 4.8,
      "prev": {
       "clicks": 0,
-      "impr": 7,
+      "impr": 8,
       "ctr": 0.0,
-      "pos": 3.0
+      "pos": 3.1
      }
     },
     {
@@ -732,14 +745,14 @@
     {
      "q": "buy cheap cialis online england",
      "clicks": 0,
-     "impr": 9,
+     "impr": 8,
      "ctr": 0.0,
-     "pos": 3.3,
+     "pos": 3.0,
      "prev": {
       "clicks": 0,
-      "impr": 1,
+      "impr": 2,
       "ctr": 0.0,
-      "pos": 2.0
+      "pos": 4.0
      }
     },
     {
@@ -777,13 +790,6 @@
      "pos": 24.5
     },
     {
-     "q": "buy cialis (tadalafil)",
-     "clicks": 0,
-     "impr": 2,
-     "ctr": 0.0,
-     "pos": 22.5
-    },
-    {
      "q": "about cialis 20mg",
      "clicks": 0,
      "impr": 1,
@@ -806,12 +812,6 @@
    ],
    "kwseries": {
     "buy cialis online": [
-     {
-      "d": "2026-08-10",
-      "pos": 9.3,
-      "clicks": 0,
-      "impr": 22
-     },
      {
       "d": "2026-08-11",
       "pos": 9.3,
@@ -1351,15 +1351,15 @@
       "pos": 12.5,
       "clicks": 0,
       "impr": 14
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 15.1,
+      "clicks": 0,
+      "impr": 16
      }
     ],
     "buy cialis": [
-     {
-      "d": "2026-08-10",
-      "pos": 10.5,
-      "clicks": 0,
-      "impr": 14
-     },
      {
       "d": "2026-08-11",
       "pos": 12.9,
@@ -1899,6 +1899,12 @@
       "pos": 22.7,
       "clicks": 0,
       "impr": 19
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 20.6,
+      "clicks": 0,
+      "impr": 23
      }
     ],
     "online cialis": [
@@ -2177,6 +2183,12 @@
       "pos": 12.0,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 7.5,
+      "clicks": 0,
+      "impr": 2
      }
     ],
     "where to buy cialis over the counter": [
@@ -2187,96 +2199,390 @@
       "impr": 1
      }
     ],
-    "buy cheap cialis in england": [
+    "order cialis online": [
      {
-      "d": "2026-10-05",
-      "pos": 2.0,
+      "d": "2026-08-11",
+      "pos": 12.3,
+      "clicks": 0,
+      "impr": 7
+     },
+     {
+      "d": "2026-08-12",
+      "pos": 9.0,
       "clicks": 0,
       "impr": 2
      },
      {
-      "d": "2026-10-09",
-      "pos": 3.0,
+      "d": "2026-08-13",
+      "pos": 12.0,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-08-14",
+      "pos": 10.6,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-08-15",
+      "pos": 10.4,
+      "clicks": 0,
+      "impr": 7
+     },
+     {
+      "d": "2026-08-16",
+      "pos": 10.4,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-08-17",
+      "pos": 12.1,
+      "clicks": 0,
+      "impr": 7
+     },
+     {
+      "d": "2026-08-18",
+      "pos": 9.5,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-08-19",
+      "pos": 13.8,
+      "clicks": 0,
+      "impr": 4
+     },
+     {
+      "d": "2026-08-20",
+      "pos": 11.5,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-08-21",
+      "pos": 15.7,
+      "clicks": 0,
+      "impr": 3
+     },
+     {
+      "d": "2026-08-22",
+      "pos": 13.5,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-08-23",
+      "pos": 13.6,
+      "clicks": 0,
+      "impr": 7
+     },
+     {
+      "d": "2026-08-24",
+      "pos": 15.5,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-08-25",
+      "pos": 17.7,
+      "clicks": 0,
+      "impr": 3
+     },
+     {
+      "d": "2026-08-26",
+      "pos": 13.5,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-08-27",
+      "pos": 16.0,
+      "clicks": 0,
+      "impr": 4
+     },
+     {
+      "d": "2026-08-29",
+      "pos": 14.8,
+      "clicks": 0,
+      "impr": 6
+     },
+     {
+      "d": "2026-08-30",
+      "pos": 16.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-08-31",
+      "pos": 14.2,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-09-02",
+      "pos": 16.0,
+      "clicks": 0,
+      "impr": 8
+     },
+     {
+      "d": "2026-09-03",
+      "pos": 16.5,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-09-04",
+      "pos": 16.8,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-09-06",
+      "pos": 13.1,
+      "clicks": 0,
+      "impr": 7
+     },
+     {
+      "d": "2026-09-08",
+      "pos": 16.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-09-14",
+      "pos": 11.0,
+      "clicks": 0,
+      "impr": 3
+     },
+     {
+      "d": "2026-09-15",
+      "pos": 10.8,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-09-16",
+      "pos": 12.7,
+      "clicks": 0,
+      "impr": 3
+     },
+     {
+      "d": "2026-09-18",
+      "pos": 12.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-09-19",
+      "pos": 15.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-09-20",
+      "pos": 16.0,
+      "clicks": 0,
+      "impr": 3
+     },
+     {
+      "d": "2026-09-22",
+      "pos": 17.3,
+      "clicks": 0,
+      "impr": 10
+     },
+     {
+      "d": "2026-09-23",
+      "pos": 17.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-09-24",
+      "pos": 17.5,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-09-27",
+      "pos": 19.5,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-09-28",
+      "pos": 18.5,
+      "clicks": 0,
+      "impr": 4
+     },
+     {
+      "d": "2026-09-30",
+      "pos": 18.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-10-02",
+      "pos": 14.0,
+      "clicks": 0,
+      "impr": 3
+     },
+     {
+      "d": "2026-10-06",
+      "pos": 12.8,
+      "clicks": 0,
+      "impr": 4
+     },
+     {
+      "d": "2026-10-07",
+      "pos": 17.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-10-08",
+      "pos": 13.0,
+      "clicks": 0,
+      "impr": 4
      },
      {
       "d": "2026-10-10",
-      "pos": 4.0,
+      "pos": 14.8,
       "clicks": 0,
-      "impr": 1
+      "impr": 5
      },
      {
-      "d": "2026-10-11",
-      "pos": 2.0,
+      "d": "2026-10-12",
+      "pos": 17.5,
       "clicks": 0,
-      "impr": 1
+      "impr": 2
      },
      {
-      "d": "2026-10-15",
-      "pos": 2.0,
+      "d": "2026-10-14",
+      "pos": 16.5,
       "clicks": 0,
-      "impr": 1
+      "impr": 2
      },
      {
       "d": "2026-10-16",
-      "pos": 2.0,
+      "pos": 18.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-10-17",
+      "pos": 15.8,
+      "clicks": 0,
+      "impr": 4
+     },
+     {
+      "d": "2026-10-18",
+      "pos": 15.2,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-10-20",
+      "pos": 17.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-10-21",
+      "pos": 19.0,
+      "clicks": 0,
+      "impr": 3
+     },
+     {
+      "d": "2026-10-22",
+      "pos": 17.5,
+      "clicks": 0,
+      "impr": 4
+     },
+     {
+      "d": "2026-10-23",
+      "pos": 16.0,
       "clicks": 0,
       "impr": 1
      },
      {
-      "d": "2026-10-19",
-      "pos": 1.0,
+      "d": "2026-10-24",
+      "pos": 15.8,
       "clicks": 0,
-      "impr": 1
+      "impr": 6
      },
      {
-      "d": "2026-10-29",
-      "pos": 2.0,
+      "d": "2026-10-25",
+      "pos": 16.5,
       "clicks": 0,
-      "impr": 1
+      "impr": 4
+     },
+     {
+      "d": "2026-10-26",
+      "pos": 16.3,
+      "clicks": 0,
+      "impr": 3
+     },
+     {
+      "d": "2026-10-27",
+      "pos": 14.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
+      "d": "2026-10-28",
+      "pos": 14.6,
+      "clicks": 0,
+      "impr": 7
      },
      {
       "d": "2026-10-30",
-      "pos": 2.0,
+      "pos": 16.0,
       "clicks": 0,
-      "impr": 1
+      "impr": 5
      },
      {
       "d": "2026-10-31",
-      "pos": 3.0,
-      "clicks": 0,
-      "impr": 1
-     },
-     {
-      "d": "2026-11-02",
-      "pos": 2.0,
+      "pos": 15.5,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-01",
+      "pos": 13.0,
+      "clicks": 0,
+      "impr": 7
      },
      {
       "d": "2026-11-03",
-      "pos": 2.0,
+      "pos": 15.3,
       "clicks": 0,
-      "impr": 1
-     },
-     {
-      "d": "2026-11-04",
-      "pos": 1.0,
-      "clicks": 0,
-      "impr": 1
+      "impr": 3
      },
      {
       "d": "2026-11-05",
-      "pos": 2.0,
-      "clicks": 0,
-      "impr": 1
-     },
-     {
-      "d": "2026-11-06",
-      "pos": 3.0,
+      "pos": 11.5,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-07",
+      "pos": 13.7,
+      "clicks": 0,
+      "impr": 6
+     },
+     {
+      "d": "2026-11-08",
+      "pos": 13.6,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 13.7,
+      "clicks": 1,
+      "impr": 3
      }
     ]
    },
@@ -2308,13 +2614,6 @@
    "label": "vaniqa",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 4,
-     "impr": 344,
-     "ctr": 1.16,
-     "pos": 12.4
-    },
     {
      "d": "2026-08-11",
      "clicks": 0,
@@ -2944,31 +3243,38 @@
      "impr": 356,
      "ctr": 0.28,
      "pos": 8.0
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 2,
+     "impr": 427,
+     "ctr": 0.47,
+     "pos": 8.7
     }
    ],
    "queries": [
     {
      "q": "vaniqa cream price",
      "clicks": 7,
-     "impr": 226,
+     "impr": 223,
      "ctr": 3.1,
-     "pos": 3.2,
+     "pos": 3.3,
      "prev": {
       "clicks": 3,
-      "impr": 194,
+      "impr": 203,
       "ctr": 1.5,
-      "pos": 4.3
+      "pos": 4.2
      }
     },
     {
      "q": "vaniqa cream",
-     "clicks": 5,
-     "impr": 4160,
+     "clicks": 6,
+     "impr": 4166,
      "ctr": 0.1,
      "pos": 6.3,
      "prev": {
       "clicks": 7,
-      "impr": 3616,
+      "impr": 3721,
       "ctr": 0.2,
       "pos": 5.7
      }
@@ -2976,12 +3282,12 @@
     {
      "q": "vaniqa cream amazon",
      "clicks": 1,
-     "impr": 227,
-     "ctr": 0.4,
+     "impr": 222,
+     "ctr": 0.5,
      "pos": 8.6,
      "prev": {
       "clicks": 4,
-      "impr": 379,
+      "impr": 355,
       "ctr": 1.1,
       "pos": 8.2
      }
@@ -2989,20 +3295,20 @@
     {
      "q": "buy vaniqa",
      "clicks": 1,
-     "impr": 201,
+     "impr": 198,
      "ctr": 0.5,
      "pos": 4.5,
      "prev": {
       "clicks": 1,
-      "impr": 224,
-      "ctr": 0.4,
-      "pos": 6.8
+      "impr": 219,
+      "ctr": 0.5,
+      "pos": 6.4
      }
     },
     {
      "q": "vaniqa krem",
      "clicks": 1,
-     "impr": 182,
+     "impr": 191,
      "ctr": 0.5,
      "pos": 4.4,
      "prev": {
@@ -3015,27 +3321,27 @@
     {
      "q": "eflornithine cream uk",
      "clicks": 1,
-     "impr": 36,
-     "ctr": 2.8,
-     "pos": 5.5,
+     "impr": 35,
+     "ctr": 2.9,
+     "pos": 5.6,
      "prev": {
       "clicks": 0,
-      "impr": 42,
+      "impr": 41,
       "ctr": 0.0,
-      "pos": 12.1
+      "pos": 11.3
      }
     },
     {
      "q": "eflornithine cream",
      "clicks": 1,
-     "impr": 22,
-     "ctr": 4.5,
-     "pos": 11.8,
+     "impr": 25,
+     "ctr": 4.0,
+     "pos": 18.2,
      "prev": {
       "clicks": 0,
-      "impr": 27,
+      "impr": 26,
       "ctr": 0.0,
-      "pos": 8.9
+      "pos": 9.2
      }
     },
     {
@@ -3054,12 +3360,12 @@
     {
      "q": "where can i buy eflornithine cream uk",
      "clicks": 1,
-     "impr": 8,
-     "ctr": 12.5,
+     "impr": 7,
+     "ctr": 14.3,
      "pos": 1.0,
      "prev": {
       "clicks": 0,
-      "impr": 1,
+      "impr": 2,
       "ctr": 0.0,
       "pos": 1.0
      }
@@ -3106,27 +3412,15 @@
      "pos": 2.0
     },
     {
-     "q": "vaniqa cream before and after",
-     "clicks": 1,
-     "impr": 1,
-     "ctr": 100.0,
-     "pos": 1.0,
-     "prev": {
-      "clicks": 0,
-      "impr": 1,
-      "ctr": 0.0,
-      "pos": 1.0
-     }
+     "q": "buy cheap generic vaniqa online",
+     "clicks": 0,
+     "impr": 6,
+     "ctr": 0.0,
+     "pos": 7.2
     }
    ],
    "kwseries": {
     "vaniqa cream amazon": [
-     {
-      "d": "2026-08-10",
-      "pos": 4.5,
-      "clicks": 0,
-      "impr": 16
-     },
      {
       "d": "2026-08-11",
       "pos": 7.4,
@@ -3621,12 +3915,6 @@
      }
     ],
     "vaniqa cream": [
-     {
-      "d": "2026-08-10",
-      "pos": 10.5,
-      "clicks": 0,
-      "impr": 19
-     },
      {
       "d": "2026-08-11",
       "pos": 15.4,
@@ -4166,15 +4454,15 @@
       "pos": 5.9,
       "clicks": 0,
       "impr": 153
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 5.6,
+      "clicks": 1,
+      "impr": 178
      }
     ],
     "vaniqa cream price": [
-     {
-      "d": "2026-08-10",
-      "pos": 4.1,
-      "clicks": 1,
-      "impr": 8
-     },
      {
       "d": "2026-08-11",
       "pos": 1.0,
@@ -4714,15 +5002,15 @@
       "pos": 3.8,
       "clicks": 0,
       "impr": 5
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 3.4,
+      "clicks": 0,
+      "impr": 11
      }
     ],
     "vaniqa krem": [
-     {
-      "d": "2026-08-10",
-      "pos": 4.2,
-      "clicks": 0,
-      "impr": 8
-     },
      {
       "d": "2026-08-11",
       "pos": 4.8,
@@ -4998,15 +5286,15 @@
       "pos": 4.6,
       "clicks": 0,
       "impr": 14
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 4.3,
+      "clicks": 0,
+      "impr": 9
      }
     ],
     "buy vaniqa": [
-     {
-      "d": "2026-08-10",
-      "pos": 5.8,
-      "clicks": 0,
-      "impr": 12
-     },
      {
       "d": "2026-08-11",
       "pos": 4.9,
@@ -5540,6 +5828,12 @@
       "pos": 17.3,
       "clicks": 0,
       "impr": 10
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 3.2,
+      "clicks": 0,
+      "impr": 4
      }
     ]
    },
@@ -5571,13 +5865,6 @@
    "label": "sildenafil",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 3,
-     "impr": 638,
-     "ctr": 0.47,
-     "pos": 14.2
-    },
     {
      "d": "2026-08-11",
      "clicks": 4,
@@ -6207,20 +6494,40 @@
      "impr": 423,
      "ctr": 0.47,
      "pos": 19.7
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 3,
+     "impr": 522,
+     "ctr": 0.57,
+     "pos": 22.0
     }
    ],
    "queries": [
     {
      "q": "sildenafil",
      "clicks": 3,
-     "impr": 201,
-     "ctr": 1.5,
-     "pos": 17.8,
+     "impr": 215,
+     "ctr": 1.4,
+     "pos": 17.1,
      "prev": {
       "clicks": 2,
-      "impr": 126,
+      "impr": 124,
       "ctr": 1.6,
-      "pos": 18.9
+      "pos": 19.2
+     }
+    },
+    {
+     "q": "cheapest sildenafil uk",
+     "clicks": 3,
+     "impr": 202,
+     "ctr": 1.5,
+     "pos": 5.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 244,
+      "ctr": 0.4,
+      "pos": 6.5
      }
     },
     {
@@ -6228,98 +6535,85 @@
      "clicks": 3,
      "impr": 160,
      "ctr": 1.9,
-     "pos": 14.7,
+     "pos": 14.6,
      "prev": {
       "clicks": 0,
-      "impr": 256,
+      "impr": 246,
       "ctr": 0.0,
-      "pos": 11.8
+      "pos": 11.9
      }
     },
     {
      "q": "sildenafil tablets",
      "clicks": 2,
-     "impr": 522,
+     "impr": 515,
      "ctr": 0.4,
-     "pos": 21.9,
+     "pos": 21.7,
      "prev": {
       "clicks": 2,
-      "impr": 802,
-      "ctr": 0.2,
+      "impr": 796,
+      "ctr": 0.3,
       "pos": 22.7
      }
     },
     {
      "q": "sildenafil uk",
      "clicks": 2,
-     "impr": 236,
+     "impr": 240,
      "ctr": 0.8,
-     "pos": 23.0,
+     "pos": 23.9,
      "prev": {
       "clicks": 0,
-      "impr": 338,
+      "impr": 327,
       "ctr": 0.0,
-      "pos": 19.6
-     }
-    },
-    {
-     "q": "cheapest sildenafil uk",
-     "clicks": 2,
-     "impr": 196,
-     "ctr": 1.0,
-     "pos": 5.4,
-     "prev": {
-      "clicks": 1,
-      "impr": 242,
-      "ctr": 0.4,
-      "pos": 6.3
+      "pos": 19.9
      }
     },
     {
      "q": "sildenafil online",
      "clicks": 2,
-     "impr": 191,
+     "impr": 199,
      "ctr": 1.0,
      "pos": 16.5,
      "prev": {
       "clicks": 0,
-      "impr": 257,
+      "impr": 251,
       "ctr": 0.0,
-      "pos": 14.5
+      "pos": 14.6
      }
     },
     {
      "q": "sildenafil tablet",
      "clicks": 2,
-     "impr": 159,
+     "impr": 152,
      "ctr": 1.3,
-     "pos": 16.3,
+     "pos": 15.9,
      "prev": {
       "clicks": 1,
       "impr": 322,
       "ctr": 0.3,
-      "pos": 16.9
+      "pos": 16.7
      }
     },
     {
      "q": "sildenafil 100mg",
      "clicks": 2,
-     "impr": 41,
-     "ctr": 4.9,
-     "pos": 39.6,
+     "impr": 39,
+     "ctr": 5.1,
+     "pos": 39.2,
      "prev": {
       "clicks": 0,
-      "impr": 27,
+      "impr": 29,
       "ctr": 0.0,
-      "pos": 29.4
+      "pos": 30.8
      }
     },
     {
      "q": "sildenafil online pharmacy",
      "clicks": 2,
-     "impr": 23,
-     "ctr": 8.7,
-     "pos": 6.9,
+     "impr": 27,
+     "ctr": 7.4,
+     "pos": 7.3,
      "prev": {
       "clicks": 0,
       "impr": 24,
@@ -6343,52 +6637,52 @@
     {
      "q": "buy sildenafil",
      "clicks": 1,
-     "impr": 478,
+     "impr": 488,
      "ctr": 0.2,
-     "pos": 16.2,
+     "pos": 16.1,
      "prev": {
       "clicks": 5,
-      "impr": 533,
-      "ctr": 0.9,
-      "pos": 15.0
+      "impr": 523,
+      "ctr": 1.0,
+      "pos": 15.2
      }
     },
     {
      "q": "buy sildenafil online",
      "clicks": 1,
-     "impr": 316,
+     "impr": 324,
      "ctr": 0.3,
-     "pos": 15.6,
+     "pos": 15.4,
      "prev": {
       "clicks": 5,
-      "impr": 381,
+      "impr": 372,
       "ctr": 1.3,
-      "pos": 14.0
+      "pos": 14.1
      }
     },
     {
      "q": "cheap sildenafil",
      "clicks": 1,
-     "impr": 158,
+     "impr": 164,
      "ctr": 0.6,
-     "pos": 8.4,
+     "pos": 8.0,
      "prev": {
       "clicks": 0,
-      "impr": 440,
+      "impr": 423,
       "ctr": 0.0,
-      "pos": 9.0
+      "pos": 9.1
      }
     },
     {
      "q": "cheapest sildenafil",
      "clicks": 1,
-     "impr": 53,
-     "ctr": 1.9,
-     "pos": 7.5,
+     "impr": 58,
+     "ctr": 1.7,
+     "pos": 7.3,
      "prev": {
       "clicks": 2,
-      "impr": 71,
-      "ctr": 2.8,
+      "impr": 69,
+      "ctr": 2.9,
       "pos": 7.9
      }
     },
@@ -6803,15 +7097,15 @@
       "pos": 4.9,
       "clicks": 0,
       "impr": 15
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 6.7,
+      "clicks": 0,
+      "impr": 14
      }
     ],
     "cheapest sildenafil uk": [
-     {
-      "d": "2026-08-10",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 21
-     },
      {
       "d": "2026-08-11",
       "pos": 8.2,
@@ -7333,15 +7627,15 @@
       "pos": 3.0,
       "clicks": 0,
       "impr": 9
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 2.7,
+      "clicks": 1,
+      "impr": 14
      }
     ],
     "sildenafil online uk": [
-     {
-      "d": "2026-08-10",
-      "pos": 8.3,
-      "clicks": 0,
-      "impr": 12
-     },
      {
       "d": "2026-08-11",
       "pos": 6.9,
@@ -7875,15 +8169,15 @@
       "pos": 33.1,
       "clicks": 0,
       "impr": 7
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 11.8,
+      "clicks": 0,
+      "impr": 5
      }
     ],
     "sildenafil tablets": [
-     {
-      "d": "2026-08-10",
-      "pos": 20.6,
-      "clicks": 0,
-      "impr": 28
-     },
      {
       "d": "2026-08-11",
       "pos": 22.4,
@@ -8423,15 +8717,15 @@
       "pos": 23.1,
       "clicks": 0,
       "impr": 15
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 24.0,
+      "clicks": 0,
+      "impr": 15
      }
     ],
     "sildenafil uk": [
-     {
-      "d": "2026-08-10",
-      "pos": 24.4,
-      "clicks": 0,
-      "impr": 21
-     },
      {
       "d": "2026-08-11",
       "pos": 18.4,
@@ -8959,6 +9253,12 @@
       "pos": 19.2,
       "clicks": 0,
       "impr": 6
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 42.4,
+      "clicks": 0,
+      "impr": 12
      }
     ]
    },
@@ -8990,13 +9290,6 @@
    "label": "wegovy injection (reverted to legacy)",
    "live": "2026-09-28",
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 15,
-     "impr": 2089,
-     "ctr": 0.72,
-     "pos": 16.1
-    },
     {
      "d": "2026-08-11",
      "clicks": 19,
@@ -9626,45 +9919,52 @@
      "impr": 2275,
      "ctr": 0.44,
      "pos": 24.0
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 8,
+     "impr": 2227,
+     "ctr": 0.36,
+     "pos": 26.6
     }
    ],
    "queries": [
     {
      "q": "simple online pharmacy wegovy",
-     "clicks": 30,
-     "impr": 290,
-     "ctr": 10.3,
-     "pos": 2.4,
+     "clicks": 29,
+     "impr": 294,
+     "ctr": 9.9,
+     "pos": 2.9,
      "prev": {
-      "clicks": 43,
-      "impr": 340,
-      "ctr": 12.6,
+      "clicks": 45,
+      "impr": 333,
+      "ctr": 13.5,
       "pos": 1.1
      }
     },
     {
      "q": "simple online pharmacy wegovy prices",
-     "clicks": 17,
-     "impr": 121,
-     "ctr": 14.0,
+     "clicks": 18,
+     "impr": 126,
+     "ctr": 14.3,
      "pos": 1.5,
      "prev": {
-      "clicks": 43,
-      "impr": 142,
-      "ctr": 30.3,
+      "clicks": 42,
+      "impr": 141,
+      "ctr": 29.8,
       "pos": 1.4
      }
     },
     {
      "q": "wegovy simple online pharmacy",
-     "clicks": 15,
-     "impr": 117,
-     "ctr": 12.8,
-     "pos": 3.8,
+     "clicks": 16,
+     "impr": 115,
+     "ctr": 13.9,
+     "pos": 4.1,
      "prev": {
-      "clicks": 20,
-      "impr": 128,
-      "ctr": 15.6,
+      "clicks": 19,
+      "impr": 129,
+      "ctr": 14.7,
       "pos": 1.7
      }
     },
@@ -9676,163 +9976,157 @@
      "pos": 17.8,
      "prev": {
       "clicks": 0,
-      "impr": 49,
+      "impr": 43,
       "ctr": 0.0,
-      "pos": 12.6
+      "pos": 12.4
      }
     },
     {
      "q": "wegovy price",
      "clicks": 11,
-     "impr": 1051,
-     "ctr": 1.0,
-     "pos": 11.6,
+     "impr": 1036,
+     "ctr": 1.1,
+     "pos": 12.6,
      "prev": {
       "clicks": 4,
-      "impr": 767,
+      "impr": 793,
       "ctr": 0.5,
-      "pos": 9.8
+      "pos": 9.6
      }
     },
     {
      "q": "wegovy cost",
      "clicks": 11,
-     "impr": 683,
+     "impr": 682,
      "ctr": 1.6,
-     "pos": 11.2,
+     "pos": 11.4,
      "prev": {
       "clicks": 0,
-      "impr": 660,
+      "impr": 648,
       "ctr": 0.0,
-      "pos": 9.6
+      "pos": 9.7
      }
     },
     {
      "q": "wegovy injection price",
      "clicks": 11,
-     "impr": 351,
-     "ctr": 3.1,
-     "pos": 12.3,
+     "impr": 320,
+     "ctr": 3.4,
+     "pos": 12.9,
      "prev": {
       "clicks": 1,
-      "impr": 767,
+      "impr": 803,
       "ctr": 0.1,
-      "pos": 10.9
+      "pos": 10.7
      }
     },
     {
      "q": "cost of wegovy",
      "clicks": 11,
-     "impr": 170,
-     "ctr": 6.5,
-     "pos": 14.3,
+     "impr": 175,
+     "ctr": 6.3,
+     "pos": 14.2,
      "prev": {
       "clicks": 0,
-      "impr": 120,
+      "impr": 116,
       "ctr": 0.0,
-      "pos": 7.7
+      "pos": 8.0
      }
     },
     {
      "q": "wegovy in stock near me",
      "clicks": 11,
-     "impr": 120,
-     "ctr": 9.2,
-     "pos": 11.5,
+     "impr": 118,
+     "ctr": 9.3,
+     "pos": 11.4,
      "prev": {
       "clicks": 0,
-      "impr": 177,
+      "impr": 172,
       "ctr": 0.0,
-      "pos": 9.1
+      "pos": 9.2
      }
     },
     {
      "q": "wegovy 1mg in stock",
      "clicks": 11,
-     "impr": 63,
-     "ctr": 17.5,
+     "impr": 65,
+     "ctr": 16.9,
      "pos": 9.3,
      "prev": {
       "clicks": 0,
-      "impr": 23,
+      "impr": 21,
       "ctr": 0.0,
-      "pos": 8.5
+      "pos": 8.1
      }
     },
     {
      "q": "wegovy weight loss price",
      "clicks": 10,
-     "impr": 283,
+     "impr": 285,
      "ctr": 3.5,
-     "pos": 14.4,
+     "pos": 15.0,
      "prev": {
       "clicks": 0,
-      "impr": 181,
+      "impr": 180,
       "ctr": 0.0,
-      "pos": 11.5
+      "pos": 11.2
      }
     },
     {
      "q": "wegovy 5mg",
      "clicks": 10,
-     "impr": 151,
-     "ctr": 6.6,
-     "pos": 11.6,
+     "impr": 156,
+     "ctr": 6.4,
+     "pos": 12.0,
      "prev": {
       "clicks": 0,
-      "impr": 57,
+      "impr": 56,
       "ctr": 0.0,
-      "pos": 12.2
+      "pos": 11.7
      }
     },
     {
      "q": "buying wegovy online",
      "clicks": 10,
-     "impr": 99,
-     "ctr": 10.1,
-     "pos": 11.1,
+     "impr": 93,
+     "ctr": 10.8,
+     "pos": 11.2,
      "prev": {
       "clicks": 0,
-      "impr": 118,
+      "impr": 117,
       "ctr": 0.0,
-      "pos": 10.9
+      "pos": 10.7
      }
     },
     {
      "q": "wegovy",
      "clicks": 9,
-     "impr": 408,
+     "impr": 404,
      "ctr": 2.2,
-     "pos": 43.3,
+     "pos": 43.5,
      "prev": {
       "clicks": 1,
-      "impr": 410,
+      "impr": 408,
       "ctr": 0.2,
-      "pos": 32.4
+      "pos": 32.9
      }
     },
     {
      "q": "wegovy cost per month",
      "clicks": 9,
-     "impr": 304,
-     "ctr": 3.0,
-     "pos": 10.9,
+     "impr": 318,
+     "ctr": 2.8,
+     "pos": 11.8,
      "prev": {
       "clicks": 0,
-      "impr": 240,
+      "impr": 234,
       "ctr": 0.0,
-      "pos": 12.5
+      "pos": 12.4
      }
     }
    ],
    "kwseries": {
     "simple online pharmacy wegovy": [
-     {
-      "d": "2026-08-10",
-      "pos": 1.0,
-      "clicks": 1,
-      "impr": 9
-     },
      {
       "d": "2026-08-11",
       "pos": 1.0,
@@ -10342,15 +10636,15 @@
       "pos": 1.4,
       "clicks": 1,
       "impr": 5
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 11.6,
+      "clicks": 1,
+      "impr": 13
      }
     ],
     "simple online pharmacy wegovy prices": [
-     {
-      "d": "2026-08-10",
-      "pos": 1.2,
-      "clicks": 2,
-      "impr": 5
-     },
      {
       "d": "2026-08-11",
       "pos": 1.0,
@@ -10842,6 +11136,12 @@
       "pos": 1.0,
       "clicks": 1,
       "impr": 8
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 1.0,
+      "clicks": 1,
+      "impr": 6
      }
     ],
     "wegovy injections cost": [
@@ -11050,6 +11350,12 @@
       "impr": 5
      },
      {
+      "d": "2026-10-24",
+      "pos": 11.5,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
       "d": "2026-10-31",
       "pos": 11.0,
       "clicks": 2,
@@ -11087,12 +11393,6 @@
      }
     ],
     "wegovy simple online pharmacy": [
-     {
-      "d": "2026-08-10",
-      "pos": 1.0,
-      "clicks": 0,
-      "impr": 1
-     },
      {
       "d": "2026-08-11",
       "pos": 1.0,
@@ -11560,15 +11860,15 @@
       "pos": 1.7,
       "clicks": 1,
       "impr": 3
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 5.8,
+      "clicks": 1,
+      "impr": 6
      }
     ],
     "wegovy price": [
-     {
-      "d": "2026-08-10",
-      "pos": 17.8,
-      "clicks": 0,
-      "impr": 10
-     },
      {
       "d": "2026-08-11",
       "pos": 17.3,
@@ -11996,6 +12296,12 @@
       "impr": 36
      },
      {
+      "d": "2026-10-24",
+      "pos": 6.9,
+      "clicks": 0,
+      "impr": 55
+     },
+     {
       "d": "2026-10-31",
       "pos": 16.1,
       "clicks": 3,
@@ -12061,13 +12367,6 @@
    "label": "omeprazole",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 4,
-     "impr": 737,
-     "ctr": 0.54,
-     "pos": 10.1
-    },
     {
      "d": "2026-08-11",
      "clicks": 4,
@@ -12697,20 +12996,27 @@
      "impr": 521,
      "ctr": 0.58,
      "pos": 12.5
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 3,
+     "impr": 553,
+     "ctr": 0.54,
+     "pos": 14.0
     }
    ],
    "queries": [
     {
      "q": "buy omeprazole",
      "clicks": 3,
-     "impr": 639,
+     "impr": 640,
      "ctr": 0.5,
-     "pos": 7.6,
+     "pos": 7.7,
      "prev": {
       "clicks": 1,
-      "impr": 659,
-      "ctr": 0.2,
-      "pos": 7.6
+      "impr": 679,
+      "ctr": 0.1,
+      "pos": 7.5
      }
     },
     {
@@ -12727,40 +13033,40 @@
      }
     },
     {
+     "q": "buy omeprazole uk",
+     "clicks": 2,
+     "impr": 366,
+     "ctr": 0.5,
+     "pos": 6.5,
+     "prev": {
+      "clicks": 2,
+      "impr": 381,
+      "ctr": 0.5,
+      "pos": 6.7
+     }
+    },
+    {
      "q": "omeprazole online",
      "clicks": 2,
-     "impr": 250,
+     "impr": 245,
      "ctr": 0.8,
      "pos": 5.3,
      "prev": {
       "clicks": 2,
-      "impr": 212,
+      "impr": 220,
       "ctr": 0.9,
       "pos": 4.4
      }
     },
     {
-     "q": "where can i buy omeprazole 10mg tablets",
-     "clicks": 2,
-     "impr": 152,
-     "ctr": 1.3,
-     "pos": 6.9,
-     "prev": {
-      "clicks": 1,
-      "impr": 111,
-      "ctr": 0.9,
-      "pos": 7.4
-     }
-    },
-    {
      "q": "omeprazole to buy",
      "clicks": 2,
-     "impr": 75,
-     "ctr": 2.7,
+     "impr": 80,
+     "ctr": 2.5,
      "pos": 7.1,
      "prev": {
       "clicks": 0,
-      "impr": 86,
+      "impr": 82,
       "ctr": 0.0,
       "pos": 7.5
      }
@@ -12768,14 +13074,14 @@
     {
      "q": "omeprazole online pharmacy",
      "clicks": 2,
-     "impr": 73,
-     "ctr": 2.7,
+     "impr": 70,
+     "ctr": 2.9,
      "pos": 3.4,
      "prev": {
       "clicks": 0,
-      "impr": 48,
+      "impr": 51,
       "ctr": 0.0,
-      "pos": 4.9
+      "pos": 4.7
      }
     },
     {
@@ -12794,38 +13100,25 @@
     {
      "q": "omeprazole",
      "clicks": 1,
-     "impr": 1202,
+     "impr": 1220,
      "ctr": 0.1,
-     "pos": 6.9,
+     "pos": 7.3,
      "prev": {
       "clicks": 0,
-      "impr": 42,
+      "impr": 49,
       "ctr": 0.0,
-      "pos": 24.5
-     }
-    },
-    {
-     "q": "buy omeprazole uk",
-     "clicks": 1,
-     "impr": 365,
-     "ctr": 0.3,
-     "pos": 6.6,
-     "prev": {
-      "clicks": 2,
-      "impr": 382,
-      "ctr": 0.5,
-      "pos": 6.7
+      "pos": 23.8
      }
     },
     {
      "q": "omeprazole buy",
      "clicks": 1,
-     "impr": 207,
+     "impr": 214,
      "ctr": 0.5,
-     "pos": 7.6,
+     "pos": 7.7,
      "prev": {
       "clicks": 0,
-      "impr": 235,
+      "impr": 229,
       "ctr": 0.0,
       "pos": 7.5
      }
@@ -12833,9 +13126,9 @@
     {
      "q": "omeprazole price uk",
      "clicks": 1,
-     "impr": 122,
+     "impr": 126,
      "ctr": 0.8,
-     "pos": 6.7,
+     "pos": 6.8,
      "prev": {
       "clicks": 0,
       "impr": 96,
@@ -12846,22 +13139,22 @@
     {
      "q": "omeprazole 20 mg price",
      "clicks": 1,
-     "impr": 93,
+     "impr": 89,
      "ctr": 1.1,
      "pos": 8.1,
      "prev": {
       "clicks": 0,
-      "impr": 110,
+      "impr": 108,
       "ctr": 0.0,
-      "pos": 8.7
+      "pos": 8.6
      }
     },
     {
      "q": "omeprazole 20 mg price uk",
      "clicks": 1,
-     "impr": 44,
-     "ctr": 2.3,
-     "pos": 6.6,
+     "impr": 46,
+     "ctr": 2.2,
+     "pos": 6.7,
      "prev": {
       "clicks": 1,
       "impr": 36,
@@ -12885,14 +13178,27 @@
     {
      "q": "omeprazole online uk",
      "clicks": 1,
-     "impr": 33,
-     "ctr": 3.0,
+     "impr": 34,
+     "ctr": 2.9,
      "pos": 5.3,
      "prev": {
       "clicks": 1,
-      "impr": 20,
-      "ctr": 5.0,
+      "impr": 21,
+      "ctr": 4.8,
       "pos": 5.3
+     }
+    },
+    {
+     "q": "acid reflux medication uk",
+     "clicks": 1,
+     "impr": 24,
+     "ctr": 4.2,
+     "pos": 10.8,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 32.5
      }
     }
    ],
@@ -12930,12 +13236,6 @@
      }
     ],
     "buy omeprazole": [
-     {
-      "d": "2026-08-10",
-      "pos": 6.9,
-      "clicks": 1,
-      "impr": 25
-     },
      {
       "d": "2026-08-11",
       "pos": 7.8,
@@ -13475,15 +13775,563 @@
       "pos": 10.6,
       "clicks": 0,
       "impr": 23
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 10.9,
+      "clicks": 0,
+      "impr": 34
      }
     ],
-    "omeprazole online": [
+    "buy omeprazole uk": [
      {
-      "d": "2026-08-10",
-      "pos": 3.2,
+      "d": "2026-08-11",
+      "pos": 7.4,
       "clicks": 0,
       "impr": 11
      },
+     {
+      "d": "2026-08-12",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 16
+     },
+     {
+      "d": "2026-08-13",
+      "pos": 7.2,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-08-14",
+      "pos": 7.3,
+      "clicks": 0,
+      "impr": 9
+     },
+     {
+      "d": "2026-08-15",
+      "pos": 5.1,
+      "clicks": 1,
+      "impr": 7
+     },
+     {
+      "d": "2026-08-16",
+      "pos": 6.7,
+      "clicks": 0,
+      "impr": 12
+     },
+     {
+      "d": "2026-08-17",
+      "pos": 6.9,
+      "clicks": 0,
+      "impr": 22
+     },
+     {
+      "d": "2026-08-18",
+      "pos": 7.4,
+      "clicks": 0,
+      "impr": 8
+     },
+     {
+      "d": "2026-08-19",
+      "pos": 6.3,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-08-20",
+      "pos": 7.7,
+      "clicks": 0,
+      "impr": 12
+     },
+     {
+      "d": "2026-08-21",
+      "pos": 7.8,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
+      "d": "2026-08-22",
+      "pos": 7.8,
+      "clicks": 0,
+      "impr": 12
+     },
+     {
+      "d": "2026-08-23",
+      "pos": 7.6,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-08-24",
+      "pos": 7.5,
+      "clicks": 0,
+      "impr": 15
+     },
+     {
+      "d": "2026-08-25",
+      "pos": 7.5,
+      "clicks": 0,
+      "impr": 15
+     },
+     {
+      "d": "2026-08-26",
+      "pos": 7.4,
+      "clicks": 0,
+      "impr": 19
+     },
+     {
+      "d": "2026-08-27",
+      "pos": 7.2,
+      "clicks": 0,
+      "impr": 12
+     },
+     {
+      "d": "2026-08-28",
+      "pos": 7.2,
+      "clicks": 0,
+      "impr": 15
+     },
+     {
+      "d": "2026-08-29",
+      "pos": 6.7,
+      "clicks": 1,
+      "impr": 15
+     },
+     {
+      "d": "2026-08-30",
+      "pos": 6.3,
+      "clicks": 0,
+      "impr": 6
+     },
+     {
+      "d": "2026-08-31",
+      "pos": 6.3,
+      "clicks": 1,
+      "impr": 18
+     },
+     {
+      "d": "2026-09-01",
+      "pos": 4.9,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-09-02",
+      "pos": 3.8,
+      "clicks": 0,
+      "impr": 14
+     },
+     {
+      "d": "2026-09-03",
+      "pos": 6.5,
+      "clicks": 1,
+      "impr": 13
+     },
+     {
+      "d": "2026-09-04",
+      "pos": 6.2,
+      "clicks": 0,
+      "impr": 27
+     },
+     {
+      "d": "2026-09-05",
+      "pos": 7.2,
+      "clicks": 1,
+      "impr": 11
+     },
+     {
+      "d": "2026-09-06",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 9
+     },
+     {
+      "d": "2026-09-07",
+      "pos": 6.1,
+      "clicks": 1,
+      "impr": 18
+     },
+     {
+      "d": "2026-09-08",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-09-09",
+      "pos": 6.8,
+      "clicks": 0,
+      "impr": 16
+     },
+     {
+      "d": "2026-09-10",
+      "pos": 6.7,
+      "clicks": 1,
+      "impr": 15
+     },
+     {
+      "d": "2026-09-11",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 8
+     },
+     {
+      "d": "2026-09-12",
+      "pos": 5.5,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-09-13",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 10
+     },
+     {
+      "d": "2026-09-14",
+      "pos": 6.9,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-09-15",
+      "pos": 6.6,
+      "clicks": 0,
+      "impr": 12
+     },
+     {
+      "d": "2026-09-16",
+      "pos": 6.1,
+      "clicks": 0,
+      "impr": 14
+     },
+     {
+      "d": "2026-09-17",
+      "pos": 6.6,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-09-18",
+      "pos": 4.8,
+      "clicks": 0,
+      "impr": 16
+     },
+     {
+      "d": "2026-09-19",
+      "pos": 6.8,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-09-20",
+      "pos": 6.5,
+      "clicks": 0,
+      "impr": 10
+     },
+     {
+      "d": "2026-09-21",
+      "pos": 7.1,
+      "clicks": 0,
+      "impr": 18
+     },
+     {
+      "d": "2026-09-22",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-09-23",
+      "pos": 6.3,
+      "clicks": 1,
+      "impr": 16
+     },
+     {
+      "d": "2026-09-24",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 17
+     },
+     {
+      "d": "2026-09-25",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 19
+     },
+     {
+      "d": "2026-09-26",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 12
+     },
+     {
+      "d": "2026-09-27",
+      "pos": 6.5,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-09-28",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 26
+     },
+     {
+      "d": "2026-09-29",
+      "pos": 6.4,
+      "clicks": 0,
+      "impr": 17
+     },
+     {
+      "d": "2026-09-30",
+      "pos": 6.9,
+      "clicks": 1,
+      "impr": 13
+     },
+     {
+      "d": "2026-10-01",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 17
+     },
+     {
+      "d": "2026-10-02",
+      "pos": 6.6,
+      "clicks": 0,
+      "impr": 8
+     },
+     {
+      "d": "2026-10-03",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-10-04",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 8
+     },
+     {
+      "d": "2026-10-05",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 16
+     },
+     {
+      "d": "2026-10-06",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-10-07",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-10-08",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 12
+     },
+     {
+      "d": "2026-10-09",
+      "pos": 6.1,
+      "clicks": 0,
+      "impr": 7
+     },
+     {
+      "d": "2026-10-10",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 7
+     },
+     {
+      "d": "2026-10-11",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 10
+     },
+     {
+      "d": "2026-10-12",
+      "pos": 6.8,
+      "clicks": 0,
+      "impr": 22
+     },
+     {
+      "d": "2026-10-13",
+      "pos": 6.1,
+      "clicks": 0,
+      "impr": 15
+     },
+     {
+      "d": "2026-10-14",
+      "pos": 6.7,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-10-15",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 14
+     },
+     {
+      "d": "2026-10-16",
+      "pos": 6.9,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-10-17",
+      "pos": 6.5,
+      "clicks": 0,
+      "impr": 15
+     },
+     {
+      "d": "2026-10-18",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 9
+     },
+     {
+      "d": "2026-10-19",
+      "pos": 6.8,
+      "clicks": 0,
+      "impr": 17
+     },
+     {
+      "d": "2026-10-20",
+      "pos": 6.9,
+      "clicks": 0,
+      "impr": 10
+     },
+     {
+      "d": "2026-10-21",
+      "pos": 6.5,
+      "clicks": 0,
+      "impr": 14
+     },
+     {
+      "d": "2026-10-22",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 9
+     },
+     {
+      "d": "2026-10-23",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 8
+     },
+     {
+      "d": "2026-10-24",
+      "pos": 6.8,
+      "clicks": 1,
+      "impr": 11
+     },
+     {
+      "d": "2026-10-25",
+      "pos": 6.9,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-10-26",
+      "pos": 6.9,
+      "clicks": 0,
+      "impr": 21
+     },
+     {
+      "d": "2026-10-27",
+      "pos": 6.7,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-10-28",
+      "pos": 6.5,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-10-29",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 6
+     },
+     {
+      "d": "2026-10-30",
+      "pos": 5.9,
+      "clicks": 0,
+      "impr": 15
+     },
+     {
+      "d": "2026-10-31",
+      "pos": 6.2,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-11-01",
+      "pos": 5.8,
+      "clicks": 0,
+      "impr": 12
+     },
+     {
+      "d": "2026-11-02",
+      "pos": 5.6,
+      "clicks": 0,
+      "impr": 15
+     },
+     {
+      "d": "2026-11-03",
+      "pos": 7.3,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-11-04",
+      "pos": 6.5,
+      "clicks": 0,
+      "impr": 13
+     },
+     {
+      "d": "2026-11-05",
+      "pos": 5.9,
+      "clicks": 0,
+      "impr": 11
+     },
+     {
+      "d": "2026-11-06",
+      "pos": 5.8,
+      "clicks": 0,
+      "impr": 9
+     },
+     {
+      "d": "2026-11-07",
+      "pos": 7.1,
+      "clicks": 0,
+      "impr": 8
+     },
+     {
+      "d": "2026-11-08",
+      "pos": 5.8,
+      "clicks": 0,
+      "impr": 14
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 6.8,
+      "clicks": 1,
+      "impr": 11
+     }
+    ],
+    "omeprazole online": [
      {
       "d": "2026-08-11",
       "pos": 3.5,
@@ -14017,491 +14865,15 @@
       "pos": 12.8,
       "clicks": 0,
       "impr": 8
-     }
-    ],
-    "where can i buy omeprazole 10mg tablets": [
-     {
-      "d": "2026-08-10",
-      "pos": 5.4,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-08-11",
-      "pos": 6.2,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-08-12",
-      "pos": 6.8,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-08-13",
-      "pos": 6.8,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-08-14",
-      "pos": 5.7,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-08-16",
-      "pos": 7.3,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-08-17",
-      "pos": 7.3,
-      "clicks": 0,
-      "impr": 10
-     },
-     {
-      "d": "2026-08-18",
-      "pos": 6.4,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-08-19",
-      "pos": 6.7,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-08-20",
-      "pos": 7.0,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-08-21",
-      "pos": 6.8,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-08-22",
-      "pos": 5.9,
-      "clicks": 0,
-      "impr": 8
-     },
-     {
-      "d": "2026-08-23",
-      "pos": 7.0,
-      "clicks": 0,
-      "impr": 2
-     },
-     {
-      "d": "2026-08-24",
-      "pos": 7.1,
-      "clicks": 0,
-      "impr": 9
-     },
-     {
-      "d": "2026-08-25",
-      "pos": 7.0,
-      "clicks": 0,
-      "impr": 2
-     },
-     {
-      "d": "2026-08-26",
-      "pos": 7.3,
-      "clicks": 1,
-      "impr": 3
-     },
-     {
-      "d": "2026-08-28",
-      "pos": 6.8,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-08-29",
-      "pos": 6.9,
-      "clicks": 0,
-      "impr": 7
-     },
-     {
-      "d": "2026-08-30",
-      "pos": 6.3,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-08-31",
-      "pos": 7.4,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-09-01",
-      "pos": 6.5,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-09-02",
-      "pos": 7.2,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-09-03",
-      "pos": 7.3,
-      "clicks": 0,
-      "impr": 7
-     },
-     {
-      "d": "2026-09-04",
-      "pos": 9.0,
-      "clicks": 0,
-      "impr": 2
-     },
-     {
-      "d": "2026-09-05",
-      "pos": 7.0,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-09-07",
-      "pos": 7.5,
-      "clicks": 0,
-      "impr": 2
-     },
-     {
-      "d": "2026-09-08",
-      "pos": 7.5,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-09-09",
-      "pos": 7.0,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-09-11",
-      "pos": 7.0,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-09-12",
-      "pos": 7.2,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-09-14",
-      "pos": 7.4,
-      "clicks": 0,
-      "impr": 7
-     },
-     {
-      "d": "2026-09-16",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 7
-     },
-     {
-      "d": "2026-09-18",
-      "pos": 7.2,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-09-19",
-      "pos": 8.7,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-09-20",
-      "pos": 8.2,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-09-21",
-      "pos": 8.3,
-      "clicks": 0,
-      "impr": 14
-     },
-     {
-      "d": "2026-09-22",
-      "pos": 7.4,
-      "clicks": 0,
-      "impr": 9
-     },
-     {
-      "d": "2026-09-23",
-      "pos": 7.0,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-09-25",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-09-26",
-      "pos": 7.4,
-      "clicks": 1,
-      "impr": 5
-     },
-     {
-      "d": "2026-09-27",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-09-28",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-09-29",
-      "pos": 7.8,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-09-30",
-      "pos": 3.8,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-10-01",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-10-03",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 2
-     },
-     {
-      "d": "2026-10-04",
-      "pos": 4.5,
-      "clicks": 0,
-      "impr": 2
-     },
-     {
-      "d": "2026-10-05",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-10-06",
-      "pos": 7.7,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-10-07",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-10-09",
-      "pos": 6.2,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-10-10",
-      "pos": 1.0,
-      "clicks": 0,
-      "impr": 2
-     },
-     {
-      "d": "2026-10-11",
-      "pos": 6.2,
-      "clicks": 1,
-      "impr": 5
-     },
-     {
-      "d": "2026-10-12",
-      "pos": 6.2,
-      "clicks": 0,
-      "impr": 9
-     },
-     {
-      "d": "2026-10-13",
-      "pos": 7.7,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-10-14",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-10-16",
-      "pos": 6.2,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-10-17",
-      "pos": 4.2,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-10-18",
-      "pos": 7.8,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-10-19",
-      "pos": 7.8,
-      "clicks": 0,
-      "impr": 8
-     },
-     {
-      "d": "2026-10-20",
-      "pos": 6.6,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-10-21",
-      "pos": 1.0,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-10-22",
-      "pos": 7.8,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-10-23",
-      "pos": 7.5,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-10-25",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 4
-     },
-     {
-      "d": "2026-10-26",
-      "pos": 7.9,
-      "clicks": 0,
-      "impr": 8
-     },
-     {
-      "d": "2026-10-27",
-      "pos": 7.9,
-      "clicks": 0,
-      "impr": 7
-     },
-     {
-      "d": "2026-10-28",
-      "pos": 7.7,
-      "clicks": 0,
-      "impr": 3
-     },
-     {
-      "d": "2026-10-29",
-      "pos": 5.4,
-      "clicks": 0,
-      "impr": 7
-     },
-     {
-      "d": "2026-10-30",
-      "pos": 7.4,
-      "clicks": 0,
-      "impr": 8
-     },
-     {
-      "d": "2026-10-31",
-      "pos": 5.8,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-11-01",
-      "pos": 3.0,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-11-02",
-      "pos": 6.9,
-      "clicks": 0,
-      "impr": 8
-     },
-     {
-      "d": "2026-11-03",
-      "pos": 7.2,
-      "clicks": 0,
-      "impr": 5
-     },
-     {
-      "d": "2026-11-04",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-11-05",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
-      "d": "2026-11-06",
-      "pos": 7.8,
-      "clicks": 1,
-      "impr": 5
-     },
-     {
-      "d": "2026-11-07",
-      "pos": 8.0,
-      "clicks": 0,
-      "impr": 4
      },
      {
-      "d": "2026-11-08",
-      "pos": 8.0,
+      "d": "2026-11-09",
+      "pos": 4.7,
       "clicks": 0,
       "impr": 7
      }
     ],
     "omeprazole to buy": [
-     {
-      "d": "2026-08-10",
-      "pos": 7.5,
-      "clicks": 0,
-      "impr": 2
-     },
      {
       "d": "2026-08-11",
       "pos": 7.5,
@@ -14921,6 +15293,12 @@
       "pos": 8.0,
       "clicks": 0,
       "impr": 4
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 7.0,
+      "clicks": 0,
+      "impr": 7
      }
     ]
    },
@@ -14952,13 +15330,6 @@
    "label": "zyban",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 1,
-     "impr": 124,
-     "ctr": 0.81,
-     "pos": 9.3
-    },
     {
      "d": "2026-08-11",
      "clicks": 2,
@@ -15588,41 +15959,48 @@
      "impr": 341,
      "ctr": 0.29,
      "pos": 10.0
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 0,
+     "impr": 534,
+     "ctr": 0.0,
+     "pos": 10.2
     }
    ],
    "queries": [
     {
      "q": "zyban",
      "clicks": 10,
-     "impr": 9826,
+     "impr": 9884,
      "ctr": 0.1,
-     "pos": 9.2,
+     "pos": 9.3,
      "prev": {
       "clicks": 5,
-      "impr": 7231,
+      "impr": 7329,
       "ctr": 0.1,
-      "pos": 9.3
+      "pos": 9.4
      }
     },
     {
      "q": "zyban online",
      "clicks": 5,
-     "impr": 155,
-     "ctr": 3.2,
+     "impr": 150,
+     "ctr": 3.3,
      "pos": 4.1,
      "prev": {
       "clicks": 1,
-      "impr": 139,
+      "impr": 144,
       "ctr": 0.7,
-      "pos": 3.5
+      "pos": 3.6
      }
     },
     {
      "q": "zyban buy online",
      "clicks": 4,
-     "impr": 70,
-     "ctr": 5.7,
-     "pos": 5.7,
+     "impr": 73,
+     "ctr": 5.5,
+     "pos": 5.8,
      "prev": {
       "clicks": 1,
       "impr": 100,
@@ -15633,27 +16011,27 @@
     {
      "q": "zyban uk",
      "clicks": 3,
-     "impr": 419,
+     "impr": 402,
      "ctr": 0.7,
      "pos": 9.6,
      "prev": {
       "clicks": 5,
-      "impr": 295,
-      "ctr": 1.7,
-      "pos": 7.8
+      "impr": 315,
+      "ctr": 1.6,
+      "pos": 8.0
      }
     },
     {
      "q": "buy zyban online",
      "clicks": 2,
-     "impr": 120,
+     "impr": 118,
      "ctr": 1.7,
      "pos": 5.2,
      "prev": {
       "clicks": 1,
-      "impr": 165,
+      "impr": 168,
       "ctr": 0.6,
-      "pos": 5.6
+      "pos": 5.7
      }
     },
     {
@@ -15661,49 +16039,49 @@
      "clicks": 2,
      "impr": 46,
      "ctr": 4.3,
-     "pos": 5.7,
+     "pos": 6.0,
      "prev": {
       "clicks": 0,
-      "impr": 27,
+      "impr": 29,
       "ctr": 0.0,
-      "pos": 6.3
+      "pos": 6.2
      }
     },
     {
      "q": "buy zyban",
      "clicks": 1,
-     "impr": 324,
+     "impr": 321,
      "ctr": 0.3,
-     "pos": 3.6,
+     "pos": 3.7,
      "prev": {
       "clicks": 3,
-      "impr": 255,
-      "ctr": 1.2,
-      "pos": 5.8
+      "impr": 265,
+      "ctr": 1.1,
+      "pos": 5.6
      }
     },
     {
      "q": "zyban buy",
      "clicks": 1,
-     "impr": 108,
-     "ctr": 0.9,
-     "pos": 4.3,
+     "impr": 101,
+     "ctr": 1.0,
+     "pos": 4.5,
      "prev": {
       "clicks": 4,
-      "impr": 121,
-      "ctr": 3.3,
-      "pos": 5.7
+      "impr": 124,
+      "ctr": 3.2,
+      "pos": 5.4
      }
     },
     {
      "q": "buy zyban uk",
      "clicks": 1,
-     "impr": 86,
+     "impr": 83,
      "ctr": 1.2,
      "pos": 3.8,
      "prev": {
       "clicks": 0,
-      "impr": 87,
+      "impr": 88,
       "ctr": 0.0,
       "pos": 4.6
      }
@@ -15713,10 +16091,10 @@
      "clicks": 1,
      "impr": 46,
      "ctr": 2.2,
-     "pos": 3.2,
+     "pos": 3.4,
      "prev": {
       "clicks": 0,
-      "impr": 62,
+      "impr": 64,
       "ctr": 0.0,
       "pos": 5.9
      }
@@ -15783,12 +16161,6 @@
    ],
    "kwseries": {
     "zyban": [
-     {
-      "d": "2026-08-10",
-      "pos": 26.5,
-      "clicks": 0,
-      "impr": 2
-     },
      {
       "d": "2026-08-11",
       "pos": 5.8,
@@ -16328,15 +16700,15 @@
       "pos": 9.7,
       "clicks": 0,
       "impr": 206
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 10.1,
+      "clicks": 0,
+      "impr": 343
      }
     ],
     "zyban uk": [
-     {
-      "d": "2026-08-10",
-      "pos": 9.4,
-      "clicks": 0,
-      "impr": 7
-     },
      {
       "d": "2026-08-11",
       "pos": 19.0,
@@ -16816,6 +17188,12 @@
       "pos": 26.8,
       "clicks": 0,
       "impr": 5
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 28.3,
+      "clicks": 0,
+      "impr": 3
      }
     ],
     "buy zyban online": [
@@ -17244,6 +17622,12 @@
       "pos": 7.5,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 7.7,
+      "clicks": 0,
+      "impr": 3
      }
     ],
     "zyban buy online": [
@@ -17564,6 +17948,12 @@
       "pos": 8.0,
       "clicks": 0,
       "impr": 1
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 8.0,
+      "clicks": 0,
+      "impr": 3
      }
     ],
     "zyban online": [
@@ -18011,13 +18401,6 @@
    "label": "malarone",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 5,
-     "impr": 518,
-     "ctr": 0.97,
-     "pos": 11.6
-    },
     {
      "d": "2026-08-11",
      "clicks": 4,
@@ -18647,31 +19030,38 @@
      "impr": 89,
      "ctr": 0.0,
      "pos": 20.9
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 0,
+     "impr": 126,
+     "ctr": 0.0,
+     "pos": 28.7
     }
    ],
    "queries": [
     {
      "q": "cheapest malarone tablets uk",
-     "clicks": 6,
-     "impr": 166,
-     "ctr": 3.6,
+     "clicks": 5,
+     "impr": 156,
+     "ctr": 3.2,
      "pos": 4.4,
      "prev": {
-      "clicks": 10,
-      "impr": 212,
-      "ctr": 4.7,
-      "pos": 3.0
+      "clicks": 11,
+      "impr": 214,
+      "ctr": 5.1,
+      "pos": 3.1
      }
     },
     {
      "q": "malarone price",
      "clicks": 4,
-     "impr": 144,
+     "impr": 142,
      "ctr": 2.8,
      "pos": 6.0,
      "prev": {
       "clicks": 0,
-      "impr": 186,
+      "impr": 187,
       "ctr": 0.0,
       "pos": 5.3
      }
@@ -18679,53 +19069,53 @@
     {
      "q": "malarone malaria tablets",
      "clicks": 3,
-     "impr": 224,
-     "ctr": 1.3,
-     "pos": 8.4,
+     "impr": 219,
+     "ctr": 1.4,
+     "pos": 8.6,
      "prev": {
       "clicks": 1,
-      "impr": 265,
+      "impr": 258,
       "ctr": 0.4,
-      "pos": 8.7
+      "pos": 8.6
      }
     },
     {
      "q": "malarone online",
      "clicks": 3,
-     "impr": 184,
-     "ctr": 1.6,
+     "impr": 175,
+     "ctr": 1.7,
      "pos": 3.1,
      "prev": {
       "clicks": 4,
-      "impr": 245,
-      "ctr": 1.6,
-      "pos": 3.2
+      "impr": 241,
+      "ctr": 1.7,
+      "pos": 3.0
      }
     },
     {
      "q": "malarone cost",
      "clicks": 3,
-     "impr": 73,
-     "ctr": 4.1,
-     "pos": 7.7,
+     "impr": 71,
+     "ctr": 4.2,
+     "pos": 7.9,
      "prev": {
       "clicks": 0,
-      "impr": 149,
+      "impr": 148,
       "ctr": 0.0,
-      "pos": 4.7
+      "pos": 4.6
      }
     },
     {
      "q": "cheapest generic malarone tablets",
      "clicks": 2,
-     "impr": 50,
-     "ctr": 4.0,
-     "pos": 3.7,
+     "impr": 46,
+     "ctr": 4.3,
+     "pos": 3.9,
      "prev": {
       "clicks": 6,
-      "impr": 47,
-      "ctr": 12.8,
-      "pos": 3.3
+      "impr": 52,
+      "ctr": 11.5,
+      "pos": 3.4
      }
     },
     {
@@ -18751,38 +19141,38 @@
     {
      "q": "buy malarone",
      "clicks": 1,
-     "impr": 341,
+     "impr": 326,
      "ctr": 0.3,
      "pos": 4.0,
      "prev": {
       "clicks": 2,
-      "impr": 524,
+      "impr": 523,
       "ctr": 0.4,
-      "pos": 6.2
+      "pos": 6.1
      }
     },
     {
      "q": "buy malarone online",
      "clicks": 1,
-     "impr": 307,
+     "impr": 290,
      "ctr": 0.3,
-     "pos": 3.5,
+     "pos": 3.4,
      "prev": {
       "clicks": 4,
-      "impr": 462,
+      "impr": 455,
       "ctr": 0.9,
-      "pos": 4.5
+      "pos": 4.4
      }
     },
     {
      "q": "cheapest malarone",
      "clicks": 1,
-     "impr": 81,
-     "ctr": 1.2,
-     "pos": 2.6,
+     "impr": 75,
+     "ctr": 1.3,
+     "pos": 2.5,
      "prev": {
       "clicks": 2,
-      "impr": 110,
+      "impr": 113,
       "ctr": 1.8,
       "pos": 2.9
      }
@@ -18790,13 +19180,13 @@
     {
      "q": "malarone cheapest",
      "clicks": 1,
-     "impr": 61,
-     "ctr": 1.6,
+     "impr": 59,
+     "ctr": 1.7,
      "pos": 1.6,
      "prev": {
       "clicks": 2,
-      "impr": 70,
-      "ctr": 2.9,
+      "impr": 72,
+      "ctr": 2.8,
       "pos": 2.4
      }
     },
@@ -18808,7 +19198,7 @@
      "pos": 9.4,
      "prev": {
       "clicks": 0,
-      "impr": 82,
+      "impr": 79,
       "ctr": 0.0,
       "pos": 8.4
      }
@@ -18834,20 +19224,14 @@
      "pos": 3.7,
      "prev": {
       "clicks": 1,
-      "impr": 23,
-      "ctr": 4.3,
-      "pos": 3.8
+      "impr": 22,
+      "ctr": 4.5,
+      "pos": 3.9
      }
     }
    ],
    "kwseries": {
     "cheapest malarone tablets uk": [
-     {
-      "d": "2026-08-10",
-      "pos": 8.1,
-      "clicks": 0,
-      "impr": 19
-     },
      {
       "d": "2026-08-11",
       "pos": 7.0,
@@ -19385,12 +19769,6 @@
     ],
     "malarone cost": [
      {
-      "d": "2026-08-10",
-      "pos": 8.4,
-      "clicks": 1,
-      "impr": 5
-     },
-     {
       "d": "2026-08-11",
       "pos": 9.2,
       "clicks": 0,
@@ -19875,15 +20253,15 @@
       "pos": 9.0,
       "clicks": 1,
       "impr": 1
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 10.0,
+      "clicks": 0,
+      "impr": 5
      }
     ],
     "malarone price": [
-     {
-      "d": "2026-08-10",
-      "pos": 10.0,
-      "clicks": 0,
-      "impr": 2
-     },
      {
       "d": "2026-08-11",
       "pos": 7.0,
@@ -20387,15 +20765,15 @@
       "pos": 10.5,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 8.0,
+      "clicks": 0,
+      "impr": 2
      }
     ],
     "malarone online": [
-     {
-      "d": "2026-08-10",
-      "pos": 5.1,
-      "clicks": 0,
-      "impr": 15
-     },
      {
       "d": "2026-08-11",
       "pos": 4.8,
@@ -20908,12 +21286,6 @@
      }
     ],
     "malarone malaria tablets": [
-     {
-      "d": "2026-08-10",
-      "pos": 11.9,
-      "clicks": 0,
-      "impr": 10
-     },
      {
       "d": "2026-08-11",
       "pos": 11.8,
@@ -21447,6 +21819,12 @@
       "pos": 24.7,
       "clicks": 0,
       "impr": 3
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 22.3,
+      "clicks": 0,
+      "impr": 3
      }
     ]
    },
@@ -21478,13 +21856,6 @@
    "label": "levothyroxine",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 5,
-     "impr": 377,
-     "ctr": 1.33,
-     "pos": 13.2
-    },
     {
      "d": "2026-08-11",
      "clicks": 11,
@@ -22114,20 +22485,27 @@
      "impr": 144,
      "ctr": 0.0,
      "pos": 26.1
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 1,
+     "impr": 121,
+     "ctr": 0.83,
+     "pos": 29.9
     }
    ],
    "queries": [
     {
      "q": "can i buy levothyroxine over the counter in uk",
      "clicks": 6,
-     "impr": 97,
-     "ctr": 6.2,
-     "pos": 3.2,
+     "impr": 94,
+     "ctr": 6.4,
+     "pos": 3.1,
      "prev": {
       "clicks": 9,
-      "impr": 104,
-      "ctr": 8.7,
-      "pos": 2.3
+      "impr": 105,
+      "ctr": 8.6,
+      "pos": 2.4
      }
     },
     {
@@ -22138,35 +22516,35 @@
      "pos": 1.9,
      "prev": {
       "clicks": 0,
-      "impr": 23,
+      "impr": 21,
       "ctr": 0.0,
-      "pos": 2.3
+      "pos": 1.9
      }
     },
     {
      "q": "buy levothyroxine online",
-     "clicks": 3,
-     "impr": 250,
-     "ctr": 1.2,
+     "clicks": 2,
+     "impr": 249,
+     "ctr": 0.8,
      "pos": 7.1,
      "prev": {
-      "clicks": 3,
-      "impr": 325,
-      "ctr": 0.9,
-      "pos": 7.2
+      "clicks": 4,
+      "impr": 314,
+      "ctr": 1.3,
+      "pos": 7.1
      }
     },
     {
      "q": "buy levothyroxine",
      "clicks": 2,
-     "impr": 234,
+     "impr": 222,
      "ctr": 0.9,
-     "pos": 9.8,
+     "pos": 10.5,
      "prev": {
       "clicks": 0,
-      "impr": 319,
+      "impr": 322,
       "ctr": 0.0,
-      "pos": 7.5
+      "pos": 7.2
      }
     },
     {
@@ -22185,40 +22563,27 @@
     {
      "q": "where can i buy levothyroxine over the counter",
      "clicks": 2,
-     "impr": 81,
-     "ctr": 2.5,
-     "pos": 2.7,
+     "impr": 75,
+     "ctr": 2.7,
+     "pos": 2.9,
      "prev": {
-      "clicks": 9,
-      "impr": 113,
-      "ctr": 8.0,
-      "pos": 2.2
+      "clicks": 8,
+      "impr": 114,
+      "ctr": 7.0,
+      "pos": 2.1
      }
     },
     {
      "q": "levothyroxine online pharmacy",
      "clicks": 2,
-     "impr": 29,
-     "ctr": 6.9,
+     "impr": 25,
+     "ctr": 8.0,
      "pos": 2.1,
      "prev": {
       "clicks": 1,
-      "impr": 24,
-      "ctr": 4.2,
+      "impr": 28,
+      "ctr": 3.6,
       "pos": 2.2
-     }
-    },
-    {
-     "q": "levothyroxine price",
-     "clicks": 1,
-     "impr": 57,
-     "ctr": 1.8,
-     "pos": 6.2,
-     "prev": {
-      "clicks": 2,
-      "impr": 70,
-      "ctr": 2.9,
-      "pos": 7.0
      }
     },
     {
@@ -22229,9 +22594,22 @@
      "pos": 2.0,
      "prev": {
       "clicks": 0,
-      "impr": 55,
+      "impr": 53,
       "ctr": 0.0,
-      "pos": 3.9
+      "pos": 3.4
+     }
+    },
+    {
+     "q": "levothyroxine price",
+     "clicks": 1,
+     "impr": 55,
+     "ctr": 1.8,
+     "pos": 6.1,
+     "prev": {
+      "clicks": 2,
+      "impr": 69,
+      "ctr": 2.9,
+      "pos": 7.0
      }
     },
     {
@@ -22242,7 +22620,7 @@
      "pos": 3.0,
      "prev": {
       "clicks": 1,
-      "impr": 46,
+      "impr": 45,
       "ctr": 2.2,
       "pos": 3.0
      }
@@ -22276,12 +22654,12 @@
     {
      "q": "where can i buy levothyroxine",
      "clicks": 1,
-     "impr": 12,
-     "ctr": 8.3,
+     "impr": 11,
+     "ctr": 9.1,
      "pos": 1.6,
      "prev": {
       "clicks": 0,
-      "impr": 2,
+      "impr": 3,
       "ctr": 0.0,
       "pos": 1.0
      }
@@ -22315,12 +22693,6 @@
    ],
    "kwseries": {
     "can i buy levothyroxine over the counter in uk": [
-     {
-      "d": "2026-08-10",
-      "pos": 3.0,
-      "clicks": 0,
-      "impr": 3
-     },
      {
       "d": "2026-08-11",
       "pos": 1.0,
@@ -22822,12 +23194,6 @@
     ],
     "levothyroxine buy online": [
      {
-      "d": "2026-08-10",
-      "pos": 7.0,
-      "clicks": 0,
-      "impr": 6
-     },
-     {
       "d": "2026-08-11",
       "pos": 8.7,
       "clicks": 0,
@@ -23267,12 +23633,6 @@
      }
     ],
     "buy levothyroxine online": [
-     {
-      "d": "2026-08-10",
-      "pos": 7.6,
-      "clicks": 0,
-      "impr": 9
-     },
      {
       "d": "2026-08-11",
       "pos": 7.2,
@@ -23773,12 +24133,6 @@
      }
     ],
     "buy levothyroxine": [
-     {
-      "d": "2026-08-10",
-      "pos": 8.7,
-      "clicks": 0,
-      "impr": 12
-     },
      {
       "d": "2026-08-11",
       "pos": 8.8,
@@ -24294,6 +24648,12 @@
       "pos": 67.0,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 54.5,
+      "clicks": 0,
+      "impr": 2
      }
     ],
     "can i buy levothyroxine online": [
@@ -24507,13 +24867,6 @@
    "label": "cerelle",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 0,
-     "impr": 393,
-     "ctr": 0.0,
-     "pos": 11.5
-    },
     {
      "d": "2026-08-11",
      "clicks": 2,
@@ -25143,18 +25496,25 @@
      "impr": 68,
      "ctr": 0.0,
      "pos": 28.3
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 0,
+     "impr": 135,
+     "ctr": 0.0,
+     "pos": 35.3
     }
    ],
    "queries": [
     {
      "q": "cerelle pill",
      "clicks": 1,
-     "impr": 617,
+     "impr": 604,
      "ctr": 0.2,
-     "pos": 10.9,
+     "pos": 11.0,
      "prev": {
       "clicks": 2,
-      "impr": 774,
+      "impr": 725,
       "ctr": 0.3,
       "pos": 9.7
      }
@@ -25162,22 +25522,22 @@
     {
      "q": "cerelle",
      "clicks": 1,
-     "impr": 349,
+     "impr": 339,
      "ctr": 0.3,
-     "pos": 17.3,
+     "pos": 17.5,
      "prev": {
       "clicks": 0,
-      "impr": 368,
+      "impr": 356,
       "ctr": 0.0,
-      "pos": 14.4
+      "pos": 14.6
      }
     },
     {
      "q": "cerelle uk",
      "clicks": 1,
-     "impr": 137,
+     "impr": 134,
      "ctr": 0.7,
-     "pos": 11.2,
+     "pos": 11.3,
      "prev": {
       "clicks": 0,
       "impr": 132,
@@ -25190,7 +25550,7 @@
      "clicks": 1,
      "impr": 120,
      "ctr": 0.8,
-     "pos": 15.9,
+     "pos": 16.3,
      "prev": {
       "clicks": 1,
       "impr": 124,
@@ -25201,12 +25561,12 @@
     {
      "q": "buy cerelle",
      "clicks": 0,
-     "impr": 359,
+     "impr": 352,
      "ctr": 0.0,
-     "pos": 10.1,
+     "pos": 10.2,
      "prev": {
       "clicks": 0,
-      "impr": 431,
+      "impr": 437,
       "ctr": 0.0,
       "pos": 8.4
      }
@@ -25214,7 +25574,7 @@
     {
      "q": "buy cerelle online",
      "clicks": 0,
-     "impr": 289,
+     "impr": 285,
      "ctr": 0.0,
      "pos": 9.2,
      "prev": {
@@ -25227,14 +25587,14 @@
     {
      "q": "buy cerelle pill",
      "clicks": 0,
-     "impr": 86,
+     "impr": 84,
      "ctr": 0.0,
      "pos": 9.1,
      "prev": {
       "clicks": 0,
-      "impr": 111,
+      "impr": 108,
       "ctr": 0.0,
-      "pos": 7.6
+      "pos": 7.7
      }
     },
     {
@@ -25245,7 +25605,7 @@
      "pos": 22.1,
      "prev": {
       "clicks": 0,
-      "impr": 79,
+      "impr": 77,
       "ctr": 0.0,
       "pos": 25.9
      }
@@ -25256,6 +25616,19 @@
      "impr": 14,
      "ctr": 0.0,
      "pos": 13.0
+    },
+    {
+     "q": "buy cerazette",
+     "clicks": 0,
+     "impr": 8,
+     "ctr": 0.0,
+     "pos": 35.0,
+     "prev": {
+      "clicks": 0,
+      "impr": 2,
+      "ctr": 0.0,
+      "pos": 28.0
+     }
     },
     {
      "q": "buy cilest online",
@@ -25278,16 +25651,23 @@
      "pos": 23.7
     },
     {
-     "q": "buy cerazette",
+     "q": "buy contraceptive pill online",
      "clicks": 0,
-     "impr": 6,
+     "impr": 5,
      "ctr": 0.0,
-     "pos": 27.5,
+     "pos": 51.2
+    },
+    {
+     "q": "buy cerazette online",
+     "clicks": 0,
+     "impr": 4,
+     "ctr": 0.0,
+     "pos": 66.5,
      "prev": {
       "clicks": 0,
       "impr": 2,
       "ctr": 0.0,
-      "pos": 28.0
+      "pos": 15.5
      }
     },
     {
@@ -25302,36 +25682,10 @@
       "ctr": 0.0,
       "pos": 15.0
      }
-    },
-    {
-     "q": "are cerelle and cerazette the same",
-     "clicks": 0,
-     "impr": 3,
-     "ctr": 0.0,
-     "pos": 14.0
-    },
-    {
-     "q": "buy cerazette online",
-     "clicks": 0,
-     "impr": 2,
-     "ctr": 0.0,
-     "pos": 54.0,
-     "prev": {
-      "clicks": 0,
-      "impr": 2,
-      "ctr": 0.0,
-      "pos": 15.5
-     }
     }
    ],
    "kwseries": {
     "buy cerelle": [
-     {
-      "d": "2026-08-10",
-      "pos": 6.8,
-      "clicks": 0,
-      "impr": 6
-     },
      {
       "d": "2026-08-11",
       "pos": 7.7,
@@ -25871,15 +26225,15 @@
       "pos": 15.7,
       "clicks": 0,
       "impr": 6
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 14.8,
+      "clicks": 0,
+      "impr": 9
      }
     ],
     "cerelle pill": [
-     {
-      "d": "2026-08-10",
-      "pos": 10.6,
-      "clicks": 0,
-      "impr": 90
-     },
      {
       "d": "2026-08-11",
       "pos": 10.9,
@@ -26419,6 +26773,12 @@
       "pos": 28.0,
       "clicks": 0,
       "impr": 7
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 28.2,
+      "clicks": 0,
+      "impr": 5
      }
     ],
     "cerelle mini pill": [
@@ -26829,15 +27189,15 @@
       "pos": 27.5,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 28.6,
+      "clicks": 0,
+      "impr": 5
      }
     ],
     "cerelle uk": [
-     {
-      "d": "2026-08-10",
-      "pos": 9.8,
-      "clicks": 0,
-      "impr": 5
-     },
      {
       "d": "2026-08-11",
       "pos": 10.0,
@@ -27281,15 +27641,15 @@
       "pos": 15.5,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 18.5,
+      "clicks": 0,
+      "impr": 2
      }
     ],
     "cerelle": [
-     {
-      "d": "2026-08-10",
-      "pos": 10.4,
-      "clicks": 0,
-      "impr": 80
-     },
      {
       "d": "2026-08-11",
       "pos": 10.2,
@@ -27823,6 +28183,12 @@
       "pos": 36.8,
       "clicks": 0,
       "impr": 4
+     },
+     {
+      "d": "2026-11-09",
+      "pos": 33.2,
+      "clicks": 0,
+      "impr": 4
      }
     ]
    },
@@ -27854,13 +28220,6 @@
    "label": "foundayo (gsc rankings)",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-10",
-     "clicks": 5028,
-     "impr": 32511,
-     "ctr": 15.47,
-     "pos": 3.3
-    },
     {
      "d": "2026-08-11",
      "clicks": 4534,
@@ -28490,6 +28849,13 @@
      "impr": 0,
      "ctr": 0.0,
      "pos": 0.0
+    },
+    {
+     "d": "2026-11-09",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
     }
    ],
    "queries": [],
@@ -28517,6 +28883,6 @@
    }
   }
  ],
- "as_of": "2026-11-11",
+ "as_of": "2026-11-12",
  "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
 }
