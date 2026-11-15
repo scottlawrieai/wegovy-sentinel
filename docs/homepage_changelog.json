@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-10-16",
-  "changes": [
-   {
-    "type": "content",
-    "text": "Topic coverage gained: medication questionnaire",
-    "source": "auto"
-   }
-  ]
- },
- {
   "date": "2026-10-17",
   "changes": [
    {
@@ -220,6 +210,16 @@
    {
     "type": "content",
     "text": "Body copy +61 words (1,091 → 1,152)",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-15",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy −40 words (1,152 → 1,112)",
     "source": "auto"
    }
   ]
