@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-10-18",
-  "changes": [
-   {
-    "type": "content",
-    "text": "Body copy −107 words (2,620 → 2,513)",
-    "source": "auto"
-   }
-  ]
- },
- {
   "date": "2026-10-19",
   "changes": [
    {
@@ -190,6 +180,16 @@
    {
     "type": "content",
     "text": "Topic coverage lost: needle",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-18",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy −140 words (2,658 → 2,518)",
     "source": "auto"
    }
   ]
