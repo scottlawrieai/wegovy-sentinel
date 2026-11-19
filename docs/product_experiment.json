@@ -6,13 +6,6 @@
    "live": "2026-09-07",
    "series": [
     {
-     "d": "2026-08-17",
-     "clicks": 2,
-     "impr": 505,
-     "ctr": 0.4,
-     "pos": 14.2
-    },
-    {
      "d": "2026-08-18",
      "clicks": 0,
      "impr": 374,
@@ -641,46 +634,53 @@
      "impr": 237,
      "ctr": 0.0,
      "pos": 20.1
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 0,
+     "impr": 243,
+     "ctr": 0.0,
+     "pos": 18.5
     }
    ],
    "queries": [
     {
      "q": "buy cialis online",
      "clicks": 3,
-     "impr": 479,
+     "impr": 473,
      "ctr": 0.6,
-     "pos": 12.8,
+     "pos": 13.0,
      "prev": {
       "clicks": 2,
-      "impr": 504,
+      "impr": 510,
       "ctr": 0.4,
-      "pos": 12.0
+      "pos": 11.9
      }
     },
     {
      "q": "cialis uk",
      "clicks": 1,
-     "impr": 205,
+     "impr": 203,
      "ctr": 0.5,
-     "pos": 23.7,
+     "pos": 23.9,
      "prev": {
       "clicks": 1,
-      "impr": 113,
+      "impr": 115,
       "ctr": 0.9,
-      "pos": 17.8
+      "pos": 17.6
      }
     },
     {
      "q": "order cialis online",
      "clicks": 1,
-     "impr": 93,
+     "impr": 88,
      "ctr": 1.1,
      "pos": 14.9,
      "prev": {
       "clicks": 0,
-      "impr": 55,
+      "impr": 58,
       "ctr": 0.0,
-      "pos": 16.2
+      "pos": 16.1
      }
     },
     {
@@ -788,12 +788,6 @@
    ],
    "kwseries": {
     "buy cialis online": [
-     {
-      "d": "2026-08-17",
-      "pos": 10.4,
-      "clicks": 0,
-      "impr": 31
-     },
      {
       "d": "2026-08-18",
       "pos": 10.4,
@@ -1333,6 +1327,12 @@
       "pos": 15.7,
       "clicks": 0,
       "impr": 16
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 15.8,
+      "clicks": 0,
+      "impr": 17
      }
     ],
     "cialis 20mg online": [
@@ -1628,12 +1628,6 @@
      }
     ],
     "order cialis online": [
-     {
-      "d": "2026-08-17",
-      "pos": 12.1,
-      "clicks": 0,
-      "impr": 7
-     },
      {
       "d": "2026-08-18",
       "pos": 9.5,
@@ -2068,13 +2062,6 @@
    "label": "vaniqa",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 1,
-     "impr": 305,
-     "ctr": 0.33,
-     "pos": 10.8
-    },
     {
      "d": "2026-08-18",
      "clicks": 2,
@@ -2704,125 +2691,139 @@
      "impr": 365,
      "ctr": 1.1,
      "pos": 7.0
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 4,
+     "impr": 427,
+     "ctr": 0.94,
+     "pos": 6.6
     }
    ],
    "queries": [
     {
      "q": "vaniqa cream",
-     "clicks": 12,
-     "impr": 4484,
+     "clicks": 14,
+     "impr": 4536,
      "ctr": 0.3,
-     "pos": 5.8,
+     "pos": 5.7,
      "prev": {
       "clicks": 8,
-      "impr": 3946,
+      "impr": 3994,
       "ctr": 0.2,
-      "pos": 5.9
+      "pos": 6.0
      }
     },
     {
      "q": "vaniqa cream price",
      "clicks": 10,
-     "impr": 228,
-     "ctr": 4.4,
+     "impr": 235,
+     "ctr": 4.3,
      "pos": 3.3,
      "prev": {
       "clicks": 2,
-      "impr": 208,
+      "impr": 205,
       "ctr": 1.0,
-      "pos": 3.8
+      "pos": 3.7
      }
     },
     {
      "q": "vaniqa",
      "clicks": 2,
-     "impr": 951,
+     "impr": 979,
      "ctr": 0.2,
      "pos": 7.6,
      "prev": {
       "clicks": 0,
-      "impr": 117,
+      "impr": 134,
       "ctr": 0.0,
-      "pos": 15.1
+      "pos": 13.7
      }
     },
     {
      "q": "vaniqa cream uk",
      "clicks": 1,
-     "impr": 315,
+     "impr": 321,
      "ctr": 0.3,
-     "pos": 7.1,
+     "pos": 6.9,
      "prev": {
       "clicks": 1,
-      "impr": 417,
+      "impr": 414,
       "ctr": 0.2,
-      "pos": 8.5
+      "pos": 8.6
      }
     },
     {
      "q": "vaniqa krem",
      "clicks": 1,
-     "impr": 216,
+     "impr": 218,
      "ctr": 0.5,
      "pos": 4.4,
      "prev": {
       "clicks": 0,
-      "impr": 1,
+      "impr": 4,
       "ctr": 0.0,
-      "pos": 3.0
+      "pos": 3.5
      }
     },
     {
      "q": "vaniqa cream amazon",
      "clicks": 1,
-     "impr": 189,
-     "ctr": 0.5,
+     "impr": 181,
+     "ctr": 0.6,
      "pos": 8.5,
      "prev": {
       "clicks": 3,
-      "impr": 271,
-      "ctr": 1.1,
-      "pos": 8.6
+      "impr": 260,
+      "ctr": 1.2,
+      "pos": 8.7
      }
     },
     {
      "q": "buy vaniqa",
      "clicks": 1,
-     "impr": 174,
+     "impr": 179,
      "ctr": 0.6,
-     "pos": 5.5,
+     "pos": 5.9,
      "prev": {
       "clicks": 1,
-      "impr": 236,
+      "impr": 232,
       "ctr": 0.4,
-      "pos": 5.9
+      "pos": 6.0
      }
     },
     {
      "q": "vaniqa hair removal cream",
      "clicks": 1,
-     "impr": 92,
-     "ctr": 1.1,
-     "pos": 4.5,
+     "impr": 101,
+     "ctr": 1.0,
+     "pos": 4.3,
      "prev": {
       "clicks": 0,
-      "impr": 51,
+      "impr": 54,
       "ctr": 0.0,
-      "pos": 6.6
+      "pos": 6.4
      }
     },
     {
      "q": "eflornithine cream",
      "clicks": 1,
-     "impr": 19,
-     "ctr": 5.3,
-     "pos": 19.7,
+     "impr": 17,
+     "ctr": 5.9,
+     "pos": 20.5,
      "prev": {
       "clicks": 0,
-      "impr": 27,
+      "impr": 29,
       "ctr": 0.0,
-      "pos": 10.5
+      "pos": 10.7
      }
+    },
+    {
+     "q": "vaniqa cream uae",
+     "clicks": 1,
+     "impr": 13,
+     "ctr": 7.7,
+     "pos": 5.1
     },
     {
      "q": "vaniqa 11.5 cream price",
@@ -2830,13 +2831,6 @@
      "impr": 11,
      "ctr": 9.1,
      "pos": 6.3
-    },
-    {
-     "q": "vaniqa cream uae",
-     "clicks": 1,
-     "impr": 11,
-     "ctr": 9.1,
-     "pos": 4.9
     },
     {
      "q": "how much",
@@ -2875,12 +2869,6 @@
    ],
    "kwseries": {
     "vaniqa cream": [
-     {
-      "d": "2026-08-17",
-      "pos": 12.5,
-      "clicks": 0,
-      "impr": 19
-     },
      {
       "d": "2026-08-18",
       "pos": 12.5,
@@ -3420,15 +3408,15 @@
       "pos": 5.0,
       "clicks": 0,
       "impr": 157
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 5.1,
+      "clicks": 2,
+      "impr": 201
      }
     ],
     "vaniqa cream uk": [
-     {
-      "d": "2026-08-17",
-      "pos": 4.4,
-      "clicks": 0,
-      "impr": 38
-     },
      {
       "d": "2026-08-18",
       "pos": 5.6,
@@ -3962,15 +3950,15 @@
       "pos": 6.2,
       "clicks": 0,
       "impr": 13
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 5.2,
+      "clicks": 0,
+      "impr": 14
      }
     ],
     "vaniqa cream price": [
-     {
-      "d": "2026-08-17",
-      "pos": 10.2,
-      "clicks": 0,
-      "impr": 4
-     },
      {
       "d": "2026-08-18",
       "pos": 5.3,
@@ -4510,15 +4498,15 @@
       "pos": 3.1,
       "clicks": 0,
       "impr": 7
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 2.8,
+      "clicks": 0,
+      "impr": 12
      }
     ],
     "vaniqa krem": [
-     {
-      "d": "2026-08-17",
-      "pos": 4.0,
-      "clicks": 1,
-      "impr": 4
-     },
      {
       "d": "2026-08-18",
       "pos": 4.8,
@@ -4800,15 +4788,15 @@
       "pos": 5.2,
       "clicks": 0,
       "impr": 5
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 3.8,
+      "clicks": 0,
+      "impr": 5
      }
     ],
     "vaniqa": [
-     {
-      "d": "2026-08-17",
-      "pos": 14.6,
-      "clicks": 0,
-      "impr": 9
-     },
      {
       "d": "2026-08-18",
       "pos": 20.7,
@@ -5318,6 +5306,12 @@
       "pos": 7.9,
       "clicks": 1,
       "impr": 47
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 7.7,
+      "clicks": 0,
+      "impr": 56
      }
     ]
    },
@@ -5329,7 +5323,7 @@
     "h1": "Vaniqa Cream",
     "h2n": 13,
     "faqs": 1,
-    "wc": 2456,
+    "wc": 2471,
     "schema": [
      "AdministrativeArea",
      "AggregateOffer",
@@ -5349,13 +5343,6 @@
    "label": "sildenafil",
    "live": "2026-09-23",
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 3,
-     "impr": 751,
-     "ctr": 0.4,
-     "pos": 15.3
-    },
     {
      "d": "2026-08-18",
      "clicks": 8,
@@ -5985,44 +5972,51 @@
      "impr": 481,
      "ctr": 0.42,
      "pos": 15.4
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 4,
+     "impr": 447,
+     "ctr": 0.89,
+     "pos": 16.9
     }
    ],
    "queries": [
     {
      "q": "sildenafil",
      "clicks": 4,
-     "impr": 299,
+     "impr": 314,
      "ctr": 1.3,
-     "pos": 14.5,
+     "pos": 14.6,
      "prev": {
       "clicks": 2,
-      "impr": 104,
-      "ctr": 1.9,
-      "pos": 22.0
+      "impr": 98,
+      "ctr": 2.0,
+      "pos": 23.2
      }
     },
     {
      "q": "cheapest sildenafil uk",
      "clicks": 4,
-     "impr": 220,
+     "impr": 225,
      "ctr": 1.8,
-     "pos": 4.2,
+     "pos": 4.0,
      "prev": {
       "clicks": 2,
-      "impr": 238,
+      "impr": 236,
       "ctr": 0.8,
-      "pos": 7.1
+      "pos": 7.2
      }
     },
     {
      "q": "sildenafil tablets",
      "clicks": 3,
-     "impr": 512,
+     "impr": 513,
      "ctr": 0.6,
-     "pos": 21.6,
+     "pos": 21.7,
      "prev": {
       "clicks": 1,
-      "impr": 675,
+      "impr": 669,
       "ctr": 0.1,
       "pos": 24.3
      }
@@ -6032,12 +6026,12 @@
      "clicks": 3,
      "impr": 250,
      "ctr": 1.2,
-     "pos": 23.2,
+     "pos": 23.0,
      "prev": {
       "clicks": 0,
-      "impr": 322,
+      "impr": 316,
       "ctr": 0.0,
-      "pos": 21.2
+      "pos": 21.5
      }
     },
     {
@@ -6048,48 +6042,48 @@
      "pos": 14.2,
      "prev": {
       "clicks": 0,
-      "impr": 217,
+      "impr": 210,
       "ctr": 0.0,
-      "pos": 12.9
+      "pos": 13.2
      }
     },
     {
      "q": "sildenafil online",
      "clicks": 2,
-     "impr": 214,
+     "impr": 215,
      "ctr": 0.9,
      "pos": 17.2,
      "prev": {
       "clicks": 0,
-      "impr": 237,
+      "impr": 236,
       "ctr": 0.0,
-      "pos": 14.8
+      "pos": 15.0
      }
     },
     {
      "q": "cheap sildenafil",
      "clicks": 2,
-     "impr": 197,
+     "impr": 203,
      "ctr": 1.0,
-     "pos": 6.7,
+     "pos": 6.4,
      "prev": {
       "clicks": 0,
-      "impr": 341,
+      "impr": 324,
       "ctr": 0.0,
-      "pos": 10.2
+      "pos": 10.3
      }
     },
     {
      "q": "sildenafil tablet",
      "clicks": 2,
-     "impr": 116,
-     "ctr": 1.7,
-     "pos": 15.6,
+     "impr": 111,
+     "ctr": 1.8,
+     "pos": 15.5,
      "prev": {
       "clicks": 1,
-      "impr": 321,
+      "impr": 322,
       "ctr": 0.3,
-      "pos": 16.4
+      "pos": 16.3
      }
     },
     {
@@ -6108,14 +6102,14 @@
     {
      "q": "sildenafil online pharmacy",
      "clicks": 2,
-     "impr": 25,
-     "ctr": 8.0,
+     "impr": 27,
+     "ctr": 7.4,
      "pos": 7.2,
      "prev": {
       "clicks": 0,
-      "impr": 10,
+      "impr": 11,
       "ctr": 0.0,
-      "pos": 9.1
+      "pos": 8.6
      }
     },
     {
@@ -6147,27 +6141,27 @@
     {
      "q": "buy sildenafil",
      "clicks": 1,
-     "impr": 509,
+     "impr": 503,
      "ctr": 0.2,
-     "pos": 15.3,
+     "pos": 15.2,
      "prev": {
       "clicks": 4,
-      "impr": 513,
+      "impr": 523,
       "ctr": 0.8,
-      "pos": 16.3
+      "pos": 16.4
      }
     },
     {
-     "q": "cheapest sildenafil online",
+     "q": "cheap sildenafil 100mg",
      "clicks": 1,
-     "impr": 107,
-     "ctr": 0.9,
-     "pos": 4.3,
+     "impr": 12,
+     "ctr": 8.3,
+     "pos": 12.4,
      "prev": {
-      "clicks": 7,
-      "impr": 78,
-      "ctr": 9.0,
-      "pos": 2.9
+      "clicks": 0,
+      "impr": 7,
+      "ctr": 0.0,
+      "pos": 9.3
      }
     },
     {
@@ -6180,12 +6174,6 @@
    ],
    "kwseries": {
     "sildenafil": [
-     {
-      "d": "2026-08-17",
-      "pos": 17.8,
-      "clicks": 0,
-      "impr": 4
-     },
      {
       "d": "2026-08-20",
       "pos": 8.5,
@@ -6593,15 +6581,15 @@
       "pos": 9.5,
       "clicks": 0,
       "impr": 23
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 16.4,
+      "clicks": 0,
+      "impr": 15
      }
     ],
     "cheapest sildenafil uk": [
-     {
-      "d": "2026-08-17",
-      "pos": 8.2,
-      "clicks": 0,
-      "impr": 9
-     },
      {
       "d": "2026-08-18",
       "pos": 4.2,
@@ -7123,15 +7111,15 @@
       "pos": 2.8,
       "clicks": 1,
       "impr": 13
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 2.5,
+      "clicks": 0,
+      "impr": 10
      }
     ],
     "sildenafil online uk": [
-     {
-      "d": "2026-08-17",
-      "pos": 7.5,
-      "clicks": 0,
-      "impr": 16
-     },
      {
       "d": "2026-08-18",
       "pos": 7.9,
@@ -7665,15 +7653,15 @@
       "pos": 13.5,
       "clicks": 0,
       "impr": 6
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 13.9,
+      "clicks": 0,
+      "impr": 7
      }
     ],
     "sildenafil tablets": [
-     {
-      "d": "2026-08-17",
-      "pos": 21.9,
-      "clicks": 0,
-      "impr": 30
-     },
      {
       "d": "2026-08-18",
       "pos": 22.9,
@@ -8213,15 +8201,15 @@
       "pos": 27.6,
       "clicks": 0,
       "impr": 18
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 26.9,
+      "clicks": 0,
+      "impr": 17
      }
     ],
     "sildenafil uk": [
-     {
-      "d": "2026-08-17",
-      "pos": 16.8,
-      "clicks": 0,
-      "impr": 17
-     },
      {
       "d": "2026-08-18",
       "pos": 17.1,
@@ -8749,6 +8737,12 @@
       "pos": 19.4,
       "clicks": 0,
       "impr": 7
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 19.9,
+      "clicks": 0,
+      "impr": 8
      }
     ]
    },
@@ -8780,13 +8774,6 @@
    "label": "wegovy injection (reverted to legacy)",
    "live": "2026-09-28",
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 13,
-     "impr": 2401,
-     "ctr": 0.54,
-     "pos": 18.1
-    },
     {
      "d": "2026-08-18",
      "clicks": 15,
@@ -9416,32 +9403,39 @@
      "impr": 24,
      "ctr": 0.0,
      "pos": 1.6
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 0,
+     "impr": 37,
+     "ctr": 0.0,
+     "pos": 2.0
     }
    ],
    "queries": [
     {
      "q": "simple online pharmacy wegovy",
-     "clicks": 26,
-     "impr": 248,
-     "ctr": 10.5,
-     "pos": 3.7,
+     "clicks": 24,
+     "impr": 239,
+     "ctr": 10.0,
+     "pos": 3.9,
      "prev": {
-      "clicks": 42,
-      "impr": 327,
-      "ctr": 12.8,
+      "clicks": 43,
+      "impr": 330,
+      "ctr": 13.0,
       "pos": 1.3
      }
     },
     {
      "q": "simple online pharmacy wegovy prices",
      "clicks": 13,
-     "impr": 118,
-     "ctr": 11.0,
+     "impr": 116,
+     "ctr": 11.2,
      "pos": 1.5,
      "prev": {
-      "clicks": 37,
-      "impr": 134,
-      "ctr": 27.6,
+      "clicks": 33,
+      "impr": 131,
+      "ctr": 25.2,
       "pos": 1.5
      }
     },
@@ -9453,9 +9447,9 @@
      "pos": 18.7,
      "prev": {
       "clicks": 0,
-      "impr": 29,
+      "impr": 27,
       "ctr": 0.0,
-      "pos": 12.1
+      "pos": 12.0
      }
     },
     {
@@ -9474,38 +9468,25 @@
     {
      "q": "wegovy price",
      "clicks": 11,
-     "impr": 885,
-     "ctr": 1.2,
-     "pos": 13.6,
+     "impr": 800,
+     "ctr": 1.4,
+     "pos": 14.1,
      "prev": {
       "clicks": 4,
-      "impr": 815,
+      "impr": 877,
       "ctr": 0.5,
       "pos": 9.5
      }
     },
     {
-     "q": "wegovy cost",
-     "clicks": 11,
-     "impr": 626,
-     "ctr": 1.8,
-     "pos": 12.1,
-     "prev": {
-      "clicks": 0,
-      "impr": 645,
-      "ctr": 0.0,
-      "pos": 9.6
-     }
-    },
-    {
      "q": "wegovy injection price",
      "clicks": 11,
-     "impr": 254,
-     "ctr": 4.3,
-     "pos": 14.3,
+     "impr": 234,
+     "ctr": 4.7,
+     "pos": 14.6,
      "prev": {
       "clicks": 1,
-      "impr": 823,
+      "impr": 841,
       "ctr": 0.1,
       "pos": 10.5
      }
@@ -9513,64 +9494,77 @@
     {
      "q": "cost of wegovy",
      "clicks": 11,
-     "impr": 163,
-     "ctr": 6.7,
-     "pos": 16.1,
+     "impr": 160,
+     "ctr": 6.9,
+     "pos": 16.2,
      "prev": {
       "clicks": 0,
-      "impr": 115,
+      "impr": 113,
       "ctr": 0.0,
-      "pos": 8.2
-     }
-    },
-    {
-     "q": "wegovy simple online pharmacy",
-     "clicks": 11,
-     "impr": 112,
-     "ctr": 9.8,
-     "pos": 5.3,
-     "prev": {
-      "clicks": 21,
-      "impr": 128,
-      "ctr": 16.4,
-      "pos": 1.1
+      "pos": 8.4
      }
     },
     {
      "q": "wegovy in stock near me",
      "clicks": 11,
-     "impr": 107,
-     "ctr": 10.3,
-     "pos": 11.8,
+     "impr": 94,
+     "ctr": 11.7,
+     "pos": 12.1,
      "prev": {
       "clicks": 0,
-      "impr": 150,
+      "impr": 158,
       "ctr": 0.0,
       "pos": 9.5
      }
     },
     {
+     "q": "wegovy cost",
+     "clicks": 10,
+     "impr": 594,
+     "ctr": 1.7,
+     "pos": 12.1,
+     "prev": {
+      "clicks": 1,
+      "impr": 654,
+      "ctr": 0.2,
+      "pos": 9.6
+     }
+    },
+    {
      "q": "wegovy 5mg",
      "clicks": 10,
-     "impr": 136,
-     "ctr": 7.4,
-     "pos": 12.9,
+     "impr": 130,
+     "ctr": 7.7,
+     "pos": 13.1,
      "prev": {
       "clicks": 0,
-      "impr": 63,
+      "impr": 69,
       "ctr": 0.0,
-      "pos": 10.3
+      "pos": 10.1
+     }
+    },
+    {
+     "q": "wegovy simple online pharmacy",
+     "clicks": 10,
+     "impr": 109,
+     "ctr": 9.2,
+     "pos": 5.4,
+     "prev": {
+      "clicks": 20,
+      "impr": 125,
+      "ctr": 16.0,
+      "pos": 1.1
      }
     },
     {
      "q": "buying wegovy online",
      "clicks": 10,
-     "impr": 74,
-     "ctr": 13.5,
-     "pos": 12.3,
+     "impr": 70,
+     "ctr": 14.3,
+     "pos": 12.4,
      "prev": {
       "clicks": 0,
-      "impr": 92,
+      "impr": 93,
       "ctr": 0.0,
       "pos": 10.6
      }
@@ -9578,51 +9572,45 @@
     {
      "q": "wegovy cost per month",
      "clicks": 9,
-     "impr": 282,
-     "ctr": 3.2,
-     "pos": 12.9,
+     "impr": 270,
+     "ctr": 3.3,
+     "pos": 13.0,
      "prev": {
       "clicks": 0,
-      "impr": 239,
+      "impr": 246,
       "ctr": 0.0,
-      "pos": 11.6
+      "pos": 11.4
      }
     },
     {
      "q": "wegovy weight loss price",
      "clicks": 9,
-     "impr": 232,
-     "ctr": 3.9,
-     "pos": 17.3,
+     "impr": 226,
+     "ctr": 4.0,
+     "pos": 17.5,
      "prev": {
       "clicks": 1,
-      "impr": 188,
+      "impr": 189,
       "ctr": 0.5,
-      "pos": 9.8
+      "pos": 9.7
      }
     },
     {
      "q": "wegovy injection cost",
      "clicks": 9,
-     "impr": 165,
-     "ctr": 5.5,
-     "pos": 16.5,
+     "impr": 156,
+     "ctr": 5.8,
+     "pos": 16.8,
      "prev": {
       "clicks": 0,
-      "impr": 142,
+      "impr": 146,
       "ctr": 0.0,
-      "pos": 11.1
+      "pos": 11.0
      }
     }
    ],
    "kwseries": {
     "simple online pharmacy wegovy": [
-     {
-      "d": "2026-08-17",
-      "pos": 1.0,
-      "clicks": 2,
-      "impr": 23
-     },
      {
       "d": "2026-08-18",
       "pos": 1.0,
@@ -10124,12 +10112,6 @@
     ],
     "simple online pharmacy wegovy prices": [
      {
-      "d": "2026-08-17",
-      "pos": 1.0,
-      "clicks": 3,
-      "impr": 5
-     },
-     {
       "d": "2026-08-18",
       "pos": 1.0,
       "clicks": 0,
@@ -10562,6 +10544,12 @@
       "impr": 6
      },
      {
+      "d": "2026-10-30",
+      "pos": 2.0,
+      "clicks": 0,
+      "impr": 2
+     },
+     {
       "d": "2026-11-01",
       "pos": 1.0,
       "clicks": 1,
@@ -10816,6 +10804,12 @@
       "impr": 2
      },
      {
+      "d": "2026-10-30",
+      "pos": 9.0,
+      "clicks": 0,
+      "impr": 1
+     },
+     {
       "d": "2026-10-31",
       "pos": 11.0,
       "clicks": 2,
@@ -10853,12 +10847,6 @@
      }
     ],
     "wegovy price": [
-     {
-      "d": "2026-08-17",
-      "pos": 20.6,
-      "clicks": 0,
-      "impr": 8
-     },
      {
       "d": "2026-08-18",
       "pos": 23.9,
@@ -11292,6 +11280,12 @@
       "impr": 26
      },
      {
+      "d": "2026-10-30",
+      "pos": 13.8,
+      "clicks": 0,
+      "impr": 22
+     },
+     {
       "d": "2026-10-31",
       "pos": 16.1,
       "clicks": 3,
@@ -11498,6 +11492,12 @@
       "impr": 2
      },
      {
+      "d": "2026-10-30",
+      "pos": 7.4,
+      "clicks": 0,
+      "impr": 5
+     },
+     {
       "d": "2026-10-31",
       "pos": 7.5,
       "clicks": 2,
@@ -11569,13 +11569,6 @@
    "label": "omeprazole",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 3,
-     "impr": 909,
-     "ctr": 0.33,
-     "pos": 11.0
-    },
     {
      "d": "2026-08-18",
      "clicks": 3,
@@ -12205,44 +12198,51 @@
      "impr": 408,
      "ctr": 0.0,
      "pos": 12.4
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 3,
+     "impr": 547,
+     "ctr": 0.55,
+     "pos": 11.1
     }
    ],
    "queries": [
     {
      "q": "buy omeprazole",
      "clicks": 3,
-     "impr": 654,
-     "ctr": 0.5,
-     "pos": 7.9,
+     "impr": 668,
+     "ctr": 0.4,
+     "pos": 8.0,
      "prev": {
       "clicks": 1,
-      "impr": 656,
+      "impr": 652,
       "ctr": 0.2,
-      "pos": 7.4
+      "pos": 7.3
      }
     },
     {
      "q": "stomach tablets",
      "clicks": 3,
-     "impr": 40,
-     "ctr": 7.5,
-     "pos": 4.7,
+     "impr": 35,
+     "ctr": 8.6,
+     "pos": 3.3,
      "prev": {
       "clicks": 0,
-      "impr": 5,
+      "impr": 10,
       "ctr": 0.0,
-      "pos": 13.8
+      "pos": 14.1
      }
     },
     {
      "q": "buy omeprazole uk",
      "clicks": 2,
-     "impr": 349,
+     "impr": 363,
      "ctr": 0.6,
      "pos": 6.4,
      "prev": {
       "clicks": 2,
-      "impr": 399,
+      "impr": 395,
       "ctr": 0.5,
       "pos": 6.8
      }
@@ -12250,12 +12250,12 @@
     {
      "q": "omeprazole online",
      "clicks": 2,
-     "impr": 238,
+     "impr": 242,
      "ctr": 0.8,
      "pos": 5.3,
      "prev": {
       "clicks": 1,
-      "impr": 227,
+      "impr": 226,
       "ctr": 0.4,
       "pos": 4.6
      }
@@ -12263,9 +12263,9 @@
     {
      "q": "omeprazole to buy",
      "clicks": 2,
-     "impr": 79,
-     "ctr": 2.5,
-     "pos": 7.3,
+     "impr": 83,
+     "ctr": 2.4,
+     "pos": 7.4,
      "prev": {
       "clicks": 0,
       "impr": 80,
@@ -12274,27 +12274,14 @@
      }
     },
     {
-     "q": "omeprazole online pharmacy",
-     "clicks": 2,
-     "impr": 64,
-     "ctr": 3.1,
-     "pos": 3.1,
-     "prev": {
-      "clicks": 0,
-      "impr": 53,
-      "ctr": 0.0,
-      "pos": 4.7
-     }
-    },
-    {
      "q": "buy omeprazole online",
      "clicks": 1,
-     "impr": 366,
+     "impr": 373,
      "ctr": 0.3,
      "pos": 5.4,
      "prev": {
       "clicks": 1,
-      "impr": 355,
+      "impr": 359,
       "ctr": 0.3,
       "pos": 4.1
      }
@@ -12302,12 +12289,12 @@
     {
      "q": "omeprazole price uk",
      "clicks": 1,
-     "impr": 116,
+     "impr": 114,
      "ctr": 0.9,
      "pos": 7.0,
      "prev": {
       "clicks": 0,
-      "impr": 112,
+      "impr": 117,
       "ctr": 0.0,
       "pos": 6.8
      }
@@ -12315,39 +12302,52 @@
     {
      "q": "omeprazole 20 mg price",
      "clicks": 1,
-     "impr": 82,
+     "impr": 86,
      "ctr": 1.2,
-     "pos": 8.0,
+     "pos": 8.2,
      "prev": {
       "clicks": 0,
-      "impr": 111,
+      "impr": 106,
       "ctr": 0.0,
       "pos": 8.5
      }
     },
     {
-     "q": "omeprazole 20 mg price uk",
+     "q": "omeprazole online pharmacy",
      "clicks": 1,
-     "impr": 43,
-     "ctr": 2.3,
-     "pos": 6.8,
+     "impr": 65,
+     "ctr": 1.5,
+     "pos": 3.1,
      "prev": {
       "clicks": 1,
-      "impr": 31,
-      "ctr": 3.2,
-      "pos": 6.8
+      "impr": 55,
+      "ctr": 1.8,
+      "pos": 4.6
+     }
+    },
+    {
+     "q": "omeprazole where to buy",
+     "clicks": 1,
+     "impr": 38,
+     "ctr": 2.6,
+     "pos": 8.1,
+     "prev": {
+      "clicks": 0,
+      "impr": 65,
+      "ctr": 0.0,
+      "pos": 9.1
      }
     },
     {
      "q": "omeprazole online uk",
      "clicks": 1,
-     "impr": 32,
-     "ctr": 3.1,
-     "pos": 5.5,
+     "impr": 34,
+     "ctr": 2.9,
+     "pos": 5.6,
      "prev": {
       "clicks": 1,
-      "impr": 21,
-      "ctr": 4.8,
+      "impr": 23,
+      "ctr": 4.3,
       "pos": 5.1
      }
     },
@@ -12367,27 +12367,27 @@
     {
      "q": "how much is omeprazole over the counter",
      "clicks": 1,
-     "impr": 28,
-     "ctr": 3.6,
-     "pos": 7.5,
+     "impr": 30,
+     "ctr": 3.3,
+     "pos": 8.1,
      "prev": {
       "clicks": 0,
-      "impr": 22,
+      "impr": 24,
       "ctr": 0.0,
-      "pos": 6.5
+      "pos": 6.3
      }
     },
     {
      "q": "omeprazole 20 mg buy online",
      "clicks": 1,
-     "impr": 13,
-     "ctr": 7.7,
-     "pos": 6.8,
+     "impr": 15,
+     "ctr": 6.7,
+     "pos": 6.9,
      "prev": {
       "clicks": 3,
-      "impr": 25,
-      "ctr": 12.0,
-      "pos": 7.4
+      "impr": 22,
+      "ctr": 13.6,
+      "pos": 7.1
      }
     },
     {
@@ -12432,12 +12432,6 @@
      }
     ],
     "buy omeprazole": [
-     {
-      "d": "2026-08-17",
-      "pos": 7.8,
-      "clicks": 0,
-      "impr": 31
-     },
      {
       "d": "2026-08-18",
       "pos": 7.1,
@@ -12977,15 +12971,15 @@
       "pos": 7.5,
       "clicks": 0,
       "impr": 25
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 7.9,
+      "clicks": 0,
+      "impr": 30
      }
     ],
     "buy omeprazole uk": [
-     {
-      "d": "2026-08-17",
-      "pos": 6.9,
-      "clicks": 0,
-      "impr": 22
-     },
      {
       "d": "2026-08-18",
       "pos": 7.4,
@@ -13525,15 +13519,15 @@
       "pos": 6.8,
       "clicks": 0,
       "impr": 11
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 6.7,
+      "clicks": 0,
+      "impr": 23
      }
     ],
     "omeprazole online": [
-     {
-      "d": "2026-08-17",
-      "pos": 7.1,
-      "clicks": 0,
-      "impr": 11
-     },
      {
       "d": "2026-08-18",
       "pos": 4.0,
@@ -14067,15 +14061,15 @@
       "pos": 4.8,
       "clicks": 0,
       "impr": 6
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 5.0,
+      "clicks": 0,
+      "impr": 10
      }
     ],
     "omeprazole to buy": [
-     {
-      "d": "2026-08-17",
-      "pos": 7.5,
-      "clicks": 0,
-      "impr": 4
-     },
      {
       "d": "2026-08-18",
       "pos": 7.0,
@@ -14489,6 +14483,12 @@
       "pos": 8.0,
       "clicks": 0,
       "impr": 1
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 8.0,
+      "clicks": 0,
+      "impr": 4
      }
     ]
    },
@@ -14520,13 +14520,6 @@
    "label": "zyban",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 0,
-     "impr": 144,
-     "ctr": 0.0,
-     "pos": 8.1
-    },
     {
      "d": "2026-08-18",
      "clicks": 1,
@@ -15156,18 +15149,25 @@
      "impr": 332,
      "ctr": 0.6,
      "pos": 10.5
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 0,
+     "impr": 407,
+     "ctr": 0.0,
+     "pos": 9.8
     }
    ],
    "queries": [
     {
      "q": "zyban",
-     "clicks": 7,
-     "impr": 9391,
+     "clicks": 6,
+     "impr": 9361,
      "ctr": 0.1,
      "pos": 9.3,
      "prev": {
-      "clicks": 5,
-      "impr": 8997,
+      "clicks": 6,
+      "impr": 9227,
       "ctr": 0.1,
       "pos": 9.3
      }
@@ -15175,12 +15175,12 @@
     {
      "q": "zyban online",
      "clicks": 6,
-     "impr": 130,
-     "ctr": 4.6,
+     "impr": 124,
+     "ctr": 4.8,
      "pos": 4.3,
      "prev": {
       "clicks": 1,
-      "impr": 159,
+      "impr": 165,
       "ctr": 0.6,
       "pos": 3.7
      }
@@ -15188,12 +15188,12 @@
     {
      "q": "zyban uk",
      "clicks": 4,
-     "impr": 364,
+     "impr": 361,
      "ctr": 1.1,
-     "pos": 11.1,
+     "pos": 11.4,
      "prev": {
       "clicks": 5,
-      "impr": 383,
+      "impr": 385,
       "ctr": 1.3,
       "pos": 8.6
      }
@@ -15201,13 +15201,13 @@
     {
      "q": "zyban buy online",
      "clicks": 3,
-     "impr": 71,
-     "ctr": 4.2,
-     "pos": 6.8,
+     "impr": 73,
+     "ctr": 4.1,
+     "pos": 6.9,
      "prev": {
       "clicks": 2,
-      "impr": 109,
-      "ctr": 1.8,
+      "impr": 107,
+      "ctr": 1.9,
       "pos": 5.9
      }
     },
@@ -15216,23 +15216,23 @@
      "clicks": 1,
      "impr": 120,
      "ctr": 0.8,
-     "pos": 5.8,
+     "pos": 5.9,
      "prev": {
       "clicks": 2,
-      "impr": 172,
+      "impr": 171,
       "ctr": 1.2,
-      "pos": 5.6
+      "pos": 5.7
      }
     },
     {
      "q": "buy zyban uk",
      "clicks": 1,
-     "impr": 73,
+     "impr": 74,
      "ctr": 1.4,
-     "pos": 3.9,
+     "pos": 4.0,
      "prev": {
       "clicks": 0,
-      "impr": 88,
+      "impr": 89,
       "ctr": 0.0,
       "pos": 4.6
      }
@@ -15240,25 +15240,25 @@
     {
      "q": "zyban buy",
      "clicks": 1,
-     "impr": 71,
+     "impr": 69,
      "ctr": 1.4,
-     "pos": 5.0,
+     "pos": 5.1,
      "prev": {
       "clicks": 3,
-      "impr": 136,
-      "ctr": 2.2,
-      "pos": 4.8
+      "impr": 130,
+      "ctr": 2.3,
+      "pos": 4.7
      }
     },
     {
      "q": "zyban uk buy",
      "clicks": 1,
-     "impr": 40,
-     "ctr": 2.5,
+     "impr": 39,
+     "ctr": 2.6,
      "pos": 3.0,
      "prev": {
       "clicks": 0,
-      "impr": 66,
+      "impr": 65,
       "ctr": 0.0,
       "pos": 5.9
      }
@@ -15266,14 +15266,14 @@
     {
      "q": "buy bupropion online uk",
      "clicks": 1,
-     "impr": 37,
-     "ctr": 2.7,
-     "pos": 6.1,
+     "impr": 33,
+     "ctr": 3.0,
+     "pos": 5.9,
      "prev": {
       "clicks": 1,
-      "impr": 34,
-      "ctr": 2.9,
-      "pos": 6.1
+      "impr": 38,
+      "ctr": 2.6,
+      "pos": 6.2
      }
     },
     {
@@ -15292,14 +15292,14 @@
     {
      "q": "bupropion buy uk",
      "clicks": 1,
-     "impr": 3,
-     "ctr": 33.3,
-     "pos": 5.3,
+     "impr": 2,
+     "ctr": 50.0,
+     "pos": 7.0,
      "prev": {
       "clicks": 0,
-      "impr": 4,
+      "impr": 5,
       "ctr": 0.0,
-      "pos": 6.8
+      "pos": 5.8
      }
     },
     {
@@ -15325,38 +15325,32 @@
     {
      "q": "bupropion buy",
      "clicks": 0,
-     "impr": 26,
+     "impr": 22,
      "ctr": 0.0,
-     "pos": 14.1,
+     "pos": 14.3,
      "prev": {
       "clicks": 0,
-      "impr": 18,
+      "impr": 22,
       "ctr": 0.0,
-      "pos": 14.8
+      "pos": 14.5
      }
     },
     {
      "q": "bupropion online",
      "clicks": 0,
-     "impr": 24,
+     "impr": 22,
      "ctr": 0.0,
-     "pos": 17.7,
+     "pos": 17.6,
      "prev": {
       "clicks": 0,
-      "impr": 11,
+      "impr": 13,
       "ctr": 0.0,
-      "pos": 24.0
+      "pos": 23.2
      }
     }
    ],
    "kwseries": {
     "zyban": [
-     {
-      "d": "2026-08-17",
-      "pos": 26.5,
-      "clicks": 0,
-      "impr": 2
-     },
      {
       "d": "2026-08-18",
       "pos": 1.0,
@@ -15896,15 +15890,15 @@
       "pos": 10.2,
       "clicks": 0,
       "impr": 223
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 9.5,
+      "clicks": 0,
+      "impr": 281
      }
     ],
     "zyban uk": [
-     {
-      "d": "2026-08-17",
-      "pos": 10.8,
-      "clicks": 0,
-      "impr": 6
-     },
      {
       "d": "2026-08-19",
       "pos": 9.0,
@@ -16384,15 +16378,15 @@
       "pos": 20.9,
       "clicks": 0,
       "impr": 8
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 24.4,
+      "clicks": 0,
+      "impr": 7
      }
     ],
     "zyban online": [
-     {
-      "d": "2026-08-17",
-      "pos": 3.7,
-      "clicks": 0,
-      "impr": 7
-     },
      {
       "d": "2026-08-20",
       "pos": 6.0,
@@ -16839,12 +16833,6 @@
      }
     ],
     "buy zyban online": [
-     {
-      "d": "2026-08-17",
-      "pos": 3.0,
-      "clicks": 0,
-      "impr": 2
-     },
      {
       "d": "2026-08-22",
       "pos": 6.0,
@@ -17294,6 +17282,12 @@
       "pos": 9.0,
       "clicks": 0,
       "impr": 1
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 9.8,
+      "clicks": 0,
+      "impr": 4
      }
     ],
     "zyban buy online": [
@@ -17644,6 +17638,12 @@
       "pos": 11.5,
       "clicks": 0,
       "impr": 2
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 10.5,
+      "clicks": 0,
+      "impr": 2
      }
     ]
    },
@@ -17675,13 +17675,6 @@
    "label": "malarone",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 3,
-     "impr": 470,
-     "ctr": 0.64,
-     "pos": 11.9
-    },
     {
      "d": "2026-08-18",
      "clicks": 5,
@@ -18311,6 +18304,13 @@
      "impr": 116,
      "ctr": 0.0,
      "pos": 21.3
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 0,
+     "impr": 118,
+     "ctr": 0.0,
+     "pos": 19.1
     }
    ],
    "queries": [
@@ -18319,64 +18319,64 @@
      "clicks": 4,
      "impr": 130,
      "ctr": 3.1,
-     "pos": 5.2,
+     "pos": 5.4,
      "prev": {
-      "clicks": 11,
-      "impr": 219,
-      "ctr": 5.0,
-      "pos": 3.5
+      "clicks": 10,
+      "impr": 221,
+      "ctr": 4.5,
+      "pos": 3.6
      }
     },
     {
      "q": "malarone price",
      "clicks": 4,
-     "impr": 116,
-     "ctr": 3.4,
-     "pos": 6.6,
+     "impr": 113,
+     "ctr": 3.5,
+     "pos": 6.8,
      "prev": {
       "clicks": 0,
-      "impr": 188,
+      "impr": 192,
       "ctr": 0.0,
-      "pos": 5.5
+      "pos": 5.6
      }
     },
     {
      "q": "malarone online",
      "clicks": 3,
-     "impr": 135,
+     "impr": 134,
      "ctr": 2.2,
-     "pos": 3.5,
+     "pos": 3.6,
      "prev": {
-      "clicks": 3,
-      "impr": 264,
-      "ctr": 1.1,
+      "clicks": 2,
+      "impr": 263,
+      "ctr": 0.8,
       "pos": 3.1
      }
     },
     {
      "q": "malarone cost",
      "clicks": 3,
-     "impr": 56,
-     "ctr": 5.4,
-     "pos": 8.4,
+     "impr": 54,
+     "ctr": 5.6,
+     "pos": 8.5,
      "prev": {
       "clicks": 0,
-      "impr": 119,
+      "impr": 120,
       "ctr": 0.0,
-      "pos": 3.8
+      "pos": 3.9
      }
     },
     {
      "q": "malarone malaria tablets",
      "clicks": 2,
-     "impr": 176,
-     "ctr": 1.1,
-     "pos": 11.1,
+     "impr": 169,
+     "ctr": 1.2,
+     "pos": 11.4,
      "prev": {
       "clicks": 2,
-      "impr": 269,
+      "impr": 272,
       "ctr": 0.7,
-      "pos": 8.1
+      "pos": 8.0
      }
     },
     {
@@ -18389,9 +18389,9 @@
     {
      "q": "cheapest malarone",
      "clicks": 1,
-     "impr": 63,
-     "ctr": 1.6,
-     "pos": 2.7,
+     "impr": 65,
+     "ctr": 1.5,
+     "pos": 3.1,
      "prev": {
       "clicks": 2,
       "impr": 107,
@@ -18402,12 +18402,12 @@
     {
      "q": "malarone cheapest",
      "clicks": 1,
-     "impr": 45,
-     "ctr": 2.2,
-     "pos": 2.4,
+     "impr": 47,
+     "ctr": 2.1,
+     "pos": 2.8,
      "prev": {
       "clicks": 2,
-      "impr": 78,
+      "impr": 76,
       "ctr": 2.6,
       "pos": 1.8
      }
@@ -18415,26 +18415,26 @@
     {
      "q": "cheapest generic malarone tablets",
      "clicks": 1,
-     "impr": 37,
-     "ctr": 2.7,
-     "pos": 3.6,
+     "impr": 34,
+     "ctr": 2.9,
+     "pos": 3.8,
      "prev": {
       "clicks": 6,
-      "impr": 53,
-      "ctr": 11.3,
-      "pos": 3.3
+      "impr": 55,
+      "ctr": 10.9,
+      "pos": 3.2
      }
     },
     {
      "q": "malarone tablets price",
      "clicks": 1,
-     "impr": 36,
-     "ctr": 2.8,
-     "pos": 6.5,
+     "impr": 32,
+     "ctr": 3.1,
+     "pos": 6.6,
      "prev": {
       "clicks": 1,
-      "impr": 116,
-      "ctr": 0.9,
+      "impr": 120,
+      "ctr": 0.8,
       "pos": 5.3
      }
     },
@@ -18446,9 +18446,9 @@
      "pos": 11.5,
      "prev": {
       "clicks": 0,
-      "impr": 79,
+      "impr": 78,
       "ctr": 0.0,
-      "pos": 8.6
+      "pos": 8.7
      }
     },
     {
@@ -18465,19 +18465,6 @@
      }
     },
     {
-     "q": "malarone malaria tablets price",
-     "clicks": 1,
-     "impr": 19,
-     "ctr": 5.3,
-     "pos": 3.6,
-     "prev": {
-      "clicks": 0,
-      "impr": 20,
-      "ctr": 0.0,
-      "pos": 3.5
-     }
-    },
-    {
      "q": "malarone online pharmacy",
      "clicks": 1,
      "impr": 18,
@@ -18485,9 +18472,22 @@
      "pos": 3.0,
      "prev": {
       "clicks": 0,
-      "impr": 9,
+      "impr": 7,
       "ctr": 0.0,
-      "pos": 3.2
+      "pos": 3.3
+     }
+    },
+    {
+     "q": "malarone malaria tablets price",
+     "clicks": 1,
+     "impr": 17,
+     "ctr": 5.9,
+     "pos": 3.7,
+     "prev": {
+      "clicks": 0,
+      "impr": 20,
+      "ctr": 0.0,
+      "pos": 3.5
      }
     },
     {
@@ -18498,20 +18498,14 @@
      "pos": 8.6,
      "prev": {
       "clicks": 1,
-      "impr": 49,
-      "ctr": 2.0,
+      "impr": 46,
+      "ctr": 2.2,
       "pos": 10.0
      }
     }
    ],
    "kwseries": {
     "cheapest malarone tablets uk": [
-     {
-      "d": "2026-08-17",
-      "pos": 5.6,
-      "clicks": 1,
-      "impr": 7
-     },
      {
       "d": "2026-08-18",
       "pos": 5.5,
@@ -19027,15 +19021,15 @@
       "pos": 10.4,
       "clicks": 0,
       "impr": 7
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 10.0,
+      "clicks": 0,
+      "impr": 6
      }
     ],
     "malarone cost": [
-     {
-      "d": "2026-08-17",
-      "pos": 4.6,
-      "clicks": 0,
-      "impr": 5
-     },
      {
       "d": "2026-08-18",
       "pos": 6.8,
@@ -19494,12 +19488,6 @@
      }
     ],
     "malarone price": [
-     {
-      "d": "2026-08-17",
-      "pos": 6.4,
-      "clicks": 0,
-      "impr": 8
-     },
      {
       "d": "2026-08-18",
       "pos": 6.0,
@@ -19991,15 +19979,15 @@
       "pos": 12.8,
       "clicks": 0,
       "impr": 5
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 16.5,
+      "clicks": 0,
+      "impr": 2
      }
     ],
     "malarone online": [
-     {
-      "d": "2026-08-17",
-      "pos": 5.2,
-      "clicks": 0,
-      "impr": 6
-     },
      {
       "d": "2026-08-18",
       "pos": 4.9,
@@ -20485,15 +20473,15 @@
       "pos": 9.6,
       "clicks": 0,
       "impr": 5
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 7.5,
+      "clicks": 0,
+      "impr": 4
      }
     ],
     "malarone malaria tablets": [
-     {
-      "d": "2026-08-17",
-      "pos": 9.7,
-      "clicks": 0,
-      "impr": 12
-     },
      {
       "d": "2026-08-18",
       "pos": 12.1,
@@ -21021,6 +21009,12 @@
       "pos": 25.3,
       "clicks": 0,
       "impr": 3
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 27.5,
+      "clicks": 0,
+      "impr": 2
      }
     ]
    },
@@ -21052,13 +21046,6 @@
    "label": "levothyroxine",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 2,
-     "impr": 422,
-     "ctr": 0.47,
-     "pos": 12.8
-    },
     {
      "d": "2026-08-18",
      "clicks": 6,
@@ -21688,20 +21675,27 @@
      "impr": 102,
      "ctr": 0.0,
      "pos": 24.6
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 1,
+     "impr": 133,
+     "ctr": 0.75,
+     "pos": 28.7
     }
    ],
    "queries": [
     {
      "q": "can i buy levothyroxine over the counter in uk",
      "clicks": 6,
-     "impr": 73,
-     "ctr": 8.2,
+     "impr": 72,
+     "ctr": 8.3,
      "pos": 2.8,
      "prev": {
       "clicks": 7,
-      "impr": 99,
-      "ctr": 7.1,
-      "pos": 2.9
+      "impr": 97,
+      "ctr": 7.2,
+      "pos": 2.8
      }
     },
     {
@@ -21720,12 +21714,12 @@
     {
      "q": "buy levothyroxine",
      "clicks": 2,
-     "impr": 209,
+     "impr": 208,
      "ctr": 1.0,
-     "pos": 12.9,
+     "pos": 13.2,
      "prev": {
       "clicks": 0,
-      "impr": 284,
+      "impr": 276,
       "ctr": 0.0,
       "pos": 6.4
      }
@@ -21733,20 +21727,20 @@
     {
      "q": "buy levothyroxine online",
      "clicks": 2,
-     "impr": 202,
+     "impr": 199,
      "ctr": 1.0,
-     "pos": 7.7,
+     "pos": 7.6,
      "prev": {
-      "clicks": 4,
-      "impr": 278,
-      "ctr": 1.4,
+      "clicks": 3,
+      "impr": 271,
+      "ctr": 1.1,
       "pos": 6.2
      }
     },
     {
      "q": "where can i buy levothyroxine over the counter",
      "clicks": 2,
-     "impr": 72,
+     "impr": 71,
      "ctr": 2.8,
      "pos": 2.8,
      "prev": {
@@ -21764,20 +21758,20 @@
      "pos": 2.2,
      "prev": {
       "clicks": 1,
-      "impr": 29,
-      "ctr": 3.4,
+      "impr": 28,
+      "ctr": 3.6,
       "pos": 2.1
      }
     },
     {
      "q": "levothyroxine buy online",
      "clicks": 1,
-     "impr": 68,
+     "impr": 67,
      "ctr": 1.5,
-     "pos": 7.9,
+     "pos": 8.0,
      "prev": {
       "clicks": 2,
-      "impr": 92,
+      "impr": 93,
       "ctr": 2.2,
       "pos": 5.0
      }
@@ -21785,12 +21779,12 @@
     {
      "q": "levothyroxine online uk",
      "clicks": 1,
-     "impr": 47,
-     "ctr": 2.1,
+     "impr": 45,
+     "ctr": 2.2,
      "pos": 2.2,
      "prev": {
       "clicks": 0,
-      "impr": 55,
+      "impr": 56,
       "ctr": 0.0,
       "pos": 1.8
      }
@@ -21798,14 +21792,14 @@
     {
      "q": "levothyroxine price",
      "clicks": 1,
-     "impr": 34,
-     "ctr": 2.9,
+     "impr": 33,
+     "ctr": 3.0,
      "pos": 6.2,
      "prev": {
       "clicks": 2,
-      "impr": 79,
-      "ctr": 2.5,
-      "pos": 6.7
+      "impr": 78,
+      "ctr": 2.6,
+      "pos": 6.8
      }
     },
     {
@@ -21816,9 +21810,9 @@
      "pos": 2.2,
      "prev": {
       "clicks": 1,
-      "impr": 41,
-      "ctr": 2.4,
-      "pos": 3.9
+      "impr": 39,
+      "ctr": 2.6,
+      "pos": 4.0
      }
     },
     {
@@ -21835,19 +21829,6 @@
      }
     },
     {
-     "q": "can i buy levothyroxine",
-     "clicks": 1,
-     "impr": 11,
-     "ctr": 9.1,
-     "pos": 1.5,
-     "prev": {
-      "clicks": 1,
-      "impr": 9,
-      "ctr": 11.1,
-      "pos": 1.6
-     }
-    },
-    {
      "q": "where can i buy levothyroxine",
      "clicks": 1,
      "impr": 10,
@@ -21858,6 +21839,19 @@
       "impr": 4,
       "ctr": 0.0,
       "pos": 1.0
+     }
+    },
+    {
+     "q": "can i buy levothyroxine",
+     "clicks": 1,
+     "impr": 9,
+     "ctr": 11.1,
+     "pos": 1.0,
+     "prev": {
+      "clicks": 1,
+      "impr": 10,
+      "ctr": 10.0,
+      "pos": 2.0
      }
     },
     {
@@ -21881,7 +21875,7 @@
      "pos": 4.4,
      "prev": {
       "clicks": 0,
-      "impr": 9,
+      "impr": 8,
       "ctr": 0.0,
       "pos": 3.1
      }
@@ -21889,12 +21883,6 @@
    ],
    "kwseries": {
     "where can i buy levothyroxine over the counter": [
-     {
-      "d": "2026-08-17",
-      "pos": 3.5,
-      "clicks": 0,
-      "impr": 2
-     },
      {
       "d": "2026-08-18",
       "pos": 3.0,
@@ -22800,12 +22788,6 @@
     ],
     "buy levothyroxine online": [
      {
-      "d": "2026-08-17",
-      "pos": 6.4,
-      "clicks": 0,
-      "impr": 17
-     },
-     {
       "d": "2026-08-18",
       "pos": 7.1,
       "clicks": 1,
@@ -23263,12 +23245,6 @@
      }
     ],
     "buy levothyroxine": [
-     {
-      "d": "2026-08-17",
-      "pos": 6.2,
-      "clicks": 0,
-      "impr": 17
-     },
      {
       "d": "2026-08-18",
       "pos": 6.3,
@@ -23766,6 +23742,12 @@
       "pos": 84.3,
       "clicks": 0,
       "impr": 3
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 49.5,
+      "clicks": 0,
+      "impr": 2
      }
     ],
     "can i buy levothyroxine online": [
@@ -23959,7 +23941,7 @@
     "h1": "Levothyroxine",
     "h2n": 8,
     "faqs": 9,
-    "wc": 2360,
+    "wc": 2375,
     "schema": [
      "AdministrativeArea",
      "AggregateOffer",
@@ -23979,13 +23961,6 @@
    "label": "cerelle",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 2,
-     "impr": 404,
-     "ctr": 0.5,
-     "pos": 12.3
-    },
     {
      "d": "2026-08-18",
      "clicks": 1,
@@ -24615,46 +24590,53 @@
      "impr": 73,
      "ctr": 0.0,
      "pos": 25.5
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 0,
+     "impr": 57,
+     "ctr": 0.0,
+     "pos": 31.0
     }
    ],
    "queries": [
     {
      "q": "cerelle pill",
      "clicks": 1,
-     "impr": 561,
+     "impr": 556,
      "ctr": 0.2,
-     "pos": 11.9,
+     "pos": 12.0,
      "prev": {
-      "clicks": 2,
-      "impr": 559,
-      "ctr": 0.4,
-      "pos": 9.8
+      "clicks": 1,
+      "impr": 540,
+      "ctr": 0.2,
+      "pos": 10.0
      }
     },
     {
      "q": "cerelle",
      "clicks": 1,
-     "impr": 263,
+     "impr": 253,
      "ctr": 0.4,
      "pos": 17.9,
      "prev": {
       "clicks": 0,
-      "impr": 372,
+      "impr": 369,
       "ctr": 0.0,
-      "pos": 15.5
+      "pos": 15.6
      }
     },
     {
      "q": "cerelle uk",
      "clicks": 1,
-     "impr": 120,
-     "ctr": 0.8,
+     "impr": 111,
+     "ctr": 0.9,
      "pos": 12.2,
      "prev": {
       "clicks": 0,
-      "impr": 140,
+      "impr": 145,
       "ctr": 0.0,
-      "pos": 11.6
+      "pos": 11.7
      }
     },
     {
@@ -24667,12 +24649,12 @@
     {
      "q": "buy cerelle",
      "clicks": 0,
-     "impr": 289,
+     "impr": 285,
      "ctr": 0.0,
-     "pos": 10.7,
+     "pos": 10.9,
      "prev": {
       "clicks": 0,
-      "impr": 450,
+      "impr": 454,
       "ctr": 0.0,
       "pos": 8.6
      }
@@ -24682,10 +24664,10 @@
      "clicks": 0,
      "impr": 235,
      "ctr": 0.0,
-     "pos": 9.5,
+     "pos": 9.6,
      "prev": {
       "clicks": 1,
-      "impr": 311,
+      "impr": 310,
       "ctr": 0.3,
       "pos": 8.7
      }
@@ -24693,25 +24675,25 @@
     {
      "q": "buy cerelle pill",
      "clicks": 0,
-     "impr": 73,
+     "impr": 71,
      "ctr": 0.0,
      "pos": 9.7,
      "prev": {
       "clicks": 0,
-      "impr": 99,
+      "impr": 97,
       "ctr": 0.0,
-      "pos": 7.8
+      "pos": 7.9
      }
     },
     {
      "q": "buy cilest",
      "clicks": 0,
-     "impr": 29,
+     "impr": 27,
      "ctr": 0.0,
-     "pos": 21.2,
+     "pos": 21.0,
      "prev": {
       "clicks": 0,
-      "impr": 69,
+      "impr": 71,
       "ctr": 0.0,
       "pos": 25.7
      }
@@ -24786,12 +24768,6 @@
    ],
    "kwseries": {
     "buy cerelle": [
-     {
-      "d": "2026-08-17",
-      "pos": 9.7,
-      "clicks": 0,
-      "impr": 12
-     },
      {
       "d": "2026-08-18",
       "pos": 8.8,
@@ -25313,15 +25289,15 @@
       "pos": 14.6,
       "clicks": 0,
       "impr": 5
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 15.2,
+      "clicks": 0,
+      "impr": 5
      }
     ],
     "cerelle pill": [
-     {
-      "d": "2026-08-17",
-      "pos": 9.4,
-      "clicks": 0,
-      "impr": 180
-     },
      {
       "d": "2026-08-18",
       "pos": 10.1,
@@ -25861,15 +25837,15 @@
       "pos": 27.8,
       "clicks": 0,
       "impr": 6
+     },
+     {
+      "d": "2026-11-16",
+      "pos": 32.6,
+      "clicks": 0,
+      "impr": 5
      }
     ],
     "cerelle uk": [
-     {
-      "d": "2026-08-17",
-      "pos": 10.8,
-      "clicks": 0,
-      "impr": 5
-     },
      {
       "d": "2026-08-18",
       "pos": 11.0,
@@ -26316,12 +26292,6 @@
      }
     ],
     "cerelle": [
-     {
-      "d": "2026-08-17",
-      "pos": 12.3,
-      "clicks": 0,
-      "impr": 18
-     },
      {
       "d": "2026-08-18",
       "pos": 11.7,
@@ -26876,13 +26846,6 @@
    "label": "foundayo (gsc rankings)",
    "live": null,
    "series": [
-    {
-     "d": "2026-08-17",
-     "clicks": 261,
-     "impr": 4530,
-     "ctr": 5.76,
-     "pos": 4.9
-    },
     {
      "d": "2026-08-18",
      "clicks": 327,
@@ -27512,6 +27475,13 @@
      "impr": 0,
      "ctr": 0.0,
      "pos": 0.0
+    },
+    {
+     "d": "2026-11-16",
+     "clicks": 0,
+     "impr": 0,
+     "ctr": 0.0,
+     "pos": 0.0
     }
    ],
    "queries": [],
@@ -27539,6 +27509,6 @@
    }
   }
  ],
- "as_of": "2026-11-18",
+ "as_of": "2026-11-19",
  "criteria": "hand-picked treatment pages rebuilt on new templates (old-style / new-style / superdrug-style variants)"
 }

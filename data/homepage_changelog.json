@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-10-20",
-  "changes": [
-   {
-    "type": "content",
-    "text": "Topic coverage lost: free delivery",
-    "source": "auto"
-   }
-  ]
- },
- {
   "date": "2026-10-21",
   "changes": [
    {
@@ -200,6 +190,16 @@
    {
     "type": "content",
     "text": "Body copy −140 words (1,204 → 1,064)",
+    "source": "auto"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "changes": [
+   {
+    "type": "content",
+    "text": "Body copy +103 words (1,064 → 1,167)",
     "source": "auto"
    }
   ]
