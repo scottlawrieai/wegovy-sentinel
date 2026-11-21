@@ -27,7 +27,7 @@
  "drop:wegovy pills": "2026-09-25",
  "drop:wegovy tablets": "2026-09-25",
  "overtaken:FamilyChemist:wegovy tablets": "2026-11-05",
- "overtaken:Chemist4U:wegovy pills": "2026-10-02",
+ "overtaken:Chemist4U:wegovy pills": "2026-11-21",
  "overtaken:Superdrug:wegovy price uk": "2026-11-15",
  "overtaken:MedExpress:wegovy price uk": "2026-11-15",
  "overtaken:Chemist4U:wegovy pill uk": "2026-10-09",
@@ -44,5 +44,6 @@
  "page_one:wegovy price": "2026-10-24",
  "overtaken:Superdrug:wegovy price": "2026-11-10",
  "overtaken:MedExpress:wegovy price": "2026-11-10",
- "overtaken:MedExpress:wegovy pill": "2026-11-20"
+ "overtaken:MedExpress:wegovy pill": "2026-11-20",
+ "overtaken:MedExpress:wegovy pills": "2026-11-21"
 }
